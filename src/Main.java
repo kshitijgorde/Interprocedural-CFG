@@ -123,7 +123,8 @@ public class Main {
      public static void main(String[] args) { 
     	 ArrayList<String> argsList = new ArrayList<String>();
     	 argsList.addAll(Arrays.asList(new String[]{
-    			   "-w",
+    			    "Kshitij",
+    			 	"-w",
 
     			   "-cp",
 
@@ -133,19 +134,19 @@ public class Main {
 
     			   "-allow-phantom-refs",
 
-    			   "-process-dir",
-
-    			   "/home/kshitijgorde/workspace/ICFG/testers/",
+//    			   "-process-dir",
+//
+//    			   "/home/kshitijgorde/workspace/ICFG/sootOutput/",
     			    			   
 
     			   }));
 
 
    	 Scene.v().setSootClassPath("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:" +
-			"/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:");
+			"/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/home/kshitijgorde/workspace/ICFG/testers/");
          PackManager.v().getPack("wjtp").add(new Transform("wjtp.ifds", new SceneTransformer() { 
              protected void internalTransform(String phaseName, @SuppressWarnings("rawtypes") Map options) { 
-
+            	 
             	 //CHATransformer.v().transform();
             	 
             	 // Retrieve the method and its body
@@ -194,9 +195,10 @@ public class Main {
              } 
 				         })); 
 				         
-				         //argsList.add("-p"); argsList.add("cg"); argsList.add("all-reachable:true");
+				         argsList.add("-p"); argsList.add("cg"); argsList.add("all-reachable:true");
 
 				         args = argsList.toArray(new String[0]);
+				         
 				         soot.Main.main(args); 
 				     } 
 				

@@ -2,6 +2,7 @@ import heros.IFDSTabulationProblem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Set;
@@ -162,14 +163,80 @@ public class Main {
 //            	 Scene.v().loadBasicClasses();
             	 //System.out.println(Scene.v().getClasses());
             	 SootClass mainClass = null;
+            	 SootMethod main_method = null;
+            	 int mainMethodFlag = 0;
             	 for (SootClass sc : Scene.v().getClasses()){
             		 //System.out.println(sc.getName());
             		 if (sc.getName().equals("Kshitij")){
             			 mainClass = sc;
-            			 System.out.println(mainClass.getFieldCount());
+            			 System.out.println("All methods inside are: ");
             			 System.out.println(sc.getMethods().toString());
+            			 
+            			 for (SootMethod methods : sc.getMethods()){
+            				 if (methods.getName().contains("main")){
+            					 main_method = methods;
+            					 System.out.println("Main method found!. Terminating Search!");
+            					 System.out.println(main_method.getName());
+            					 mainMethodFlag = 1;
+            					 break;
+            				 }
+        	 
+         				}
+            			if (mainMethodFlag == 1){
+            				//indicates already found main method
+            				System.out.println("Exiting Main Class search!");
+            				break;
+            			}     			 
+            			             			 //break the loop
+            			 
             		 }
             	 }
+            	 System.out.println("Setting the Entry Point!");
+            	 ArrayList<SootMethod> entry_points = new ArrayList<SootMethod>();
+            	 entry_points.add(main_method);
+            	 Scene.v().setEntryPoints(entry_points);
+            	 System.out.println("Entry Points are: ");
+            	 System.out.println(Scene.v().getEntryPoints());
+            	 
+            	 
+            	 InterproceduralCFG<Unit, SootMethod> icfg = new JimpleBasedInterproceduralCFG();
+            	 
+            	 Unit startPoint = null;
+            	 for (Unit temp: icfg.getStartPointsOf(main_method)){
+            		 startPoint = temp;
+            		 break;
+            	 }
+            	 
+            	 //System.out.println(icfg.getSuccsOf(startPoint));
+            	 
+            	 
+            	 
+            	 
+            	 DotGraph dotIcfg = new DotGraph("");
+            	 SootMethod temp = main_method;
+            	 
+            	 
+            	 for (Unit t: icfg.getSuccsOf(startPoint)){
+            		 dotIcfg.drawEdge(startPoint.toString(), t.toString());
+            		 startPoint = t;
+            	 }
+            	 
+            	 
+            	 dotIcfg.plot("FirstICFG");
+            	 G.v().out.println("FistICFG"+dotIcfg.DOT_EXTENSION);
+//            	 
+//            	 System.out.println(icfg.getSuccsOf(startPoint));
+            	 
+            	 //System.out.println(icfg.getStartPointsOf(main_method));
+            	 
+            	 
+//            	 CallGraph cg = Scene.v().getCallGraph();
+//            	System.out.println(cg.size());
+            	 
+            	 //InterproceduralCFG icfg = new JimpleBasedInterproceduralCFG();
+            	 //System.out.println(icfg.allNonCallStartNodes().size());
+            	 
+            	 
 //            	 if (mainClass == null){
 //            		 System.out.println("Main class is Null");
 //            		 System.exit(101);
@@ -195,7 +262,7 @@ public class Main {
              } 
 				         })); 
 				         
-				         argsList.add("-p"); argsList.add("cg"); argsList.add("all-reachable:true");
+				        // argsList.add("-p"); argsList.add("cg"); argsList.add("all-reachable:true");
 
 				         args = argsList.toArray(new String[0]);
 				         

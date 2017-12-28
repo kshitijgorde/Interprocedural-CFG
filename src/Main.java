@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import heros.InterproceduralCFG;
 import java.util.Map;
@@ -22,7 +23,7 @@ public class Main {
 	public static void main(String[] args) {
 		ArrayList<String> argsList = new ArrayList<String>();
 		argsList.addAll(Arrays.asList(new String[] {
-
+		"Main",
 		"-w",
 
 		"-cp",
@@ -38,6 +39,19 @@ public class Main {
 		"/home/kshitijgorde/workspace/ICFG/testers/",
 
 		}));
+		
+		
+		
+		ArrayList<String> uniqueSystemCalls = new ArrayList<String>();
+		
+		uniqueSystemCalls.add("com.");
+		uniqueSystemCalls.add("java.");
+		uniqueSystemCalls.add("%java.");
+		uniqueSystemCalls.add("javax.");
+		uniqueSystemCalls.add("org.");
+		uniqueSystemCalls.add("sun.");
+		
+		
 
 		Scene.v()
 				.setSootClassPath(
@@ -48,19 +62,13 @@ public class Main {
 					protected void internalTransform(String phaseName,
 							@SuppressWarnings("rawtypes") Map options) {
 
-						// CHATransformer.v().transform();
-
-						// Retrieve the method and its body
-						// SootClass c = Scene.v().getSootClass("Kshitij");
-						// SootMethod m = c.getMethodByName("kshitij_method1");
-						// Body b = m.retrieveActiveBody();
 						// System.out.println(b.toString());
 
-						System.out.println(Scene.v().getClasses());
+						//System.out.println(Scene.v().getClasses());
 						System.out.println(Scene.v().hasMainClass());
 
-						// Scene.v().loadNecessaryClasses();
-						// Scene.v().loadBasicClasses();
+						Scene.v().loadNecessaryClasses();
+						Scene.v().loadBasicClasses();
 						// System.out.println(Scene.v().getClasses());
 						SootClass mainClass = null;
 						SootMethod main_method = null;
@@ -73,7 +81,8 @@ public class Main {
 								System.out.println(sc.getMethods().toString());
 
 								for (SootMethod methods : sc.getMethods()) {
-									if (methods.getName().contains("main")) {
+									System.out.println(methods.getName());
+									if (methods.getName().equals("init")) {
 										main_method = methods;
 										System.out
 												.println("Main method found!. Terminating Search!");
@@ -103,14 +112,21 @@ public class Main {
 
 						icfg = new JimpleBasedInterproceduralCFG();
 						Unit startPoint = null;
+						System.out.println(icfg.getStartPointsOf(main_method));
 						for (Unit temp : icfg.getStartPointsOf(main_method)) {
 							startPoint = temp;
+							System.out.println("START POINT SET");
+							System.out.println(icfg.getSuccsOf(temp));
 							break;
 						}
 
 						// System.out.println(icfg.getSuccsOf(startPoint));
 						visited = new ArrayList<Unit>();
+						
+						G.v().out.println("FistICFG" + dotIcfg.DOT_EXTENSION);
 						graphTraverse(startPoint);
+						
+						dotIcfg.plot("FirstICFG");
 
 						// SootMethod temp = main_method;
 						//
@@ -145,8 +161,7 @@ public class Main {
 						// }
 						// }
 
-						dotIcfg.plot("FirstICFG");
-						G.v().out.println("FistICFG" + dotIcfg.DOT_EXTENSION);
+						
 					}
 				}));
 
@@ -157,7 +172,7 @@ public class Main {
 
 	public static void graphTraverse(Unit startPoint) {
 		List<Unit> currentSuccessors = icfg.getSuccsOf(startPoint);
-
+		
 		if (currentSuccessors.size() == 0) {
 			System.out.println("Traversal complete");
 			return;

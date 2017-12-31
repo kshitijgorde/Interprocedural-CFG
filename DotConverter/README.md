@@ -19,7 +19,8 @@ This script takes input from `refactorDot.sh` and then prepares a DOT file that 
 #### `processDotFile.sh`
 This is an automated script to perform the above tasks collectively.
 
-### Sample Input for `refactorDot.sh`
+## Samples
+### Input for `refactorDot.sh`
 ```
 digraph "" {
     "r0 := @parameter0: java.lang.String[]"
@@ -55,7 +56,7 @@ digraph "" {
     "virtualinvoke r1.<java.awt.Component: void setVisible(boolean)>(1)"->"return";
 }
 ```
-### Sample output of `DotFileManipulator.py`
+### Pruned DOT file from `DotFileManipulator.py`
 ```
 digraph "" {
 "r0 := @parameter0: java.lang.String[]"->"$r3 = new java.awt.Frame";

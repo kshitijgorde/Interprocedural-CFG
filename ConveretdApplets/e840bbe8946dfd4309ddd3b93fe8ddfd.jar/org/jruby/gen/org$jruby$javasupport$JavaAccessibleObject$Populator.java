@@ -1,0 +1,123 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package org.jruby.gen;
+
+import org.jruby.internal.runtime.methods.JavaMethod;
+import org.jruby.Ruby;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$declared_annotations;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$name;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$annotations_p;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$declared_annotations_p;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$synthetic_p;
+import org.jruby.RubyBoolean;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$isAccessible;
+import org.jruby.javasupport.JavaAccessibleObject$i$1$0$annotation_present_p;
+import org.jruby.javasupport.JavaAccessibleObject$i$1$0$same;
+import org.jruby.javasupport.JavaAccessibleObject$i$1$0$annotation;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$declaring_class;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$annotations;
+import org.jruby.RubyFixnum;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$hash;
+import org.jruby.javasupport.JavaAccessibleObject$i$1$0$op_equal;
+import org.jruby.RubyString;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$to_string;
+import org.jruby.javasupport.JavaAccessibleObject$i$0$0$modifiers;
+import org.jruby.internal.runtime.methods.DynamicMethod;
+import org.jruby.runtime.builtin.IRubyObject;
+import org.jruby.javasupport.JavaAccessibleObject;
+import org.jruby.internal.runtime.methods.CallConfiguration;
+import org.jruby.javasupport.JavaAccessibleObject$i$1$0$setAccessible;
+import org.jruby.runtime.Visibility;
+import org.jruby.RubyModule;
+import org.jruby.anno.TypePopulator;
+
+public class org$jruby$javasupport$JavaAccessibleObject$Populator extends TypePopulator
+{
+    public void populate(final RubyModule cls, final Class clazz) {
+        final Ruby runtime = cls.getRuntime();
+        JavaMethod javaMethod = new JavaAccessibleObject$i$1$0$setAccessible(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "setAccessible", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "setAccessible", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("accessible=", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$modifiers(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "modifiers", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "modifiers", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("modifiers", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$to_string(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "to_string", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "to_string", RubyString.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("to_s", javaMethod);
+        cls.addMethodAtBootTimeOnly("to_string", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$1$0$op_equal(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "op_equal", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "op_equal", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("==", javaMethod);
+        cls.addMethodAtBootTimeOnly("eql?", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$hash(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "hash", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "hash", RubyFixnum.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("hash", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$annotations(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "annotations", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "annotations", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("annotations", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$declaring_class(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "declaring_class", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "declaring_class", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("declaring_class", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$1$0$annotation(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "annotation", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "annotation", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("annotation", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$1$0$same(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "same", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "same", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("equal?", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$1$0$annotation_present_p(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "annotation_present_p", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "annotation_present_p", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("annotation_present?", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$isAccessible(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "isAccessible", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "isAccessible", RubyBoolean.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("accessible?", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$synthetic_p(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "synthetic_p", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "synthetic_p", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("synthetic?", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$declared_annotations_p(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "declared_annotations_p", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "declared_annotations_p", RubyBoolean.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("declared_annotations?", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$annotations_p(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "annotations_p", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "annotations_p", RubyBoolean.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("annotations?", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$name(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "name", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "name", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("name", javaMethod);
+        javaMethod = new JavaAccessibleObject$i$0$0$declared_annotations(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "declared_annotations", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(JavaAccessibleObject.class, "declared_annotations", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("declared_annotations", javaMethod);
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.setAccessible", "accessible=");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.modifiers", "modifiers");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.to_string", "to_s");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.op_equal", "==");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.hash", "hash");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.annotations", "annotations");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.declaring_class", "declaring_class");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.annotation", "annotation");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.same", "equal?");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.annotation_present_p", "annotation_present?");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.isAccessible", "accessible?");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.synthetic_p", "synthetic?");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.declared_annotations_p", "declared_annotations?");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.annotations_p", "annotations?");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.name", "name");
+        runtime.addBoundMethod("org.jruby.javasupport.JavaAccessibleObject.declared_annotations", "declared_annotations");
+    }
+}

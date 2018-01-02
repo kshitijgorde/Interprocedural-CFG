@@ -1,0 +1,20 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package org.eclipse.swt.internal.win32;
+
+public class PROPERTYKEY
+{
+    public byte[] fmtid;
+    public int pid;
+    public static final int sizeof;
+    
+    static {
+        sizeof = OS.PROPERTYKEY_sizeof();
+    }
+    
+    public PROPERTYKEY() {
+        this.fmtid = new byte[16];
+    }
+}

@@ -1,0 +1,62 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package org.jfree.util;
+
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.awt.Image;
+import java.io.Serializable;
+import java.awt.image.ImageObserver;
+
+public class WaitingImageObserver implements ImageObserver, Serializable, Cloneable
+{
+    private boolean lock;
+    private Image image;
+    private boolean error;
+    
+    public WaitingImageObserver(final Image image) {
+        if (image == null) {
+            throw new NullPointerException();
+        }
+        this.image = image;
+        this.lock = true;
+    }
+    
+    public boolean imageUpdate(final Image image, final int n, final int n2, final int n3, final int n4, final int n5) {
+        if ((n & 0x20) == 0x20) {
+            this.lock = false;
+            this.error = false;
+        }
+        else if ((n & 0x80) == 0x80 || (n & 0x40) == 0x40) {
+            this.lock = false;
+            this.error = true;
+        }
+        return true;
+    }
+    
+    public void waitImageLoaded() {
+        final BufferedImage bufferedImage = new BufferedImage(1, 1, 1);
+        final Graphics graphics = bufferedImage.getGraphics();
+        while (this.lock) {
+            if (graphics.drawImage(this.image, 0, 0, bufferedImage.getWidth(this), bufferedImage.getHeight(this), this)) {
+                return;
+            }
+            try {
+                Thread.sleep(200L);
+            }
+            catch (InterruptedException ex) {
+                Log.info("WaitingImageObserver.waitImageLoaded(): InterruptedException thrown.", ex);
+            }
+        }
+    }
+    
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+    
+    public boolean isError() {
+        return this.error;
+    }
+}

@@ -1,0 +1,18 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package org.w3c.dom;
+
+public interface NamedNodeMap
+{
+    Node getNamedItem(final String p0);
+    
+    Node setNamedItem(final Node p0) throws DOMException;
+    
+    Node removeNamedItem(final String p0) throws DOMException;
+    
+    Node item(final int p0);
+    
+    int getLength();
+}

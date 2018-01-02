@@ -1,0 +1,86 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+public interface IpixTypes
+{
+    public static final String ipVERSION = "bver";
+    public static final String ipFORMAT = "frmt";
+    public static final String ipVFOV = "vfov";
+    public static final String ipSEGMENTED = "segm";
+    public static final String ipCOMPRESSION8 = "cop8";
+    public static final String ipCOMPRESSION16 = "co16";
+    public static final String ipCOMPRESSION24 = "co24";
+    public static final String ipRADIUS = "irad";
+    public static final String ipRADIUS2 = "ird2";
+    public static final String ipYRADIUS = "yrad";
+    public static final String ipYRADIUS2 = "yrd2";
+    public static final String ipSRCCENTERPT = "scen";
+    public static final String ipSRCCENTERPT2 = "scn2";
+    public static final String ipPALETTESIZE = "plsz";
+    public static final String ipTHUMBSIZE = "thbs";
+    public static final String ipBUBBLESIZE8 = "bub8";
+    public static final String ipBUBBLESIZE16 = "bb16";
+    public static final String ipBUBBLESIZE24 = "bb24";
+    public static final String ipHFOV = "hfov";
+    public static final String ipMIRROR = "mirr";
+    public static final String ipUNPROTECTED = "prot";
+    public static final String ipLOGO = "logo";
+    public static final String ipNAME = "bnam";
+    public static final String ipPHOTOGRAPHER = "phot";
+    public static final String ipKEYWORDS = "kywd";
+    public static final String ipUSERID = "usid";
+    public static final String ipNUMHOTSPOTS = "nhsp";
+    public static final String ipHOTSPOTSIZE = "hsps";
+    public static final String ipHOTSPOTS = "spts";
+    public static final String ipMIDISIZE = "mdsz";
+    public static final String ipWAVESIZE = "wvsz";
+    public static final String ipREFVIEWPOINT = "rfvp";
+    public static final String ipINITVIEWPOINT = "invp";
+    public static final String ipAUTOMATESIZE = "ausz";
+    public static final String ipTEXTSIZE = "txsz";
+    public static final String ipTRANSITION = "tran";
+    public static final String ipEXPIRATIONDATE = "expn";
+    public static final String ipZOOMMAX = "zmax";
+    public static final String ipZOOMMIN = "zmin";
+    public static final String ipLONGITUDE = "glng";
+    public static final String ipLATITUDE = "glat";
+    public static final String ipMGRS = "mgrs";
+    public static final String ipALTITUDE = "alti";
+    public static final String ipNORTH = "nrth";
+    public static final String ipBITMAPDIM = "bmdm";
+    public static final String ipKEYCODE = "kycd";
+    public static final String ipSITECODE = "stcd";
+    public static final String ipSERIALNUMBER = "serl";
+    public static final String ipSTARTDATE = "stdt";
+    public static final String ipPANOWARP = "warp";
+    public static final String ipPROOF = "prof";
+    public static final String ipAPPTYPE = "aptp";
+    public static final String ipAPPVERSION = "apvs";
+    public static final String ipCOMPRESSIONLEVEL = "cmpl";
+    public static final String ipBGSOUND = "bsnd";
+    public static final String ipINTROSOUND = "fsnd";
+    public static final String ipTHUMBDEWARPED = "thdw";
+    public static final String ipSRCPIXMAP = "scpx";
+    public static final String ipSRCPIXMAP2 = "spx2";
+    public static final String ipTHUMBNAIL = "thum";
+    public static final String ipSRCPALETTE = "spal";
+    public static final String ipCURRENTPTRZ = "ptrz";
+    public static final String ipTOOLBARSTATE = "tlbs";
+    public static final String ipROTATE = "rota";
+    public static final String ipPOPUPMENU = "menu";
+    public static final String ipZOOMLIMIT = "vlmt";
+    public static final String ipCREATETIME = "crtm";
+    public static final String ipMODTIME = "mdtm";
+    public static final String ipHFOVMIN = "hfmn";
+    public static final String ipHFOVMAX = "hfmx";
+    public static final String ipVFOVMIN = "vfmn";
+    public static final String ipVFOVMAX = "vfmx";
+    public static final String ipLAYOUT = "frmt";
+    public static final String ipENABLEHOTSPOTS = "ehpt";
+    public static final String ipOUTLINECOLOR = "oclr";
+    public static final String ipSHOWPOPUPTEXT = "shpt";
+    public static final String ipSHOWTARGETS = "shtg";
+    public static final String ipNAVIGATIONON = "navi";
+    public static final String ipUSERITERACTING = "user";
+}

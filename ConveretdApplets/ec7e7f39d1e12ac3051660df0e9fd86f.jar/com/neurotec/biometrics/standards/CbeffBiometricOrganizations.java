@@ -1,0 +1,90 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package com.neurotec.biometrics.standards;
+
+public final class CbeffBiometricOrganizations
+{
+    public static final int SAFLINK = 1;
+    public static final int BIOSCRYPT = 2;
+    public static final int IDENTIX = 3;
+    public static final int INFINEON_TECHNOLOGIES = 4;
+    public static final int IRIDIAN_TECHNOLOGIES = 5;
+    public static final int VERIDICOM = 6;
+    public static final int CYBER_SIGN = 7;
+    public static final int ECRYP = 8;
+    public static final int FINGERPRINT_CARDS = 9;
+    public static final int SECUGEN = 10;
+    public static final int PRECISE_BIOMETRICS = 11;
+    public static final int IDENTIX_2 = 12;
+    public static final int DERMALOG_IDENTIFICATION_SYSTEMS = 13;
+    public static final int LOGICO_SMARTCARD_SOLUTIONS = 14;
+    public static final int NIST = 15;
+    public static final int A_4_VISION = 16;
+    public static final int NEC_SOLUTIONS_AMERICA = 17;
+    public static final int UPEK = 18;
+    public static final int ULTRA_SCAN = 19;
+    public static final int AURORA_WIRELESS_TECHNOLOGIES = 20;
+    public static final int THALES_IDENITFICATION = 21;
+    public static final int INTERNATIONAL_BIOMETRIC_GROUP = 22;
+    public static final int COGENT_SYSTEMS = 23;
+    public static final int CROSS_MATCH_TECHNOLOGIES = 24;
+    public static final int RECOGNITION_SYSTEMS = 25;
+    public static final int GERMAN_INSTITUTE_FOR_STANDARDIZATION = 26;
+    public static final int INCITS_TC_M1_BIOMETRICS = 27;
+    public static final int NITGEN = 28;
+    public static final int SAGEM_MORPHO = 29;
+    public static final int BIOLINK_TECHNOLOGIES_INTERNATIONAL = 31;
+    public static final int ACTIVCARD = 32;
+    public static final int HUMANSCAN = 33;
+    public static final int ACSYS_BIOMETRICS = 34;
+    public static final int SILEX_TECHNOLOGY = 35;
+    public static final int BIO_WISE = 36;
+    public static final int LUMIDIGM = 37;
+    public static final int GUARDWARE_SYSTEMS = 38;
+    public static final int INVESTORSHELPERS = 39;
+    public static final int VALIDITY = 40;
+    public static final int VIISAGE = 41;
+    public static final int LG_ELECTRONICS_USA = 42;
+    public static final int STARTEK_ENGINEERING = 43;
+    public static final int JANUS_ASSOCIATES = 44;
+    public static final int OMNIPERCEPTION = 45;
+    public static final int MOTOROLA = 46;
+    public static final int CRYPTO_METRICS = 47;
+    public static final int BIOKEY_INTERNATIONAL = 48;
+    public static final int NEUROTECHNOLOGIJA = 49;
+    public static final int ANTHEUS_TECHNOLOGY = 50;
+    public static final int DIGITALPERSONA = 51;
+    public static final int XTEC = 52;
+    public static final int INNOVATRICS = 53;
+    public static final int EAST_SHORE_TECHNOLOGIES = 54;
+    public static final int HITACHI = 55;
+    public static final int _123ID = 56;
+    public static final int BIOKEY_INTERNATIONAL_2 = 57;
+    public static final int GRIAULE_TECNOLOGIA = 58;
+    public static final int AWARE = 59;
+    public static final int SONDA_TECHNOLOGIES = 60;
+    public static final int SECURE_DESIGN = 61;
+    public static final int VERIDT = 62;
+    public static final int ID3_SEMICONDUCTORS = 63;
+    public static final int GREEN_BIT_AMERICAS = 64;
+    public static final int ATMEL = 65;
+    public static final int AUTHEN_TEC = 66;
+    public static final int IMAGE_WARE_SYSTEMS = 67;
+    public static final int SUPREMA = 68;
+    public static final int BIOVISION = 69;
+    public static final int FUJITSU = 70;
+    public static final int AOPTIX = 71;
+    public static final int DIGENT = 72;
+    public static final int WARWICK_WARP = 73;
+    public static final int EASTERN_GOLDEN_FINGER_TECHNOLOGY_BEIJING = 74;
+    public static final int FEDERAL_OFFICE_FOR_INFORMATION_SECURITY = 75;
+    public static final int BIOLOGICA_SISTEMAS = 76;
+    public static final int ISO_IEC_JTC_1_SC_37_BIOMETRICS = 257;
+    public static final int ISO_IEC_JTC_1_SC_27_IT_SECURITY_TECHNIQUES = 258;
+    public static final int PRIVATE = 65278;
+    public static final int TESTING_1 = 65520;
+    public static final int TESTING_2 = 65534;
+    public static final int NOT_FOR_USE = 65535;
+}

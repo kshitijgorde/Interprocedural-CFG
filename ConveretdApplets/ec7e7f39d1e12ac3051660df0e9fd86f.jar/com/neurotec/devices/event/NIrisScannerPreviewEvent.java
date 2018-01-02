@@ -1,0 +1,47 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package com.neurotec.devices.event;
+
+import java.util.Collections;
+import java.util.Arrays;
+import com.neurotec.biometrics.NEAttributes;
+import java.util.List;
+import com.neurotec.biometrics.NBiometricStatus;
+import com.neurotec.images.NImage;
+import java.util.EventObject;
+
+public final class NIrisScannerPreviewEvent extends EventObject
+{
+    private NImage image;
+    private NBiometricStatus status;
+    private List<NEAttributes> objects;
+    
+    public NIrisScannerPreviewEvent(final Object source, final NImage image, final NBiometricStatus status, final List<NEAttributes> objects) {
+        super(source);
+        this.image = image;
+        this.status = status;
+        this.objects = objects;
+    }
+    
+    public NIrisScannerPreviewEvent(final Object source, final NImage image, final NBiometricStatus status, final NEAttributes[] objects) {
+        this(source, image, status, Collections.unmodifiableList((List<? extends NEAttributes>)Arrays.asList((T[])objects)));
+    }
+    
+    public NImage getImage() {
+        return this.image;
+    }
+    
+    public NBiometricStatus getStatus() {
+        return this.status;
+    }
+    
+    public void setStatus(final NBiometricStatus status) {
+        this.status = status;
+    }
+    
+    public List<NEAttributes> getObjects() {
+        return this.objects;
+    }
+}

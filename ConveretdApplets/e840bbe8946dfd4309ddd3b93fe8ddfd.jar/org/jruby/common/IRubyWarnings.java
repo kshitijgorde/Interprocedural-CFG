@@ -1,0 +1,93 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package org.jruby.common;
+
+import org.jruby.lexer.yacc.ISourcePosition;
+import org.jruby.Ruby;
+
+public interface IRubyWarnings
+{
+    Ruby getRuntime();
+    
+    void warn(final ID p0, final ISourcePosition p1, final String p2, final Object... p3);
+    
+    void warn(final ID p0, final String p1, final int p2, final String p3, final Object... p4);
+    
+    boolean isVerbose();
+    
+    void warn(final ID p0, final String p1, final Object... p2);
+    
+    void warning(final ID p0, final String p1, final Object... p2);
+    
+    void warning(final ID p0, final ISourcePosition p1, final String p2, final Object... p3);
+    
+    void warning(final ID p0, final String p1, final int p2, final String p3, final Object... p4);
+    
+    public enum ID
+    {
+        AMBIGUOUS_ARGUMENT("AMBIGUOUS_ARGUMENT"), 
+        ACCESSOR_NOT_INITIALIZED("ACCESSOR_NOT_INITIALIZED"), 
+        ARGUMENT_AS_PREFIX("ARGUMENT_AS_PREFIX"), 
+        ARGUMENT_EXTRA_SPACE("ARGUMENT_EXTRA_SPACE"), 
+        ASSIGNMENT_IN_CONDITIONAL("ASSIGNMENT_IN_CONDITIONAL"), 
+        BIGNUM_FROM_FLOAT_RANGE("BIGNUM_FROM_FLOAT_RANGE"), 
+        BLOCK_BEATS_DEFAULT_VALUE("BLOCK_BEATS_DEFAULT_VALUE"), 
+        BLOCK_NOT_ACCEPTED("BLOCK_NOT_ACCEPTED"), 
+        BLOCK_UNUSED("BLOCK_UNUSED"), 
+        CONSTANT_ALREADY_INITIALIZED("CONSTANT_ALREADY_INITIALIZED"), 
+        CONSTANT_BAD_REFERENCE("CONSTANT_BAD_REFERENCE"), 
+        CVAR_FROM_TOPLEVEL_SINGLETON_METHOD("CVAR_FROM_TOPLEVEL_SINGLETON_METHOD"), 
+        DECLARING_SCLASS_VARIABLE("DECLARING_SCLASS_VARIABLE"), 
+        DEPRECATED_METHOD("DEPRECATED_METHOD"), 
+        DUMMY_VALUE_USED("DUMMY_VALUE_USED"), 
+        END_IN_METHOD("END_IN_METHOD"), 
+        ELSE_WITHOUT_RESCUE("ELSE_WITHOUT_RESCUE"), 
+        EMPTY_IMPLEMENTATION("EMPTY_IMPLEMENTATION"), 
+        ENV_VARS_FROM_CLI_METHOD("ENV_VARS_FROM_CLI_METHOD"), 
+        FIXNUMS_NOT_SYMBOLS("FIXNUMS_NOT_SYMBOLS"), 
+        FLOAT_OUT_OF_RANGE("FLOAT_OUT_OF_RANGE"), 
+        GLOBAL_NOT_INITIALIZED("GLOBAL_NOT_INITIALIZED"), 
+        GROUPED_EXPRESSION("GROUPED_EXPRESSION"), 
+        INEFFECTIVE_GLOBAL("INNEFFECTIVE_GLOBAL"), 
+        INVALID_CHAR_SEQUENCE("INVALID_CHAR_SEQUENCE"), 
+        IVAR_NOT_INITIALIZED("IVAR_NOT_INITIALIZED"), 
+        MAY_BE_TOO_BIG("MAY_BE_TOO_BIG"), 
+        MISCELLANEOUS("MISCELLANEOUS"), 
+        MULTIPLE_VALUES_FOR_BLOCK("MULTIPLE_VALUES_FOR_BLOCK"), 
+        NEGATIVE_NUMBER_FOR_U("NEGATIVE_NUMBER_FOR_U"), 
+        NO_SUPER_CLASS("NO_SUPER_CLASS"), 
+        NOT_IMPLEMENTED("NOT_IMPLEMENTED"), 
+        OBSOLETE_ARGUMENT("OBSOLETE_ARGUMENT"), 
+        PARENTHISE_ARGUMENTS("PARENTHISE_ARGUMENTS"), 
+        PROXY_EXTENDED_LATE("PROXY_EXTENDED_LATE"), 
+        STATEMENT_NOT_REACHED("STATEMENT_NOT_REACHED"), 
+        LITERAL_IN_CONDITIONAL_RANGE("LITERAL_IN_CONDITIONAL_RANGE"), 
+        REDEFINING_DANGEROUS("REDEFINING_DANGEROUS"), 
+        REGEXP_IGNORED_FLAGS("REGEXP_IGNORED_FLAGS"), 
+        REGEXP_LITERAL_IN_CONDITION("REGEXP_LITERAL_IN_CONDITION"), 
+        REGEXP_MATCH_AGAINST_STRING("REGEXP_MATCH_AGAINST_STRING"), 
+        SAFE_NOT_SUPPORTED("SAFE_NOT_SUPPORTED"), 
+        STRUCT_CONSTANT_REDEFINED("STRUCT_CONSTANT_REDEFINED"), 
+        SYMBOL_AS_INTEGER("SYMBOL_AS_INTEGER"), 
+        SYSSEEK_BUFFERED_IO("SYSSEEK_BUFFERED_IO"), 
+        SYSWRITE_BUFFERED_IO("SYSWRITE_BUFFERED_IO"), 
+        SWALLOWED_IO_EXCEPTION("SWALLOWED_IO_EXCEPTION"), 
+        TOO_MANY_ARGUMENTS("TOO_MANY_ARGUMENTS"), 
+        UNDEFINING_BAD("UNDEFINING_BAD"), 
+        USELESS_EXPRESSION("USELESS_EXPRESSION"), 
+        VOID_VALUE_EXPRESSION("VOID_VALUE_EXPRESSION"), 
+        NAMED_CAPTURE_CONFLICT("NAMED_CAPTURE_CONFLICT");
+        
+        private final String id;
+        
+        private ID(final String id) {
+            this.id = id;
+        }
+        
+        public String getID() {
+            return this.id;
+        }
+    }
+}

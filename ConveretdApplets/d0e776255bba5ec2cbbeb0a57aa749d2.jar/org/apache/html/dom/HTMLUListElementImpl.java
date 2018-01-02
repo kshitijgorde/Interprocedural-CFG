@@ -1,0 +1,30 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package org.apache.html.dom;
+
+import org.w3c.dom.html.HTMLUListElement;
+
+public class HTMLUListElementImpl extends HTMLElementImpl implements HTMLUListElement
+{
+    public boolean getCompact() {
+        return this.getBinary("compact");
+    }
+    
+    public void setCompact(final boolean b) {
+        this.setAttribute("compact", b);
+    }
+    
+    public String getType() {
+        return this.getAttribute("type");
+    }
+    
+    public void setType(final String s) {
+        this.setAttribute("type", s);
+    }
+    
+    public HTMLUListElementImpl(final HTMLDocumentImpl htmlDocumentImpl, final String s) {
+        super(htmlDocumentImpl, s);
+    }
+}

@@ -1,0 +1,124 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package org.jruby.gen;
+
+import org.jruby.internal.runtime.methods.JavaMethod;
+import org.jruby.Ruby;
+import org.jruby.RubyClass;
+import org.jruby.RubyZlib$RubyGzipWriter$i$0$0$puts;
+import org.jruby.RubyZlib$RubyGzipWriter$i$1$0$set_orig_name;
+import org.jruby.RubyZlib$RubyGzipWriter$i$0$0$print;
+import org.jruby.RubyZlib$RubyGzipWriter$i$0$0$pos;
+import org.jruby.RubyZlib$RubyGzipWriter$i$0$0$initialize;
+import org.jruby.RubyZlib$RubyGzipWriter$i$1$0$putc;
+import org.jruby.RubyZlib$RubyGzipWriter$i$0$0$printf;
+import org.jruby.RubyZlib$RubyGzipWriter$i$1$0$set_mtime;
+import org.jruby.RubyZlib$RubyGzipWriter$i$0$0$crc;
+import org.jruby.RubyZlib$RubyGzipWriter$i$0$1$flush;
+import org.jruby.RubyZlib$RubyGzipWriter$i$1$0$set_comment;
+import org.jruby.RubyZlib$RubyGzipWriter$i$0$0$close;
+import org.jruby.RubyZlib$RubyGzipWriter$i$1$0$write;
+import org.jruby.RubyZlib$RubyGzipWriter$i$1$0$append;
+import org.jruby.RubyZlib$RubyGzipWriter$s$0$0$newGzipWriter;
+import org.jruby.internal.runtime.methods.DynamicMethod;
+import org.jruby.runtime.Block;
+import org.jruby.runtime.ThreadContext;
+import org.jruby.runtime.builtin.IRubyObject;
+import org.jruby.RubyZlib;
+import org.jruby.internal.runtime.methods.CallConfiguration;
+import org.jruby.RubyZlib$RubyGzipWriter$s$0$2$open;
+import org.jruby.runtime.Visibility;
+import org.jruby.RubyModule;
+import org.jruby.anno.TypePopulator;
+
+public class org$jruby$RubyZlib$RubyGzipWriter$Populator extends TypePopulator
+{
+    public void populate(final RubyModule cls, final Class clazz) {
+        final RubyClass singletonClass = cls.getSingletonClass();
+        final Ruby runtime = cls.getRuntime();
+        JavaMethod javaMethod = new RubyZlib$RubyGzipWriter$s$0$2$open(singletonClass, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, -1, "open", true, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "open", IRubyObject.class, new Class[] { ThreadContext.class, IRubyObject.class, IRubyObject[].class, Block.class }, true);
+        singletonClass.addMethodAtBootTimeOnly("open", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$s$0$0$newGzipWriter(singletonClass, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, -1, "newGzipWriter", true, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "newGzipWriter", RubyZlib.RubyGzipWriter.class, new Class[] { IRubyObject.class, IRubyObject[].class, Block.class }, true);
+        singletonClass.addMethodAtBootTimeOnly("new", javaMethod);
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.open", "open");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.newGzipWriter", "new");
+        javaMethod = new RubyZlib$RubyGzipWriter$i$1$0$append(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "append", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "append", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("append", javaMethod);
+        cls.addMethodAtBootTimeOnly("<<", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$1$0$write(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "write", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "write", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("write", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$0$0$close(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "close", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "close", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("close", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$1$0$set_comment(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "set_comment", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "set_comment", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("comment=", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$0$1$flush(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, -1, "flush", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "flush", IRubyObject.class, new Class[] { IRubyObject[].class }, false);
+        cls.addMethodAtBootTimeOnly("flush", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$0$0$crc(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "crc", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "crc", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("crc", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$1$0$set_mtime(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "set_mtime", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "set_mtime", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("mtime=", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$0$0$printf(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, -1, "printf", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "printf", IRubyObject.class, new Class[] { ThreadContext.class, IRubyObject[].class }, false);
+        cls.addMethodAtBootTimeOnly("printf", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$1$0$putc(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "putc", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "putc", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("putc", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$0$0$initialize(cls, Visibility.PRIVATE);
+        TypePopulator.populateMethod(javaMethod, -1, "initialize", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "initialize", IRubyObject.class, new Class[] { IRubyObject[].class, Block.class }, false);
+        cls.addMethodAtBootTimeOnly("initialize", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$0$0$pos(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 0, "pos", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "pos", IRubyObject.class, new Class[0], false);
+        cls.addMethodAtBootTimeOnly("pos", javaMethod);
+        cls.addMethodAtBootTimeOnly("tell", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$0$0$print(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, -1, "print", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "print", IRubyObject.class, new Class[] { IRubyObject[].class }, false);
+        cls.addMethodAtBootTimeOnly("print", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$1$0$set_orig_name(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, 1, "set_orig_name", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "set_orig_name", IRubyObject.class, new Class[] { IRubyObject.class }, false);
+        cls.addMethodAtBootTimeOnly("orig_name=", javaMethod);
+        javaMethod = new RubyZlib$RubyGzipWriter$i$0$0$puts(cls, Visibility.PUBLIC);
+        TypePopulator.populateMethod(javaMethod, -1, "puts", false, CallConfiguration.FrameNoneScopeNone, false);
+        javaMethod.setNativeCall(RubyZlib.RubyGzipWriter.class, "puts", IRubyObject.class, new Class[] { ThreadContext.class, IRubyObject[].class }, false);
+        cls.addMethodAtBootTimeOnly("puts", javaMethod);
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.append", "append");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.write", "write");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.close", "close");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.set_comment", "comment=");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.flush", "flush");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.crc", "crc");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.set_mtime", "mtime=");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.printf", "printf");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.putc", "putc");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.initialize", "initialize");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.pos", "pos");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.print", "print");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.set_orig_name", "orig_name=");
+        runtime.addBoundMethod("org.jruby.RubyZlib.RubyGzipWriter.puts", "puts");
+    }
+}

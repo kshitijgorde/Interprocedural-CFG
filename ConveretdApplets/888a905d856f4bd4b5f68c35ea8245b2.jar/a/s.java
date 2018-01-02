@@ -1,0 +1,14 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package a;
+
+import java.awt.Frame;
+
+public final class s extends dd
+{
+    public s(final Frame frame, final String s, final String s2, final dH dh) {
+        super(frame, s, s2, dh);
+    }
+}

@@ -1,0 +1,9 @@
+// 
+// Decompiled by Procyon v0.5.30
+// 
+
+package jlog.jim;
+
+public class Resources_de_DE extends Resources_de
+{
+}

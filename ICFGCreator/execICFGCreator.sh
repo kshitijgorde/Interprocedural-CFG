@@ -1,8 +1,8 @@
 #!/bin/bash
 
 testerPath="./Tester"
-
-files=$(ls -l --color=none "$1"/*.jar | awk -F " " '{print $NF}')
+currentPath=$(pwd)
+files=$(cd $1; ls -l --color=none "$1"/*.jar | awk -F " " '{print $NF}'; cd currentPath)
 for jarFile in $files
 do
     # echo "$jarFile"

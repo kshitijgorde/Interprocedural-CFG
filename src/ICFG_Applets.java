@@ -26,6 +26,7 @@ public class ICFG_Applets {
 	public static void main(String[] args) {
 		String class_name_having_init = args[0];
 		String icfgGraphName = args[1];	
+		String jarFileName = args[2];
 		
 		ArrayList<String> argsList = new ArrayList<String>();
 		argsList.clear();
@@ -39,7 +40,7 @@ public class ICFG_Applets {
 
 		"-process-dir",
 
-		"/home/kshitijgorde/workspace/ICFG/testers/0.jar",
+		"/home/kshitijgorde/workspace/ICFG/testers/"+"jarFileName",
 
 		}));
 		String[] args2 = argsList.toArray(new String[0]);

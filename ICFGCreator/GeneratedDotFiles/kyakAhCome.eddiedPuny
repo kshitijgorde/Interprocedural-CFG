@@ -1,0 +1,105 @@
+digraph "" {
+    "r0 := @parameter0: java.lang.String[]"
+    "r1 = \"elk\""
+    "r0 := @parameter0: java.lang.String[]"->"r1 = \"elk\"";
+    "r2 = \"chu\""
+    "r1 = \"elk\""->"r2 = \"chu\"";
+    "r3 = \"gon\""
+    "r2 = \"chu\""->"r3 = \"gon\"";
+    "r4 = \"goo\""
+    "r3 = \"gon\""->"r4 = \"goo\"";
+    "r5 = \"daz\""
+    "r4 = \"goo\""->"r5 = \"daz\"";
+    "r6 = \"in \""
+    "r5 = \"daz\""->"r6 = \"in \"";
+    "r33 = \"hun\""
+    "r6 = \"in \""->"r33 = \"hun\"";
+    "r34 = \"tui\""
+    "r33 = \"hun\""->"r34 = \"tui\"";
+    "r35 = \"gri\""
+    "r34 = \"tui\""->"r35 = \"gri\"";
+    "staticinvoke <kyakAhCome.eddiedPuny: java.lang.String[] fIlOr()>()"
+    "r35 = \"gri\""->"staticinvoke <kyakAhCome.eddiedPuny: java.lang.String[] fIlOr()>()";
+    "r7 = \"bad\""
+    "staticinvoke <kyakAhCome.eddiedPuny: java.lang.String[] fIlOr()>()"->"r7 = \"bad\"";
+    "r8 = \"inu\""
+    "r7 = \"bad\""->"r8 = \"inu\"";
+    "r9 = \"nip\""
+    "r8 = \"inu\""->"r9 = \"nip\"";
+    "r10 = \"cay\""
+    "r9 = \"nip\""->"r10 = \"cay\"";
+    "r11 = \"hue\""
+    "r10 = \"cay\""->"r11 = \"hue\"";
+    "r12 = r0[1]"
+    "r11 = \"hue\""->"r12 = r0[1]";
+    "r13 = \"gin\""
+    "r12 = r0[1]"->"r13 = \"gin\"";
+    "r14 = \"unb\""
+    "r13 = \"gin\""->"r14 = \"unb\"";
+    "r15 = \"zig\""
+    "r14 = \"unb\""->"r15 = \"zig\"";
+    "r16 = \"hui\""
+    "r15 = \"zig\""->"r16 = \"hui\"";
+    "r17 = \"mo \""
+    "r16 = \"hui\""->"r17 = \"mo \"";
+    "r18 = \" Ho\""
+    "r17 = \"mo \""->"r18 = \" Ho\"";
+    "r19 = \"de \""
+    "r18 = \" Ho\""->"r19 = \"de \"";
+    "$r29 = r0[2]"
+    "r19 = \"de \""->"$r29 = r0[2]";
+    "$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()"
+    "$r29 = r0[2]"->"$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()";
+    "$r31 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.String bob(java.lang.String)>(\"A\")"
+    "$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()"->"$r31 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.String bob(java.lang.String)>(\"A\")";
+    "r20 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.Boolean Zebkd(java.lang.String,java.lang.String)>($r30, $r31)"
+    "$r31 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.String bob(java.lang.String)>(\"A\")"->"r20 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.Boolean Zebkd(java.lang.String,java.lang.String)>($r30, $r31)";
+    "r21 = \"swa\""
+    "r20 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.Boolean Zebkd(java.lang.String,java.lang.String)>($r30, $r31)"->"r21 = \"swa\"";
+    "r22 = \"imi\""
+    "r21 = \"swa\""->"r22 = \"imi\"";
+    "r23 = \" Pr\""
+    "r22 = \"imi\""->"r23 = \" Pr\"";
+    "r24 = \"etc\""
+    "r23 = \" Pr\""->"r24 = \"etc\"";
+    "r25 = \"pen\""
+    "r24 = \"etc\""->"r25 = \"pen\"";
+    "r26 = \"piq\""
+    "r25 = \"pen\""->"r26 = \"piq\"";
+    "staticinvoke <kyakAhCome.eddiedPuny: void RuPMty(java.lang.String,java.lang.Boolean)>(r12, r20)"
+    "r26 = \"piq\""->"staticinvoke <kyakAhCome.eddiedPuny: void RuPMty(java.lang.String,java.lang.Boolean)>(r12, r20)";
+    "r27 = \"tie\""
+    "staticinvoke <kyakAhCome.eddiedPuny: void RuPMty(java.lang.String,java.lang.Boolean)>(r12, r20)"->"r27 = \"tie\"";
+    "r28 = \"rap\""
+    "r27 = \"tie\""->"r28 = \"rap\"";
+    "goto [?= r41 = \"moo\"]"
+    "r28 = \"rap\""->"goto [?= r41 = \"moo\"]";
+    "r41 = \"moo\""
+    "goto [?= r41 = \"moo\"]"->"r41 = \"moo\"";
+    "r42 = \"cla\""
+    "r41 = \"moo\""->"r42 = \"cla\"";
+    "r43 = \"woo\""
+    "r42 = \"cla\""->"r43 = \"woo\"";
+    "return"
+    "r43 = \"woo\""->"return";
+    "$r32 := @caughtexception"
+    "staticinvoke <kyakAhCome.eddiedPuny: void RuPMty(java.lang.String,java.lang.Boolean)>(r12, r20)"->"$r32 := @caughtexception";
+    "r37 = $r32"
+    "$r32 := @caughtexception"->"r37 = $r32";
+    "r38 = \"swa\""
+    "r37 = $r32"->"r38 = \"swa\"";
+    "r39 = \"sti\""
+    "r38 = \"swa\""->"r39 = \"sti\"";
+    "r40 = \"gor\""
+    "r39 = \"sti\""->"r40 = \"gor\"";
+    "r40 = \"gor\""->"r41 = \"moo\"";
+    "r26 = \"piq\""->"$r32 := @caughtexception";
+    "r20 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.Boolean Zebkd(java.lang.String,java.lang.String)>($r30, $r31)"->"$r32 := @caughtexception";
+    "$r31 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.String bob(java.lang.String)>(\"A\")"->"$r32 := @caughtexception";
+    "$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()"->"$r32 := @caughtexception";
+    "$r29 = r0[2]"->"$r32 := @caughtexception";
+    "r19 = \"de \""->"$r32 := @caughtexception";
+    "r11 = \"hue\""->"$r32 := @caughtexception";
+    "staticinvoke <kyakAhCome.eddiedPuny: java.lang.String[] fIlOr()>()"->"$r32 := @caughtexception";
+    "r35 = \"gri\""->"$r32 := @caughtexception";
+}

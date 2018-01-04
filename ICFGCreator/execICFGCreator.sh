@@ -2,7 +2,7 @@
 
 testerPath="./Tester"
 currentPath=$(pwd)
-files=$(cd $1; ls -l --color=none "$1"/*.jar | awk -F " " '{print $NF}'; cd currentPath)
+files=$(cd $1; ls -l --color=none *.jar | awk -F " " '{print $NF}'; cd $currentPath)
 for jarFile in $files
 do
     # echo "$jarFile"
@@ -10,7 +10,7 @@ do
     # echo ./ICFGCreator.sh "$testerPath/$jarFile"
     # echo rm -rf "$testerPath/$jarFile"
     # ./ICFGCreator.sh "$testerPath/$jarFile"
-	cp "$jarFile" "$testerPath"
+	cp "$1/$jarFile" "$testerPath"
     jarFile=$(echo $jarFile | awk -F "/" '{print $NF}')
     rm -rf $testerPath/$jarFile
 done

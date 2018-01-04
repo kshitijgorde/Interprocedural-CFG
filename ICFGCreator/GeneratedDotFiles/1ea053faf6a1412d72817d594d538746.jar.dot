@@ -1,0 +1,140 @@
+digraph "" {
+    "r0 := @this: com.nuspectra.viewer.NuSiteProxyViewer"
+    "load.r r0"
+    "r0 := @this: com.nuspectra.viewer.NuSiteProxyViewer"->"load.r r0";
+    "specialinvoke <com.nuspectra.viewer.NuApplet: void init()>"
+    "load.r r0"->"specialinvoke <com.nuspectra.viewer.NuApplet: void init()>";
+    "specialinvoke <com.nuspectra.viewer.NuApplet: void init()>"->"load.r r0";
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void initParameters()>"
+    "load.r r0"->"virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void initParameters()>";
+    "push 0"
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void initParameters()>"->"push 0";
+    "store.i i3"
+    "push 0"->"store.i i3";
+    "store.i i3"->"load.r r0";
+    "virtualinvoke <com.nuspectra.viewer.NuApplet: void clearErrorString()>"
+    "load.r r0"->"virtualinvoke <com.nuspectra.viewer.NuApplet: void clearErrorString()>";
+    "virtualinvoke <com.nuspectra.viewer.NuApplet: void clearErrorString()>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: java.lang.String getDoc()>"
+    "load.r r0"->"virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: java.lang.String getDoc()>";
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void newSession(java.lang.String)>"
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: java.lang.String getDoc()>"->"virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void newSession(java.lang.String)>";
+    "goto load.r r0"
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void newSession(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void createAppletLayout()>"
+    "load.r r0"->"virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void createAppletLayout()>";
+    "goto return"
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void createAppletLayout()>"->"goto return";
+    "return"
+    "goto return"->"return";
+    "push \"Unable to initialize\""
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void createAppletLayout()>"->"push \"Unable to initialize\"";
+    "staticinvoke <com.nuspectra.viewer.Debug: void report(java.lang.Throwable,java.lang.String)>"
+    "push \"Unable to initialize\""->"staticinvoke <com.nuspectra.viewer.Debug: void report(java.lang.Throwable,java.lang.String)>";
+    "staticinvoke <com.nuspectra.viewer.Debug: void report(java.lang.Throwable,java.lang.String)>"->"return";
+    "store.r $r4"
+    "virtualinvoke <com.nuspectra.viewer.NuSiteProxyViewer: void newSession(java.lang.String)>"->"store.r $r4";
+    "load.r $r4"
+    "store.r $r4"->"load.r $r4";
+    "virtualinvoke <java.lang.Throwable: java.lang.String toString()>"
+    "load.r $r4"->"virtualinvoke <java.lang.Throwable: java.lang.String toString()>";
+    "push \"UNAUTHORIZED\""
+    "virtualinvoke <java.lang.Throwable: java.lang.String toString()>"->"push \"UNAUTHORIZED\"";
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"
+    "push \"UNAUTHORIZED\""->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+    "push -1"
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"push -1";
+    "ifcmpne.i load.i i3"
+    "push -1"->"ifcmpne.i load.i i3";
+    "load.i i3"
+    "ifcmpne.i load.i i3"->"load.i i3";
+    "push 4"
+    "load.i i3"->"push 4";
+    "ifcmpge.i load.r r0"
+    "push 4"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "new java.lang.StringBuffer"
+    "load.r r0"->"new java.lang.StringBuffer";
+    "dup1.r"
+    "new java.lang.StringBuffer"->"dup1.r";
+    "push \"Attempting to reconnect \""
+    "dup1.r"->"push \"Attempting to reconnect \"";
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"
+    "push \"Attempting to reconnect \""->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"load.i i3";
+    "push 1"
+    "load.i i3"->"push 1";
+    "add.i"
+    "push 1"->"add.i";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"
+    "add.i"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "push \" after open failed. \""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"push \" after open failed. \"";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "push \" after open failed. \""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.r $r4";
+    "load.r $r4"->"virtualinvoke <java.lang.Throwable: java.lang.String toString()>";
+    "virtualinvoke <java.lang.Throwable: java.lang.String toString()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <com.nuspectra.viewer.NuApplet: void println(java.lang.String)>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <com.nuspectra.viewer.NuApplet: void println(java.lang.String)>";
+    "goto inc.i i3 1"
+    "virtualinvoke <com.nuspectra.viewer.NuApplet: void println(java.lang.String)>"->"goto inc.i i3 1";
+    "inc.i i3 1"
+    "goto inc.i i3 1"->"inc.i i3 1";
+    "inc.i i3 1"->"goto load.r r0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "push \"All \""
+    "dup1.r"->"push \"All \"";
+    "push \"All \""->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"load.i i3";
+    "load.i i3"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "push \" attempts to connect to the server have failed...\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"push \" attempts to connect to the server have failed...\"";
+    "push \" attempts to connect to the server have failed...\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <com.nuspectra.viewer.NuApplet: void println(java.lang.String)>";
+    "virtualinvoke <com.nuspectra.viewer.NuApplet: void println(java.lang.String)>"->"load.r $r4";
+    "athrow"
+    "load.r $r4"->"athrow";
+    "ifcmpne.i load.i i3"->"load.i i3";
+    "push 10"
+    "load.i i3"->"push 10";
+    "ifcmple.i load.r r0"
+    "push 10"->"ifcmple.i load.r r0";
+    "new java.lang.Exception"
+    "ifcmple.i load.r r0"->"new java.lang.Exception";
+    "new java.lang.Exception"->"dup1.r";
+    "push \"User/Password required. Please reload.\""
+    "dup1.r"->"push \"User/Password required. Please reload.\"";
+    "specialinvoke <java.lang.Exception: void <init>(java.lang.String)>"
+    "push \"User/Password required. Please reload.\""->"specialinvoke <java.lang.Exception: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Exception: void <init>(java.lang.String)>"->"athrow";
+    "ifcmple.i load.r r0"->"load.r r0";
+    "fieldget <com.nuspectra.viewer.NuSiteProxyViewer: com.nuspectra.viewer.PassFrame passFrame>"
+    "load.r r0"->"fieldget <com.nuspectra.viewer.NuSiteProxyViewer: com.nuspectra.viewer.PassFrame passFrame>";
+    "ifnonnull push 250L"
+    "fieldget <com.nuspectra.viewer.NuSiteProxyViewer: com.nuspectra.viewer.PassFrame passFrame>"->"ifnonnull push 250L";
+    "ifnonnull push 250L"->"load.r r0";
+    "fieldget <com.nuspectra.viewer.NuApplet: java.lang.String fAuth>"
+    "load.r r0"->"fieldget <com.nuspectra.viewer.NuApplet: java.lang.String fAuth>";
+    "ifnonnull inc.i i3 1"
+    "fieldget <com.nuspectra.viewer.NuApplet: java.lang.String fAuth>"->"ifnonnull inc.i i3 1";
+    "ifnonnull inc.i i3 1"->"new java.lang.Exception";
+    "new java.lang.Exception"->"dup1.r";
+    "push \"User/Password required.\""
+    "dup1.r"->"push \"User/Password required.\"";
+    "push \"User/Password required.\""->"specialinvoke <java.lang.Exception: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Exception: void <init>(java.lang.String)>"->"athrow";
+    "push 250L"
+    "ifnonnull push 250L"->"push 250L";
+    "staticinvoke <java.lang.Thread: void sleep(long)>"
+    "push 250L"->"staticinvoke <java.lang.Thread: void sleep(long)>";
+}

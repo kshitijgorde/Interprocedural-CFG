@@ -1,0 +1,165 @@
+digraph "" {
+    "r0 := @this: ptobject"
+    "load.r r0"
+    "r0 := @this: ptobject"->"load.r r0";
+    "push \"PTViewer\""
+    "load.r r0"->"push \"PTViewer\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"PTViewer\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r6"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "load.r r6"
+    "store.r r6"->"load.r r6";
+    "ifnull load.r r0"
+    "load.r r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r6";
+    "fieldput <ptobject: java.lang.String PTViewer>"
+    "load.r r6"->"fieldput <ptobject: java.lang.String PTViewer>";
+    "fieldput <ptobject: java.lang.String PTViewer>"->"load.r r0";
+    "push \"file\""
+    "load.r r0"->"push \"file\"";
+    "push \"file\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "store.r r6"->"load.r r6";
+    "load.r r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r6";
+    "fieldput <ptobject: java.lang.String filename>"
+    "load.r r6"->"fieldput <ptobject: java.lang.String filename>";
+    "fieldput <ptobject: java.lang.String filename>"->"load.r r0";
+    "push \"mask\""
+    "load.r r0"->"push \"mask\"";
+    "push \"mask\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "store.r r6"->"load.r r6";
+    "load.r r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r6";
+    "fieldput <ptobject: java.lang.String maskname>"
+    "load.r r6"->"fieldput <ptobject: java.lang.String maskname>";
+    "fieldput <ptobject: java.lang.String maskname>"->"load.r r0";
+    "push \"nhor\""
+    "load.r r0"->"push \"nhor\"";
+    "push \"nhor\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "store.r r6"->"load.r r6";
+    "load.r r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r6";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"
+    "load.r r6"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <ptobject: int nhor>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <ptobject: int nhor>";
+    "fieldput <ptobject: int nhor>"->"load.r r0";
+    "push \"nver\""
+    "load.r r0"->"push \"nver\"";
+    "push \"nver\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "store.r r6"->"load.r r6";
+    "load.r r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r6";
+    "load.r r6"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <ptobject: int nver>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <ptobject: int nver>";
+    "fieldput <ptobject: int nver>"->"load.r r0";
+    "push \"vx\""
+    "load.r r0"->"push \"vx\"";
+    "push \"vx\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "store.r r6"->"load.r r6";
+    "load.r r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r6";
+    "load.r r6"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <ptobject: int vx>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <ptobject: int vx>";
+    "fieldput <ptobject: int vx>"->"load.r r0";
+    "push \"vy\""
+    "load.r r0"->"push \"vy\"";
+    "push \"vy\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "store.r r6"->"load.r r6";
+    "load.r r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r6";
+    "load.r r6"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <ptobject: int vy>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <ptobject: int vy>";
+    "fieldput <ptobject: int vy>"->"load.r r0";
+    "push \"showSHS\""
+    "load.r r0"->"push \"showSHS\"";
+    "push \"showSHS\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "store.r r6"->"load.r r6";
+    "load.r r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r6";
+    "load.r r6"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <ptobject: int showSHS>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <ptobject: int showSHS>";
+    "fieldput <ptobject: int showSHS>"->"load.r r0";
+    "fieldget <ptobject: java.awt.Image[] frame>"
+    "load.r r0"->"fieldget <ptobject: java.awt.Image[] frame>";
+    "ifnonnull return"
+    "fieldget <ptobject: java.awt.Image[] frame>"->"ifnonnull return";
+    "ifnonnull return"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <ptobject: int nhor>"
+    "load.r r0"->"fieldget <ptobject: int nhor>";
+    "fieldget <ptobject: int nhor>"->"load.r r0";
+    "fieldget <ptobject: int nver>"
+    "load.r r0"->"fieldget <ptobject: int nver>";
+    "mul.i"
+    "fieldget <ptobject: int nver>"->"mul.i";
+    "newarray"
+    "mul.i"->"newarray";
+    "fieldput <ptobject: java.awt.Image[] frame>"
+    "newarray"->"fieldput <ptobject: java.awt.Image[] frame>";
+    "fieldput <ptobject: java.awt.Image[] frame>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <ptobject: int nhor>";
+    "fieldget <ptobject: int nhor>"->"load.r r0";
+    "load.r r0"->"fieldget <ptobject: int nver>";
+    "fieldget <ptobject: int nver>"->"mul.i";
+    "newmultiarray 1"
+    "mul.i"->"newmultiarray 1";
+    "fieldput <ptobject: int[][] idata>"
+    "newmultiarray 1"->"fieldput <ptobject: int[][] idata>";
+    "fieldput <ptobject: int[][] idata>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <ptobject: int nhor>";
+    "fieldget <ptobject: int nhor>"->"load.r r0";
+    "load.r r0"->"fieldget <ptobject: int nver>";
+    "fieldget <ptobject: int nver>"->"mul.i";
+    "mul.i"->"newarray";
+    "fieldput <ptobject: java.awt.image.MemoryImageSource[] source>"
+    "newarray"->"fieldput <ptobject: java.awt.image.MemoryImageSource[] source>";
+    "push 0"
+    "fieldput <ptobject: java.awt.image.MemoryImageSource[] source>"->"push 0";
+    "store.i r6"
+    "push 0"->"store.i r6";
+    "goto load.i r6"
+    "store.i r6"->"goto load.i r6";
+    "load.i r6"
+    "goto load.i r6"->"load.i r6";
+    "load.i r6"->"load.r r0";
+    "load.r r0"->"fieldget <ptobject: int nhor>";
+    "fieldget <ptobject: int nhor>"->"load.r r0";
+    "load.r r0"->"fieldget <ptobject: int nver>";
+    "fieldget <ptobject: int nver>"->"mul.i";
+    "ifcmplt.i load.r r0"
+    "mul.i"->"ifcmplt.i load.r r0";
+    "return"
+    "ifcmplt.i load.r r0"->"return";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <ptobject: java.awt.Image[] frame>";
+    "fieldget <ptobject: java.awt.Image[] frame>"->"load.i r6";
+    "push null"
+    "load.i r6"->"push null";
+    "arraywrite.r"
+    "push null"->"arraywrite.r";
+    "inc.i r6 1"
+    "arraywrite.r"->"inc.i r6 1";
+}

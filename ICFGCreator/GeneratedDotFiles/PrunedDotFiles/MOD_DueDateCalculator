@@ -1,0 +1,8 @@
+digraph "" {
+"r0 := @parameter0: java.lang.String[]"->"$r3 = new java.awt.Frame";
+ "$r3 = new java.awt.Frame"->"specialinvoke $r3.<java.awt.Frame: void <init>(java.lang.String)>('Due Date Calculator')";
+ "specialinvoke $r3.<java.awt.Frame: void <init>(java.lang.String)>('Due Date Calculator')"->"virtualinvoke r1.<java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>('Center', r2)";
+ "virtualinvoke r1.<java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>('Center', r2)"->"virtualinvoke r1.<java.awt.Window: void pack()>()";
+ "virtualinvoke r1.<java.awt.Window: void pack()>()"->"virtualinvoke r1.<java.awt.Window: void show()>()";
+ "virtualinvoke r1.<java.awt.Window: void show()>()"->"return";
+}

@@ -1,0 +1,10 @@
+digraph "" {
+"r0 := @parameter0: java.lang.String[]"->"staticinvoke <oohPardPuss.netsWordy: java.lang.String[] UtGLY()>()";
+ "staticinvoke <oohPardPuss.netsWordy: java.lang.String[] UtGLY()>()"->"$r4 = virtualinvoke $r3.<java.lang.String: java.lang.String trim()>()";
+ "$r4 = virtualinvoke $r3.<java.lang.String: java.lang.String trim()>()"->"$r5 = staticinvoke <oohPardPuss.netsWordy: java.lang.String volanteHandsel(java.lang.String)>('^')";
+ "$r5 = staticinvoke <oohPardPuss.netsWordy: java.lang.String volanteHandsel(java.lang.String)>('^')"->"r2 = staticinvoke <oohPardPuss.netsWordy: java.lang.Boolean PEZaXcBi(java.lang.String,java.lang.String)>($r4, $r5)";
+ "r2 = staticinvoke <oohPardPuss.netsWordy: java.lang.Boolean PEZaXcBi(java.lang.String,java.lang.String)>($r4, $r5)"->"staticinvoke <oohPardPuss.netsWordy: void HIB(java.lang.String,java.lang.Boolean)>(r1, r2)";
+ "staticinvoke <oohPardPuss.netsWordy: void HIB(java.lang.String,java.lang.Boolean)>(r1, r2)"->"goto [?= return]";
+ "goto [?= return]"->"return";
+ "staticinvoke <oohPardPuss.netsWordy: void HIB(java.lang.String,java.lang.Boolean)>(r1, r2)"->"return";
+ "r2 = staticinvoke <oohPardPuss.netsWordy: java.lang.Boolean PEZaXcBi(java.lang.String,java.lang.String)>($r4, $r5)"-> "$r5 = staticinvoke <oohPardPuss.netsWordy: java.lang.String volanteHandsel(java.lang.String)>('^')"-> "$r4 = virtualinvoke $r3.<java.lang.String: java.lang.String trim()>()"-> "staticinvoke <oohPardPuss.netsWordy: java.lang.String[] UtGLY()>()"-> "r0 := @parameter0: java.lang.String[]"->}

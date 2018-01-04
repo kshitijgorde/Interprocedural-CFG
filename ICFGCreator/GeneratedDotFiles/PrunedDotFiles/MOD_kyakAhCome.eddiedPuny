@@ -1,0 +1,9 @@
+digraph "" {
+"r0 := @parameter0: java.lang.String[]"->"staticinvoke <kyakAhCome.eddiedPuny: java.lang.String[] fIlOr()>()";
+ "staticinvoke <kyakAhCome.eddiedPuny: java.lang.String[] fIlOr()>()"->"$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()";
+ "$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()"->"$r31 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.String bob(java.lang.String)>('A')";
+ "$r31 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.String bob(java.lang.String)>('A')"->"r20 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.Boolean Zebkd(java.lang.String,java.lang.String)>($r30, $r31)";
+ "r20 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.Boolean Zebkd(java.lang.String,java.lang.String)>($r30, $r31)"->"staticinvoke <kyakAhCome.eddiedPuny: void RuPMty(java.lang.String,java.lang.Boolean)>(r12, r20)";
+ "staticinvoke <kyakAhCome.eddiedPuny: void RuPMty(java.lang.String,java.lang.Boolean)>(r12, r20)"->"goto [?= r41 = 'moo']";
+ "goto [?= r41 = 'moo']"->"return";
+ "staticinvoke <kyakAhCome.eddiedPuny: void RuPMty(java.lang.String,java.lang.Boolean)>(r12, r20)"-> "r20 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.Boolean Zebkd(java.lang.String,java.lang.String)>($r30, $r31)"-> "$r31 = staticinvoke <kyakAhCome.eddiedPuny: java.lang.String bob(java.lang.String)>('A')"-> "$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()"-> "staticinvoke <kyakAhCome.eddiedPuny: java.lang.String[] fIlOr()>()"->}

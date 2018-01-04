@@ -1,0 +1,27 @@
+digraph "" {
+"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <BlockGame: java.awt.Font font1>";
+ "fieldput <BlockGame: java.awt.Font font1>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <BlockGame: java.awt.Font font2>";
+ "fieldput <BlockGame: java.awt.Font font2>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <BlockGame: java.awt.Font font3>";
+ "fieldput <BlockGame: java.awt.Font font3>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <BlockGame: java.awt.Color bgcolor>";
+ "fieldput <BlockGame: java.awt.Color bgcolor>"->"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <BlockGame: java.util.Random rand>";
+ "fieldput <BlockGame: java.util.Random rand>"->"fieldput <BlockGame: java.lang.String game_end_score>";
+ "fieldput <BlockGame: java.lang.String game_end_score>"->"fieldput <BlockGame: java.lang.String game_end_timebonus>";
+ "fieldput <BlockGame: java.lang.String game_end_timebonus>"->"fieldput <BlockGame: java.lang.String game_end_total>";
+ "fieldput <BlockGame: java.lang.String game_end_total>"->"fieldput <BlockGame: java.lang.String game_end_msg>";
+ "fieldput <BlockGame: java.lang.String game_end_msg>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+ "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"return";
+ "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+ "virtualinvoke <java.lang.Throwable: void printStackTrace()>"->"return";
+}

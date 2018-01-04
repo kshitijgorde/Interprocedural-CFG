@@ -4,7 +4,7 @@
 
 ## Tasks
 - [x] Produce ICFG for malwares with Main
-- [ ] Produce ICFG for malwares without Main 
+- [x] Produce ICFG for malwares without Main 
 - [x] Prune the DOT Files to get System calls
 - [ ] Create Adjacency Matrix
 - [ ] Choose an object recognition model for training 

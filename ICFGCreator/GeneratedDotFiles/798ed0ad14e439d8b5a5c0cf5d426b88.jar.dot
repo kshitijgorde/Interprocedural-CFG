@@ -1,0 +1,15 @@
+digraph "" {
+    "r0 := @this: WirisApplet"
+    "staticget <java.lang.System: java.io.PrintStream err>"
+    "r0 := @this: WirisApplet"->"staticget <java.lang.System: java.io.PrintStream err>";
+    "push \"WirisApplet local\""
+    "staticget <java.lang.System: java.io.PrintStream err>"->"push \"WirisApplet local\"";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"
+    "push \"WirisApplet local\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "load.r r0"
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r r0";
+    "specialinvoke <CommonOmegaApplet: void init()>"
+    "load.r r0"->"specialinvoke <CommonOmegaApplet: void init()>";
+    "return"
+    "specialinvoke <CommonOmegaApplet: void init()>"->"return";
+}

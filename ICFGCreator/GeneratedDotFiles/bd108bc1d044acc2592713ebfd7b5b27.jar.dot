@@ -1,0 +1,192 @@
+digraph "" {
+    "r0 := @this: S1S.Wb6"
+    "load.r r0"
+    "r0 := @this: S1S.Wb6"->"load.r r0";
+    "specialinvoke <java.applet.Applet: void init()>"
+    "load.r r0"->"specialinvoke <java.applet.Applet: void init()>";
+    "specialinvoke <java.applet.Applet: void init()>"->"load.r r0";
+    "push \"Wb6\""
+    "load.r r0"->"push \"Wb6\"";
+    "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"
+    "push \"Wb6\""->"virtualinvoke <java.awt.Component: void setName(java.lang.String)>";
+    "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"->"load.r r0";
+    "push null"
+    "load.r r0"->"push null";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "push null"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "staticget <java.awt.Color: java.awt.Color lightGray>"
+    "load.r r0"->"staticget <java.awt.Color: java.awt.Color lightGray>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color lightGray>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "push 672"
+    "load.r r0"->"push 672";
+    "push 409"
+    "push 672"->"push 409";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"
+    "push 409"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw1()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw1()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw1()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw1()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw1()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WBTotals getTotals()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WBTotals getTotals()>";
+    "specialinvoke <S1S.Wb6: S1S.WBTotals getTotals()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WBTotals getTotals()>";
+    "specialinvoke <S1S.Wb6: S1S.WBTotals getTotals()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel1()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel1()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel1()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel1()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getFuel1()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel1()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel1()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel1()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel1()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel1()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw11()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw11()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw11()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw11()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getw11()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getPilot()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getPilot()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getPilot()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getPilot()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getPilot()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBaggage()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBaggage()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBaggage()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBaggage()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBaggage()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getTailPost()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getTailPost()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getTailPost()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getTailPost()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getTailPost()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel21()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel21()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel21()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel21()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel21()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel221()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel221()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel221()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel221()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel221()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel2211()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel2211()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel2211()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel2211()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel2211()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel22111()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel22111()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel22111()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel22111()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel22111()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel2212()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel2212()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel2212()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel2212()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel2212()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel211()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel211()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel211()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel211()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel211()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBattery()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBattery()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBattery()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBattery()>";
+    "specialinvoke <S1S.Wb6: S1S.WtEntrySpin getBattery()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel11()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel11()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel11()>"->"load.r r0";
+    "load.r r0"->"specialinvoke <S1S.Wb6: java.awt.Label getLabel11()>";
+    "specialinvoke <S1S.Wb6: java.awt.Label getLabel11()>"->"virtualinvoke <java.awt.Component: java.lang.String getName()>";
+    "virtualinvoke <java.awt.Component: java.lang.String getName()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "specialinvoke <S1S.Wb6: void initConnections()>"
+    "load.r r0"->"specialinvoke <S1S.Wb6: void initConnections()>";
+    "goto return"
+    "specialinvoke <S1S.Wb6: void initConnections()>"->"goto return";
+    "return"
+    "goto return"->"return";
+    "store.r $r54"
+    "specialinvoke <S1S.Wb6: void initConnections()>"->"store.r $r54";
+    "store.r $r54"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+    "push \"N22XP_SideView16.gif\""
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"push \"N22XP_SideView16.gif\"";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"
+    "push \"N22XP_SideView16.gif\""->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "fieldput <S1S.Wb6: java.awt.Image image1>"
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <S1S.Wb6: java.awt.Image image1>";
+    "fieldput <S1S.Wb6: java.awt.Image image1>"->"load.r r0";
+    "load.r $r54"
+    "load.r r0"->"load.r $r54";
+    "specialinvoke <S1S.Wb6: void handleException(java.lang.Throwable)>"
+    "load.r $r54"->"specialinvoke <S1S.Wb6: void handleException(java.lang.Throwable)>";
+}

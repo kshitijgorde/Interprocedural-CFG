@@ -1,0 +1,14 @@
+digraph "" {
+    "r0 := @this: lotus.notes.util.UtilApplet"
+    "load.r r0"
+    "r0 := @this: lotus.notes.util.UtilApplet"->"load.r r0";
+    "virtualinvoke <lotus.notes.util.UtilApplet: boolean readParams()>"
+    "load.r r0"->"virtualinvoke <lotus.notes.util.UtilApplet: boolean readParams()>";
+    "ifeq return"
+    "virtualinvoke <lotus.notes.util.UtilApplet: boolean readParams()>"->"ifeq return";
+    "ifeq return"->"load.r r0";
+    "virtualinvoke <lotus.notes.util.UtilApplet: void handleParams()>"
+    "load.r r0"->"virtualinvoke <lotus.notes.util.UtilApplet: void handleParams()>";
+    "return"
+    "virtualinvoke <lotus.notes.util.UtilApplet: void handleParams()>"->"return";
+}

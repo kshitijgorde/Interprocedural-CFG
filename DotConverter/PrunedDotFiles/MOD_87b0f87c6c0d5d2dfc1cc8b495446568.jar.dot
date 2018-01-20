@@ -1,0 +1,17 @@
+digraph "" {
+"virtualinvoke <netcharts.chart.JChart: java.applet.Applet getApplet()>";
+ "virtualinvoke <netcharts.chart.JChart: java.applet.Applet getApplet()>"->"specialinvoke <netcharts.util.NFContext: void <init>(java.applet.Applet)>";
+ "specialinvoke <netcharts.util.NFContext: void <init>(java.applet.Applet)>"->"return";
+"fieldget <netcharts.chart.JChart: java.applet.Applet app>";
+ "fieldget <netcharts.chart.JChart: java.applet.Applet app>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"fieldget <netcharts.chart.JChart: java.applet.Applet app>";
+ "fieldget <netcharts.chart.JChart: java.applet.Applet app>"->"staticinvoke <netcharts.util.NFFile: void setFileBase(java.applet.Applet)>";
+ "staticinvoke <netcharts.util.NFFile: void setFileBase(java.applet.Applet)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldget <netcharts.chart.JChart: java.applet.Applet app>";
+ "fieldget <netcharts.chart.JChart: java.applet.Applet app>"->"virtualinvoke <netcharts.graphics.JGraph: void loadParams(java.applet.Applet)>";
+ "virtualinvoke <netcharts.graphics.JGraph: void loadParams(java.applet.Applet)>"->"virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>";
+ "virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"staticinvoke <netcharts.util.NFParam: void printError(java.lang.Exception)>";
+ "staticinvoke <netcharts.util.NFFile: void setFileBase(java.applet.Applet)>"->}

@@ -1,0 +1,6 @@
+digraph "" {
+"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

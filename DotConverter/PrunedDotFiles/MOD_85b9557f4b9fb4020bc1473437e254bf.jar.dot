@@ -1,0 +1,27 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <quickserv: java.awt.Image bbImage>";
+ "fieldput <quickserv: java.awt.Image bbImage>"->"fieldget <quickserv: java.awt.Image bbImage>";
+ "fieldget <quickserv: java.awt.Image bbImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <quickserv: java.awt.Graphics bbGraphics>";
+ "fieldput <quickserv: java.awt.Graphics bbGraphics>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <quickserv: java.awt.Font fFont>";
+ "fieldput <quickserv: java.awt.Font fFont>"->"fieldget <quickserv: java.awt.Graphics bbGraphics>";
+ "fieldget <quickserv: java.awt.Graphics bbGraphics>"->"fieldget <quickserv: java.awt.Font fFont>";
+ "fieldget <quickserv: java.awt.Font fFont>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"fieldget <quickserv: java.awt.Graphics bbGraphics>";
+ "fieldget <quickserv: java.awt.Graphics bbGraphics>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <quickserv: java.awt.FontMetrics fMetrics>";
+ "fieldput <quickserv: java.awt.FontMetrics fMetrics>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <quickserv: java.lang.String sRedirect>";
+ "fieldput <quickserv: java.lang.String sRedirect>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"return";
+"virtualinvoke <quickserv: void parseSpecifiedFile(java.lang.String)>";
+ "virtualinvoke <quickserv: void parseSpecifiedFile(java.lang.String)>"->"return";
+}

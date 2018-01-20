@@ -1,0 +1,13 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"fieldget <TextShow: java.awt.Color[] useColor>";
+ "fieldget <TextShow: java.awt.Color[] useColor>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldget <TextShow: java.awt.Font[] fn>";
+ "fieldget <TextShow: java.awt.Font[] fn>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <TextShow: java.awt.FontMetrics fnM>";
+ "fieldput <TextShow: java.awt.FontMetrics fnM>"->"return";
+}

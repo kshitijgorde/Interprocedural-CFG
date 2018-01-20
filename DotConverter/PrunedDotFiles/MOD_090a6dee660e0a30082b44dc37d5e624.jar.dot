@@ -1,0 +1,6 @@
+digraph "" {
+"staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>";
+ "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"->"goto return";
+ "goto return"->"return";
+ "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"->"virtualinvoke <java.lang.Exception: void printStackTrace()>";
+}

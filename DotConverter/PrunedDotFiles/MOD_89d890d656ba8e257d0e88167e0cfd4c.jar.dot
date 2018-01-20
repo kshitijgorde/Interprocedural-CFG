@@ -1,0 +1,4 @@
+digraph "" {
+"virtualinvoke <Vec3Demo: void addComponentListener(java.awt.event.ComponentListener)>";
+ "virtualinvoke <Vec3Demo: void addComponentListener(java.awt.event.ComponentListener)>"->"return";
+}

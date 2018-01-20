@@ -1,0 +1,29 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransFormSquare: java.lang.String urlHost>";
+ "fieldput <FreeTransFormSquare: java.lang.String urlHost>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransFormSquare: java.lang.String urlPort>";
+ "fieldput <FreeTransFormSquare: java.lang.String urlPort>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransFormSquare: java.lang.String textHost>";
+ "fieldput <FreeTransFormSquare: java.lang.String textHost>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransFormSquare: java.lang.String textPort>";
+ "fieldput <FreeTransFormSquare: java.lang.String textPort>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransFormSquare: java.lang.String textTemplate>";
+ "fieldput <FreeTransFormSquare: java.lang.String textTemplate>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <FreeTransFormSquare: java.awt.Image topImage>";
+ "fieldput <FreeTransFormSquare: java.awt.Image topImage>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <FreeTransFormSquare: java.awt.Image bottomImage>";
+ "fieldput <FreeTransFormSquare: java.awt.Image bottomImage>"->"return";
+"fieldget <FreeTransFormSquare: java.lang.String textTemplate>";
+ "fieldget <FreeTransFormSquare: java.lang.String textTemplate>"->"fieldget <FreeTransFormSquare: java.lang.String textPort>";
+ "fieldget <FreeTransFormSquare: java.lang.String textPort>"->"fieldget <FreeTransFormSquare: java.lang.String textHost>";
+ "fieldget <FreeTransFormSquare: java.lang.String textHost>"->"fieldget <FreeTransFormSquare: java.lang.String urlPort>";
+ "fieldget <FreeTransFormSquare: java.lang.String urlPort>"->"fieldget <FreeTransFormSquare: java.lang.String urlHost>";
+ "fieldget <FreeTransFormSquare: java.lang.String urlHost>"->}

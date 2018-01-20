@@ -1,0 +1,16 @@
+digraph "" {
+"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new com.guyhaas.Intro_to_Programming.TurtleGraphics";
+ "new com.guyhaas.Intro_to_Programming.TurtleGraphics"->"specialinvoke <com.guyhaas.Intro_to_Programming.TurtleGraphics: void <init>(int,int)>";
+ "specialinvoke <com.guyhaas.Intro_to_Programming.TurtleGraphics: void <init>(int,int)>"->"fieldput <MMapplet: com.guyhaas.Intro_to_Programming.TurtleGraphics tgObj>";
+ "fieldput <MMapplet: com.guyhaas.Intro_to_Programming.TurtleGraphics tgObj>"->"fieldget <MMapplet: com.guyhaas.Intro_to_Programming.TurtleGraphics tgObj>";
+ "fieldget <MMapplet: com.guyhaas.Intro_to_Programming.TurtleGraphics tgObj>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <MMapplet: com.guyhaas.Intro_to_Programming.TurtleGraphics tgObj>";
+ "fieldget <MMapplet: com.guyhaas.Intro_to_Programming.TurtleGraphics tgObj>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"fieldget <MMapplet: com.guyhaas.Intro_to_Programming.TurtleGraphics tgObj>";
+ "fieldget <MMapplet: com.guyhaas.Intro_to_Programming.TurtleGraphics tgObj>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"return";
+}

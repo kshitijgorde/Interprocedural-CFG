@@ -1,0 +1,32 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: void setName(java.lang.String)>";
+ "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <mapapplet.imageload.ImageLoader: void <init>(java.lang.Object)>";
+ "specialinvoke <mapapplet.imageload.ImageLoader: void <init>(java.lang.Object)>"->"virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>";
+ "virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>"->"new java.text.DecimalFormat";
+ "new java.text.DecimalFormat"->"specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>";
+ "specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>"->"fieldput <mapapplet.Main: java.text.DecimalFormat formatter>";
+ "fieldput <mapapplet.Main: java.text.DecimalFormat formatter>"->"staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>";
+ "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"->"fieldput <mapapplet.Main: netscape.javascript.JSObject win>";
+ "fieldput <mapapplet.Main: netscape.javascript.JSObject win>"->"goto load.r r0";
+ "goto load.r r0"->"new java.util.Hashtable";
+ "new java.util.Hashtable"->"specialinvoke <java.util.Hashtable: void <init>()>";
+ "specialinvoke <java.util.Hashtable: void <init>()>"->"fieldput <mapapplet.Main: java.util.Hashtable modules>";
+ "fieldput <mapapplet.Main: java.util.Hashtable modules>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>";
+ "staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>"->"virtualinvoke <java.awt.Toolkit: java.lang.String[] getFontList()>";
+ "virtualinvoke <java.awt.Toolkit: java.lang.String[] getFontList()>"->"virtualinvoke <java.lang.String: java.lang.String toLowerCase()>";
+ "virtualinvoke <java.lang.String: java.lang.String toLowerCase()>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"goto load.i i4";
+"goto load.b z0";
+"virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>";
+ "virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>"->"virtualinvoke <java.awt.Component: void setName(java.lang.String)>";
+ "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"->"return";
+ "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

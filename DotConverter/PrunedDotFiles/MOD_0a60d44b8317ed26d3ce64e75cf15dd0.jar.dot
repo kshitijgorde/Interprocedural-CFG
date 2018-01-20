@@ -1,0 +1,21 @@
+digraph "" {
+"new java.awt.Font";
+ "new java.awt.Font"->"virtualinvoke <WStSFeatures: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <WStSFeatures: java.awt.Graphics getGraphics()>"->"virtualinvoke <java.awt.Graphics: java.awt.Font getFont()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.Font getFont()>"->"virtualinvoke <java.awt.Font: java.lang.String getName()>";
+ "virtualinvoke <java.awt.Font: java.lang.String getName()>"->"virtualinvoke <WStSFeatures: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <WStSFeatures: java.awt.Graphics getGraphics()>"->"virtualinvoke <java.awt.Graphics: java.awt.Font getFont()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.Font getFont()>"->"virtualinvoke <java.awt.Font: int getStyle()>";
+ "virtualinvoke <java.awt.Font: int getStyle()>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <WStSFeatures: void setFont(java.awt.Font)>";
+ "virtualinvoke <WStSFeatures: void setFont(java.awt.Font)>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <WStSFeatures: void setBackground(java.awt.Color)>";
+ "virtualinvoke <WStSFeatures: void setBackground(java.awt.Color)>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <WStSFeatures: void setForeground(java.awt.Color)>";
+ "virtualinvoke <WStSFeatures: void setForeground(java.awt.Color)>"->"virtualinvoke <WStSFeatures: java.awt.Dimension size()>";
+ "virtualinvoke <WStSFeatures: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <WStSFeatures: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <WStSFeatures: java.awt.Graphics getGraphics()>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"virtualinvoke <java.awt.FontMetrics: int getHeight()>";
+ "virtualinvoke <java.awt.FontMetrics: int getHeight()>"->"return";
+}

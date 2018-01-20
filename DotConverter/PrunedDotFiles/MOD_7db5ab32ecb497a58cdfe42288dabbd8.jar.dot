@@ -1,0 +1,16 @@
+digraph "" {
+"new javax.swing.JButton";
+ "new javax.swing.JButton"->"staticinvoke <edu.hws.eck.umb.util.I18n: java.lang.String tr(java.lang.String,java.lang.Object[])>";
+ "staticinvoke <edu.hws.eck.umb.util.I18n: java.lang.String tr(java.lang.String,java.lang.Object[])>"->"specialinvoke <javax.swing.JButton: void <init>(java.lang.String)>";
+ "specialinvoke <javax.swing.JButton: void <init>(java.lang.String)>"->"fieldput <edu.hws.eck.umb.MandelbrotLauncher: javax.swing.JButton launchButton>";
+ "fieldput <edu.hws.eck.umb.MandelbrotLauncher: javax.swing.JButton launchButton>"->"fieldget <edu.hws.eck.umb.MandelbrotLauncher: javax.swing.JButton launchButton>";
+ "fieldget <edu.hws.eck.umb.MandelbrotLauncher: javax.swing.JButton launchButton>"->"virtualinvoke <javax.swing.JButton: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <javax.swing.JButton: void addActionListener(java.awt.event.ActionListener)>"->"virtualinvoke <edu.hws.eck.umb.MandelbrotLauncher: java.awt.Container getContentPane()>";
+ "virtualinvoke <edu.hws.eck.umb.MandelbrotLauncher: java.awt.Container getContentPane()>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <edu.hws.eck.umb.MandelbrotLauncher: java.awt.Container getContentPane()>";
+ "virtualinvoke <edu.hws.eck.umb.MandelbrotLauncher: java.awt.Container getContentPane()>"->"fieldget <edu.hws.eck.umb.MandelbrotLauncher: javax.swing.JButton launchButton>";
+ "fieldget <edu.hws.eck.umb.MandelbrotLauncher: javax.swing.JButton launchButton>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"return";
+}

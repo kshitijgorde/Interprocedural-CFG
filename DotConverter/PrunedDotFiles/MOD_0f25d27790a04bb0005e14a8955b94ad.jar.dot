@@ -1,0 +1,31 @@
+digraph "" {
+"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <Ballcyl3d: java.util.Random Z0130>";
+ "fieldput <Ballcyl3d: java.util.Random Z0130>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Ballcyl3d: java.awt.Color Z0010>";
+ "fieldput <Ballcyl3d: java.awt.Color Z0010>"->"virtualinvoke <Ballcyl3d: java.awt.Container getContentPane()>";
+ "virtualinvoke <Ballcyl3d: java.awt.Container getContentPane()>"->"new javax.media.j3d.Canvas3D";
+ "new javax.media.j3d.Canvas3D"->"staticinvoke <com.sun.j3d.utils.universe.SimpleUniverse: java.awt.GraphicsConfiguration getPreferredConfiguration()>";
+ "staticinvoke <com.sun.j3d.utils.universe.SimpleUniverse: java.awt.GraphicsConfiguration getPreferredConfiguration()>"->"specialinvoke <javax.media.j3d.Canvas3D: void <init>(java.awt.GraphicsConfiguration)>";
+ "specialinvoke <javax.media.j3d.Canvas3D: void <init>(java.awt.GraphicsConfiguration)>"->"fieldput <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>";
+ "fieldput <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>"->"fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>";
+ "fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>"->"virtualinvoke <javax.media.j3d.Canvas3D: void stopRenderer()>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void stopRenderer()>"->"fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>";
+ "fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new com.sun.j3d.utils.universe.SimpleUniverse";
+ "new com.sun.j3d.utils.universe.SimpleUniverse"->"fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>";
+ "fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>"->"specialinvoke <com.sun.j3d.utils.universe.SimpleUniverse: void <init>(javax.media.j3d.Canvas3D)>";
+ "specialinvoke <com.sun.j3d.utils.universe.SimpleUniverse: void <init>(javax.media.j3d.Canvas3D)>"->"fieldput <Ballcyl3d: com.sun.j3d.utils.universe.SimpleUniverse Z0171>";
+ "fieldput <Ballcyl3d: com.sun.j3d.utils.universe.SimpleUniverse Z0171>"->"fieldget <Ballcyl3d: com.sun.j3d.utils.universe.SimpleUniverse Z0171>";
+ "fieldget <Ballcyl3d: com.sun.j3d.utils.universe.SimpleUniverse Z0171>"->"virtualinvoke <com.sun.j3d.utils.universe.SimpleUniverse: com.sun.j3d.utils.universe.ViewingPlatform getViewingPlatform()>";
+ "virtualinvoke <com.sun.j3d.utils.universe.SimpleUniverse: com.sun.j3d.utils.universe.ViewingPlatform getViewingPlatform()>"->"virtualinvoke <com.sun.j3d.utils.universe.ViewingPlatform: void setNominalViewingTransform()>";
+ "virtualinvoke <com.sun.j3d.utils.universe.ViewingPlatform: void setNominalViewingTransform()>"->"fieldput <Ballcyl3d: javax.media.j3d.GraphicsContext3D Z0067>";
+ "fieldput <Ballcyl3d: javax.media.j3d.GraphicsContext3D Z0067>"->"fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>";
+ "fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>"->"virtualinvoke <javax.media.j3d.Canvas3D: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void addMouseListener(java.awt.event.MouseListener)>"->"fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>";
+ "fieldget <Ballcyl3d: javax.media.j3d.Canvas3D Z0022>"->"virtualinvoke <javax.media.j3d.Canvas3D: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"fieldput <Ballcyl3d: java.lang.Thread Z0007>";
+ "fieldput <Ballcyl3d: java.lang.Thread Z0007>"->"return";
+}

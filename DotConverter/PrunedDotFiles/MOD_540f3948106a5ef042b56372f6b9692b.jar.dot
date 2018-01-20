@@ -1,0 +1,7 @@
+digraph "" {
+"goto load.r r0";
+ "goto load.r r0"->"fieldget <primes.PrimeNumbersApplet1: java.awt.TextArea textArea1>";
+ "fieldget <primes.PrimeNumbersApplet1: java.awt.TextArea textArea1>"->"virtualinvoke <java.awt.TextComponent: void setText(java.lang.String)>";
+ "virtualinvoke <java.awt.TextComponent: void setText(java.lang.String)>"->"return";
+"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

@@ -1,0 +1,38 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Firework: java.lang.String RocketSoundtrack>";
+ "fieldput <Firework: java.lang.String RocketSoundtrack>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"goto load.i r21";
+ "goto load.i r21"->"return";
+"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->}

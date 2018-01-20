@@ -1,0 +1,21 @@
+digraph "" {
+"specialinvoke <a.a.a.p: void <init>(java.applet.Applet)>";
+ "specialinvoke <a.a.a.p: void <init>(java.applet.Applet)>"->"staticinvoke <java.security.Security: void setProperty(java.lang.String,java.lang.String)>";
+ "staticinvoke <java.security.Security: void setProperty(java.lang.String,java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"specialinvoke <a.a.a.n: void <init>(java.applet.Applet)>";
+ "specialinvoke <a.a.a.n: void <init>(java.applet.Applet)>"->"specialinvoke <a.a.a.q: void <init>(java.applet.Applet)>";
+ "specialinvoke <a.a.a.q: void <init>(java.applet.Applet)>"->"return";
+"virtualinvoke <a.a.a.q: java.lang.String a()>";
+ "virtualinvoke <a.a.a.q: java.lang.String a()>"->"staticinvoke <a.a.a.o: void a(java.lang.String)>";
+ "staticinvoke <a.a.a.o: void a(java.lang.String)>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"staticinvoke <a.a.a.f: void b(java.lang.Object)>";
+ "staticinvoke <a.a.a.f: void b(java.lang.Object)>"->"specialinvoke <a.a.a.t: void <init>(java.lang.String)>";
+ "specialinvoke <a.a.a.t: void <init>(java.lang.String)>"->"staticinvoke <a.a.a.f: void b(java.lang.Object)>";
+ "staticinvoke <a.a.a.f: void b(java.lang.Object)>"->"specialinvoke <a.a.a.l: void <init>(java.lang.Runnable)>";
+ "specialinvoke <a.a.a.l: void <init>(java.lang.Runnable)>"->"return";
+ "staticinvoke <java.security.Security: void setProperty(java.lang.String,java.lang.String)>"->"return";
+}

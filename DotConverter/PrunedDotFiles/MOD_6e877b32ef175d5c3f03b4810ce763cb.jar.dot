@@ -1,0 +1,23 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <StarField: java.awt.Dimension d>";
+ "fieldput <StarField: java.awt.Dimension d>"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldget <StarField: java.awt.Font font>";
+ "fieldget <StarField: java.awt.Font font>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <StarField: java.awt.FontMetrics fm>";
+ "fieldput <StarField: java.awt.FontMetrics fm>"->"goto load.i i11";
+ "goto load.i i11"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <StarField: java.lang.String s>";
+ "fieldput <StarField: java.lang.String s>"->"return";
+"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"fieldget <StarField: java.awt.Dimension d>";
+ "fieldget <StarField: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <StarField: java.awt.Dimension d>";
+ "fieldget <StarField: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"fieldget <StarField: java.awt.Dimension d>";
+ "fieldget <StarField: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"fieldget <StarField: java.awt.Dimension d>";
+ "fieldget <StarField: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->}

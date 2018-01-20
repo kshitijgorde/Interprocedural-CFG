@@ -1,0 +1,7 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Component: void setVisible(boolean)>";
+ "virtualinvoke <java.awt.Component: void setVisible(boolean)>"->"fieldget <anagramsolver: java.awt.Font thefont>";
+ "fieldget <anagramsolver: java.awt.Font thefont>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"return";
+}

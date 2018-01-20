@@ -1,0 +1,13 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <y.cnt.0: java.lang.String d>";
+ "fieldput <y.cnt.0: java.lang.String d>"->"fieldget <y.cnt.0: java.lang.String d>";
+ "fieldget <y.cnt.0: java.lang.String d>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String getHost()>";
+ "virtualinvoke <java.net.URL: java.lang.String getHost()>"->"fieldput <y.cnt.0: java.lang.String d>";
+ "fieldput <y.cnt.0: java.lang.String d>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <y.cnt.0: java.lang.String b>";
+ "fieldput <y.cnt.0: java.lang.String b>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <y.cnt.0: java.lang.String c>";
+ "fieldput <y.cnt.0: java.lang.String c>"->"return";
+}

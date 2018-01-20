@@ -1,0 +1,26 @@
+digraph "" {
+"virtualinvoke <_zo: void p(java.lang.String)>";
+ "virtualinvoke <_zo: void p(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <_zf: java.lang.String p>";
+ "fieldput <_zf: java.lang.String p>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <_zf: void p(java.net.URL)>";
+ "virtualinvoke <_zf: void p(java.net.URL)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <v: int p(java.lang.String,PixScreen)>";
+ "virtualinvoke <v: int p(java.lang.String,PixScreen)>"->"fieldget <v: java.awt.Image p>";
+ "fieldget <v: java.awt.Image p>"->"fieldput <PixScreen: java.awt.Image ny>";
+ "fieldput <PixScreen: java.awt.Image ny>"->"fieldget <v: java.awt.Image d>";
+ "fieldget <v: java.awt.Image d>"->"fieldput <PixScreen: java.awt.Image vi>";
+ "fieldput <PixScreen: java.awt.Image vi>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: int compareTo(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"->"new java.util.Hashtable";
+ "new java.util.Hashtable"->"specialinvoke <java.util.Hashtable: void <init>()>";
+ "specialinvoke <java.util.Hashtable: void <init>()>"->"fieldput <PixScreen: java.util.Hashtable at>";
+ "fieldput <PixScreen: java.util.Hashtable at>"->"return";
+}

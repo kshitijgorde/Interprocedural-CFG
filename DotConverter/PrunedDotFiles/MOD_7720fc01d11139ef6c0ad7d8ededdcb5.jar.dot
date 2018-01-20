@@ -1,0 +1,5 @@
+digraph "" {
+"r0 := @this: javaTest"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+ "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"staticinvoke <javaTest: void reset()>";
+ "staticinvoke <javaTest: void reset()>"->"return";
+}

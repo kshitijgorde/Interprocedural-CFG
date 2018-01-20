@@ -1,0 +1,11 @@
+digraph "" {
+"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Penrose: java.awt.Color Z0002>";
+ "fieldput <Penrose: java.awt.Color Z0002>"->"virtualinvoke <Penrose: java.awt.Container getContentPane()>";
+ "virtualinvoke <Penrose: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <Penrose$DrawingArea: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <Penrose$DrawingArea: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <Penrose$DrawingArea: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <Penrose$DrawingArea: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"fieldput <Penrose: java.lang.Thread Z0001>";
+ "fieldput <Penrose: java.lang.Thread Z0001>"->"return";
+}

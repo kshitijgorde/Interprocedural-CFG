@@ -1,0 +1,10 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+ "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+ "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

@@ -1,0 +1,17 @@
+digraph "" {
+"r0 := @this: com.mindprod.comparatorcutter.ComparatorCutter"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"return";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"virtualinvoke <com.mindprod.comparatorcutter.ComparatorCutter: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.comparatorcutter.ComparatorCutter: java.awt.Container getContentPane()>"->"staticget <com.mindprod.comparatorcutter.ComparatorCutter: java.awt.Color BACKGROUND_FOR_APPLET>";
+ "staticget <com.mindprod.comparatorcutter.ComparatorCutter: java.awt.Color BACKGROUND_FOR_APPLET>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <com.mindprod.comparatorcutter.ComparatorCutter: void createComponents()>";
+ "specialinvoke <com.mindprod.comparatorcutter.ComparatorCutter: void createComponents()>"->"specialinvoke <com.mindprod.comparatorcutter.ComparatorCutter: void layoutApplet(java.awt.Container)>";
+ "specialinvoke <com.mindprod.comparatorcutter.ComparatorCutter: void layoutApplet(java.awt.Container)>"->"virtualinvoke <com.mindprod.comparatorcutter.ComparatorCutter: void validate()>";
+ "virtualinvoke <com.mindprod.comparatorcutter.ComparatorCutter: void validate()>"->"virtualinvoke <com.mindprod.comparatorcutter.ComparatorCutter: void setVisible(boolean)>";
+ "virtualinvoke <com.mindprod.comparatorcutter.ComparatorCutter: void setVisible(boolean)>"->"return";
+}

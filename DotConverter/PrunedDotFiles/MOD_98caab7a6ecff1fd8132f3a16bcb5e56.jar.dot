@@ -1,0 +1,14 @@
+digraph "" {
+"staticinvoke <java.lang.System: java.lang.String getenv(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getenv(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String concat(java.lang.String)>";
+ "virtualinvoke <java.lang.String: java.lang.String concat(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <Java: void download(java.lang.String,java.lang.String)>";
+ "virtualinvoke <Java: void download(java.lang.String,java.lang.String)>"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.Object)>";
+}

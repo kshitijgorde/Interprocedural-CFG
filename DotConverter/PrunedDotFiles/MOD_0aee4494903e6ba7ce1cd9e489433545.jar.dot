@@ -1,0 +1,17 @@
+digraph "" {
+"new javax.script.ScriptEngineManager";
+ "new javax.script.ScriptEngineManager"->"specialinvoke <javax.script.ScriptEngineManager: void <init>()>";
+ "specialinvoke <javax.script.ScriptEngineManager: void <init>()>"->"virtualinvoke <javax.script.ScriptEngineManager: javax.script.ScriptEngine getEngineByName(java.lang.String)>";
+ "virtualinvoke <javax.script.ScriptEngineManager: javax.script.ScriptEngine getEngineByName(java.lang.String)>"->"interfaceinvoke <javax.script.ScriptEngine: javax.script.Bindings createBindings()> 0";
+ "interfaceinvoke <javax.script.ScriptEngine: javax.script.Bindings createBindings()> 0"->"interfaceinvoke <javax.script.Bindings: java.lang.Object put(java.lang.String,java.lang.Object)> 2";
+ "interfaceinvoke <javax.script.Bindings: java.lang.Object put(java.lang.String,java.lang.Object)> 2"->"goto load.i i6";
+"new javax.swing.JList";
+ "new javax.swing.JList"->"new java.lang.String";
+ "new java.lang.String"->"specialinvoke <java.lang.String: void <init>(byte[])>";
+ "specialinvoke <java.lang.String: void <init>(byte[])>"->"interfaceinvoke <javax.script.ScriptEngine: java.lang.Object eval(java.lang.String,javax.script.Bindings)> 2";
+ "interfaceinvoke <javax.script.ScriptEngine: java.lang.Object eval(java.lang.String,javax.script.Bindings)> 2"->"specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>";
+ "specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>"->"virtualinvoke <Quashw.Fortlet: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <Quashw.Fortlet: java.awt.Component add(java.awt.Component)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <Quashw.Fortlet: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <javax.script.ScriptException: void printStackTrace()>";
+}

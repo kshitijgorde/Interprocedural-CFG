@@ -1,0 +1,18 @@
+digraph "" {
+"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <treasureHunt: java.awt.BorderLayout theLayout>";
+ "fieldget <treasureHunt: java.awt.BorderLayout theLayout>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"fieldget <treasureHunt: java.awt.Button newGame>";
+ "fieldget <treasureHunt: java.awt.Button newGame>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <treasureHunt: java.awt.Image dug>";
+ "fieldput <treasureHunt: java.awt.Image dug>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <treasureHunt: java.awt.Image snake>";
+ "fieldput <treasureHunt: java.awt.Image snake>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <treasureHunt: java.awt.Image treasure>";
+ "fieldput <treasureHunt: java.awt.Image treasure>"->"return";
+}

@@ -1,0 +1,36 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <virtualbanner: java.awt.Image Buffer>";
+ "fieldput <virtualbanner: java.awt.Image Buffer>"->"fieldget <virtualbanner: java.awt.Image Buffer>";
+ "fieldget <virtualbanner: java.awt.Image Buffer>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <virtualbanner: java.awt.Graphics gBuffer>";
+ "fieldput <virtualbanner: java.awt.Graphics gBuffer>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <virtualbanner: java.awt.Image thyplane1>";
+ "fieldput <virtualbanner: java.awt.Image thyplane1>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <virtualbanner: java.awt.Image thyplane2>";
+ "fieldput <virtualbanner: java.awt.Image thyplane2>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <virtualbanner: java.awt.Image strain1>";
+ "fieldput <virtualbanner: java.awt.Image strain1>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <virtualbanner: java.awt.Image newcity1>";
+ "fieldput <virtualbanner: java.awt.Image newcity1>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <virtualbanner: java.awt.Image station1>";
+ "fieldput <virtualbanner: java.awt.Image station1>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <virtualbanner: java.awt.Image plane1>";
+ "fieldput <virtualbanner: java.awt.Image plane1>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <virtualbanner: java.awt.Image bridge>";
+ "fieldput <virtualbanner: java.awt.Image bridge>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <virtualbanner: java.awt.Image tree>";
+ "fieldput <virtualbanner: java.awt.Image tree>"->"return";
+}

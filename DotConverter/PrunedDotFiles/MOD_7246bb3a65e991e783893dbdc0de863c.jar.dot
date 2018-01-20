@@ -1,0 +1,22 @@
+digraph "" {
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"staticinvoke <IpixViewer: java.lang.String r()>";
+ "staticinvoke <IpixViewer: java.lang.String r()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <IpixViewer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <IpixViewer: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <IpixViewer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <IpixViewer: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <IpixViewer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <IpixViewer: java.lang.String getParameter(java.lang.String)>"->"ifnull return";
+ "ifnull return"->"virtualinvoke <IpixViewer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <IpixViewer: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"virtualinvoke <java.lang.Exception: void printStackTrace()>";
+ "virtualinvoke <java.lang.Exception: void printStackTrace()>"->}

@@ -1,0 +1,7 @@
+digraph "" {
+"virtualinvoke <ru.kryshen.graphg.Game: void init(java.awt.Container)>";
+ "virtualinvoke <ru.kryshen.graphg.Game: void init(java.awt.Container)>"->"ifne return";
+ "ifne return"->"ifne return";
+ "ifne return"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

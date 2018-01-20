@@ -1,0 +1,26 @@
+digraph "" {
+"staticput <VncViewer: java.applet.Applet refApplet>";
+ "staticput <VncViewer: java.applet.Applet refApplet>"->"new java.awt.Frame";
+ "new java.awt.Frame"->"specialinvoke <java.awt.Frame: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Frame: void <init>(java.lang.String)>"->"fieldput <VncViewer: java.awt.Frame vncFrame>";
+ "fieldput <VncViewer: java.awt.Frame vncFrame>"->"fieldget <VncViewer: java.awt.Frame vncFrame>";
+ "fieldget <VncViewer: java.awt.Frame vncFrame>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"fieldget <VncViewer: java.awt.Frame vncFrame>";
+ "fieldget <VncViewer: java.awt.Frame vncFrame>"->"fieldput <VncViewer: java.awt.Container vncContainer>";
+ "fieldput <VncViewer: java.awt.Container vncContainer>"->"goto load.r r0";
+ "goto load.r r0"->"new java.lang.Object";
+ "new java.lang.Object"->"specialinvoke <java.lang.Object: void <init>()>";
+ "specialinvoke <java.lang.Object: void <init>()>"->"fieldput <VncViewer: java.lang.Object recordingSync>";
+ "fieldput <VncViewer: java.lang.Object recordingSync>"->"fieldput <VncViewer: java.lang.String sessionFileName>";
+ "fieldput <VncViewer: java.lang.String sessionFileName>"->"fieldput <VncViewer: java.lang.String cursorUpdatesDef>";
+ "fieldput <VncViewer: java.lang.String cursorUpdatesDef>"->"fieldput <VncViewer: java.lang.String eightBitColorsDef>";
+ "fieldput <VncViewer: java.lang.String eightBitColorsDef>"->"fieldget <VncViewer: java.awt.Frame vncFrame>";
+ "fieldget <VncViewer: java.awt.Frame vncFrame>"->"virtualinvoke <java.awt.Window: void addWindowListener(java.awt.event.WindowListener)>";
+ "virtualinvoke <java.awt.Window: void addWindowListener(java.awt.event.WindowListener)>"->"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"fieldput <VncViewer: java.lang.Thread rfbThread>";
+ "fieldput <VncViewer: java.lang.Thread rfbThread>"->"fieldget <VncViewer: java.lang.Thread rfbThread>";
+ "fieldget <VncViewer: java.lang.Thread rfbThread>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+"fieldput <VncViewer: java.awt.Container vncContainer>";
+}

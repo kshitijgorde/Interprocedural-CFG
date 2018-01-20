@@ -1,0 +1,14 @@
+digraph "" {
+"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <Grchute: java.util.Random Z0086>";
+ "fieldput <Grchute: java.util.Random Z0086>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Grchute: java.awt.Color Z0006>";
+ "fieldput <Grchute: java.awt.Color Z0006>"->"virtualinvoke <Grchute: java.awt.Container getContentPane()>";
+ "virtualinvoke <Grchute: java.awt.Container getContentPane()>"->"virtualinvoke <Grchute: javax.swing.JPanel Z0119()>";
+ "virtualinvoke <Grchute: javax.swing.JPanel Z0119()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"fieldput <Grchute: java.lang.Thread Z0002>";
+ "fieldput <Grchute: java.lang.Thread Z0002>"->"return";
+}

@@ -1,0 +1,21 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <Breakout: java.awt.Dimension d>";
+ "fieldput <Breakout: java.awt.Dimension d>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int)>";
+ "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <Breakout: java.awt.Dimension d>";
+ "fieldget <Breakout: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <Breakout: java.awt.Dimension d>";
+ "fieldget <Breakout: java.awt.Dimension d>"->"fieldput <java.awt.Dimension: int width>";
+ "fieldput <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldget <Breakout: java.awt.Font smallfont>";
+ "fieldget <Breakout: java.awt.Font smallfont>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <Breakout: java.awt.FontMetrics fmsmall>";
+ "fieldput <Breakout: java.awt.FontMetrics fmsmall>"->"fieldget <Breakout: java.awt.Font largefont>";
+ "fieldget <Breakout: java.awt.Font largefont>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <Breakout: java.awt.FontMetrics fmlarge>";
+ "fieldput <Breakout: java.awt.FontMetrics fmlarge>"->"return";
+}

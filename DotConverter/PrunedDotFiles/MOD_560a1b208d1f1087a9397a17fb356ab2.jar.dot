@@ -1,0 +1,16 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"staticinvoke <java.lang.Math: double sqrt(double)>";
+ "staticinvoke <java.lang.Math: double sqrt(double)>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"return";
+}

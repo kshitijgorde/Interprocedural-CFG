@@ -1,0 +1,29 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <EspanolFormSquare: java.lang.String urlHost>";
+ "fieldput <EspanolFormSquare: java.lang.String urlHost>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <EspanolFormSquare: java.lang.String urlPort>";
+ "fieldput <EspanolFormSquare: java.lang.String urlPort>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <EspanolFormSquare: java.lang.String textHost>";
+ "fieldput <EspanolFormSquare: java.lang.String textHost>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <EspanolFormSquare: java.lang.String textPort>";
+ "fieldput <EspanolFormSquare: java.lang.String textPort>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <EspanolFormSquare: java.lang.String textTemplate>";
+ "fieldput <EspanolFormSquare: java.lang.String textTemplate>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <EspanolFormSquare: java.awt.Image topImage>";
+ "fieldput <EspanolFormSquare: java.awt.Image topImage>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <EspanolFormSquare: java.awt.Image bottomImage>";
+ "fieldput <EspanolFormSquare: java.awt.Image bottomImage>"->"return";
+"fieldget <EspanolFormSquare: java.lang.String textTemplate>";
+ "fieldget <EspanolFormSquare: java.lang.String textTemplate>"->"fieldget <EspanolFormSquare: java.lang.String textPort>";
+ "fieldget <EspanolFormSquare: java.lang.String textPort>"->"fieldget <EspanolFormSquare: java.lang.String textHost>";
+ "fieldget <EspanolFormSquare: java.lang.String textHost>"->"fieldget <EspanolFormSquare: java.lang.String urlPort>";
+ "fieldget <EspanolFormSquare: java.lang.String urlPort>"->"fieldget <EspanolFormSquare: java.lang.String urlHost>";
+ "fieldget <EspanolFormSquare: java.lang.String urlHost>"->}

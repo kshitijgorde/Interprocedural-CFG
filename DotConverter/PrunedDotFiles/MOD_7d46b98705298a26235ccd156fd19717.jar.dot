@@ -1,0 +1,19 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Color getBackground()>";
+ "virtualinvoke <java.awt.Component: java.awt.Color getBackground()>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"fieldget <cfg8.ItemApplet: java.lang.String m>";
+ "fieldget <cfg8.ItemApplet: java.lang.String m>"->"virtualinvoke <java.lang.String: int length()>";
+ "virtualinvoke <java.lang.String: int length()>"->"fieldget <cfg8.ItemApplet: java.lang.String m>";
+ "fieldget <cfg8.ItemApplet: java.lang.String m>"->"virtualinvoke <cfg8.MiscEditApp: void c(java.lang.String)>";
+ "virtualinvoke <cfg8.MiscEditApp: void c(java.lang.String)>"->"staticget <cfg8.MiscEditApp: java.lang.String[] R>";
+ "staticget <cfg8.MiscEditApp: java.lang.String[] R>"->"virtualinvoke <cfg8.a: java.lang.String getParameter(java.lang.String,java.lang.String)>";
+ "virtualinvoke <cfg8.a: java.lang.String getParameter(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"fieldget <cfg8.ItemApplet: java.lang.Object g>";
+ "fieldget <cfg8.ItemApplet: java.lang.Object g>"->"goto load.r $i1";
+ "goto load.r $i1"->"goto goto return";
+ "goto goto return"->"goto return";
+ "goto return"->"return";
+ "goto goto return"->"goto load.r r1";
+ "goto load.r r1"->"goto load.r r0";
+ "goto load.r r0"->}

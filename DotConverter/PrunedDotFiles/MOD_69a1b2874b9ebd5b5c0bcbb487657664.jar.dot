@@ -1,0 +1,9 @@
+digraph "" {
+"r0 := @this: com.easypano.tw.TWViewer"->"staticinvoke <com.easypano.tw.dt: void a()>";
+ "staticinvoke <com.easypano.tw.dt: void a()>"->"specialinvoke <com.easypano.tw.TWViewer: void a()>";
+ "specialinvoke <com.easypano.tw.TWViewer: void a()>"->"fieldget <com.easypano.tw.TWViewer: com.easypano.tw.ee G>";
+ "fieldget <com.easypano.tw.TWViewer: com.easypano.tw.ee G>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.lang.Thread: void start()>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

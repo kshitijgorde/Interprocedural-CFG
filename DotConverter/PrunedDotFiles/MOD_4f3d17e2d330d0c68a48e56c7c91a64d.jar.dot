@@ -1,0 +1,5 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <Bustout: java.awt.Image m_imagePlayfield>";
+ "fieldput <Bustout: java.awt.Image m_imagePlayfield>"->"return";
+}

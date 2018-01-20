@@ -1,0 +1,9 @@
+digraph "" {
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"return";
+}

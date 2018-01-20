@@ -1,0 +1,5 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticput <imgslide: java.lang.String cfgfile>";
+ "staticput <imgslide: java.lang.String cfgfile>"->"return";
+}

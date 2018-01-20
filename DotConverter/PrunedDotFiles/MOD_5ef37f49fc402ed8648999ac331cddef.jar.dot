@@ -1,0 +1,14 @@
+digraph "" {
+"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>";
+ "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"->"fieldget <java.awt.Rectangle: int width>";
+ "fieldget <java.awt.Rectangle: int width>"->"virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>";
+ "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"->"fieldget <java.awt.Rectangle: int height>";
+ "fieldget <java.awt.Rectangle: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <squares: java.awt.Image image>";
+ "fieldput <squares: java.awt.Image image>"->"fieldget <squares: java.awt.Image image>";
+ "fieldget <squares: java.awt.Image image>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <squares: java.awt.Graphics offscreen>";
+ "fieldput <squares: java.awt.Graphics offscreen>"->"return";
+}

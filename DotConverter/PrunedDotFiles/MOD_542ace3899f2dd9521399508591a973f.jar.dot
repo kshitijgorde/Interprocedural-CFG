@@ -1,0 +1,11 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <Runtux: java.awt.Image buff>";
+ "fieldput <Runtux: java.awt.Image buff>"->"virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>";
+ "virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>"->"virtualinvoke <java.awt.Component: void requestFocus()>";
+ "virtualinvoke <java.awt.Component: void requestFocus()>"->"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

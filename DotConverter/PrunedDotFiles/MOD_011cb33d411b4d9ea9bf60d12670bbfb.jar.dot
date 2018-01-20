@@ -1,0 +1,21 @@
+digraph "" {
+"specialinvoke <java.applet.Applet: void init()>";
+ "specialinvoke <java.applet.Applet: void init()>"->"new java.lang.String";
+ "new java.lang.String"->"staticget <java.util.Locale: java.util.Locale GERMAN>";
+ "staticget <java.util.Locale: java.util.Locale GERMAN>"->"staticinvoke <java.util.ResourceBundle: java.util.ResourceBundle getBundle(java.lang.String,java.util.Locale)>";
+ "staticinvoke <java.util.ResourceBundle: java.util.ResourceBundle getBundle(java.lang.String,java.util.Locale)>"->"virtualinvoke <java.util.ResourceBundle: java.lang.String getString(java.lang.String)>";
+ "virtualinvoke <java.util.ResourceBundle: java.lang.String getString(java.lang.String)>"->"specialinvoke <java.lang.String: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.String: void <init>(java.lang.String)>"->"fieldput <Sitemapper: java.lang.String STRING_Error_showing_url>";
+ "fieldput <Sitemapper: java.lang.String STRING_Error_showing_url>"->"new java.lang.String";
+ "new java.lang.String"->"staticget <java.util.Locale: java.util.Locale GERMAN>";
+ "staticget <java.util.Locale: java.util.Locale GERMAN>"->"staticinvoke <java.util.ResourceBundle: java.util.ResourceBundle getBundle(java.lang.String,java.util.Locale)>";
+ "staticinvoke <java.util.ResourceBundle: java.util.ResourceBundle getBundle(java.lang.String,java.util.Locale)>"->"virtualinvoke <java.util.ResourceBundle: java.lang.String getString(java.lang.String)>";
+ "virtualinvoke <java.util.ResourceBundle: java.lang.String getString(java.lang.String)>"->"specialinvoke <java.lang.String: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.String: void <init>(java.lang.String)>"->"fieldput <Sitemapper: java.lang.String STRING_No_text_file>";
+ "fieldput <Sitemapper: java.lang.String STRING_No_text_file>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <Sitemapper: void load_site_info(java.lang.String)>";
+ "virtualinvoke <Sitemapper: void load_site_info(java.lang.String)>"->"virtualinvoke <Sitemapper: void setup_components()>";
+ "virtualinvoke <Sitemapper: void setup_components()>"->"return";
+}

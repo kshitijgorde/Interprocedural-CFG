@@ -1,0 +1,21 @@
+digraph "" {
+"fieldput <TF_Flame: java.lang.String copyright_text>";
+ "fieldput <TF_Flame: java.lang.String copyright_text>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int)>";
+ "specialinvoke <java.awt.Color: void <init>(int)>"->"fieldput <TF_Flame: java.awt.Color bg>";
+ "fieldput <TF_Flame: java.awt.Color bg>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int)>";
+ "specialinvoke <java.awt.Color: void <init>(int)>"->"fieldput <TF_Flame: java.awt.Color fg>";
+ "fieldput <TF_Flame: java.awt.Color fg>"->"fieldget <TF_Flame: java.awt.Color bg>";
+ "fieldget <TF_Flame: java.awt.Color bg>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"fieldput <TF_Flame: java.awt.MediaTracker tracker>";
+ "fieldput <TF_Flame: java.awt.MediaTracker tracker>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"goto load.i i15";
+ "goto load.i i15"->"staticinvoke <java.lang.System: void gc()>";
+ "staticinvoke <java.lang.System: void gc()>"->"return";
+}

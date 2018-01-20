@@ -1,0 +1,23 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"ifeq return";
+ "ifeq return"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String getProtocol()>";
+ "virtualinvoke <java.net.URL: java.lang.String getProtocol()>"->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"goto return";
+ "goto return"->"return";
+"new java.awt.Button";
+ "new java.awt.Button"->"fieldget <MagicButton: java.lang.String sREG>";
+ "fieldget <MagicButton: java.lang.String sREG>"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <MagicButton: java.awt.Button myB>";
+ "fieldput <MagicButton: java.awt.Button myB>"->"fieldget <MagicButton: java.awt.Button myB>";
+ "fieldget <MagicButton: java.awt.Button myB>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: void reshape(int,int,int,int)>";
+ "virtualinvoke <java.awt.Component: void reshape(int,int,int,int)>"->"fieldget <MagicButton: java.awt.Button myB>";
+ "fieldget <MagicButton: java.awt.Button myB>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldget <MagicButton: java.awt.Button myB>";
+ "fieldget <MagicButton: java.awt.Button myB>"->"virtualinvoke <java.awt.Component: void show()>";
+}

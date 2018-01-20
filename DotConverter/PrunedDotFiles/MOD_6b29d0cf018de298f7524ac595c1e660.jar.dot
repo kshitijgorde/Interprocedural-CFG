@@ -1,0 +1,13 @@
+digraph "" {
+"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <Blink: java.awt.Font font>";
+ "fieldput <Blink: java.awt.Font font>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <Blink: java.lang.String lbl>";
+ "fieldput <Blink: java.lang.String lbl>"->"return";
+"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->}

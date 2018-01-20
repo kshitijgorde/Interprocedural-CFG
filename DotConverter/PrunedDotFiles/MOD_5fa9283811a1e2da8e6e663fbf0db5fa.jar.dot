@@ -1,0 +1,19 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>";
+ "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"->"fieldget <java.awt.Rectangle: int width>";
+ "fieldget <java.awt.Rectangle: int width>"->"fieldget <java.awt.Rectangle: int height>";
+ "fieldget <java.awt.Rectangle: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <maze4d: java.awt.Image s>";
+ "fieldput <maze4d: java.awt.Image s>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Component: void requestFocus()>";
+ "virtualinvoke <java.awt.Component: void requestFocus()>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"fieldput <maze4d: java.awt.MediaTracker dv>";
+ "fieldput <maze4d: java.awt.MediaTracker dv>"->"new java.util.StringTokenizer";
+ "new java.util.StringTokenizer"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>";
+ "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"->"fieldput <maze4d: java.util.StringTokenizer di>";
+ "fieldput <maze4d: java.util.StringTokenizer di>"->"goto load.i $i0";
+ "goto load.i $i0"->"return";
+}

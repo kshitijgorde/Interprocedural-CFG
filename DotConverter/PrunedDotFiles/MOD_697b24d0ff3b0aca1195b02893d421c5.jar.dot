@@ -1,0 +1,12 @@
+digraph "" {
+"virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>";
+ "virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"fieldput <PanelMediator: java.net.URL URL_STRING>";
+ "fieldput <PanelMediator: java.net.URL URL_STRING>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"return";
+"new java.net.URL";
+ "new java.net.URL"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"fieldput <PanelMediator: java.net.URL URL_STRING>";
+ "fieldput <PanelMediator: java.net.URL URL_STRING>"->"goto load.r r0";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->}

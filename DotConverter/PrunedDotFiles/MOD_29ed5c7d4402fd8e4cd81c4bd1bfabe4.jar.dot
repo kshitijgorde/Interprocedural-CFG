@@ -1,0 +1,30 @@
+digraph "" {
+"r0 := @this: com.cloudpath.loader.XpcUnsignedApplet"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.lang.Object: java.lang.Class getClass()>";
+ "virtualinvoke <java.lang.Object: java.lang.Class getClass()>"->"virtualinvoke <java.lang.Class: java.lang.String getName()>";
+ "virtualinvoke <java.lang.Class: java.lang.String getName()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <com.cloudpath.loader.XpcUnsignedApplet: void log(java.lang.String)>";
+ "specialinvoke <com.cloudpath.loader.XpcUnsignedApplet: void log(java.lang.String)>"->"specialinvoke <java.applet.Applet: void init()>";
+ "specialinvoke <java.applet.Applet: void init()>"->"staticinvoke <com.cloudpath.loader.SystemConfigUtil: void printSystemProperties(java.applet.Applet)>";
+ "staticinvoke <com.cloudpath.loader.SystemConfigUtil: void printSystemProperties(java.applet.Applet)>"->"new java.lang.Thread";
+ "new java.lang.Thread"->"new com.cloudpath.loader.XpcUnsignedApplet$1";
+ "new com.cloudpath.loader.XpcUnsignedApplet$1"->"specialinvoke <com.cloudpath.loader.XpcUnsignedApplet$1: void <init>(com.cloudpath.loader.XpcUnsignedApplet)>";
+ "specialinvoke <com.cloudpath.loader.XpcUnsignedApplet$1: void <init>(com.cloudpath.loader.XpcUnsignedApplet)>"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"fieldput <com.cloudpath.loader.XpcUnsignedApplet: java.lang.Thread cls_WorkerThread>";
+ "fieldput <com.cloudpath.loader.XpcUnsignedApplet: java.lang.Thread cls_WorkerThread>"->"specialinvoke <com.cloudpath.loader.XpcUnsignedApplet: void log(java.lang.String)>";
+ "specialinvoke <com.cloudpath.loader.XpcUnsignedApplet: void log(java.lang.String)>"->"fieldget <com.cloudpath.loader.XpcUnsignedApplet: java.lang.Thread cls_WorkerThread>";
+ "fieldget <com.cloudpath.loader.XpcUnsignedApplet: java.lang.Thread cls_WorkerThread>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"specialinvoke <com.cloudpath.loader.XpcUnsignedApplet: void log(java.lang.String)>";
+ "specialinvoke <com.cloudpath.loader.XpcUnsignedApplet: void log(java.lang.String)>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.lang.Object: java.lang.Class getClass()>";
+ "virtualinvoke <java.lang.Object: java.lang.Class getClass()>"->"virtualinvoke <java.lang.Class: java.lang.String getName()>";
+ "virtualinvoke <java.lang.Class: java.lang.String getName()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <com.cloudpath.loader.XpcUnsignedApplet: void log(java.lang.String)>";
+ "specialinvoke <com.cloudpath.loader.XpcUnsignedApplet: void log(java.lang.String)>"->"return";
+}

@@ -1,0 +1,11 @@
+digraph "" {
+"new java.lang.String";
+ "new java.lang.String"->"specialinvoke <java.lang.String: void <init>()>";
+ "specialinvoke <java.lang.String: void <init>()>"->"new javax.swing.JList";
+ "new javax.swing.JList"->"staticinvoke <Mol: java.lang.Object[] Oeri()>";
+ "staticinvoke <Mol: java.lang.Object[] Oeri()>"->"specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>";
+ "specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>"->"fieldput <Esia: javax.swing.JList uuutw>";
+ "fieldput <Esia: javax.swing.JList uuutw>"->"fieldget <Esia: javax.swing.JList uuutw>";
+ "fieldget <Esia: javax.swing.JList uuutw>"->"virtualinvoke <Esia: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <Esia: java.awt.Component add(java.awt.Component)>"->"return";
+}

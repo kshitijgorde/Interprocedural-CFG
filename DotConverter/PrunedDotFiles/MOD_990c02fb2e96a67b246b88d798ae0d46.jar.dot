@@ -1,0 +1,8 @@
+digraph "" {
+"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>(int,int)>";
+ "specialinvoke <java.awt.BorderLayout: void <init>(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"return";
+}

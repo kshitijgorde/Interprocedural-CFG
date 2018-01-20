@@ -1,0 +1,16 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <PacMan: java.awt.Dimension d>";
+ "fieldput <PacMan: java.awt.Dimension d>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldget <PacMan: java.awt.Font smallfont>";
+ "fieldget <PacMan: java.awt.Font smallfont>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <PacMan: java.awt.FontMetrics fmsmall>";
+ "fieldput <PacMan: java.awt.FontMetrics fmsmall>"->"fieldget <PacMan: java.awt.Font largefont>";
+ "fieldget <PacMan: java.awt.Font largefont>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <PacMan: java.awt.FontMetrics fmlarge>";
+ "fieldput <PacMan: java.awt.FontMetrics fmlarge>"->"return";
+}

@@ -1,0 +1,14 @@
+digraph "" {
+"push 'http://www.jpowered.com/pie_chart/index.htm'";
+ "push 'http://www.jpowered.com/pie_chart/index.htm'"->"specialinvoke <Evaluation: void <init>(java.applet.Applet,java.lang.String,java.lang.String)>";
+ "specialinvoke <Evaluation: void <init>(java.applet.Applet,java.lang.String,java.lang.String)>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <PiechartApplet: java.lang.String sTemp>";
+ "fieldput <PiechartApplet: java.lang.String sTemp>"->"fieldget <PiechartApplet: java.lang.String sTemp>";
+ "fieldget <PiechartApplet: java.lang.String sTemp>"->"staticinvoke <PiechartApplet: java.awt.Color verifyclr(java.lang.String,java.lang.String,java.lang.String)>";
+ "staticinvoke <PiechartApplet: java.awt.Color verifyclr(java.lang.String,java.lang.String,java.lang.String)>"->"fieldput <PiechartApplet: java.awt.Color SBGCOLOR>";
+ "fieldput <PiechartApplet: java.awt.Color SBGCOLOR>"->"fieldget <PiechartApplet: java.awt.Color SBGCOLOR>";
+ "fieldget <PiechartApplet: java.awt.Color SBGCOLOR>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"return";
+}

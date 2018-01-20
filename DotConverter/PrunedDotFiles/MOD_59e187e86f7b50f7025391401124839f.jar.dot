@@ -1,0 +1,25 @@
+digraph "" {
+"fieldget <QuoteApplet: java.awt.Color bgColor>";
+ "fieldget <QuoteApplet: java.awt.Color bgColor>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <QuoteApplet: java.awt.Color titleColor>";
+ "fieldget <QuoteApplet: java.awt.Color titleColor>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.Panel";
+ "new java.awt.Panel"->"specialinvoke <java.awt.Panel: void <init>()>";
+ "specialinvoke <java.awt.Panel: void <init>()>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Container: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Container: void setFont(java.awt.Font)>"->"new java.awt.Label";
+ "new java.awt.Label"->"fieldget <QuoteApplet: java.lang.String titleText>";
+ "fieldget <QuoteApplet: java.lang.String titleText>"->"specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldput <QuoteApplet: java.awt.event.MouseListener quoteBoxMouseListener>";
+ "fieldput <QuoteApplet: java.awt.event.MouseListener quoteBoxMouseListener>"->"fieldget <QuoteApplet: java.awt.event.MouseListener quoteBoxMouseListener>";
+ "fieldget <QuoteApplet: java.awt.event.MouseListener quoteBoxMouseListener>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

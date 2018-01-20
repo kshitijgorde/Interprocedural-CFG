@@ -1,0 +1,20 @@
+digraph "" {
+"r0 := @this: com.mindprod.isbn.ISBN"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"return";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"virtualinvoke <com.mindprod.isbn.ISBN: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.isbn.ISBN: java.awt.Container getContentPane()>"->"staticget <com.mindprod.isbn.ISBN: java.awt.Color BACKGROUND_FOR_APPLET>";
+ "staticget <com.mindprod.isbn.ISBN: java.awt.Color BACKGROUND_FOR_APPLET>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <com.mindprod.isbn.ISBN: void buildComponents()>";
+ "specialinvoke <com.mindprod.isbn.ISBN: void buildComponents()>"->"specialinvoke <com.mindprod.isbn.ISBN: void setDefaultInstructions()>";
+ "specialinvoke <com.mindprod.isbn.ISBN: void setDefaultInstructions()>"->"specialinvoke <com.mindprod.isbn.ISBN: void layoutFields(java.awt.Container)>";
+ "specialinvoke <com.mindprod.isbn.ISBN: void layoutFields(java.awt.Container)>"->"specialinvoke <com.mindprod.isbn.ISBN: void hookClearButton()>";
+ "specialinvoke <com.mindprod.isbn.ISBN: void hookClearButton()>"->"specialinvoke <com.mindprod.isbn.ISBN: void hookTidyButton()>";
+ "specialinvoke <com.mindprod.isbn.ISBN: void hookTidyButton()>"->"specialinvoke <com.mindprod.isbn.ISBN: void hookPasteButton()>";
+ "specialinvoke <com.mindprod.isbn.ISBN: void hookPasteButton()>"->"virtualinvoke <com.mindprod.isbn.ISBN: void validate()>";
+ "virtualinvoke <com.mindprod.isbn.ISBN: void validate()>"->"return";
+}

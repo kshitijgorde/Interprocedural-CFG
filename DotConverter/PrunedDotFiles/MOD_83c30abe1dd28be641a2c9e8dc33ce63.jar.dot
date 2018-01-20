@@ -1,0 +1,25 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"specialinvoke <Monthly: void <init>(java.awt.Dimension)>";
+ "specialinvoke <Monthly: void <init>(java.awt.Dimension)>"->"new java.awt.TextField";
+ "new java.awt.TextField"->"specialinvoke <java.awt.TextField: void <init>(int)>";
+ "specialinvoke <java.awt.TextField: void <init>(int)>"->"fieldput <Calendar_applet: java.awt.TextField text>";
+ "fieldput <Calendar_applet: java.awt.TextField text>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"new java.awt.Panel";
+ "new java.awt.Panel"->"specialinvoke <java.awt.Panel: void <init>()>";
+ "specialinvoke <java.awt.Panel: void <init>()>"->"fieldget <Calendar_applet: java.awt.TextField text>";
+ "fieldget <Calendar_applet: java.awt.TextField text>"->"virtualinvoke <java.awt.TextField: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.TextField: void addActionListener(java.awt.event.ActionListener)>"->"new java.awt.FlowLayout";
+ "new java.awt.FlowLayout"->"specialinvoke <java.awt.FlowLayout: void <init>()>";
+ "specialinvoke <java.awt.FlowLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"fieldget <Calendar_applet: java.awt.TextField text>";
+ "fieldget <Calendar_applet: java.awt.TextField text>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"return";
+}

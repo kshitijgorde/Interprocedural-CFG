@@ -1,0 +1,23 @@
+digraph "" {
+"staticget <vmain: java.lang.String[] B>";
+ "staticget <vmain: java.lang.String[] B>"->"staticinvoke <vmain: short[] c(java.lang.String)>";
+ "staticinvoke <vmain: short[] c(java.lang.String)>"->"staticget <vmain: java.lang.String[] B>";
+ "staticget <vmain: java.lang.String[] B>"->"staticinvoke <vmain: java.lang.String a(java.lang.String,int)>";
+ "staticinvoke <vmain: java.lang.String a(java.lang.String,int)>"->"staticinvoke <vmain: short[] c(java.lang.String)>";
+ "staticinvoke <vmain: short[] c(java.lang.String)>"->"virtualinvoke <vmain: java.nio.IntBuffer[] a(short[],short[])>";
+ "virtualinvoke <vmain: java.nio.IntBuffer[] a(short[],short[])>"->"new java.net.URL";
+ "new java.net.URL"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"staticget <vmain: java.lang.String[] B>";
+ "staticget <vmain: java.lang.String[] B>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"staticget <vmain: java.lang.String[] B>";
+ "staticget <vmain: java.lang.String[] B>"->"staticinvoke <vmain: java.lang.String a(java.lang.String,int)>";
+ "staticinvoke <vmain: java.lang.String a(java.lang.String,int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"staticget <vmain: java.lang.String[] B>";
+ "staticget <vmain: java.lang.String[] B>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.Soundbank getSoundbank(java.net.URL)>";
+ "staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.Soundbank getSoundbank(java.net.URL)>"->"goto return";
+ "goto return"->"return";
+ "staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.Soundbank getSoundbank(java.net.URL)>"->}

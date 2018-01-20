@@ -1,0 +1,25 @@
+digraph "" {
+"r0 := @this: com.mindprod.mimecheck.MimeCheck"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"return";
+"specialinvoke <com.mindprod.mimecheck.MimeCheck: void getMimesDat()>";
+ "specialinvoke <com.mindprod.mimecheck.MimeCheck: void getMimesDat()>"->"specialinvoke <com.mindprod.mimecheck.MimeCheck: void buildMenu()>";
+ "specialinvoke <com.mindprod.mimecheck.MimeCheck: void buildMenu()>"->"virtualinvoke <com.mindprod.mimecheck.MimeCheck: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.mimecheck.MimeCheck: java.awt.Container getContentPane()>"->"staticget <com.mindprod.mimecheck.MimeCheck: java.awt.Color BACKGROUND_FOR_APPLET>";
+ "staticget <com.mindprod.mimecheck.MimeCheck: java.awt.Color BACKGROUND_FOR_APPLET>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <com.mindprod.mimecheck.MimeCheck: void createComponents()>";
+ "specialinvoke <com.mindprod.mimecheck.MimeCheck: void createComponents()>"->"specialinvoke <com.mindprod.mimecheck.MimeCheck: void layoutComponents(java.awt.Container)>";
+ "specialinvoke <com.mindprod.mimecheck.MimeCheck: void layoutComponents(java.awt.Container)>"->"specialinvoke <com.mindprod.mimecheck.MimeCheck: void hookComponents()>";
+ "specialinvoke <com.mindprod.mimecheck.MimeCheck: void hookComponents()>"->"fieldget <com.mindprod.mimecheck.MimeCheck: boolean asApplet>";
+ "fieldget <com.mindprod.mimecheck.MimeCheck: boolean asApplet>"->"ifeq return";
+ "ifeq return"->"virtualinvoke <com.mindprod.mimecheck.MimeCheck: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <com.mindprod.mimecheck.MimeCheck: java.lang.String getParameter(java.lang.String)>"->"ifnull return";
+ "ifnull return"->"virtualinvoke <java.lang.String: int length()>";
+ "virtualinvoke <java.lang.String: int length()>"->"ifeq return";
+ "ifeq return"->"fieldget <com.mindprod.mimecheck.MimeCheck: javax.swing.JTextField urlField>";
+ "fieldget <com.mindprod.mimecheck.MimeCheck: javax.swing.JTextField urlField>"->"virtualinvoke <javax.swing.JTextField: void setText(java.lang.String)>";
+ "virtualinvoke <javax.swing.JTextField: void setText(java.lang.String)>"->"specialinvoke <com.mindprod.mimecheck.MimeCheck: void test()>";
+ "specialinvoke <com.mindprod.mimecheck.MimeCheck: void test()>"->"return";
+}

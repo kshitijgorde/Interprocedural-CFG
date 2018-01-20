@@ -1,0 +1,8 @@
+digraph "" {
+"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <de.mmkh.tams.YieldApplet: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <de.mmkh.tams.YieldApplet: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <de.mmkh.tams.YieldApplet: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <de.mmkh.tams.YieldApplet: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <de.mmkh.tams.YieldApplet: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <de.mmkh.tams.YieldApplet: java.awt.Component add(java.lang.String,java.awt.Component)>"->"return";
+}

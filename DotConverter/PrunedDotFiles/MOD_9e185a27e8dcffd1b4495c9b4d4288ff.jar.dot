@@ -1,0 +1,17 @@
+digraph "" {
+"specialinvoke <DigitalScroller: java.awt.Image loadMagiLabel()>";
+ "specialinvoke <DigitalScroller: java.awt.Image loadMagiLabel()>"->"ifnonnull return";
+ "ifnonnull return"->"specialinvoke <DigitalScroller: java.awt.Color getScrollerColour()>";
+ "specialinvoke <DigitalScroller: java.awt.Color getScrollerColour()>"->"fieldget <DigitalScroller: java.lang.String paramCells>";
+ "fieldget <DigitalScroller: java.lang.String paramCells>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"specialinvoke <DigitalPanel: void <init>(java.awt.Color,int,int,int,java.awt.Image)>";
+ "specialinvoke <DigitalPanel: void <init>(java.awt.Color,int,int,int,java.awt.Image)>"->"fieldget <DigitalScroller: java.lang.String paramScrollDelay>";
+ "fieldget <DigitalScroller: java.lang.String paramScrollDelay>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldget <DigitalScroller: java.lang.String paramLoopDelay>";
+ "fieldget <DigitalScroller: java.lang.String paramLoopDelay>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"return";
+}

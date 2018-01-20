@@ -1,0 +1,16 @@
+digraph "" {
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <TF_Ripple: java.lang.String getAppletInfo()>";
+ "virtualinvoke <TF_Ripple: java.lang.String getAppletInfo()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"fieldput <TF_Ripple: java.awt.MediaTracker _$1788>";
+ "fieldput <TF_Ripple: java.awt.MediaTracker _$1788>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"staticinvoke <java.lang.System: void gc()>";
+ "staticinvoke <java.lang.System: void gc()>"->"return";
+}

@@ -1,0 +1,34 @@
+digraph "" {
+"staticget <Leapfrog: java.lang.String d>";
+ "staticget <Leapfrog: java.lang.String d>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticget <Leapfrog: java.lang.String e>";
+ "staticget <Leapfrog: java.lang.String e>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"specialinvoke <u: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <u: void <init>(java.net.URL,java.lang.String)>"->"specialinvoke <v: void <init>(java.applet.Applet,u)>";
+ "specialinvoke <v: void <init>(java.applet.Applet,u)>"->"staticget <Leapfrog: java.lang.String f>";
+ "staticget <Leapfrog: java.lang.String f>"->"virtualinvoke <v: java.applet.AudioClip _(java.lang.String)>";
+ "virtualinvoke <v: java.applet.AudioClip _(java.lang.String)>"->"fieldput <Leapfrog: java.applet.AudioClip Va>";
+ "fieldput <Leapfrog: java.applet.AudioClip Va>"->"staticget <Leapfrog: java.lang.String g>";
+ "staticget <Leapfrog: java.lang.String g>"->"virtualinvoke <v: java.applet.AudioClip _(java.lang.String)>";
+ "virtualinvoke <v: java.applet.AudioClip _(java.lang.String)>"->"fieldput <Leapfrog: java.applet.AudioClip Wa>";
+ "fieldput <Leapfrog: java.applet.AudioClip Wa>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <Leapfrog: java.awt.Dimension size>";
+ "fieldput <Leapfrog: java.awt.Dimension size>"->"staticget <Leapfrog: java.lang.String h>";
+ "staticget <Leapfrog: java.lang.String h>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <v: java.awt.Color a(java.lang.String,java.awt.Color)>";
+ "virtualinvoke <v: java.awt.Color a(java.lang.String,java.awt.Color)>"->"fieldput <Leapfrog: java.awt.Color za>";
+ "fieldput <Leapfrog: java.awt.Color za>"->"staticget <Leapfrog: java.lang.String i>";
+ "staticget <Leapfrog: java.lang.String i>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <v: java.awt.Color a(java.lang.String,java.awt.Color)>";
+ "virtualinvoke <v: java.awt.Color a(java.lang.String,java.awt.Color)>"->"fieldput <Leapfrog: java.awt.Color Aa>";
+ "fieldput <Leapfrog: java.awt.Color Aa>"->"fieldget <Leapfrog: java.awt.Color za>";
+ "fieldget <Leapfrog: java.awt.Color za>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.Font";
+ "new java.awt.Font"->"staticget <Leapfrog: java.lang.String j>";
+ "staticget <Leapfrog: java.lang.String j>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Component: java.awt.Font getFont()>";
+ "virtualinvoke <java.awt.Component: java.awt.Font getFont()>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <Leapfrog: java.awt.FontMetrics xa>";
+ "fieldput <Leapfrog: java.awt.FontMetrics xa>"->"return";
+}

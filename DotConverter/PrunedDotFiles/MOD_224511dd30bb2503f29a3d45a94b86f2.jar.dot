@@ -1,0 +1,8 @@
+digraph "" {
+"new javax.swing.JList";
+ "new javax.swing.JList"->"specialinvoke <l: java.lang.Object a()>";
+ "specialinvoke <l: java.lang.Object a()>"->"specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>";
+ "specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>"->"virtualinvoke <l: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <l: java.awt.Component add(java.awt.Component)>"->"return";
+ "virtualinvoke <l: java.awt.Component add(java.awt.Component)>"->"return";
+}

@@ -1,0 +1,34 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <fastbanner: java.awt.Dimension size>";
+ "fieldput <fastbanner: java.awt.Dimension size>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"new java.awt.Color";
+ "new java.awt.Color"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"specialinvoke <java.awt.Color: void <init>(int)>";
+ "specialinvoke <java.awt.Color: void <init>(int)>"->"fieldput <fastbanner: java.awt.Color bgcolor>";
+ "fieldput <fastbanner: java.awt.Color bgcolor>"->"goto load.r r0";
+ "goto load.r r0"->"fieldget <fastbanner: java.awt.Color bgcolor>";
+ "fieldget <fastbanner: java.awt.Color bgcolor>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <fastbanner: java.awt.Dimension size>";
+ "fieldget <fastbanner: java.awt.Dimension size>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <fastbanner: java.awt.Dimension size>";
+ "fieldget <fastbanner: java.awt.Dimension size>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <fastbanner: java.awt.Image offImage>";
+ "fieldput <fastbanner: java.awt.Image offImage>"->"fieldget <fastbanner: java.awt.Image offImage>";
+ "fieldget <fastbanner: java.awt.Image offImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <fastbanner: java.awt.Graphics offG>";
+ "fieldput <fastbanner: java.awt.Graphics offG>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"new java.lang.String";
+ "new java.lang.String"->"specialinvoke <java.lang.String: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.String: void <init>(java.lang.String)>"->"fieldput <fastbanner: java.lang.String target>";
+ "fieldput <fastbanner: java.lang.String target>"->"goto load.r r0";
+ "goto load.r r0"->"specialinvoke <ilist: void <init>(java.applet.Applet)>";
+ "specialinvoke <ilist: void <init>(java.applet.Applet)>"->"return";
+"fieldput <fastbanner: java.lang.String target>";
+"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"fieldput <fastbanner: java.awt.Color bgcolor>";
+}

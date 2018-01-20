@@ -1,0 +1,37 @@
+digraph "" {
+"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"fieldput <fps: java.lang.Runtime be>";
+ "fieldput <fps: java.lang.Runtime be>"->"fieldget <fps: java.lang.Runtime be>";
+ "fieldget <fps: java.lang.Runtime be>"->"virtualinvoke <java.lang.Runtime: void gc()>";
+ "virtualinvoke <java.lang.Runtime: void gc()>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"fieldput <fps: java.net.URL bZ>";
+ "fieldput <fps: java.net.URL bZ>"->"goto load.i $i2";
+ "goto load.i $i2"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>";
+ "virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <fps: java.lang.String bf>";
+ "fieldput <fps: java.lang.String bf>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <a3dAPI.a: void <init>(java.lang.String)>";
+ "specialinvoke <a3dAPI.a: void <init>(java.lang.String)>"->"goto load.r $i2";
+ "goto load.r $i2"->"virtualinvoke <a3dAPI.a: void b(java.lang.String)>";
+ "virtualinvoke <a3dAPI.a: void b(java.lang.String)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <fps: java.awt.Image aG>";
+ "fieldput <fps: java.awt.Image aG>"->"fieldget <fps: java.awt.Image aG>";
+ "fieldget <fps: java.awt.Image aG>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <fps: java.awt.Graphics aH>";
+ "fieldput <fps: java.awt.Graphics aH>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println()>";
+ "virtualinvoke <java.io.PrintStream: void println()>"->"return";
+"specialinvoke <a3dAPI.a: void <init>(java.lang.String)>";
+}

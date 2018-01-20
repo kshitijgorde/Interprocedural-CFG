@@ -1,0 +1,16 @@
+digraph "" {
+"r0 := @this: soht.client.java.console.AppletProxy"->"new soht.client.java.configuration.ConfigurationManager";
+ "new soht.client.java.configuration.ConfigurationManager"->"specialinvoke <soht.client.java.configuration.ConfigurationManager: void <init>()>";
+ "specialinvoke <soht.client.java.configuration.ConfigurationManager: void <init>()>"->"fieldput <soht.client.java.console.AppletProxy: soht.client.java.configuration.ConfigurationManager configurationManager>";
+ "fieldput <soht.client.java.console.AppletProxy: soht.client.java.configuration.ConfigurationManager configurationManager>"->"fieldget <soht.client.java.console.AppletProxy: soht.client.java.configuration.ConfigurationManager configurationManager>";
+ "fieldget <soht.client.java.console.AppletProxy: soht.client.java.configuration.ConfigurationManager configurationManager>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"return";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.lang.Exception: java.lang.String getMessage()>";
+ "virtualinvoke <java.lang.Exception: java.lang.String getMessage()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"return";
+"virtualinvoke <soht.client.java.console.AppletProxy: void readParameters()>";
+ "virtualinvoke <soht.client.java.console.AppletProxy: void readParameters()>"->"virtualinvoke <soht.client.java.console.AppletProxy: void initGraphics()>";
+ "virtualinvoke <soht.client.java.console.AppletProxy: void initGraphics()>"->"goto return";
+}

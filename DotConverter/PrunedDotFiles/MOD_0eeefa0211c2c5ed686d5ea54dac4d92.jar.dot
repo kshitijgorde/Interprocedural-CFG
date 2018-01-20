@@ -1,0 +1,11 @@
+digraph "" {
+"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String toLowerCase()>";
+ "virtualinvoke <java.lang.String: java.lang.String toLowerCase()>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <lotus.notes.apps.outlineapplet.OutlineApplet: java.awt.Frame getParentFrame()>";
+ "specialinvoke <lotus.notes.apps.outlineapplet.OutlineApplet: java.awt.Frame getParentFrame()>"->"fieldput <lotus.notes.apps.outlineapplet.OutlineApplet: java.awt.Frame ParentFrame>";
+ "fieldput <lotus.notes.apps.outlineapplet.OutlineApplet: java.awt.Frame ParentFrame>"->"return";
+}

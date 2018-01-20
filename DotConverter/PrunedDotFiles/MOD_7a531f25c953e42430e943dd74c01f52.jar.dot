@@ -1,0 +1,12 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.applet.Applet: void showStatus(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: void showStatus(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Component: void reshape(int,int,int,int)>";
+ "virtualinvoke <java.awt.Component: void reshape(int,int,int,int)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Component: void reshape(int,int,int,int)>";
+ "virtualinvoke <java.awt.Component: void reshape(int,int,int,int)>"->"return";
+}

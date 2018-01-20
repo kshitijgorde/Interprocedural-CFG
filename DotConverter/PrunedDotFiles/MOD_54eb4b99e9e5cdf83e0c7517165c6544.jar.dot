@@ -1,0 +1,19 @@
+digraph "" {
+"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.Polygon";
+ "new java.awt.Polygon"->"specialinvoke <java.awt.Polygon: void <init>()>";
+ "specialinvoke <java.awt.Polygon: void <init>()>"->"fieldput <Nasa1009: java.awt.Polygon pl>";
+ "fieldput <Nasa1009: java.awt.Polygon pl>"->"fieldget <Nasa1009: java.awt.Polygon pl>";
+ "fieldget <Nasa1009: java.awt.Polygon pl>"->"virtualinvoke <java.awt.Polygon: void addPoint(int,int)>";
+ "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"->"fieldget <Nasa1009: java.awt.Polygon pl>";
+ "fieldget <Nasa1009: java.awt.Polygon pl>"->"virtualinvoke <java.awt.Polygon: void addPoint(int,int)>";
+ "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"->"fieldget <Nasa1009: java.awt.Polygon pl>";
+ "fieldget <Nasa1009: java.awt.Polygon pl>"->"virtualinvoke <java.awt.Polygon: void addPoint(int,int)>";
+ "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"->"fieldget <Nasa1009: java.awt.Polygon pl>";
+ "fieldget <Nasa1009: java.awt.Polygon pl>"->"virtualinvoke <java.awt.Polygon: void addPoint(int,int)>";
+ "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <Nasa1009: java.awt.Image Img>";
+ "fieldput <Nasa1009: java.awt.Image Img>"->"return";
+}

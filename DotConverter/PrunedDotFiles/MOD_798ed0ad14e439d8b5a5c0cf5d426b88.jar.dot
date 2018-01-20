@@ -1,0 +1,5 @@
+digraph "" {
+"staticget <java.lang.System: java.io.PrintStream err>";
+ "staticget <java.lang.System: java.io.PrintStream err>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"return";
+}

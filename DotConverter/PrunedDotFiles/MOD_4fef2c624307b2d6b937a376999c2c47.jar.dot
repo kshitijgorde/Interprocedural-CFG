@@ -1,0 +1,30 @@
+digraph "" {
+"new javax.swing.text.html.parser.ParserDelegator";
+ "new javax.swing.text.html.parser.ParserDelegator"->"specialinvoke <javax.swing.text.html.parser.ParserDelegator: void <init>()>";
+ "specialinvoke <javax.swing.text.html.parser.ParserDelegator: void <init>()>"->"staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>";
+ "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <reloj.JApplet8: java.lang.Thread runner>";
+ "fieldput <reloj.JApplet8: java.lang.Thread runner>"->"new javax.swing.plaf.ColorUIResource";
+ "new javax.swing.plaf.ColorUIResource"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"specialinvoke <javax.swing.plaf.ColorUIResource: void <init>(java.awt.Color)>";
+ "specialinvoke <javax.swing.plaf.ColorUIResource: void <init>(java.awt.Color)>"->"staticinvoke <javax.swing.UIManager: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+ "staticinvoke <javax.swing.UIManager: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"staticinvoke <javax.swing.ToolTipManager: javax.swing.ToolTipManager sharedInstance()>";
+ "staticinvoke <javax.swing.ToolTipManager: javax.swing.ToolTipManager sharedInstance()>"->"virtualinvoke <javax.swing.ToolTipManager: void setDismissDelay(int)>";
+ "virtualinvoke <javax.swing.ToolTipManager: void setDismissDelay(int)>"->"new java.util.Hashtable";
+ "new java.util.Hashtable"->"specialinvoke <java.util.Hashtable: void <init>()>";
+ "specialinvoke <java.util.Hashtable: void <init>()>"->"new java.lang.Integer";
+ "new java.lang.Integer"->"specialinvoke <java.lang.Integer: void <init>(int)>";
+ "specialinvoke <java.lang.Integer: void <init>(int)>"->"new javax.swing.JLabel";
+ "new javax.swing.JLabel"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(int)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(int)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"specialinvoke <javax.swing.JLabel: void <init>(java.lang.String)>";
+ "specialinvoke <javax.swing.JLabel: void <init>(java.lang.String)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+ "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"goto load.i i1";
+"fieldget <reloj.JApplet8: javax.swing.JSlider jSlider1>";
+ "fieldget <reloj.JApplet8: javax.swing.JSlider jSlider1>"->"virtualinvoke <javax.swing.JSlider: void setLabelTable(java.util.Dictionary)>";
+ "virtualinvoke <javax.swing.JSlider: void setLabelTable(java.util.Dictionary)>"->"return";
+ "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"->}

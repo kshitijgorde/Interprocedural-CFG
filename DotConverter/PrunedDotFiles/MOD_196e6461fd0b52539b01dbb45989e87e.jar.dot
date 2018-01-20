@@ -1,0 +1,17 @@
+digraph "" {
+"r0 := @this: com.mindprod.powcost.PowCost"->"virtualinvoke <com.mindprod.powcost.PowCost: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.powcost.PowCost: java.awt.Container getContentPane()>"->"fieldput <com.mindprod.powcost.PowCost: java.awt.Container contentPane>";
+ "fieldput <com.mindprod.powcost.PowCost: java.awt.Container contentPane>"->"fieldget <com.mindprod.powcost.PowCost: java.awt.Container contentPane>";
+ "fieldget <com.mindprod.powcost.PowCost: java.awt.Container contentPane>"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"virtualinvoke <com.mindprod.powcost.PowCost: void stop()>";
+ "virtualinvoke <com.mindprod.powcost.PowCost: void stop()>"->"virtualinvoke <com.mindprod.powcost.PowCost: void destroy()>";
+ "virtualinvoke <com.mindprod.powcost.PowCost: void destroy()>"->"specialinvoke <com.mindprod.powcost.PowCost: void buildMenu()>";
+ "specialinvoke <com.mindprod.powcost.PowCost: void buildMenu()>"->"specialinvoke <com.mindprod.powcost.PowCost: void buildComponents()>";
+ "specialinvoke <com.mindprod.powcost.PowCost: void buildComponents()>"->"specialinvoke <com.mindprod.powcost.PowCost: void layoutComponents()>";
+ "specialinvoke <com.mindprod.powcost.PowCost: void layoutComponents()>"->"specialinvoke <com.mindprod.powcost.PowCost: void hookListeners()>";
+ "specialinvoke <com.mindprod.powcost.PowCost: void hookListeners()>"->"specialinvoke <com.mindprod.powcost.PowCost: void guessUserCurrency()>";
+ "specialinvoke <com.mindprod.powcost.PowCost: void guessUserCurrency()>"->"specialinvoke <com.mindprod.powcost.PowCost: void calcCost()>";
+ "specialinvoke <com.mindprod.powcost.PowCost: void calcCost()>"->"virtualinvoke <com.mindprod.powcost.PowCost: void validate()>";
+ "virtualinvoke <com.mindprod.powcost.PowCost: void validate()>"->"virtualinvoke <com.mindprod.powcost.PowCost: void setVisible(boolean)>";
+ "virtualinvoke <com.mindprod.powcost.PowCost: void setVisible(boolean)>"->"return";
+}

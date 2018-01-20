@@ -1,0 +1,22 @@
+digraph "" {
+"virtualinvoke <ToolsDemo: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <ToolsDemo: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.Object: java.lang.Class getClass()>";
+ "virtualinvoke <java.lang.Object: java.lang.Class getClass()>"->"virtualinvoke <java.lang.Class: java.io.InputStream getResourceAsStream(java.lang.String)>";
+ "virtualinvoke <java.lang.Class: java.io.InputStream getResourceAsStream(java.lang.String)>"->"new java.io.ByteArrayOutputStream";
+ "new java.io.ByteArrayOutputStream"->"specialinvoke <java.io.ByteArrayOutputStream: void <init>()>";
+ "specialinvoke <java.io.ByteArrayOutputStream: void <init>()>"->"virtualinvoke <java.io.InputStream: int read(byte[])>";
+ "virtualinvoke <java.io.InputStream: int read(byte[])>"->"ifcmpeq.i new java.io.ByteArrayInputStream";
+ "ifcmpeq.i new java.io.ByteArrayInputStream"->"virtualinvoke <java.io.ByteArrayOutputStream: void write(byte[],int,int)>";
+ "virtualinvoke <java.io.ByteArrayOutputStream: void write(byte[],int,int)>"->"goto load.r r16";
+ "virtualinvoke <java.io.ByteArrayOutputStream: void write(byte[],int,int)>"->"return";
+ "ifcmpeq.i new java.io.ByteArrayInputStream"->"new java.io.ByteArrayInputStream";
+ "new java.io.ByteArrayInputStream"->"virtualinvoke <java.io.ByteArrayOutputStream: byte[] toByteArray()>";
+ "virtualinvoke <java.io.ByteArrayOutputStream: byte[] toByteArray()>"->"specialinvoke <java.io.ByteArrayInputStream: void <init>(byte[])>";
+ "specialinvoke <java.io.ByteArrayInputStream: void <init>(byte[])>"->"staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.MidiDevice$Info[] getMidiDeviceInfo()>";
+ "staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.MidiDevice$Info[] getMidiDeviceInfo()>"->"staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.MidiDevice getMidiDevice(javax.sound.midi.MidiDevice$Info)>";
+ "staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.MidiDevice getMidiDevice(javax.sound.midi.MidiDevice$Info)>"->"interfaceinvoke <javax.sound.midi.Sequencer: void open()> 0";
+ "interfaceinvoke <javax.sound.midi.Sequencer: void open()> 0"->"interfaceinvoke <javax.sound.midi.Sequencer: void setSequence(java.io.InputStream)> 1";
+ "interfaceinvoke <javax.sound.midi.Sequencer: void setSequence(java.io.InputStream)> 1"->"interfaceinvoke <javax.sound.midi.Sequencer: int[] addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])> 2";
+ "interfaceinvoke <javax.sound.midi.Sequencer: int[] addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])> 2"->"interfaceinvoke <javax.sound.midi.Sequencer: void start()> 0";
+ "interfaceinvoke <javax.sound.midi.Sequencer: void start()> 0"->"goto return";
+}

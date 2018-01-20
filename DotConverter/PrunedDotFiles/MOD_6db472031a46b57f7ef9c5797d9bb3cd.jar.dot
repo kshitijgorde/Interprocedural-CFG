@@ -1,0 +1,7 @@
+digraph "" {
+"staticinvoke <java.lang.System: void exit(int)>";
+ "staticinvoke <java.lang.System: void exit(int)>"->"goto load.r r0";
+ "goto load.r r0"->"return";
+"staticinvoke <java.lang.System: void exit(int)>";
+"goto load.r r0";
+}

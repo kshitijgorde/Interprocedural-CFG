@@ -1,0 +1,12 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"virtualinvoke <java.net.URL: java.lang.String toString()>";
+ "virtualinvoke <java.net.URL: java.lang.String toString()>"->"push 'http://www.jpowered.com'";
+ "push 'http://www.jpowered.com'"->"virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>";
+ "virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"virtualinvoke <java.net.URL: java.lang.String toString()>";
+ "virtualinvoke <java.net.URL: java.lang.String toString()>"->"push 'http://jpowered.com'";
+ "push 'http://jpowered.com'"->"virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>";
+ "virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>"->"staticinvoke <java.lang.System: void exit(int)>";
+ "staticinvoke <java.lang.System: void exit(int)>"->"return";
+}

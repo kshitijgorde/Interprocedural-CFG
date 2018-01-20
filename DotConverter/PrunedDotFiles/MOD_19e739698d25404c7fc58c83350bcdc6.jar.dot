@@ -1,0 +1,8 @@
+digraph "" {
+"virtualinvoke <TRPK: java.net.URL getDocumentBase()>";
+ "virtualinvoke <TRPK: java.net.URL getDocumentBase()>"->"virtualinvoke <java.net.URL: java.lang.String toString()>";
+ "virtualinvoke <java.net.URL: java.lang.String toString()>"->"staticinvoke <TRPK: void ZF(java.lang.String)>";
+ "staticinvoke <TRPK: void ZF(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+"staticinvoke <java.lang.System: void exit(int)>";
+}

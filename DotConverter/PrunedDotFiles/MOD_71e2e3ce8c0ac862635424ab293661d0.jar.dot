@@ -1,0 +1,33 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <FuncTable: void setFonts(java.awt.Font,java.awt.Font)>";
+ "virtualinvoke <FuncTable: void setFonts(java.awt.Font,java.awt.Font)>"->"specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>";
+ "specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>"->"specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>";
+ "specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>"->"specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>";
+ "specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>"->"specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>";
+ "specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>"->"specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>";
+ "specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>"->"specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>";
+ "specialinvoke <MOS: void <init>(int,int,int,java.lang.String,Voltage,Voltage,Voltage)>"->"fieldget <CMOS_nand3: java.awt.Color mos_background>";
+ "fieldget <CMOS_nand3: java.awt.Color mos_background>"->"virtualinvoke <MOS: void setBackground(java.awt.Color)>";
+ "virtualinvoke <MOS: void setBackground(java.awt.Color)>"->"fieldget <CMOS_nand3: java.awt.Color mos_background>";
+ "fieldget <CMOS_nand3: java.awt.Color mos_background>"->"virtualinvoke <MOS: void setBackground(java.awt.Color)>";
+ "virtualinvoke <MOS: void setBackground(java.awt.Color)>"->"fieldget <CMOS_nand3: java.awt.Color mos_background>";
+ "fieldget <CMOS_nand3: java.awt.Color mos_background>"->"virtualinvoke <MOS: void setBackground(java.awt.Color)>";
+ "virtualinvoke <MOS: void setBackground(java.awt.Color)>"->"fieldget <CMOS_nand3: java.awt.Color mos_background>";
+ "fieldget <CMOS_nand3: java.awt.Color mos_background>"->"virtualinvoke <MOS: void setBackground(java.awt.Color)>";
+ "virtualinvoke <MOS: void setBackground(java.awt.Color)>"->"fieldget <CMOS_nand3: java.awt.Color mos_background>";
+ "fieldget <CMOS_nand3: java.awt.Color mos_background>"->"virtualinvoke <MOS: void setBackground(java.awt.Color)>";
+ "virtualinvoke <MOS: void setBackground(java.awt.Color)>"->"fieldget <CMOS_nand3: java.awt.Color mos_background>";
+ "fieldget <CMOS_nand3: java.awt.Color mos_background>"->"virtualinvoke <MOS: void setBackground(java.awt.Color)>";
+ "virtualinvoke <MOS: void setBackground(java.awt.Color)>"->"specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>";
+ "specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>"->"specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>";
+ "specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>"->"specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>";
+ "specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>"->"specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>";
+ "specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>"->"specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>";
+ "specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>"->"specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>";
+ "specialinvoke <Wire: void <init>(int,int,int,int,Voltage,java.lang.String)>"->"return";
+}

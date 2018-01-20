@@ -1,0 +1,6 @@
+digraph "" {
+"specialinvoke <uPixScreen: void p(java.lang.String)>";
+ "specialinvoke <uPixScreen: void p(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: int compareTo(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"->"return";
+}

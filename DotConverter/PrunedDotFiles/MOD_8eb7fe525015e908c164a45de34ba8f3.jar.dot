@@ -1,0 +1,13 @@
+digraph "" {
+"virtualinvoke <BApplet: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <BApplet: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <BApplet: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <BApplet: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <BApplet: void addKeyListener(java.awt.event.KeyListener)>";
+ "virtualinvoke <BApplet: void addKeyListener(java.awt.event.KeyListener)>"->"staticinvoke <java.lang.System: long currentTimeMillis()>";
+ "staticinvoke <java.lang.System: long currentTimeMillis()>"->"fieldput <BGraphics: java.applet.Applet applet>";
+ "fieldput <BGraphics: java.applet.Applet applet>"->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String toLowerCase()>";
+ "virtualinvoke <java.lang.String: java.lang.String toLowerCase()>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+"ifnonnull return";
+ "ifnonnull return"->}

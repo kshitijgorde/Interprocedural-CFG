@@ -1,0 +1,13 @@
+digraph "" {
+"r0 := @this: com.mindprod.vercheck.VerCheck"->"virtualinvoke <com.mindprod.vercheck.VerCheck: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.vercheck.VerCheck: java.awt.Container getContentPane()>"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"return";
+"new java.util.ArrayList";
+ "new java.util.ArrayList"->"specialinvoke <java.util.ArrayList: void <init>(int)>";
+ "specialinvoke <java.util.ArrayList: void <init>(int)>"->"fieldput <com.mindprod.vercheck.VerCheck: java.util.ArrayList all_rows>";
+ "fieldput <com.mindprod.vercheck.VerCheck: java.util.ArrayList all_rows>"->"specialinvoke <com.mindprod.vercheck.VerCheck: void buildMenu()>";
+ "specialinvoke <com.mindprod.vercheck.VerCheck: void buildMenu()>"->"specialinvoke <com.mindprod.vercheck.VerCheck: void initJTable()>";
+ "specialinvoke <com.mindprod.vercheck.VerCheck: void initJTable()>"->"specialinvoke <com.mindprod.vercheck.VerCheck: void buildComponents()>";
+ "specialinvoke <com.mindprod.vercheck.VerCheck: void buildComponents()>"->"specialinvoke <com.mindprod.vercheck.VerCheck: void layoutFields()>";
+ "specialinvoke <com.mindprod.vercheck.VerCheck: void layoutFields()>"->"return";
+}

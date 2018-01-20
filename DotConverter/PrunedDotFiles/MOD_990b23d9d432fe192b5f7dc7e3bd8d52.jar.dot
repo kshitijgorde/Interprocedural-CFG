@@ -1,0 +1,23 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <BioCeleb: java.awt.Image buff>";
+ "fieldput <BioCeleb: java.awt.Image buff>"->"fieldget <BioCeleb: java.awt.Image buff>";
+ "fieldget <BioCeleb: java.awt.Image buff>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <BioCeleb: java.awt.Graphics gbuff>";
+ "fieldput <BioCeleb: java.awt.Graphics gbuff>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldput <BioCeleb: java.awt.Dimension dim>";
+ "fieldput <BioCeleb: java.awt.Dimension dim>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(double)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(double)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(double)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(double)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"return";
+}

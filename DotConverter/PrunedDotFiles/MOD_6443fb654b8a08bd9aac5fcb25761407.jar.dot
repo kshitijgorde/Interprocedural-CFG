@@ -1,0 +1,8 @@
+digraph "" {
+"virtualinvoke <Main: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Main: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <Main: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Main: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <Main: void download(java.lang.String,java.lang.String)>";
+ "staticinvoke <Main: void download(java.lang.String,java.lang.String)>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <Main: void setBackground(java.awt.Color)>";
+ "virtualinvoke <Main: void setBackground(java.awt.Color)>"->"return";
+}

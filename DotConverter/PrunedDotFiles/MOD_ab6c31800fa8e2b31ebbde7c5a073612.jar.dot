@@ -1,0 +1,16 @@
+digraph "" {
+"r0 := @this: com.mindprod.fontshower.FontShower"->"virtualinvoke <com.mindprod.fontshower.FontShower: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.fontshower.FontShower: java.awt.Container getContentPane()>"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"return";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"virtualinvoke <com.mindprod.fontshower.FontShower: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.fontshower.FontShower: java.awt.Container getContentPane()>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"staticget <com.mindprod.fontshower.FontShower: java.awt.Color BACKGROUND_FOR_BODY>";
+ "staticget <com.mindprod.fontshower.FontShower: java.awt.Color BACKGROUND_FOR_BODY>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"specialinvoke <com.mindprod.fontshower.FontShower: void buildComponents()>";
+ "specialinvoke <com.mindprod.fontshower.FontShower: void buildComponents()>"->"specialinvoke <com.mindprod.fontshower.FontShower: void layoutComponents(java.awt.Container)>";
+ "specialinvoke <com.mindprod.fontshower.FontShower: void layoutComponents(java.awt.Container)>"->"return";
+}

@@ -1,0 +1,13 @@
+digraph "" {
+"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"fieldput <Mondrian: java.lang.Thread fadeno>";
+ "fieldput <Mondrian: java.lang.Thread fadeno>"->"fieldget <Mondrian: java.lang.Thread fadeno>";
+ "fieldget <Mondrian: java.lang.Thread fadeno>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: void repaint()>";
+ "virtualinvoke <java.awt.Component: void repaint()>"->"return";
+}

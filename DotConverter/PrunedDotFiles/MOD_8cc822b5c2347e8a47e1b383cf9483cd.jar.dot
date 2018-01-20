@@ -1,0 +1,4 @@
+digraph "" {
+"virtualinvoke <Vowel: void addComponentListener(java.awt.event.ComponentListener)>";
+ "virtualinvoke <Vowel: void addComponentListener(java.awt.event.ComponentListener)>"->"return";
+}

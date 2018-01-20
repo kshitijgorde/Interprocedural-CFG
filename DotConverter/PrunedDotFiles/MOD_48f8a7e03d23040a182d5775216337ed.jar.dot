@@ -1,0 +1,19 @@
+digraph "" {
+"goto load.i i0";
+ "goto load.i i0"->"goto load.i i0";
+ "goto load.i i0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Othello: OthelloPlayer computer>";
+ "fieldput <Othello: OthelloPlayer computer>"->"return";
+"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"goto load.i i1";
+ "goto load.i i1"->}

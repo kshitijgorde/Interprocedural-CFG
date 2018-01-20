@@ -1,0 +1,21 @@
+digraph "" {
+"virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"specialinvoke <UI_TuringMachine: void pInitTitle(java.lang.String)>";
+ "specialinvoke <UI_TuringMachine: void pInitTitle(java.lang.String)>"->"virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: java.awt.Color getBackground()>";
+ "virtualinvoke <java.awt.Container: java.awt.Color getBackground()>"->"specialinvoke <TapePanel: void <init>(int,int,java.awt.Color)>";
+ "specialinvoke <TapePanel: void <init>(int,int,java.awt.Color)>"->"virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: java.awt.Color getBackground()>";
+ "virtualinvoke <java.awt.Container: java.awt.Color getBackground()>"->"fieldget <UI_TuringMachine: java.util.Vector _vectorProgram>";
+ "fieldget <UI_TuringMachine: java.util.Vector _vectorProgram>"->"specialinvoke <ProgramPanel: void <init>(int,int,int,int,java.awt.Color,java.util.Vector)>";
+ "specialinvoke <ProgramPanel: void <init>(int,int,int,int,java.awt.Color,java.util.Vector)>"->"virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_TuringMachine: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"return";
+}

@@ -1,0 +1,11 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <HorizontalPro: java.awt.Color c(java.lang.String)>";
+ "specialinvoke <HorizontalPro: java.awt.Color c(java.lang.String)>"->"fieldput <HorizontalPro: java.awt.Color u>";
+ "fieldput <HorizontalPro: java.awt.Color u>"->"fieldget <HorizontalPro: java.awt.Color u>";
+ "fieldget <HorizontalPro: java.awt.Color u>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <HorizontalPro: java.lang.Thread b>";
+ "fieldget <HorizontalPro: java.lang.Thread b>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

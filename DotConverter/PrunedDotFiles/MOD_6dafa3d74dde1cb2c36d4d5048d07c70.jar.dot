@@ -1,0 +1,18 @@
+digraph "" {
+"r0 := @this: com.mindprod.converter.Converter"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"return";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"virtualinvoke <com.mindprod.converter.Converter: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.converter.Converter: java.awt.Container getContentPane()>"->"staticget <com.mindprod.converter.Converter: java.awt.Color BACKGROUND_FOR_APPLET>";
+ "staticget <com.mindprod.converter.Converter: java.awt.Color BACKGROUND_FOR_APPLET>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <com.mindprod.converter.Converter: void createComponents()>";
+ "specialinvoke <com.mindprod.converter.Converter: void createComponents()>"->"specialinvoke <com.mindprod.converter.Converter: void hookComponents()>";
+ "specialinvoke <com.mindprod.converter.Converter: void hookComponents()>"->"specialinvoke <com.mindprod.converter.Converter: void layoutGridBag(java.awt.Container)>";
+ "specialinvoke <com.mindprod.converter.Converter: void layoutGridBag(java.awt.Container)>"->"virtualinvoke <com.mindprod.converter.Converter: void validate()>";
+ "virtualinvoke <com.mindprod.converter.Converter: void validate()>"->"virtualinvoke <com.mindprod.converter.Converter: void setVisible(boolean)>";
+ "virtualinvoke <com.mindprod.converter.Converter: void setVisible(boolean)>"->"return";
+}

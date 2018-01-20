@@ -1,0 +1,28 @@
+digraph "" {
+"goto load.i $r21";
+ "goto load.i $r21"->"goto load.i $r21";
+ "goto load.i $r21"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <DigClk: java.awt.Image colon_image>";
+ "fieldput <DigClk: java.awt.Image colon_image>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <DigClk: java.awt.Image frame_image>";
+ "fieldput <DigClk: java.awt.Image frame_image>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <DigClk: java.awt.Image buffer_image>";
+ "fieldput <DigClk: java.awt.Image buffer_image>"->"fieldget <DigClk: java.awt.Image buffer_image>";
+ "fieldget <DigClk: java.awt.Image buffer_image>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <DigClk: java.awt.Graphics gc>";
+ "fieldput <DigClk: java.awt.Graphics gc>"->"return";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <DigClk: java.awt.Graphics gc>";
+ "fieldput <DigClk: java.awt.Graphics gc>"->"return";
+"fieldget <DigClk: java.awt.Image[] digit_image>";
+ "fieldget <DigClk: java.awt.Image[] digit_image>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"goto inc.i $r21 1";
+ "goto inc.i $r21 1"->}

@@ -1,0 +1,28 @@
+digraph "" {
+"r0 := @this: com.fsecure.launchpoint.JLaunchPoint"->"fieldput <com.fsecure.launchpoint.JLaunchPoint: java.lang.String statusCheck>";
+ "fieldput <com.fsecure.launchpoint.JLaunchPoint: java.lang.String statusCheck>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.NullPointerException: java.lang.String getMessage()>";
+ "virtualinvoke <java.lang.NullPointerException: java.lang.String getMessage()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.security.AccessControlException: java.lang.String getMessage()>";
+ "virtualinvoke <java.security.AccessControlException: java.lang.String getMessage()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"goto return";
+"fieldput <com.fsecure.launchpoint.JLaunchPoint: java.lang.String statusCheck>";
+ "fieldput <com.fsecure.launchpoint.JLaunchPoint: java.lang.String statusCheck>"->"specialinvoke <com.fsecure.launchpoint.JLaunchPoint: void setMessage(java.lang.String)>";
+"virtualinvoke <com.fsecure.launchpoint.JLaunchPoint: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <com.fsecure.launchpoint.JLaunchPoint: java.lang.String getParameter(java.lang.String)>"->"fieldput <com.fsecure.launchpoint.JLaunchPoint: java.lang.String language>";
+ "fieldput <com.fsecure.launchpoint.JLaunchPoint: java.lang.String language>"->"fieldput <com.fsecure.launchpoint.JLaunchPoint: java.lang.String statusCheck>";
+ "fieldput <com.fsecure.launchpoint.JLaunchPoint: java.lang.String statusCheck>"->"goto return";
+}

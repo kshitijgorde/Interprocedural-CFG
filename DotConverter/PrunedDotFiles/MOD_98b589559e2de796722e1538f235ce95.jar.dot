@@ -1,0 +1,12 @@
+digraph "" {
+"r0 := @this: org.wordsmith.anagram.AnagramApplet"->"specialinvoke <java.applet.Applet: void init()>";
+ "specialinvoke <java.applet.Applet: void init()>"->"new org.wordsmith.anagram.ConfigurationImpl";
+ "new org.wordsmith.anagram.ConfigurationImpl"->"specialinvoke <org.wordsmith.anagram.ConfigurationImpl: void <init>(org.wordsmith.anagram.ConfigurationGate)>";
+ "specialinvoke <org.wordsmith.anagram.ConfigurationImpl: void <init>(org.wordsmith.anagram.ConfigurationGate)>"->"fieldput <org.wordsmith.anagram.AnagramApplet: org.wordsmith.anagram.Configuration myConfiguration>";
+ "fieldput <org.wordsmith.anagram.AnagramApplet: org.wordsmith.anagram.Configuration myConfiguration>"->"virtualinvoke <org.wordsmith.anagram.AnagramApplet: boolean isAuthorized()>";
+ "virtualinvoke <org.wordsmith.anagram.AnagramApplet: boolean isAuthorized()>"->"ifne return";
+ "ifne return"->"new java.awt.Cursor";
+ "new java.awt.Cursor"->"specialinvoke <java.awt.Cursor: void <init>(int)>";
+ "specialinvoke <java.awt.Cursor: void <init>(int)>"->"virtualinvoke <org.wordsmith.anagram.AnagramApplet: void setCursor(java.awt.Cursor)>";
+ "virtualinvoke <org.wordsmith.anagram.AnagramApplet: void setCursor(java.awt.Cursor)>"->"return";
+}

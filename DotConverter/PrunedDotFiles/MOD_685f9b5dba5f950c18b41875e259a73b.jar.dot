@@ -1,0 +1,15 @@
+digraph "" {
+"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Cscatt: java.awt.Color Z0002>";
+ "fieldput <Cscatt: java.awt.Color Z0002>"->"virtualinvoke <Cscatt: java.awt.Container getContentPane()>";
+ "virtualinvoke <Cscatt: java.awt.Container getContentPane()>"->"virtualinvoke <Cscatt: javax.swing.JPanel Z0053()>";
+ "virtualinvoke <Cscatt: javax.swing.JPanel Z0053()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <Cscatt$DrawingArea: void setFont(java.awt.Font)>";
+ "virtualinvoke <Cscatt$DrawingArea: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <Cscatt$DrawingArea: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <Cscatt$DrawingArea: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <Cscatt$DrawingArea: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <Cscatt$DrawingArea: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"return";
+}

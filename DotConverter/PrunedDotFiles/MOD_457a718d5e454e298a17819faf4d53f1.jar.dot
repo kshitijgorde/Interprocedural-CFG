@@ -1,0 +1,14 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <ImageViewer: java.awt.Image offImage>";
+ "fieldput <ImageViewer: java.awt.Image offImage>"->"fieldget <ImageViewer: java.awt.Image offImage>";
+ "fieldget <ImageViewer: java.awt.Image offImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <ImageViewer: java.awt.Graphics offScreen>";
+ "fieldput <ImageViewer: java.awt.Graphics offScreen>"->"return";
+}

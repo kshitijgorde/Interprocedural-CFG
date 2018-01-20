@@ -1,0 +1,21 @@
+digraph "" {
+"fieldput <dk.midas.web.chart.applet.AppletChart: java.lang.String gp>";
+ "fieldput <dk.midas.web.chart.applet.AppletChart: java.lang.String gp>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <dk.midas.web.chart.applet.AppletChart: java.lang.String getVersion()>";
+ "virtualinvoke <dk.midas.web.chart.applet.AppletChart: java.lang.String getVersion()>"->"interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2";
+ "interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2"->"fieldput <dk.midas.web.chart.applet.AppletChart: java.lang.String gp>";
+ "fieldput <dk.midas.web.chart.applet.AppletChart: java.lang.String gp>"->"virtualinvoke <dk.midas.web.chart.applet.AppletChart: java.lang.String getVersion()>";
+ "virtualinvoke <dk.midas.web.chart.applet.AppletChart: java.lang.String getVersion()>"->"interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2";
+ "interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2"->"fieldput <dk.midas.web.chart.applet.AppletChart: java.lang.String f8>";
+ "fieldput <dk.midas.web.chart.applet.AppletChart: java.lang.String f8>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2";
+ "interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2"->"fieldput <dk.midas.web.chart.applet.ChartManager: java.lang.String eF>";
+ "fieldput <dk.midas.web.chart.applet.ChartManager: java.lang.String eF>"->"interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2";
+ "interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2"->"fieldput <dk.midas.web.chart.applet.ChartManager: java.lang.String eA>";
+ "fieldput <dk.midas.web.chart.applet.ChartManager: java.lang.String eA>"->"interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2";
+ "interfaceinvoke <dk.midas.web.chart.applet.d.c: java.lang.String a(java.lang.String,java.lang.String)> 2"->"fieldput <dk.midas.web.chart.applet.ChartManager: java.lang.String eT>";
+ "fieldput <dk.midas.web.chart.applet.ChartManager: java.lang.String eT>"->"virtualinvoke <java.awt.Container: void validate()>";
+ "virtualinvoke <java.awt.Container: void validate()>"->"return";
+}

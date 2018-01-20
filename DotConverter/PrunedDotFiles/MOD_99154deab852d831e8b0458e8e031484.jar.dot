@@ -1,0 +1,24 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <scroller: java.awt.Image offimage>";
+ "fieldput <scroller: java.awt.Image offimage>"->"fieldget <scroller: java.awt.Image offimage>";
+ "fieldget <scroller: java.awt.Image offimage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <scroller: java.awt.Graphics offg>";
+ "fieldput <scroller: java.awt.Graphics offg>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <scroller: java.awt.Image talo>";
+ "fieldput <scroller: java.awt.Image talo>"->"fieldget <scroller: java.awt.Image talo>";
+ "fieldget <scroller: java.awt.Image talo>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+ "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"virtualinvoke <java.awt.MediaTracker: void waitForID(int)>";
+ "virtualinvoke <java.awt.MediaTracker: void waitForID(int)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <scroller: java.lang.String teksti>";
+ "fieldput <scroller: java.lang.String teksti>"->"return";
+ "virtualinvoke <java.awt.MediaTracker: void waitForID(int)>"->}

@@ -1,0 +1,29 @@
+digraph "" {
+"specialinvoke <edu.hws.jcm.data.Variable: void <init>(java.lang.String)>";
+ "specialinvoke <edu.hws.jcm.data.Variable: void <init>(java.lang.String)>"->"specialinvoke <edu.hws.jcm.awt.ExpressionInput: void <init>(java.lang.String,edu.hws.jcm.data.Parser)>";
+ "specialinvoke <edu.hws.jcm.awt.ExpressionInput: void <init>(java.lang.String,edu.hws.jcm.data.Parser)>"->"specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String,int,edu.hws.jcm.data.Value[])>";
+ "specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String,int,edu.hws.jcm.data.Value[])>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <edu.hws.jcm.draw.DrawString: void setColor(java.awt.Color)>";
+ "virtualinvoke <edu.hws.jcm.draw.DrawString: void setColor(java.awt.Color)>"->"specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>";
+ "specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>"->"specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>";
+ "specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>"->"specialinvoke <edu.hws.jcm.awt.ComputeButton: void <init>(java.lang.String)>";
+ "specialinvoke <edu.hws.jcm.awt.ComputeButton: void <init>(java.lang.String)>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"staticget <java.awt.Color: java.awt.Color lightGray>";
+ "staticget <java.awt.Color: java.awt.Color lightGray>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>(int,int)>";
+ "specialinvoke <java.awt.BorderLayout: void <init>(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <edu.hws.jcm.awt.Controller: void add(java.lang.Object)>";
+ "virtualinvoke <edu.hws.jcm.awt.Controller: void add(java.lang.Object)>"->"return";
+}

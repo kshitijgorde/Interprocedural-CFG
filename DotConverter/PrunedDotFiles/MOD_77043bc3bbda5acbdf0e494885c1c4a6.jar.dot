@@ -1,0 +1,9 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String getHost()>";
+ "virtualinvoke <java.net.URL: java.lang.String getHost()>"->"specialinvoke <TeletextInputField: void <init>(java.lang.String,teletext.TeletextPage,teletext.TeletextPageCanvas)>";
+ "specialinvoke <TeletextInputField: void <init>(java.lang.String,teletext.TeletextPage,teletext.TeletextPageCanvas)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Component: void repaint()>";
+ "virtualinvoke <java.awt.Component: void repaint()>"->"return";
+}

@@ -1,0 +1,9 @@
+digraph "" {
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>";
+ "staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>"->"staticinvoke <sign.signlink: void startpriv(java.net.InetAddress)>";
+ "staticinvoke <sign.signlink: void startpriv(java.net.InetAddress)>"->"goto return";
+ "goto return"->"return";
+"virtualinvoke <java.lang.Exception: void printStackTrace()>";
+}

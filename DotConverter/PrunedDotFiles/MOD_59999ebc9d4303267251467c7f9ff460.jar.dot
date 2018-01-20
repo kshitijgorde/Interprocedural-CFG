@@ -1,0 +1,23 @@
+digraph "" {
+"r0 := @this: com.mindprod.canadiantax.CanadianTax"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"return";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.canadiantax.Province: void importTaxResource()>";
+ "staticinvoke <com.mindprod.canadiantax.Province: void importTaxResource()>"->"staticget <com.mindprod.canadiantax.CanadianTax: com.mindprod.canadiantax.Province defaultBuyerProv>";
+ "staticget <com.mindprod.canadiantax.CanadianTax: com.mindprod.canadiantax.Province defaultBuyerProv>"->"virtualinvoke <com.mindprod.canadiantax.CanadianTax: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <com.mindprod.canadiantax.CanadianTax: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <com.mindprod.canadiantax.CanadianTax: void validateDefaultProv(java.lang.String)>";
+ "staticinvoke <com.mindprod.canadiantax.CanadianTax: void validateDefaultProv(java.lang.String)>"->"virtualinvoke <com.mindprod.canadiantax.CanadianTax: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.canadiantax.CanadianTax: java.awt.Container getContentPane()>"->"staticget <com.mindprod.canadiantax.CanadianTax: java.awt.Color BACKGROUND_FOR_RESULT_PALE>";
+ "staticget <com.mindprod.canadiantax.CanadianTax: java.awt.Color BACKGROUND_FOR_RESULT_PALE>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <com.mindprod.canadiantax.CanadianTax: void createComponents()>";
+ "specialinvoke <com.mindprod.canadiantax.CanadianTax: void createComponents()>"->"specialinvoke <com.mindprod.canadiantax.CanadianTax: void calcAndDisplayTaxes()>";
+ "specialinvoke <com.mindprod.canadiantax.CanadianTax: void calcAndDisplayTaxes()>"->"specialinvoke <com.mindprod.canadiantax.CanadianTax: void layoutGridBag(java.awt.Container)>";
+ "specialinvoke <com.mindprod.canadiantax.CanadianTax: void layoutGridBag(java.awt.Container)>"->"specialinvoke <com.mindprod.canadiantax.CanadianTax: void hookListeners()>";
+ "specialinvoke <com.mindprod.canadiantax.CanadianTax: void hookListeners()>"->"virtualinvoke <com.mindprod.canadiantax.CanadianTax: void validate()>";
+ "virtualinvoke <com.mindprod.canadiantax.CanadianTax: void validate()>"->"virtualinvoke <com.mindprod.canadiantax.CanadianTax: void setVisible(boolean)>";
+ "virtualinvoke <com.mindprod.canadiantax.CanadianTax: void setVisible(boolean)>"->"return";
+}

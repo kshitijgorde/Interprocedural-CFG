@@ -1,0 +1,15 @@
+digraph "" {
+"new java.util.Date";
+ "new java.util.Date"->"specialinvoke <java.util.Date: void <init>()>";
+ "specialinvoke <java.util.Date: void <init>()>"->"fieldput <deot212: java.util.Date dat>";
+ "fieldput <deot212: java.util.Date dat>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new compute";
+ "new compute"->"fieldget <deot212: java.util.Date dat>";
+ "fieldget <deot212: java.util.Date dat>"->"fieldget <deot212: java.lang.String versStr>";
+ "fieldget <deot212: java.lang.String versStr>"->"specialinvoke <compute: void <init>(java.util.Date,java.lang.String)>";
+ "specialinvoke <compute: void <init>(java.util.Date,java.lang.String)>"->"fieldput <deot212: compute comp>";
+ "fieldput <deot212: compute comp>"->"virtualinvoke <java.awt.Component: void repaint()>";
+ "virtualinvoke <java.awt.Component: void repaint()>"->"return";
+}

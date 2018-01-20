@@ -1,0 +1,30 @@
+digraph "" {
+"virtualinvoke <esa.ESApplet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <esa.ESApplet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <esa.ESApplet: void showStatus(java.lang.String)>";
+ "virtualinvoke <esa.ESApplet: void showStatus(java.lang.String)>"->"new java.net.URL";
+ "new java.net.URL"->"virtualinvoke <esa.ESApplet: java.net.URL getCodeBase()>";
+ "virtualinvoke <esa.ESApplet: java.net.URL getCodeBase()>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"new java.io.InputStreamReader";
+ "new java.io.InputStreamReader"->"virtualinvoke <java.net.URL: java.io.InputStream openStream()>";
+ "virtualinvoke <java.net.URL: java.io.InputStream openStream()>"->"specialinvoke <java.io.InputStreamReader: void <init>(java.io.InputStream)>";
+ "specialinvoke <java.io.InputStreamReader: void <init>(java.io.InputStream)>"->"virtualinvoke <esa.Config: void parseFromReader(java.io.Reader)>";
+ "virtualinvoke <esa.Config: void parseFromReader(java.io.Reader)>"->"virtualinvoke <java.io.Reader: void close()>";
+ "virtualinvoke <java.io.Reader: void close()>"->"virtualinvoke <esa.ESApplet: void showStatus(java.lang.String)>";
+ "virtualinvoke <esa.ESApplet: void showStatus(java.lang.String)>"->"virtualinvoke <esa.Config: java.lang.Object getAttribute(java.lang.String)>";
+ "virtualinvoke <esa.Config: java.lang.Object getAttribute(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <esa.Config: java.lang.Object getAttribute(java.lang.String)>";
+ "virtualinvoke <esa.Config: java.lang.Object getAttribute(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <esa.ESApplet: void setName(java.lang.String)>";
+ "virtualinvoke <esa.ESApplet: void setName(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+"virtualinvoke <java.lang.Exception: void printStackTrace()>";
+"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"goto load.r r0";
+"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"goto load.r r0";
+"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"virtualinvoke <esa.ESApplet: java.lang.String getParameter(java.lang.String,java.lang.String)>";
+ "virtualinvoke <esa.ESApplet: java.lang.String getParameter(java.lang.String,java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->}

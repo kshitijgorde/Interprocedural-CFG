@@ -15,7 +15,7 @@ for dot in $dotFiles
 do 
 	fileName=$(echo $dot | rev | cut -d"/" -f1 | rev) 
 	echo "Processing $1$dot"
-	./processDotFile.sh "$1/$dot" "MOD_$fileName" 
+	./processDotFile.sh "$dot" "MOD_$fileName" 
 	mv "MOD_$fileName" PrunedDotFiles/
 	echo ""
 done 

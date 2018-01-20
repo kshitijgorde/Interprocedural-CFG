@@ -1,0 +1,7 @@
+digraph "" {
+"r0 := @this: com.alexi.AScrollText"->"specialinvoke <java.applet.Applet: void init()>";
+ "specialinvoke <java.applet.Applet: void init()>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <com.alexi.AScrollText: void loadFromAppletParams()>";
+ "virtualinvoke <com.alexi.AScrollText: void loadFromAppletParams()>"->"return";
+}

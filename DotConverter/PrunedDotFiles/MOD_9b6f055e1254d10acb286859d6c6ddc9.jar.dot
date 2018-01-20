@@ -1,0 +1,17 @@
+digraph "" {
+"fieldget <Hag: java.awt.TextArea ta>";
+ "fieldget <Hag: java.awt.TextArea ta>"->"virtualinvoke <java.awt.TextComponent: void setEditable(boolean)>";
+ "virtualinvoke <java.awt.TextComponent: void setEditable(boolean)>"->"fieldget <Hag: java.awt.TextArea ta>";
+ "fieldget <Hag: java.awt.TextArea ta>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"fieldget <Hag: java.awt.TextField tf>";
+ "fieldget <Hag: java.awt.TextField tf>"->"virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>";
+ "virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>"->"fieldget <Hag: java.awt.TextField tf>";
+ "fieldget <Hag: java.awt.TextField tf>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"fieldget <Hag: java.awt.Button button>";
+ "fieldget <Hag: java.awt.Button button>"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"fieldget <Hag: java.awt.Button button>";
+ "fieldget <Hag: java.awt.Button button>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Dimension getPreferredSize()>";
+ "virtualinvoke <java.awt.Container: java.awt.Dimension getPreferredSize()>"->"virtualinvoke <java.awt.Component: void setSize(java.awt.Dimension)>";
+ "virtualinvoke <java.awt.Component: void setSize(java.awt.Dimension)>"->"return";
+}

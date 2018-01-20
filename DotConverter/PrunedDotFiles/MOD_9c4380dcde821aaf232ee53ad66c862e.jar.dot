@@ -1,0 +1,35 @@
+digraph "" {
+"specialinvoke <QuotesServer: void info(java.lang.String)>";
+ "specialinvoke <QuotesServer: void info(java.lang.String)>"->"virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>"->"fieldput <QuotesServer: java.lang.String loginKey>";
+ "fieldput <QuotesServer: java.lang.String loginKey>"->"virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>"->"fieldput <QuotesServer: java.lang.String user>";
+ "fieldput <QuotesServer: java.lang.String user>"->"virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <QuotesServer: java.util.Vector split(java.lang.String,java.lang.String)>";
+ "specialinvoke <QuotesServer: java.util.Vector split(java.lang.String,java.lang.String)>"->"fieldput <QuotesServer: java.util.Vector tcpList>";
+ "fieldput <QuotesServer: java.util.Vector tcpList>"->"virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <QuotesServer: java.util.Vector split(java.lang.String,java.lang.String)>";
+ "specialinvoke <QuotesServer: java.util.Vector split(java.lang.String,java.lang.String)>"->"fieldput <QuotesServer: java.util.Vector httpList>";
+ "fieldput <QuotesServer: java.util.Vector httpList>"->"virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>"->"fieldput <QuotesServer: boolean compress>";
+ "fieldput <QuotesServer: boolean compress>"->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+ "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"fieldput <QuotesServer: boolean compress>";
+ "fieldput <QuotesServer: boolean compress>"->"virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+ "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <QuotesServer: java.lang.String getParameter(java.lang.String)>"->"fieldput <QuotesServer: java.lang.String raiseMessageScript>";
+ "fieldput <QuotesServer: java.lang.String raiseMessageScript>"->"fieldget <QuotesServer: java.lang.String raiseMessageScript>";
+ "fieldget <QuotesServer: java.lang.String raiseMessageScript>"->"specialinvoke <QuotesServer: boolean hasValue(java.lang.String)>";
+ "specialinvoke <QuotesServer: boolean hasValue(java.lang.String)>"->"new java.util.Hashtable";
+ "new java.util.Hashtable"->"specialinvoke <java.util.Hashtable: void <init>()>";
+ "specialinvoke <java.util.Hashtable: void <init>()>"->"fieldput <QuotesServer: java.util.Hashtable mktWatches>";
+ "fieldput <QuotesServer: java.util.Hashtable mktWatches>"->"new java.util.Vector";
+ "new java.util.Vector"->"specialinvoke <java.util.Vector: void <init>()>";
+ "specialinvoke <java.util.Vector: void <init>()>"->"fieldput <QuotesServer: java.util.Vector mbpKeys>";
+ "fieldput <QuotesServer: java.util.Vector mbpKeys>"->"new java.util.Hashtable";
+ "new java.util.Hashtable"->"specialinvoke <java.util.Hashtable: void <init>()>";
+ "specialinvoke <java.util.Hashtable: void <init>()>"->"fieldput <QuotesServer: java.util.Hashtable stats>";
+ "fieldput <QuotesServer: java.util.Hashtable stats>"->"push 'init complete'";
+ "push 'init complete'"->"specialinvoke <QuotesServer: void info(java.lang.String)>";
+ "specialinvoke <QuotesServer: void info(java.lang.String)>"->"return";
+}

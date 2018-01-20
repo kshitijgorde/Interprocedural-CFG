@@ -1,0 +1,12 @@
+digraph "" {
+"new java.awt.GridLayout";
+ "new java.awt.GridLayout"->"specialinvoke <java.awt.GridLayout: void <init>(int,int)>";
+ "specialinvoke <java.awt.GridLayout: void <init>(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"staticget <java.awt.Color: java.awt.Color blue>";
+ "staticget <java.awt.Color: java.awt.Color blue>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"return";
+}

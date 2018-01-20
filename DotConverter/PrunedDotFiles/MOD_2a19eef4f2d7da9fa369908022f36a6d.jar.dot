@@ -1,0 +1,4 @@
+digraph "" {
+"virtualinvoke <Dispersion: void addComponentListener(java.awt.event.ComponentListener)>";
+ "virtualinvoke <Dispersion: void addComponentListener(java.awt.event.ComponentListener)>"->"return";
+}

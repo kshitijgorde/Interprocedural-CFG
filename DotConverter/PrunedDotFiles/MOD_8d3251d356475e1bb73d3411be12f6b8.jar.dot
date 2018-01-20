@@ -1,0 +1,18 @@
+digraph "" {
+"new java.awt.image.DirectColorModel";
+ "new java.awt.image.DirectColorModel"->"specialinvoke <java.awt.image.DirectColorModel: void <init>(int,int,int,int)>";
+ "specialinvoke <java.awt.image.DirectColorModel: void <init>(int,int,int,int)>"->"fieldput <planet: java.awt.image.DirectColorModel C>";
+ "fieldput <planet: java.awt.image.DirectColorModel C>"->"new java.awt.image.MemoryImageSource";
+ "new java.awt.image.MemoryImageSource"->"specialinvoke <java.awt.image.MemoryImageSource: void <init>(int,int,int[],int,int)>";
+ "specialinvoke <java.awt.image.MemoryImageSource: void <init>(int,int,int[],int,int)>"->"fieldput <planet: java.awt.image.MemoryImageSource D>";
+ "fieldput <planet: java.awt.image.MemoryImageSource D>"->"fieldget <planet: java.awt.image.MemoryImageSource D>";
+ "fieldget <planet: java.awt.image.MemoryImageSource D>"->"virtualinvoke <java.awt.image.MemoryImageSource: void setFullBufferUpdates(boolean)>";
+ "virtualinvoke <java.awt.image.MemoryImageSource: void setFullBufferUpdates(boolean)>"->"fieldget <planet: java.awt.image.MemoryImageSource D>";
+ "fieldget <planet: java.awt.image.MemoryImageSource D>"->"virtualinvoke <java.awt.image.MemoryImageSource: void setAnimated(boolean)>";
+ "virtualinvoke <java.awt.image.MemoryImageSource: void setAnimated(boolean)>"->"fieldget <planet: java.awt.image.MemoryImageSource D>";
+ "fieldget <planet: java.awt.image.MemoryImageSource D>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(java.awt.image.ImageProducer)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(java.awt.image.ImageProducer)>"->"fieldput <planet: java.awt.Image E>";
+ "fieldput <planet: java.awt.Image E>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"return";
+}

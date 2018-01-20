@@ -1,0 +1,38 @@
+digraph "" {
+"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <GrowText: java.lang.String TextString>";
+ "fieldput <GrowText: java.lang.String TextString>"->"fieldget <GrowText: java.lang.String TextString>";
+ "fieldget <GrowText: java.lang.String TextString>"->"fieldput <GrowText: java.lang.String TextString>";
+ "fieldput <GrowText: java.lang.String TextString>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <GrowText: java.lang.String ParameterString>";
+ "fieldput <GrowText: java.lang.String ParameterString>"->"fieldget <GrowText: java.lang.String ParameterString>";
+ "fieldget <GrowText: java.lang.String ParameterString>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"fieldput <GrowText: java.awt.Color BackgroundColor>";
+ "fieldput <GrowText: java.awt.Color BackgroundColor>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <GrowText: java.lang.String ParameterString>";
+ "fieldput <GrowText: java.lang.String ParameterString>"->"fieldget <GrowText: java.lang.String ParameterString>";
+ "fieldget <GrowText: java.lang.String ParameterString>"->"staticget <java.awt.Color: java.awt.Color yellow>";
+ "staticget <java.awt.Color: java.awt.Color yellow>"->"fieldput <GrowText: java.awt.Color ForegroundColor>";
+ "fieldput <GrowText: java.awt.Color ForegroundColor>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <GrowText: java.lang.String ParameterString>";
+ "fieldput <GrowText: java.lang.String ParameterString>"->"fieldget <GrowText: java.lang.String ParameterString>";
+ "fieldget <GrowText: java.lang.String ParameterString>"->"goto load.r r0";
+ "goto load.r r0"->"fieldget <GrowText: java.awt.Color BackgroundColor>";
+ "fieldget <GrowText: java.awt.Color BackgroundColor>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <GrowText: java.awt.Color ForegroundColor>";
+ "fieldget <GrowText: java.awt.Color ForegroundColor>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"return";
+"fieldget <GrowText: java.lang.String ParameterString>";
+ "fieldget <GrowText: java.lang.String ParameterString>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldget <GrowText: java.lang.String ParameterString>";
+ "fieldget <GrowText: java.lang.String ParameterString>"->"virtualinvoke <GrowText: java.awt.Color GetColor(java.lang.String)>";
+ "virtualinvoke <GrowText: java.awt.Color GetColor(java.lang.String)>"->"fieldput <GrowText: java.awt.Color ForegroundColor>";
+"fieldget <GrowText: java.lang.String ParameterString>";
+ "fieldget <GrowText: java.lang.String ParameterString>"->"virtualinvoke <GrowText: java.awt.Color GetColor(java.lang.String)>";
+ "virtualinvoke <GrowText: java.awt.Color GetColor(java.lang.String)>"->"fieldput <GrowText: java.awt.Color BackgroundColor>";
+}

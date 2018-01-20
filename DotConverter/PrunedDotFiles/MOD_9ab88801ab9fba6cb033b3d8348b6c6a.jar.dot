@@ -1,0 +1,8 @@
+digraph "" {
+"virtualinvoke <Polat: void firejavaudder()>";
+ "virtualinvoke <Polat: void firejavaudder()>"->"goto load.r r0";
+ "goto load.r r0"->"specialinvoke <java.applet.Applet: void init()>";
+ "specialinvoke <java.applet.Applet: void init()>"->"return";
+ "virtualinvoke <Polat: void firejavaudder()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.Object)>";
+}

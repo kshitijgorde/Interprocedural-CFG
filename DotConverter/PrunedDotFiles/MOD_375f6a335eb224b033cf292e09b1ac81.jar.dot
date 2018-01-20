@@ -1,0 +1,7 @@
+digraph "" {
+"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int)>";
+ "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"return";
+}

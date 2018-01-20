@@ -1,0 +1,18 @@
+digraph "" {
+"virtualinvoke <lecture.AppletLecture: java.lang.String a(java.lang.String,java.lang.String)>";
+ "virtualinvoke <lecture.AppletLecture: java.lang.String a(java.lang.String,java.lang.String)>"->"fieldput <lecture.AppletLecture: java.lang.String a>";
+ "fieldput <lecture.AppletLecture: java.lang.String a>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <lecture.AppletLecture: java.lang.String a(java.lang.String,java.lang.String)>";
+ "virtualinvoke <lecture.AppletLecture: java.lang.String a(java.lang.String,java.lang.String)>"->"fieldput <lecture.AppletLecture: java.lang.String d>";
+ "fieldput <lecture.AppletLecture: java.lang.String d>"->"goto load.r r0";
+ "goto load.r r0"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"goto return";
+ "goto return"->"return";
+"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+ "virtualinvoke <java.lang.Throwable: void printStackTrace()>"->"goto return";
+ "virtualinvoke <lecture.AppletLecture: java.lang.String a(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+ "virtualinvoke <java.lang.Throwable: void printStackTrace()>"->"goto load.r r0";
+ "virtualinvoke <lecture.AppletLecture: java.lang.String a(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+ "virtualinvoke <java.lang.Throwable: void printStackTrace()>"->"goto load.r r0";
+}

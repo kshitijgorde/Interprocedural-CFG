@@ -1,0 +1,31 @@
+digraph "" {
+"r0 := @this: com.agentcy.applet.matrixcode.MatrixCodeSimulation"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <com.agentcy.applet.matrixcode.MatrixCodeSimulation: void setBackground(java.awt.Color)>";
+ "virtualinvoke <com.agentcy.applet.matrixcode.MatrixCodeSimulation: void setBackground(java.awt.Color)>"->"new com.agentcy.applet.matrixcode.CharacterPainter";
+ "new com.agentcy.applet.matrixcode.CharacterPainter"->"specialinvoke <com.agentcy.applet.matrixcode.CharacterPainter: void <init>(java.applet.Applet)>";
+ "specialinvoke <com.agentcy.applet.matrixcode.CharacterPainter: void <init>(java.applet.Applet)>"->"fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>";
+ "fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>"->"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>"->"virtualinvoke <com.agentcy.applet.matrixcode.CharacterPainter: int getNumOfCharacters()>";
+ "virtualinvoke <com.agentcy.applet.matrixcode.CharacterPainter: int getNumOfCharacters()>"->"fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _numOfCharacters>";
+ "fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _numOfCharacters>"->"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>"->"virtualinvoke <com.agentcy.applet.matrixcode.CharacterPainter: int getCharHeight()>";
+ "virtualinvoke <com.agentcy.applet.matrixcode.CharacterPainter: int getCharHeight()>"->"fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _charHeight>";
+ "fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _charHeight>"->"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>"->"virtualinvoke <com.agentcy.applet.matrixcode.CharacterPainter: int getCharWidth()>";
+ "virtualinvoke <com.agentcy.applet.matrixcode.CharacterPainter: int getCharWidth()>"->"fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _charWidth>";
+ "fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _charWidth>"->"virtualinvoke <com.agentcy.applet.matrixcode.MatrixCodeSimulation: java.awt.Dimension getSize()>";
+ "virtualinvoke <com.agentcy.applet.matrixcode.MatrixCodeSimulation: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _charWidth>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _charWidth>"->"fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _numOfColumns>";
+ "fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _numOfColumns>"->"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _numOfColumns>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _numOfColumns>"->"fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.LineOfCode[] _lineArray>";
+ "fieldput <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.LineOfCode[] _lineArray>"->"goto load.i i11";
+ "goto load.i i11"->"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _numOfColumns>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _numOfColumns>"->"return";
+"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.LineOfCode[] _lineArray>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.LineOfCode[] _lineArray>"->"new com.agentcy.applet.matrixcode.LineOfCode";
+ "new com.agentcy.applet.matrixcode.LineOfCode"->"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: com.agentcy.applet.matrixcode.CharacterPainter _charPainter>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _charHeight>";
+ "fieldget <com.agentcy.applet.matrixcode.MatrixCodeSimulation: int _charHeight>"->"specialinvoke <com.agentcy.applet.matrixcode.LineOfCode: void <init>(int,com.agentcy.applet.matrixcode.CharacterPainter,int)>";
+ "specialinvoke <com.agentcy.applet.matrixcode.LineOfCode: void <init>(int,com.agentcy.applet.matrixcode.CharacterPainter,int)>"->}

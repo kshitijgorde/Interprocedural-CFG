@@ -1,0 +1,4 @@
+digraph "" {
+"virtualinvoke <abacusApplet: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <abacusApplet: java.awt.Component add(java.awt.Component)>"->"return";
+}

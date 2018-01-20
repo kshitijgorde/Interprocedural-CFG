@@ -1,0 +1,21 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String tmptext>";
+ "fieldput <Marquee102V05: java.lang.String tmptext>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String schriftart>";
+ "fieldput <Marquee102V05: java.lang.String schriftart>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String stil>";
+ "fieldput <Marquee102V05: java.lang.String stil>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String funkStr>";
+ "fieldput <Marquee102V05: java.lang.String funkStr>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String fontsizePar>";
+ "fieldput <Marquee102V05: java.lang.String fontsizePar>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String rgbtextPar>";
+ "fieldput <Marquee102V05: java.lang.String rgbtextPar>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String rgbbackPar>";
+ "fieldput <Marquee102V05: java.lang.String rgbbackPar>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String delayPar>";
+ "fieldput <Marquee102V05: java.lang.String delayPar>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Marquee102V05: java.lang.String pixelscrollPar>";
+ "fieldput <Marquee102V05: java.lang.String pixelscrollPar>"->"return";
+}

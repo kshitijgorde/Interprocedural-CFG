@@ -1,0 +1,12 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: void showStatus(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: void showStatus(java.lang.String)>"->"fieldget <DS_FireMenu: java.awt.Font _fld3>";
+ "fieldget <DS_FireMenu: java.awt.Font _fld3>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldget <DS_FireMenu: java.lang.String _fld6b>";
+ "fieldget <DS_FireMenu: java.lang.String _fld6b>"->"virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>";
+ "virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"return";
+}

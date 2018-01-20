@@ -1,0 +1,4 @@
+digraph "" {
+"specialinvoke <java.applet.Applet: void init()>";
+ "specialinvoke <java.applet.Applet: void init()>"->"return";
+}

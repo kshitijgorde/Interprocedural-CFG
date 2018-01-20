@@ -1,0 +1,9 @@
+digraph "" {
+"fieldget <Scroll: java.awt.Color descBColor>";
+ "fieldget <Scroll: java.awt.Color descBColor>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.Cursor";
+ "new java.awt.Cursor"->"specialinvoke <java.awt.Cursor: void <init>(int)>";
+ "specialinvoke <java.awt.Cursor: void <init>(int)>"->"virtualinvoke <java.awt.Container: void setCursor(java.awt.Cursor)>";
+ "virtualinvoke <java.awt.Container: void setCursor(java.awt.Cursor)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"return";
+}

@@ -1,0 +1,33 @@
+digraph "" {
+"r0 := @this: com.itt.J2KViewer.EnterpriseViewerApplet"->"new com.itt.J2KViewer.J2KViewerBean";
+ "new com.itt.J2KViewer.J2KViewerBean"->"specialinvoke <com.itt.J2KViewer.J2KViewerBean: void <init>(javax.swing.JFrame)>";
+ "specialinvoke <com.itt.J2KViewer.J2KViewerBean: void <init>(javax.swing.JFrame)>"->"fieldput <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>";
+ "fieldput <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>"->"fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String defaultPropFile>";
+ "fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String defaultPropFile>"->"virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void setBeanProps(java.lang.String)>";
+ "virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void setBeanProps(java.lang.String)>"->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"fieldput <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String homeDir>";
+ "fieldput <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String homeDir>"->"fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>";
+ "fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String homeDir>";
+ "fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String homeDir>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String userPropFile>";
+ "fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String userPropFile>"->"virtualinvoke <com.itt.J2KViewer.J2KViewerBean: boolean setPropFile(java.lang.String,java.lang.String)>";
+ "virtualinvoke <com.itt.J2KViewer.J2KViewerBean: boolean setPropFile(java.lang.String,java.lang.String)>"->"fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>";
+ "fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>"->"virtualinvoke <com.itt.J2KViewer.J2KViewerBean: boolean propFileWasSet()>";
+ "virtualinvoke <com.itt.J2KViewer.J2KViewerBean: boolean propFileWasSet()>"->"fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String userPropFile>";
+ "fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: java.lang.String userPropFile>"->"virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void setBeanProps(java.lang.String)>";
+ "virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void setBeanProps(java.lang.String)>"->"specialinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void setBeanDefaultProps()>";
+ "specialinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void setBeanDefaultProps()>"->"specialinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void initApplet()>";
+ "specialinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void initApplet()>"->"fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>";
+ "fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>"->"virtualinvoke <com.itt.J2KViewer.J2KViewerBean: com.itt.J2KViewer.gui.ViewerMainPanel getMainPanel()>";
+ "virtualinvoke <com.itt.J2KViewer.J2KViewerBean: com.itt.J2KViewer.gui.ViewerMainPanel getMainPanel()>"->"virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>";
+ "fieldget <com.itt.J2KViewer.EnterpriseViewerApplet: com.itt.J2KViewer.J2KViewerBean viewerBean>"->"virtualinvoke <com.itt.J2KViewer.J2KViewerBean: com.itt.J2KViewer.gui.MenuBar getMenuBar()>";
+ "virtualinvoke <com.itt.J2KViewer.J2KViewerBean: com.itt.J2KViewer.gui.MenuBar getMenuBar()>"->"virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void setJMenuBar(javax.swing.JMenuBar)>";
+ "virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void setJMenuBar(javax.swing.JMenuBar)>"->"virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void customizeMenu()>";
+ "virtualinvoke <com.itt.J2KViewer.EnterpriseViewerApplet: void customizeMenu()>"->"return";
+}

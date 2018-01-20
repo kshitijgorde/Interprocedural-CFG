@@ -1,0 +1,27 @@
+digraph "" {
+"virtualinvoke <jfig.canvas.FigSwingCanvas: java.awt.Component getComponent()>";
+ "virtualinvoke <jfig.canvas.FigSwingCanvas: java.awt.Component getComponent()>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <SramApplet: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <SramApplet: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <jfig.canvas.FigSwingCanvas: java.awt.Component getComponent()>";
+ "virtualinvoke <jfig.canvas.FigSwingCanvas: java.awt.Component getComponent()>"->"virtualinvoke <SramApplet: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <SramApplet: java.awt.Component add(java.lang.String,java.awt.Component)>"->"new java.net.URL";
+ "new java.net.URL"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"virtualinvoke <java.net.URL: java.io.InputStream openStream()>";
+ "virtualinvoke <java.net.URL: java.io.InputStream openStream()>"->"virtualinvoke <java.net.URL: java.lang.String toExternalForm()>";
+ "virtualinvoke <java.net.URL: java.lang.String toExternalForm()>"->"virtualinvoke <jfig.objects.FigParser: void setFilenameAndType(java.lang.String,java.lang.String)>";
+ "virtualinvoke <jfig.objects.FigParser: void setFilenameAndType(java.lang.String,java.lang.String)>"->"virtualinvoke <jfig.objects.FigParser: int parse_fig_file_not_threaded(java.io.InputStream,boolean,boolean,boolean,jfig.objects.FigAttribs,jfig.canvas.FigTrafo2D,jfig.objects.FigObjectList)>";
+ "virtualinvoke <jfig.objects.FigParser: int parse_fig_file_not_threaded(java.io.InputStream,boolean,boolean,boolean,jfig.objects.FigAttribs,jfig.canvas.FigTrafo2D,jfig.objects.FigObjectList)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"return";
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

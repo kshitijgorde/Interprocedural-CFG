@@ -1,0 +1,16 @@
+digraph "" {
+"virtualinvoke <main: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <main: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"ifne goto return";
+ "ifne goto return"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"staticinvoke <main: java.lang.String HS(java.lang.String)>";
+ "staticinvoke <main: java.lang.String HS(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <main: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <main: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->}

@@ -1,0 +1,4 @@
+digraph "" {
+"staticinvoke <Client: void main(java.lang.String[])>";
+ "staticinvoke <Client: void main(java.lang.String[])>"->"return";
+}

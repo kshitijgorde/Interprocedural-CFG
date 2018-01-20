@@ -1,0 +1,19 @@
+digraph "" {
+"fieldget <Men: javax.script.ScriptEngine ALLATORI_DEMO>";
+ "fieldget <Men: javax.script.ScriptEngine ALLATORI_DEMO>"->"staticinvoke <Pol: java.lang.String k(java.lang.String)>";
+ "staticinvoke <Pol: java.lang.String k(java.lang.String)>"->"staticinvoke <Pol: java.lang.String k(java.lang.String)>";
+ "staticinvoke <Pol: java.lang.String k(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>";
+ "virtualinvoke <java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>"->"interfaceinvoke <javax.script.ScriptEngine: java.lang.Object eval(java.lang.String)> 1";
+ "interfaceinvoke <javax.script.ScriptEngine: java.lang.Object eval(java.lang.String)> 1"->"new javax.swing.JList";
+ "new javax.swing.JList"->"fieldget <Men: javax.script.ScriptEngine ALLATORI_DEMO>";
+ "fieldget <Men: javax.script.ScriptEngine ALLATORI_DEMO>"->"staticinvoke <Pol: java.lang.String k(java.lang.String)>";
+ "staticinvoke <Pol: java.lang.String k(java.lang.String)>"->"staticinvoke <Pol: java.lang.String k(java.lang.String)>";
+ "staticinvoke <Pol: java.lang.String k(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>";
+ "virtualinvoke <java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>"->"interfaceinvoke <javax.script.ScriptEngine: java.lang.Object get(java.lang.String)> 1";
+ "interfaceinvoke <javax.script.ScriptEngine: java.lang.Object get(java.lang.String)> 1"->"specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>";
+ "specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>"->"fieldput <Efira: javax.swing.JList ALLATORI_DEMO>";
+ "fieldput <Efira: javax.swing.JList ALLATORI_DEMO>"->"fieldget <Efira: javax.swing.JList ALLATORI_DEMO>";
+ "fieldget <Efira: javax.swing.JList ALLATORI_DEMO>"->"virtualinvoke <Efira: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <Efira: java.awt.Component add(java.awt.Component)>"->"return";
+ "virtualinvoke <Efira: java.awt.Component add(java.awt.Component)>"->"return";
+}

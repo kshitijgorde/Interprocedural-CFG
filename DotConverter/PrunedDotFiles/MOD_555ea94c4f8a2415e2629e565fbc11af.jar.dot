@@ -1,0 +1,19 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+ "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"fieldget <Applet1: java.awt.Button button2>";
+ "fieldget <Applet1: java.awt.Button button2>"->"virtualinvoke <java.awt.Button: void setLabel(java.lang.String)>";
+ "virtualinvoke <java.awt.Button: void setLabel(java.lang.String)>"->"fieldget <Applet1: java.awt.Button button2>";
+ "fieldget <Applet1: java.awt.Button button2>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldget <Applet1: java.awt.Button button2>";
+ "fieldget <Applet1: java.awt.Button button2>"->"staticget <java.awt.Color: java.awt.Color lightGray>";
+ "staticget <java.awt.Color: java.awt.Color lightGray>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <Applet1: java.awt.Button button2>";
+ "fieldget <Applet1: java.awt.Button button2>"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+ "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"fieldget <Applet1: java.awt.Button button2>";
+ "fieldget <Applet1: java.awt.Button button2>"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"return";
+}

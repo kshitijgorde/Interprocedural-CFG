@@ -1,0 +1,9 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <MaTocante: java.awt.Image datas_image>";
+ "fieldput <MaTocante: java.awt.Image datas_image>"->"fieldget <MaTocante: java.awt.Image datas_image>";
+ "fieldget <MaTocante: java.awt.Image datas_image>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <MaTocante: java.awt.Graphics datas_g>";
+ "fieldput <MaTocante: java.awt.Graphics datas_g>"->"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"return";
+}

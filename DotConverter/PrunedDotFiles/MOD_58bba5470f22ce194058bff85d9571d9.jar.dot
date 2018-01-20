@@ -1,0 +1,24 @@
+digraph "" {
+"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"specialinvoke <Ball: void <init>(int,int,int,int,int,java.awt.Color,java.awt.Component)>";
+ "specialinvoke <Ball: void <init>(int,int,int,int,int,java.awt.Color,java.awt.Component)>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <Main: java.awt.Image titleImg>";
+ "fieldput <Main: java.awt.Image titleImg>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Main: java.applet.AudioClip kicknoise>";
+ "fieldput <Main: java.applet.AudioClip kicknoise>"->"fieldget <Main: java.applet.AudioClip kicknoise>";
+ "fieldget <Main: java.applet.AudioClip kicknoise>"->"interfaceinvoke <java.applet.AudioClip: void play()> 0";
+ "interfaceinvoke <java.applet.AudioClip: void play()> 0"->"fieldget <Main: java.applet.AudioClip kicknoise>";
+ "fieldget <Main: java.applet.AudioClip kicknoise>"->"interfaceinvoke <java.applet.AudioClip: void stop()> 0";
+ "interfaceinvoke <java.applet.AudioClip: void stop()> 0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Main: java.applet.AudioClip goalnoise>";
+ "fieldput <Main: java.applet.AudioClip goalnoise>"->"fieldget <Main: java.applet.AudioClip goalnoise>";
+ "fieldget <Main: java.applet.AudioClip goalnoise>"->"interfaceinvoke <java.applet.AudioClip: void play()> 0";
+ "interfaceinvoke <java.applet.AudioClip: void play()> 0"->"fieldget <Main: java.applet.AudioClip goalnoise>";
+ "fieldget <Main: java.applet.AudioClip goalnoise>"->"interfaceinvoke <java.applet.AudioClip: void stop()> 0";
+ "interfaceinvoke <java.applet.AudioClip: void stop()> 0"->"return";
+}

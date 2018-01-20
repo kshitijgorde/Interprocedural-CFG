@@ -1,0 +1,36 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Linx: java.awt.Color brown>";
+ "fieldput <Linx: java.awt.Color brown>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Linx: java.awt.Color tan>";
+ "fieldput <Linx: java.awt.Color tan>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Linx: java.awt.Color green>";
+ "fieldput <Linx: java.awt.Color green>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Linx: java.awt.Color darkGreen>";
+ "fieldput <Linx: java.awt.Color darkGreen>"->"goto load.i $r21";
+ "goto load.i $r21"->"new java.awt.Frame";
+ "new java.awt.Frame"->"specialinvoke <java.awt.Frame: void <init>()>";
+ "specialinvoke <java.awt.Frame: void <init>()>"->"fieldput <Linx: java.awt.Frame scoreF>";
+ "fieldput <Linx: java.awt.Frame scoreF>"->"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"goto load.i i7";
+ "goto load.i i7"->"new java.lang.String";
+ "new java.lang.String"->"specialinvoke <java.lang.String: void <init>()>";
+ "specialinvoke <java.lang.String: void <init>()>"->"fieldput <Linx: java.lang.String message>";
+ "fieldput <Linx: java.lang.String message>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"fieldput <Linx: java.awt.Color messageColor>";
+ "fieldput <Linx: java.awt.Color messageColor>"->"new java.awt.Frame";
+ "new java.awt.Frame"->"specialinvoke <java.awt.Frame: void <init>()>";
+ "specialinvoke <java.awt.Frame: void <init>()>"->"fieldput <Linx: java.awt.Frame codeF>";
+ "fieldput <Linx: java.awt.Frame codeF>"->"new java.awt.Frame";
+ "new java.awt.Frame"->"specialinvoke <java.awt.Frame: void <init>()>";
+ "specialinvoke <java.awt.Frame: void <init>()>"->"fieldput <Linx: java.awt.Frame nameF>";
+ "fieldput <Linx: java.awt.Frame nameF>"->"return";
+"virtualinvoke <java.util.Random: int nextInt()>";
+ "virtualinvoke <java.util.Random: int nextInt()>"->"staticinvoke <java.lang.Math: int abs(int)>";
+ "staticinvoke <java.lang.Math: int abs(int)>"->}

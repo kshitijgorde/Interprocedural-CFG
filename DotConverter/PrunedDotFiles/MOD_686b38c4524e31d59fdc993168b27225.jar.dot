@@ -1,0 +1,31 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <ZAA1: java.awt.Image offScr>";
+ "fieldput <ZAA1: java.awt.Image offScr>"->"fieldget <ZAA1: java.awt.Image offScr>";
+ "fieldget <ZAA1: java.awt.Image offScr>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <ZAA1: java.awt.Graphics dBuf>";
+ "fieldput <ZAA1: java.awt.Graphics dBuf>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <ZAA1: java.awt.FontMetrics vMetrics>";
+ "fieldput <ZAA1: java.awt.FontMetrics vMetrics>"->"fieldget <ZAA1: java.awt.Graphics dBuf>";
+ "fieldget <ZAA1: java.awt.Graphics dBuf>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <ZAA1: java.awt.Color[] parseC(java.lang.String,java.lang.String)>";
+ "virtualinvoke <ZAA1: java.awt.Color[] parseC(java.lang.String,java.lang.String)>"->"fieldput <ZAA1: java.awt.Color[] cColor>";
+ "fieldput <ZAA1: java.awt.Color[] cColor>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <ZAA1: java.lang.String sTXT>";
+ "fieldput <ZAA1: java.lang.String sTXT>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"return";
+"fieldput <ZAA1: java.lang.String sTXT>";
+"virtualinvoke <ZAA1: java.awt.Color[] parseC(java.lang.String,java.lang.String)>";
+ "virtualinvoke <ZAA1: java.awt.Color[] parseC(java.lang.String,java.lang.String)>"->"fieldput <ZAA1: java.awt.Color[] cColor>";
+}

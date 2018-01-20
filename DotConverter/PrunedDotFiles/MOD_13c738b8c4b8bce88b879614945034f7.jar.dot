@@ -1,0 +1,16 @@
+digraph "" {
+"new javax.swing.JFrame";
+ "new javax.swing.JFrame"->"specialinvoke <javax.swing.JFrame: void <init>(java.lang.String)>";
+ "specialinvoke <javax.swing.JFrame: void <init>(java.lang.String)>"->"staticput <DateDiffGUIApplet: javax.swing.JFrame frame>";
+ "staticput <DateDiffGUIApplet: javax.swing.JFrame frame>"->"staticget <DateDiffGUIApplet: javax.swing.JFrame frame>";
+ "staticget <DateDiffGUIApplet: javax.swing.JFrame frame>"->"virtualinvoke <javax.swing.JFrame: void addWindowListener(java.awt.event.WindowListener)>";
+ "virtualinvoke <javax.swing.JFrame: void addWindowListener(java.awt.event.WindowListener)>"->"staticget <DateDiffGUIApplet: javax.swing.JFrame frame>";
+ "staticget <DateDiffGUIApplet: javax.swing.JFrame frame>"->"virtualinvoke <javax.swing.JFrame: void setContentPane(java.awt.Container)>";
+ "virtualinvoke <javax.swing.JFrame: void setContentPane(java.awt.Container)>"->"staticget <DateDiffGUIApplet: javax.swing.JFrame frame>";
+ "staticget <DateDiffGUIApplet: javax.swing.JFrame frame>"->"virtualinvoke <javax.swing.JFrame: void pack()>";
+ "virtualinvoke <javax.swing.JFrame: void pack()>"->"staticget <DateDiffGUIApplet: javax.swing.JFrame frame>";
+ "staticget <DateDiffGUIApplet: javax.swing.JFrame frame>"->"virtualinvoke <javax.swing.JFrame: void setVisible(boolean)>";
+ "virtualinvoke <javax.swing.JFrame: void setVisible(boolean)>"->"staticget <DateDiffGUIApplet: javax.swing.JFrame frame>";
+ "staticget <DateDiffGUIApplet: javax.swing.JFrame frame>"->"virtualinvoke <javax.swing.JFrame: void setSize(int,int)>";
+ "virtualinvoke <javax.swing.JFrame: void setSize(int,int)>"->"return";
+}

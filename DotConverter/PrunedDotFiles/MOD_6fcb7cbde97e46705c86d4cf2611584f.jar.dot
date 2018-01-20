@@ -1,0 +1,13 @@
+digraph "" {
+"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Spring: java.awt.Color Z0002>";
+ "fieldput <Spring: java.awt.Color Z0002>"->"virtualinvoke <Spring: java.awt.Container getContentPane()>";
+ "virtualinvoke <Spring: java.awt.Container getContentPane()>"->"virtualinvoke <Spring: javax.swing.JPanel Z0074()>";
+ "virtualinvoke <Spring: javax.swing.JPanel Z0074()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <Spring$DrawingArea: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <Spring$DrawingArea: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <Spring$DrawingArea: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <Spring$DrawingArea: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"fieldput <Spring: java.lang.Thread Z0001>";
+ "fieldput <Spring: java.lang.Thread Z0001>"->"return";
+}

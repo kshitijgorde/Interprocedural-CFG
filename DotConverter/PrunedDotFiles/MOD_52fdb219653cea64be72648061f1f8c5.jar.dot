@@ -1,0 +1,30 @@
+digraph "" {
+"r0 := @this: com.mindprod.jdisplay.JDisplay"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"return";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"push 'java.version'";
+ "push 'java.version'"->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"fieldget <com.mindprod.jdisplay.JDisplay: boolean asApplet>";
+ "fieldget <com.mindprod.jdisplay.JDisplay: boolean asApplet>"->"specialinvoke <com.mindprod.jdisplay.JDisplay: void getParams()>";
+ "specialinvoke <com.mindprod.jdisplay.JDisplay: void getParams()>"->"virtualinvoke <com.mindprod.jdisplay.JDisplay: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.jdisplay.JDisplay: java.awt.Container getContentPane()>"->"fieldput <com.mindprod.jdisplay.JDisplay: java.awt.Container contentPane>";
+ "fieldput <com.mindprod.jdisplay.JDisplay: java.awt.Container contentPane>"->"fieldget <com.mindprod.jdisplay.JDisplay: java.awt.Container contentPane>";
+ "fieldget <com.mindprod.jdisplay.JDisplay: java.awt.Container contentPane>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"fieldget <com.mindprod.jdisplay.JDisplay: java.awt.Container contentPane>";
+ "fieldget <com.mindprod.jdisplay.JDisplay: java.awt.Container contentPane>"->"staticget <com.mindprod.jdisplay.JDisplay: java.awt.Color BACKGROUND_FOR_APPLET>";
+ "staticget <com.mindprod.jdisplay.JDisplay: java.awt.Color BACKGROUND_FOR_APPLET>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"specialinvoke <com.mindprod.jdisplay.JDisplay: void buildComponents()>";
+ "specialinvoke <com.mindprod.jdisplay.JDisplay: void buildComponents()>"->"specialinvoke <com.mindprod.jdisplay.JDisplay: void layoutGridBag()>";
+ "specialinvoke <com.mindprod.jdisplay.JDisplay: void layoutGridBag()>"->"specialinvoke <com.mindprod.jdisplay.JDisplay: void addListeners()>";
+ "specialinvoke <com.mindprod.jdisplay.JDisplay: void addListeners()>"->"return";
+}

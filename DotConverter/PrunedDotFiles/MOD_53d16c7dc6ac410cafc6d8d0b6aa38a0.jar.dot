@@ -1,0 +1,23 @@
+digraph "" {
+"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"fieldput <jaek_graph: java.lang.String linesep>";
+ "fieldput <jaek_graph: java.lang.String linesep>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"push 'java.awt.Graphics2D'";
+ "push 'java.awt.Graphics2D'"->"staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>";
+ "staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.ScrollPane";
+ "new java.awt.ScrollPane"->"specialinvoke <java.awt.ScrollPane: void <init>()>";
+ "specialinvoke <java.awt.ScrollPane: void <init>()>"->"fieldput <jaek_graph: java.awt.ScrollPane scrollPane>";
+ "fieldput <jaek_graph: java.awt.ScrollPane scrollPane>"->"fieldget <jaek_graph: java.awt.ScrollPane scrollPane>";
+ "fieldget <jaek_graph: java.awt.ScrollPane scrollPane>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldget <jaek_graph: java.awt.ScrollPane scrollPane>";
+ "fieldget <jaek_graph: java.awt.ScrollPane scrollPane>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <jaek_graph: boolean parmBoolean(java.lang.String,boolean)>";
+ "virtualinvoke <jaek_graph: boolean parmBoolean(java.lang.String,boolean)>"->"ifeq return";
+ "ifeq return"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"return";
+}

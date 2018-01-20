@@ -1,0 +1,37 @@
+digraph "" {
+"specialinvoke <JavaTicker: int parseIntParam(java.lang.String,int)>";
+ "specialinvoke <JavaTicker: int parseIntParam(java.lang.String,int)>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String getHost()>";
+ "virtualinvoke <java.net.URL: java.lang.String getHost()>"->"virtualinvoke <java.lang.String: java.lang.String toString()>";
+ "virtualinvoke <java.lang.String: java.lang.String toString()>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"push '.javaticker.'";
+ "push '.javaticker.'"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <JavaTicker: java.lang.String clientId>";
+ "fieldput <JavaTicker: java.lang.String clientId>"->"fieldget <JavaTicker: java.lang.String clientId>";
+ "fieldget <JavaTicker: java.lang.String clientId>"->"fieldput <JavaTicker: java.lang.String clientId>";
+ "fieldput <JavaTicker: java.lang.String clientId>"->"ifeq return";
+ "ifeq return"->"fieldput <JavaTicker: java.lang.String linkTo>";
+ "fieldput <JavaTicker: java.lang.String linkTo>"->"virtualinvoke <JavaTicker: java.awt.Color parseHexColor(java.lang.String)>";
+ "virtualinvoke <JavaTicker: java.awt.Color parseHexColor(java.lang.String)>"->"fieldput <JavaTicker: java.awt.Color background>";
+ "fieldput <JavaTicker: java.awt.Color background>"->"fieldget <JavaTicker: java.awt.Color background>";
+ "fieldget <JavaTicker: java.awt.Color background>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <JavaTicker: java.awt.Color linkcolor>";
+ "fieldput <JavaTicker: java.awt.Color linkcolor>"->"goto load.r r0";
+ "goto load.r r0"->"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"fieldput <JavaTicker: java.lang.Thread me>";
+ "fieldput <JavaTicker: java.lang.Thread me>"->"fieldget <JavaTicker: java.lang.Thread me>";
+ "fieldget <JavaTicker: java.lang.Thread me>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"goto return";
+ "goto return"->"return";
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+ "virtualinvoke <java.lang.Throwable: void printStackTrace()>"->"goto return";
+"virtualinvoke <JavaTicker: java.awt.Color parseHexColor(java.lang.String)>";
+ "virtualinvoke <JavaTicker: java.awt.Color parseHexColor(java.lang.String)>"->"fieldput <JavaTicker: java.awt.Color linkcolor>";
+}

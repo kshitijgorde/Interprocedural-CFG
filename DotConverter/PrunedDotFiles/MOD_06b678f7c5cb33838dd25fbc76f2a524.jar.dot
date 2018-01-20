@@ -1,0 +1,23 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <ptmedia: java.lang.String fname>";
+ "fieldput <ptmedia: java.lang.String fname>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <ptmedia: java.lang.String PTViewer>";
+ "fieldput <ptmedia: java.lang.String PTViewer>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldget <ptmedia: java.lang.String fname>";
+ "fieldget <ptmedia: java.lang.String fname>"->"virtualinvoke <ptmedia: void InitJMFMedia(java.lang.String)>";
+ "virtualinvoke <ptmedia: void InitJMFMedia(java.lang.String)>"->"return";
+"virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>";
+ "virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>"->"fieldget <ptmedia: java.lang.String PTViewer>";
+ "fieldget <ptmedia: java.lang.String PTViewer>"->"interfaceinvoke <java.applet.AppletContext: java.applet.Applet getApplet(java.lang.String)> 1";
+ "interfaceinvoke <java.applet.AppletContext: java.applet.Applet getApplet(java.lang.String)> 1"->"goto load.r r0";
+"staticinvoke <java.lang.Thread: void sleep(long)>";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"goto load.r r0";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"return";
+}

@@ -1,0 +1,30 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <Julia: java.awt.Image mandel_img>";
+ "fieldput <Julia: java.awt.Image mandel_img>"->"fieldget <Julia: java.awt.Image mandel_img>";
+ "fieldget <Julia: java.awt.Image mandel_img>"->"specialinvoke <MandelCanvas: void <init>(java.awt.Image,JuliaCanvas,ControlPanel,int)>";
+ "specialinvoke <MandelCanvas: void <init>(java.awt.Image,JuliaCanvas,ControlPanel,int)>"->"new java.awt.Panel";
+ "new java.awt.Panel"->"specialinvoke <java.awt.Panel: void <init>()>";
+ "specialinvoke <java.awt.Panel: void <init>()>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"new java.awt.GridLayout";
+ "new java.awt.GridLayout"->"specialinvoke <java.awt.GridLayout: void <init>(int,int,int,int)>";
+ "specialinvoke <java.awt.GridLayout: void <init>(int,int,int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Component: void resize(int,int)>";
+ "virtualinvoke <java.awt.Component: void resize(int,int)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <java.awt.Component: void show()>";
+ "virtualinvoke <java.awt.Component: void show()>"->"return";
+}

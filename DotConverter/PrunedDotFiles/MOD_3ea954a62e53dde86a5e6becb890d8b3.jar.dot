@@ -1,0 +1,19 @@
+digraph "" {
+"virtualinvoke <Tidelet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Tidelet: java.lang.String getParameter(java.lang.String)>"->"fieldput <Tidelet: java.lang.String m_sData>";
+ "fieldput <Tidelet: java.lang.String m_sData>"->"fieldget <Tidelet: java.awt.Button m_butUnits>";
+ "fieldget <Tidelet: java.awt.Button m_butUnits>"->"virtualinvoke <Tidelet: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <Tidelet: java.awt.Component add(java.awt.Component)>"->"fieldget <Tidelet: java.awt.Button m_butUnits>";
+ "fieldget <Tidelet: java.awt.Button m_butUnits>"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"fieldget <Tidelet: java.awt.Button m_butTomorrow>";
+ "fieldget <Tidelet: java.awt.Button m_butTomorrow>"->"virtualinvoke <Tidelet: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <Tidelet: java.awt.Component add(java.awt.Component)>"->"fieldget <Tidelet: java.awt.Button m_butTomorrow>";
+ "fieldget <Tidelet: java.awt.Button m_butTomorrow>"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"fieldget <Tidelet: java.awt.Button m_butYesterday>";
+ "fieldget <Tidelet: java.awt.Button m_butYesterday>"->"virtualinvoke <Tidelet: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <Tidelet: java.awt.Component add(java.awt.Component)>"->"fieldget <Tidelet: java.awt.Button m_butYesterday>";
+ "fieldget <Tidelet: java.awt.Button m_butYesterday>"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"virtualinvoke <Tidelet: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <Tidelet: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <Tidelet: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <Tidelet: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"return";
+}

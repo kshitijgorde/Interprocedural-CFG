@@ -1,0 +1,27 @@
+digraph "" {
+"fieldput <double_: java.lang.Thread thread>";
+ "fieldput <double_: java.lang.Thread thread>"->"fieldget <double_: java.awt.Font pearlfont>";
+ "fieldget <double_: java.awt.Font pearlfont>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <double_: java.awt.FontMetrics fontmetrics>";
+ "fieldput <double_: java.awt.FontMetrics fontmetrics>"->"fieldget <double_: java.awt.Color schwarz>";
+ "fieldget <double_: java.awt.Color schwarz>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <double_: java.awt.CardLayout cardlayout>";
+ "fieldget <double_: java.awt.CardLayout cardlayout>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"fieldget <HighscorePanel: java.awt.TextField textfield>";
+ "fieldget <HighscorePanel: java.awt.TextField textfield>"->"virtualinvoke <java.awt.TextField: java.awt.Dimension preferredSize()>";
+ "virtualinvoke <java.awt.TextField: java.awt.Dimension preferredSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <HighscorePanel: java.awt.TextField textfield>";
+ "fieldget <HighscorePanel: java.awt.TextField textfield>"->"virtualinvoke <java.awt.TextField: java.awt.Dimension preferredSize()>";
+ "virtualinvoke <java.awt.TextField: java.awt.Dimension preferredSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"fieldget <HighscorePanel: java.awt.TextField textfield>";
+ "fieldget <HighscorePanel: java.awt.TextField textfield>"->"virtualinvoke <java.awt.Component: void reshape(int,int,int,int)>";
+ "virtualinvoke <java.awt.Component: void reshape(int,int,int,int)>"->"fieldget <double_: java.lang.String[][] parameterinfo>";
+ "fieldget <double_: java.lang.String[][] parameterinfo>"->"staticinvoke <java.lang.String: java.lang.String valueOf(int)>";
+ "staticinvoke <java.lang.String: java.lang.String valueOf(int)>"->"fieldget <double_: java.lang.String[][] parameterinfo>";
+ "fieldget <double_: java.lang.String[][] parameterinfo>"->"staticinvoke <java.lang.String: java.lang.String valueOf(int)>";
+ "staticinvoke <java.lang.String: java.lang.String valueOf(int)>"->"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"return";
+}

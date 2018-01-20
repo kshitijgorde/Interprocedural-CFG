@@ -1,0 +1,15 @@
+digraph "" {
+"new java.io.ObjectInputStream";
+ "new java.io.ObjectInputStream"->"new java.io.ByteArrayInputStream";
+ "new java.io.ByteArrayInputStream"->"staticinvoke <________vload: byte[] HB(java.lang.String)>";
+ "staticinvoke <________vload: byte[] HB(java.lang.String)>"->"specialinvoke <java.io.ByteArrayInputStream: void <init>(byte[])>";
+ "specialinvoke <java.io.ByteArrayInputStream: void <init>(byte[])>"->"specialinvoke <java.io.ObjectInputStream: void <init>(java.io.InputStream)>";
+ "specialinvoke <java.io.ObjectInputStream: void <init>(java.io.InputStream)>"->"virtualinvoke <java.io.ObjectInputStream: java.lang.Object readObject()>";
+ "virtualinvoke <java.io.ObjectInputStream: java.lang.Object readObject()>"->"ifnull goto return";
+ "ifnull goto return"->"ifnull goto return";
+ "ifnull goto return"->"virtualinvoke <vmain: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <vmain: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <vmain: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <vmain: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <________vload: void main(java.lang.String,java.lang.String)>";
+ "virtualinvoke <________vload: void main(java.lang.String,java.lang.String)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <________vload: void main(java.lang.String,java.lang.String)>"->}

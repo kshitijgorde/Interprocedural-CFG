@@ -1,0 +1,23 @@
+digraph "" {
+"fieldget <sexy.gui.SexyApplet: java.util.Hashtable mProperties>";
+ "fieldget <sexy.gui.SexyApplet: java.util.Hashtable mProperties>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+ "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"fieldget <sexy.gui.SexyApplet: java.util.Hashtable mProperties>";
+ "fieldget <sexy.gui.SexyApplet: java.util.Hashtable mProperties>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+ "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"new java.lang.Integer";
+ "new java.lang.Integer"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <java.lang.Integer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.Integer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"goto new sexy.util.AsyncJSCall";
+ "goto new sexy.util.AsyncJSCall"->"specialinvoke <sexy.util.AsyncJSCall: void <init>(sexy.gui.SexyApplet,java.lang.String,java.lang.Object[])>";
+ "specialinvoke <sexy.util.AsyncJSCall: void <init>(sexy.gui.SexyApplet,java.lang.String,java.lang.Object[])>"->"fieldget <sexy.gui.SexyApplet: java.lang.String mProdName>";
+ "fieldget <sexy.gui.SexyApplet: java.lang.String mProdName>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"fieldget <sexy.gui.SexyApplet: java.lang.String mBuildDate>";
+ "fieldget <sexy.gui.SexyApplet: java.lang.String mBuildDate>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"return";
+"virtualinvoke <sexy.gui.SexyApplet: void CaughtThrowable(java.lang.Throwable)>";
+ "virtualinvoke <sexy.gui.SexyApplet: void CaughtThrowable(java.lang.Throwable)>"->"return";
+}

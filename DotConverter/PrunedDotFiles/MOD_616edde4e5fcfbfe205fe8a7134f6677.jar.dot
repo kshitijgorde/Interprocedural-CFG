@@ -1,0 +1,28 @@
+digraph "" {
+"push 'java.library.path'";
+ "push 'java.library.path'"->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"staticget <java.io.File: java.lang.String pathSeparator>";
+ "staticget <java.io.File: java.lang.String pathSeparator>"->"virtualinvoke <java.lang.String: java.lang.String[] split(java.lang.String)>";
+ "virtualinvoke <java.lang.String: java.lang.String[] split(java.lang.String)>"->"virtualinvoke <adobeflash: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <adobeflash: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <adobeflash: boolean isWriteable(java.lang.String,java.lang.String)>";
+ "specialinvoke <adobeflash: boolean isWriteable(java.lang.String,java.lang.String)>"->"goto load.r r16";
+ "goto load.r r16"->"ifnull goto return";
+ "ifnull goto return"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"specialinvoke <adobeflash: boolean DownloadFile(java.lang.String,java.lang.String)>";
+ "specialinvoke <adobeflash: boolean DownloadFile(java.lang.String,java.lang.String)>"->"ifeq goto return";
+ "ifeq goto return"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"virtualinvoke <java.lang.Process: int waitFor()>";
+ "virtualinvoke <java.lang.Process: int waitFor()>"->"goto return";
+ "goto return"->"return";
+"goto load.i i1";
+}

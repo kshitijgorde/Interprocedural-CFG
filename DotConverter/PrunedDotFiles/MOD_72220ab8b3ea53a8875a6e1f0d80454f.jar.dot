@@ -1,0 +1,12 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldput <Go2: java.awt.Dimension d>";
+ "fieldput <Go2: java.awt.Dimension d>"->"fieldget <Go2: java.awt.Dimension d>";
+ "fieldget <Go2: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <Go2: java.awt.Dimension d>";
+ "fieldget <Go2: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <Go2: java.awt.Image buffer>";
+ "fieldput <Go2: java.awt.Image buffer>"->"return";
+}

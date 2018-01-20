@@ -1,0 +1,17 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldput <puzzle: java.awt.Graphics myG>";
+ "fieldput <puzzle: java.awt.Graphics myG>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"fieldput <puzzle: java.awt.MediaTracker tracker>";
+ "fieldput <puzzle: java.awt.MediaTracker tracker>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <puzzle: java.lang.String image_name>";
+ "fieldput <puzzle: java.lang.String image_name>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"fieldget <puzzle: java.awt.Graphics myG>";
+ "fieldget <puzzle: java.awt.Graphics myG>"->"specialinvoke <media_checker: void <init>(java.awt.Graphics,puzzle)>";
+ "specialinvoke <media_checker: void <init>(java.awt.Graphics,puzzle)>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+"fieldget <puzzle: java.awt.Graphics myG>";
+ "fieldget <puzzle: java.awt.Graphics myG>"->"specialinvoke <piece: void <init>(int,int,java.awt.Graphics,int,int,java.awt.Image,puzzle)>";
+ "specialinvoke <piece: void <init>(int,int,java.awt.Graphics,int,int,java.awt.Image,puzzle)>"->}

@@ -1,0 +1,21 @@
+digraph "" {
+"virtualinvoke <ScratchApplet: java.net.URL getCodeBase()>";
+ "virtualinvoke <ScratchApplet: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String toString()>";
+ "virtualinvoke <java.net.URL: java.lang.String toString()>"->"virtualinvoke <ScratchApplet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <ScratchApplet: java.lang.String getParameter(java.lang.String)>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"goto load.r r2";
+ "goto load.r r2"->"virtualinvoke <ScratchApplet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <ScratchApplet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+ "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+ "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"staticinvoke <java.lang.Thread: void sleep(long)>";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <ScratchApplet: java.awt.Container getContentPane()>";
+ "virtualinvoke <ScratchApplet: java.awt.Container getContentPane()>"->"staticinvoke <PlayerPrims: LContext startup(java.lang.String,java.lang.String,java.awt.Container,boolean)>";
+ "staticinvoke <PlayerPrims: LContext startup(java.lang.String,java.lang.String,java.awt.Container,boolean)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"fieldput <LContext: java.io.PrintStream tyo>";
+ "fieldput <LContext: java.io.PrintStream tyo>"->"return";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->}

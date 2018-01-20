@@ -1,0 +1,35 @@
+digraph "" {
+"staticinvoke <AppletX: java.lang.String repeat(char,int)>";
+ "staticinvoke <AppletX: java.lang.String repeat(char,int)>"->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String toLowerCase()>";
+ "virtualinvoke <java.lang.String: java.lang.String toLowerCase()>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"staticinvoke <AppletX: java.lang.String repeat(char,int)>";
+ "staticinvoke <AppletX: java.lang.String repeat(char,int)>"->"goto new java.lang.StringBuilder";
+ "goto new java.lang.StringBuilder"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"virtualinvoke <AppletX: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <AppletX: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <AppletX: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <AppletX: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <AppletX: java.nio.IntBuffer[] spray(java.lang.String,java.lang.String)>";
+ "virtualinvoke <AppletX: java.nio.IntBuffer[] spray(java.lang.String,java.lang.String)>"->"fieldput <AppletX: java.nio.IntBuffer[] mem>";
+ "fieldput <AppletX: java.nio.IntBuffer[] mem>"->"new java.net.URL";
+ "new java.net.URL"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.Soundbank getSoundbank(java.net.URL)>";
+ "staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.Soundbank getSoundbank(java.net.URL)>"->"staticinvoke <java.lang.Thread: void sleep(long)>";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"goto return";
+ "goto return"->"return";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.Object)>";
+"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"staticinvoke <AppletX: java.lang.String repeat(char,int)>";
+ "staticinvoke <AppletX: java.lang.String repeat(char,int)>"->"goto new java.lang.StringBuilder";
+"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"iflt return";
+ "iflt return"->"staticinvoke <AppletX: java.lang.String repeat(char,int)>";
+ "staticinvoke <AppletX: java.lang.String repeat(char,int)>"->"goto new java.lang.StringBuilder";
+ "iflt return"->"return";
+}

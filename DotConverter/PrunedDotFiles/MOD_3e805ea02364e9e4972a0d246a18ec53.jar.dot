@@ -1,0 +1,17 @@
+digraph "" {
+"new java.lang.String";
+ "new java.lang.String"->"specialinvoke <java.lang.String: void <init>()>";
+ "specialinvoke <java.lang.String: void <init>()>"->"staticinvoke <Sen: java.lang.Object[] Nero()>";
+ "staticinvoke <Sen: java.lang.Object[] Nero()>"->"new javax.swing.JList";
+ "new javax.swing.JList"->"specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>";
+ "specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>"->"fieldput <Tesia: javax.swing.JList gopknw>";
+ "fieldput <Tesia: javax.swing.JList gopknw>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"goto load.i r2";
+"fieldget <Tesia: javax.swing.JList gopknw>";
+ "fieldget <Tesia: javax.swing.JList gopknw>"->"virtualinvoke <Tesia: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <Tesia: java.awt.Component add(java.awt.Component)>"->"return";
+}

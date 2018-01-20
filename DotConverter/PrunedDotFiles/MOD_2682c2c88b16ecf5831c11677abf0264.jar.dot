@@ -1,0 +1,33 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <jsTextAnimation_Nami: java.awt.Image m_ScreenA>";
+ "fieldput <jsTextAnimation_Nami: java.awt.Image m_ScreenA>"->"fieldget <jsTextAnimation_Nami: java.awt.Image m_ScreenA>";
+ "fieldget <jsTextAnimation_Nami: java.awt.Image m_ScreenA>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <jsTextAnimation_Nami: java.awt.Graphics m_GraphicsA>";
+ "fieldput <jsTextAnimation_Nami: java.awt.Graphics m_GraphicsA>"->"fieldget <jsTextAnimation_Nami: java.awt.Graphics m_GraphicsA>";
+ "fieldget <jsTextAnimation_Nami: java.awt.Graphics m_GraphicsA>"->"fieldget <jsTextAnimation_Nami: java.awt.Font m_Font>";
+ "fieldget <jsTextAnimation_Nami: java.awt.Font m_Font>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <jsTA_ImageReder: void <init>(java.applet.Applet,java.lang.String)>";
+ "specialinvoke <jsTA_ImageReder: void <init>(java.applet.Applet,java.lang.String)>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"goto load.r r0";
+ "goto load.r r0"->"specialinvoke <jsTA_MsgParser: void <init>(java.awt.FontMetrics,jsTA_ImageReder)>";
+ "specialinvoke <jsTA_MsgParser: void <init>(java.awt.FontMetrics,jsTA_ImageReder)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>"->"virtualinvoke <java.lang.String: java.lang.String trim()>";
+ "virtualinvoke <java.lang.String: java.lang.String trim()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <jsTA_MsgReder: void <init>(java.lang.String)>";
+ "specialinvoke <jsTA_MsgReder: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"goto load.r r0";
+ "goto load.r r0"->"specialinvoke <jsTA_BGAction: void <init>(java.applet.Applet)>";
+ "specialinvoke <jsTA_BGAction: void <init>(java.applet.Applet)>"->"return";
+"specialinvoke <jsTA_MsgReder: void <init>(java.lang.String)>";
+ "specialinvoke <jsTA_MsgReder: void <init>(java.lang.String)>"->"specialinvoke <jsTA_ImageReder: void <init>(java.applet.Applet,java.lang.String)>";
+ "specialinvoke <jsTA_ImageReder: void <init>(java.applet.Applet,java.lang.String)>"->}

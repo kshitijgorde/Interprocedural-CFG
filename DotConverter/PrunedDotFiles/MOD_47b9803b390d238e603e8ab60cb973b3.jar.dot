@@ -1,0 +1,12 @@
+digraph "" {
+"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <MissileCommando: java.awt.Font font>";
+ "fieldput <MissileCommando: java.awt.Font font>"->"fieldget <MissileCommando: java.awt.Font font>";
+ "fieldget <MissileCommando: java.awt.Font font>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <MissileCommando: java.awt.FontMetrics fontMetrics>";
+ "fieldput <MissileCommando: java.awt.FontMetrics fontMetrics>"->"fieldget <MissileCommando: java.awt.Font font>";
+ "fieldget <MissileCommando: java.awt.Font font>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"return";
+}

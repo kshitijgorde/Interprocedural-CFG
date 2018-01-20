@@ -1,0 +1,17 @@
+digraph "" {
+"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <sound: java.awt.Image bild>";
+ "fieldput <sound: java.awt.Image bild>"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <sound: java.applet.AudioClip eagle>";
+ "fieldput <sound: java.applet.AudioClip eagle>"->"new java.awt.Button";
+ "new java.awt.Button"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <sound: java.awt.Button button>";
+ "fieldput <sound: java.awt.Button button>"->"fieldget <sound: java.awt.Button button>";
+ "fieldget <sound: java.awt.Button button>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Component: void repaint()>";
+ "virtualinvoke <java.awt.Component: void repaint()>"->"return";
+}

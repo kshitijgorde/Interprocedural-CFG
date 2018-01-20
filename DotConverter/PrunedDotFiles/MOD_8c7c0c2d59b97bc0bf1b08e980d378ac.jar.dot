@@ -1,0 +1,31 @@
+digraph "" {
+"virtualinvoke <dlt.mandelbrot.g: void a(java.awt.event.AdjustmentListener)>";
+ "virtualinvoke <dlt.mandelbrot.g: void a(java.awt.event.AdjustmentListener)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel h>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel h>"->"virtualinvoke <javax.swing.JPanel: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <javax.swing.JPanel: void add(java.awt.Component,java.lang.Object)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JButton g>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JButton g>"->"virtualinvoke <javax.swing.JButton: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <javax.swing.JButton: void addMouseListener(java.awt.event.MouseListener)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JButton B>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JButton B>"->"virtualinvoke <javax.swing.JButton: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <javax.swing.JButton: void addMouseListener(java.awt.event.MouseListener)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JSlider q>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JSlider q>"->"virtualinvoke <javax.swing.JSlider: void addChangeListener(javax.swing.event.ChangeListener)>";
+ "virtualinvoke <javax.swing.JSlider: void addChangeListener(javax.swing.event.ChangeListener)>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <dlt.mandelbrot.f: void setBackground(java.awt.Color)>";
+ "virtualinvoke <dlt.mandelbrot.f: void setBackground(java.awt.Color)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel l>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel l>"->"virtualinvoke <javax.swing.JPanel: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <javax.swing.JPanel: void add(java.awt.Component,java.lang.Object)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel l>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel l>"->"virtualinvoke <javax.swing.JPanel: int getWidth()>";
+ "virtualinvoke <javax.swing.JPanel: int getWidth()>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel l>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel l>"->"virtualinvoke <javax.swing.JPanel: int getHeight()>";
+ "virtualinvoke <javax.swing.JPanel: int getHeight()>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <dlt.mandelbrot.e: void setBackground(java.awt.Color)>";
+ "virtualinvoke <dlt.mandelbrot.e: void setBackground(java.awt.Color)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JTabbedPane o>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JTabbedPane o>"->"virtualinvoke <javax.swing.JTabbedPane: void addTab(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <javax.swing.JTabbedPane: void addTab(java.lang.String,java.awt.Component)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JTabbedPane o>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JTabbedPane o>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel l>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JPanel l>"->"virtualinvoke <javax.swing.JTabbedPane: void setSelectedComponent(java.awt.Component)>";
+ "virtualinvoke <javax.swing.JTabbedPane: void setSelectedComponent(java.awt.Component)>"->"fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JButton g>";
+ "fieldget <dlt.mandelbrot.M3DApplet: javax.swing.JButton g>"->"virtualinvoke <javax.swing.JButton: void setEnabled(boolean)>";
+ "virtualinvoke <javax.swing.JButton: void setEnabled(boolean)>"->"return";
+}

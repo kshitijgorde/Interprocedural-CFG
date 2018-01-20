@@ -1,0 +1,18 @@
+digraph "" {
+"virtualinvoke <Client: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Client: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <Client: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Client: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <Client: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Client: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"virtualinvoke <java.io.IOException: void printStackTrace()>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"virtualinvoke <java.io.IOException: void printStackTrace()>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"virtualinvoke <java.io.IOException: void printStackTrace()>";
+}

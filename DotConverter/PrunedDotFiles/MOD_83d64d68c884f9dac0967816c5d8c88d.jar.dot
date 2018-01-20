@@ -1,0 +1,32 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <Jumptext: java.awt.Font font1>";
+ "fieldput <Jumptext: java.awt.Font font1>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <Jumptext: java.lang.String message1>";
+ "fieldput <Jumptext: java.lang.String message1>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"fieldget <Jumptext: java.awt.Font font1>";
+ "fieldget <Jumptext: java.awt.Font font1>"->"virtualinvoke <java.awt.Font: int getSize()>";
+ "virtualinvoke <java.awt.Font: int getSize()>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <Jumptext: java.awt.Font font2>";
+ "fieldput <Jumptext: java.awt.Font font2>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <Jumptext: java.lang.String message2>";
+ "fieldput <Jumptext: java.lang.String message2>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"fieldget <Jumptext: java.awt.Font font2>";
+ "fieldget <Jumptext: java.awt.Font font2>"->"virtualinvoke <java.awt.Font: int getSize()>";
+ "virtualinvoke <java.awt.Font: int getSize()>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"return";
+"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->}

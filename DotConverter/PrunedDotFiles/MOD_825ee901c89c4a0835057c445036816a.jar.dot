@@ -1,0 +1,24 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <WebBanner: java.awt.Image offImage>";
+ "fieldput <WebBanner: java.awt.Image offImage>"->"fieldget <WebBanner: java.awt.Image offImage>";
+ "fieldget <WebBanner: java.awt.Image offImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <WebBanner: java.awt.Graphics offScreen>";
+ "fieldput <WebBanner: java.awt.Graphics offScreen>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <WebBanner: java.awt.Font hfont>";
+ "fieldput <WebBanner: java.awt.Font hfont>"->"fieldget <WebBanner: java.awt.Font hfont>";
+ "fieldget <WebBanner: java.awt.Font hfont>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <WebBanner: java.awt.FontMetrics hfm>";
+ "fieldput <WebBanner: java.awt.FontMetrics hfm>"->"fieldput <WebBanner: java.lang.String Author>";
+ "fieldput <WebBanner: java.lang.String Author>"->"new java.util.Vector";
+ "new java.util.Vector"->"specialinvoke <java.util.Vector: void <init>()>";
+ "specialinvoke <java.util.Vector: void <init>()>"->"fieldput <WebBanner: java.util.Vector vImageStats>";
+ "fieldput <WebBanner: java.util.Vector vImageStats>"->"return";
+}

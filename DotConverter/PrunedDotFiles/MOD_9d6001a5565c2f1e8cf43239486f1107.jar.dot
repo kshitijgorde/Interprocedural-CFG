@@ -1,0 +1,20 @@
+digraph "" {
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <PacMan: java.net.URL getCodeBase()>";
+ "virtualinvoke <PacMan: java.net.URL getCodeBase()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.Object)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.Object)>"->"virtualinvoke <PacMan: java.net.URL getCodeBase()>";
+ "virtualinvoke <PacMan: java.net.URL getCodeBase()>"->"virtualinvoke <PacMan: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <PacMan: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <PacMan: java.awt.Image toolbox>";
+ "fieldput <PacMan: java.awt.Image toolbox>"->"virtualinvoke <PacMan: java.net.URL getCodeBase()>";
+ "virtualinvoke <PacMan: java.net.URL getCodeBase()>"->"virtualinvoke <PacMan: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <PacMan: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <PacMan: java.awt.Image background>";
+ "fieldput <PacMan: java.awt.Image background>"->"new java.awt.Dimension";
+ "new java.awt.Dimension"->"specialinvoke <java.awt.Dimension: void <init>(int,int)>";
+ "specialinvoke <java.awt.Dimension: void <init>(int,int)>"->"virtualinvoke <PacMan: void setSize(java.awt.Dimension)>";
+ "virtualinvoke <PacMan: void setSize(java.awt.Dimension)>"->"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"fieldput <PacMan: java.lang.Thread thethread>";
+ "fieldput <PacMan: java.lang.Thread thethread>"->"fieldget <PacMan: java.lang.Thread thethread>";
+ "fieldget <PacMan: java.lang.Thread thethread>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

@@ -1,0 +1,11 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>";
+ "virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>"->"staticput <SIRhmenuPRO: java.applet.AppletContext APPLETCONTEXT>";
+ "staticput <SIRhmenuPRO: java.applet.AppletContext APPLETCONTEXT>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <SIRhmenuPRO: java.awt.Color parmgetcolor(java.lang.String,java.lang.String)>";
+ "virtualinvoke <SIRhmenuPRO: java.awt.Color parmgetcolor(java.lang.String,java.lang.String)>"->"fieldput <SIRhmenuPRO: java.awt.Color SBGCOLOR>";
+ "fieldput <SIRhmenuPRO: java.awt.Color SBGCOLOR>"->"fieldget <SIRhmenuPRO: java.awt.Color SBGCOLOR>";
+ "fieldget <SIRhmenuPRO: java.awt.Color SBGCOLOR>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"return";
+}

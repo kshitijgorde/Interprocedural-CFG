@@ -1,0 +1,7 @@
+digraph "" {
+"staticget <java.awt.Color: java.awt.Color WHITE>";
+ "staticget <java.awt.Color: java.awt.Color WHITE>"->"fieldput <WordSearch_Applet: java.awt.Color backColor>";
+ "fieldput <WordSearch_Applet: java.awt.Color backColor>"->"staticget <java.awt.Color: java.awt.Color BLACK>";
+ "staticget <java.awt.Color: java.awt.Color BLACK>"->"fieldput <WordSearch_Applet: java.awt.Color textColor>";
+ "fieldput <WordSearch_Applet: java.awt.Color textColor>"->"return";
+}

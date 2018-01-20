@@ -1,0 +1,31 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>";
+ "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"->"fieldput <octoshape.applets.init.OctoTestApplet: netscape.javascript.JSObject jso>";
+ "fieldput <octoshape.applets.init.OctoTestApplet: netscape.javascript.JSObject jso>"->"fieldget <octoshape.applets.init.OctoTestApplet: netscape.javascript.JSObject jso>";
+ "fieldget <octoshape.applets.init.OctoTestApplet: netscape.javascript.JSObject jso>"->"specialinvoke <octoshape.applets.init.AppletDebug: void <init>(java.lang.String,java.lang.String,netscape.javascript.JSObject)>";
+ "specialinvoke <octoshape.applets.init.AppletDebug: void <init>(java.lang.String,java.lang.String,netscape.javascript.JSObject)>"->"push 'java.version'";
+ "push 'java.version'"->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"virtualinvoke <java.lang.String: char charAt(int)>";
+ "virtualinvoke <java.lang.String: char charAt(int)>"->"staticinvoke <java.lang.String: java.lang.String valueOf(char)>";
+ "staticinvoke <java.lang.String: java.lang.String valueOf(char)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.lang.String: int length()>";
+ "virtualinvoke <java.lang.String: int length()>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"virtualinvoke <java.lang.String: char charAt(int)>";
+ "virtualinvoke <java.lang.String: char charAt(int)>"->"staticinvoke <java.lang.String: java.lang.String valueOf(char)>";
+ "staticinvoke <java.lang.String: java.lang.String valueOf(char)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"goto load.r r5";
+ "goto load.r r5"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String substring(int)>";
+ "virtualinvoke <java.lang.String: java.lang.String substring(int)>"->"goto push 'os.version'";
+ "goto push 'os.version'"->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"fieldget <octoshape.applets.init.OctoTestApplet: netscape.javascript.JSObject jso>";
+ "fieldget <octoshape.applets.init.OctoTestApplet: netscape.javascript.JSObject jso>"->"virtualinvoke <netscape.javascript.JSObject: java.lang.Object call(java.lang.String,java.lang.Object[])>";
+ "virtualinvoke <netscape.javascript.JSObject: java.lang.Object call(java.lang.String,java.lang.Object[])>"->"return";
+}

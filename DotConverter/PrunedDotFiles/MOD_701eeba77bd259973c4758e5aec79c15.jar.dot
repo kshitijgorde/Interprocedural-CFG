@@ -1,0 +1,4 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>";
+ "virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>"->"return";
+}

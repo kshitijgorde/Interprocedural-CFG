@@ -1,0 +1,8 @@
+digraph "" {
+"virtualinvoke <MSFcmd: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <MSFcmd: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"virtualinvoke <java.io.IOException: void printStackTrace()>";
+}

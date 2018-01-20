@@ -1,0 +1,12 @@
+digraph "" {
+"r0 := @this: com.pokw.shooter.H"->"specialinvoke <com.pokw.shooter.H: void a()>";
+ "specialinvoke <com.pokw.shooter.H: void a()>"->"virtualinvoke <com.pokw.shooter.H: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.pokw.shooter.H: java.awt.Container getContentPane()>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <com.pokw.shooter.H: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.pokw.shooter.H: java.awt.Container getContentPane()>"->"fieldget <com.pokw.shooter.H: com.pokw.shooter.x b>";
+ "fieldget <com.pokw.shooter.H: com.pokw.shooter.x b>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <com.pokw.shooter.H: void setSize(int,int)>";
+ "virtualinvoke <com.pokw.shooter.H: void setSize(int,int)>"->"return";
+}

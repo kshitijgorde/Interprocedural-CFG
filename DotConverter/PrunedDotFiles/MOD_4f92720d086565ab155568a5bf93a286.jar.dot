@@ -1,0 +1,13 @@
+digraph "" {
+"r0 := @this: com.mindprod.insult.Insult"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"return";
+"staticget <com.mindprod.insult.Insult: java.awt.Color BACKGROUND_FOR_BODY>";
+ "staticget <com.mindprod.insult.Insult: java.awt.Color BACKGROUND_FOR_BODY>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <com.mindprod.insult.Insult: void buildComponents()>";
+ "specialinvoke <com.mindprod.insult.Insult: void buildComponents()>"->"specialinvoke <com.mindprod.insult.Insult: void layoutComponents()>";
+ "specialinvoke <com.mindprod.insult.Insult: void layoutComponents()>"->"virtualinvoke <java.awt.Container: void validate()>";
+ "virtualinvoke <java.awt.Container: void validate()>"->"return";
+}

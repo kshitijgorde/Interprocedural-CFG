@@ -1,0 +1,38 @@
+digraph "" {
+"staticget <Java: java.lang.String[] g>";
+ "staticget <Java: java.lang.String[] g>"->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"staticget <Java: java.lang.String[] g>";
+ "staticget <Java: java.lang.String[] g>"->"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"fieldput <Java: java.lang.String a>";
+ "fieldput <Java: java.lang.String a>"->"staticget <Java: java.lang.String[] g>";
+ "staticget <Java: java.lang.String[] g>"->"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"fieldput <Java: java.lang.String b>";
+ "fieldput <Java: java.lang.String b>"->"staticget <Java: java.lang.String[] g>";
+ "staticget <Java: java.lang.String[] g>"->"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"fieldput <Java: java.lang.String c>";
+ "fieldput <Java: java.lang.String c>"->"staticget <Java: java.lang.String[] g>";
+ "staticget <Java: java.lang.String[] g>"->"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"fieldput <Java: java.lang.String d>";
+ "fieldput <Java: java.lang.String d>"->"staticget <Java: java.lang.String[] g>";
+ "staticget <Java: java.lang.String[] g>"->"virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <Java: java.lang.String getParameter(java.lang.String)>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"staticinvoke <Java: java.lang.String a(int)>";
+ "staticinvoke <Java: java.lang.String a(int)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"staticget <Java: java.lang.String[] g>";
+ "staticget <Java: java.lang.String[] g>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"fieldput <Java: java.lang.String c>";
+ "fieldput <Java: java.lang.String c>"->"fieldget <Java: java.lang.String a>";
+ "fieldget <Java: java.lang.String a>"->"virtualinvoke <Java: void a(java.lang.String)>";
+ "virtualinvoke <Java: void a(java.lang.String)>"->"fieldget <Java: java.lang.String a>";
+ "fieldget <Java: java.lang.String a>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"fieldget <Java: java.lang.String c>";
+ "fieldget <Java: java.lang.String c>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"virtualinvoke <Java: void a(java.lang.String,java.lang.String)>";
+ "virtualinvoke <Java: void a(java.lang.String,java.lang.String)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <Java: void a(java.lang.String,java.lang.String)>"->}

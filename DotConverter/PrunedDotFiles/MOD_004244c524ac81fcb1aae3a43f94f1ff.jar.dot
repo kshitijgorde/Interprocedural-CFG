@@ -1,0 +1,28 @@
+digraph "" {
+"staticget <ColoringSums: java.lang.String e>";
+ "staticget <ColoringSums: java.lang.String e>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticget <ColoringSums: java.lang.String f>";
+ "staticget <ColoringSums: java.lang.String f>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"specialinvoke <r: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <r: void <init>(java.net.URL,java.lang.String)>"->"specialinvoke <s: void <init>(java.applet.Applet,r)>";
+ "specialinvoke <s: void <init>(java.applet.Applet,r)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <ColoringSums: java.awt.Dimension size>";
+ "fieldput <ColoringSums: java.awt.Dimension size>"->"staticget <ColoringSums: java.lang.String g>";
+ "staticget <ColoringSums: java.lang.String g>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <s: java.awt.Color a(java.lang.String,java.awt.Color)>";
+ "virtualinvoke <s: java.awt.Color a(java.lang.String,java.awt.Color)>"->"fieldput <ColoringSums: java.awt.Color Oa>";
+ "fieldput <ColoringSums: java.awt.Color Oa>"->"staticget <ColoringSums: java.lang.String h>";
+ "staticget <ColoringSums: java.lang.String h>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <s: java.awt.Color a(java.lang.String,java.awt.Color)>";
+ "virtualinvoke <s: java.awt.Color a(java.lang.String,java.awt.Color)>"->"fieldput <ColoringSums: java.awt.Color Pa>";
+ "fieldput <ColoringSums: java.awt.Color Pa>"->"fieldget <ColoringSums: java.awt.Color Oa>";
+ "fieldget <ColoringSums: java.awt.Color Oa>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.Font";
+ "new java.awt.Font"->"staticget <ColoringSums: java.lang.String i>";
+ "staticget <ColoringSums: java.lang.String i>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Component: java.awt.Font getFont()>";
+ "virtualinvoke <java.awt.Component: java.awt.Font getFont()>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <ColoringSums: java.awt.FontMetrics Qa>";
+ "fieldput <ColoringSums: java.awt.FontMetrics Qa>"->"return";
+}

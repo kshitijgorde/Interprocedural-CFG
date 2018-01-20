@@ -1,0 +1,6 @@
+digraph "" {
+"specialinvoke <JUpload.startup: void debug(java.lang.String)>";
+ "specialinvoke <JUpload.startup: void debug(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>";
+ "virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>"->"fieldput <JUpload.startup: java.applet.AppletContext context>";
+ "fieldput <JUpload.startup: java.applet.AppletContext context>"->"return";
+}

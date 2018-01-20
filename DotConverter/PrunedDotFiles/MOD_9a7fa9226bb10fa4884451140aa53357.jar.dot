@@ -1,0 +1,16 @@
+digraph "" {
+"r0 := @this: com.mindprod.wassup.Wassup"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"return";
+"staticget <com.mindprod.wassup.Wassup: java.awt.Color white>";
+ "staticget <com.mindprod.wassup.Wassup: java.awt.Color white>"->"virtualinvoke <com.mindprod.wassup.Wassup: void setBackground(java.awt.Color)>";
+ "virtualinvoke <com.mindprod.wassup.Wassup: void setBackground(java.awt.Color)>"->"fieldput <com.mindprod.wassup.Wassup: boolean allowRestricted>";
+ "fieldput <com.mindprod.wassup.Wassup: boolean allowRestricted>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <com.mindprod.wassup.Wassup: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <com.mindprod.wassup.Wassup: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <com.mindprod.wassup.Wassup: void buildComponents()>";
+ "specialinvoke <com.mindprod.wassup.Wassup: void buildComponents()>"->"specialinvoke <com.mindprod.wassup.Wassup: void layoutComponents()>";
+ "specialinvoke <com.mindprod.wassup.Wassup: void layoutComponents()>"->"virtualinvoke <com.mindprod.wassup.Wassup: void showProperties()>";
+ "virtualinvoke <com.mindprod.wassup.Wassup: void showProperties()>"->"virtualinvoke <com.mindprod.wassup.Wassup: void validate()>";
+ "virtualinvoke <com.mindprod.wassup.Wassup: void validate()>"->"virtualinvoke <com.mindprod.wassup.Wassup: void setVisible(boolean)>";
+ "virtualinvoke <com.mindprod.wassup.Wassup: void setVisible(boolean)>"->"return";
+}

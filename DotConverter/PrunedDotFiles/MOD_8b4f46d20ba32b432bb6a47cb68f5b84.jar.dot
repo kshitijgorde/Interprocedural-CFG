@@ -1,0 +1,17 @@
+digraph "" {
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>(int,int)>";
+ "specialinvoke <java.awt.BorderLayout: void <init>(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Component: java.awt.Container getParent()>";
+ "virtualinvoke <java.awt.Component: java.awt.Container getParent()>"->"goto load.r r7";
+ "goto load.r r7"->"fieldput <zaluc.geneo.TestDialog: java.awt.Frame a_window>";
+ "fieldput <zaluc.geneo.TestDialog: java.awt.Frame a_window>"->"new java.awt.Button";
+ "new java.awt.Button"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <zaluc.geneo.TestDialog: java.awt.Button show_dialog>";
+ "fieldput <zaluc.geneo.TestDialog: java.awt.Button show_dialog>"->"fieldget <zaluc.geneo.TestDialog: java.awt.Button show_dialog>";
+ "fieldget <zaluc.geneo.TestDialog: java.awt.Button show_dialog>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"return";
+"virtualinvoke <java.awt.Component: java.awt.Container getParent()>";
+ "virtualinvoke <java.awt.Component: java.awt.Container getParent()>"->}

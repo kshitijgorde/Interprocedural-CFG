@@ -1,0 +1,17 @@
+digraph "" {
+"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <Travel: java.util.Random Z0036>";
+ "fieldput <Travel: java.util.Random Z0036>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Travel: java.awt.Color Z0004>";
+ "fieldput <Travel: java.awt.Color Z0004>"->"virtualinvoke <Travel: java.awt.Container getContentPane()>";
+ "virtualinvoke <Travel: java.awt.Container getContentPane()>"->"virtualinvoke <Travel: javax.swing.JPanel Z0051()>";
+ "virtualinvoke <Travel: javax.swing.JPanel Z0051()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <Travel$DrawingArea: void setFont(java.awt.Font)>";
+ "virtualinvoke <Travel$DrawingArea: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"fieldput <Travel: java.lang.Thread Z0002>";
+ "fieldput <Travel: java.lang.Thread Z0002>"->"return";
+}

@@ -1,0 +1,12 @@
+digraph "" {
+"staticget <Space: java.lang.String[] _$1190>";
+ "staticget <Space: java.lang.String[] _$1190>"->"staticinvoke <java.awt.Cursor: java.awt.Cursor getPredefinedCursor(int)>";
+ "staticinvoke <java.awt.Cursor: java.awt.Cursor getPredefinedCursor(int)>"->"virtualinvoke <java.awt.Component: void setCursor(java.awt.Cursor)>";
+ "virtualinvoke <java.awt.Component: void setCursor(java.awt.Cursor)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"staticput <Space: java.awt.Font _$38777>";
+ "staticput <Space: java.awt.Font _$38777>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"staticput <Space: java.awt.Font _$38785>";
+ "staticput <Space: java.awt.Font _$38785>"->"return";
+}

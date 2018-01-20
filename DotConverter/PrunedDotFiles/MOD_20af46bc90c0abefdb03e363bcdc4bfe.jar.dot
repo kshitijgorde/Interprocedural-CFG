@@ -1,0 +1,33 @@
+digraph "" {
+"new java.awt.Choice";
+ "new java.awt.Choice"->"specialinvoke <java.awt.Choice: void <init>()>";
+ "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <goURL: java.awt.Choice page>";
+ "fieldput <goURL: java.awt.Choice page>"->"fieldput <goURL: java.lang.String[] holdPage>";
+ "fieldput <goURL: java.lang.String[] holdPage>"->"fieldput <goURL: java.lang.String[] holdURL>";
+ "fieldput <goURL: java.lang.String[] holdURL>"->"goto load.r r0";
+ "goto load.r r0"->"fieldget <goURL: java.awt.Choice page>";
+ "fieldget <goURL: java.awt.Choice page>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"return";
+"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <goURL: java.lang.String webpage>";
+ "fieldput <goURL: java.lang.String webpage>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <goURL: java.lang.String pageURL>";
+ "fieldput <goURL: java.lang.String pageURL>"->"fieldget <goURL: java.lang.String webpage>";
+ "fieldget <goURL: java.lang.String webpage>"->"fieldget <goURL: java.lang.String pageURL>";
+ "fieldget <goURL: java.lang.String pageURL>"->"goto load.r r0";
+"fieldget <goURL: java.lang.String[] holdPage>";
+ "fieldget <goURL: java.lang.String[] holdPage>"->"fieldget <goURL: java.lang.String webpage>";
+ "fieldget <goURL: java.lang.String webpage>"->"fieldget <goURL: java.lang.String[] holdURL>";
+ "fieldget <goURL: java.lang.String[] holdURL>"->"fieldget <goURL: java.lang.String pageURL>";
+ "fieldget <goURL: java.lang.String pageURL>"->"fieldget <goURL: java.awt.Choice page>";
+ "fieldget <goURL: java.awt.Choice page>"->"fieldget <goURL: java.lang.String[] holdPage>";
+ "fieldget <goURL: java.lang.String[] holdPage>"->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+ "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->}

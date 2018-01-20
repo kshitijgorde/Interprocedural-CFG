@@ -1,0 +1,21 @@
+digraph "" {
+"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Kepler: java.awt.Color Z0002>";
+ "fieldput <Kepler: java.awt.Color Z0002>"->"virtualinvoke <Kepler: java.awt.Container getContentPane()>";
+ "virtualinvoke <Kepler: java.awt.Container getContentPane()>"->"virtualinvoke <Kepler: javax.swing.JPanel Z0103()>";
+ "virtualinvoke <Kepler: javax.swing.JPanel Z0103()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <Kepler$DrawingArea: void setFont(java.awt.Font)>";
+ "virtualinvoke <Kepler$DrawingArea: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <Kepler$DrawingArea: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <Kepler$DrawingArea: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <Kepler$DrawingArea: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <Kepler$DrawingArea: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"new java.awt.Cursor";
+ "new java.awt.Cursor"->"specialinvoke <java.awt.Cursor: void <init>(int)>";
+ "specialinvoke <java.awt.Cursor: void <init>(int)>"->"fieldput <Kepler: java.awt.Cursor Z0009>";
+ "fieldput <Kepler: java.awt.Cursor Z0009>"->"fieldget <Kepler: java.awt.Cursor Z0009>";
+ "fieldget <Kepler: java.awt.Cursor Z0009>"->"virtualinvoke <Kepler$DrawingArea: void setCursor(java.awt.Cursor)>";
+ "virtualinvoke <Kepler$DrawingArea: void setCursor(java.awt.Cursor)>"->"fieldput <Kepler: java.lang.Thread Z0001>";
+ "fieldput <Kepler: java.lang.Thread Z0001>"->"return";
+}

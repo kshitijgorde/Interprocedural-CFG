@@ -1,0 +1,8 @@
+digraph "" {
+"new javax.swing.JList";
+ "new javax.swing.JList"->"specialinvoke <ivy: java.lang.Object ALLATORI_DEMO()>";
+ "specialinvoke <ivy: java.lang.Object ALLATORI_DEMO()>"->"specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>";
+ "specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>"->"virtualinvoke <ivy: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <ivy: java.awt.Component add(java.awt.Component)>"->"return";
+ "virtualinvoke <ivy: java.awt.Component add(java.awt.Component)>"->"return";
+}

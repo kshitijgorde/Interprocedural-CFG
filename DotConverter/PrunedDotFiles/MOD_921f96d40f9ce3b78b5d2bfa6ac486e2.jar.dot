@@ -1,0 +1,28 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <screen.GameClient: java.lang.String z>";
+ "fieldput <screen.GameClient: java.lang.String z>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <du: int p(java.lang.String)>";
+ "staticinvoke <du: int p(java.lang.String)>"->"ifcmpne.i push 'vinagames.com'";
+ "ifcmpne.i push 'vinagames.com'"->"push 'vinagames.com'";
+ "push 'vinagames.com'"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"push 'clubxiangqi.com'";
+ "push 'clubxiangqi.com'"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <screen.GameClient: java.lang.String da>";
+ "fieldput <screen.GameClient: java.lang.String da>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"staticput <dl: java.lang.String d>";
+ "staticput <dl: java.lang.String d>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>(int,int)>";
+ "specialinvoke <java.awt.BorderLayout: void <init>(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <screen.GameClient: k p(java.lang.String)>";
+ "virtualinvoke <screen.GameClient: k p(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+ "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"goto load.r r0";
+ "goto load.r r0"->"return";
+}

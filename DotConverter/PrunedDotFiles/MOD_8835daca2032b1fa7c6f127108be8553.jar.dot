@@ -1,0 +1,24 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <ttt: java.awt.Image backgrd>";
+ "fieldput <ttt: java.awt.Image backgrd>"->"fieldget <ttt: java.awt.GridBagConstraints c>";
+ "fieldget <ttt: java.awt.GridBagConstraints c>"->"fieldput <java.awt.GridBagConstraints: int fill>";
+ "fieldput <java.awt.GridBagConstraints: int fill>"->"fieldget <ttt: java.awt.GridBagConstraints c>";
+ "fieldget <ttt: java.awt.GridBagConstraints c>"->"fieldput <java.awt.GridBagConstraints: int gridx>";
+ "fieldput <java.awt.GridBagConstraints: int gridx>"->"fieldget <ttt: java.awt.GridBagConstraints c>";
+ "fieldget <ttt: java.awt.GridBagConstraints c>"->"fieldput <java.awt.GridBagConstraints: int gridy>";
+ "fieldput <java.awt.GridBagConstraints: int gridy>"->"fieldget <ttt: java.awt.GridBagConstraints c>";
+ "fieldget <ttt: java.awt.GridBagConstraints c>"->"fieldput <java.awt.GridBagConstraints: int gridwidth>";
+ "fieldput <java.awt.GridBagConstraints: int gridwidth>"->"fieldget <ttt: java.awt.GridBagConstraints c>";
+ "fieldget <ttt: java.awt.GridBagConstraints c>"->"fieldput <java.awt.GridBagConstraints: int gridheight>";
+ "fieldput <java.awt.GridBagConstraints: int gridheight>"->"new java.awt.Button";
+ "new java.awt.Button"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldget <ttt: java.awt.GridBagLayout thisLayout>";
+ "fieldget <ttt: java.awt.GridBagLayout thisLayout>"->"fieldget <ttt: java.awt.GridBagConstraints c>";
+ "fieldget <ttt: java.awt.GridBagConstraints c>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+ "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldput <ttt: java.lang.String xwins>";
+ "fieldput <ttt: java.lang.String xwins>"->"fieldput <ttt: java.lang.String ywins>";
+ "fieldput <ttt: java.lang.String ywins>"->"return";
+}

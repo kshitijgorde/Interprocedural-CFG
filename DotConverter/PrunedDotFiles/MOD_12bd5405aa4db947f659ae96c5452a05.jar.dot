@@ -1,0 +1,10 @@
+digraph "" {
+"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"fieldput <JavaMiner102V01: java.lang.Thread thread>";
+ "fieldput <JavaMiner102V01: java.lang.Thread thread>"->"fieldput <JavaMiner102V01: java.awt.Image[] images>";
+ "fieldput <JavaMiner102V01: java.awt.Image[] images>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"fieldput <JavaMiner102V01: java.awt.MediaTracker tracker>";
+ "fieldput <JavaMiner102V01: java.awt.MediaTracker tracker>"->"return";
+}

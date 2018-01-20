@@ -1,0 +1,17 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"goto load.i i2";
+ "goto load.i i2"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <conic: java.awt.Image image1>";
+ "fieldput <conic: java.awt.Image image1>"->"fieldget <conic: java.awt.Image image1>";
+ "fieldget <conic: java.awt.Image image1>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <conic: java.awt.Graphics offg>";
+ "fieldput <conic: java.awt.Graphics offg>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"return";
+"staticinvoke <java.lang.Math: double cos(double)>";
+ "staticinvoke <java.lang.Math: double cos(double)>"->"staticinvoke <java.lang.Math: double sin(double)>";
+ "staticinvoke <java.lang.Math: double sin(double)>"->}

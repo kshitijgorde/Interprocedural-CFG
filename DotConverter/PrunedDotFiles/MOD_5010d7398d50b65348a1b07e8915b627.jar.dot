@@ -1,0 +1,8 @@
+digraph "" {
+"staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>";
+ "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <wordle.WordleApplet: void addComponentListener(java.awt.event.ComponentListener)>";
+ "virtualinvoke <wordle.WordleApplet: void addComponentListener(java.awt.event.ComponentListener)>"->"return";
+ "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"->"staticget <java.lang.System: java.io.PrintStream err>";
+ "staticget <java.lang.System: java.io.PrintStream err>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.Object)>";
+}

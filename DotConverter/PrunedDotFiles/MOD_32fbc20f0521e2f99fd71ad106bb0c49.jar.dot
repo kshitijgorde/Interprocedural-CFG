@@ -1,0 +1,9 @@
+digraph "" {
+"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"fieldput <Connect4: java.lang.StringBuffer currStatus>";
+ "fieldput <Connect4: java.lang.StringBuffer currStatus>"->"fieldget <Connect4: java.awt.Graphics g>";
+ "fieldget <Connect4: java.awt.Graphics g>"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldput <Connect4: java.awt.Graphics g>";
+ "fieldput <Connect4: java.awt.Graphics g>"->"return";
+}

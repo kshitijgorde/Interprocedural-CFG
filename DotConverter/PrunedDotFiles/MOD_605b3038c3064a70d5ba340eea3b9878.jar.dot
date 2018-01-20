@@ -1,0 +1,26 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <RMS_HR2: java.lang.String temp>";
+ "fieldput <RMS_HR2: java.lang.String temp>"->"fieldget <RMS_HR2: java.lang.String temp>";
+ "fieldget <RMS_HR2: java.lang.String temp>"->"fieldget <RMS_HR2: java.lang.String temp>";
+ "fieldget <RMS_HR2: java.lang.String temp>"->"fieldput <RMS_HR2: java.lang.String author>";
+ "fieldput <RMS_HR2: java.lang.String author>"->"fieldget <RMS_HR2: java.awt.Color bgcolor>";
+ "fieldget <RMS_HR2: java.awt.Color bgcolor>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <RMS_HR2: java.awt.Image winScratch>";
+ "fieldput <RMS_HR2: java.awt.Image winScratch>"->"fieldget <RMS_HR2: java.awt.Image winScratch>";
+ "fieldget <RMS_HR2: java.awt.Image winScratch>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <RMS_HR2: java.awt.Graphics gScratch>";
+ "fieldput <RMS_HR2: java.awt.Graphics gScratch>"->"goto load.r r0";
+ "goto load.r r0"->"return";
+"fieldget <RMS_HR2: java.awt.Graphics gScratch>";
+ "fieldget <RMS_HR2: java.awt.Graphics gScratch>"->"virtualinvoke <java.awt.Graphics: void copyArea(int,int,int,int,int,int)>";
+ "virtualinvoke <java.awt.Graphics: void copyArea(int,int,int,int,int,int)>"->"fieldget <RMS_HR2: java.awt.Graphics gScratch>";
+ "fieldget <RMS_HR2: java.awt.Graphics gScratch>"->"staticinvoke <java.awt.Color: java.awt.Color getHSBColor(float,float,float)>";
+ "staticinvoke <java.awt.Color: java.awt.Color getHSBColor(float,float,float)>"->"virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>";
+ "virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>"->"fieldget <RMS_HR2: java.awt.Graphics gScratch>";
+ "fieldget <RMS_HR2: java.awt.Graphics gScratch>"->"virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>";
+ "virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>"->}

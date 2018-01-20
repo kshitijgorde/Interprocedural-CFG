@@ -1,0 +1,22 @@
+digraph "" {
+"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Container: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Container: void setFont(java.awt.Font)>"->"fieldget <calendar: java.awt.Frame frame>";
+ "fieldget <calendar: java.awt.Frame frame>"->"virtualinvoke <java.awt.Window: void pack()>";
+ "virtualinvoke <java.awt.Window: void pack()>"->"fieldget <calendar: java.awt.Frame frame>";
+ "fieldget <calendar: java.awt.Frame frame>"->"virtualinvoke <java.awt.Window: void show()>";
+ "virtualinvoke <java.awt.Window: void show()>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"new java.net.URL";
+ "new java.net.URL"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"fieldput <calendar: java.net.URL url>";
+ "fieldput <calendar: java.net.URL url>"->"new java.net.URL";
+ "new java.net.URL"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"fieldput <calendar: java.net.URL mail>";
+ "fieldput <calendar: java.net.URL mail>"->"goto return";
+ "goto return"->"return";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+}

@@ -1,0 +1,11 @@
+digraph "" {
+"r0 := @this: com.aviva.framework.applet.IncomePieChart"->"specialinvoke <com.aviva.framework.applet.IncomePieChart: void chartPanel()>";
+ "specialinvoke <com.aviva.framework.applet.IncomePieChart: void chartPanel()>"->"virtualinvoke <com.aviva.framework.applet.IncomePieChart: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.aviva.framework.applet.IncomePieChart: java.awt.Container getContentPane()>"->"new java.awt.GridLayout";
+ "new java.awt.GridLayout"->"specialinvoke <java.awt.GridLayout: void <init>(int,int)>";
+ "specialinvoke <java.awt.GridLayout: void <init>(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"fieldget <com.aviva.framework.applet.IncomePieChart: com.jrefinery.chart.ChartPanel chart>";
+ "fieldget <com.aviva.framework.applet.IncomePieChart: com.jrefinery.chart.ChartPanel chart>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <com.aviva.framework.applet.IncomePieChart: void showChart()>";
+ "virtualinvoke <com.aviva.framework.applet.IncomePieChart: void showChart()>"->"return";
+}

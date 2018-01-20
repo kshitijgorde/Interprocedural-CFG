@@ -1,0 +1,21 @@
+digraph "" {
+"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <sprytube: java.net.URL getCodeBase()>";
+ "virtualinvoke <sprytube: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String toString()>";
+ "virtualinvoke <java.net.URL: java.lang.String toString()>"->"virtualinvoke <java.lang.String: java.lang.String toLowerCase()>";
+ "virtualinvoke <java.lang.String: java.lang.String toLowerCase()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"push '^http://[a-z]*\\.*descargatusvideos.com'";
+ "push '^http://[a-z]*\\.*descargatusvideos.com'"->"staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>";
+ "staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>"->"virtualinvoke <java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>";
+ "virtualinvoke <java.util.regex.Pattern: java.util.regex.Matcher matcher(java.lang.CharSequence)>"->"virtualinvoke <java.util.regex.Matcher: boolean find()>";
+ "virtualinvoke <java.util.regex.Matcher: boolean find()>"->"virtualinvoke <sprytube: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <sprytube: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <sprytube: void loadUrl(java.lang.String)>";
+ "virtualinvoke <sprytube: void loadUrl(java.lang.String)>"->"goto goto return";
+ "goto goto return"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <sprytube: void loadUrl(java.lang.String)>"->"fieldput <sprytube: java.lang.String sLinks>";
+"fieldput <sprytube: java.lang.String sLinks>";
+}

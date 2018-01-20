@@ -1,0 +1,11 @@
+digraph "" {
+"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Gyro: java.awt.Color Z0004>";
+ "fieldput <Gyro: java.awt.Color Z0004>"->"virtualinvoke <Gyro: java.awt.Container getContentPane()>";
+ "virtualinvoke <Gyro: java.awt.Container getContentPane()>"->"virtualinvoke <Gyro: javax.swing.JPanel Z0084()>";
+ "virtualinvoke <Gyro: javax.swing.JPanel Z0084()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"fieldput <Gyro: java.lang.Thread Z0002>";
+ "fieldput <Gyro: java.lang.Thread Z0002>"->"return";
+}

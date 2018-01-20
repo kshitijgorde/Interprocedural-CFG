@@ -1,0 +1,6 @@
+digraph "" {
+"new java.awt.Choice";
+ "new java.awt.Choice"->"specialinvoke <java.awt.Choice: void <init>()>";
+ "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <OmniSlide: java.awt.Choice imageChoice>";
+ "fieldput <OmniSlide: java.awt.Choice imageChoice>"->"return";
+}

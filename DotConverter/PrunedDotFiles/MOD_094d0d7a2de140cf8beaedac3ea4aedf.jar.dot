@@ -1,0 +1,21 @@
+digraph "" {
+"staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>";
+ "staticinvoke <java.lang.Thread: java.lang.Thread currentThread()>"->"virtualinvoke <java.lang.Thread: void setPriority(int)>";
+ "virtualinvoke <java.lang.Thread: void setPriority(int)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"new java.net.URL";
+ "new java.net.URL"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"staticput <thetriv: java.net.URL theURL>";
+ "staticput <thetriv: java.net.URL theURL>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"return";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"staticget <thetriv: java.net.URL theURL>";
+ "staticget <thetriv: java.net.URL theURL>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+}

@@ -1,0 +1,25 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldget <LineBouncer: java.awt.Font font>";
+ "fieldget <LineBouncer: java.awt.Font font>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <LineBouncer: java.awt.Dimension d>";
+ "fieldput <LineBouncer: java.awt.Dimension d>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <LineBouncer: java.lang.String s>";
+ "fieldput <LineBouncer: java.lang.String s>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <LineBouncer: java.awt.FontMetrics fm>";
+ "fieldput <LineBouncer: java.awt.FontMetrics fm>"->"goto load.i i12";
+ "goto load.i i12"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"fieldget <LineBouncer: java.awt.Dimension d>";
+ "fieldget <LineBouncer: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"fieldget <LineBouncer: java.awt.Dimension d>";
+ "fieldget <LineBouncer: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"fieldget <LineBouncer: java.awt.Dimension d>";
+ "fieldget <LineBouncer: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"fieldget <LineBouncer: java.awt.Dimension d>";
+ "fieldget <LineBouncer: java.awt.Dimension d>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"return";
+}

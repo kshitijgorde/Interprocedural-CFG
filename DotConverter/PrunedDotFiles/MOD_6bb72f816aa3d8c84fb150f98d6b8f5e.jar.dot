@@ -1,0 +1,7 @@
+digraph "" {
+"staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>";
+ "staticinvoke <java.net.InetAddress: java.net.InetAddress getLocalHost()>"->"staticinvoke <SignLink: void startpriv(java.net.InetAddress)>";
+ "staticinvoke <SignLink: void startpriv(java.net.InetAddress)>"->"goto return";
+ "goto return"->"return";
+"virtualinvoke <java.lang.Exception: void printStackTrace()>";
+}

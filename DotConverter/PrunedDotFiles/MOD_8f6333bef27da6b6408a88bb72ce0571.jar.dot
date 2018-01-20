@@ -1,0 +1,31 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <DragonTreeviewV2: java.awt.Image buffer>";
+ "fieldput <DragonTreeviewV2: java.awt.Image buffer>"->"fieldget <DragonTreeviewV2: java.awt.Image buffer>";
+ "fieldget <DragonTreeviewV2: java.awt.Image buffer>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <DragonTreeviewV2: java.awt.Graphics b>";
+ "fieldput <DragonTreeviewV2: java.awt.Graphics b>"->"fieldget <DragonTreeviewV2: java.awt.Graphics b>";
+ "fieldget <DragonTreeviewV2: java.awt.Graphics b>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <DragonTreeviewV2: java.awt.FontMetrics fm>";
+ "fieldput <DragonTreeviewV2: java.awt.FontMetrics fm>"->"virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>";
+ "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"->"fieldput <DragonTreeviewV2: java.awt.Rectangle appletSize>";
+ "fieldput <DragonTreeviewV2: java.awt.Rectangle appletSize>"->"fieldget <DragonTreeviewV2: java.awt.Rectangle appletSize>";
+ "fieldget <DragonTreeviewV2: java.awt.Rectangle appletSize>"->"fieldget <java.awt.Rectangle: int width>";
+ "fieldget <java.awt.Rectangle: int width>"->"fieldget <DragonTreeviewV2: java.awt.Rectangle appletSize>";
+ "fieldget <DragonTreeviewV2: java.awt.Rectangle appletSize>"->"fieldget <java.awt.Rectangle: int height>";
+ "fieldget <java.awt.Rectangle: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <DragonTreeviewV2: java.awt.Image duffer>";
+ "fieldput <DragonTreeviewV2: java.awt.Image duffer>"->"fieldget <DragonTreeviewV2: java.awt.Image duffer>";
+ "fieldget <DragonTreeviewV2: java.awt.Image duffer>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <DragonTreeviewV2: java.awt.Graphics d>";
+ "fieldput <DragonTreeviewV2: java.awt.Graphics d>"->"fieldget <DragonTreeviewV2: java.awt.Graphics d>";
+ "fieldget <DragonTreeviewV2: java.awt.Graphics d>"->"fieldget <DragonTreeviewV2: java.awt.Rectangle appletSize>";
+ "fieldget <DragonTreeviewV2: java.awt.Rectangle appletSize>"->"fieldget <java.awt.Rectangle: int width>";
+ "fieldget <java.awt.Rectangle: int width>"->"fieldget <DragonTreeviewV2: java.awt.Rectangle appletSize>";
+ "fieldget <DragonTreeviewV2: java.awt.Rectangle appletSize>"->"fieldget <java.awt.Rectangle: int height>";
+ "fieldget <java.awt.Rectangle: int height>"->"virtualinvoke <java.awt.Graphics: void setClip(int,int,int,int)>";
+ "virtualinvoke <java.awt.Graphics: void setClip(int,int,int,int)>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"fieldput <DragonTreeviewV2: java.awt.MediaTracker temp>";
+ "fieldput <DragonTreeviewV2: java.awt.MediaTracker temp>"->"return";
+}

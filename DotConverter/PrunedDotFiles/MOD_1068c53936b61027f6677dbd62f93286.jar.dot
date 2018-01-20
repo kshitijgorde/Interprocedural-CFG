@@ -1,0 +1,28 @@
+digraph "" {
+"staticget <Pyramid: java.lang.String Ua>";
+ "staticget <Pyramid: java.lang.String Ua>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticget <Pyramid: java.lang.String Va>";
+ "staticget <Pyramid: java.lang.String Va>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"specialinvoke <import: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <import: void <init>(java.net.URL,java.lang.String)>"->"specialinvoke <'instanceof': void <init>(java.applet.Applet,import)>";
+ "specialinvoke <'instanceof': void <init>(java.applet.Applet,import)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldput <Pyramid: java.awt.Dimension size>";
+ "fieldput <Pyramid: java.awt.Dimension size>"->"staticget <Pyramid: java.lang.String Wa>";
+ "staticget <Pyramid: java.lang.String Wa>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <'instanceof': java.awt.Color b(java.lang.String,java.awt.Color)>";
+ "virtualinvoke <'instanceof': java.awt.Color b(java.lang.String,java.awt.Color)>"->"fieldput <Pyramid: java.awt.Color oa>";
+ "fieldput <Pyramid: java.awt.Color oa>"->"staticget <Pyramid: java.lang.String Xa>";
+ "staticget <Pyramid: java.lang.String Xa>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <'instanceof': java.awt.Color b(java.lang.String,java.awt.Color)>";
+ "virtualinvoke <'instanceof': java.awt.Color b(java.lang.String,java.awt.Color)>"->"fieldput <Pyramid: java.awt.Color qa>";
+ "fieldput <Pyramid: java.awt.Color qa>"->"fieldget <Pyramid: java.awt.Color oa>";
+ "fieldget <Pyramid: java.awt.Color oa>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.Font";
+ "new java.awt.Font"->"staticget <Pyramid: java.lang.String Ya>";
+ "staticget <Pyramid: java.lang.String Ya>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Component: java.awt.Font getFont()>";
+ "virtualinvoke <java.awt.Component: java.awt.Font getFont()>"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <Pyramid: java.awt.FontMetrics aa>";
+ "fieldput <Pyramid: java.awt.FontMetrics aa>"->"return";
+}

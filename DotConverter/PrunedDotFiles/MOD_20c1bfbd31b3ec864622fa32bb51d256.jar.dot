@@ -1,0 +1,14 @@
+digraph "" {
+"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <Mdrigid: java.util.Random Z0076>";
+ "fieldput <Mdrigid: java.util.Random Z0076>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Mdrigid: java.awt.Color Z0004>";
+ "fieldput <Mdrigid: java.awt.Color Z0004>"->"virtualinvoke <Mdrigid: java.awt.Container getContentPane()>";
+ "virtualinvoke <Mdrigid: java.awt.Container getContentPane()>"->"virtualinvoke <Mdrigid: javax.swing.JPanel Z0115()>";
+ "virtualinvoke <Mdrigid: javax.swing.JPanel Z0115()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"fieldput <Mdrigid: java.lang.Thread Z0003>";
+ "fieldput <Mdrigid: java.lang.Thread Z0003>"->"return";
+}

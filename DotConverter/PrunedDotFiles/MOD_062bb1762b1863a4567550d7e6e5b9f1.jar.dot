@@ -1,0 +1,30 @@
+digraph "" {
+"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Hexapod3d: java.awt.Color Z0009>";
+ "fieldput <Hexapod3d: java.awt.Color Z0009>"->"virtualinvoke <Hexapod3d: java.awt.Container getContentPane()>";
+ "virtualinvoke <Hexapod3d: java.awt.Container getContentPane()>"->"virtualinvoke <Hexapod3d: javax.swing.JPanel Z0144()>";
+ "virtualinvoke <Hexapod3d: javax.swing.JPanel Z0144()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new javax.media.j3d.Canvas3D";
+ "new javax.media.j3d.Canvas3D"->"staticinvoke <com.sun.j3d.utils.universe.SimpleUniverse: java.awt.GraphicsConfiguration getPreferredConfiguration()>";
+ "staticinvoke <com.sun.j3d.utils.universe.SimpleUniverse: java.awt.GraphicsConfiguration getPreferredConfiguration()>"->"specialinvoke <javax.media.j3d.Canvas3D: void <init>(java.awt.GraphicsConfiguration)>";
+ "specialinvoke <javax.media.j3d.Canvas3D: void <init>(java.awt.GraphicsConfiguration)>"->"fieldput <Hexapod3d: javax.media.j3d.Canvas3D Z0024>";
+ "fieldput <Hexapod3d: javax.media.j3d.Canvas3D Z0024>"->"fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>";
+ "fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>"->"virtualinvoke <javax.media.j3d.Canvas3D: void stopRenderer()>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void stopRenderer()>"->"fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>";
+ "fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new com.sun.j3d.utils.universe.SimpleUniverse";
+ "new com.sun.j3d.utils.universe.SimpleUniverse"->"fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>";
+ "fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>"->"specialinvoke <com.sun.j3d.utils.universe.SimpleUniverse: void <init>(javax.media.j3d.Canvas3D)>";
+ "specialinvoke <com.sun.j3d.utils.universe.SimpleUniverse: void <init>(javax.media.j3d.Canvas3D)>"->"fieldput <Hexapod3d: com.sun.j3d.utils.universe.SimpleUniverse Z0170>";
+ "fieldput <Hexapod3d: com.sun.j3d.utils.universe.SimpleUniverse Z0170>"->"fieldget <Hexapod3d: com.sun.j3d.utils.universe.SimpleUniverse Z0170>";
+ "fieldget <Hexapod3d: com.sun.j3d.utils.universe.SimpleUniverse Z0170>"->"virtualinvoke <com.sun.j3d.utils.universe.SimpleUniverse: com.sun.j3d.utils.universe.ViewingPlatform getViewingPlatform()>";
+ "virtualinvoke <com.sun.j3d.utils.universe.SimpleUniverse: com.sun.j3d.utils.universe.ViewingPlatform getViewingPlatform()>"->"virtualinvoke <com.sun.j3d.utils.universe.ViewingPlatform: void setNominalViewingTransform()>";
+ "virtualinvoke <com.sun.j3d.utils.universe.ViewingPlatform: void setNominalViewingTransform()>"->"fieldput <Hexapod3d: javax.media.j3d.GraphicsContext3D Z0069>";
+ "fieldput <Hexapod3d: javax.media.j3d.GraphicsContext3D Z0069>"->"fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>";
+ "fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>"->"virtualinvoke <javax.media.j3d.Canvas3D: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void addMouseListener(java.awt.event.MouseListener)>"->"fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>";
+ "fieldget <Hexapod3d: javax.media.j3d.Canvas3D Z0024>"->"virtualinvoke <javax.media.j3d.Canvas3D: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"fieldput <Hexapod3d: java.lang.Thread Z0007>";
+ "fieldput <Hexapod3d: java.lang.Thread Z0007>"->"return";
+}

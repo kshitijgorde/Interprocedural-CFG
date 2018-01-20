@@ -1,0 +1,14 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"staticinvoke <java.lang.Thread: void sleep(long)>";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"goto load.b z0";
+ "goto load.b z0"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <AcuteShifter: java.awt.Image A>";
+ "fieldput <AcuteShifter: java.awt.Image A>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <AcuteShifter: java.awt.Image c>";
+ "fieldput <AcuteShifter: java.awt.Image c>"->"return";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"goto load.b z0";
+}

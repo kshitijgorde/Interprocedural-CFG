@@ -1,0 +1,26 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <ZPopupMenu: java.awt.Image offI>";
+ "fieldput <ZPopupMenu: java.awt.Image offI>"->"fieldget <ZPopupMenu: java.awt.Image offI>";
+ "fieldget <ZPopupMenu: java.awt.Image offI>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <ZPopupMenu: java.awt.Graphics offG>";
+ "fieldput <ZPopupMenu: java.awt.Graphics offG>"->"new java.awt.Font";
+ "new java.awt.Font"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <ZPopupMenu: java.awt.Font font>";
+ "fieldput <ZPopupMenu: java.awt.Font font>"->"fieldget <ZPopupMenu: java.awt.Graphics offG>";
+ "fieldget <ZPopupMenu: java.awt.Graphics offG>"->"fieldget <ZPopupMenu: java.awt.Font font>";
+ "fieldget <ZPopupMenu: java.awt.Font font>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"fieldget <ZPopupMenu: java.awt.Graphics offG>";
+ "fieldget <ZPopupMenu: java.awt.Graphics offG>"->"fieldget <ZPopupMenu: java.awt.Font font>";
+ "fieldget <ZPopupMenu: java.awt.Font font>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"fieldput <ZPopupMenu: java.awt.FontMetrics fm>";
+ "fieldput <ZPopupMenu: java.awt.FontMetrics fm>"->"fieldget <ZPopupMenu: java.awt.PopupMenu popup>";
+ "fieldget <ZPopupMenu: java.awt.PopupMenu popup>"->"virtualinvoke <java.awt.Component: void add(java.awt.PopupMenu)>";
+ "virtualinvoke <java.awt.Component: void add(java.awt.PopupMenu)>"->"return";
+}

@@ -1,0 +1,38 @@
+digraph "" {
+"r0 := @this: com.act365.sudoku.SuDokuApplet"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <com.act365.sudoku.SuDokuApplet: int boxesAcross>";
+ "fieldput <com.act365.sudoku.SuDokuApplet: int boxesAcross>"->"goto load.r r2";
+ "goto load.r r2"->"ifeq new com.act365.sudoku.GridContainer";
+ "ifeq new com.act365.sudoku.GridContainer"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <com.act365.sudoku.SuDokuApplet: int boxesDown>";
+ "fieldput <com.act365.sudoku.SuDokuApplet: int boxesDown>"->"goto new com.act365.sudoku.GridContainer";
+ "goto new com.act365.sudoku.GridContainer"->"new com.act365.sudoku.GridContainer";
+ "new com.act365.sudoku.GridContainer"->"new com.act365.sudoku.Grid";
+ "new com.act365.sudoku.Grid"->"fieldget <com.act365.sudoku.SuDokuApplet: int boxesAcross>";
+ "fieldget <com.act365.sudoku.SuDokuApplet: int boxesAcross>"->"fieldget <com.act365.sudoku.SuDokuApplet: int boxesDown>";
+ "fieldget <com.act365.sudoku.SuDokuApplet: int boxesDown>"->"specialinvoke <com.act365.sudoku.Grid: void <init>(int,int)>";
+ "specialinvoke <com.act365.sudoku.Grid: void <init>(int,int)>"->"specialinvoke <com.act365.sudoku.GridContainer: void <init>(com.act365.sudoku.Grid)>";
+ "specialinvoke <com.act365.sudoku.GridContainer: void <init>(com.act365.sudoku.Grid)>"->"new com.act365.sudoku.ControlContainer";
+ "new com.act365.sudoku.ControlContainer"->"virtualinvoke <java.lang.Object: java.lang.Class getClass()>";
+ "virtualinvoke <java.lang.Object: java.lang.Class getClass()>"->"specialinvoke <com.act365.sudoku.ControlContainer: void <init>(com.act365.sudoku.GridContainer,java.lang.Class)>";
+ "specialinvoke <com.act365.sudoku.ControlContainer: void <init>(com.act365.sudoku.GridContainer,java.lang.Class)>"->"new com.act365.sudoku.SuDokuContainer";
+ "new com.act365.sudoku.SuDokuContainer"->"specialinvoke <com.act365.sudoku.SuDokuContainer: void <init>(com.act365.sudoku.GridContainer,com.act365.sudoku.ControlContainer)>";
+ "specialinvoke <com.act365.sudoku.SuDokuContainer: void <init>(com.act365.sudoku.GridContainer,com.act365.sudoku.ControlContainer)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <com.act365.sudoku.SuDokuContainer: java.awt.Dimension getBestSize()>";
+ "virtualinvoke <com.act365.sudoku.SuDokuContainer: java.awt.Dimension getBestSize()>"->"virtualinvoke <java.awt.Component: void setSize(java.awt.Dimension)>";
+ "virtualinvoke <java.awt.Component: void setSize(java.awt.Dimension)>"->"return";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream err>";
+ "staticget <java.lang.System: java.io.PrintStream err>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream err>";
+ "staticget <java.lang.System: java.io.PrintStream err>"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+}

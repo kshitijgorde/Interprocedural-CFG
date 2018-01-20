@@ -1,0 +1,7 @@
+digraph "" {
+"specialinvoke <Interface: void <init>(java.applet.Applet)>";
+ "specialinvoke <Interface: void <init>(java.applet.Applet)>"->"new java.awt.Cursor";
+ "new java.awt.Cursor"->"specialinvoke <java.awt.Cursor: void <init>(int)>";
+ "specialinvoke <java.awt.Cursor: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setCursor(java.awt.Cursor)>";
+ "virtualinvoke <java.awt.Component: void setCursor(java.awt.Cursor)>"->"return";
+}

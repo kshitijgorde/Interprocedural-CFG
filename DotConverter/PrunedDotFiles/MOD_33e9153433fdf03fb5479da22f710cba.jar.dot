@@ -1,0 +1,4 @@
+digraph "" {
+"goto return";
+ "goto return"->"return";
+}

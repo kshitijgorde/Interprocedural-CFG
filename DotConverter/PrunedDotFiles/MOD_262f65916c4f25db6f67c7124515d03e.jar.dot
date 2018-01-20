@@ -1,0 +1,16 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldput <onScreenMenuTest: java.awt.Dimension dim>";
+ "fieldput <onScreenMenuTest: java.awt.Dimension dim>"->"virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>";
+ "virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>"->"fieldput <onScreenMenuTest: java.lang.String[][] menuTextArray>";
+ "fieldput <onScreenMenuTest: java.lang.String[][] menuTextArray>"->"fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>";
+ "fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>"->"fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>";
+ "fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>"->"fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>";
+ "fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>"->"fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>";
+ "fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>"->"fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>";
+ "fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>"->"fieldget <onScreenMenuTest: java.awt.Dimension dim>";
+ "fieldget <onScreenMenuTest: java.awt.Dimension dim>"->"fieldget <onScreenMenuTest: java.awt.Image offscreen>";
+ "fieldget <onScreenMenuTest: java.awt.Image offscreen>"->"fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>";
+ "fieldget <onScreenMenuTest: java.lang.String[][] menuTextArray>"->"specialinvoke <UTIL.onScreenMenu: void <init>(java.awt.Dimension,java.awt.Image,java.awt.Component,java.lang.String[][])>";
+ "specialinvoke <UTIL.onScreenMenu: void <init>(java.awt.Dimension,java.awt.Image,java.awt.Component,java.lang.String[][])>"->"return";
+}

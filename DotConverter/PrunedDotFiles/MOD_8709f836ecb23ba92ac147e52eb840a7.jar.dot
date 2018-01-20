@@ -1,0 +1,12 @@
+digraph "" {
+"$r5 := @this: com.photochannel.easyUploader.EasyUploader"->"staticget <com.photochannel.easyUploader.EasyUploader: java.lang.Boolean a>";
+ "staticget <com.photochannel.easyUploader.EasyUploader: java.lang.Boolean a>"->"staticget <com.photochannel.easyUploader.EasyUploader: java.lang.Boolean a>";
+ "staticget <com.photochannel.easyUploader.EasyUploader: java.lang.Boolean a>"->"virtualinvoke <java.lang.Boolean: boolean booleanValue()>";
+ "virtualinvoke <java.lang.Boolean: boolean booleanValue()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>";
+ "staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(boolean)>"->"staticput <com.photochannel.easyUploader.EasyUploader: java.lang.Boolean a>";
+ "staticput <com.photochannel.easyUploader.EasyUploader: java.lang.Boolean a>"->"goto load.r $r5";
+ "goto load.r $r5"->"specialinvoke <javax.swing.JApplet: void init()>";
+ "specialinvoke <javax.swing.JApplet: void init()>"->"return";
+}

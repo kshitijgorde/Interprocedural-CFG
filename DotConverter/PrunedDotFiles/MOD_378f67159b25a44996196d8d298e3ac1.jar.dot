@@ -1,0 +1,22 @@
+digraph "" {
+"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <email: java.lang.String p>";
+ "fieldput <email: java.lang.String p>"->"fieldget <email: java.lang.String p>";
+ "fieldget <email: java.lang.String p>"->"new java.awt.Color";
+ "new java.awt.Color"->"fieldget <email: java.lang.String p>";
+ "fieldget <email: java.lang.String p>"->"fieldget <email: java.lang.String p>";
+ "fieldget <email: java.lang.String p>"->"virtualinvoke <java.lang.String: int length()>";
+ "virtualinvoke <java.lang.String: int length()>"->"virtualinvoke <java.lang.String: java.lang.String substring(int,int)>";
+ "virtualinvoke <java.lang.String: java.lang.String substring(int,int)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"specialinvoke <java.awt.Color: void <init>(int)>";
+ "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <email: java.lang.String p>";
+ "fieldput <email: java.lang.String p>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <email: java.lang.String refPage>";
+ "fieldput <email: java.lang.String refPage>"->"return";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"goto load.r r0";
+}

@@ -1,0 +1,26 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransForm: java.lang.String urlHost>";
+ "fieldput <FreeTransForm: java.lang.String urlHost>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransForm: java.lang.String urlPort>";
+ "fieldput <FreeTransForm: java.lang.String urlPort>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransForm: java.lang.String textHost>";
+ "fieldput <FreeTransForm: java.lang.String textHost>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransForm: java.lang.String textPort>";
+ "fieldput <FreeTransForm: java.lang.String textPort>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <FreeTransForm: java.lang.String textTemplate>";
+ "fieldput <FreeTransForm: java.lang.String textTemplate>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <FreeTransForm: java.awt.Image topImage>";
+ "fieldput <FreeTransForm: java.awt.Image topImage>"->"return";
+"fieldget <FreeTransForm: java.lang.String textTemplate>";
+ "fieldget <FreeTransForm: java.lang.String textTemplate>"->"fieldget <FreeTransForm: java.lang.String textPort>";
+ "fieldget <FreeTransForm: java.lang.String textPort>"->"fieldget <FreeTransForm: java.lang.String textHost>";
+ "fieldget <FreeTransForm: java.lang.String textHost>"->"fieldget <FreeTransForm: java.lang.String urlPort>";
+ "fieldget <FreeTransForm: java.lang.String urlPort>"->"fieldget <FreeTransForm: java.lang.String urlHost>";
+ "fieldget <FreeTransForm: java.lang.String urlHost>"->}

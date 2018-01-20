@@ -1,0 +1,37 @@
+digraph "" {
+"virtualinvoke <SimCanvas: void init(java.applet.Applet)>";
+ "virtualinvoke <SimCanvas: void init(java.applet.Applet)>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.Panel";
+ "new java.awt.Panel"->"specialinvoke <java.awt.Panel: void <init>()>";
+ "specialinvoke <java.awt.Panel: void <init>()>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>"->"fieldput <PatternSimulator: java.awt.Label time_label>";
+ "fieldput <PatternSimulator: java.awt.Label time_label>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>"->"fieldput <PatternSimulator: java.awt.Label number_label>";
+ "fieldput <PatternSimulator: java.awt.Label number_label>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"new java.awt.Button";
+ "new java.awt.Button"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <PatternSimulator: java.awt.Button pause_button>";
+ "fieldput <PatternSimulator: java.awt.Button pause_button>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldget <PatternSimulator: java.awt.Button pause_button>";
+ "fieldget <PatternSimulator: java.awt.Button pause_button>"->"virtualinvoke <java.awt.Component: void disable()>";
+ "virtualinvoke <java.awt.Component: void disable()>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"return";
+}

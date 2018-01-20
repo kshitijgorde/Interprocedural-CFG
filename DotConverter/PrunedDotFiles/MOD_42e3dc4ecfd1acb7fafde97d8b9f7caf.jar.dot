@@ -1,0 +1,38 @@
+digraph "" {
+"r0 := @this: au.com.rocketdog.project.awc.applet.Main"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"push 'ANYwebcam.com Applet 4.1.12'";
+ "push 'ANYwebcam.com Applet 4.1.12'"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"push 'ANYwebcam.com Cam 1.22-beta new'";
+ "push 'ANYwebcam.com Cam 1.22-beta new'"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"push 'ANYwebcam.com Lang 4'";
+ "push 'ANYwebcam.com Lang 4'"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"virtualinvoke <java.net.URL: java.lang.String getHost()>";
+ "virtualinvoke <java.net.URL: java.lang.String getHost()>"->"push 'anywebcam.com'";
+ "push 'anywebcam.com'"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"push 'popular.com.br'";
+ "push 'popular.com.br'"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+ "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>";
+ "virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>"->"staticput <au.com.rocketdog.project.awc.applet.Main: java.applet.AppletContext m>";
+ "staticput <au.com.rocketdog.project.awc.applet.Main: java.applet.AppletContext m>"->"push 'http://www.anywebcam.com/awc/html/pirate.html'";
+ "push 'http://www.anywebcam.com/awc/html/pirate.html'"->"staticinvoke <au.com.rocketdog.project.awc.applet.Main: boolean b(java.lang.String,java.lang.String)>";
+ "staticinvoke <au.com.rocketdog.project.awc.applet.Main: boolean b(java.lang.String,java.lang.String)>"->"virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void destroy()>";
+ "virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void destroy()>"->"return";
+ "virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void destroy()>"->"staticinvoke <b: void a(java.lang.Exception,int)>";
+ "staticinvoke <b: void a(java.lang.Exception,int)>"->"virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void destroy()>";
+ "virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void destroy()>"->"return";
+"staticput <au.com.rocketdog.project.awc.applet.Main: java.lang.String b>";
+ "staticput <au.com.rocketdog.project.awc.applet.Main: java.lang.String b>"->"staticinvoke <javax.swing.UIManager: java.lang.String getCrossPlatformLookAndFeelClassName()>";
+ "staticinvoke <javax.swing.UIManager: java.lang.String getCrossPlatformLookAndFeelClassName()>"->"staticinvoke <javax.swing.UIManager: void setLookAndFeel(java.lang.String)>";
+ "staticinvoke <javax.swing.UIManager: void setLookAndFeel(java.lang.String)>"->"virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void b()>";
+ "virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void b()>"->"virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void d()>";
+ "virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void d()>"->"virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void c()>";
+ "virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void c()>"->"virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void a()>";
+ "virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void a()>"->"virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void e()>";
+ "virtualinvoke <au.com.rocketdog.project.awc.applet.Main: void e()>"->"goto return";
+}

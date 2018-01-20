@@ -1,0 +1,33 @@
+digraph "" {
+"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <Mdsphere3d: java.util.Random Z0113>";
+ "fieldput <Mdsphere3d: java.util.Random Z0113>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Mdsphere3d: java.awt.Color Z0008>";
+ "fieldput <Mdsphere3d: java.awt.Color Z0008>"->"virtualinvoke <Mdsphere3d: java.awt.Container getContentPane()>";
+ "virtualinvoke <Mdsphere3d: java.awt.Container getContentPane()>"->"virtualinvoke <Mdsphere3d: javax.swing.JPanel Z0143()>";
+ "virtualinvoke <Mdsphere3d: javax.swing.JPanel Z0143()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new javax.media.j3d.Canvas3D";
+ "new javax.media.j3d.Canvas3D"->"staticinvoke <com.sun.j3d.utils.universe.SimpleUniverse: java.awt.GraphicsConfiguration getPreferredConfiguration()>";
+ "staticinvoke <com.sun.j3d.utils.universe.SimpleUniverse: java.awt.GraphicsConfiguration getPreferredConfiguration()>"->"specialinvoke <javax.media.j3d.Canvas3D: void <init>(java.awt.GraphicsConfiguration)>";
+ "specialinvoke <javax.media.j3d.Canvas3D: void <init>(java.awt.GraphicsConfiguration)>"->"fieldput <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>";
+ "fieldput <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>"->"fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>";
+ "fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>"->"virtualinvoke <javax.media.j3d.Canvas3D: void stopRenderer()>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void stopRenderer()>"->"fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>";
+ "fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new com.sun.j3d.utils.universe.SimpleUniverse";
+ "new com.sun.j3d.utils.universe.SimpleUniverse"->"fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>";
+ "fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>"->"specialinvoke <com.sun.j3d.utils.universe.SimpleUniverse: void <init>(javax.media.j3d.Canvas3D)>";
+ "specialinvoke <com.sun.j3d.utils.universe.SimpleUniverse: void <init>(javax.media.j3d.Canvas3D)>"->"fieldput <Mdsphere3d: com.sun.j3d.utils.universe.SimpleUniverse Z0165>";
+ "fieldput <Mdsphere3d: com.sun.j3d.utils.universe.SimpleUniverse Z0165>"->"fieldget <Mdsphere3d: com.sun.j3d.utils.universe.SimpleUniverse Z0165>";
+ "fieldget <Mdsphere3d: com.sun.j3d.utils.universe.SimpleUniverse Z0165>"->"virtualinvoke <com.sun.j3d.utils.universe.SimpleUniverse: com.sun.j3d.utils.universe.ViewingPlatform getViewingPlatform()>";
+ "virtualinvoke <com.sun.j3d.utils.universe.SimpleUniverse: com.sun.j3d.utils.universe.ViewingPlatform getViewingPlatform()>"->"virtualinvoke <com.sun.j3d.utils.universe.ViewingPlatform: void setNominalViewingTransform()>";
+ "virtualinvoke <com.sun.j3d.utils.universe.ViewingPlatform: void setNominalViewingTransform()>"->"fieldput <Mdsphere3d: javax.media.j3d.GraphicsContext3D Z0054>";
+ "fieldput <Mdsphere3d: javax.media.j3d.GraphicsContext3D Z0054>"->"fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>";
+ "fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>"->"virtualinvoke <javax.media.j3d.Canvas3D: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void addMouseListener(java.awt.event.MouseListener)>"->"fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>";
+ "fieldget <Mdsphere3d: javax.media.j3d.Canvas3D Z0017>"->"virtualinvoke <javax.media.j3d.Canvas3D: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"fieldput <Mdsphere3d: java.lang.Thread Z0005>";
+ "fieldput <Mdsphere3d: java.lang.Thread Z0005>"->"return";
+}

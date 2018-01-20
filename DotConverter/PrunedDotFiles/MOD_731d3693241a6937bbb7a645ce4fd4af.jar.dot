@@ -1,0 +1,22 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"staticinvoke <pa.a.a.a.c.a: java.io.InputStream a(java.lang.String)>";
+ "staticinvoke <pa.a.a.a.c.a: java.io.InputStream a(java.lang.String)>"->"new java.io.ByteArrayOutputStream";
+ "new java.io.ByteArrayOutputStream"->"specialinvoke <java.io.ByteArrayOutputStream: void <init>()>";
+ "specialinvoke <java.io.ByteArrayOutputStream: void <init>()>"->"goto load.r r2";
+ "goto load.r r2"->"virtualinvoke <java.io.InputStream: int read(byte[])>";
+ "virtualinvoke <java.io.InputStream: int read(byte[])>"->"staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>";
+ "staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>"->"virtualinvoke <java.io.ByteArrayOutputStream: byte[] toByteArray()>";
+ "virtualinvoke <java.io.ByteArrayOutputStream: byte[] toByteArray()>"->"virtualinvoke <java.awt.Toolkit: java.awt.Image createImage(byte[])>";
+ "virtualinvoke <java.awt.Toolkit: java.awt.Image createImage(byte[])>"->"fieldput <panoapplet: java.awt.Image q>";
+ "fieldput <panoapplet: java.awt.Image q>"->"fieldget <panoapplet: java.awt.Image q>";
+ "fieldget <panoapplet: java.awt.Image q>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+ "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"virtualinvoke <java.awt.MediaTracker: void waitForAll()>";
+ "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"->"goto load.r r0";
+ "goto load.r r0"->"fieldget <panoapplet: java.awt.Image q>";
+ "fieldget <panoapplet: java.awt.Image q>"->"staticinvoke <pa.a.a.a.d.b: void 'if'(java.awt.Image)>";
+ "staticinvoke <pa.a.a.a.d.b: void 'if'(java.awt.Image)>"->"return";
+ "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"->"virtualinvoke <java.io.ByteArrayOutputStream: void write(byte[],int,int)>";
+}

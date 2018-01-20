@@ -1,0 +1,19 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"fieldput <Remote: java.lang.String mainName>";
+ "fieldput <Remote: java.lang.String mainName>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <Remote: java.awt.Color parseColor(java.lang.String)>";
+ "virtualinvoke <Remote: java.awt.Color parseColor(java.lang.String)>"->"fieldput <Remote: java.awt.Color background>";
+ "fieldput <Remote: java.awt.Color background>"->"fieldget <Remote: java.awt.Color background>";
+ "fieldget <Remote: java.awt.Color background>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>";
+ "virtualinvoke <java.applet.Applet: java.applet.AppletContext getAppletContext()>"->"fieldget <Remote: java.lang.String mainName>";
+ "fieldget <Remote: java.lang.String mainName>"->"interfaceinvoke <java.applet.AppletContext: java.applet.Applet getApplet(java.lang.String)> 1";
+ "interfaceinvoke <java.applet.AppletContext: java.applet.Applet getApplet(java.lang.String)> 1"->"fieldput <Remote: java.applet.Applet main>";
+ "fieldput <Remote: java.applet.Applet main>"->"return";
+"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"-> "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->}

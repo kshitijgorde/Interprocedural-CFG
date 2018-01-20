@@ -1,0 +1,22 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"staticinvoke <zp.a.a.a.d.a: java.io.InputStream a(java.lang.String)>";
+ "staticinvoke <zp.a.a.a.d.a: java.io.InputStream a(java.lang.String)>"->"new java.io.ByteArrayOutputStream";
+ "new java.io.ByteArrayOutputStream"->"specialinvoke <java.io.ByteArrayOutputStream: void <init>()>";
+ "specialinvoke <java.io.ByteArrayOutputStream: void <init>()>"->"virtualinvoke <java.io.InputStream: int read(byte[])>";
+ "virtualinvoke <java.io.InputStream: int read(byte[])>"->"virtualinvoke <java.io.ByteArrayOutputStream: void write(byte[],int,int)>";
+ "virtualinvoke <java.io.ByteArrayOutputStream: void write(byte[],int,int)>"->"goto load.r r1";
+ "goto load.r r1"->"fieldget <zoompanoapplet: java.awt.Image 'new'>";
+ "fieldget <zoompanoapplet: java.awt.Image 'new'>"->"staticinvoke <zp.a.a.a.c.e: void 'if'(java.awt.Image)>";
+ "staticinvoke <zp.a.a.a.c.e: void 'if'(java.awt.Image)>"->"return";
+"staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>";
+ "staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>"->"virtualinvoke <java.io.ByteArrayOutputStream: byte[] toByteArray()>";
+ "virtualinvoke <java.io.ByteArrayOutputStream: byte[] toByteArray()>"->"virtualinvoke <java.awt.Toolkit: java.awt.Image createImage(byte[])>";
+ "virtualinvoke <java.awt.Toolkit: java.awt.Image createImage(byte[])>"->"fieldput <zoompanoapplet: java.awt.Image 'new'>";
+ "fieldput <zoompanoapplet: java.awt.Image 'new'>"->"fieldget <zoompanoapplet: java.awt.Image 'new'>";
+ "fieldget <zoompanoapplet: java.awt.Image 'new'>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+ "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"virtualinvoke <java.awt.MediaTracker: void waitForAll()>";
+ "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"->"goto load.r r0";
+}

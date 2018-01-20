@@ -1,0 +1,20 @@
+digraph "" {
+"new java.awt.Cursor";
+ "new java.awt.Cursor"->"specialinvoke <java.awt.Cursor: void <init>(int)>";
+ "specialinvoke <java.awt.Cursor: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setCursor(java.awt.Cursor)>";
+ "virtualinvoke <java.awt.Component: void setCursor(java.awt.Cursor)>"->"fieldget <games.rocket.RocketApplet: java.awt.Font font>";
+ "fieldget <games.rocket.RocketApplet: java.awt.Font font>"->"virtualinvoke <java.awt.Container: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Container: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"goto load.i i4";
+ "goto load.i i4"->"goto load.i i4";
+ "goto load.i i4"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"return";
+"staticinvoke <java.lang.Math: double sin(double)>";
+ "staticinvoke <java.lang.Math: double sin(double)>"->"staticinvoke <java.lang.Math: double cos(double)>";
+ "staticinvoke <java.lang.Math: double cos(double)>"->}

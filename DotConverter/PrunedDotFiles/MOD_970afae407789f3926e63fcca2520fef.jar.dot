@@ -1,0 +1,30 @@
+digraph "" {
+"r0 := @this: com.mindprod.currcon.CurrCon"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"return";
+"virtualinvoke <com.mindprod.currcon.CurrCon: int getHeight()>";
+ "virtualinvoke <com.mindprod.currcon.CurrCon: int getHeight()>"->"fieldput <com.mindprod.currcon.CurrCon: int appletHeight>";
+ "fieldput <com.mindprod.currcon.CurrCon: int appletHeight>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <com.mindprod.currcon.CurrCon: int adjust(int)>";
+ "specialinvoke <com.mindprod.currcon.CurrCon: int adjust(int)>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <com.mindprod.currcon.CurrCon: java.awt.Font mainFont>";
+ "fieldput <com.mindprod.currcon.CurrCon: java.awt.Font mainFont>"->"virtualinvoke <com.mindprod.currcon.CurrCon: void setVisible(boolean)>";
+ "virtualinvoke <com.mindprod.currcon.CurrCon: void setVisible(boolean)>"->"virtualinvoke <com.mindprod.currcon.CurrCon: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.currcon.CurrCon: java.awt.Container getContentPane()>"->"staticget <com.mindprod.currcon.Scheme: java.awt.Color BACKGROUND_FOR_APPLET>";
+ "staticget <com.mindprod.currcon.Scheme: java.awt.Color BACKGROUND_FOR_APPLET>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"virtualinvoke <com.mindprod.currcon.CurrCon: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <com.mindprod.currcon.CurrCon: void setLayout(java.awt.LayoutManager)>"->"fieldput <com.mindprod.currcon.CurrCon: java.lang.String baseCurrAbbr>";
+ "fieldput <com.mindprod.currcon.CurrCon: java.lang.String baseCurrAbbr>"->"fieldput <com.mindprod.currcon.CurrCon: java.lang.String userCurrAbbr>";
+ "fieldput <com.mindprod.currcon.CurrCon: java.lang.String userCurrAbbr>"->"staticinvoke <com.mindprod.currcon.CurrCon: boolean exchsOk()>";
+ "staticinvoke <com.mindprod.currcon.CurrCon: boolean exchsOk()>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Container: void setVisible(boolean)>";
+ "virtualinvoke <java.awt.Container: void setVisible(boolean)>"->"return";
+"specialinvoke <com.mindprod.currcon.CurrCon: java.lang.String getAppletParameters()>";
+ "specialinvoke <com.mindprod.currcon.CurrCon: java.lang.String getAppletParameters()>"->"specialinvoke <com.mindprod.currcon.CurrCon: void determineUsersHomeCurrency()>";
+ "specialinvoke <com.mindprod.currcon.CurrCon: void determineUsersHomeCurrency()>"->"specialinvoke <com.mindprod.currcon.CurrCon: void buildComponents(java.awt.Container,java.lang.String)>";
+ "specialinvoke <com.mindprod.currcon.CurrCon: void buildComponents(java.awt.Container,java.lang.String)>"->"virtualinvoke <com.mindprod.currcon.CurrCon: void validate()>";
+ "virtualinvoke <com.mindprod.currcon.CurrCon: void validate()>"->"virtualinvoke <com.mindprod.currcon.CurrCon: void setVisible(boolean)>";
+ "virtualinvoke <com.mindprod.currcon.CurrCon: void setVisible(boolean)>"->"fieldput <com.mindprod.currcon.CurrCon: boolean ready>";
+ "fieldput <com.mindprod.currcon.CurrCon: boolean ready>"->"return";
+}

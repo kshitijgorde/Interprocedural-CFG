@@ -1,0 +1,26 @@
+digraph "" {
+"staticinvoke <LayoutAlgorithms: CircleLayout[] computeThreeCircleLayout(double[])>";
+ "staticinvoke <LayoutAlgorithms: CircleLayout[] computeThreeCircleLayout(double[])>"->"new java.awt.Rectangle";
+ "new java.awt.Rectangle"->"specialinvoke <java.awt.Rectangle: void <init>(int,int,int,int)>";
+ "specialinvoke <java.awt.Rectangle: void <init>(int,int,int,int)>"->"staticinvoke <CircleGeometry: void transformCircles(CircleLayout[],java.awt.geom.Rectangle2D)>";
+ "staticinvoke <CircleGeometry: void transformCircles(CircleLayout[],java.awt.geom.Rectangle2D)>"->"new java.awt.Dimension";
+ "new java.awt.Dimension"->"specialinvoke <java.awt.Dimension: void <init>(int,int)>";
+ "specialinvoke <java.awt.Dimension: void <init>(int,int)>"->"virtualinvoke <CirclePanel: void setPreferredSize(java.awt.Dimension)>";
+ "virtualinvoke <CirclePanel: void setPreferredSize(java.awt.Dimension)>"->"staticinvoke <javax.swing.BorderFactory: javax.swing.border.Border createEmptyBorder(int,int,int,int)>";
+ "staticinvoke <javax.swing.BorderFactory: javax.swing.border.Border createEmptyBorder(int,int,int,int)>"->"virtualinvoke <ExperimentPanel: void setBorder(javax.swing.border.Border)>";
+ "virtualinvoke <ExperimentPanel: void setBorder(javax.swing.border.Border)>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <CircleApplet: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <CircleApplet: void setLayout(java.awt.LayoutManager)>"->"new java.awt.GridBagConstraints";
+ "new java.awt.GridBagConstraints"->"specialinvoke <java.awt.GridBagConstraints: void <init>()>";
+ "specialinvoke <java.awt.GridBagConstraints: void <init>()>"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+ "fieldput <java.awt.GridBagConstraints: int anchor>"->"fieldput <java.awt.GridBagConstraints: int gridx>";
+ "fieldput <java.awt.GridBagConstraints: int gridx>"->"fieldput <java.awt.GridBagConstraints: int gridy>";
+ "fieldput <java.awt.GridBagConstraints: int gridy>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+ "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"virtualinvoke <CircleApplet: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <CircleApplet: java.awt.Component add(java.awt.Component)>"->"fieldput <java.awt.GridBagConstraints: int gridx>";
+ "fieldput <java.awt.GridBagConstraints: int gridx>"->"fieldput <java.awt.GridBagConstraints: int gridy>";
+ "fieldput <java.awt.GridBagConstraints: int gridy>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+ "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"virtualinvoke <CircleApplet: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <CircleApplet: java.awt.Component add(java.awt.Component)>"->"return";
+}

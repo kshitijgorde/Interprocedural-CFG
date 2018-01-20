@@ -1,0 +1,13 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>";
+ "virtualinvoke <java.awt.Component: void addKeyListener(java.awt.event.KeyListener)>"->"virtualinvoke <java.awt.Component: void addFocusListener(java.awt.event.FocusListener)>";
+ "virtualinvoke <java.awt.Component: void addFocusListener(java.awt.event.FocusListener)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"new java.net.URL";
+ "new java.net.URL"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>";
+ "virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>"->"virtualinvoke <java.net.URLConnection: void setDefaultUseCaches(boolean)>";
+ "virtualinvoke <java.net.URLConnection: void setDefaultUseCaches(boolean)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <java.net.URLConnection: void setDefaultUseCaches(boolean)>"->}

@@ -1,0 +1,21 @@
+digraph "" {
+"r0 := @this: com.mindprod.americantax.AmericanTax"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"return";
+ "ifne staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.common13.Common13: void setLaf()>";
+ "staticinvoke <com.mindprod.common13.Common13: void setLaf()>"->"staticinvoke <com.mindprod.americantax.StateItem: void load()>";
+ "staticinvoke <com.mindprod.americantax.StateItem: void load()>"->"virtualinvoke <com.mindprod.americantax.AmericanTax: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.americantax.AmericanTax: java.awt.Container getContentPane()>"->"staticget <com.mindprod.americantax.AmericanTax: java.awt.Color WHITE>";
+ "staticget <com.mindprod.americantax.AmericanTax: java.awt.Color WHITE>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <com.mindprod.americantax.AmericanTax: void createComponents()>";
+ "specialinvoke <com.mindprod.americantax.AmericanTax: void createComponents()>"->"specialinvoke <com.mindprod.americantax.AmericanTax: void setDistrictChoices()>";
+ "specialinvoke <com.mindprod.americantax.AmericanTax: void setDistrictChoices()>"->"specialinvoke <com.mindprod.americantax.AmericanTax: void calcAndDisplayTaxes()>";
+ "specialinvoke <com.mindprod.americantax.AmericanTax: void calcAndDisplayTaxes()>"->"specialinvoke <com.mindprod.americantax.AmericanTax: void layoutGridBag(java.awt.Container)>";
+ "specialinvoke <com.mindprod.americantax.AmericanTax: void layoutGridBag(java.awt.Container)>"->"specialinvoke <com.mindprod.americantax.AmericanTax: void hookListeners()>";
+ "specialinvoke <com.mindprod.americantax.AmericanTax: void hookListeners()>"->"virtualinvoke <com.mindprod.americantax.AmericanTax: void validate()>";
+ "virtualinvoke <com.mindprod.americantax.AmericanTax: void validate()>"->"virtualinvoke <com.mindprod.americantax.AmericanTax: void setVisible(boolean)>";
+ "virtualinvoke <com.mindprod.americantax.AmericanTax: void setVisible(boolean)>"->"return";
+}

@@ -1,0 +1,24 @@
+digraph "" {
+"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticput <securer: java.lang.String target>";
+ "staticput <securer: java.lang.String target>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticput <securer: java.lang.String badURL>";
+ "staticput <securer: java.lang.String badURL>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.TextField";
+ "new java.awt.TextField"->"specialinvoke <java.awt.TextField: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.TextField: void <init>(java.lang.String)>"->"staticput <securer: java.awt.TextField display>";
+ "staticput <securer: java.awt.TextField display>"->"staticget <securer: java.awt.TextField display>";
+ "staticget <securer: java.awt.TextField display>"->"virtualinvoke <java.awt.TextComponent: void setEditable(boolean)>";
+ "virtualinvoke <java.awt.TextComponent: void setEditable(boolean)>"->"new java.awt.Panel";
+ "new java.awt.Panel"->"specialinvoke <java.awt.Panel: void <init>()>";
+ "specialinvoke <java.awt.Panel: void <init>()>"->"new java.awt.GridLayout";
+ "new java.awt.GridLayout"->"specialinvoke <java.awt.GridLayout: void <init>(int,int)>";
+ "specialinvoke <java.awt.GridLayout: void <init>(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"staticget <securer: java.awt.TextField display>";
+ "staticget <securer: java.awt.TextField display>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <securer: void addButton(java.awt.Container,java.lang.String)>";
+ "virtualinvoke <securer: void addButton(java.awt.Container,java.lang.String)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"return";
+}

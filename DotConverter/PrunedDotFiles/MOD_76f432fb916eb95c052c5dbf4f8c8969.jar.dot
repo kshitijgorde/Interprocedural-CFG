@@ -1,0 +1,27 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <Slider: java.awt.Image offImage>";
+ "fieldput <Slider: java.awt.Image offImage>"->"fieldget <Slider: java.awt.Image offImage>";
+ "fieldget <Slider: java.awt.Image offImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <Slider: java.awt.Graphics offG>";
+ "fieldput <Slider: java.awt.Graphics offG>"->"fieldget <Slider: java.awt.Graphics offG>";
+ "fieldget <Slider: java.awt.Graphics offG>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"virtualinvoke <java.awt.FontMetrics: int getHeight()>";
+ "virtualinvoke <java.awt.FontMetrics: int getHeight()>"->"virtualinvoke <java.awt.Component: java.awt.Color getBackground()>";
+ "virtualinvoke <java.awt.Component: java.awt.Color getBackground()>"->"fieldput <Slider: java.awt.Color backC>";
+ "fieldput <Slider: java.awt.Color backC>"->"virtualinvoke <java.awt.Component: java.awt.Color getForeground()>";
+ "virtualinvoke <java.awt.Component: java.awt.Color getForeground()>"->"fieldput <Slider: java.awt.Color forC>";
+ "fieldput <Slider: java.awt.Color forC>"->"fieldget <Slider: java.awt.Graphics offG>";
+ "fieldget <Slider: java.awt.Graphics offG>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldget <Slider: java.lang.String text>";
+ "fieldget <Slider: java.lang.String text>"->"virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>";
+ "virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>"->"virtualinvoke <java.awt.Component: void repaint()>";
+ "virtualinvoke <java.awt.Component: void repaint()>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"specialinvoke <Timer: void <init>(java.lang.String,Slider,long)>";
+ "specialinvoke <Timer: void <init>(java.lang.String,Slider,long)>"->"return";
+}

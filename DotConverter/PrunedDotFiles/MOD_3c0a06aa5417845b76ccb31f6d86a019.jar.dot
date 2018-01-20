@@ -1,0 +1,28 @@
+digraph "" {
+"virtualinvoke <UI_CpuScheduling: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_CpuScheduling: java.awt.Container getContentPane()>"->"staticget <Main: java.awt.Color WINDOW_COLOR>";
+ "staticget <Main: java.awt.Color WINDOW_COLOR>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"virtualinvoke <UI_CpuScheduling: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_CpuScheduling: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new javax.swing.JTabbedPane";
+ "new javax.swing.JTabbedPane"->"specialinvoke <javax.swing.JTabbedPane: void <init>()>";
+ "specialinvoke <javax.swing.JTabbedPane: void <init>()>"->"staticput <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>";
+ "staticput <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>"->"staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>";
+ "staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>"->"staticget <Main: java.awt.Color WINDOW_COLOR>";
+ "staticget <Main: java.awt.Color WINDOW_COLOR>"->"virtualinvoke <javax.swing.JTabbedPane: void setBackground(java.awt.Color)>";
+ "virtualinvoke <javax.swing.JTabbedPane: void setBackground(java.awt.Color)>"->"staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>";
+ "staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>"->"virtualinvoke <javax.swing.JTabbedPane: void setBounds(int,int,int,int)>";
+ "virtualinvoke <javax.swing.JTabbedPane: void setBounds(int,int,int,int)>"->"staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>";
+ "staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>"->"virtualinvoke <javax.swing.JTabbedPane: void addChangeListener(javax.swing.event.ChangeListener)>";
+ "virtualinvoke <javax.swing.JTabbedPane: void addChangeListener(javax.swing.event.ChangeListener)>"->"staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>";
+ "staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>"->"virtualinvoke <javax.swing.JTabbedPane: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <javax.swing.JTabbedPane: java.awt.Component add(java.lang.String,java.awt.Component)>"->"staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>";
+ "staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>"->"virtualinvoke <javax.swing.JTabbedPane: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <javax.swing.JTabbedPane: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <UI_CpuScheduling: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_CpuScheduling: java.awt.Container getContentPane()>"->"staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>";
+ "staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>";
+ "staticget <UI_CpuScheduling: javax.swing.JTabbedPane _tabMain>"->"virtualinvoke <javax.swing.JTabbedPane: void setSelectedIndex(int)>";
+ "virtualinvoke <javax.swing.JTabbedPane: void setSelectedIndex(int)>"->"specialinvoke <UI_CpuScheduling: void pInitTitle(java.lang.String)>";
+ "specialinvoke <UI_CpuScheduling: void pInitTitle(java.lang.String)>"->"return";
+}

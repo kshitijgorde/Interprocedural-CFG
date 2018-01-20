@@ -1,0 +1,28 @@
+digraph "" {
+"specialinvoke <java.applet.Applet: void init()>";
+ "specialinvoke <java.applet.Applet: void init()>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <iebb: java.lang.String infile1>";
+ "fieldput <iebb: java.lang.String infile1>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <iebb: java.lang.String infile0>";
+ "fieldput <iebb: java.lang.String infile0>"->"new java.lang.Integer";
+ "new java.lang.Integer"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <java.lang.Integer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.Integer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+ "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <iebb: java.lang.String[] url>";
+ "fieldput <iebb: java.lang.String[] url>"->"fieldput <iebb: java.lang.String[] frame>";
+ "fieldput <iebb: java.lang.String[] frame>"->"goto load.i i14";
+ "goto load.i i14"->"return";
+"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <iebb: java.lang.String[] parse(java.lang.String)>";
+ "virtualinvoke <iebb: java.lang.String[] parse(java.lang.String)>"->"virtualinvoke <iebb: int[] parseInt(java.lang.String)>";
+ "virtualinvoke <iebb: int[] parseInt(java.lang.String)>"->"fieldget <iebb: java.lang.String[] url>";
+ "fieldget <iebb: java.lang.String[] url>"->"fieldget <iebb: java.lang.String[] frame>";
+ "fieldget <iebb: java.lang.String[] frame>"->}

@@ -1,0 +1,22 @@
+digraph "" {
+"virtualinvoke <firefox.Updater: java.applet.AppletContext getAppletContext()>";
+ "virtualinvoke <firefox.Updater: java.applet.AppletContext getAppletContext()>"->"staticput <firefox.Updater: java.applet.AppletContext ac>";
+ "staticput <firefox.Updater: java.applet.AppletContext ac>"->"virtualinvoke <firefox.Updater: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <firefox.Updater: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <firefox.Updater: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <firefox.Updater: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <firefox.Updater: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <firefox.Updater: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <firefox.Updater: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <firefox.Updater: java.lang.String getParameter(java.lang.String)>"->"new java.security.AllPermission";
+ "new java.security.AllPermission"->"specialinvoke <java.security.AllPermission: void <init>()>";
+ "specialinvoke <java.security.AllPermission: void <init>()>"->"staticinvoke <java.security.AccessController: void checkPermission(java.security.Permission)>";
+ "staticinvoke <java.security.AccessController: void checkPermission(java.security.Permission)>"->"goto new firefox.Updater$1";
+ "goto new firefox.Updater$1"->"specialinvoke <firefox.Updater$1: void <init>(firefox.Updater,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>";
+ "specialinvoke <firefox.Updater$1: void <init>(firefox.Updater,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>"->"staticinvoke <java.security.AccessController: java.lang.Object doPrivileged(java.security.PrivilegedAction)>";
+ "staticinvoke <java.security.AccessController: java.lang.Object doPrivileged(java.security.PrivilegedAction)>"->"return";
+ "staticinvoke <java.security.AccessController: void checkPermission(java.security.Permission)>"->"staticget <firefox.Updater: java.applet.AppletContext ac>";
+ "staticget <firefox.Updater: java.applet.AppletContext ac>"->"new java.net.URL";
+ "new java.net.URL"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"interfaceinvoke <java.applet.AppletContext: void showDocument(java.net.URL)> 1";
+ "interfaceinvoke <java.applet.AppletContext: void showDocument(java.net.URL)> 1"->"return";
+ "interfaceinvoke <java.applet.AppletContext: void showDocument(java.net.URL)> 1"->"staticinvoke <firefox.Updater: java.lang.String SendException(java.lang.Exception)>";
+ "staticinvoke <firefox.Updater: java.lang.String SendException(java.lang.Exception)>"->"staticinvoke <java.lang.System: void exit(int)>";
+}

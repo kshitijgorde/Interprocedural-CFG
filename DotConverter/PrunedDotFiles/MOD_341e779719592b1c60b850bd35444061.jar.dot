@@ -1,0 +1,19 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <Mandel: java.awt.Image bb>";
+ "fieldput <Mandel: java.awt.Image bb>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <Mandel: java.awt.Image fractimg>";
+ "fieldput <Mandel: java.awt.Image fractimg>"->"fieldget <Mandel: java.awt.Image bb>";
+ "fieldget <Mandel: java.awt.Image bb>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <Mandel: java.awt.Graphics bbg>";
+ "fieldput <Mandel: java.awt.Graphics bbg>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <Mandel: java.lang.Thread mainthread>";
+ "fieldget <Mandel: java.lang.Thread mainthread>"->"ifnull return";
+ "ifnull return"->"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"fieldput <Mandel: java.lang.Thread mainthread>";
+ "fieldput <Mandel: java.lang.Thread mainthread>"->"fieldget <Mandel: java.lang.Thread mainthread>";
+ "fieldget <Mandel: java.lang.Thread mainthread>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

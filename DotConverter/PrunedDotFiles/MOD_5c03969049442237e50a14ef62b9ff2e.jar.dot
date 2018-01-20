@@ -1,0 +1,17 @@
+digraph "" {
+"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <Vecspin: java.util.Random Z0039>";
+ "fieldput <Vecspin: java.util.Random Z0039>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Vecspin: java.awt.Color Z0007>";
+ "fieldput <Vecspin: java.awt.Color Z0007>"->"virtualinvoke <Vecspin: java.awt.Container getContentPane()>";
+ "virtualinvoke <Vecspin: java.awt.Container getContentPane()>"->"virtualinvoke <Vecspin: javax.swing.JPanel Z0059()>";
+ "virtualinvoke <Vecspin: javax.swing.JPanel Z0059()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <Vecspin: java.util.Random Z0039>";
+ "fieldput <Vecspin: java.util.Random Z0039>"->"fieldput <Vecspin: java.lang.Thread Z0002>";
+ "fieldput <Vecspin: java.lang.Thread Z0002>"->"return";
+}

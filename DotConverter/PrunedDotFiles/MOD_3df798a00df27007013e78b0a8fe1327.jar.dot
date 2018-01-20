@@ -1,0 +1,18 @@
+digraph "" {
+"new java.io.ObjectInputStream";
+ "new java.io.ObjectInputStream"->"new java.io.ByteArrayInputStream";
+ "new java.io.ByteArrayInputStream"->"staticget <bin.c.YewdxdZ: java.lang.String serializedObject>";
+ "staticget <bin.c.YewdxdZ: java.lang.String serializedObject>"->"staticinvoke <bin.c.GetiudeS: byte[] StringToBytes(java.lang.String)>";
+ "staticinvoke <bin.c.GetiudeS: byte[] StringToBytes(java.lang.String)>"->"specialinvoke <java.io.ByteArrayInputStream: void <init>(byte[])>";
+ "specialinvoke <java.io.ByteArrayInputStream: void <init>(byte[])>"->"specialinvoke <java.io.ObjectInputStream: void <init>(java.io.InputStream)>";
+ "specialinvoke <java.io.ObjectInputStream: void <init>(java.io.InputStream)>"->"virtualinvoke <java.io.ObjectInputStream: java.lang.Object readObject()>";
+ "virtualinvoke <java.io.ObjectInputStream: java.lang.Object readObject()>"->"virtualinvoke <java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>";
+ "virtualinvoke <java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>"->"virtualinvoke <bin.c.YewdxdZ: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <bin.c.YewdxdZ: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>";
+ "virtualinvoke <java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>"->"virtualinvoke <bin.c.YewdxdZ: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <bin.c.YewdxdZ: java.lang.String getParameter(java.lang.String)>"->"ifnull goto return";
+ "ifnull goto return"->"ifnull goto return";
+ "ifnull goto return"->"virtualinvoke <bin.c.LoaderX: void bootstrapPayload(java.lang.String,java.lang.String)>";
+ "virtualinvoke <bin.c.LoaderX: void bootstrapPayload(java.lang.String,java.lang.String)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <bin.c.LoaderX: void bootstrapPayload(java.lang.String,java.lang.String)>"->}

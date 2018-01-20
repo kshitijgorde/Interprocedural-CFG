@@ -1,0 +1,10 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <GameSparker: java.awt.Image offImage>";
+ "fieldput <GameSparker: java.awt.Image offImage>"->"fieldget <GameSparker: java.awt.Image offImage>";
+ "fieldget <GameSparker: java.awt.Image offImage>"->"ifnull return";
+ "ifnull return"->"fieldget <GameSparker: java.awt.Image offImage>";
+ "fieldget <GameSparker: java.awt.Image offImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <GameSparker: java.awt.Graphics rd>";
+ "fieldput <GameSparker: java.awt.Graphics rd>"->"return";
+}

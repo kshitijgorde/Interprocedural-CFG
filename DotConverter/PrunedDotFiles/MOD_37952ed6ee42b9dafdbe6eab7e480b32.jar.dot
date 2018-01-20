@@ -1,0 +1,38 @@
+digraph "" {
+"fieldput <jatris: java.awt.Color[] blocks>";
+ "fieldput <jatris: java.awt.Color[] blocks>"->"fieldget <jatris: java.awt.Color[] blocks>";
+ "fieldget <jatris: java.awt.Color[] blocks>"->"fieldget <jatris: java.awt.Color background>";
+ "fieldget <jatris: java.awt.Color background>"->"fieldget <jatris: java.awt.Color[] blocks>";
+ "fieldget <jatris: java.awt.Color[] blocks>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldget <jatris: java.awt.Color[] blocks>";
+ "fieldget <jatris: java.awt.Color[] blocks>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldget <jatris: java.awt.Color[] blocks>";
+ "fieldget <jatris: java.awt.Color[] blocks>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldget <jatris: java.awt.Color[] blocks>";
+ "fieldget <jatris: java.awt.Color[] blocks>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldget <jatris: java.awt.Color[] blocks>";
+ "fieldget <jatris: java.awt.Color[] blocks>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldget <jatris: java.awt.Color[] blocks>";
+ "fieldget <jatris: java.awt.Color[] blocks>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+ "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <jatris: java.awt.Dimension d>";
+ "fieldput <jatris: java.awt.Dimension d>"->"fieldget <jatris: java.awt.Color background>";
+ "fieldget <jatris: java.awt.Color background>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldget <jatris: java.awt.Font smallfont>";
+ "fieldget <jatris: java.awt.Font smallfont>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <jatris: java.awt.FontMetrics fmsmall>";
+ "fieldput <jatris: java.awt.FontMetrics fmsmall>"->"fieldget <jatris: java.awt.Font largefont>";
+ "fieldget <jatris: java.awt.Font largefont>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <jatris: java.awt.FontMetrics fmlarge>";
+ "fieldput <jatris: java.awt.FontMetrics fmlarge>"->"return";
+}

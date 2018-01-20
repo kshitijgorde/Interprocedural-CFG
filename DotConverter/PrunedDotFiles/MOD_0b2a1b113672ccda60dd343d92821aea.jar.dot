@@ -1,0 +1,28 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <JavaQuote: java.awt.Dimension size>";
+ "fieldput <JavaQuote: java.awt.Dimension size>"->"specialinvoke <ParamParser: void <init>(java.applet.Applet)>";
+ "specialinvoke <ParamParser: void <init>(java.applet.Applet)>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <ParamParser: java.awt.Color parseColor(java.lang.String,java.awt.Color)>";
+ "virtualinvoke <ParamParser: java.awt.Color parseColor(java.lang.String,java.awt.Color)>"->"fieldput <JavaQuote: java.awt.Color bgcolor>";
+ "fieldput <JavaQuote: java.awt.Color bgcolor>"->"fieldget <JavaQuote: java.awt.Color bgcolor>";
+ "fieldget <JavaQuote: java.awt.Color bgcolor>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <ParamParser: int parseInt(java.lang.String,int)>";
+ "virtualinvoke <ParamParser: int parseInt(java.lang.String,int)>"->"virtualinvoke <ParamParser: java.lang.String parseString(java.lang.String,java.lang.String)>";
+ "virtualinvoke <ParamParser: java.lang.String parseString(java.lang.String,java.lang.String)>"->"fieldput <JavaQuote: java.lang.String link>";
+ "fieldput <JavaQuote: java.lang.String link>"->"virtualinvoke <ParamParser: java.lang.String parseString(java.lang.String,java.lang.String)>";
+ "virtualinvoke <ParamParser: java.lang.String parseString(java.lang.String,java.lang.String)>"->"fieldput <JavaQuote: java.lang.String target>";
+ "fieldput <JavaQuote: java.lang.String target>"->"fieldget <JavaQuote: java.awt.Dimension size>";
+ "fieldget <JavaQuote: java.awt.Dimension size>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <JavaQuote: java.awt.Dimension size>";
+ "fieldget <JavaQuote: java.awt.Dimension size>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <JavaQuote: java.awt.Image offImage>";
+ "fieldput <JavaQuote: java.awt.Image offImage>"->"fieldget <JavaQuote: java.awt.Image offImage>";
+ "fieldget <JavaQuote: java.awt.Image offImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <JavaQuote: java.awt.Graphics offG>";
+ "fieldput <JavaQuote: java.awt.Graphics offG>"->"fieldget <JavaQuote: java.awt.Graphics offG>";
+ "fieldget <JavaQuote: java.awt.Graphics offG>"->"fieldget <JavaQuote: java.awt.Dimension size>";
+ "fieldget <JavaQuote: java.awt.Dimension size>"->"specialinvoke <TextScript: void <init>(java.awt.Graphics,ParamParser,java.awt.Dimension)>";
+ "specialinvoke <TextScript: void <init>(java.awt.Graphics,ParamParser,java.awt.Dimension)>"->"return";
+}

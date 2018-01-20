@@ -1,0 +1,15 @@
+digraph "" {
+"r0 := @this: com.mindprod.available.Available"->"virtualinvoke <com.mindprod.available.Available: java.awt.Container getContentPane()>";
+ "virtualinvoke <com.mindprod.available.Available: java.awt.Container getContentPane()>"->"staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>";
+ "staticinvoke <com.mindprod.common11.VersionCheck: boolean isJavaVersionOK(int,int,int,java.awt.Container)>"->"return";
+"specialinvoke <com.mindprod.available.Available: void buildMenu()>";
+ "specialinvoke <com.mindprod.available.Available: void buildMenu()>"->"new java.awt.GridBagLayout";
+ "new java.awt.GridBagLayout"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+ "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"staticget <com.mindprod.available.Available: java.awt.Color BACKGROUND_FOR_APPLET>";
+ "staticget <com.mindprod.available.Available: java.awt.Color BACKGROUND_FOR_APPLET>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"specialinvoke <com.mindprod.available.Available: void buildComponents()>";
+ "specialinvoke <com.mindprod.available.Available: void buildComponents()>"->"specialinvoke <com.mindprod.available.Available: void layoutComponents(java.awt.Container)>";
+ "specialinvoke <com.mindprod.available.Available: void layoutComponents(java.awt.Container)>"->"specialinvoke <com.mindprod.available.Available: void installHooks()>";
+ "specialinvoke <com.mindprod.available.Available: void installHooks()>"->"return";
+}

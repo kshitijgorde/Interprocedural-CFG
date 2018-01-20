@@ -1,0 +1,17 @@
+digraph "" {
+"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"fieldput <knotfunny: java.lang.Thread t>";
+ "fieldput <knotfunny: java.lang.Thread t>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <knotfunny: java.awt.Image bi>";
+ "fieldput <knotfunny: java.awt.Image bi>"->"fieldget <knotfunny: java.awt.Image bi>";
+ "fieldget <knotfunny: java.awt.Image bi>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <knotfunny: java.awt.Graphics bg>";
+ "fieldput <knotfunny: java.awt.Graphics bg>"->"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <knotfunny: java.util.Random r>";
+ "fieldput <knotfunny: java.util.Random r>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"return";
+"goto load.r r0";
+ "goto load.r r0"->}

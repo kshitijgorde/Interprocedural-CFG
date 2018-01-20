@@ -1,0 +1,31 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <DifGaAs: java.awt.Image buffImage>";
+ "fieldput <DifGaAs: java.awt.Image buffImage>"->"fieldget <DifGaAs: java.awt.Image buffImage>";
+ "fieldget <DifGaAs: java.awt.Image buffImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <DifGaAs: java.awt.Graphics buffGraphics>";
+ "fieldput <DifGaAs: java.awt.Graphics buffGraphics>"->"goto load.i r1";
+ "goto load.i r1"->"goto load.i i49";
+ "goto load.i i49"->"fieldget <DifGaAs: java.awt.Image[] balls>";
+ "fieldget <DifGaAs: java.awt.Image[] balls>"->"fieldput <DifGaAs: java.awt.Image[] grBalls>";
+ "fieldput <DifGaAs: java.awt.Image[] grBalls>"->"fieldget <DifGaAs: java.awt.Image[] balls>";
+ "fieldget <DifGaAs: java.awt.Image[] balls>"->"fieldput <DifGaAs: java.awt.Image[] balls1>";
+ "fieldput <DifGaAs: java.awt.Image[] balls1>"->"fieldget <DifGaAs: java.awt.Image[] grBalls>";
+ "fieldget <DifGaAs: java.awt.Image[] grBalls>"->"fieldget <DifGaAs: java.awt.Image[] balls>";
+ "fieldget <DifGaAs: java.awt.Image[] balls>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"return";
+"goto load.i i50";
+ "goto load.i i50"->"goto load.i i51";
+ "goto load.i i51"->"staticinvoke <java.lang.Math: int abs(int)>";
+ "staticinvoke <java.lang.Math: int abs(int)>"->"staticinvoke <java.lang.Math: int abs(int)>";
+ "staticinvoke <java.lang.Math: int abs(int)>"->"staticinvoke <java.lang.Math: int abs(int)>";
+ "staticinvoke <java.lang.Math: int abs(int)>"->}

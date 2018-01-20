@@ -1,0 +1,6 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"goto return";
+ "goto return"->"return";
+"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

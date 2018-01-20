@@ -1,0 +1,20 @@
+digraph "" {
+"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <KaleidoscopeControl: java.awt.Dimension getCanvasSize()>";
+ "virtualinvoke <KaleidoscopeControl: java.awt.Dimension getCanvasSize()>"->"specialinvoke <KaleidoscopeCanvas: void <init>(java.awt.Dimension)>";
+ "specialinvoke <KaleidoscopeCanvas: void <init>(java.awt.Dimension)>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <Kaleidoscope: java.awt.Label message>";
+ "fieldput <Kaleidoscope: java.awt.Label message>"->"fieldget <Kaleidoscope: java.awt.Label message>";
+ "fieldget <Kaleidoscope: java.awt.Label message>"->"virtualinvoke <java.awt.Label: void setAlignment(int)>";
+ "virtualinvoke <java.awt.Label: void setAlignment(int)>"->"fieldget <Kaleidoscope: java.awt.Label message>";
+ "fieldget <Kaleidoscope: java.awt.Label message>"->"staticget <java.awt.Color: java.awt.Color blue>";
+ "staticget <java.awt.Color: java.awt.Color blue>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"fieldget <Kaleidoscope: java.awt.Label message>";
+ "fieldget <Kaleidoscope: java.awt.Label message>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"return";
+}

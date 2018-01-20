@@ -1,0 +1,12 @@
+digraph "" {
+"fieldput <worldTime: java.util.SimpleTimeZone[] cityTimeZone>";
+ "fieldput <worldTime: java.util.SimpleTimeZone[] cityTimeZone>"->"fieldput <worldTime: java.util.Calendar[] calendar>";
+ "fieldput <worldTime: java.util.Calendar[] calendar>"->"fieldput <worldTime: java.text.DateFormat[] timeFormat>";
+ "fieldput <worldTime: java.text.DateFormat[] timeFormat>"->"fieldput <worldTime: java.text.DateFormat[] dateFormat>";
+ "fieldput <worldTime: java.text.DateFormat[] dateFormat>"->"fieldput <worldTime: java.awt.Label[] lblTime>";
+ "fieldput <worldTime: java.awt.Label[] lblTime>"->"fieldput <worldTime: java.awt.Label[] lblDate>";
+ "fieldput <worldTime: java.awt.Label[] lblDate>"->"new java.util.Date";
+ "new java.util.Date"->"specialinvoke <java.util.Date: void <init>()>";
+ "specialinvoke <java.util.Date: void <init>()>"->"fieldput <worldTime: java.util.Date runTime>";
+ "fieldput <worldTime: java.util.Date runTime>"->"return";
+}

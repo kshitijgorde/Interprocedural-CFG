@@ -1,0 +1,20 @@
+digraph "" {
+"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"specialinvoke <MusicKeyboard: java.awt.Image makeKeyboard()>";
+ "specialinvoke <MusicKeyboard: java.awt.Image makeKeyboard()>"->"fieldput <MusicKeyboard: java.awt.Image keyboardImage>";
+ "fieldput <MusicKeyboard: java.awt.Image keyboardImage>"->"specialinvoke <MusicKeyboard: java.awt.Image makeAuthorUrlImage()>";
+ "specialinvoke <MusicKeyboard: java.awt.Image makeAuthorUrlImage()>"->"fieldput <MusicKeyboard: java.awt.Image authorUrlImage>";
+ "fieldput <MusicKeyboard: java.awt.Image authorUrlImage>"->"new java.util.Hashtable";
+ "new java.util.Hashtable"->"specialinvoke <java.util.Hashtable: void <init>(int)>";
+ "specialinvoke <java.util.Hashtable: void <init>(int)>"->"fieldput <MusicKeyboard: java.util.Hashtable notes>";
+ "fieldput <MusicKeyboard: java.util.Hashtable notes>"->"new java.awt.Label";
+ "new java.awt.Label"->"specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>";
+ "specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>"->"fieldput <MusicKeyboard: java.awt.Label readyLabel>";
+ "fieldput <MusicKeyboard: java.awt.Label readyLabel>"->"fieldget <MusicKeyboard: java.awt.Label readyLabel>";
+ "fieldget <MusicKeyboard: java.awt.Label readyLabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"fieldget <MusicKeyboard: java.awt.Label readyLabel>";
+ "fieldget <MusicKeyboard: java.awt.Label readyLabel>"->"virtualinvoke <java.awt.Label: void setText(java.lang.String)>";
+ "virtualinvoke <java.awt.Label: void setText(java.lang.String)>"->"return";
+}

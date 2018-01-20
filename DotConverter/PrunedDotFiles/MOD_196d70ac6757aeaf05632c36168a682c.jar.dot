@@ -1,0 +1,14 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldput <FireWorks: java.awt.Dimension d>";
+ "fieldput <FireWorks: java.awt.Dimension d>"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldget <FireWorks: java.awt.Font font>";
+ "fieldget <FireWorks: java.awt.Font font>"->"virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Graphics: void setFont(java.awt.Font)>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"fieldput <FireWorks: java.awt.FontMetrics fm>";
+ "fieldput <FireWorks: java.awt.FontMetrics fm>"->"goto load.i i2";
+ "goto load.i i2"->"goto load.i i2";
+ "goto load.i i2"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <FireWorks: java.lang.String s>";
+ "fieldput <FireWorks: java.lang.String s>"->"return";
+}

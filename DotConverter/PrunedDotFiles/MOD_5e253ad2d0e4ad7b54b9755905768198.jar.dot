@@ -1,0 +1,9 @@
+digraph "" {
+"virtualinvoke <cameracontrol.Controler: java.lang.String getParameter(java.lang.String,java.lang.String)>";
+ "virtualinvoke <cameracontrol.Controler: java.lang.String getParameter(java.lang.String,java.lang.String)>"->"fieldput <cameracontrol.Controler: java.lang.String _$971>";
+ "fieldput <cameracontrol.Controler: java.lang.String _$971>"->"goto load.r r0";
+ "goto load.r r0"->"goto return";
+ "goto return"->"return";
+"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+ "virtualinvoke <cameracontrol.Controler: java.lang.String getParameter(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

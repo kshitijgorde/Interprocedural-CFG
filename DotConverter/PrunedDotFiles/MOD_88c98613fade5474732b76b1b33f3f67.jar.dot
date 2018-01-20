@@ -1,0 +1,33 @@
+digraph "" {
+"new java.util.Random";
+ "new java.util.Random"->"specialinvoke <java.util.Random: void <init>()>";
+ "specialinvoke <java.util.Random: void <init>()>"->"fieldput <Mdsheet3d: java.util.Random Z0132>";
+ "fieldput <Mdsheet3d: java.util.Random Z0132>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <Mdsheet3d: java.awt.Color Z0007>";
+ "fieldput <Mdsheet3d: java.awt.Color Z0007>"->"virtualinvoke <Mdsheet3d: java.awt.Container getContentPane()>";
+ "virtualinvoke <Mdsheet3d: java.awt.Container getContentPane()>"->"virtualinvoke <Mdsheet3d: javax.swing.JPanel Z0169()>";
+ "virtualinvoke <Mdsheet3d: javax.swing.JPanel Z0169()>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new javax.media.j3d.Canvas3D";
+ "new javax.media.j3d.Canvas3D"->"staticinvoke <com.sun.j3d.utils.universe.SimpleUniverse: java.awt.GraphicsConfiguration getPreferredConfiguration()>";
+ "staticinvoke <com.sun.j3d.utils.universe.SimpleUniverse: java.awt.GraphicsConfiguration getPreferredConfiguration()>"->"specialinvoke <javax.media.j3d.Canvas3D: void <init>(java.awt.GraphicsConfiguration)>";
+ "specialinvoke <javax.media.j3d.Canvas3D: void <init>(java.awt.GraphicsConfiguration)>"->"fieldput <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>";
+ "fieldput <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>"->"fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>";
+ "fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>"->"virtualinvoke <javax.media.j3d.Canvas3D: void stopRenderer()>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void stopRenderer()>"->"fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>";
+ "fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new com.sun.j3d.utils.universe.SimpleUniverse";
+ "new com.sun.j3d.utils.universe.SimpleUniverse"->"fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>";
+ "fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>"->"specialinvoke <com.sun.j3d.utils.universe.SimpleUniverse: void <init>(javax.media.j3d.Canvas3D)>";
+ "specialinvoke <com.sun.j3d.utils.universe.SimpleUniverse: void <init>(javax.media.j3d.Canvas3D)>"->"fieldput <Mdsheet3d: com.sun.j3d.utils.universe.SimpleUniverse Z0187>";
+ "fieldput <Mdsheet3d: com.sun.j3d.utils.universe.SimpleUniverse Z0187>"->"fieldget <Mdsheet3d: com.sun.j3d.utils.universe.SimpleUniverse Z0187>";
+ "fieldget <Mdsheet3d: com.sun.j3d.utils.universe.SimpleUniverse Z0187>"->"virtualinvoke <com.sun.j3d.utils.universe.SimpleUniverse: com.sun.j3d.utils.universe.ViewingPlatform getViewingPlatform()>";
+ "virtualinvoke <com.sun.j3d.utils.universe.SimpleUniverse: com.sun.j3d.utils.universe.ViewingPlatform getViewingPlatform()>"->"virtualinvoke <com.sun.j3d.utils.universe.ViewingPlatform: void setNominalViewingTransform()>";
+ "virtualinvoke <com.sun.j3d.utils.universe.ViewingPlatform: void setNominalViewingTransform()>"->"fieldput <Mdsheet3d: javax.media.j3d.GraphicsContext3D Z0062>";
+ "fieldput <Mdsheet3d: javax.media.j3d.GraphicsContext3D Z0062>"->"fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>";
+ "fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>"->"virtualinvoke <javax.media.j3d.Canvas3D: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void addMouseListener(java.awt.event.MouseListener)>"->"fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>";
+ "fieldget <Mdsheet3d: javax.media.j3d.Canvas3D Z0015>"->"virtualinvoke <javax.media.j3d.Canvas3D: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <javax.media.j3d.Canvas3D: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"fieldput <Mdsheet3d: java.lang.Thread Z0005>";
+ "fieldput <Mdsheet3d: java.lang.Thread Z0005>"->"return";
+}

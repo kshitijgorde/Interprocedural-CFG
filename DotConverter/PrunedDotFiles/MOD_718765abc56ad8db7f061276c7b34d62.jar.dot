@@ -1,0 +1,22 @@
+digraph "" {
+"staticget <java.awt.Color: java.awt.Color blue>";
+ "staticget <java.awt.Color: java.awt.Color blue>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <QueensvsKnights: java.awt.Font appFont>";
+ "fieldput <QueensvsKnights: java.awt.Font appFont>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <QueensvsKnights: java.awt.Image imageQueen>";
+ "fieldput <QueensvsKnights: java.awt.Image imageQueen>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <QueensvsKnights: java.awt.Image imageBoard>";
+ "fieldput <QueensvsKnights: java.awt.Image imageBoard>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <QueensvsKnights: java.awt.Image imageKnight>";
+ "fieldput <QueensvsKnights: java.awt.Image imageKnight>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <QueensvsKnights: java.awt.Image imageX>";
+ "fieldput <QueensvsKnights: java.awt.Image imageX>"->"goto load.i i0";
+ "goto load.i i0"->"return";
+"goto load.i i1";
+ "goto load.i i1"->}

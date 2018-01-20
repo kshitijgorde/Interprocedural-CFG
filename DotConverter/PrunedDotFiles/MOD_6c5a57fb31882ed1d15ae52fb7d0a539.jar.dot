@@ -1,0 +1,18 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <SiteBrowser: java.awt.Image drawBuf>";
+ "fieldput <SiteBrowser: java.awt.Image drawBuf>"->"fieldget <SiteBrowser: java.awt.Image drawBuf>";
+ "fieldget <SiteBrowser: java.awt.Image drawBuf>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldget <SiteBrowser: java.awt.Color BGColor>";
+ "fieldget <SiteBrowser: java.awt.Color BGColor>"->"virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>";
+ "virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>"->"virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>";
+ "virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>"->"new java.lang.Thread";
+ "new java.lang.Thread"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+ "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"virtualinvoke <java.lang.Thread: void start()>";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+ "virtualinvoke <java.lang.Thread: void start()>"->"return";
+}

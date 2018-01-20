@@ -1,0 +1,19 @@
+digraph "" {
+"staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>";
+ "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"->"fieldput <MdbgHWIme: netscape.javascript.JSObject windowJSObject>";
+ "fieldput <MdbgHWIme: netscape.javascript.JSObject windowJSObject>"->"virtualinvoke <MdbgHWIme: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <MdbgHWIme: java.lang.String getParameter(java.lang.String)>"->"fieldput <MdbgHWIme: java.lang.String charSelectedJSEventHandler>";
+ "fieldput <MdbgHWIme: java.lang.String charSelectedJSEventHandler>"->"staticinvoke <kiang.chinese.font.ChineseFontFinder: java.awt.Font getChineseFont()>";
+ "staticinvoke <kiang.chinese.font.ChineseFontFinder: java.awt.Font getChineseFont()>"->"specialinvoke <MdbgHWIme: hanzilookup.HanziLookup buildLookupPanel(java.awt.Font)>";
+ "specialinvoke <MdbgHWIme: hanzilookup.HanziLookup buildLookupPanel(java.awt.Font)>"->"staticinvoke <kiang.chinese.font.ChineseFontFinder: boolean isSimplifiedFont(java.awt.Font)>";
+ "staticinvoke <kiang.chinese.font.ChineseFontFinder: boolean isSimplifiedFont(java.awt.Font)>"->"staticinvoke <kiang.chinese.font.ChineseFontFinder: boolean isTraditionalFont(java.awt.Font)>";
+ "staticinvoke <kiang.chinese.font.ChineseFontFinder: boolean isTraditionalFont(java.awt.Font)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <MdbgHWIme: java.awt.Container getContentPane()>";
+ "virtualinvoke <MdbgHWIme: java.awt.Container getContentPane()>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"specialinvoke <MdbgHWIme: javax.swing.JMenuBar buildMenuBar()>";
+ "specialinvoke <MdbgHWIme: javax.swing.JMenuBar buildMenuBar()>"->"virtualinvoke <MdbgHWIme: void setJMenuBar(javax.swing.JMenuBar)>";
+ "virtualinvoke <MdbgHWIme: void setJMenuBar(javax.swing.JMenuBar)>"->"return";
+}

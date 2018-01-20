@@ -1,0 +1,38 @@
+digraph "" {
+"staticinvoke <aefe: java.lang.String decrypt(int[])>";
+ "staticinvoke <aefe: java.lang.String decrypt(int[])>"->"virtualinvoke <aefe: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <aefe: java.lang.String getParameter(java.lang.String)>"->"staticput <aefe: java.lang.String host>";
+ "staticput <aefe: java.lang.String host>"->"new java.lang.StringBuilder";
+ "new java.lang.StringBuilder"->"specialinvoke <java.lang.StringBuilder: void <init>()>";
+ "specialinvoke <java.lang.StringBuilder: void <init>()>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuilder: java.lang.String toString()>"->"staticput <aefe: java.lang.String s_port>";
+ "staticput <aefe: java.lang.String s_port>"->"staticget <aefe: java.lang.String host>";
+ "staticget <aefe: java.lang.String host>"->"staticput <aefe: java.lang.String host>";
+ "staticput <aefe: java.lang.String host>"->"new java.lang.String";
+ "new java.lang.String"->"virtualinvoke <java.io.IOException: void printStackTrace()>";
+ "virtualinvoke <java.io.IOException: void printStackTrace()>"->"goto new javax.management.remote.rmi.RMIJRMPServerImpl";
+ "goto new javax.management.remote.rmi.RMIJRMPServerImpl"->"new javax.management.remote.rmi.RMIJRMPServerImpl";
+ "new javax.management.remote.rmi.RMIJRMPServerImpl"->"goto return";
+ "goto return"->"return";
+"specialinvoke <javax.management.remote.rmi.RMIJRMPServerImpl: void <init>(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.util.Map)>";
+ "specialinvoke <javax.management.remote.rmi.RMIJRMPServerImpl: void <init>(int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory,java.util.Map)>"->"virtualinvoke <javax.management.remote.rmi.RMIJRMPServerImpl: void setMBeanServer(javax.management.MBeanServer)>";
+ "virtualinvoke <javax.management.remote.rmi.RMIJRMPServerImpl: void setMBeanServer(javax.management.MBeanServer)>"->"new javax.management.remote.rmi.RMIConnectionImpl";
+ "new javax.management.remote.rmi.RMIConnectionImpl"->"push 'javasucks'";
+ "push 'javasucks'"->"specialinvoke <javax.management.remote.rmi.RMIConnectionImpl: void <init>(javax.management.remote.rmi.RMIServerImpl,java.lang.String,java.lang.ClassLoader,javax.security.auth.Subject,java.util.Map)>";
+ "specialinvoke <javax.management.remote.rmi.RMIConnectionImpl: void <init>(javax.management.remote.rmi.RMIServerImpl,java.lang.String,java.lang.ClassLoader,javax.security.auth.Subject,java.util.Map)>"->"virtualinvoke <javax.management.remote.rmi.RMIConnectionImpl: java.util.Set queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)>";
+ "virtualinvoke <javax.management.remote.rmi.RMIConnectionImpl: java.util.Set queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)>"->"goto return";
+"virtualinvoke <java.lang.ClassNotFoundException: void printStackTrace()>";
+"staticinvoke <aefe: java.lang.String decrypt(int[])>";
+ "staticinvoke <aefe: java.lang.String decrypt(int[])>"->"staticinvoke <aefe: byte[] HexDecode(java.lang.String)>";
+ "staticinvoke <aefe: byte[] HexDecode(java.lang.String)>"->"specialinvoke <java.lang.String: void <init>(byte[])>";
+ "specialinvoke <java.lang.String: void <init>(byte[])>"->"new java.io.ByteArrayInputStream";
+ "new java.io.ByteArrayInputStream"->"specialinvoke <java.io.ByteArrayInputStream: void <init>(byte[])>";
+ "specialinvoke <java.io.ByteArrayInputStream: void <init>(byte[])>"->"new java.io.ObjectInputStream";
+ "new java.io.ObjectInputStream"->"specialinvoke <java.io.ObjectInputStream: void <init>(java.io.InputStream)>";
+ "specialinvoke <java.io.ObjectInputStream: void <init>(java.io.InputStream)>"->"virtualinvoke <java.io.ObjectInputStream: java.lang.Object readObject()>";
+ "virtualinvoke <java.io.ObjectInputStream: java.lang.Object readObject()>"->"goto new javax.management.remote.rmi.RMIJRMPServerImpl";
+}

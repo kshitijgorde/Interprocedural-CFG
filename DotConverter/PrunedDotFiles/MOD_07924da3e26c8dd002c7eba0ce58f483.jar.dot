@@ -1,0 +1,14 @@
+digraph "" {
+"virtualinvoke <UI_LogicGates: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_LogicGates: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"virtualinvoke <UI_LogicGates: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_LogicGates: java.awt.Container getContentPane()>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Container: void setBackground(java.awt.Color)>"->"specialinvoke <UI_LogicGates: void pInitTitle(java.lang.String)>";
+ "specialinvoke <UI_LogicGates: void pInitTitle(java.lang.String)>"->"virtualinvoke <UI_LogicGates: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_LogicGates: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <UI_LogicGates: java.awt.Container getContentPane()>";
+ "virtualinvoke <UI_LogicGates: java.awt.Container getContentPane()>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"return";
+}

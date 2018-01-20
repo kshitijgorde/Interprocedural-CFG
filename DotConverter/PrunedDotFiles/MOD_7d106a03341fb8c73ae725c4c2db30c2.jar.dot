@@ -1,0 +1,34 @@
+digraph "" {
+"new java.net.URL";
+ "new java.net.URL"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"goto load.r $r7";
+ "goto load.r $r7"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL)>";
+ "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL)>"->"fieldput <Geodetic2: java.awt.Image image>";
+ "fieldput <Geodetic2: java.awt.Image image>"->"fieldget <Geodetic2: java.awt.Image image>";
+ "fieldget <Geodetic2: java.awt.Image image>"->"fieldget <Geodetic2: java.awt.MediaTracker tracker>";
+ "fieldget <Geodetic2: java.awt.MediaTracker tracker>"->"fieldget <Geodetic2: java.awt.Image image>";
+ "fieldget <Geodetic2: java.awt.Image image>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+ "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+ "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"new java.awt.Button";
+ "new java.awt.Button"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <Geodetic2: java.awt.Button button>";
+ "fieldput <Geodetic2: java.awt.Button button>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"fieldget <Geodetic2: java.awt.Button button>";
+ "fieldget <Geodetic2: java.awt.Button button>"->"fieldget <Geodetic2: java.awt.Button button>";
+ "fieldget <Geodetic2: java.awt.Button button>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"fieldget <Geodetic2: java.awt.Button button>";
+ "fieldget <Geodetic2: java.awt.Button button>"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+ "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <java.awt.Component: void move(int,int)>";
+ "virtualinvoke <java.awt.Component: void move(int,int)>"->"specialinvoke <geoWindow: void <init>(java.applet.Applet)>";
+ "specialinvoke <geoWindow: void <init>(java.applet.Applet)>"->"return";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"fieldput <Geodetic2: java.awt.Image image>";
+}

@@ -1,0 +1,30 @@
+digraph "" {
+"fieldput <itbafree: java.lang.String l34>";
+ "fieldput <itbafree: java.lang.String l34>"->"new java.awt.Font";
+ "new java.awt.Font"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <itbafree: java.awt.Font l14>";
+ "fieldput <itbafree: java.awt.Font l14>"->"specialinvoke <itbafree: java.lang.String l0(int,java.lang.String)>";
+ "specialinvoke <itbafree: java.lang.String l0(int,java.lang.String)>"->"fieldput <itbafree: java.lang.String l10>";
+ "fieldput <itbafree: java.lang.String l10>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"goto load.r r0";
+ "goto load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"fieldput <itbafree: java.net.URL l11>";
+ "fieldput <itbafree: java.net.URL l11>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"fieldput <itbafree: java.net.URL l6>";
+ "fieldput <itbafree: java.net.URL l6>"->"specialinvoke <itbafree: java.lang.String l0(int,java.lang.String)>";
+ "specialinvoke <itbafree: java.lang.String l0(int,java.lang.String)>"->"new java.net.URL";
+ "new java.net.URL"->"fieldget <itbafree: java.net.URL l11>";
+ "fieldget <itbafree: java.net.URL l11>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"fieldput <itbafree: java.net.URL l12>";
+ "fieldput <itbafree: java.net.URL l12>"->"goto load.r r0";
+ "goto load.r r0"->"new java.net.URL";
+ "new java.net.URL"->"push 'javascript:hello()'";
+ "push 'javascript:hello()'"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"return";
+"return";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"return";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"fieldput <itbafree: java.net.URL l12>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>";
+ "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"->"fieldget <java.awt.Rectangle: int width>";
+ "fieldget <java.awt.Rectangle: int width>"->}

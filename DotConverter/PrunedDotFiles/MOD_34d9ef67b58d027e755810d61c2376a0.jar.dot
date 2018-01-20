@@ -1,0 +1,28 @@
+digraph "" {
+"new java.awt.Font";
+ "new java.awt.Font"->"virtualinvoke <WStSContents: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <WStSContents: java.awt.Graphics getGraphics()>"->"virtualinvoke <java.awt.Graphics: java.awt.Font getFont()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.Font getFont()>"->"virtualinvoke <java.awt.Font: java.lang.String getName()>";
+ "virtualinvoke <java.awt.Font: java.lang.String getName()>"->"virtualinvoke <WStSContents: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <WStSContents: java.awt.Graphics getGraphics()>"->"virtualinvoke <java.awt.Graphics: java.awt.Font getFont()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.Font getFont()>"->"virtualinvoke <java.awt.Font: int getStyle()>";
+ "virtualinvoke <java.awt.Font: int getStyle()>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+ "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <WStSContents: void setFont(java.awt.Font)>";
+ "virtualinvoke <WStSContents: void setFont(java.awt.Font)>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <WStSContents: void setBackground(java.awt.Color)>";
+ "virtualinvoke <WStSContents: void setBackground(java.awt.Color)>"->"staticget <java.awt.Color: java.awt.Color blue>";
+ "staticget <java.awt.Color: java.awt.Color blue>"->"virtualinvoke <WStSContents: void setForeground(java.awt.Color)>";
+ "virtualinvoke <WStSContents: void setForeground(java.awt.Color)>"->"new java.awt.Rectangle";
+ "new java.awt.Rectangle"->"virtualinvoke <WStSContents: java.awt.Dimension size()>";
+ "virtualinvoke <WStSContents: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int width>";
+ "fieldget <java.awt.Dimension: int width>"->"virtualinvoke <WStSContents: java.awt.Dimension size()>";
+ "virtualinvoke <WStSContents: java.awt.Dimension size()>"->"fieldget <java.awt.Dimension: int height>";
+ "fieldget <java.awt.Dimension: int height>"->"specialinvoke <java.awt.Rectangle: void <init>(int,int,int,int)>";
+ "specialinvoke <java.awt.Rectangle: void <init>(int,int,int,int)>"->"fieldput <WStSContents: java.awt.Rectangle mySize>";
+ "fieldput <WStSContents: java.awt.Rectangle mySize>"->"virtualinvoke <WStSContents: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <WStSContents: java.awt.Graphics getGraphics()>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>";
+ "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics()>"->"virtualinvoke <java.awt.FontMetrics: int getHeight()>";
+ "virtualinvoke <java.awt.FontMetrics: int getHeight()>"->"fieldget <WStSContents: java.awt.Rectangle mySize>";
+ "fieldget <WStSContents: java.awt.Rectangle mySize>"->"fieldget <java.awt.Rectangle: int height>";
+ "fieldget <java.awt.Rectangle: int height>"->"return";
+}

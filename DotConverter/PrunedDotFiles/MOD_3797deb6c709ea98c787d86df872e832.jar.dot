@@ -1,0 +1,22 @@
+digraph "" {
+"virtualinvoke <java.awt.Container: void removeAll()>";
+ "virtualinvoke <java.awt.Container: void removeAll()>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+ "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+ "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"goto new HangmanActionListener";
+ "goto new HangmanActionListener"->"goto load.i i3";
+ "goto load.i i3"->"ifcmplt.i new java.awt.Button";
+ "ifcmplt.i new java.awt.Button"->"return";
+ "ifcmplt.i new java.awt.Button"->"new java.awt.Button";
+ "new java.awt.Button"->"new java.lang.String";
+ "new java.lang.String"->"new java.lang.Character";
+ "new java.lang.Character"->"specialinvoke <java.lang.Character: void <init>(char)>";
+ "specialinvoke <java.lang.Character: void <init>(char)>"->"virtualinvoke <java.lang.Character: java.lang.String toString()>";
+ "virtualinvoke <java.lang.Character: java.lang.String toString()>"->"specialinvoke <java.lang.String: void <init>(java.lang.String)>";
+ "specialinvoke <java.lang.String: void <init>(java.lang.String)>"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+ "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"-> "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->}

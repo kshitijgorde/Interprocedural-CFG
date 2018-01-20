@@ -1,0 +1,37 @@
+digraph "" {
+"new java.net.URL";
+ "new java.net.URL"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+ "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"virtualinvoke <java.net.URL: java.io.InputStream openStream()>";
+ "virtualinvoke <java.net.URL: java.io.InputStream openStream()>"->"fieldput <FindIt2Frame: java.io.InputStream input>";
+ "fieldput <FindIt2Frame: java.io.InputStream input>"->"goto load.r r0";
+ "goto load.r r0"->"new java.net.URL";
+ "new java.net.URL"->"push 'Http://www.realapplets.com'";
+ "push 'Http://www.realapplets.com'"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"fieldput <FindIt2Frame: java.net.URL raUrl>";
+ "fieldput <FindIt2Frame: java.net.URL raUrl>"->"goto load.r r0";
+ "goto load.r r0"->"new java.awt.MediaTracker";
+ "new java.awt.MediaTracker"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+ "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"fieldput <FindIt2Frame: java.awt.MediaTracker mt>";
+ "fieldput <FindIt2Frame: java.awt.MediaTracker mt>"->"fieldget <FindIt2Frame: java.awt.Color bgcolor>";
+ "fieldget <FindIt2Frame: java.awt.Color bgcolor>"->"fieldput <FindIt2Frame: java.awt.Color bgColor>";
+ "fieldput <FindIt2Frame: java.awt.Color bgColor>"->"fieldget <FindIt2Frame: java.awt.Color bgColor>";
+ "fieldget <FindIt2Frame: java.awt.Color bgColor>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"staticget <java.awt.Color: java.awt.Color white>";
+ "staticget <java.awt.Color: java.awt.Color white>"->"fieldput <FindIt2Frame: java.awt.Color string2Color>";
+ "fieldput <FindIt2Frame: java.awt.Color string2Color>"->"fieldput <FindIt2Frame: java.awt.Color string1Color>";
+ "fieldput <FindIt2Frame: java.awt.Color string1Color>"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+ "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"virtualinvoke <FindIt2Frame: java.awt.Image getEmptyImage(int,int)>";
+ "virtualinvoke <FindIt2Frame: java.awt.Image getEmptyImage(int,int)>"->"fieldput <FindIt2Frame: java.awt.Image frameImage>";
+ "fieldput <FindIt2Frame: java.awt.Image frameImage>"->"fieldget <FindIt2Frame: java.awt.Image frameImage>";
+ "fieldget <FindIt2Frame: java.awt.Image frameImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <FindIt2Frame: java.awt.Graphics frameBuffer>";
+ "fieldput <FindIt2Frame: java.awt.Graphics frameBuffer>"->"virtualinvoke <java.awt.Component: void repaint()>";
+ "virtualinvoke <java.awt.Component: void repaint()>"->"return";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"-> "virtualinvoke <java.net.URL: java.io.InputStream openStream()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.Object)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.Object)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+}

@@ -1,0 +1,10 @@
+digraph "" {
+"virtualinvoke <Manager.GoApplet: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <Manager.GoApplet: void addActionListener(java.awt.event.ActionListener)>"->"fieldget <Manager.GoApplet: java.awt.Button btnSettings>";
+ "fieldget <Manager.GoApplet: java.awt.Button btnSettings>"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"fieldget <Manager.GoApplet: java.awt.Button btnStop>";
+ "fieldget <Manager.GoApplet: java.awt.Button btnStop>"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+ "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"goto return";
+ "goto return"->"return";
+"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

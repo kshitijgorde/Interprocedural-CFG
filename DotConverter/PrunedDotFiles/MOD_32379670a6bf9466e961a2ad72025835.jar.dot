@@ -1,0 +1,26 @@
+digraph "" {
+"staticinvoke <vmain: java.lang.String HS(java.lang.String)>";
+ "staticinvoke <vmain: java.lang.String HS(java.lang.String)>"->"ifcmpge.i new java.lang.StringBuffer";
+ "ifcmpge.i new java.lang.StringBuffer"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"goto load.i i0";
+ "ifcmpge.i new java.lang.StringBuffer"->"new java.lang.StringBuffer";
+ "new java.lang.StringBuffer"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+ "specialinvoke <java.lang.StringBuffer: void <init>()>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"staticinvoke <vmain: java.lang.String HS(java.lang.String)>";
+ "staticinvoke <vmain: java.lang.String HS(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+ "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"staticget <vmain: java.lang.String a>";
+ "staticget <vmain: java.lang.String a>"->"staticinvoke <vmain: short[] HD(java.lang.String)>";
+ "staticinvoke <vmain: short[] HD(java.lang.String)>"->"staticinvoke <vmain: short[] HD(java.lang.String)>";
+ "staticinvoke <vmain: short[] HD(java.lang.String)>"->"virtualinvoke <vmain: java.nio.IntBuffer[] mspray(short[],short[])>";
+ "virtualinvoke <vmain: java.nio.IntBuffer[] mspray(short[],short[])>"->"new java.net.URL";
+ "new java.net.URL"->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+ "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.Soundbank getSoundbank(java.net.URL)>";
+ "staticinvoke <javax.sound.midi.MidiSystem: javax.sound.midi.Soundbank getSoundbank(java.net.URL)>"->"staticinvoke <java.lang.Thread: void sleep(long)>";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"goto push 10L";
+ "staticinvoke <java.lang.Thread: void sleep(long)>"->"return";
+}

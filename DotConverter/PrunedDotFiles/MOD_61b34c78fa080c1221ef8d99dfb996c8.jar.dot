@@ -1,0 +1,33 @@
+digraph "" {
+"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"fieldget <RGBCirs: java.awt.Panel p>";
+ "fieldget <RGBCirs: java.awt.Panel p>"->"fieldget <RGBCirs: java.awt.Scrollbar sc1>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc1>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldget <RGBCirs: java.awt.Panel p>";
+ "fieldget <RGBCirs: java.awt.Panel p>"->"fieldget <RGBCirs: java.awt.Scrollbar sc2>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc2>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldget <RGBCirs: java.awt.Panel p>";
+ "fieldget <RGBCirs: java.awt.Panel p>"->"fieldget <RGBCirs: java.awt.Scrollbar sc3>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc3>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"fieldget <RGBCirs: java.awt.Scrollbar sc1>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc1>"->"staticget <java.awt.Color: java.awt.Color red>";
+ "staticget <java.awt.Color: java.awt.Color red>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <RGBCirs: java.awt.Scrollbar sc2>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc2>"->"staticget <java.awt.Color: java.awt.Color green>";
+ "staticget <java.awt.Color: java.awt.Color green>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"fieldget <RGBCirs: java.awt.Scrollbar sc3>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc3>"->"staticget <java.awt.Color: java.awt.Color blue>";
+ "staticget <java.awt.Color: java.awt.Color blue>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+ "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+ "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"fieldget <RGBCirs: java.awt.Panel p>";
+ "fieldget <RGBCirs: java.awt.Panel p>"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+ "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"fieldget <RGBCirs: java.awt.Scrollbar sc1>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc1>"->"virtualinvoke <java.awt.Scrollbar: void addAdjustmentListener(java.awt.event.AdjustmentListener)>";
+ "virtualinvoke <java.awt.Scrollbar: void addAdjustmentListener(java.awt.event.AdjustmentListener)>"->"fieldget <RGBCirs: java.awt.Scrollbar sc2>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc2>"->"virtualinvoke <java.awt.Scrollbar: void addAdjustmentListener(java.awt.event.AdjustmentListener)>";
+ "virtualinvoke <java.awt.Scrollbar: void addAdjustmentListener(java.awt.event.AdjustmentListener)>"->"fieldget <RGBCirs: java.awt.Scrollbar sc3>";
+ "fieldget <RGBCirs: java.awt.Scrollbar sc3>"->"virtualinvoke <java.awt.Scrollbar: void addAdjustmentListener(java.awt.event.AdjustmentListener)>";
+ "virtualinvoke <java.awt.Scrollbar: void addAdjustmentListener(java.awt.event.AdjustmentListener)>"->"return";
+}

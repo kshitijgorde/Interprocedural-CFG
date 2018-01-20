@@ -1,0 +1,13 @@
+digraph "" {
+"staticget <java.lang.System: java.io.PrintStream out>";
+ "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+ "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"new com.sygem.jazz3d3.World";
+ "new com.sygem.jazz3d3.World"->"specialinvoke <com.sygem.jazz3d3.World: void <init>(java.applet.Applet)>";
+ "specialinvoke <com.sygem.jazz3d3.World: void <init>(java.applet.Applet)>"->"fieldput <SmorfApplet: com.sygem.jazz3d3.World U>";
+ "fieldput <SmorfApplet: com.sygem.jazz3d3.World U>"->"new java.awt.BorderLayout";
+ "new java.awt.BorderLayout"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+ "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+ "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"fieldget <SmorfApplet: com.sygem.jazz3d3.World U>";
+ "fieldget <SmorfApplet: com.sygem.jazz3d3.World U>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+ "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"return";
+}

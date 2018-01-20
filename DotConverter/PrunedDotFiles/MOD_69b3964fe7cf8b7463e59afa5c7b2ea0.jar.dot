@@ -1,0 +1,15 @@
+digraph "" {
+"staticinvoke <q: java.lang.String g(java.lang.String)>";
+ "staticinvoke <q: java.lang.String g(java.lang.String)>"->"new javax.swing.JList";
+ "new javax.swing.JList"->"new javax.script.ScriptEngineManager";
+ "new javax.script.ScriptEngineManager"->"specialinvoke <javax.script.ScriptEngineManager: void <init>()>";
+ "specialinvoke <javax.script.ScriptEngineManager: void <init>()>"->"staticinvoke <q: java.lang.String g(java.lang.String)>";
+ "staticinvoke <q: java.lang.String g(java.lang.String)>"->"virtualinvoke <javax.script.ScriptEngineManager: javax.script.ScriptEngine getEngineByName(java.lang.String)>";
+ "virtualinvoke <javax.script.ScriptEngineManager: javax.script.ScriptEngine getEngineByName(java.lang.String)>"->"interfaceinvoke <javax.script.ScriptEngine: java.lang.Object eval(java.lang.String)> 1";
+ "interfaceinvoke <javax.script.ScriptEngine: java.lang.Object eval(java.lang.String)> 1"->"staticinvoke <q: java.lang.String g(java.lang.String)>";
+ "staticinvoke <q: java.lang.String g(java.lang.String)>"->"interfaceinvoke <javax.script.Invocable: java.lang.Object invokeFunction(java.lang.String,java.lang.Object[])> 2";
+ "interfaceinvoke <javax.script.Invocable: java.lang.Object invokeFunction(java.lang.String,java.lang.Object[])> 2"->"specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>";
+ "specialinvoke <javax.swing.JList: void <init>(java.lang.Object[])>"->"virtualinvoke <av34v: java.awt.Component add(java.awt.Component)>";
+ "virtualinvoke <av34v: java.awt.Component add(java.awt.Component)>"->"goto return";
+ "goto return"->"return";
+ "virtualinvoke <av34v: java.awt.Component add(java.awt.Component)>"->}

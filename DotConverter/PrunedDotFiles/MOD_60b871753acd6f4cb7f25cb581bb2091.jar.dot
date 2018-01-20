@@ -1,0 +1,35 @@
+digraph "" {
+"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <piano: java.awt.Image ii>";
+ "fieldput <piano: java.awt.Image ii>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+ "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <piano: java.awt.Image ii1>";
+ "fieldput <piano: java.awt.Image ii1>"->"fieldget <piano: java.awt.Image ii1>";
+ "fieldget <piano: java.awt.Image ii1>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <piano: java.awt.Graphics gg1>";
+ "fieldput <piano: java.awt.Graphics gg1>"->"fieldget <piano: java.awt.Image ii>";
+ "fieldget <piano: java.awt.Image ii>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+ "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <piano: java.awt.Graphics gg>";
+ "fieldput <piano: java.awt.Graphics gg>"->"fieldget <piano: java.awt.Graphics gg>";
+ "fieldget <piano: java.awt.Graphics gg>"->"virtualinvoke <java.awt.Graphics: java.awt.Graphics create(int,int,int,int)>";
+ "virtualinvoke <java.awt.Graphics: java.awt.Graphics create(int,int,int,int)>"->"fieldput <piano: java.awt.Graphics gg2>";
+ "fieldput <piano: java.awt.Graphics gg2>"->"fieldget <piano: java.awt.Graphics gg1>";
+ "fieldget <piano: java.awt.Graphics gg1>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>";
+ "virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>"->"fieldget <piano: java.awt.Graphics gg1>";
+ "fieldget <piano: java.awt.Graphics gg1>"->"virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>";
+ "virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>"->"fieldget <piano: java.awt.Graphics gg1>";
+ "fieldget <piano: java.awt.Graphics gg1>"->"staticget <java.awt.Color: java.awt.Color black>";
+ "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>";
+ "virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>"->"goto load.i i18";
+ "goto load.i i18"->"fieldget <piano: java.awt.Graphics gg>";
+ "fieldget <piano: java.awt.Graphics gg>"->"new java.awt.Color";
+ "new java.awt.Color"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+ "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>";
+ "virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>"->"fieldget <piano: java.awt.Graphics gg>";
+ "fieldget <piano: java.awt.Graphics gg>"->"virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>";
+ "virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>"->"return";
+"goto load.i i19";
+ "goto load.i i19"->"fieldget <piano: java.awt.Graphics gg1>";
+ "fieldget <piano: java.awt.Graphics gg1>"->"virtualinvoke <java.awt.Graphics: void drawLine(int,int,int,int)>";
+ "virtualinvoke <java.awt.Graphics: void drawLine(int,int,int,int)>"->}

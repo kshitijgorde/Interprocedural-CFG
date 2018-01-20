@@ -1,0 +1,35 @@
+digraph "" {
+"virtualinvoke <Match: java.net.URL getCodeBase()>";
+ "virtualinvoke <Match: java.net.URL getCodeBase()>"->"virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Match: java.applet.AudioClip door>";
+ "fieldput <Match: java.applet.AudioClip door>"->"virtualinvoke <Match: java.net.URL getCodeBase()>";
+ "virtualinvoke <Match: java.net.URL getCodeBase()>"->"virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Match: java.applet.AudioClip yoohoo>";
+ "fieldput <Match: java.applet.AudioClip yoohoo>"->"virtualinvoke <Match: java.net.URL getCodeBase()>";
+ "virtualinvoke <Match: java.net.URL getCodeBase()>"->"virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Match: java.applet.AudioClip gameover>";
+ "fieldput <Match: java.applet.AudioClip gameover>"->"virtualinvoke <Match: java.net.URL getCodeBase()>";
+ "virtualinvoke <Match: java.net.URL getCodeBase()>"->"virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Match: java.applet.AudioClip aroooga>";
+ "fieldput <Match: java.applet.AudioClip aroooga>"->"virtualinvoke <Match: java.net.URL getCodeBase()>";
+ "virtualinvoke <Match: java.net.URL getCodeBase()>"->"virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Match: java.applet.AudioClip bicycleHorn>";
+ "fieldput <Match: java.applet.AudioClip bicycleHorn>"->"virtualinvoke <Match: java.net.URL getCodeBase()>";
+ "virtualinvoke <Match: java.net.URL getCodeBase()>"->"virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>";
+ "virtualinvoke <Match: java.applet.AudioClip getAudioClip(java.net.URL,java.lang.String)>"->"fieldput <Match: java.applet.AudioClip start>";
+ "fieldput <Match: java.applet.AudioClip start>"->"goto load.i i44";
+ "goto load.i i44"->"fieldget <Match: java.awt.Image[] matchimg>";
+ "fieldget <Match: java.awt.Image[] matchimg>"->"goto load.r r0";
+ "goto load.r r0"->"return";
+"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"goto load.r r0";
+ "goto load.r r0"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"goto load.r r0";
+ "goto load.r r0"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"staticinvoke <java.lang.Math: double random()>";
+ "staticinvoke <java.lang.Math: double random()>"->"goto load.r r0";
+"fieldget <Match: java.awt.Image[] matchimg>";
+ "fieldget <Match: java.awt.Image[] matchimg>"->"virtualinvoke <Match: java.net.URL getCodeBase()>";
+ "virtualinvoke <Match: java.net.URL getCodeBase()>"->"virtualinvoke <Match: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+ "virtualinvoke <Match: java.awt.Image getImage(java.net.URL,java.lang.String)>"->}

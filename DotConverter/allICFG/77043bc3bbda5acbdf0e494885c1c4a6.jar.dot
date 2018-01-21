@@ -1,0 +1,65 @@
+digraph "" {
+    "r0 := @this: ClientApplet"
+    "load.r r0"
+    "r0 := @this: ClientApplet"->"load.r r0";
+    "new teletext.TeletextPage"
+    "load.r r0"->"new teletext.TeletextPage";
+    "dup1.r"
+    "new teletext.TeletextPage"->"dup1.r";
+    "specialinvoke <teletext.TeletextPage: void <init>()>"
+    "dup1.r"->"specialinvoke <teletext.TeletextPage: void <init>()>";
+    "fieldput <ClientApplet: teletext.TeletextPage teletextPage>"
+    "specialinvoke <teletext.TeletextPage: void <init>()>"->"fieldput <ClientApplet: teletext.TeletextPage teletextPage>";
+    "fieldput <ClientApplet: teletext.TeletextPage teletextPage>"->"load.r r0";
+    "new teletext.TeletextPageCanvas"
+    "load.r r0"->"new teletext.TeletextPageCanvas";
+    "new teletext.TeletextPageCanvas"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "fieldget <ClientApplet: teletext.TeletextPage teletextPage>"
+    "load.r r0"->"fieldget <ClientApplet: teletext.TeletextPage teletextPage>";
+    "specialinvoke <teletext.TeletextPageCanvas: void <init>(teletext.TeletextPage)>"
+    "fieldget <ClientApplet: teletext.TeletextPage teletextPage>"->"specialinvoke <teletext.TeletextPageCanvas: void <init>(teletext.TeletextPage)>";
+    "fieldput <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>"
+    "specialinvoke <teletext.TeletextPageCanvas: void <init>(teletext.TeletextPage)>"->"fieldput <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>";
+    "fieldput <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>"
+    "load.r r0"->"fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new TeletextInputField"
+    "load.r r0"->"new TeletextInputField";
+    "new TeletextInputField"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+    "virtualinvoke <java.net.URL: java.lang.String getHost()>"
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String getHost()>";
+    "virtualinvoke <java.net.URL: java.lang.String getHost()>"->"load.r r0";
+    "load.r r0"->"fieldget <ClientApplet: teletext.TeletextPage teletextPage>";
+    "fieldget <ClientApplet: teletext.TeletextPage teletextPage>"->"load.r r0";
+    "load.r r0"->"fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>";
+    "specialinvoke <TeletextInputField: void <init>(java.lang.String,teletext.TeletextPage,teletext.TeletextPageCanvas)>"
+    "fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>"->"specialinvoke <TeletextInputField: void <init>(java.lang.String,teletext.TeletextPage,teletext.TeletextPageCanvas)>";
+    "fieldput <ClientApplet: TeletextInputField teletextInputField>"
+    "specialinvoke <TeletextInputField: void <init>(java.lang.String,teletext.TeletextPage,teletext.TeletextPageCanvas)>"->"fieldput <ClientApplet: TeletextInputField teletextInputField>";
+    "fieldput <ClientApplet: TeletextInputField teletextInputField>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <ClientApplet: TeletextInputField teletextInputField>"
+    "load.r r0"->"fieldget <ClientApplet: TeletextInputField teletextInputField>";
+    "fieldget <ClientApplet: TeletextInputField teletextInputField>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>";
+    "virtualinvoke <teletext.TeletextPageCanvas: void render()>"
+    "fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>"->"virtualinvoke <teletext.TeletextPageCanvas: void render()>";
+    "virtualinvoke <teletext.TeletextPageCanvas: void render()>"->"load.r r0";
+    "load.r r0"->"fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>";
+    "virtualinvoke <java.awt.Component: void repaint()>"
+    "fieldget <ClientApplet: teletext.TeletextPageCanvas teletextPageCanvas>"->"virtualinvoke <java.awt.Component: void repaint()>";
+    "return"
+    "virtualinvoke <java.awt.Component: void repaint()>"->"return";
+}

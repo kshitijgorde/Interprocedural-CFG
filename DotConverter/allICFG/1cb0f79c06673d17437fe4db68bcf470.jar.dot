@@ -1,0 +1,403 @@
+digraph "" {
+    "r0 := @this: fishy"
+    "load.r r0"
+    "r0 := @this: fishy"->"load.r r0";
+    "push 1"
+    "load.r r0"->"push 1";
+    "fieldput <fishy: boolean bFirstTime>"
+    "push 1"->"fieldput <fishy: boolean bFirstTime>";
+    "fieldput <fishy: boolean bFirstTime>"->"load.r r0";
+    "push 0"
+    "load.r r0"->"push 0";
+    "fieldput <fishy: boolean bURL>"
+    "push 0"->"fieldput <fishy: boolean bURL>";
+    "fieldput <fishy: boolean bURL>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "fieldput <fishy: boolean bBkImage>"
+    "push 0"->"fieldput <fishy: boolean bBkImage>";
+    "fieldput <fishy: boolean bBkImage>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "fieldput <fishy: int nImageCount>"
+    "push 0"->"fieldput <fishy: int nImageCount>";
+    "fieldput <fishy: int nImageCount>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Dimension size()>";
+    "dup1.r"
+    "virtualinvoke <java.awt.Component: java.awt.Dimension size()>"->"dup1.r";
+    "fieldget <java.awt.Dimension: int width>"
+    "dup1.r"->"fieldget <java.awt.Dimension: int width>";
+    "store.i $i0"
+    "fieldget <java.awt.Dimension: int width>"->"store.i $i0";
+    "store.i $i0"->"load.r r0";
+    "load.i $i0"
+    "load.r r0"->"load.i $i0";
+    "fieldput <fishy: int m_Xsize>"
+    "load.i $i0"->"fieldput <fishy: int m_Xsize>";
+    "fieldget <java.awt.Dimension: int height>"
+    "fieldput <fishy: int m_Xsize>"->"fieldget <java.awt.Dimension: int height>";
+    "fieldput <fishy: int m_Ysize>"
+    "fieldget <java.awt.Dimension: int height>"->"fieldput <fishy: int m_Ysize>";
+    "fieldput <fishy: int m_Ysize>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <fishy: int m_Xsize>"
+    "load.r r0"->"fieldget <fishy: int m_Xsize>";
+    "fieldget <fishy: int m_Xsize>"->"load.r r0";
+    "fieldget <fishy: int m_Ysize>"
+    "load.r r0"->"fieldget <fishy: int m_Ysize>";
+    "virtualinvoke <java.applet.Applet: void resize(int,int)>"
+    "fieldget <fishy: int m_Ysize>"->"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+    "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"load.r r0";
+    "new java.awt.MediaTracker"
+    "load.r r0"->"new java.awt.MediaTracker";
+    "new java.awt.MediaTracker"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"
+    "load.r r0"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+    "fieldput <fishy: java.awt.MediaTracker tracker>"
+    "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"fieldput <fishy: java.awt.MediaTracker tracker>";
+    "fieldput <fishy: java.awt.MediaTracker tracker>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <fishy: java.awt.Color c>"
+    "load.r r0"->"fieldget <fishy: java.awt.Color c>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "fieldget <fishy: java.awt.Color c>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int m_Xsize>";
+    "fieldget <fishy: int m_Xsize>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int m_Ysize>";
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"
+    "fieldget <fishy: int m_Ysize>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+    "fieldput <fishy: java.awt.Image offScreenImage>"
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <fishy: java.awt.Image offScreenImage>";
+    "fieldput <fishy: java.awt.Image offScreenImage>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <fishy: java.awt.Image offScreenImage>"
+    "load.r r0"->"fieldget <fishy: java.awt.Image offScreenImage>";
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"
+    "fieldget <fishy: java.awt.Image offScreenImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+    "fieldput <fishy: java.awt.Graphics offScreen>"
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <fishy: java.awt.Graphics offScreen>";
+    "fieldput <fishy: java.awt.Graphics offScreen>"->"load.r r0";
+    "push null"
+    "load.r r0"->"push null";
+    "fieldput <fishy: java.awt.Image bk>"
+    "push null"->"fieldput <fishy: java.awt.Image bk>";
+    "fieldput <fishy: java.awt.Image bk>"->"load.r r0";
+    "push \"bkimage\""
+    "load.r r0"->"push \"bkimage\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"bkimage\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r $i0"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $i0";
+    "load.r $i0"
+    "store.r $i0"->"load.r $i0";
+    "ifnull load.r r0"
+    "load.r $i0"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"load.r $i0";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"
+    "load.r $i0"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <fishy: java.awt.Image bk>";
+    "fieldput <fishy: java.awt.Image bk>"->"load.r r0";
+    "fieldget <fishy: java.awt.MediaTracker tracker>"
+    "load.r r0"->"fieldget <fishy: java.awt.MediaTracker tracker>";
+    "fieldget <fishy: java.awt.MediaTracker tracker>"->"load.r r0";
+    "fieldget <fishy: java.awt.Image bk>"
+    "load.r r0"->"fieldget <fishy: java.awt.Image bk>";
+    "fieldget <fishy: java.awt.Image bk>"->"load.r r0";
+    "fieldget <fishy: int nImageCount>"
+    "load.r r0"->"fieldget <fishy: int nImageCount>";
+    "dup1.i"
+    "fieldget <fishy: int nImageCount>"->"dup1.i";
+    "dup1.i"->"push 1";
+    "add.i"
+    "push 1"->"add.i";
+    "add.i"->"store.i $i0";
+    "store.i $i0"->"load.r r0";
+    "load.r r0"->"load.i $i0";
+    "load.i $i0"->"fieldput <fishy: int nImageCount>";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"
+    "fieldput <fishy: int nImageCount>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <fishy: boolean bBkImage>";
+    "fieldput <fishy: boolean bBkImage>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "push \"bubble.gif\""
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"push \"bubble.gif\"";
+    "push \"bubble.gif\""->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "fieldput <fishy: java.awt.Image bub>"
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <fishy: java.awt.Image bub>";
+    "fieldput <fishy: java.awt.Image bub>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.MediaTracker tracker>";
+    "fieldget <fishy: java.awt.MediaTracker tracker>"->"load.r r0";
+    "fieldget <fishy: java.awt.Image bub>"
+    "load.r r0"->"fieldget <fishy: java.awt.Image bub>";
+    "fieldget <fishy: java.awt.Image bub>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int nImageCount>";
+    "fieldget <fishy: int nImageCount>"->"dup1.i";
+    "dup1.i"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i $i0";
+    "store.i $i0"->"load.r r0";
+    "load.r r0"->"load.i $i0";
+    "load.i $i0"->"fieldput <fishy: int nImageCount>";
+    "fieldput <fishy: int nImageCount>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"load.r r0";
+    "fieldget <fishy: java.awt.Image[] FishImage>"
+    "load.r r0"->"fieldget <fishy: java.awt.Image[] FishImage>";
+    "fieldget <fishy: java.awt.Image[] FishImage>"->"push 0";
+    "push 0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "push \"fish1.gif\""
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"push \"fish1.gif\"";
+    "push \"fish1.gif\""->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "arraywrite.r"
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.MediaTracker tracker>";
+    "fieldget <fishy: java.awt.MediaTracker tracker>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.Image[] FishImage>";
+    "fieldget <fishy: java.awt.Image[] FishImage>"->"push 0";
+    "arrayread.r"
+    "push 0"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int nImageCount>";
+    "fieldget <fishy: int nImageCount>"->"dup1.i";
+    "dup1.i"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i $i0";
+    "store.i $i0"->"load.r r0";
+    "load.r r0"->"load.i $i0";
+    "load.i $i0"->"fieldput <fishy: int nImageCount>";
+    "fieldput <fishy: int nImageCount>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.Image[] FishImage>";
+    "fieldget <fishy: java.awt.Image[] FishImage>"->"push 1";
+    "push 1"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "push \"fish2.gif\""
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"push \"fish2.gif\"";
+    "push \"fish2.gif\""->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.MediaTracker tracker>";
+    "fieldget <fishy: java.awt.MediaTracker tracker>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.Image[] FishImage>";
+    "fieldget <fishy: java.awt.Image[] FishImage>"->"push 1";
+    "push 1"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int nImageCount>";
+    "fieldget <fishy: int nImageCount>"->"dup1.i";
+    "dup1.i"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i $i0";
+    "store.i $i0"->"load.r r0";
+    "load.r r0"->"load.i $i0";
+    "load.i $i0"->"fieldput <fishy: int nImageCount>";
+    "fieldput <fishy: int nImageCount>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.Image[] FishImage>";
+    "push 2"
+    "fieldget <fishy: java.awt.Image[] FishImage>"->"push 2";
+    "push 2"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "push \"fish3.gif\""
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"push \"fish3.gif\"";
+    "push \"fish3.gif\""->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.MediaTracker tracker>";
+    "fieldget <fishy: java.awt.MediaTracker tracker>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.Image[] FishImage>";
+    "fieldget <fishy: java.awt.Image[] FishImage>"->"push 2";
+    "push 2"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int nImageCount>";
+    "fieldget <fishy: int nImageCount>"->"dup1.i";
+    "dup1.i"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i $i0";
+    "store.i $i0"->"load.r r0";
+    "load.r r0"->"load.i $i0";
+    "load.i $i0"->"fieldput <fishy: int nImageCount>";
+    "fieldput <fishy: int nImageCount>"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"load.r r0";
+    "push 3"
+    "load.r r0"->"push 3";
+    "fieldput <fishy: int nFishCount>"
+    "push 3"->"fieldput <fishy: int nFishCount>";
+    "fieldput <fishy: int nFishCount>"->"load.r r0";
+    "push 10"
+    "load.r r0"->"push 10";
+    "fieldput <fishy: int nBubbleCount>"
+    "push 10"->"fieldput <fishy: int nBubbleCount>";
+    "fieldput <fishy: int nBubbleCount>"->"load.r r0";
+    "push \"fishcount\""
+    "load.r r0"->"push \"fishcount\"";
+    "push \"fishcount\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $i0";
+    "store.r $i0"->"load.r $i0";
+    "load.r $i0"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $i0";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"
+    "load.r $i0"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+    "fieldput <fishy: java.lang.Integer i>"
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"fieldput <fishy: java.lang.Integer i>";
+    "fieldput <fishy: java.lang.Integer i>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <fishy: java.lang.Integer i>"
+    "load.r r0"->"fieldget <fishy: java.lang.Integer i>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"
+    "fieldget <fishy: java.lang.Integer i>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <fishy: int nFishCount>";
+    "fieldput <fishy: int nFishCount>"->"load.r r0";
+    "fieldget <fishy: int nFishCount>"
+    "load.r r0"->"fieldget <fishy: int nFishCount>";
+    "fieldget <fishy: int nFishCount>"->"push 1";
+    "ifcmpge.i load.r r0"
+    "push 1"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <fishy: int nFishCount>";
+    "goto load.r r0"
+    "fieldput <fishy: int nFishCount>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"bubblecount\""
+    "load.r r0"->"push \"bubblecount\"";
+    "push \"bubblecount\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $i0";
+    "store.r $i0"->"load.r $i0";
+    "ifnull push 0"
+    "load.r $i0"->"ifnull push 0";
+    "ifnull push 0"->"load.r r0";
+    "load.r r0"->"load.r $i0";
+    "load.r $i0"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"fieldput <fishy: java.lang.Integer i>";
+    "fieldput <fishy: java.lang.Integer i>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.lang.Integer i>";
+    "fieldget <fishy: java.lang.Integer i>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <fishy: int nBubbleCount>";
+    "fieldput <fishy: int nBubbleCount>"->"load.r r0";
+    "fieldget <fishy: int nBubbleCount>"
+    "load.r r0"->"fieldget <fishy: int nBubbleCount>";
+    "fieldget <fishy: int nBubbleCount>"->"push 10";
+    "push 10"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "load.r r0"->"push 10";
+    "push 10"->"fieldput <fishy: int nBubbleCount>";
+    "goto push 0"
+    "fieldput <fishy: int nBubbleCount>"->"goto push 0";
+    "goto push 0"->"push 0";
+    "push 0"->"store.i $i0";
+    "store.i $i0"->"push 0";
+    "store.i i28"
+    "push 0"->"store.i i28";
+    "goto load.i i28"
+    "store.i i28"->"goto load.i i28";
+    "load.i i28"
+    "goto load.i i28"->"load.i i28";
+    "load.i i28"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int nFishCount>";
+    "ifcmplt.i load.r r0"
+    "fieldget <fishy: int nFishCount>"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"push 0";
+    "push 0"->"store.i $i0";
+    "goto load.i $i0"
+    "store.i $i0"->"goto load.i $i0";
+    "goto load.i $i0"->"load.i $i0";
+    "load.i $i0"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int nBubbleCount>";
+    "fieldget <fishy: int nBubbleCount>"->"ifcmplt.i load.r r0";
+    "return"
+    "ifcmplt.i load.r r0"->"return";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "fieldget <fishy: bubble[] bubbles>"
+    "load.r r0"->"fieldget <fishy: bubble[] bubbles>";
+    "fieldget <fishy: bubble[] bubbles>"->"load.i $i0";
+    "new bubble"
+    "load.i $i0"->"new bubble";
+    "new bubble"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int m_Xsize>";
+    "fieldget <fishy: int m_Xsize>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int m_Ysize>";
+    "specialinvoke <bubble: void <init>(int,int)>"
+    "fieldget <fishy: int m_Ysize>"->"specialinvoke <bubble: void <init>(int,int)>";
+    "specialinvoke <bubble: void <init>(int,int)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: bubble[] bubbles>";
+    "fieldget <fishy: bubble[] bubbles>"->"load.i $i0";
+    "load.i $i0"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.Image bub>";
+    "virtualinvoke <bubble: void LoadBubbleImage(java.awt.Image)>"
+    "fieldget <fishy: java.awt.Image bub>"->"virtualinvoke <bubble: void LoadBubbleImage(java.awt.Image)>";
+    "inc.i $i0 1"
+    "virtualinvoke <bubble: void LoadBubbleImage(java.awt.Image)>"->"inc.i $i0 1";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "fieldget <fishy: fish[] fishes>"
+    "load.r r0"->"fieldget <fishy: fish[] fishes>";
+    "fieldget <fishy: fish[] fishes>"->"load.i i28";
+    "new fish"
+    "load.i i28"->"new fish";
+    "new fish"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int m_Xsize>";
+    "fieldget <fishy: int m_Xsize>"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int m_Ysize>";
+    "specialinvoke <fish: void <init>(int,int)>"
+    "fieldget <fishy: int m_Ysize>"->"specialinvoke <fish: void <init>(int,int)>";
+    "specialinvoke <fish: void <init>(int,int)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: fish[] fishes>";
+    "fieldget <fishy: fish[] fishes>"->"load.i i28";
+    "load.i i28"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: java.awt.Image[] FishImage>";
+    "fieldget <fishy: java.awt.Image[] FishImage>"->"load.i $i0";
+    "load.i $i0"->"arrayread.r";
+    "virtualinvoke <fish: void LoadFishImage(java.awt.Image)>"
+    "arrayread.r"->"virtualinvoke <fish: void LoadFishImage(java.awt.Image)>";
+    "virtualinvoke <fish: void LoadFishImage(java.awt.Image)>"->"inc.i $i0 1";
+    "inc.i $i0 1"->"load.i $i0";
+    "load.i $i0"->"push 2";
+    "ifcmple.i inc.i i28 1"
+    "push 2"->"ifcmple.i inc.i i28 1";
+    "ifcmple.i inc.i i28 1"->"push 0";
+    "push 0"->"store.i $i0";
+    "inc.i i28 1"
+    "store.i $i0"->"inc.i i28 1";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int nBubbleCount>";
+    "push 100"
+    "fieldget <fishy: int nBubbleCount>"->"push 100";
+    "ifcmple.i push 0"
+    "push 100"->"ifcmple.i push 0";
+    "ifcmple.i push 0"->"load.r r0";
+    "load.r r0"->"push 100";
+    "push 100"->"fieldput <fishy: int nBubbleCount>";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <fishy: int nFishCount>";
+    "push 20"
+    "fieldget <fishy: int nFishCount>"->"push 20";
+    "ifcmple.i load.r r0"
+    "push 20"->"ifcmple.i load.r r0";
+    "ifcmple.i load.r r0"->"load.r r0";
+    "load.r r0"->"push 20";
+    "push 20"->"fieldput <fishy: int nFishCount>";
+}

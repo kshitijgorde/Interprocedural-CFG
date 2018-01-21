@@ -1,0 +1,57 @@
+digraph "" {
+    "r0 := @this: Nasa1009"
+    "load.r r0"
+    "r0 := @this: Nasa1009"->"load.r r0";
+    "staticget <java.awt.Color: java.awt.Color white>"
+    "load.r r0"->"staticget <java.awt.Color: java.awt.Color white>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "new java.awt.Polygon"
+    "load.r r0"->"new java.awt.Polygon";
+    "dup1.r"
+    "new java.awt.Polygon"->"dup1.r";
+    "specialinvoke <java.awt.Polygon: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.Polygon: void <init>()>";
+    "fieldput <Nasa1009: java.awt.Polygon pl>"
+    "specialinvoke <java.awt.Polygon: void <init>()>"->"fieldput <Nasa1009: java.awt.Polygon pl>";
+    "fieldput <Nasa1009: java.awt.Polygon pl>"->"load.r r0";
+    "fieldget <Nasa1009: java.awt.Polygon pl>"
+    "load.r r0"->"fieldget <Nasa1009: java.awt.Polygon pl>";
+    "push 243"
+    "fieldget <Nasa1009: java.awt.Polygon pl>"->"push 243";
+    "push 129"
+    "push 243"->"push 129";
+    "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"
+    "push 129"->"virtualinvoke <java.awt.Polygon: void addPoint(int,int)>";
+    "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <Nasa1009: java.awt.Polygon pl>";
+    "push 267"
+    "fieldget <Nasa1009: java.awt.Polygon pl>"->"push 267";
+    "push 267"->"push 129";
+    "push 129"->"virtualinvoke <java.awt.Polygon: void addPoint(int,int)>";
+    "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <Nasa1009: java.awt.Polygon pl>";
+    "fieldget <Nasa1009: java.awt.Polygon pl>"->"push 267";
+    "push 162"
+    "push 267"->"push 162";
+    "push 162"->"virtualinvoke <java.awt.Polygon: void addPoint(int,int)>";
+    "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <Nasa1009: java.awt.Polygon pl>";
+    "fieldget <Nasa1009: java.awt.Polygon pl>"->"push 243";
+    "push 243"->"push 162";
+    "push 162"->"virtualinvoke <java.awt.Polygon: void addPoint(int,int)>";
+    "virtualinvoke <java.awt.Polygon: void addPoint(int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "push \"Nasa1009.gif\""
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"push \"Nasa1009.gif\"";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"
+    "push \"Nasa1009.gif\""->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "fieldput <Nasa1009: java.awt.Image Img>"
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <Nasa1009: java.awt.Image Img>";
+    "return"
+    "fieldput <Nasa1009: java.awt.Image Img>"->"return";
+}

@@ -1,0 +1,453 @@
+digraph "" {
+    "r0 := @this: TangentsApplet"
+    "load.r r0"
+    "r0 := @this: TangentsApplet"->"load.r r0";
+    "new edu.hws.jcm.draw.DisplayCanvas"
+    "load.r r0"->"new edu.hws.jcm.draw.DisplayCanvas";
+    "dup1.r"
+    "new edu.hws.jcm.draw.DisplayCanvas"->"dup1.r";
+    "specialinvoke <edu.hws.jcm.draw.DisplayCanvas: void <init>()>"
+    "dup1.r"->"specialinvoke <edu.hws.jcm.draw.DisplayCanvas: void <init>()>";
+    "fieldput <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"
+    "specialinvoke <edu.hws.jcm.draw.DisplayCanvas: void <init>()>"->"fieldput <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldput <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"load.r r0";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "push 0.0"
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"push 0.0";
+    "push 0.5"
+    "push 0.0"->"push 0.5";
+    "push 0.5"->"push 0.0";
+    "push 1.0"
+    "push 0.0"->"push 1.0";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: int addNewCoordinateRect(double,double,double,double)>"
+    "push 1.0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: int addNewCoordinateRect(double,double,double,double)>";
+    "pop"
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: int addNewCoordinateRect(double,double,double,double)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"push 0.5";
+    "push 0.5"->"push 1.0";
+    "push 1.0"->"push 0.0";
+    "push 0.0"->"push 1.0";
+    "push 1.0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: int addNewCoordinateRect(double,double,double,double)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: int addNewCoordinateRect(double,double,double,double)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "new edu.hws.jcm.draw.Axes"
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"new edu.hws.jcm.draw.Axes";
+    "new edu.hws.jcm.draw.Axes"->"dup1.r";
+    "specialinvoke <edu.hws.jcm.draw.Axes: void <init>()>"
+    "dup1.r"->"specialinvoke <edu.hws.jcm.draw.Axes: void <init>()>";
+    "push 0"
+    "specialinvoke <edu.hws.jcm.draw.Axes: void <init>()>"->"push 0";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"
+    "push 0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"new edu.hws.jcm.draw.Axes";
+    "new edu.hws.jcm.draw.Axes"->"dup1.r";
+    "dup1.r"->"specialinvoke <edu.hws.jcm.draw.Axes: void <init>()>";
+    "push 1"
+    "specialinvoke <edu.hws.jcm.draw.Axes: void <init>()>"->"push 1";
+    "push 1"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "new edu.hws.jcm.draw.LimitControlPanel"
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"new edu.hws.jcm.draw.LimitControlPanel";
+    "store.r r20"
+    "new edu.hws.jcm.draw.LimitControlPanel"->"store.r r20";
+    "load.r r20"
+    "store.r r20"->"load.r r20";
+    "specialinvoke <edu.hws.jcm.draw.LimitControlPanel: void <init>()>"
+    "load.r r20"->"specialinvoke <edu.hws.jcm.draw.LimitControlPanel: void <init>()>";
+    "specialinvoke <edu.hws.jcm.draw.LimitControlPanel: void <init>()>"->"load.r r20";
+    "load.r r20"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"push 0";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: edu.hws.jcm.draw.CoordinateRect getCoordinateRect(int)>"
+    "push 0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: edu.hws.jcm.draw.CoordinateRect getCoordinateRect(int)>";
+    "virtualinvoke <edu.hws.jcm.draw.LimitControlPanel: void addCoords(edu.hws.jcm.draw.CoordinateRect)>"
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: edu.hws.jcm.draw.CoordinateRect getCoordinateRect(int)>"->"virtualinvoke <edu.hws.jcm.draw.LimitControlPanel: void addCoords(edu.hws.jcm.draw.CoordinateRect)>";
+    "virtualinvoke <edu.hws.jcm.draw.LimitControlPanel: void addCoords(edu.hws.jcm.draw.CoordinateRect)>"->"load.r r20";
+    "load.r r20"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"push 1";
+    "push 1"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: edu.hws.jcm.draw.CoordinateRect getCoordinateRect(int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: edu.hws.jcm.draw.CoordinateRect getCoordinateRect(int)>"->"virtualinvoke <edu.hws.jcm.draw.LimitControlPanel: void addCoords(edu.hws.jcm.draw.CoordinateRect)>";
+    "virtualinvoke <edu.hws.jcm.draw.LimitControlPanel: void addCoords(edu.hws.jcm.draw.CoordinateRect)>"->"load.r r20";
+    "load.r r20"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "virtualinvoke <edu.hws.jcm.draw.LimitControlPanel: void setErrorReporter(edu.hws.jcm.awt.ErrorReporter)>"
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"virtualinvoke <edu.hws.jcm.draw.LimitControlPanel: void setErrorReporter(edu.hws.jcm.awt.ErrorReporter)>";
+    "new edu.hws.jcm.data.Parser"
+    "virtualinvoke <edu.hws.jcm.draw.LimitControlPanel: void setErrorReporter(edu.hws.jcm.awt.ErrorReporter)>"->"new edu.hws.jcm.data.Parser";
+    "store.r r11"
+    "new edu.hws.jcm.data.Parser"->"store.r r11";
+    "load.r r11"
+    "store.r r11"->"load.r r11";
+    "specialinvoke <edu.hws.jcm.data.Parser: void <init>()>"
+    "load.r r11"->"specialinvoke <edu.hws.jcm.data.Parser: void <init>()>";
+    "new edu.hws.jcm.data.Variable"
+    "specialinvoke <edu.hws.jcm.data.Parser: void <init>()>"->"new edu.hws.jcm.data.Variable";
+    "store.r $r35"
+    "new edu.hws.jcm.data.Variable"->"store.r $r35";
+    "load.r $r35"
+    "store.r $r35"->"load.r $r35";
+    "push \"x\""
+    "load.r $r35"->"push \"x\"";
+    "specialinvoke <edu.hws.jcm.data.Variable: void <init>(java.lang.String)>"
+    "push \"x\""->"specialinvoke <edu.hws.jcm.data.Variable: void <init>(java.lang.String)>";
+    "specialinvoke <edu.hws.jcm.data.Variable: void <init>(java.lang.String)>"->"load.r r11";
+    "load.r r11"->"load.r $r35";
+    "virtualinvoke <edu.hws.jcm.data.Parser: void add(edu.hws.jcm.data.MathObject)>"
+    "load.r $r35"->"virtualinvoke <edu.hws.jcm.data.Parser: void add(edu.hws.jcm.data.MathObject)>";
+    "new edu.hws.jcm.awt.ExpressionInput"
+    "virtualinvoke <edu.hws.jcm.data.Parser: void add(edu.hws.jcm.data.MathObject)>"->"new edu.hws.jcm.awt.ExpressionInput";
+    "store.r $r36"
+    "new edu.hws.jcm.awt.ExpressionInput"->"store.r $r36";
+    "load.r $r36"
+    "store.r $r36"->"load.r $r36";
+    "push \"sin(x)*cos(2*x) + x/3\""
+    "load.r $r36"->"push \"sin(x)*cos(2*x) + x/3\"";
+    "push \"sin(x)*cos(2*x) + x/3\""->"load.r r11";
+    "specialinvoke <edu.hws.jcm.awt.ExpressionInput: void <init>(java.lang.String,edu.hws.jcm.data.Parser)>"
+    "load.r r11"->"specialinvoke <edu.hws.jcm.awt.ExpressionInput: void <init>(java.lang.String,edu.hws.jcm.data.Parser)>";
+    "specialinvoke <edu.hws.jcm.awt.ExpressionInput: void <init>(java.lang.String,edu.hws.jcm.data.Parser)>"->"load.r $r36";
+    "load.r $r36"->"load.r $r35";
+    "virtualinvoke <edu.hws.jcm.awt.ExpressionInput: edu.hws.jcm.data.Function getFunction(edu.hws.jcm.data.Variable)>"
+    "load.r $r35"->"virtualinvoke <edu.hws.jcm.awt.ExpressionInput: edu.hws.jcm.data.Function getFunction(edu.hws.jcm.data.Variable)>";
+    "store.r r5"
+    "virtualinvoke <edu.hws.jcm.awt.ExpressionInput: edu.hws.jcm.data.Function getFunction(edu.hws.jcm.data.Variable)>"->"store.r r5";
+    "load.r r5"
+    "store.r r5"->"load.r r5";
+    "load.r r5"->"push 1";
+    "interfaceinvoke <edu.hws.jcm.data.Function: edu.hws.jcm.data.Function derivative(int)> 1"
+    "push 1"->"interfaceinvoke <edu.hws.jcm.data.Function: edu.hws.jcm.data.Function derivative(int)> 1";
+    "store.r r6"
+    "interfaceinvoke <edu.hws.jcm.data.Function: edu.hws.jcm.data.Function derivative(int)> 1"->"store.r r6";
+    "new edu.hws.jcm.draw.Graph1D"
+    "store.r r6"->"new edu.hws.jcm.draw.Graph1D";
+    "new edu.hws.jcm.draw.Graph1D"->"store.r r11";
+    "store.r r11"->"load.r r11";
+    "load.r r11"->"load.r r5";
+    "specialinvoke <edu.hws.jcm.draw.Graph1D: void <init>(edu.hws.jcm.data.Function)>"
+    "load.r r5"->"specialinvoke <edu.hws.jcm.draw.Graph1D: void <init>(edu.hws.jcm.data.Function)>";
+    "specialinvoke <edu.hws.jcm.draw.Graph1D: void <init>(edu.hws.jcm.data.Function)>"->"new edu.hws.jcm.draw.Graph1D";
+    "store.r r12"
+    "new edu.hws.jcm.draw.Graph1D"->"store.r r12";
+    "load.r r12"
+    "store.r r12"->"load.r r12";
+    "load.r r6"
+    "load.r r12"->"load.r r6";
+    "load.r r6"->"specialinvoke <edu.hws.jcm.draw.Graph1D: void <init>(edu.hws.jcm.data.Function)>";
+    "specialinvoke <edu.hws.jcm.draw.Graph1D: void <init>(edu.hws.jcm.data.Function)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"load.r r11";
+    "load.r r11"->"push 0";
+    "push 0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"load.r r12";
+    "load.r r12"->"push 1";
+    "push 1"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "new edu.hws.jcm.draw.MouseTracker"
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"new edu.hws.jcm.draw.MouseTracker";
+    "store.r $r41"
+    "new edu.hws.jcm.draw.MouseTracker"->"store.r $r41";
+    "load.r $r41"
+    "store.r $r41"->"load.r $r41";
+    "specialinvoke <edu.hws.jcm.draw.MouseTracker: void <init>()>"
+    "load.r $r41"->"specialinvoke <edu.hws.jcm.draw.MouseTracker: void <init>()>";
+    "specialinvoke <edu.hws.jcm.draw.MouseTracker: void <init>()>"->"new edu.hws.jcm.draw.MouseTracker";
+    "store.r $r42"
+    "new edu.hws.jcm.draw.MouseTracker"->"store.r $r42";
+    "load.r $r42"
+    "store.r $r42"->"load.r $r42";
+    "load.r $r42"->"specialinvoke <edu.hws.jcm.draw.MouseTracker: void <init>()>";
+    "specialinvoke <edu.hws.jcm.draw.MouseTracker: void <init>()>"->"load.r $r41";
+    "virtualinvoke <edu.hws.jcm.draw.MouseTracker: edu.hws.jcm.data.Variable getXVar()>"
+    "load.r $r41"->"virtualinvoke <edu.hws.jcm.draw.MouseTracker: edu.hws.jcm.data.Variable getXVar()>";
+    "virtualinvoke <edu.hws.jcm.draw.MouseTracker: edu.hws.jcm.data.Variable getXVar()>"->"store.r r11";
+    "store.r r11"->"load.r r11";
+    "load.r r11"->"push 0.0";
+    "virtualinvoke <edu.hws.jcm.data.Variable: void setVal(double)>"
+    "push 0.0"->"virtualinvoke <edu.hws.jcm.data.Variable: void setVal(double)>";
+    "virtualinvoke <edu.hws.jcm.data.Variable: void setVal(double)>"->"load.r $r42";
+    "load.r $r42"->"virtualinvoke <edu.hws.jcm.draw.MouseTracker: edu.hws.jcm.data.Variable getXVar()>";
+    "virtualinvoke <edu.hws.jcm.draw.MouseTracker: edu.hws.jcm.data.Variable getXVar()>"->"store.r r12";
+    "store.r r12"->"load.r r12";
+    "load.r r12"->"push 0.0";
+    "push 0.0"->"virtualinvoke <edu.hws.jcm.data.Variable: void setVal(double)>";
+    "new edu.hws.jcm.draw.TangentLine"
+    "virtualinvoke <edu.hws.jcm.data.Variable: void setVal(double)>"->"new edu.hws.jcm.draw.TangentLine";
+    "store.r $r43"
+    "new edu.hws.jcm.draw.TangentLine"->"store.r $r43";
+    "load.r $r43"
+    "store.r $r43"->"load.r $r43";
+    "load.r $r43"->"load.r r11";
+    "load.r r11"->"load.r r5";
+    "specialinvoke <edu.hws.jcm.draw.TangentLine: void <init>(edu.hws.jcm.data.Value,edu.hws.jcm.data.Function)>"
+    "load.r r5"->"specialinvoke <edu.hws.jcm.draw.TangentLine: void <init>(edu.hws.jcm.data.Value,edu.hws.jcm.data.Function)>";
+    "new edu.hws.jcm.draw.Crosshair"
+    "specialinvoke <edu.hws.jcm.draw.TangentLine: void <init>(edu.hws.jcm.data.Value,edu.hws.jcm.data.Function)>"->"new edu.hws.jcm.draw.Crosshair";
+    "store.r $r44"
+    "new edu.hws.jcm.draw.Crosshair"->"store.r $r44";
+    "load.r $r44"
+    "store.r $r44"->"load.r $r44";
+    "load.r $r44"->"load.r r12";
+    "load.r r12"->"load.r r6";
+    "specialinvoke <edu.hws.jcm.draw.Crosshair: void <init>(edu.hws.jcm.data.Value,edu.hws.jcm.data.Function)>"
+    "load.r r6"->"specialinvoke <edu.hws.jcm.draw.Crosshair: void <init>(edu.hws.jcm.data.Value,edu.hws.jcm.data.Function)>";
+    "specialinvoke <edu.hws.jcm.draw.Crosshair: void <init>(edu.hws.jcm.data.Value,edu.hws.jcm.data.Function)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"load.r $r41";
+    "load.r $r41"->"push 0";
+    "push 0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"load.r $r42";
+    "load.r $r42"->"push 1";
+    "push 1"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"load.r $r43";
+    "load.r $r43"->"push 0";
+    "push 0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"load.r $r44";
+    "load.r $r44"->"push 1";
+    "push 1"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "new edu.hws.jcm.draw.DrawString"
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"new edu.hws.jcm.draw.DrawString";
+    "new edu.hws.jcm.draw.DrawString"->"store.r $r41";
+    "push 3"
+    "store.r $r41"->"push 3";
+    "newarray"
+    "push 3"->"newarray";
+    "newarray"->"store.r $r42";
+    "store.r $r42"->"load.r $r42";
+    "load.r $r42"->"push 0";
+    "push 0"->"load.r r11";
+    "arraywrite.r"
+    "load.r r11"->"arraywrite.r";
+    "arraywrite.r"->"load.r $r42";
+    "load.r $r42"->"push 1";
+    "new edu.hws.jcm.data.ValueMath"
+    "push 1"->"new edu.hws.jcm.data.ValueMath";
+    "new edu.hws.jcm.data.ValueMath"->"dup1.r";
+    "dup1.r"->"load.r r5";
+    "load.r r5"->"load.r r11";
+    "specialinvoke <edu.hws.jcm.data.ValueMath: void <init>(edu.hws.jcm.data.Function,edu.hws.jcm.data.Value)>"
+    "load.r r11"->"specialinvoke <edu.hws.jcm.data.ValueMath: void <init>(edu.hws.jcm.data.Function,edu.hws.jcm.data.Value)>";
+    "specialinvoke <edu.hws.jcm.data.ValueMath: void <init>(edu.hws.jcm.data.Function,edu.hws.jcm.data.Value)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r $r42";
+    "push 2"
+    "load.r $r42"->"push 2";
+    "push 2"->"new edu.hws.jcm.data.ValueMath";
+    "new edu.hws.jcm.data.ValueMath"->"dup1.r";
+    "dup1.r"->"load.r r6";
+    "load.r r6"->"load.r r11";
+    "load.r r11"->"specialinvoke <edu.hws.jcm.data.ValueMath: void <init>(edu.hws.jcm.data.Function,edu.hws.jcm.data.Value)>";
+    "specialinvoke <edu.hws.jcm.data.ValueMath: void <init>(edu.hws.jcm.data.Function,edu.hws.jcm.data.Value)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r $r41";
+    "push \"x = #\nf(x) = #\nf\'(x) = #\""
+    "load.r $r41"->"push \"x = #\nf(x) = #\nf\'(x) = #\"";
+    "push 8"
+    "push \"x = #\nf(x) = #\nf\'(x) = #\""->"push 8";
+    "push 8"->"load.r $r42";
+    "specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String,int,edu.hws.jcm.data.Value[])>"
+    "load.r $r42"->"specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String,int,edu.hws.jcm.data.Value[])>";
+    "specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String,int,edu.hws.jcm.data.Value[])>"->"load.r $r41";
+    "push 6"
+    "load.r $r41"->"push 6";
+    "virtualinvoke <edu.hws.jcm.draw.DrawString: void setNumSize(int)>"
+    "push 6"->"virtualinvoke <edu.hws.jcm.draw.DrawString: void setNumSize(int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DrawString: void setNumSize(int)>"->"load.r $r41";
+    "new java.awt.Color"
+    "load.r $r41"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push 100"
+    "push 0"->"push 100";
+    "push 100"->"push 0";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"
+    "push 0"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DrawString: void setColor(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <edu.hws.jcm.draw.DrawString: void setColor(java.awt.Color)>";
+    "virtualinvoke <edu.hws.jcm.draw.DrawString: void setColor(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"load.r $r41";
+    "load.r $r41"->"push 1";
+    "push 1"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"new edu.hws.jcm.draw.DrawString";
+    "new edu.hws.jcm.draw.DrawString"->"dup1.r";
+    "push \"y = f(x)\""
+    "dup1.r"->"push \"y = f(x)\"";
+    "specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>"
+    "push \"y = f(x)\""->"specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>";
+    "specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"new edu.hws.jcm.draw.DrawString";
+    "new edu.hws.jcm.draw.DrawString"->"dup1.r";
+    "push \"y = f\'(x)\""
+    "dup1.r"->"push \"y = f\'(x)\"";
+    "push \"y = f\'(x)\""->"specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>";
+    "specialinvoke <edu.hws.jcm.draw.DrawString: void <init>(java.lang.String)>"->"push 1";
+    "push 1"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "new edu.hws.jcm.draw.DrawBorder"
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"new edu.hws.jcm.draw.DrawBorder";
+    "new edu.hws.jcm.draw.DrawBorder"->"dup1.r";
+    "specialinvoke <edu.hws.jcm.draw.DrawBorder: void <init>()>"
+    "dup1.r"->"specialinvoke <edu.hws.jcm.draw.DrawBorder: void <init>()>";
+    "specialinvoke <edu.hws.jcm.draw.DrawBorder: void <init>()>"->"push 0";
+    "push 0"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"new edu.hws.jcm.draw.DrawBorder";
+    "new edu.hws.jcm.draw.DrawBorder"->"dup1.r";
+    "dup1.r"->"specialinvoke <edu.hws.jcm.draw.DrawBorder: void <init>()>";
+    "specialinvoke <edu.hws.jcm.draw.DrawBorder: void <init>()>"->"push 1";
+    "push 1"->"virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>";
+    "new edu.hws.jcm.awt.ComputeButton"
+    "virtualinvoke <edu.hws.jcm.draw.DisplayCanvas: void add(edu.hws.jcm.draw.Drawable,int)>"->"new edu.hws.jcm.awt.ComputeButton";
+    "new edu.hws.jcm.awt.ComputeButton"->"store.r r5";
+    "store.r r5"->"load.r r5";
+    "push \"Draw graph\""
+    "load.r r5"->"push \"Draw graph\"";
+    "specialinvoke <edu.hws.jcm.awt.ComputeButton: void <init>(java.lang.String)>"
+    "push \"Draw graph\""->"specialinvoke <edu.hws.jcm.awt.ComputeButton: void <init>(java.lang.String)>";
+    "new edu.hws.jcm.awt.JCMPanel"
+    "specialinvoke <edu.hws.jcm.awt.ComputeButton: void <init>(java.lang.String)>"->"new edu.hws.jcm.awt.JCMPanel";
+    "new edu.hws.jcm.awt.JCMPanel"->"store.r $r41";
+    "store.r $r41"->"load.r $r41";
+    "load.r $r41"->"push 3";
+    "specialinvoke <edu.hws.jcm.awt.JCMPanel: void <init>(int)>"
+    "push 3"->"specialinvoke <edu.hws.jcm.awt.JCMPanel: void <init>(int)>";
+    "specialinvoke <edu.hws.jcm.awt.JCMPanel: void <init>(int)>"->"load.r $r41";
+    "new java.awt.Label"
+    "load.r $r41"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \" f(x) = \""
+    "dup1.r"->"push \" f(x) = \"";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"
+    "push \" f(x) = \""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "push \"West\""
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push \"West\"";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"
+    "push \"West\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r $r41";
+    "load.r $r41"->"load.r $r36";
+    "push \"Center\""
+    "load.r $r36"->"push \"Center\"";
+    "push \"Center\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r $r41";
+    "load.r $r41"->"load.r r5";
+    "push \"East\""
+    "load.r r5"->"push \"East\"";
+    "push \"East\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"new edu.hws.jcm.awt.JCMPanel";
+    "new edu.hws.jcm.awt.JCMPanel"->"store.r r6";
+    "store.r r6"->"load.r r6";
+    "load.r r6"->"push 2";
+    "push 2"->"push 1";
+    "specialinvoke <edu.hws.jcm.awt.JCMPanel: void <init>(int,int)>"
+    "push 1"->"specialinvoke <edu.hws.jcm.awt.JCMPanel: void <init>(int,int)>";
+    "specialinvoke <edu.hws.jcm.awt.JCMPanel: void <init>(int,int)>"->"load.r r6";
+    "load.r r6"->"load.r $r41";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "load.r $r41"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r6";
+    "new TangentsApplet$FuncLabel"
+    "load.r r6"->"new TangentsApplet$FuncLabel";
+    "new TangentsApplet$FuncLabel"->"dup1.r";
+    "dup1.r"->"load.r $r36";
+    "virtualinvoke <edu.hws.jcm.awt.ExpressionInput: edu.hws.jcm.data.Expression getExpression()>"
+    "load.r $r36"->"virtualinvoke <edu.hws.jcm.awt.ExpressionInput: edu.hws.jcm.data.Expression getExpression()>";
+    "virtualinvoke <edu.hws.jcm.awt.ExpressionInput: edu.hws.jcm.data.Expression getExpression()>"->"load.r $r35";
+    "interfaceinvoke <edu.hws.jcm.data.Expression: edu.hws.jcm.data.Expression derivative(edu.hws.jcm.data.Variable)> 1"
+    "load.r $r35"->"interfaceinvoke <edu.hws.jcm.data.Expression: edu.hws.jcm.data.Expression derivative(edu.hws.jcm.data.Variable)> 1";
+    "specialinvoke <TangentsApplet$FuncLabel: void <init>(edu.hws.jcm.data.Expression)>"
+    "interfaceinvoke <edu.hws.jcm.data.Expression: edu.hws.jcm.data.Expression derivative(edu.hws.jcm.data.Variable)> 1"->"specialinvoke <TangentsApplet$FuncLabel: void <init>(edu.hws.jcm.data.Expression)>";
+    "specialinvoke <TangentsApplet$FuncLabel: void <init>(edu.hws.jcm.data.Expression)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"new edu.hws.jcm.awt.JCMPanel";
+    "new edu.hws.jcm.awt.JCMPanel"->"store.r $r35";
+    "store.r $r35"->"load.r $r35";
+    "load.r $r35"->"push 3";
+    "push 3"->"specialinvoke <edu.hws.jcm.awt.JCMPanel: void <init>(int)>";
+    "specialinvoke <edu.hws.jcm.awt.JCMPanel: void <init>(int)>"->"load.r $r35";
+    "load.r $r35"->"push 3";
+    "virtualinvoke <edu.hws.jcm.awt.JCMPanel: void setInsetGap(int)>"
+    "push 3"->"virtualinvoke <edu.hws.jcm.awt.JCMPanel: void setInsetGap(int)>";
+    "virtualinvoke <edu.hws.jcm.awt.JCMPanel: void setInsetGap(int)>"->"load.r $r35";
+    "load.r $r35"->"load.r r6";
+    "push \"South\""
+    "load.r r6"->"push \"South\"";
+    "push \"South\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r $r35";
+    "load.r $r35"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"push \"Center\"";
+    "push \"Center\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r $r35";
+    "load.r $r35"->"load.r r20";
+    "load.r r20"->"push \"East\"";
+    "push \"East\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "staticget <java.awt.Color: java.awt.Color lightGray>"
+    "load.r r0"->"staticget <java.awt.Color: java.awt.Color lightGray>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color lightGray>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "new java.awt.BorderLayout"
+    "load.r r0"->"new java.awt.BorderLayout";
+    "new java.awt.BorderLayout"->"dup1.r";
+    "dup1.r"->"push 3";
+    "push 3"->"push 3";
+    "specialinvoke <java.awt.BorderLayout: void <init>(int,int)>"
+    "push 3"->"specialinvoke <java.awt.BorderLayout: void <init>(int,int)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>(int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"load.r $r35";
+    "load.r $r35"->"push \"Center\"";
+    "push \"Center\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r $r35";
+    "virtualinvoke <edu.hws.jcm.awt.JCMPanel: edu.hws.jcm.awt.Controller getController()>"
+    "load.r $r35"->"virtualinvoke <edu.hws.jcm.awt.JCMPanel: edu.hws.jcm.awt.Controller getController()>";
+    "virtualinvoke <edu.hws.jcm.awt.JCMPanel: edu.hws.jcm.awt.Controller getController()>"->"store.r r20";
+    "store.r r20"->"load.r r20";
+    "load.r r20"->"load.r r0";
+    "load.r r0"->"fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>";
+    "virtualinvoke <edu.hws.jcm.awt.Controller: void setErrorReporter(edu.hws.jcm.awt.ErrorReporter)>"
+    "fieldget <TangentsApplet: edu.hws.jcm.draw.DisplayCanvas canvas>"->"virtualinvoke <edu.hws.jcm.awt.Controller: void setErrorReporter(edu.hws.jcm.awt.ErrorReporter)>";
+    "virtualinvoke <edu.hws.jcm.awt.Controller: void setErrorReporter(edu.hws.jcm.awt.ErrorReporter)>"->"load.r r20";
+    "new edu.hws.jcm.awt.Tie"
+    "load.r r20"->"new edu.hws.jcm.awt.Tie";
+    "new edu.hws.jcm.awt.Tie"->"dup1.r";
+    "dup1.r"->"load.r r11";
+    "checkcast"
+    "load.r r11"->"checkcast";
+    "checkcast"->"load.r r12";
+    "load.r r12"->"checkcast";
+    "specialinvoke <edu.hws.jcm.awt.Tie: void <init>(edu.hws.jcm.awt.Tieable,edu.hws.jcm.awt.Tieable)>"
+    "checkcast"->"specialinvoke <edu.hws.jcm.awt.Tie: void <init>(edu.hws.jcm.awt.Tieable,edu.hws.jcm.awt.Tieable)>";
+    "virtualinvoke <edu.hws.jcm.awt.Controller: void add(java.lang.Object)>"
+    "specialinvoke <edu.hws.jcm.awt.Tie: void <init>(edu.hws.jcm.awt.Tieable,edu.hws.jcm.awt.Tieable)>"->"virtualinvoke <edu.hws.jcm.awt.Controller: void add(java.lang.Object)>";
+    "virtualinvoke <edu.hws.jcm.awt.Controller: void add(java.lang.Object)>"->"load.r r5";
+    "load.r r5"->"load.r r20";
+    "virtualinvoke <edu.hws.jcm.awt.ComputeButton: void setOnUserAction(edu.hws.jcm.awt.Controller)>"
+    "load.r r20"->"virtualinvoke <edu.hws.jcm.awt.ComputeButton: void setOnUserAction(edu.hws.jcm.awt.Controller)>";
+    "virtualinvoke <edu.hws.jcm.awt.ComputeButton: void setOnUserAction(edu.hws.jcm.awt.Controller)>"->"load.r $r35";
+    "virtualinvoke <edu.hws.jcm.awt.JCMPanel: void gatherInputs()>"
+    "load.r $r35"->"virtualinvoke <edu.hws.jcm.awt.JCMPanel: void gatherInputs()>";
+    "return"
+    "virtualinvoke <edu.hws.jcm.awt.JCMPanel: void gatherInputs()>"->"return";
+}

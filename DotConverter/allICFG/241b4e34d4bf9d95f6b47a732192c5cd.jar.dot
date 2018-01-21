@@ -1,0 +1,768 @@
+digraph "" {
+    "r0 := @this: sm5trial"
+    "staticinvoke <java.lang.System: void gc()>"
+    "r0 := @this: sm5trial"->"staticinvoke <java.lang.System: void gc()>";
+    "new java.lang.StringBuffer"
+    "staticinvoke <java.lang.System: void gc()>"->"new java.lang.StringBuffer";
+    "dup1.r"
+    "new java.lang.StringBuffer"->"dup1.r";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "push \"x.copyright.textNcolour.textHcolour.textBcolour.x.textNstyle.x.textfont.textsize.\""
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"push \"x.copyright.textNcolour.textHcolour.textBcolour.x.textNstyle.x.textfont.textsize.\"";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "push \"x.copyright.textNcolour.textHcolour.textBcolour.x.textNstyle.x.textfont.textsize.\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"x.x.textposition.textmargin.textspacing.menufile.x.x.x.x.menudeftarget.menustyles.\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"x.x.textposition.textmargin.textspacing.menufile.x.x.x.x.menudeftarget.menustyles.\"";
+    "push \"x.x.textposition.textmargin.textspacing.menufile.x.x.x.x.menudeftarget.menustyles.\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"x.x.x.imgwidth.imgheight.x.x.entryheight.\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"x.x.x.imgwidth.imgheight.x.x.entryheight.\"";
+    "push \"x.x.x.imgwidth.imgheight.x.x.entryheight.\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"x.x.x.x.x.x.x.x.x.x.bgcolour.x.\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"x.x.x.x.x.x.x.x.x.x.bgcolour.x.\"";
+    "push \"x.x.x.x.x.x.x.x.x.x.bgcolour.x.\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"audiomove.audioclick.escapepage.x.textXpress.textYpress\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"audiomove.audioclick.escapepage.x.textXpress.textYpress\"";
+    "push \"audiomove.audioclick.escapepage.x.textXpress.textYpress\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "store.r i0"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"store.r i0";
+    "load.r r0"
+    "store.r i0"->"load.r r0";
+    "push 50"
+    "load.r r0"->"push 50";
+    "newarray"
+    "push 50"->"newarray";
+    "fieldput <sm5trial: java.lang.String[] x37>"
+    "newarray"->"fieldput <sm5trial: java.lang.String[] x37>";
+    "push 0"
+    "fieldput <sm5trial: java.lang.String[] x37>"->"push 0";
+    "store.i i35"
+    "push 0"->"store.i i35";
+    "new java.util.StringTokenizer"
+    "store.i i35"->"new java.util.StringTokenizer";
+    "store.r i1"
+    "new java.util.StringTokenizer"->"store.r i1";
+    "load.r i1"
+    "store.r i1"->"load.r i1";
+    "load.r i0"
+    "load.r i1"->"load.r i0";
+    "push \".\""
+    "load.r i0"->"push \".\"";
+    "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"
+    "push \".\""->"specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>";
+    "goto load.r i1"
+    "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"->"goto load.r i1";
+    "goto load.r i1"->"load.r i1";
+    "virtualinvoke <java.util.StringTokenizer: boolean hasMoreTokens()>"
+    "load.r i1"->"virtualinvoke <java.util.StringTokenizer: boolean hasMoreTokens()>";
+    "ifne load.r r0"
+    "virtualinvoke <java.util.StringTokenizer: boolean hasMoreTokens()>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 1"
+    "load.r r0"->"push 1";
+    "push \" \""
+    "push 1"->"push \" \"";
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"
+    "push \" \""->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "fieldput <sm5trial: java.lang.String x6>"
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"fieldput <sm5trial: java.lang.String x6>";
+    "fieldput <sm5trial: java.lang.String x6>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 15"
+    "load.r r0"->"push 15";
+    "push null"
+    "push 15"->"push null";
+    "push null"->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "fieldput <sm5trial: java.lang.String x51>"
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"fieldput <sm5trial: java.lang.String x51>";
+    "fieldput <sm5trial: java.lang.String x51>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 20"
+    "load.r r0"->"push 20";
+    "push \"_top\""
+    "push 20"->"push \"_top\"";
+    "push \"_top\""->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "fieldput <sm5trial: java.lang.String x8>"
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"fieldput <sm5trial: java.lang.String x8>";
+    "fieldput <sm5trial: java.lang.String x8>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 21"
+    "load.r r0"->"push 21";
+    "push 21"->"push 50";
+    "push 2"
+    "push 50"->"push 2";
+    "push 3"
+    "push 2"->"push 3";
+    "push 10"
+    "push 3"->"push 10";
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "fieldput <sm5trial: int x42>"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"fieldput <sm5trial: int x42>";
+    "fieldput <sm5trial: int x42>"->"load.r r0";
+    "fieldget <sm5trial: java.awt.Color[] x5>"
+    "load.r r0"->"fieldget <sm5trial: java.awt.Color[] x5>";
+    "fieldget <sm5trial: java.awt.Color[] x5>"->"push 1";
+    "new java.awt.Color"
+    "push 1"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "push 22"
+    "load.r r0"->"push 22";
+    "push 22"->"push 0";
+    "push 0"->"push 0";
+    "push 12632256"
+    "push 0"->"push 12632256";
+    "push 16"
+    "push 12632256"->"push 16";
+    "push 16"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "arraywrite.r"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 25"
+    "load.r r0"->"push 25";
+    "push 300"
+    "push 25"->"push 300";
+    "push 300"->"push 10";
+    "push 150"
+    "push 10"->"push 150";
+    "push 150"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "store.i i0"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"store.i i0";
+    "store.i i0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 26"
+    "load.r r0"->"push 26";
+    "push 200"
+    "push 26"->"push 200";
+    "push 200"->"push 10";
+    "push 30"
+    "push 10"->"push 30";
+    "push 30"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "store.i i1"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"store.i i1";
+    "load.i i1"
+    "store.i i1"->"load.i i1";
+    "load.i i1"->"load.r r0";
+    "push 29"
+    "load.r r0"->"push 29";
+    "push 29"->"push 200";
+    "push 200"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "add.i"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"add.i";
+    "fieldput <sm5trial: int x28>"
+    "add.i"->"fieldput <sm5trial: int x28>";
+    "new java.awt.Dimension"
+    "fieldput <sm5trial: int x28>"->"new java.awt.Dimension";
+    "new java.awt.Dimension"->"dup1.r";
+    "load.i i0"
+    "dup1.r"->"load.i i0";
+    "load.i i0"->"load.i i1";
+    "specialinvoke <java.awt.Dimension: void <init>(int,int)>"
+    "load.i i1"->"specialinvoke <java.awt.Dimension: void <init>(int,int)>";
+    "fieldput <sm5trial: java.awt.Dimension x9>"
+    "specialinvoke <java.awt.Dimension: void <init>(int,int)>"->"fieldput <sm5trial: java.awt.Dimension x9>";
+    "fieldput <sm5trial: java.awt.Dimension x9>"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.awt.Color[] x5>";
+    "fieldget <sm5trial: java.awt.Color[] x5>"->"push 0";
+    "push 0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "push 40"
+    "load.r r0"->"push 40";
+    "push 40"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 16";
+    "push 16"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 42"
+    "load.r r0"->"push 42";
+    "push 42"->"push \" \"";
+    "push \" \""->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "fieldput <sm5trial: java.lang.String x36>"
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"fieldput <sm5trial: java.lang.String x36>";
+    "fieldput <sm5trial: java.lang.String x36>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 43"
+    "load.r r0"->"push 43";
+    "push 43"->"push \" \"";
+    "push \" \""->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "fieldput <sm5trial: java.lang.String x4>"
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"fieldput <sm5trial: java.lang.String x4>";
+    "fieldput <sm5trial: java.lang.String x4>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "fieldput <sm5trial: java.net.URL x7>"
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"fieldput <sm5trial: java.net.URL x7>";
+    "fieldput <sm5trial: java.net.URL x7>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+    "fieldput <sm5trial: java.net.URL x3>"
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"fieldput <sm5trial: java.net.URL x3>";
+    "fieldput <sm5trial: java.net.URL x3>"->"load.r r0";
+    "new java.net.URL"
+    "load.r r0"->"new java.net.URL";
+    "new java.net.URL"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "fieldget <sm5trial: java.net.URL x7>"
+    "load.r r0"->"fieldget <sm5trial: java.net.URL x7>";
+    "fieldget <sm5trial: java.net.URL x7>"->"load.r r0";
+    "push 44"
+    "load.r r0"->"push 44";
+    "push 44"->"push null";
+    "push null"->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+    "fieldput <sm5trial: java.net.URL x10>"
+    "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"fieldput <sm5trial: java.net.URL x10>";
+    "goto load.r r0"
+    "fieldput <sm5trial: java.net.URL x10>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 46"
+    "load.r r0"->"push 46";
+    "push 5"
+    "push 46"->"push 5";
+    "push -5"
+    "push 5"->"push -5";
+    "push -5"->"push 1";
+    "push 1"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "fieldput <sm5trial: int x49>"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"fieldput <sm5trial: int x49>";
+    "fieldput <sm5trial: int x49>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push 47"
+    "load.r r0"->"push 47";
+    "push 47"->"push 5";
+    "push 5"->"push -5";
+    "push -5"->"push 1";
+    "push 1"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "fieldput <sm5trial: int x50>"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"fieldput <sm5trial: int x50>";
+    "fieldput <sm5trial: int x50>"->"push 0";
+    "push 0"->"store.i i0";
+    "store.i i0"->"load.r r0";
+    "fieldget <sm5trial: java.lang.String[] x37>"
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 0";
+    "push 0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "push \"sub\""
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"push \"sub\"";
+    "push \"sub\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.i i0";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"
+    "load.i i0"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "fieldget <sm5trial: java.lang.String[][] x43>"
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[][] x43>";
+    "fieldget <sm5trial: java.lang.String[][] x43>"->"load.i i0";
+    "arrayread.r"
+    "load.i i0"->"arrayread.r";
+    "arrayread.r"->"push 0";
+    "push 0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push \"LINK:\""
+    "push 0"->"push \"LINK:\"";
+    "push \"LINK:\""->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[][] x43>";
+    "fieldget <sm5trial: java.lang.String[][] x43>"->"load.i i0";
+    "load.i i0"->"arrayread.r";
+    "arrayread.r"->"push 1";
+    "push 1"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"push \"sub\"";
+    "push \"sub\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.i i0";
+    "load.i i0"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "push \":\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"push \":\"";
+    "push \":\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"arraywrite.r";
+    "inc.i i0 1"
+    "arraywrite.r"->"inc.i i0 1";
+    "inc.i i0 1"->"load.i i0";
+    "load.i i0"->"push 10";
+    "ifcmplt.i load.r r0"
+    "push 10"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.awt.Color[] x5>";
+    "fieldget <sm5trial: java.awt.Color[] x5>"->"push 2";
+    "staticget <java.awt.Color: java.awt.Color orange>"
+    "push 2"->"staticget <java.awt.Color: java.awt.Color orange>";
+    "staticget <java.awt.Color: java.awt.Color orange>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <sm5trial: int x42>"
+    "load.r r0"->"fieldget <sm5trial: int x42>";
+    "fieldget <sm5trial: int x42>"->"push 2";
+    "newmultiarray 2"
+    "push 2"->"newmultiarray 2";
+    "fieldput <sm5trial: java.awt.Font[][] x47>"
+    "newmultiarray 2"->"fieldput <sm5trial: java.awt.Font[][] x47>";
+    "fieldput <sm5trial: java.awt.Font[][] x47>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: int x42>";
+    "push 6"
+    "fieldget <sm5trial: int x42>"->"push 6";
+    "push 6"->"newmultiarray 2";
+    "fieldput <sm5trial: java.awt.Color[][] x46>"
+    "newmultiarray 2"->"fieldput <sm5trial: java.awt.Color[][] x46>";
+    "fieldput <sm5trial: java.awt.Color[][] x46>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: int x42>";
+    "fieldget <sm5trial: int x42>"->"push 5";
+    "push 5"->"newmultiarray 2";
+    "fieldput <sm5trial: byte[][] x48>"
+    "newmultiarray 2"->"fieldput <sm5trial: byte[][] x48>";
+    "fieldput <sm5trial: byte[][] x48>"->"push 0";
+    "push 0"->"store.i i0";
+    "store.i i0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 0";
+    "push 0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 2";
+    "push 2"->"load.i i0";
+    "load.i i0"->"add.i";
+    "add.i"->"arrayread.r";
+    "arrayread.r"->"arraywrite.r";
+    "staticget <java.awt.Color: java.awt.Color black>"
+    "arraywrite.r"->"staticget <java.awt.Color: java.awt.Color black>";
+    "virtualinvoke <java.awt.Color: int getRGB()>"
+    "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Color: int getRGB()>";
+    "virtualinvoke <java.awt.Color: int getRGB()>"->"store.i i1";
+    "store.i i1"->"load.i i0";
+    "load.i i0"->"push 2";
+    "ifcmpne.i load.i i0"
+    "push 2"->"ifcmpne.i load.i i0";
+    "staticget <java.awt.Color: java.awt.Color blue>"
+    "ifcmpne.i load.i i0"->"staticget <java.awt.Color: java.awt.Color blue>";
+    "staticget <java.awt.Color: java.awt.Color blue>"->"virtualinvoke <java.awt.Color: int getRGB()>";
+    "virtualinvoke <java.awt.Color: int getRGB()>"->"store.i i1";
+    "store.i i1"->"load.i i0";
+    "load.i i0"->"push 1";
+    "ifcmpne.i load.r r0"
+    "push 1"->"ifcmpne.i load.r r0";
+    "staticget <java.awt.Color: java.awt.Color red>"
+    "ifcmpne.i load.r r0"->"staticget <java.awt.Color: java.awt.Color red>";
+    "staticget <java.awt.Color: java.awt.Color red>"->"virtualinvoke <java.awt.Color: int getRGB()>";
+    "virtualinvoke <java.awt.Color: int getRGB()>"->"store.i i1";
+    "store.i i1"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 16";
+    "push 16"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"store.i i1";
+    "store.i i1"->"push 0";
+    "push 0"->"store.i i35";
+    "goto load.i i35"
+    "store.i i35"->"goto load.i i35";
+    "load.i i35"
+    "goto load.i i35"->"load.i i35";
+    "load.i i35"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: int x42>";
+    "fieldget <sm5trial: int x42>"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"inc.i i0 1";
+    "inc.i i0 1"->"load.i i0";
+    "load.i i0"->"push 3";
+    "push 3"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"push 5";
+    "push 5"->"newarray";
+    "store.r i35"
+    "newarray"->"store.r i35";
+    "store.r i35"->"load.r r0";
+    "load.r r0"->"push 6";
+    "push 6"->"push 3";
+    "push 3"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "store.i i41"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"store.i i41";
+    "store.i i41"->"load.r r0";
+    "push 8"
+    "load.r r0"->"push 8";
+    "push \"TimesRoman\""
+    "push 8"->"push \"TimesRoman\"";
+    "push \"TimesRoman\""->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r r0";
+    "push 9"
+    "load.r r0"->"push 9";
+    "push 9"->"push 30";
+    "push 30"->"push 6";
+    "push 11"
+    "push 6"->"push 11";
+    "push 11"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"store.i i1";
+    "store.i i1"->"push 0";
+    "store.i i42"
+    "push 0"->"store.i i42";
+    "load.r i35"
+    "store.i i42"->"load.r i35";
+    "load.i i42"
+    "load.r i35"->"load.i i42";
+    "load.i i42"->"load.r r0";
+    "load.r r0"->"push 10";
+    "push 10"->"load.i i42";
+    "load.i i42"->"add.i";
+    "add.i"->"push 50";
+    "push -50"
+    "push 50"->"push -50";
+    "push -50"->"push 0";
+    "push 0"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "arraywrite.i"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"arraywrite.i";
+    "inc.i i42 1"
+    "arraywrite.i"->"inc.i i42 1";
+    "inc.i i42 1"->"load.i i42";
+    "push 4"
+    "load.i i42"->"push 4";
+    "ifcmplt.i load.r i35"
+    "push 4"->"ifcmplt.i load.r i35";
+    "ifcmplt.i load.r i35"->"load.r i35";
+    "load.r i35"->"push 4";
+    "push 4"->"load.r r0";
+    "push 14"
+    "load.r r0"->"push 14";
+    "push 14"->"push 50";
+    "push 50"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"arraywrite.i";
+    "arraywrite.i"->"push 0";
+    "push 0"->"store.i i42";
+    "goto load.i i42"
+    "store.i i42"->"goto load.i i42";
+    "goto load.i i42"->"load.i i42";
+    "load.i i42"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: int x42>";
+    "fieldget <sm5trial: int x42>"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>";
+    "fieldget <java.awt.Rectangle: int width>"
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"->"fieldget <java.awt.Rectangle: int width>";
+    "fieldget <java.awt.Rectangle: int width>"->"store.i i0";
+    "store.i i0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.i i0";
+    "load.i i0"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>";
+    "fieldget <java.awt.Rectangle: int height>"
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"->"fieldget <java.awt.Rectangle: int height>";
+    "fieldget <java.awt.Rectangle: int height>"->"load.r r0";
+    "new java.awt.Rectangle"
+    "load.r r0"->"new java.awt.Rectangle";
+    "new java.awt.Rectangle"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"load.i i0";
+    "load.i i0"->"load.r r0";
+    "fieldget <sm5trial: int x28>"
+    "load.r r0"->"fieldget <sm5trial: int x28>";
+    "specialinvoke <java.awt.Rectangle: void <init>(int,int,int,int)>"
+    "fieldget <sm5trial: int x28>"->"specialinvoke <java.awt.Rectangle: void <init>(int,int,int,int)>";
+    "fieldput <sm5trial: java.awt.Rectangle x40>"
+    "specialinvoke <java.awt.Rectangle: void <init>(int,int,int,int)>"->"fieldput <sm5trial: java.awt.Rectangle x40>";
+    "fieldput <sm5trial: java.awt.Rectangle x40>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.i i0";
+    "load.i i0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: int x28>";
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"
+    "fieldget <sm5trial: int x28>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+    "fieldput <sm5trial: java.awt.Image x19>"
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <sm5trial: java.awt.Image x19>";
+    "fieldput <sm5trial: java.awt.Image x19>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <sm5trial: java.awt.Image x19>"
+    "load.r r0"->"fieldget <sm5trial: java.awt.Image x19>";
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"
+    "fieldget <sm5trial: java.awt.Image x19>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+    "fieldput <sm5trial: java.awt.Graphics x16>"
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <sm5trial: java.awt.Graphics x16>";
+    "fieldput <sm5trial: java.awt.Graphics x16>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+    "fieldput <sm5trial: java.awt.Image x22>"
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <sm5trial: java.awt.Image x22>";
+    "fieldput <sm5trial: java.awt.Image x22>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <sm5trial: java.awt.Image x22>"
+    "load.r r0"->"fieldget <sm5trial: java.awt.Image x22>";
+    "fieldget <sm5trial: java.awt.Image x22>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+    "fieldput <sm5trial: java.awt.Graphics x17>"
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <sm5trial: java.awt.Graphics x17>";
+    "fieldput <sm5trial: java.awt.Graphics x17>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+    "fieldput <sm5trial: java.awt.Graphics x29>"
+    "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"fieldput <sm5trial: java.awt.Graphics x29>";
+    "fieldput <sm5trial: java.awt.Graphics x29>"->"staticinvoke <java.lang.System: void gc()>";
+    "return"
+    "staticinvoke <java.lang.System: void gc()>"->"return";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 0";
+    "push 0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 8";
+    "push 8"->"arrayread.r";
+    "arrayread.r"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.i i42";
+    "load.i i42"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"load.r i0";
+    "load.r i0"->"specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>";
+    "store.r r114"
+    "specialinvoke <sm5trial: java.lang.String x0(int,java.lang.String)>"->"store.r r114";
+    "store.r r114"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 0";
+    "push 0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 9";
+    "push 9"->"arrayread.r";
+    "arrayread.r"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.i i42";
+    "load.i i42"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"push 30";
+    "push 30"->"push 6";
+    "push 6"->"load.i i1";
+    "load.i i1"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "store.i i3"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"store.i i3";
+    "store.i i3"->"push 0";
+    "store.i i44"
+    "push 0"->"store.i i44";
+    "store.i i44"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 0";
+    "push 0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 6";
+    "push 6"->"arrayread.r";
+    "arrayread.r"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.i i42";
+    "load.i i42"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"push 3";
+    "push 3"->"push 0";
+    "load.i i41"
+    "push 0"->"load.i i41";
+    "load.i i41"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "store.i i4"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"store.i i4";
+    "store.i i4"->"load.r r0";
+    "fieldget <sm5trial: java.awt.Font[][] x47>"
+    "load.r r0"->"fieldget <sm5trial: java.awt.Font[][] x47>";
+    "fieldget <sm5trial: java.awt.Font[][] x47>"->"load.i i42";
+    "load.i i42"->"arrayread.r";
+    "load.i i44"
+    "arrayread.r"->"load.i i44";
+    "new java.awt.Font"
+    "load.i i44"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "load.r r114"
+    "dup1.r"->"load.r r114";
+    "load.i i4"
+    "load.r r114"->"load.i i4";
+    "load.i i3"
+    "load.i i4"->"load.i i3";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "load.i i3"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"arraywrite.r";
+    "inc.i i44 1"
+    "arraywrite.r"->"inc.i i44 1";
+    "inc.i i44 1"->"load.i i44";
+    "load.i i44"->"push 2";
+    "push 2"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"push 0";
+    "push 0"->"store.i i3";
+    "store.i i3"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 0";
+    "push 0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 10";
+    "push 10"->"load.i i3";
+    "load.i i3"->"add.i";
+    "add.i"->"arrayread.r";
+    "arrayread.r"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.i i42";
+    "load.i i42"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"arraywrite.r";
+    "arraywrite.r"->"load.i i3";
+    "load.i i3"->"push 2";
+    "ifcmpne.i load.i i3"
+    "push 2"->"ifcmpne.i load.i i3";
+    "ifcmpne.i load.i i3"->"load.r r0";
+    "fieldget <sm5trial: byte[][] x48>"
+    "load.r r0"->"fieldget <sm5trial: byte[][] x48>";
+    "fieldget <sm5trial: byte[][] x48>"->"load.i i42";
+    "load.i i42"->"arrayread.r";
+    "arrayread.r"->"load.i i3";
+    "load.i i3"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 0";
+    "push 0"->"load.r i35";
+    "load.r i35"->"load.i i3";
+    "arrayread.i"
+    "load.i i3"->"arrayread.i";
+    "arrayread.i"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "i2b"
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"i2b";
+    "arraywrite.b"
+    "i2b"->"arraywrite.b";
+    "goto inc.i i3 1"
+    "arraywrite.b"->"goto inc.i i3 1";
+    "inc.i i3 1"
+    "goto inc.i i3 1"->"inc.i i3 1";
+    "inc.i i3 1"->"load.i i3";
+    "load.i i3"->"push 5";
+    "push 5"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"inc.i i42 1";
+    "ifcmpne.i load.i i3"->"load.i i3";
+    "load.i i3"->"push 4";
+    "push 4"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: byte[][] x48>";
+    "fieldget <sm5trial: byte[][] x48>"->"load.i i42";
+    "load.i i42"->"arrayread.r";
+    "arrayread.r"->"load.i i3";
+    "load.i i3"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"push 50";
+    "push 50"->"push 0";
+    "push 0"->"load.r i35";
+    "load.r i35"->"load.i i3";
+    "load.i i3"->"arrayread.i";
+    "arrayread.i"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"i2b";
+    "i2b"->"arraywrite.b";
+    "arraywrite.b"->"goto inc.i i3 1";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: byte[][] x48>";
+    "fieldget <sm5trial: byte[][] x48>"->"load.i i42";
+    "load.i i42"->"arrayread.r";
+    "arrayread.r"->"load.i i3";
+    "load.i i3"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"push 50";
+    "push 50"->"push -50";
+    "push -50"->"load.r i35";
+    "load.r i35"->"load.i i3";
+    "load.i i3"->"arrayread.i";
+    "arrayread.i"->"push 10";
+    "push 10"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"i2b";
+    "i2b"->"arraywrite.b";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 0";
+    "push 0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"push 2";
+    "push 2"->"load.i i0";
+    "load.i i0"->"add.i";
+    "add.i"->"arrayread.r";
+    "arrayread.r"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.i i35";
+    "load.i i35"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "fieldget <sm5trial: java.awt.Color[][] x46>"
+    "load.r r0"->"fieldget <sm5trial: java.awt.Color[][] x46>";
+    "fieldget <sm5trial: java.awt.Color[][] x46>"->"load.i i35";
+    "load.i i35"->"arrayread.r";
+    "arrayread.r"->"load.i i0";
+    "load.i i0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 16";
+    "push 16"->"specialinvoke <sm5trial: int x0(int,int,int,int,int)>";
+    "specialinvoke <sm5trial: int x0(int,int,int,int,int)>"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"arraywrite.r";
+    "inc.i i35 1"
+    "arraywrite.r"->"inc.i i35 1";
+    "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r r0";
+    "load.r r0"->"push null";
+    "push null"->"fieldput <sm5trial: java.net.URL x10>";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm5trial: java.lang.String[] x37>";
+    "fieldget <sm5trial: java.lang.String[] x37>"->"load.i i35";
+    "load.i i35"->"load.r i1";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"
+    "load.r i1"->"virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"->"arraywrite.r";
+    "arraywrite.r"->"inc.i i35 1";
+}

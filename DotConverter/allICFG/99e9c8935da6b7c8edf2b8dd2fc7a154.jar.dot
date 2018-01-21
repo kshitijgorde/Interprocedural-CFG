@@ -1,0 +1,26 @@
+digraph "" {
+    "r0 := @this: risco_table.TableApplet"
+    "load.r r0"
+    "r0 := @this: risco_table.TableApplet"->"load.r r0";
+    "fieldget <risco_table.TableApplet: risco_table.TableAppletArray m_oArray>"
+    "load.r r0"->"fieldget <risco_table.TableApplet: risco_table.TableAppletArray m_oArray>";
+    "ifnull load.r r0"
+    "fieldget <risco_table.TableApplet: risco_table.TableAppletArray m_oArray>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <risco_table.TableApplet: risco_table.TableAppletArray m_oArray>";
+    "virtualinvoke <risco_table.TableAppletArray: void init()>"
+    "fieldget <risco_table.TableApplet: risco_table.TableAppletArray m_oArray>"->"virtualinvoke <risco_table.TableAppletArray: void init()>";
+    "goto return"
+    "virtualinvoke <risco_table.TableAppletArray: void init()>"->"goto return";
+    "return"
+    "goto return"->"return";
+    "ifnull load.r r0"->"load.r r0";
+    "new java.awt.BorderLayout"
+    "load.r r0"->"new java.awt.BorderLayout";
+    "dup1.r"
+    "new java.awt.BorderLayout"->"dup1.r";
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+}

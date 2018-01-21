@@ -1,0 +1,163 @@
+digraph "" {
+    "r0 := @this: JavaWatch"
+    "load.r r0"
+    "r0 := @this: JavaWatch"->"load.r r0";
+    "new java.io.InputStreamReader"
+    "load.r r0"->"new java.io.InputStreamReader";
+    "store.r $r11"
+    "new java.io.InputStreamReader"->"store.r $r11";
+    "load.r $r11"
+    "store.r $r11"->"load.r $r11";
+    "new java.net.URL"
+    "load.r $r11"->"new java.net.URL";
+    "dup1.r"
+    "new java.net.URL"->"dup1.r";
+    "push \"http\""
+    "dup1.r"->"push \"http\"";
+    "push \"http\""->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+    "virtualinvoke <java.net.URL: java.lang.String getHost()>"
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String getHost()>";
+    "push 80"
+    "virtualinvoke <java.net.URL: java.lang.String getHost()>"->"push 80";
+    "push 80"->"load.r r0";
+    "push \"path\""
+    "load.r r0"->"push \"path\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"path\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "specialinvoke <java.net.URL: void <init>(java.lang.String,java.lang.String,int,java.lang.String)>"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"specialinvoke <java.net.URL: void <init>(java.lang.String,java.lang.String,int,java.lang.String)>";
+    "virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>"
+    "specialinvoke <java.net.URL: void <init>(java.lang.String,java.lang.String,int,java.lang.String)>"->"virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>";
+    "virtualinvoke <java.net.URLConnection: java.io.InputStream getInputStream()>"
+    "virtualinvoke <java.net.URL: java.net.URLConnection openConnection()>"->"virtualinvoke <java.net.URLConnection: java.io.InputStream getInputStream()>";
+    "specialinvoke <java.io.InputStreamReader: void <init>(java.io.InputStream)>"
+    "virtualinvoke <java.net.URLConnection: java.io.InputStream getInputStream()>"->"specialinvoke <java.io.InputStreamReader: void <init>(java.io.InputStream)>";
+    "new java.io.BufferedReader"
+    "specialinvoke <java.io.InputStreamReader: void <init>(java.io.InputStream)>"->"new java.io.BufferedReader";
+    "new java.io.BufferedReader"->"dup1.r";
+    "dup1.r"->"load.r $r11";
+    "specialinvoke <java.io.BufferedReader: void <init>(java.io.Reader)>"
+    "load.r $r11"->"specialinvoke <java.io.BufferedReader: void <init>(java.io.Reader)>";
+    "fieldput <JavaWatch: java.io.BufferedReader 'new'>"
+    "specialinvoke <java.io.BufferedReader: void <init>(java.io.Reader)>"->"fieldput <JavaWatch: java.io.BufferedReader 'new'>";
+    "fieldput <JavaWatch: java.io.BufferedReader 'new'>"->"load.r r0";
+    "new javax.swing.JDesktopPane"
+    "load.r r0"->"new javax.swing.JDesktopPane";
+    "new javax.swing.JDesktopPane"->"dup1.r";
+    "specialinvoke <javax.swing.JDesktopPane: void <init>()>"
+    "dup1.r"->"specialinvoke <javax.swing.JDesktopPane: void <init>()>";
+    "virtualinvoke <javax.swing.JApplet: void setContentPane(java.awt.Container)>"
+    "specialinvoke <javax.swing.JDesktopPane: void <init>()>"->"virtualinvoke <javax.swing.JApplet: void setContentPane(java.awt.Container)>";
+    "new v"
+    "virtualinvoke <javax.swing.JApplet: void setContentPane(java.awt.Container)>"->"new v";
+    "new v"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>"
+    "load.r r0"->"virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>";
+    "push 0"
+    "virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>"->"push 0";
+    "push 0"->"push 0";
+    "specialinvoke <v: void <init>(i,java.awt.Container,int,int)>"
+    "push 0"->"specialinvoke <v: void <init>(i,java.awt.Container,int,int)>";
+    "new l"
+    "specialinvoke <v: void <init>(i,java.awt.Container,int,int)>"->"new l";
+    "new l"->"load.r r0";
+    "specialinvoke <l: void <init>(i)>"
+    "load.r r0"->"specialinvoke <l: void <init>(i)>";
+    "new javax.swing.JInternalFrame"
+    "specialinvoke <l: void <init>(i)>"->"new javax.swing.JInternalFrame";
+    "new javax.swing.JInternalFrame"->"store.r $r11";
+    "store.r $r11"->"load.r $r11";
+    "push \"Speed\""
+    "load.r $r11"->"push \"Speed\"";
+    "push \"Speed\""->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 0";
+    "specialinvoke <javax.swing.JInternalFrame: void <init>(java.lang.String,boolean,boolean,boolean,boolean)>"
+    "push 0"->"specialinvoke <javax.swing.JInternalFrame: void <init>(java.lang.String,boolean,boolean,boolean,boolean)>";
+    "staticget <l: c 'byte'>"
+    "specialinvoke <javax.swing.JInternalFrame: void <init>(java.lang.String,boolean,boolean,boolean,boolean)>"->"staticget <l: c 'byte'>";
+    "fieldget <c: a.a.h do>"
+    "staticget <l: c 'byte'>"->"fieldget <c: a.a.h do>";
+    "store.r r4"
+    "fieldget <c: a.a.h do>"->"store.r r4";
+    "new java.awt.Frame"
+    "store.r r4"->"new java.awt.Frame";
+    "new java.awt.Frame"->"dup1.r";
+    "specialinvoke <java.awt.Frame: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.Frame: void <init>()>";
+    "load.r r4"
+    "specialinvoke <java.awt.Frame: void <init>()>"->"load.r r4";
+    "staticinvoke <a.a.b: a.a.b a(java.awt.Frame,a.a.h)>"
+    "load.r r4"->"staticinvoke <a.a.b: a.a.b a(java.awt.Frame,a.a.h)>";
+    "staticinvoke <a.a.b: a.a.b a(java.awt.Frame,a.a.h)>"->"store.r r4";
+    "store.r r4"->"load.r r4";
+    "virtualinvoke <a.a.b: void a()>"
+    "load.r r4"->"virtualinvoke <a.a.b: void a()>";
+    "virtualinvoke <a.a.b: void a()>"->"load.r $r11";
+    "virtualinvoke <javax.swing.JInternalFrame: java.awt.Container getContentPane()>"
+    "load.r $r11"->"virtualinvoke <javax.swing.JInternalFrame: java.awt.Container getContentPane()>";
+    "virtualinvoke <javax.swing.JInternalFrame: java.awt.Container getContentPane()>"->"load.r r4";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "load.r r4"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r $r11";
+    "load.r $r11"->"virtualinvoke <javax.swing.JInternalFrame: java.awt.Container getContentPane()>";
+    "new a.a.f"
+    "virtualinvoke <javax.swing.JInternalFrame: java.awt.Container getContentPane()>"->"new a.a.f";
+    "new a.a.f"->"dup1.r";
+    "new JavaWatch$3"
+    "dup1.r"->"new JavaWatch$3";
+    "new JavaWatch$3"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"load.r r4";
+    "specialinvoke <JavaWatch$3: void <init>(JavaWatch,a.a.b)>"
+    "load.r r4"->"specialinvoke <JavaWatch$3: void <init>(JavaWatch,a.a.b)>";
+    "push \"Set\""
+    "specialinvoke <JavaWatch$3: void <init>(JavaWatch,a.a.b)>"->"push \"Set\"";
+    "specialinvoke <a.a.f: void <init>(a.a.d,java.lang.String)>"
+    "push \"Set\""->"specialinvoke <a.a.f: void <init>(a.a.d,java.lang.String)>";
+    "specialinvoke <a.a.f: void <init>(a.a.d,java.lang.String)>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r $r11";
+    "load.r $r11"->"virtualinvoke <javax.swing.JInternalFrame: java.awt.Container getContentPane()>";
+    "staticinvoke <a.a.g: void 'if'(java.awt.Container)>"
+    "virtualinvoke <javax.swing.JInternalFrame: java.awt.Container getContentPane()>"->"staticinvoke <a.a.g: void 'if'(java.awt.Container)>";
+    "staticinvoke <a.a.g: void 'if'(java.awt.Container)>"->"load.r $r11";
+    "virtualinvoke <javax.swing.JInternalFrame: void pack()>"
+    "load.r $r11"->"virtualinvoke <javax.swing.JInternalFrame: void pack()>";
+    "virtualinvoke <javax.swing.JInternalFrame: void pack()>"->"load.r $r11";
+    "push 1"
+    "load.r $r11"->"push 1";
+    "virtualinvoke <javax.swing.JComponent: void setVisible(boolean)>"
+    "push 1"->"virtualinvoke <javax.swing.JComponent: void setVisible(boolean)>";
+    "virtualinvoke <javax.swing.JComponent: void setVisible(boolean)>"->"load.r $r11";
+    "push 100"
+    "load.r $r11"->"push 100";
+    "push 100"->"push 100";
+    "virtualinvoke <java.awt.Component: void setLocation(int,int)>"
+    "push 100"->"virtualinvoke <java.awt.Component: void setLocation(int,int)>";
+    "virtualinvoke <java.awt.Component: void setLocation(int,int)>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>";
+    "virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>"->"load.r $r11";
+    "load.r $r11"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "new java.lang.Thread"
+    "pop"->"new java.lang.Thread";
+    "new java.lang.Thread"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"
+    "load.r r0"->"specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>";
+    "virtualinvoke <java.lang.Thread: void start()>"
+    "specialinvoke <java.lang.Thread: void <init>(java.lang.Runnable)>"->"virtualinvoke <java.lang.Thread: void start()>";
+    "goto return"
+    "virtualinvoke <java.lang.Thread: void start()>"->"goto return";
+    "return"
+    "goto return"->"return";
+    "virtualinvoke <java.lang.Throwable: void printStackTrace()>"
+    "virtualinvoke <java.lang.Thread: void start()>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

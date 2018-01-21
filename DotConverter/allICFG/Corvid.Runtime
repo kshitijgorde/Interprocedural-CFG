@@ -1,0 +1,352 @@
+digraph "" {
+    "r0 := @parameter0: java.lang.String[]"
+    "i12 = -1"
+    "r0 := @parameter0: java.lang.String[]"->"i12 = -1";
+    "i13 = -1"
+    "i12 = -1"->"i13 = -1";
+    "z6 = 1"
+    "i13 = -1"->"z6 = 1";
+    "$r2 = new Corvid.Runtime"
+    "z6 = 1"->"$r2 = new Corvid.Runtime";
+    "specialinvoke $r2.<Corvid.Runtime: void <init>()>()"
+    "$r2 = new Corvid.Runtime"->"specialinvoke $r2.<Corvid.Runtime: void <init>()>()";
+    "r1 = $r2"
+    "specialinvoke $r2.<Corvid.Runtime: void <init>()>()"->"r1 = $r2";
+    "z7 = 0"
+    "r1 = $r2"->"z7 = 0";
+    "$r3 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>(\"java.io.tmpdir\")"
+    "z7 = 0"->"$r3 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>(\"java.io.tmpdir\")";
+    "r1.<Corvid.Runtime: java.lang.String SATempDir> = $r3"
+    "$r3 = staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>(\"java.io.tmpdir\")"->"r1.<Corvid.Runtime: java.lang.String SATempDir> = $r3";
+    "i14 = 0"
+    "r1.<Corvid.Runtime: java.lang.String SATempDir> = $r3"->"i14 = 0";
+    "if i14 >= 30 goto (branch)"
+    "i14 = 0"->"if i14 >= 30 goto (branch)";
+    "$r23 = r0[i14]"
+    "if i14 >= 30 goto (branch)"->"$r23 = r0[i14]";
+    "if $r23 != null goto $r24 = r0[i14]"
+    "$r23 = r0[i14]"->"if $r23 != null goto $r24 = r0[i14]";
+    "goto [?= (branch)]"
+    "if $r23 != null goto $r24 = r0[i14]"->"goto [?= (branch)]";
+    "goto [?= r1.<Corvid.Runtime: boolean isStandalone> = 1]"
+    "goto [?= (branch)]"->"goto [?= r1.<Corvid.Runtime: boolean isStandalone> = 1]";
+    "r1.<Corvid.Runtime: boolean isStandalone> = 1"
+    "goto [?= r1.<Corvid.Runtime: boolean isStandalone> = 1]"->"r1.<Corvid.Runtime: boolean isStandalone> = 1";
+    "r1.<Corvid.Runtime: boolean DoTrace> = 1"
+    "r1.<Corvid.Runtime: boolean isStandalone> = 1"->"r1.<Corvid.Runtime: boolean DoTrace> = 1";
+    "$r4 = new java.awt.Frame"
+    "r1.<Corvid.Runtime: boolean DoTrace> = 1"->"$r4 = new java.awt.Frame";
+    "specialinvoke $r4.<java.awt.Frame: void <init>()>()"
+    "$r4 = new java.awt.Frame"->"specialinvoke $r4.<java.awt.Frame: void <init>()>()";
+    "r52 = $r4"
+    "specialinvoke $r4.<java.awt.Frame: void <init>()>()"->"r52 = $r4";
+    "virtualinvoke r52.<java.awt.Frame: void setTitle(java.lang.String)>(\"Applet Frame\")"
+    "r52 = $r4"->"virtualinvoke r52.<java.awt.Frame: void setTitle(java.lang.String)>(\"Applet Frame\")";
+    "virtualinvoke r52.<java.awt.Container: void add(java.awt.Component,java.lang.Object)>(r1, \"Center\")"
+    "virtualinvoke r52.<java.awt.Frame: void setTitle(java.lang.String)>(\"Applet Frame\")"->"virtualinvoke r52.<java.awt.Container: void add(java.awt.Component,java.lang.Object)>(r1, \"Center\")";
+    "virtualinvoke r1.<Corvid.Runtime: void init()>()"
+    "virtualinvoke r52.<java.awt.Container: void add(java.awt.Component,java.lang.Object)>(r1, \"Center\")"->"virtualinvoke r1.<Corvid.Runtime: void init()>()";
+    "r1.<Corvid.Runtime: int displayMode> = 0"
+    "virtualinvoke r1.<Corvid.Runtime: void init()>()"->"r1.<Corvid.Runtime: int displayMode> = 0";
+    "if i12 != -1 goto r1.<Corvid.Runtime: int appletWidth> = i12"
+    "r1.<Corvid.Runtime: int displayMode> = 0"->"if i12 != -1 goto r1.<Corvid.Runtime: int appletWidth> = i12";
+    "$i11 = virtualinvoke r1.<java.awt.Component: int getWidth()>()"
+    "if i12 != -1 goto r1.<Corvid.Runtime: int appletWidth> = i12"->"$i11 = virtualinvoke r1.<java.awt.Component: int getWidth()>()";
+    "r1.<Corvid.Runtime: int appletWidth> = $i11"
+    "$i11 = virtualinvoke r1.<java.awt.Component: int getWidth()>()"->"r1.<Corvid.Runtime: int appletWidth> = $i11";
+    "r1.<Corvid.Runtime: int appletWidth> = $i11"->"goto [?= (branch)]";
+    "if i14 <= 1 goto (branch)"
+    "goto [?= (branch)]"->"if i14 <= 1 goto (branch)";
+    "$r14 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(\"file:///\")"
+    "if i14 <= 1 goto (branch)"->"$r14 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(\"file:///\")";
+    "$r15 = r0[0]"
+    "$r14 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>(\"file:///\")"->"$r15 = r0[0]";
+    "$r16 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r15)"
+    "$r15 = r0[0]"->"$r16 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r15)";
+    "$r17 = virtualinvoke $r14.<java.lang.String: java.lang.String concat(java.lang.String)>($r16)"
+    "$r16 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r15)"->"$r17 = virtualinvoke $r14.<java.lang.String: java.lang.String concat(java.lang.String)>($r16)";
+    "r1.<Corvid.Runtime: java.lang.String KBBase> = $r17"
+    "$r17 = virtualinvoke $r14.<java.lang.String: java.lang.String concat(java.lang.String)>($r16)"->"r1.<Corvid.Runtime: java.lang.String KBBase> = $r17";
+    "$r18 = r0[1]"
+    "r1.<Corvid.Runtime: java.lang.String KBBase> = $r17"->"$r18 = r0[1]";
+    "r1.<Corvid.Runtime: java.lang.String KBName> = $r18"
+    "$r18 = r0[1]"->"r1.<Corvid.Runtime: java.lang.String KBName> = $r18";
+    "$i8 = lengthof r0"
+    "r1.<Corvid.Runtime: java.lang.String KBName> = $r18"->"$i8 = lengthof r0";
+    "$r19 = newarray (java.lang.String)[$i8]"
+    "$i8 = lengthof r0"->"$r19 = newarray (java.lang.String)[$i8]";
+    "r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs> = $r19"
+    "$r19 = newarray (java.lang.String)[$i8]"->"r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs> = $r19";
+    "i15 = 2"
+    "r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs> = $r19"->"i15 = 2";
+    "$i9 = lengthof r0"
+    "i15 = 2"->"$i9 = lengthof r0";
+    "if i15 >= $i9 goto (branch)"
+    "$i9 = lengthof r0"->"if i15 >= $i9 goto (branch)";
+    "$r20 = r0[i15]"
+    "if i15 >= $i9 goto (branch)"->"$r20 = r0[i15]";
+    "$z1 = virtualinvoke $r20.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(\"HIDE_WINDOW\")"
+    "$r20 = r0[i15]"->"$z1 = virtualinvoke $r20.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(\"HIDE_WINDOW\")";
+    "if $z1 == 0 goto $r22 = r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs>"
+    "$z1 = virtualinvoke $r20.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(\"HIDE_WINDOW\")"->"if $z1 == 0 goto $r22 = r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs>";
+    "z6 = 0"
+    "if $z1 == 0 goto $r22 = r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs>"->"z6 = 0";
+    "goto [?= i15 = i15 + 1]"
+    "z6 = 0"->"goto [?= i15 = i15 + 1]";
+    "i15 = i15 + 1"
+    "goto [?= i15 = i15 + 1]"->"i15 = i15 + 1";
+    "goto [?= $i9 = lengthof r0]"
+    "i15 = i15 + 1"->"goto [?= $i9 = lengthof r0]";
+    "goto [?= $i9 = lengthof r0]"->"$i9 = lengthof r0";
+    "$r22 = r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs>"
+    "if $z1 == 0 goto $r22 = r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs>"->"$r22 = r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs>";
+    "$i10 = i15 - 1"
+    "$r22 = r1.<Corvid.Runtime: java.lang.String[] cmdLineArgs>"->"$i10 = i15 - 1";
+    "$r21 = r0[i15]"
+    "$i10 = i15 - 1"->"$r21 = r0[i15]";
+    "$r22[$i10] = $r21"
+    "$r21 = r0[i15]"->"$r22[$i10] = $r21";
+    "$r22[$i10] = $r21"->"i15 = i15 + 1";
+    "goto [?= i16 = 0]"
+    "if i15 >= $i9 goto (branch)"->"goto [?= i16 = 0]";
+    "i16 = 0"
+    "goto [?= i16 = 0]"->"i16 = 0";
+    "if i16 >= i14 goto $r7 = new java.net.URL"
+    "i16 = 0"->"if i16 >= i14 goto $r7 = new java.net.URL";
+    "$r12 = r0[i16]"
+    "if i16 >= i14 goto $r7 = new java.net.URL"->"$r12 = r0[i16]";
+    "$r13 = virtualinvoke $r12.<java.lang.String: java.lang.String toUpperCase()>()"
+    "$r12 = r0[i16]"->"$r13 = virtualinvoke $r12.<java.lang.String: java.lang.String toUpperCase()>()";
+    "$z0 = virtualinvoke $r13.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(\"TRACE\")"
+    "$r13 = virtualinvoke $r12.<java.lang.String: java.lang.String toUpperCase()>()"->"$z0 = virtualinvoke $r13.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(\"TRACE\")";
+    "if $z0 == 0 goto i16 = i16 + 1"
+    "$z0 = virtualinvoke $r13.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>(\"TRACE\")"->"if $z0 == 0 goto i16 = i16 + 1";
+    "if $z0 == 0 goto i16 = i16 + 1"->"r1.<Corvid.Runtime: boolean DoTrace> = 1";
+    "i16 = i16 + 1"
+    "r1.<Corvid.Runtime: boolean DoTrace> = 1"->"i16 = i16 + 1";
+    "i16 = i16 + 1"->"goto [?= (branch)]";
+    "goto [?= (branch)]"->"if i16 >= i14 goto $r7 = new java.net.URL";
+    "if $z0 == 0 goto i16 = i16 + 1"->"i16 = i16 + 1";
+    "$r7 = new java.net.URL"
+    "if i16 >= i14 goto $r7 = new java.net.URL"->"$r7 = new java.net.URL";
+    "$r8 = r1.<Corvid.Runtime: java.lang.String KBBase>"
+    "$r7 = new java.net.URL"->"$r8 = r1.<Corvid.Runtime: java.lang.String KBBase>";
+    "specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r8)"
+    "$r8 = r1.<Corvid.Runtime: java.lang.String KBBase>"->"specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r8)";
+    "r1.<Corvid.Runtime: java.net.URL baseURL> = $r7"
+    "specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r8)"->"r1.<Corvid.Runtime: java.net.URL baseURL> = $r7";
+    "r1.<Corvid.Runtime: java.net.URL baseURL> = $r7"->"goto [?= (branch)]";
+    "if i12 != -1 goto (branch)"
+    "goto [?= (branch)]"->"if i12 != -1 goto (branch)";
+    "i12 = 700"
+    "if i12 != -1 goto (branch)"->"i12 = 700";
+    "if i13 != -1 goto virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)"
+    "i12 = 700"->"if i13 != -1 goto virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)";
+    "i13 = 520"
+    "if i13 != -1 goto virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)"->"i13 = 520";
+    "virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)"
+    "i13 = 520"->"virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)";
+    "$r9 = staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>()"
+    "virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)"->"$r9 = staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>()";
+    "r54 = virtualinvoke $r9.<java.awt.Toolkit: java.awt.Dimension getScreenSize()>()"
+    "$r9 = staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>()"->"r54 = virtualinvoke $r9.<java.awt.Toolkit: java.awt.Dimension getScreenSize()>()";
+    "$i0 = r54.<java.awt.Dimension: int width>"
+    "r54 = virtualinvoke $r9.<java.awt.Toolkit: java.awt.Dimension getScreenSize()>()"->"$i0 = r54.<java.awt.Dimension: int width>";
+    "$r10 = virtualinvoke r52.<java.awt.Component: java.awt.Dimension getSize()>()"
+    "$i0 = r54.<java.awt.Dimension: int width>"->"$r10 = virtualinvoke r52.<java.awt.Component: java.awt.Dimension getSize()>()";
+    "$i1 = $r10.<java.awt.Dimension: int width>"
+    "$r10 = virtualinvoke r52.<java.awt.Component: java.awt.Dimension getSize()>()"->"$i1 = $r10.<java.awt.Dimension: int width>";
+    "$i2 = $i0 - $i1"
+    "$i1 = $r10.<java.awt.Dimension: int width>"->"$i2 = $i0 - $i1";
+    "$i3 = $i2 / 2"
+    "$i2 = $i0 - $i1"->"$i3 = $i2 / 2";
+    "$i4 = r54.<java.awt.Dimension: int height>"
+    "$i3 = $i2 / 2"->"$i4 = r54.<java.awt.Dimension: int height>";
+    "$r11 = virtualinvoke r52.<java.awt.Component: java.awt.Dimension getSize()>()"
+    "$i4 = r54.<java.awt.Dimension: int height>"->"$r11 = virtualinvoke r52.<java.awt.Component: java.awt.Dimension getSize()>()";
+    "$i5 = $r11.<java.awt.Dimension: int height>"
+    "$r11 = virtualinvoke r52.<java.awt.Component: java.awt.Dimension getSize()>()"->"$i5 = $r11.<java.awt.Dimension: int height>";
+    "$i6 = $i4 - $i5"
+    "$i5 = $r11.<java.awt.Dimension: int height>"->"$i6 = $i4 - $i5";
+    "$i7 = $i6 / 2"
+    "$i6 = $i4 - $i5"->"$i7 = $i6 / 2";
+    "virtualinvoke r52.<java.awt.Component: void setLocation(int,int)>($i3, $i7)"
+    "$i7 = $i6 / 2"->"virtualinvoke r52.<java.awt.Component: void setLocation(int,int)>($i3, $i7)";
+    "virtualinvoke r52.<java.awt.Component: void setVisible(boolean)>(z6)"
+    "virtualinvoke r52.<java.awt.Component: void setLocation(int,int)>($i3, $i7)"->"virtualinvoke r52.<java.awt.Component: void setVisible(boolean)>(z6)";
+    "r1.<Corvid.Runtime: Corvid.ExecKBThread runningKBThread> = null"
+    "virtualinvoke r52.<java.awt.Component: void setVisible(boolean)>(z6)"->"r1.<Corvid.Runtime: Corvid.ExecKBThread runningKBThread> = null";
+    "virtualinvoke r1.<Corvid.Runtime: void myStart()>()"
+    "r1.<Corvid.Runtime: Corvid.ExecKBThread runningKBThread> = null"->"virtualinvoke r1.<Corvid.Runtime: void myStart()>()";
+    "return"
+    "virtualinvoke r1.<Corvid.Runtime: void myStart()>()"->"return";
+    "if i13 != -1 goto virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)"->"virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)";
+    "if i12 != -1 goto (branch)"->"if i13 != -1 goto virtualinvoke r52.<java.awt.Component: void setSize(int,int)>(i12, i13)";
+    "$r47 := @caughtexception"
+    "specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r8)"->"$r47 := @caughtexception";
+    "r53 = $r47"
+    "$r47 := @caughtexception"->"r53 = $r47";
+    "r53 = $r47"->"if i12 != -1 goto (branch)";
+    "$r8 = r1.<Corvid.Runtime: java.lang.String KBBase>"->"$r47 := @caughtexception";
+    "if i14 != 1 goto $r5 = <java.lang.System: java.io.PrintStream out>"
+    "if i14 <= 1 goto (branch)"->"if i14 != 1 goto $r5 = <java.lang.System: java.io.PrintStream out>";
+    "r1.<Corvid.Runtime: java.lang.String KBBase> = \"file:///\""
+    "if i14 != 1 goto $r5 = <java.lang.System: java.io.PrintStream out>"->"r1.<Corvid.Runtime: java.lang.String KBBase> = \"file:///\"";
+    "$r6 = r0[0]"
+    "r1.<Corvid.Runtime: java.lang.String KBBase> = \"file:///\""->"$r6 = r0[0]";
+    "r1.<Corvid.Runtime: java.lang.String KBName> = $r6"
+    "$r6 = r0[0]"->"r1.<Corvid.Runtime: java.lang.String KBName> = $r6";
+    "r1.<Corvid.Runtime: java.lang.String KBName> = $r6"->"goto [?= i16 = 0]";
+    "goto [?= i16 = 0]"->"i16 = 0";
+    "$r5 = <java.lang.System: java.io.PrintStream out>"
+    "if i14 != 1 goto $r5 = <java.lang.System: java.io.PrintStream out>"->"$r5 = <java.lang.System: java.io.PrintStream out>";
+    "virtualinvoke $r5.<java.io.PrintStream: void print(java.lang.String)>(\"No CVR file specified to run\n\")"
+    "$r5 = <java.lang.System: java.io.PrintStream out>"->"virtualinvoke $r5.<java.io.PrintStream: void print(java.lang.String)>(\"No CVR file specified to run\n\")";
+    "virtualinvoke $r5.<java.io.PrintStream: void print(java.lang.String)>(\"No CVR file specified to run\n\")"->"return";
+    "r1.<Corvid.Runtime: int appletWidth> = i12"
+    "if i12 != -1 goto r1.<Corvid.Runtime: int appletWidth> = i12"->"r1.<Corvid.Runtime: int appletWidth> = i12";
+    "r1.<Corvid.Runtime: int appletWidth> = i12"->"if i14 <= 1 goto (branch)";
+    "$r24 = r0[i14]"
+    "if $r23 != null goto $r24 = r0[i14]"->"$r24 = r0[i14]";
+    "$z2 = virtualinvoke $r24.<java.lang.String: boolean startsWith(java.lang.String)>(\"EmulateServlet-\")"
+    "$r24 = r0[i14]"->"$z2 = virtualinvoke $r24.<java.lang.String: boolean startsWith(java.lang.String)>(\"EmulateServlet-\")";
+    "if $z2 == 0 goto $r25 = r0[i14]"
+    "$z2 = virtualinvoke $r24.<java.lang.String: boolean startsWith(java.lang.String)>(\"EmulateServlet-\")"->"if $z2 == 0 goto $r25 = r0[i14]";
+    "r1.<Corvid.Runtime: boolean EmulateServlet> = 1"
+    "if $z2 == 0 goto $r25 = r0[i14]"->"r1.<Corvid.Runtime: boolean EmulateServlet> = 1";
+    "$r39 = r0[0]"
+    "r1.<Corvid.Runtime: boolean EmulateServlet> = 1"->"$r39 = r0[0]";
+    "$r40 = virtualinvoke $r39.<java.lang.String: java.lang.String trim()>()"
+    "$r39 = r0[0]"->"$r40 = virtualinvoke $r39.<java.lang.String: java.lang.String trim()>()";
+    "$r41 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r40)"
+    "$r40 = virtualinvoke $r39.<java.lang.String: java.lang.String trim()>()"->"$r41 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r40)";
+    "$r42 = r0[i14]"
+    "$r41 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r40)"->"$r42 = r0[i14]";
+    "$r43 = virtualinvoke $r42.<java.lang.String: java.lang.String substring(int)>(15)"
+    "$r42 = r0[i14]"->"$r43 = virtualinvoke $r42.<java.lang.String: java.lang.String substring(int)>(15)";
+    "$r44 = virtualinvoke $r43.<java.lang.String: java.lang.String trim()>()"
+    "$r43 = virtualinvoke $r42.<java.lang.String: java.lang.String substring(int)>(15)"->"$r44 = virtualinvoke $r43.<java.lang.String: java.lang.String trim()>()";
+    "$r45 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r44)"
+    "$r44 = virtualinvoke $r43.<java.lang.String: java.lang.String trim()>()"->"$r45 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r44)";
+    "$r46 = virtualinvoke $r41.<java.lang.String: java.lang.String concat(java.lang.String)>($r45)"
+    "$r45 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r44)"->"$r46 = virtualinvoke $r41.<java.lang.String: java.lang.String concat(java.lang.String)>($r45)";
+    "r1.<Corvid.Runtime: java.lang.String EmulateServletFile> = $r46"
+    "$r46 = virtualinvoke $r41.<java.lang.String: java.lang.String concat(java.lang.String)>($r45)"->"r1.<Corvid.Runtime: java.lang.String EmulateServletFile> = $r46";
+    "r0[i14] = \"\""
+    "r1.<Corvid.Runtime: java.lang.String EmulateServletFile> = $r46"->"r0[i14] = \"\"";
+    "$r25 = r0[i14]"
+    "r0[i14] = \"\""->"$r25 = r0[i14]";
+    "$z3 = virtualinvoke $r25.<java.lang.String: boolean startsWith(java.lang.String)>(\"Width-\")"
+    "$r25 = r0[i14]"->"$z3 = virtualinvoke $r25.<java.lang.String: boolean startsWith(java.lang.String)>(\"Width-\")";
+    "if $z3 == 0 goto $r26 = r0[i14]"
+    "$z3 = virtualinvoke $r25.<java.lang.String: boolean startsWith(java.lang.String)>(\"Width-\")"->"if $z3 == 0 goto $r26 = r0[i14]";
+    "$r35 = new java.lang.Long"
+    "if $z3 == 0 goto $r26 = r0[i14]"->"$r35 = new java.lang.Long";
+    "$r36 = r0[i14]"
+    "$r35 = new java.lang.Long"->"$r36 = r0[i14]";
+    "$r37 = virtualinvoke $r36.<java.lang.String: java.lang.String substring(int)>(6)"
+    "$r36 = r0[i14]"->"$r37 = virtualinvoke $r36.<java.lang.String: java.lang.String substring(int)>(6)";
+    "$r38 = virtualinvoke $r37.<java.lang.String: java.lang.String trim()>()"
+    "$r37 = virtualinvoke $r36.<java.lang.String: java.lang.String substring(int)>(6)"->"$r38 = virtualinvoke $r37.<java.lang.String: java.lang.String trim()>()";
+    "specialinvoke $r35.<java.lang.Long: void <init>(java.lang.String)>($r38)"
+    "$r38 = virtualinvoke $r37.<java.lang.String: java.lang.String trim()>()"->"specialinvoke $r35.<java.lang.Long: void <init>(java.lang.String)>($r38)";
+    "r49 = $r35"
+    "specialinvoke $r35.<java.lang.Long: void <init>(java.lang.String)>($r38)"->"r49 = $r35";
+    "i12 = virtualinvoke r49.<java.lang.Long: int intValue()>()"
+    "r49 = $r35"->"i12 = virtualinvoke r49.<java.lang.Long: int intValue()>()";
+    "i12 = virtualinvoke r49.<java.lang.Long: int intValue()>()"->"r0[i14] = \"\"";
+    "$r26 = r0[i14]"
+    "r0[i14] = \"\""->"$r26 = r0[i14]";
+    "$z4 = virtualinvoke $r26.<java.lang.String: boolean startsWith(java.lang.String)>(\"Height-\")"
+    "$r26 = r0[i14]"->"$z4 = virtualinvoke $r26.<java.lang.String: boolean startsWith(java.lang.String)>(\"Height-\")";
+    "if $z4 == 0 goto $r27 = r0[i14]"
+    "$z4 = virtualinvoke $r26.<java.lang.String: boolean startsWith(java.lang.String)>(\"Height-\")"->"if $z4 == 0 goto $r27 = r0[i14]";
+    "$r31 = new java.lang.Long"
+    "if $z4 == 0 goto $r27 = r0[i14]"->"$r31 = new java.lang.Long";
+    "$r32 = r0[i14]"
+    "$r31 = new java.lang.Long"->"$r32 = r0[i14]";
+    "$r33 = virtualinvoke $r32.<java.lang.String: java.lang.String substring(int)>(6)"
+    "$r32 = r0[i14]"->"$r33 = virtualinvoke $r32.<java.lang.String: java.lang.String substring(int)>(6)";
+    "$r34 = virtualinvoke $r33.<java.lang.String: java.lang.String trim()>()"
+    "$r33 = virtualinvoke $r32.<java.lang.String: java.lang.String substring(int)>(6)"->"$r34 = virtualinvoke $r33.<java.lang.String: java.lang.String trim()>()";
+    "specialinvoke $r31.<java.lang.Long: void <init>(java.lang.String)>($r34)"
+    "$r34 = virtualinvoke $r33.<java.lang.String: java.lang.String trim()>()"->"specialinvoke $r31.<java.lang.Long: void <init>(java.lang.String)>($r34)";
+    "r50 = $r31"
+    "specialinvoke $r31.<java.lang.Long: void <init>(java.lang.String)>($r34)"->"r50 = $r31";
+    "i13 = virtualinvoke r50.<java.lang.Long: int intValue()>()"
+    "r50 = $r31"->"i13 = virtualinvoke r50.<java.lang.Long: int intValue()>()";
+    "i13 = virtualinvoke r50.<java.lang.Long: int intValue()>()"->"r0[i14] = \"\"";
+    "$r27 = r0[i14]"
+    "r0[i14] = \"\""->"$r27 = r0[i14]";
+    "$z5 = virtualinvoke $r27.<java.lang.String: boolean startsWith(java.lang.String)>(\"CORVIDBrowser-\")"
+    "$r27 = r0[i14]"->"$z5 = virtualinvoke $r27.<java.lang.String: boolean startsWith(java.lang.String)>(\"CORVIDBrowser-\")";
+    "if $z5 == 0 goto i14 = i14 + 1"
+    "$z5 = virtualinvoke $r27.<java.lang.String: boolean startsWith(java.lang.String)>(\"CORVIDBrowser-\")"->"if $z5 == 0 goto i14 = i14 + 1";
+    "$r28 = r0[i14]"
+    "if $z5 == 0 goto i14 = i14 + 1"->"$r28 = r0[i14]";
+    "$r29 = virtualinvoke $r28.<java.lang.String: java.lang.String substring(int)>(14)"
+    "$r28 = r0[i14]"->"$r29 = virtualinvoke $r28.<java.lang.String: java.lang.String substring(int)>(14)";
+    "$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()"
+    "$r29 = virtualinvoke $r28.<java.lang.String: java.lang.String substring(int)>(14)"->"$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()";
+    "r1.<Corvid.Runtime: java.lang.String CorvidBrowserProgram> = $r30"
+    "$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()"->"r1.<Corvid.Runtime: java.lang.String CorvidBrowserProgram> = $r30";
+    "r1.<Corvid.Runtime: java.lang.String CorvidBrowserProgram> = $r30"->"r0[i14] = \"\"";
+    "i14 = i14 + 1"
+    "r0[i14] = \"\""->"i14 = i14 + 1";
+    "i14 = i14 + 1"->"goto [?= (branch)]";
+    "goto [?= (branch)]"->"if i14 >= 30 goto (branch)";
+    "$r48 := @caughtexception"
+    "r1.<Corvid.Runtime: java.lang.String CorvidBrowserProgram> = $r30"->"$r48 := @caughtexception";
+    "r51 = $r48"
+    "$r48 := @caughtexception"->"r51 = $r48";
+    "r51 = $r48"->"r1.<Corvid.Runtime: boolean isStandalone> = 1";
+    "$r30 = virtualinvoke $r29.<java.lang.String: java.lang.String trim()>()"->"$r48 := @caughtexception";
+    "$r29 = virtualinvoke $r28.<java.lang.String: java.lang.String substring(int)>(14)"->"$r48 := @caughtexception";
+    "$r28 = r0[i14]"->"$r48 := @caughtexception";
+    "if $z5 == 0 goto i14 = i14 + 1"->"i14 = i14 + 1";
+    "if $z5 == 0 goto i14 = i14 + 1"->"$r48 := @caughtexception";
+    "$z5 = virtualinvoke $r27.<java.lang.String: boolean startsWith(java.lang.String)>(\"CORVIDBrowser-\")"->"$r48 := @caughtexception";
+    "$r27 = r0[i14]"->"$r48 := @caughtexception";
+    "r0[i14] = \"\""->"$r48 := @caughtexception";
+    "i13 = virtualinvoke r50.<java.lang.Long: int intValue()>()"->"$r48 := @caughtexception";
+    "r50 = $r31"->"$r48 := @caughtexception";
+    "specialinvoke $r31.<java.lang.Long: void <init>(java.lang.String)>($r34)"->"$r48 := @caughtexception";
+    "$r34 = virtualinvoke $r33.<java.lang.String: java.lang.String trim()>()"->"$r48 := @caughtexception";
+    "$r33 = virtualinvoke $r32.<java.lang.String: java.lang.String substring(int)>(6)"->"$r48 := @caughtexception";
+    "$r32 = r0[i14]"->"$r48 := @caughtexception";
+    "$r31 = new java.lang.Long"->"$r48 := @caughtexception";
+    "if $z4 == 0 goto $r27 = r0[i14]"->"$r27 = r0[i14]";
+    "if $z4 == 0 goto $r27 = r0[i14]"->"$r48 := @caughtexception";
+    "$z4 = virtualinvoke $r26.<java.lang.String: boolean startsWith(java.lang.String)>(\"Height-\")"->"$r48 := @caughtexception";
+    "$r26 = r0[i14]"->"$r48 := @caughtexception";
+    "r0[i14] = \"\""->"$r48 := @caughtexception";
+    "i12 = virtualinvoke r49.<java.lang.Long: int intValue()>()"->"$r48 := @caughtexception";
+    "r49 = $r35"->"$r48 := @caughtexception";
+    "specialinvoke $r35.<java.lang.Long: void <init>(java.lang.String)>($r38)"->"$r48 := @caughtexception";
+    "$r38 = virtualinvoke $r37.<java.lang.String: java.lang.String trim()>()"->"$r48 := @caughtexception";
+    "$r37 = virtualinvoke $r36.<java.lang.String: java.lang.String substring(int)>(6)"->"$r48 := @caughtexception";
+    "$r36 = r0[i14]"->"$r48 := @caughtexception";
+    "$r35 = new java.lang.Long"->"$r48 := @caughtexception";
+    "if $z3 == 0 goto $r26 = r0[i14]"->"$r26 = r0[i14]";
+    "if $z3 == 0 goto $r26 = r0[i14]"->"$r48 := @caughtexception";
+    "$z3 = virtualinvoke $r25.<java.lang.String: boolean startsWith(java.lang.String)>(\"Width-\")"->"$r48 := @caughtexception";
+    "$r25 = r0[i14]"->"$r48 := @caughtexception";
+    "r0[i14] = \"\""->"$r48 := @caughtexception";
+    "r1.<Corvid.Runtime: java.lang.String EmulateServletFile> = $r46"->"$r48 := @caughtexception";
+    "$r46 = virtualinvoke $r41.<java.lang.String: java.lang.String concat(java.lang.String)>($r45)"->"$r48 := @caughtexception";
+    "$r45 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r44)"->"$r48 := @caughtexception";
+    "$r44 = virtualinvoke $r43.<java.lang.String: java.lang.String trim()>()"->"$r48 := @caughtexception";
+    "$r43 = virtualinvoke $r42.<java.lang.String: java.lang.String substring(int)>(15)"->"$r48 := @caughtexception";
+    "$r42 = r0[i14]"->"$r48 := @caughtexception";
+    "$r41 = staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>($r40)"->"$r48 := @caughtexception";
+    "$r40 = virtualinvoke $r39.<java.lang.String: java.lang.String trim()>()"->"$r48 := @caughtexception";
+    "$r39 = r0[0]"->"$r48 := @caughtexception";
+    "r1.<Corvid.Runtime: boolean EmulateServlet> = 1"->"$r48 := @caughtexception";
+    "if $z2 == 0 goto $r25 = r0[i14]"->"$r25 = r0[i14]";
+    "if $z2 == 0 goto $r25 = r0[i14]"->"$r48 := @caughtexception";
+    "$z2 = virtualinvoke $r24.<java.lang.String: boolean startsWith(java.lang.String)>(\"EmulateServlet-\")"->"$r48 := @caughtexception";
+    "$r24 = r0[i14]"->"$r48 := @caughtexception";
+    "if $r23 != null goto $r24 = r0[i14]"->"$r48 := @caughtexception";
+    "if i14 >= 30 goto (branch)"->"goto [?= r1.<Corvid.Runtime: boolean isStandalone> = 1]";
+    "if i14 >= 30 goto (branch)"->"$r48 := @caughtexception";
+}

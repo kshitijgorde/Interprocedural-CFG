@@ -1,0 +1,897 @@
+digraph "" {
+    "r0 := @this: HP3.HPTI3"
+    "load.r r0"
+    "r0 := @this: HP3.HPTI3"->"load.r r0";
+    "push \"HPTI3\""
+    "load.r r0"->"push \"HPTI3\"";
+    "push \"init\""
+    "push \"HPTI3\""->"push \"init\"";
+    "specialinvoke <HP3.HPTI3: void a(java.lang.String,java.lang.String)>"
+    "push \"init\""->"specialinvoke <HP3.HPTI3: void a(java.lang.String,java.lang.String)>";
+    "specialinvoke <HP3.HPTI3: void a(java.lang.String,java.lang.String)>"->"load.r r0";
+    "push \"URL\""
+    "load.r r0"->"push \"URL\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"URL\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r $r2"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "load.r $r2"
+    "store.r $r2"->"load.r $r2";
+    "ifnull load.r r0"
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "fieldput <HP3.HPTI3: java.lang.String 'long'>"
+    "load.r $r2"->"fieldput <HP3.HPTI3: java.lang.String 'long'>";
+    "fieldput <HP3.HPTI3: java.lang.String 'long'>"->"load.r r0";
+    "push \"Browser\""
+    "load.r r0"->"push \"Browser\"";
+    "push \"Browser\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "fieldput <HP3.HPTI3: java.lang.String r>"
+    "load.r $r2"->"fieldput <HP3.HPTI3: java.lang.String r>";
+    "fieldput <HP3.HPTI3: java.lang.String r>"->"load.r r0";
+    "push \"Separador\""
+    "load.r r0"->"push \"Separador\"";
+    "push \"Separador\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "dup1.r"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "ifnonnull load.r r0"
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"Separator\""
+    "load.r r0"->"push \"Separator\"";
+    "push \"Separator\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "fieldput <HP3.HPTI3: java.lang.String J>"
+    "load.r $r2"->"fieldput <HP3.HPTI3: java.lang.String J>";
+    "fieldput <HP3.HPTI3: java.lang.String J>"->"load.r r0";
+    "push \"Fonte\""
+    "load.r r0"->"push \"Fonte\"";
+    "push \"Fonte\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"Font\""
+    "load.r r0"->"push \"Font\"";
+    "push \"Font\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "fieldput <HP3.HPTI3: java.lang.String F>"
+    "load.r $r2"->"fieldput <HP3.HPTI3: java.lang.String F>";
+    "fieldput <HP3.HPTI3: java.lang.String F>"->"load.r r0";
+    "push \"AppletG\""
+    "load.r r0"->"push \"AppletG\"";
+    "push \"AppletG\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"AppletC\""
+    "load.r r0"->"push \"AppletC\"";
+    "push \"AppletC\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "fieldput <HP3.HPTI3: java.lang.String k>"
+    "load.r $r2"->"fieldput <HP3.HPTI3: java.lang.String k>";
+    "fieldput <HP3.HPTI3: java.lang.String k>"->"load.r r0";
+    "push \"Lateral\""
+    "load.r r0"->"push \"Lateral\"";
+    "push \"Lateral\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "push \"true\""
+    "load.r $r2"->"push \"true\"";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "ifeq load.r r0"
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push 1"
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean q>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean q>";
+    "goto load.r r0"
+    "fieldput <HP3.HPTI3: boolean q>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"Parada\""
+    "load.r r0"->"push \"Parada\"";
+    "push \"Parada\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "ifnonnull load.r $r2"
+    "store.r $r2"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r r0";
+    "push \"Stop\""
+    "load.r r0"->"push \"Stop\"";
+    "push \"Stop\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "load.r $r2"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean O>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean O>";
+    "fieldput <HP3.HPTI3: boolean O>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"Roda\""
+    "load.r r0"->"push \"Roda\"";
+    "push \"Roda\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r r0";
+    "push \"Continuous\""
+    "load.r r0"->"push \"Continuous\"";
+    "push \"Continuous\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "load.r $r2"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean f>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean f>";
+    "fieldput <HP3.HPTI3: boolean f>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"Alterna\""
+    "load.r r0"->"push \"Alterna\"";
+    "push \"Alterna\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r r0";
+    "push \"Alternate\""
+    "load.r r0"->"push \"Alternate\"";
+    "push \"Alternate\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "load.r $r2"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean 'char'>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean 'char'>";
+    "fieldput <HP3.HPTI3: boolean 'char'>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"Atualizacao\""
+    "load.r r0"->"push \"Atualizacao\"";
+    "push \"Atualizacao\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"Refresh\""
+    "load.r r0"->"push \"Refresh\"";
+    "push \"Refresh\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"
+    "load.r $r2"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "fieldput <HP3.HPTI3: int G>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <HP3.HPTI3: int G>";
+    "fieldput <HP3.HPTI3: int G>"->"load.r r0";
+    "push \"Passo\""
+    "load.r r0"->"push \"Passo\"";
+    "push \"Passo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"Border\""
+    "load.r r0"->"push \"Border\"";
+    "push \"Border\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "fieldput <HP3.HPTI3: int H>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <HP3.HPTI3: int H>";
+    "fieldput <HP3.HPTI3: int H>"->"load.r r0";
+    "push \"Tempo\""
+    "load.r r0"->"push \"Tempo\"";
+    "push \"Tempo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"Time\""
+    "load.r r0"->"push \"Time\"";
+    "push \"Time\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "fieldput <HP3.HPTI3: int T>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <HP3.HPTI3: int T>";
+    "fieldput <HP3.HPTI3: int T>"->"load.r r0";
+    "push \"Tamanho\""
+    "load.r r0"->"push \"Tamanho\"";
+    "push \"Tamanho\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"FontSize\""
+    "load.r r0"->"push \"FontSize\"";
+    "push \"FontSize\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "fieldput <HP3.HPTI3: int g>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <HP3.HPTI3: int g>";
+    "fieldput <HP3.HPTI3: int g>"->"load.r r0";
+    "push \"Fundo\""
+    "load.r r0"->"push \"Fundo\"";
+    "push \"Fundo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"BGColor\""
+    "load.r r0"->"push \"BGColor\"";
+    "push \"BGColor\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "fieldput <HP3.HPTI3: java.awt.Color j>"
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color j>";
+    "fieldput <HP3.HPTI3: java.awt.Color j>"->"load.r r0";
+    "push \"Positivo\""
+    "load.r r0"->"push \"Positivo\"";
+    "push \"Positivo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"PositiveColor\""
+    "load.r r0"->"push \"PositiveColor\"";
+    "push \"PositiveColor\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "fieldput <HP3.HPTI3: java.awt.Color N>"
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color N>";
+    "fieldput <HP3.HPTI3: java.awt.Color N>"->"load.r r0";
+    "push \"Negativo\""
+    "load.r r0"->"push \"Negativo\"";
+    "push \"Negativo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"NegativeColor\""
+    "load.r r0"->"push \"NegativeColor\"";
+    "push \"NegativeColor\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "fieldput <HP3.HPTI3: java.awt.Color Y>"
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color Y>";
+    "fieldput <HP3.HPTI3: java.awt.Color Y>"->"load.r r0";
+    "push \"Igual\""
+    "load.r r0"->"push \"Igual\"";
+    "push \"Igual\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"NoChangeColor\""
+    "load.r r0"->"push \"NoChangeColor\"";
+    "push \"NoChangeColor\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "fieldput <HP3.HPTI3: java.awt.Color d>"
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color d>";
+    "fieldput <HP3.HPTI3: java.awt.Color d>"->"load.r r0";
+    "push \"CorTexto\""
+    "load.r r0"->"push \"CorTexto\"";
+    "push \"CorTexto\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"TextColor\""
+    "load.r r0"->"push \"TextColor\"";
+    "push \"TextColor\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "fieldput <HP3.HPTI3: java.awt.Color A>"
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color A>";
+    "fieldput <HP3.HPTI3: java.awt.Color A>"->"load.r r0";
+    "push \"NomeAtivo\""
+    "load.r r0"->"push \"NomeAtivo\"";
+    "push \"NomeAtivo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r r0";
+    "push \"SymbolName\""
+    "load.r r0"->"push \"SymbolName\"";
+    "push \"SymbolName\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "load.r $r2"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean z>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean z>";
+    "fieldput <HP3.HPTI3: boolean z>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"MostraLink\""
+    "load.r r0"->"push \"MostraLink\"";
+    "push \"MostraLink\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r r0";
+    "push \"ShowLink\""
+    "load.r r0"->"push \"ShowLink\"";
+    "push \"ShowLink\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "load.r $r2"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean B>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean B>";
+    "fieldput <HP3.HPTI3: boolean B>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"MostraHora\""
+    "load.r r0"->"push \"MostraHora\"";
+    "push \"MostraHora\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r r0";
+    "push \"ShowTime\""
+    "load.r r0"->"push \"ShowTime\"";
+    "push \"ShowTime\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "load.r $r2"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean 'case'>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean 'case'>";
+    "fieldput <HP3.HPTI3: boolean 'case'>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"MostraSinalPerc\""
+    "load.r r0"->"push \"MostraSinalPerc\"";
+    "push \"MostraSinalPerc\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r r0";
+    "push \"ShowPercent\""
+    "load.r r0"->"push \"ShowPercent\"";
+    "push \"ShowPercent\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "load.r $r2"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean p>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean p>";
+    "fieldput <HP3.HPTI3: boolean p>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"Idioma\""
+    "load.r r0"->"push \"Idioma\"";
+    "push \"Idioma\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"Language\""
+    "load.r r0"->"push \"Language\"";
+    "push \"Language\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "fieldput <HP3.HPTI3: java.lang.String c>"
+    "load.r $r2"->"fieldput <HP3.HPTI3: java.lang.String c>";
+    "fieldput <HP3.HPTI3: java.lang.String c>"->"load.r r0";
+    "push \"FuncaoJS\""
+    "load.r r0"->"push \"FuncaoJS\"";
+    "push \"FuncaoJS\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"JSFunction\""
+    "load.r r0"->"push \"JSFunction\"";
+    "push \"JSFunction\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "fieldput <HP3.HPTI3: java.lang.String b>"
+    "load.r $r2"->"fieldput <HP3.HPTI3: java.lang.String b>";
+    "fieldput <HP3.HPTI3: java.lang.String b>"->"load.r r0";
+    "push \"Longo\""
+    "load.r r0"->"push \"Longo\"";
+    "push \"Longo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r r0";
+    "push \"Long\""
+    "load.r r0"->"push \"Long\"";
+    "push \"Long\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r2";
+    "load.r $r2"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean M>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean M>";
+    "fieldput <HP3.HPTI3: boolean M>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <HP3.HPTI3: java.lang.String c>"
+    "load.r r0"->"fieldget <HP3.HPTI3: java.lang.String c>";
+    "push \"ING\""
+    "fieldget <HP3.HPTI3: java.lang.String c>"->"push \"ING\"";
+    "push \"ING\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push \"Wait...\""
+    "load.r r0"->"push \"Wait...\"";
+    "fieldput <HP3.HPTI3: java.lang.String n>"
+    "push \"Wait...\""->"fieldput <HP3.HPTI3: java.lang.String n>";
+    "fieldput <HP3.HPTI3: java.lang.String n>"->"load.r r0";
+    "push \"PROTECTED CLASS\""
+    "load.r r0"->"push \"PROTECTED CLASS\"";
+    "fieldput <HP3.HPTI3: java.lang.String 'byte'>"
+    "push \"PROTECTED CLASS\""->"fieldput <HP3.HPTI3: java.lang.String 'byte'>";
+    "fieldput <HP3.HPTI3: java.lang.String 'byte'>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>";
+    "fieldget <java.awt.Rectangle: int width>"
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"->"fieldget <java.awt.Rectangle: int width>";
+    "fieldput <HP3.HPTI3: int o>"
+    "fieldget <java.awt.Rectangle: int width>"->"fieldput <HP3.HPTI3: int o>";
+    "fieldput <HP3.HPTI3: int o>"->"load.r r0";
+    "specialinvoke <HP3.HPTI3: int for()>"
+    "load.r r0"->"specialinvoke <HP3.HPTI3: int for()>";
+    "ifle load.r r0"
+    "specialinvoke <HP3.HPTI3: int for()>"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "push 0"
+    "load.r r0"->"push 0";
+    "fieldput <HP3.HPTI3: boolean 'if'>"
+    "push 0"->"fieldput <HP3.HPTI3: boolean 'if'>";
+    "fieldput <HP3.HPTI3: boolean 'if'>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"nomearquivo\""
+    "load.r r0"->"push \"nomearquivo\"";
+    "push \"nomearquivo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean P>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean P>";
+    "fieldput <HP3.HPTI3: boolean P>"->"load.r r0";
+    "push \"titulo\""
+    "load.r r0"->"push \"titulo\"";
+    "push \"titulo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r $r30"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r30";
+    "load.r $r30"
+    "store.r $r30"->"load.r $r30";
+    "store.r r123"
+    "load.r $r30"->"store.r r123";
+    "store.r r123"->"load.r $r30";
+    "load.r $r30"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r30";
+    "load.r $r30"->"push \"true\"";
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "push \"1\""
+    "ifeq load.r r0"->"push \"1\"";
+    "push \"1\""->"store.r r123";
+    "store.r r123"->"load.r r0";
+    "push \"msg\""
+    "load.r r0"->"push \"msg\"";
+    "push \"msg\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"ifnonnull load.r $r2";
+    "ifnonnull load.r $r2"->"load.r $r2";
+    "push \".dat\""
+    "load.r $r2"->"push \".dat\"";
+    "push \".dat\""->"push 0";
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String,int)>"
+    "push 0"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String,int)>";
+    "store.i r1"
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String,int)>"->"store.i r1";
+    "load.i r1"
+    "store.i r1"->"load.i r1";
+    "store.i $r30"
+    "load.i r1"->"store.i $r30";
+    "goto load.i $r30"
+    "store.i $r30"->"goto load.i $r30";
+    "load.i $r30"
+    "goto load.i $r30"->"load.i $r30";
+    "ifge load.r $r2"
+    "load.i $r30"->"ifge load.r $r2";
+    "ifge load.r $r2"->"load.r r0";
+    "push \"tamfonte\""
+    "load.r r0"->"push \"tamfonte\"";
+    "push \"tamfonte\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"
+    "load.r $r2"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <HP3.HPTI3: int g>";
+    "fieldput <HP3.HPTI3: int g>"->"load.r r0";
+    "push \"corzero\""
+    "load.r r0"->"push \"corzero\"";
+    "push \"corzero\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color d>";
+    "fieldput <HP3.HPTI3: java.awt.Color d>"->"load.r r0";
+    "push \"cormais\""
+    "load.r r0"->"push \"cormais\"";
+    "push \"cormais\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color N>";
+    "fieldput <HP3.HPTI3: java.awt.Color N>"->"load.r r0";
+    "push \"cormenos\""
+    "load.r r0"->"push \"cormenos\"";
+    "push \"cormenos\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color Y>";
+    "fieldput <HP3.HPTI3: java.awt.Color Y>"->"load.r r0";
+    "push \"corfundo\""
+    "load.r r0"->"push \"corfundo\"";
+    "push \"corfundo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>";
+    "specialinvoke <HP3.HPTI3: java.awt.Color a(java.lang.String)>"->"fieldput <HP3.HPTI3: java.awt.Color j>";
+    "fieldput <HP3.HPTI3: java.awt.Color j>"->"load.r r0";
+    "fieldget <HP3.HPTI3: boolean P>"
+    "load.r r0"->"fieldget <HP3.HPTI3: boolean P>";
+    "fieldget <HP3.HPTI3: boolean P>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push \"url\""
+    "load.r r0"->"push \"url\"";
+    "push \"url\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"fieldput <HP3.HPTI3: java.lang.String r>";
+    "fieldput <HP3.HPTI3: java.lang.String r>"->"load.r r0";
+    "push \"intervalo\""
+    "load.r r0"->"push \"intervalo\"";
+    "push \"intervalo\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r2";
+    "store.r $r2"->"load.r $r2";
+    "load.r $r2"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "push 60"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"push 60";
+    "mul.i"
+    "push 60"->"mul.i";
+    "mul.i"->"fieldput <HP3.HPTI3: int G>";
+    "fieldput <HP3.HPTI3: int G>"->"load.r r0";
+    "push \"Espera\""
+    "load.r r0"->"push \"Espera\"";
+    "push \"Espera\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "store.r $r2"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "push \"Delay\""
+    "load.r r0"->"push \"Delay\"";
+    "push \"Delay\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"dup1.r";
+    "dup1.r"->"store.r $r2";
+    "ifnull push \"java.version\""
+    "store.r $r2"->"ifnull push \"java.version\"";
+    "ifnull push \"java.version\""->"load.r r0";
+    "load.r r0"->"load.r $r2";
+    "load.r $r2"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "fieldput <HP3.HPTI3: int v>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <HP3.HPTI3: int v>";
+    "push \"java.version\""
+    "fieldput <HP3.HPTI3: int v>"->"push \"java.version\"";
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"
+    "push \"java.version\""->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+    "push \"1.1\""
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"push \"1.1\"";
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"
+    "push \"1.1\""->"virtualinvoke <java.lang.String: int compareTo(java.lang.String)>";
+    "ifne load.r r0"
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"->"ifne load.r r0";
+    "push \"java.vendor\""
+    "ifne load.r r0"->"push \"java.vendor\"";
+    "push \"java.vendor\""->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+    "push \"Microsoft\""
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"push \"Microsoft\"";
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"
+    "push \"Microsoft\""->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+    "push -1"
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"push -1";
+    "ifcmple.i load.r r0"
+    "push -1"->"ifcmple.i load.r r0";
+    "ifcmple.i load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <HP3.HPTI3: boolean do>"
+    "push 1"->"fieldput <HP3.HPTI3: boolean do>";
+    "fieldput <HP3.HPTI3: boolean do>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <HP3.HPTI3: java.awt.Dimension I>"
+    "load.r r0"->"fieldget <HP3.HPTI3: java.awt.Dimension I>";
+    "fieldget <HP3.HPTI3: java.awt.Dimension I>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>";
+    "fieldget <java.awt.Rectangle: int height>"
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"->"fieldget <java.awt.Rectangle: int height>";
+    "fieldput <java.awt.Dimension: int height>"
+    "fieldget <java.awt.Rectangle: int height>"->"fieldput <java.awt.Dimension: int height>";
+    "fieldput <java.awt.Dimension: int height>"->"load.r r0";
+    "load.r r0"->"fieldget <HP3.HPTI3: java.awt.Dimension I>";
+    "fieldget <HP3.HPTI3: java.awt.Dimension I>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>";
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"->"fieldget <java.awt.Rectangle: int width>";
+    "fieldput <java.awt.Dimension: int width>"
+    "fieldget <java.awt.Rectangle: int width>"->"fieldput <java.awt.Dimension: int width>";
+    "return"
+    "fieldput <java.awt.Dimension: int width>"->"return";
+    "ifcmple.i load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <HP3.HPTI3: boolean 'int'()>"
+    "load.r r0"->"specialinvoke <HP3.HPTI3: boolean 'int'()>";
+    "specialinvoke <HP3.HPTI3: boolean 'int'()>"->"fieldput <HP3.HPTI3: boolean do>";
+    "ifge load.r $r2"->"load.r $r2";
+    "load.r $r2"->"load.i $r30";
+    "virtualinvoke <java.lang.String: char charAt(int)>"
+    "load.i $r30"->"virtualinvoke <java.lang.String: char charAt(int)>";
+    "push 92"
+    "virtualinvoke <java.lang.String: char charAt(int)>"->"push 92";
+    "ifcmpeq.c load.r $r2"
+    "push 92"->"ifcmpeq.c load.r $r2";
+    "ifcmpeq.c load.r $r2"->"load.r $r2";
+    "load.r $r2"->"load.i $r30";
+    "load.i $r30"->"virtualinvoke <java.lang.String: char charAt(int)>";
+    "push 47"
+    "virtualinvoke <java.lang.String: char charAt(int)>"->"push 47";
+    "ifcmpne.c inc.i $r30 -1"
+    "push 47"->"ifcmpne.c inc.i $r30 -1";
+    "ifcmpne.c inc.i $r30 -1"->"load.r $r2";
+    "load.r $r2"->"load.i $r30";
+    "load.i $r30"->"push 1";
+    "add.i"
+    "push 1"->"add.i";
+    "add.i"->"load.i r1";
+    "push 4"
+    "load.i r1"->"push 4";
+    "push 4"->"add.i";
+    "virtualinvoke <java.lang.String: java.lang.String substring(int,int)>"
+    "add.i"->"virtualinvoke <java.lang.String: java.lang.String substring(int,int)>";
+    "store.r r1"
+    "virtualinvoke <java.lang.String: java.lang.String substring(int,int)>"->"store.r r1";
+    "store.r r1"->"load.r r0";
+    "fieldget <HP3.HPTI3: boolean z>"
+    "load.r r0"->"fieldget <HP3.HPTI3: boolean z>";
+    "fieldget <HP3.HPTI3: boolean z>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "new java.lang.StringBuffer"
+    "load.r r0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r $r2";
+    "load.r $r2"->"push 0";
+    "push 0"->"load.i $r30";
+    "load.i $r30"->"virtualinvoke <java.lang.String: java.lang.String substring(int,int)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "virtualinvoke <java.lang.String: java.lang.String substring(int,int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"/Ticker.asp?Titulo=\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"/Ticker.asp?Titulo=\"";
+    "push \"/Ticker.asp?Titulo=\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "load.r r123"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.r r123";
+    "load.r r123"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"&Arquivo=\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"&Arquivo=\"";
+    "push \"&Arquivo=\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "load.r r1"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.r r1";
+    "load.r r1"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"fieldput <HP3.HPTI3: java.lang.String 'long'>";
+    "fieldput <HP3.HPTI3: java.lang.String 'long'>"->"goto load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r $r2";
+    "load.r $r2"->"push 0";
+    "push 0"->"load.i $r30";
+    "load.i $r30"->"virtualinvoke <java.lang.String: java.lang.String substring(int,int)>";
+    "virtualinvoke <java.lang.String: java.lang.String substring(int,int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"/Ticker.asp?Titulo=\"";
+    "push \"/Ticker.asp?Titulo=\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.r r123";
+    "load.r r123"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"&Arquivo=\"";
+    "push \"&Arquivo=\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.r r1";
+    "load.r r1"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"&NomeAtivo=1\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"&NomeAtivo=1\"";
+    "push \"&NomeAtivo=1\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"fieldput <HP3.HPTI3: java.lang.String 'long'>";
+    "fieldput <HP3.HPTI3: java.lang.String 'long'>"->"goto load.r r0";
+    "inc.i $r30 -1"
+    "ifcmpne.c inc.i $r30 -1"->"inc.i $r30 -1";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <HP3.HPTI3: boolean 'if'>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <HP3.HPTI3: java.lang.String c>";
+    "push \"ESP\""
+    "fieldget <HP3.HPTI3: java.lang.String c>"->"push \"ESP\"";
+    "push \"ESP\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push \"Cargando...\""
+    "load.r r0"->"push \"Cargando...\"";
+    "push \"Cargando...\""->"fieldput <HP3.HPTI3: java.lang.String n>";
+    "fieldput <HP3.HPTI3: java.lang.String n>"->"load.r r0";
+    "push \"CLASE PROTEGIDA\""
+    "load.r r0"->"push \"CLASE PROTEGIDA\"";
+    "push \"CLASE PROTEGIDA\""->"fieldput <HP3.HPTI3: java.lang.String 'byte'>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean M>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean p>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean 'case'>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean B>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean z>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean 'char'>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean f>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean O>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <HP3.HPTI3: boolean q>";
+}

@@ -1,0 +1,56 @@
+digraph "" {
+    "r0 := @this: TankApplet"
+    "staticget <java.lang.System: java.io.PrintStream out>"
+    "r0 := @this: TankApplet"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"TankGame (11/05/00)\nby Jens Tinz <jens@gamemakers.de>.\n\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"TankGame (11/05/00)\nby Jens Tinz <jens@gamemakers.de>.\n\"";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"
+    "push \"TankGame (11/05/00)\nby Jens Tinz <jens@gamemakers.de>.\n\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "load.r r0"
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r r0";
+    "staticinvoke <gamelib.AVEntry: void init(java.applet.Applet)>"
+    "load.r r0"->"staticinvoke <gamelib.AVEntry: void init(java.applet.Applet)>";
+    "staticinvoke <gamelib.AVEntry: void init(java.applet.Applet)>"->"load.r r0";
+    "new java.awt.BorderLayout"
+    "load.r r0"->"new java.awt.BorderLayout";
+    "dup1.r"
+    "new java.awt.BorderLayout"->"dup1.r";
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "new Field"
+    "load.r r0"->"new Field";
+    "new Field"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "specialinvoke <Field: void <init>(java.applet.Applet)>"
+    "load.r r0"->"specialinvoke <Field: void <init>(java.applet.Applet)>";
+    "fieldput <TankApplet: Field field>"
+    "specialinvoke <Field: void <init>(java.applet.Applet)>"->"fieldput <TankApplet: Field field>";
+    "fieldput <TankApplet: Field field>"->"load.r r0";
+    "fieldget <TankApplet: Field field>"
+    "load.r r0"->"fieldget <TankApplet: Field field>";
+    "fieldget <TankApplet: Field field>"->"load.r r0";
+    "fieldget <TankApplet: boolean local>"
+    "load.r r0"->"fieldget <TankApplet: boolean local>";
+    "fieldput <gamelib.Buffer: boolean licensed>"
+    "fieldget <TankApplet: boolean local>"->"fieldput <gamelib.Buffer: boolean licensed>";
+    "fieldput <gamelib.Buffer: boolean licensed>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <TankApplet: Field field>";
+    "push \"Center\""
+    "fieldget <TankApplet: Field field>"->"push \"Center\"";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"
+    "push \"Center\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <TankApplet: Field field>";
+    "virtualinvoke <java.awt.Component: void requestFocus()>"
+    "fieldget <TankApplet: Field field>"->"virtualinvoke <java.awt.Component: void requestFocus()>";
+    "virtualinvoke <java.awt.Component: void requestFocus()>"->"load.r r0";
+    "load.r r0"->"fieldget <TankApplet: Field field>";
+    "virtualinvoke <Field: void init()>"
+    "fieldget <TankApplet: Field field>"->"virtualinvoke <Field: void init()>";
+    "return"
+    "virtualinvoke <Field: void init()>"->"return";
+}

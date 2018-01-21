@@ -1,0 +1,214 @@
+digraph "" {
+    "r0 := @this: mapapplet.Main"
+    "load.r r0"
+    "r0 := @this: mapapplet.Main"->"load.r r0";
+    "push \"Main\""
+    "load.r r0"->"push \"Main\"";
+    "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"
+    "push \"Main\""->"virtualinvoke <java.awt.Component: void setName(java.lang.String)>";
+    "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"->"load.r r0";
+    "push null"
+    "load.r r0"->"push null";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "push null"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "new mapapplet.Data"
+    "load.r r0"->"new mapapplet.Data";
+    "dup1.r"
+    "new mapapplet.Data"->"dup1.r";
+    "specialinvoke <mapapplet.Data: void <init>()>"
+    "dup1.r"->"specialinvoke <mapapplet.Data: void <init>()>";
+    "fieldput <mapapplet.Main: mapapplet.Data data>"
+    "specialinvoke <mapapplet.Data: void <init>()>"->"fieldput <mapapplet.Main: mapapplet.Data data>";
+    "new mapapplet.imageload.ImageLoader"
+    "fieldput <mapapplet.Main: mapapplet.Data data>"->"new mapapplet.imageload.ImageLoader";
+    "new mapapplet.imageload.ImageLoader"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "specialinvoke <mapapplet.imageload.ImageLoader: void <init>(java.lang.Object)>"
+    "load.r r0"->"specialinvoke <mapapplet.imageload.ImageLoader: void <init>(java.lang.Object)>";
+    "staticput <mapapplet.Main: mapapplet.imageload.ImageLoader imgLoader>"
+    "specialinvoke <mapapplet.imageload.ImageLoader: void <init>(java.lang.Object)>"->"staticput <mapapplet.Main: mapapplet.imageload.ImageLoader imgLoader>";
+    "staticget <mapapplet.Main: mapapplet.imageload.ImageLoader imgLoader>"
+    "staticput <mapapplet.Main: mapapplet.imageload.ImageLoader imgLoader>"->"staticget <mapapplet.Main: mapapplet.imageload.ImageLoader imgLoader>";
+    "staticget <mapapplet.Main: mapapplet.imageload.ImageLoader imgLoader>"->"load.r r0";
+    "virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>"
+    "load.r r0"->"virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>";
+    "virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>"->"load.r r0";
+    "new java.text.DecimalFormat"
+    "load.r r0"->"new java.text.DecimalFormat";
+    "new java.text.DecimalFormat"->"dup1.r";
+    "push \"##0.###\""
+    "dup1.r"->"push \"##0.###\"";
+    "specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>"
+    "push \"##0.###\""->"specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>";
+    "fieldput <mapapplet.Main: java.text.DecimalFormat formatter>"
+    "specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>"->"fieldput <mapapplet.Main: java.text.DecimalFormat formatter>";
+    "fieldput <mapapplet.Main: java.text.DecimalFormat formatter>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"
+    "load.r r0"->"staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>";
+    "fieldput <mapapplet.Main: netscape.javascript.JSObject win>"
+    "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"->"fieldput <mapapplet.Main: netscape.javascript.JSObject win>";
+    "goto load.r r0"
+    "fieldput <mapapplet.Main: netscape.javascript.JSObject win>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "new java.util.Hashtable"
+    "load.r r0"->"new java.util.Hashtable";
+    "new java.util.Hashtable"->"dup1.r";
+    "specialinvoke <java.util.Hashtable: void <init>()>"
+    "dup1.r"->"specialinvoke <java.util.Hashtable: void <init>()>";
+    "fieldput <mapapplet.Main: java.util.Hashtable modules>"
+    "specialinvoke <java.util.Hashtable: void <init>()>"->"fieldput <mapapplet.Main: java.util.Hashtable modules>";
+    "fieldput <mapapplet.Main: java.util.Hashtable modules>"->"load.r r0";
+    "staticget <java.awt.Color: java.awt.Color white>"
+    "load.r r0"->"staticget <java.awt.Color: java.awt.Color white>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "push 6"
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"push 6";
+    "newarray"
+    "push 6"->"newarray";
+    "store.r $r9"
+    "newarray"->"store.r $r9";
+    "load.r $r9"
+    "store.r $r9"->"load.r $r9";
+    "push 0"
+    "load.r $r9"->"push 0";
+    "push \"arial\""
+    "push 0"->"push \"arial\"";
+    "arraywrite.r"
+    "push \"arial\""->"arraywrite.r";
+    "arraywrite.r"->"load.r $r9";
+    "push 1"
+    "load.r $r9"->"push 1";
+    "push \"times\""
+    "push 1"->"push \"times\"";
+    "push \"times\""->"arraywrite.r";
+    "arraywrite.r"->"load.r $r9";
+    "push 2"
+    "load.r $r9"->"push 2";
+    "push \"courier\""
+    "push 2"->"push \"courier\"";
+    "push \"courier\""->"arraywrite.r";
+    "arraywrite.r"->"load.r $r9";
+    "push 3"
+    "load.r $r9"->"push 3";
+    "push \"lucida\""
+    "push 3"->"push \"lucida\"";
+    "push \"lucida\""->"arraywrite.r";
+    "arraywrite.r"->"load.r $r9";
+    "push 4"
+    "load.r $r9"->"push 4";
+    "push \"dialog\""
+    "push 4"->"push \"dialog\"";
+    "push \"dialog\""->"arraywrite.r";
+    "arraywrite.r"->"load.r $r9";
+    "push 5"
+    "load.r $r9"->"push 5";
+    "push \"sans\""
+    "push 5"->"push \"sans\"";
+    "push \"sans\""->"arraywrite.r";
+    "staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>"
+    "arraywrite.r"->"staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>";
+    "virtualinvoke <java.awt.Toolkit: java.lang.String[] getFontList()>"
+    "staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>"->"virtualinvoke <java.awt.Toolkit: java.lang.String[] getFontList()>";
+    "store.r r1"
+    "virtualinvoke <java.awt.Toolkit: java.lang.String[] getFontList()>"->"store.r r1";
+    "store.r r1"->"push 0";
+    "store.b z0"
+    "push 0"->"store.b z0";
+    "store.b z0"->"push 0";
+    "store.i i3"
+    "push 0"->"store.i i3";
+    "load.b z0"
+    "store.i i3"->"load.b z0";
+    "ifne load.r r0"
+    "load.b z0"->"ifne load.r r0";
+    "load.i i3"
+    "ifne load.r r0"->"load.i i3";
+    "load.i i3"->"load.r $r9";
+    "arraylength"
+    "load.r $r9"->"arraylength";
+    "ifcmpge.i load.r r0"
+    "arraylength"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"push 0";
+    "store.i i4"
+    "push 0"->"store.i i4";
+    "load.i i4"
+    "store.i i4"->"load.i i4";
+    "load.r r1"
+    "load.i i4"->"load.r r1";
+    "load.r r1"->"arraylength";
+    "ifcmpge.i inc.i i3 1"
+    "arraylength"->"ifcmpge.i inc.i i3 1";
+    "ifcmpge.i inc.i i3 1"->"load.b z0";
+    "ifne inc.i i4 1"
+    "load.b z0"->"ifne inc.i i4 1";
+    "ifne inc.i i4 1"->"load.r r1";
+    "load.r r1"->"load.i i4";
+    "arrayread.r"
+    "load.i i4"->"arrayread.r";
+    "virtualinvoke <java.lang.String: java.lang.String toLowerCase()>"
+    "arrayread.r"->"virtualinvoke <java.lang.String: java.lang.String toLowerCase()>";
+    "virtualinvoke <java.lang.String: java.lang.String toLowerCase()>"->"load.r $r9";
+    "load.r $r9"->"load.i i3";
+    "load.i i3"->"arrayread.r";
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"
+    "arrayread.r"->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+    "iflt inc.i i4 1"
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"iflt inc.i i4 1";
+    "iflt inc.i i4 1"->"load.r r0";
+    "new java.awt.Font"
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r r1";
+    "load.r r1"->"load.i i4";
+    "load.i i4"->"arrayread.r";
+    "arrayread.r"->"push 0";
+    "push 12"
+    "push 0"->"push 12";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"push 1";
+    "push 1"->"store.b z0";
+    "inc.i i4 1"
+    "store.b z0"->"inc.i i4 1";
+    "goto load.i i4"
+    "inc.i i4 1"->"goto load.i i4";
+    "inc.i i3 1"
+    "ifcmpge.i inc.i i3 1"->"inc.i i3 1";
+    "goto load.b z0"
+    "inc.i i3 1"->"goto load.b z0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "specialinvoke <mapapplet.Main: void setElements()>"
+    "load.r r0"->"specialinvoke <mapapplet.Main: void setElements()>";
+    "specialinvoke <mapapplet.Main: void setElements()>"->"staticget <mapapplet.Main: mapapplet.imageload.ImageLoader imgLoader>";
+    "staticget <mapapplet.Main: mapapplet.imageload.ImageLoader imgLoader>"->"load.r r0";
+    "fieldget <mapapplet.Main: mapapplet.Toolbar toolbar>"
+    "load.r r0"->"fieldget <mapapplet.Main: mapapplet.Toolbar toolbar>";
+    "fieldget <mapapplet.Main: mapapplet.Toolbar toolbar>"->"virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>";
+    "virtualinvoke <java.util.Observable: void addObserver(java.util.Observer)>"->"load.r r0";
+    "fieldget <mapapplet.Main: mapapplet.MapTool map>"
+    "load.r r0"->"fieldget <mapapplet.Main: mapapplet.MapTool map>";
+    "push \"Map\""
+    "fieldget <mapapplet.Main: mapapplet.MapTool map>"->"push \"Map\"";
+    "push \"Map\""->"virtualinvoke <java.awt.Component: void setName(java.lang.String)>";
+    "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"->"load.r r0";
+    "specialinvoke <mapapplet.Main: void setGlobalMap()>"
+    "load.r r0"->"specialinvoke <mapapplet.Main: void setGlobalMap()>";
+    "specialinvoke <mapapplet.Main: void setGlobalMap()>"->"load.r r0";
+    "specialinvoke <mapapplet.Main: void determineModules()>"
+    "load.r r0"->"specialinvoke <mapapplet.Main: void determineModules()>";
+    "return"
+    "specialinvoke <mapapplet.Main: void determineModules()>"->"return";
+    "staticget <java.lang.System: java.io.PrintStream out>"
+    "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"Error creating JSObject\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"Error creating JSObject\"";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"
+    "push \"Error creating JSObject\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.lang.Throwable: void printStackTrace()>"
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

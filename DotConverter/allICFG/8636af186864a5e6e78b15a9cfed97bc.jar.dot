@@ -1,0 +1,190 @@
+digraph "" {
+    "r0 := @this: instahelp"
+    "push \"java.vendor\""
+    "r0 := @this: instahelp"->"push \"java.vendor\"";
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"
+    "push \"java.vendor\""->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+    "virtualinvoke <java.lang.String: java.lang.String toString()>"
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"virtualinvoke <java.lang.String: java.lang.String toString()>";
+    "push \"Microsoft\""
+    "virtualinvoke <java.lang.String: java.lang.String toString()>"->"push \"Microsoft\"";
+    "virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>"
+    "push \"Microsoft\""->"virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>";
+    "ifeq load.r r0"
+    "virtualinvoke <java.lang.String: boolean startsWith(java.lang.String)>"->"ifeq load.r r0";
+    "push \"com.ms.security.PolicyEngine\""
+    "ifeq load.r r0"->"push \"com.ms.security.PolicyEngine\"";
+    "staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>"
+    "push \"com.ms.security.PolicyEngine\""->"staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>";
+    "ifnull goto goto load.r r0"
+    "staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>"->"ifnull goto goto load.r r0";
+    "goto goto load.r r0"
+    "ifnull goto goto load.r r0"->"goto goto load.r r0";
+    "goto load.r r0"
+    "goto goto load.r r0"->"goto load.r r0";
+    "load.r r0"
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"
+    "load.r r0"->"staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>";
+    "fieldput <instahelp: netscape.javascript.JSObject m_JScriptWin>"
+    "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"->"fieldput <instahelp: netscape.javascript.JSObject m_JScriptWin>";
+    "fieldput <instahelp: netscape.javascript.JSObject m_JScriptWin>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "new java.lang.StringBuffer"
+    "load.r r0"->"new java.lang.StringBuffer";
+    "dup1.r"
+    "new java.lang.StringBuffer"->"dup1.r";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "push \"<font color=\\\"#000000\\\">\""
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"push \"<font color=\\\"#000000\\\">\"";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "push \"<font color=\\\"#000000\\\">\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"Chat Applet Loaded\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"Chat Applet Loaded\"";
+    "push \"Chat Applet Loaded\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"</font>\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"</font>\"";
+    "push \"</font>\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <instahelp: void getmessage(java.lang.String)>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <instahelp: void getmessage(java.lang.String)>";
+    "virtualinvoke <instahelp: void getmessage(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"push \"<font color=\\\"#000000\\\">\"";
+    "push \"<font color=\\\"#000000\\\">\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"Please Wait for The Operator To Accept the connection\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"Please Wait for The Operator To Accept the connection\"";
+    "push \"Please Wait for The Operator To Accept the connection\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"</font>\"";
+    "push \"</font>\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <instahelp: void getmessage(java.lang.String)>";
+    "push 0"
+    "virtualinvoke <instahelp: void getmessage(java.lang.String)>"->"push 0";
+    "store.b z1"
+    "push 0"->"store.b z1";
+    "store.b z1"->"load.r r0";
+    "push \"ssl\""
+    "load.r r0"->"push \"ssl\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"ssl\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "push \"true\""
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"push \"true\"";
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"
+    "push \"true\""->"virtualinvoke <java.lang.String: int compareTo(java.lang.String)>";
+    "ifne load.r r0"
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"->"ifne load.r r0";
+    "push 1"
+    "ifne load.r r0"->"push 1";
+    "push 1"->"store.b z1";
+    "store.b z1"->"load.r r0";
+    "push \"Starting SSL Session\""
+    "load.r r0"->"push \"Starting SSL Session\"";
+    "push \"Starting SSL Session\""->"virtualinvoke <instahelp: void getmessage(java.lang.String)>";
+    "virtualinvoke <instahelp: void getmessage(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"port\""
+    "load.r r0"->"push \"port\"";
+    "push \"port\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"load.r r0";
+    "push \"server\""
+    "load.r r0"->"push \"server\"";
+    "push \"server\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r5"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r5";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"
+    "store.r r5"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "store.i i0"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"store.i i0";
+    "new Client"
+    "store.i i0"->"new Client";
+    "new Client"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r5"
+    "load.r r0"->"load.r r5";
+    "load.r r5"->"load.r r0";
+    "push \"operatorid\""
+    "load.r r0"->"push \"operatorid\"";
+    "push \"operatorid\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"load.r r0";
+    "push \"sessid\""
+    "load.r r0"->"push \"sessid\"";
+    "push \"sessid\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "load.b z1"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"load.b z1";
+    "load.i i0"
+    "load.b z1"->"load.i i0";
+    "specialinvoke <Client: void <init>(instahelp,java.lang.String,java.lang.String,java.lang.String,boolean,int)>"
+    "load.i i0"->"specialinvoke <Client: void <init>(instahelp,java.lang.String,java.lang.String,java.lang.String,boolean,int)>";
+    "staticput <instahelp: Client clsocket>"
+    "specialinvoke <Client: void <init>(instahelp,java.lang.String,java.lang.String,java.lang.String,boolean,int)>"->"staticput <instahelp: Client clsocket>";
+    "staticput <instahelp: Client clsocket>"->"load.r r0";
+    "push \"visitorname\""
+    "load.r r0"->"push \"visitorname\"";
+    "push \"visitorname\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "staticinvoke <instahelp: java.lang.String unescape(java.lang.String)>"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <instahelp: java.lang.String unescape(java.lang.String)>";
+    "staticinvoke <instahelp: java.lang.String unescape(java.lang.String)>"->"store.r r5";
+    "staticget <instahelp: Client clsocket>"
+    "store.r r5"->"staticget <instahelp: Client clsocket>";
+    "staticget <instahelp: Client clsocket>"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "push \"You are talking to \""
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"push \"You are talking to \"";
+    "push \"You are talking to \""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.r r5";
+    "load.r r5"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <Client: void sendmessage(java.lang.String)>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <Client: void sendmessage(java.lang.String)>";
+    "goto return"
+    "virtualinvoke <Client: void sendmessage(java.lang.String)>"->"goto return";
+    "return"
+    "goto return"->"return";
+    "virtualinvoke <Client: void sendmessage(java.lang.String)>"->"store.r r5";
+    "store.r r5"->"load.r r0";
+    "fieldget <instahelp: netscape.javascript.JSObject m_JScriptWin>"
+    "load.r r0"->"fieldget <instahelp: netscape.javascript.JSObject m_JScriptWin>";
+    "ifnull goto return"
+    "fieldget <instahelp: netscape.javascript.JSObject m_JScriptWin>"->"ifnull goto return";
+    "ifnull goto return"->"load.r r0";
+    "load.r r0"->"fieldget <instahelp: netscape.javascript.JSObject m_JScriptWin>";
+    "push \"disconnected\""
+    "fieldget <instahelp: netscape.javascript.JSObject m_JScriptWin>"->"push \"disconnected\"";
+    "push \"disconnected\""->"push 1";
+    "newarray"
+    "push 1"->"newarray";
+    "newarray"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push \"The Chat Session Could Not Be Started Due to a Network Error\""
+    "push 0"->"push \"The Chat Session Could Not Be Started Due to a Network Error\"";
+    "arraywrite.r"
+    "push \"The Chat Session Could Not Be Started Due to a Network Error\""->"arraywrite.r";
+    "virtualinvoke <netscape.javascript.JSObject: java.lang.Object call(java.lang.String,java.lang.Object[])>"
+    "arraywrite.r"->"virtualinvoke <netscape.javascript.JSObject: java.lang.Object call(java.lang.String,java.lang.Object[])>";
+    "pop"
+    "virtualinvoke <netscape.javascript.JSObject: java.lang.Object call(java.lang.String,java.lang.Object[])>"->"pop";
+    "pop"->"goto return";
+    "store.r r0"
+    "virtualinvoke <netscape.javascript.JSObject: java.lang.Object call(java.lang.String,java.lang.Object[])>"->"store.r r0";
+    "staticinvoke <netscape.javascript.JSObject: netscape.javascript.JSObject getWindow(java.applet.Applet)>"->"store.r r5";
+    "staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>"->"store.r r5";
+    "store.r r5"->"load.r r0";
+    "load.r r0"->"fieldget <instahelp: netscape.javascript.JSObject m_JScriptWin>";
+    "fieldget <instahelp: netscape.javascript.JSObject m_JScriptWin>"->"push \"disconnected\"";
+    "push \"disconnected\""->"push 1";
+    "push 1"->"newarray";
+    "newarray"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push \"The Chat Session Could Not Be Started Due To Unavailable Permissions\""
+    "push 0"->"push \"The Chat Session Could Not Be Started Due To Unavailable Permissions\"";
+    "push \"The Chat Session Could Not Be Started Due To Unavailable Permissions\""->"arraywrite.r";
+    "arraywrite.r"->"virtualinvoke <netscape.javascript.JSObject: java.lang.Object call(java.lang.String,java.lang.Object[])>";
+    "virtualinvoke <netscape.javascript.JSObject: java.lang.Object call(java.lang.String,java.lang.Object[])>"->"pop";
+}

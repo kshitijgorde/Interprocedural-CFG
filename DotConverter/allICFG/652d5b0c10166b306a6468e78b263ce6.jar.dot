@@ -1,0 +1,42 @@
+digraph "" {
+    "r0 := @this: SmorfApplet"
+    "staticget <java.lang.System: java.io.PrintStream out>"
+    "r0 := @this: SmorfApplet"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"Smorf 19.36 01-05-2006\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"Smorf 19.36 01-05-2006\"";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"
+    "push \"Smorf 19.36 01-05-2006\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "load.r r0"
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r r0";
+    "new com.sygem.jazz3d3.World"
+    "load.r r0"->"new com.sygem.jazz3d3.World";
+    "dup1.r"
+    "new com.sygem.jazz3d3.World"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "specialinvoke <com.sygem.jazz3d3.World: void <init>(java.applet.Applet)>"
+    "load.r r0"->"specialinvoke <com.sygem.jazz3d3.World: void <init>(java.applet.Applet)>";
+    "fieldput <SmorfApplet: com.sygem.jazz3d3.World U>"
+    "specialinvoke <com.sygem.jazz3d3.World: void <init>(java.applet.Applet)>"->"fieldput <SmorfApplet: com.sygem.jazz3d3.World U>";
+    "fieldput <SmorfApplet: com.sygem.jazz3d3.World U>"->"load.r r0";
+    "new java.awt.BorderLayout"
+    "load.r r0"->"new java.awt.BorderLayout";
+    "new java.awt.BorderLayout"->"dup1.r";
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "push \"Center\""
+    "load.r r0"->"push \"Center\"";
+    "push \"Center\""->"load.r r0";
+    "fieldget <SmorfApplet: com.sygem.jazz3d3.World U>"
+    "load.r r0"->"fieldget <SmorfApplet: com.sygem.jazz3d3.World U>";
+    "checkcast"
+    "fieldget <SmorfApplet: com.sygem.jazz3d3.World U>"->"checkcast";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"
+    "checkcast"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "return"
+    "pop"->"return";
+}

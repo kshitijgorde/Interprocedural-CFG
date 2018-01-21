@@ -1,0 +1,5 @@
+digraph "" {
+    "r0 := @this: CBard"
+    "return"
+    "r0 := @this: CBard"->"return";
+}

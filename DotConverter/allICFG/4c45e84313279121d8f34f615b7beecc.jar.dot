@@ -1,0 +1,833 @@
+digraph "" {
+    "r0 := @this: Grid_int"
+    "load.r r0"
+    "r0 := @this: Grid_int"->"load.r r0";
+    "push null"
+    "load.r r0"->"push null";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "push null"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "new java.awt.Font"
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.Font";
+    "store.r $r4"
+    "new java.awt.Font"->"store.r $r4";
+    "load.r $r4"
+    "store.r $r4"->"load.r $r4";
+    "push \"SansSerif\""
+    "load.r $r4"->"push \"SansSerif\"";
+    "push 0"
+    "push \"SansSerif\""->"push 0";
+    "push 11"
+    "push 0"->"push 11";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "push 11"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>";
+    "staticinvoke <java.awt.Toolkit: java.awt.Toolkit getDefaultToolkit()>"->"load.r $r4";
+    "virtualinvoke <java.awt.Toolkit: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"
+    "load.r $r4"->"virtualinvoke <java.awt.Toolkit: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+    "store.r r2"
+    "virtualinvoke <java.awt.Toolkit: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"store.r r2";
+    "store.r r2"->"load.r r0";
+    "specialinvoke <Grid_int: void A()>"
+    "load.r r0"->"specialinvoke <Grid_int: void A()>";
+    "specialinvoke <Grid_int: void A()>"->"load.r r0";
+    "fieldget <Grid_int: java.lang.String Q>"
+    "load.r r0"->"fieldget <Grid_int: java.lang.String Q>";
+    "ifnonnull return"
+    "fieldget <Grid_int: java.lang.String Q>"->"ifnonnull return";
+    "ifnonnull return"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <Grid_int: com.cc.C.A X>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: java.awt.Color Â>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: java.awt.Color Â>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "fieldget <com.cc.C.A: java.awt.Color Â>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "push \"EDU\""
+    "load.r r0"->"push \"EDU\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"EDU\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "ifnonnull load.r r0"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "new com.cc.applet.A"
+    "load.r r0"->"new com.cc.applet.A";
+    "dup1.r"
+    "new com.cc.applet.A"->"dup1.r";
+    "push \" Software \u00a9 2010 \""
+    "dup1.r"->"push \" Software \u00a9 2010 \"";
+    "push \"crossword-compiler.com\""
+    "push \" Software \u00a9 2010 \""->"push \"crossword-compiler.com\"";
+    "specialinvoke <com.cc.applet.A: void <init>(java.lang.String,java.lang.String)>"
+    "push \"crossword-compiler.com\""->"specialinvoke <com.cc.applet.A: void <init>(java.lang.String,java.lang.String)>";
+    "fieldput <Grid_int: com.cc.applet.A P>"
+    "specialinvoke <com.cc.applet.A: void <init>(java.lang.String,java.lang.String)>"->"fieldput <Grid_int: com.cc.applet.A P>";
+    "fieldput <Grid_int: com.cc.applet.A P>"->"load.r r0";
+    "fieldget <Grid_int: com.cc.applet.A P>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "new java.lang.StringBuffer"
+    "fieldget <Grid_int: com.cc.applet.A P>"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "push \"http://www.crossword-compiler.com/cgi-bin/applet8.pl?\""
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"push \"http://www.crossword-compiler.com/cgi-bin/applet8.pl?\"";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "push \"http://www.crossword-compiler.com/cgi-bin/applet8.pl?\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "virtualinvoke <java.net.URL: java.lang.String toString()>"
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"virtualinvoke <java.net.URL: java.lang.String toString()>";
+    "staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>"
+    "virtualinvoke <java.net.URL: java.lang.String toString()>"->"staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>";
+    "staticinvoke <java.net.URLEncoder: java.lang.String encode(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <com.cc.applet.A: void A(java.lang.String)>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <com.cc.applet.A: void A(java.lang.String)>";
+    "goto load.r r0"
+    "virtualinvoke <com.cc.applet.A: void A(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "fieldget <Grid_int: com.cc.applet.A P>"->"load.r $r4";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"
+    "load.r $r4"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "fieldget <Grid_int: com.cc.applet.A P>"->"push 11";
+    "load.r r2"
+    "push 11"->"load.r r2";
+    "virtualinvoke <java.awt.FontMetrics: int getDescent()>"
+    "load.r r2"->"virtualinvoke <java.awt.FontMetrics: int getDescent()>";
+    "sub.i"
+    "virtualinvoke <java.awt.FontMetrics: int getDescent()>"->"sub.i";
+    "push 2"
+    "sub.i"->"push 2";
+    "add.i"
+    "push 2"->"add.i";
+    "fieldput <com.cc.applet.A: int W>"
+    "add.i"->"fieldput <com.cc.applet.A: int W>";
+    "fieldput <com.cc.applet.A: int W>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "fieldget <Grid_int: com.cc.applet.A P>"->"load.r r2";
+    "load.r r2"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "fieldget <com.cc.applet.A: java.lang.String U>"
+    "fieldget <Grid_int: com.cc.applet.A P>"->"fieldget <com.cc.applet.A: java.lang.String U>";
+    "virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>"
+    "fieldget <com.cc.applet.A: java.lang.String U>"->"virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>";
+    "fieldput <com.cc.applet.A: int H>"
+    "virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>"->"fieldput <com.cc.applet.A: int H>";
+    "fieldput <com.cc.applet.A: int H>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: com.cc.D.A P>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: com.cc.D.A P>";
+    "ifnull load.r r0"
+    "fieldget <com.cc.C.A: com.cc.D.A P>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "new com.cc.gui.F"
+    "load.r r0"->"new com.cc.gui.F";
+    "new com.cc.gui.F"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: com.cc.D.A P>";
+    "fieldget <com.cc.C.A: com.cc.D.A P>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "virtualinvoke <java.awt.Component: java.awt.Font getFont()>"
+    "fieldget <Grid_int: com.cc.applet.A P>"->"virtualinvoke <java.awt.Component: java.awt.Font getFont()>";
+    "virtualinvoke <java.awt.Component: java.awt.Font getFont()>"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>";
+    "fieldget <java.awt.Rectangle: int width>"
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"->"fieldget <java.awt.Rectangle: int width>";
+    "fieldget <java.awt.Rectangle: int width>"->"push 0";
+    "push 0"->"load.r r0";
+    "specialinvoke <com.cc.gui.F: void <init>(com.cc.D.A,java.awt.Font,int,boolean,java.awt.Component)>"
+    "load.r r0"->"specialinvoke <com.cc.gui.F: void <init>(com.cc.D.A,java.awt.Font,int,boolean,java.awt.Component)>";
+    "fieldput <Grid_int: com.cc.gui.F K>"
+    "specialinvoke <com.cc.gui.F: void <init>(com.cc.D.A,java.awt.Font,int,boolean,java.awt.Component)>"->"fieldput <Grid_int: com.cc.gui.F K>";
+    "fieldput <Grid_int: com.cc.gui.F K>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <Grid_int: com.cc.gui.F K>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.gui.F K>";
+    "virtualinvoke <com.cc.gui.F: java.awt.Dimension H()>"
+    "fieldget <Grid_int: com.cc.gui.F K>"->"virtualinvoke <com.cc.gui.F: java.awt.Dimension H()>";
+    "fieldget <java.awt.Dimension: int height>"
+    "virtualinvoke <com.cc.gui.F: java.awt.Dimension H()>"->"fieldget <java.awt.Dimension: int height>";
+    "fieldput <Grid_int: int J>"
+    "fieldget <java.awt.Dimension: int height>"->"fieldput <Grid_int: int J>";
+    "fieldput <Grid_int: int J>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: com.cc.D.A x>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: com.cc.D.A x>";
+    "ifnull push 55"
+    "fieldget <com.cc.C.A: com.cc.D.A x>"->"ifnull push 55";
+    "ifnull push 55"->"load.r r0";
+    "load.r r0"->"new com.cc.gui.F";
+    "new com.cc.gui.F"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: com.cc.D.A x>";
+    "fieldget <com.cc.C.A: com.cc.D.A x>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "fieldget <Grid_int: com.cc.applet.A P>"->"virtualinvoke <java.awt.Component: java.awt.Font getFont()>";
+    "virtualinvoke <java.awt.Component: java.awt.Font getFont()>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>";
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"->"fieldget <java.awt.Rectangle: int width>";
+    "fieldget <java.awt.Rectangle: int width>"->"push 0";
+    "push 0"->"load.r r0";
+    "load.r r0"->"specialinvoke <com.cc.gui.F: void <init>(com.cc.D.A,java.awt.Font,int,boolean,java.awt.Component)>";
+    "fieldput <Grid_int: com.cc.gui.F M>"
+    "specialinvoke <com.cc.gui.F: void <init>(com.cc.D.A,java.awt.Font,int,boolean,java.awt.Component)>"->"fieldput <Grid_int: com.cc.gui.F M>";
+    "push 55"
+    "fieldput <Grid_int: com.cc.gui.F M>"->"push 55";
+    "store.i $i8"
+    "push 55"->"store.i $i8";
+    "store.i $i8"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: boolean S>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: boolean S>";
+    "ifeq load.r r0"
+    "fieldget <com.cc.C.A: boolean S>"->"ifeq load.r r0";
+    "push 75"
+    "ifeq load.r r0"->"push 75";
+    "push 75"->"store.i $i8";
+    "store.i $i8"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: boolean s>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: boolean s>";
+    "fieldget <com.cc.C.A: boolean s>"->"ifeq load.r r0";
+    "inc.i $i8 25"
+    "ifeq load.r r0"->"inc.i $i8 25";
+    "inc.i $i8 25"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: com.cc.C.C H>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: com.cc.C.C H>";
+    "virtualinvoke <com.cc.C.C: int U()>"
+    "fieldget <com.cc.C.A: com.cc.C.C H>"->"virtualinvoke <com.cc.C.C: int U()>";
+    "ifeq push 0"
+    "virtualinvoke <com.cc.C.C: int U()>"->"ifeq push 0";
+    "ifeq push 0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: boolean ¢>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: boolean ¢>";
+    "ifeq load.i $i8"
+    "fieldget <com.cc.C.A: boolean ¢>"->"ifeq load.i $i8";
+    "ifeq load.i $i8"->"push 0";
+    "store.i r3"
+    "push 0"->"store.i r3";
+    "store.i r3"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.i r3"
+    "load.r r0"->"load.i r3";
+    "fieldput <Grid_int: int D>"
+    "load.i r3"->"fieldput <Grid_int: int D>";
+    "fieldput <Grid_int: int D>"->"load.r r0";
+    "specialinvoke <Grid_int: void I()>"
+    "load.r r0"->"specialinvoke <Grid_int: void I()>";
+    "specialinvoke <Grid_int: void I()>"->"load.r r0";
+    "new com.cc.applet.C"
+    "load.r r0"->"new com.cc.applet.C";
+    "new com.cc.applet.C"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <Grid_int: com.cc.applet.B S>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "fieldget <Grid_int: com.cc.applet.B S>"->"load.r r0";
+    "fieldget <Grid_int: com.cc.B.A A>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <Grid_int: com.cc.B.A A>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "specialinvoke <com.cc.applet.C: void <init>(Grid_int,com.cc.applet.B,com.cc.B.A,com.cc.C.A)>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"specialinvoke <com.cc.applet.C: void <init>(Grid_int,com.cc.applet.B,com.cc.B.A,com.cc.C.A)>";
+    "fieldput <Grid_int: com.cc.applet.C I>"
+    "specialinvoke <com.cc.applet.C: void <init>(Grid_int,com.cc.applet.B,com.cc.B.A,com.cc.C.A)>"->"fieldput <Grid_int: com.cc.applet.C I>";
+    "fieldput <Grid_int: com.cc.applet.C I>"->"load.r r0";
+    "specialinvoke <Grid_int: void D()>"
+    "load.r r0"->"specialinvoke <Grid_int: void D()>";
+    "specialinvoke <Grid_int: void D()>"->"load.r r0";
+    "fieldget <Grid_int: com.cc.applet.E[] R>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.E[] R>";
+    "arraylength"
+    "fieldget <Grid_int: com.cc.applet.E[] R>"->"arraylength";
+    "newarray"
+    "arraylength"->"newarray";
+    "store.r r3"
+    "newarray"->"store.r r3";
+    "store.r r3"->"push 0";
+    "store.i i57"
+    "push 0"->"store.i i57";
+    "goto load.i i57"
+    "store.i i57"->"goto load.i i57";
+    "load.i i57"
+    "goto load.i i57"->"load.i i57";
+    "load.i i57"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.E[] R>";
+    "fieldget <Grid_int: com.cc.applet.E[] R>"->"arraylength";
+    "ifcmplt.i load.r r3"
+    "arraylength"->"ifcmplt.i load.r r3";
+    "ifcmplt.i load.r r3"->"load.r r0";
+    "fieldget <Grid_int: com.cc.applet.C I>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.C I>";
+    "load.r r3"
+    "fieldget <Grid_int: com.cc.applet.C I>"->"load.r r3";
+    "virtualinvoke <com.cc.gui.D: void A(com.cc.gui.B[])>"
+    "load.r r3"->"virtualinvoke <com.cc.gui.D: void A(com.cc.gui.B[])>";
+    "virtualinvoke <com.cc.gui.D: void A(com.cc.gui.B[])>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "virtualinvoke <com.cc.B.A: com.cc.B.D K()>"
+    "fieldget <Grid_int: com.cc.B.A A>"->"virtualinvoke <com.cc.B.A: com.cc.B.D K()>";
+    "virtualinvoke <com.cc.B.A: com.cc.B.D K()>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "specialinvoke <Grid_int: void F()>"
+    "load.r r0"->"specialinvoke <Grid_int: void F()>";
+    "specialinvoke <Grid_int: void F()>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <com.cc.B.A: java.lang.String Y>"
+    "fieldget <Grid_int: com.cc.B.A A>"->"fieldget <com.cc.B.A: java.lang.String Y>";
+    "fieldget <com.cc.B.A: java.lang.String Y>"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <Grid_int: com.cc.B.A A>"->"push 0";
+    "fieldput <com.cc.B.A: boolean G>"
+    "push 0"->"fieldput <com.cc.B.A: boolean G>";
+    "fieldput <com.cc.B.A: boolean G>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <com.cc.B.A: boolean G>"
+    "fieldget <Grid_int: com.cc.B.A A>"->"fieldget <com.cc.B.A: boolean G>";
+    "fieldget <com.cc.B.A: boolean G>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "new com.cc.applet.D"
+    "load.r r0"->"new com.cc.applet.D";
+    "new com.cc.applet.D"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <Grid_int: com.cc.B.A A>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.C I>";
+    "specialinvoke <com.cc.applet.D: void <init>(com.cc.B.A,com.cc.applet.C)>"
+    "fieldget <Grid_int: com.cc.applet.C I>"->"specialinvoke <com.cc.applet.D: void <init>(com.cc.B.A,com.cc.applet.C)>";
+    "fieldput <Grid_int: com.cc.applet.D C>"
+    "specialinvoke <com.cc.applet.D: void <init>(com.cc.B.A,com.cc.applet.C)>"->"fieldput <Grid_int: com.cc.applet.D C>";
+    "new java.awt.Dimension"
+    "fieldput <Grid_int: com.cc.applet.D C>"->"new java.awt.Dimension";
+    "new java.awt.Dimension"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push 0"->"push 0";
+    "specialinvoke <java.awt.Dimension: void <init>(int,int)>"
+    "push 0"->"specialinvoke <java.awt.Dimension: void <init>(int,int)>";
+    "specialinvoke <java.awt.Dimension: void <init>(int,int)>"->"store.r r3";
+    "store.r r3"->"push 0";
+    "push 0"->"store.i i57";
+    "store.i i57"->"goto load.i i57";
+    "goto load.i i57"->"load.i i57";
+    "push 20"
+    "load.i i57"->"push 20";
+    "ifcmplt.i load.r r0"
+    "push 20"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "fieldget <Grid_int: com.cc.applet.D C>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.D C>";
+    "fieldget <Grid_int: com.cc.applet.D C>"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Color getForeground()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Color getForeground()>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"
+    "virtualinvoke <java.awt.Component: java.awt.Color getForeground()>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "fieldget <Grid_int: java.awt.Rectangle G>"
+    "load.r r0"->"fieldget <Grid_int: java.awt.Rectangle G>";
+    "fieldget <java.awt.Rectangle: int x>"
+    "fieldget <Grid_int: java.awt.Rectangle G>"->"fieldget <java.awt.Rectangle: int x>";
+    "fieldget <java.awt.Rectangle: int x>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.awt.Rectangle G>";
+    "fieldget <Grid_int: java.awt.Rectangle G>"->"fieldget <java.awt.Rectangle: int width>";
+    "fieldget <java.awt.Rectangle: int width>"->"load.r r3";
+    "fieldget <java.awt.Dimension: int width>"
+    "load.r r3"->"fieldget <java.awt.Dimension: int width>";
+    "fieldget <java.awt.Dimension: int width>"->"sub.i";
+    "sub.i"->"push 2";
+    "div.i"
+    "push 2"->"div.i";
+    "div.i"->"add.i";
+    "add.i"->"store.i i57";
+    "store.i i57"->"load.i i57";
+    "load.i i57"->"load.r r3";
+    "load.r r3"->"fieldget <java.awt.Dimension: int width>";
+    "fieldget <java.awt.Dimension: int width>"->"add.i";
+    "add.i"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+    "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+    "ifcmple.i load.r r0"
+    "fieldget <java.awt.Dimension: int width>"->"ifcmple.i load.r r0";
+    "ifcmple.i load.r r0"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+    "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int width>";
+    "fieldget <java.awt.Dimension: int width>"->"load.r r3";
+    "load.r r3"->"fieldget <java.awt.Dimension: int width>";
+    "fieldget <java.awt.Dimension: int width>"->"sub.i";
+    "sub.i"->"push 2";
+    "push 2"->"div.i";
+    "div.i"->"store.i i57";
+    "store.i i57"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.D C>";
+    "fieldget <Grid_int: com.cc.applet.D C>"->"load.i i57";
+    "load.i i57"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.awt.Rectangle G>";
+    "fieldget <java.awt.Rectangle: int y>"
+    "fieldget <Grid_int: java.awt.Rectangle G>"->"fieldget <java.awt.Rectangle: int y>";
+    "fieldget <java.awt.Rectangle: int y>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.awt.Rectangle G>";
+    "fieldget <java.awt.Rectangle: int height>"
+    "fieldget <Grid_int: java.awt.Rectangle G>"->"fieldget <java.awt.Rectangle: int height>";
+    "fieldget <java.awt.Rectangle: int height>"->"add.i";
+    "add.i"->"push 2";
+    "push 2"->"add.i";
+    "add.i"->"load.r r3";
+    "load.r r3"->"fieldget <java.awt.Dimension: int width>";
+    "fieldget <java.awt.Dimension: int width>"->"load.r r3";
+    "load.r r3"->"fieldget <java.awt.Dimension: int height>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"
+    "fieldget <java.awt.Dimension: int height>"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.D C>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <Grid_int: com.cc.applet.D C>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: boolean À>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: boolean À>";
+    "fieldget <com.cc.C.A: boolean À>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"new com.cc.applet.A";
+    "new com.cc.applet.A"->"dup1.r";
+    "specialinvoke <com.cc.applet.A: void <init>()>"
+    "dup1.r"->"specialinvoke <com.cc.applet.A: void <init>()>";
+    "fieldput <Grid_int: com.cc.applet.A U>"
+    "specialinvoke <com.cc.applet.A: void <init>()>"->"fieldput <Grid_int: com.cc.applet.A U>";
+    "fieldput <Grid_int: com.cc.applet.A U>"->"load.r r0";
+    "fieldget <Grid_int: com.cc.applet.A U>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "push \"TIMER\""
+    "fieldget <Grid_int: com.cc.applet.A U>"->"push \"TIMER\"";
+    "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"
+    "push \"TIMER\""->"virtualinvoke <java.awt.Component: void setName(java.lang.String)>";
+    "virtualinvoke <java.awt.Component: void setName(java.lang.String)>"->"load.r $r4";
+    "load.r $r4"->"store.r $r4";
+    "store.r $r4"->"load.r r2";
+    "load.r r2"->"store.r r2";
+    "store.r r2"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: com.cc.C.C H>";
+    "fieldget <com.cc.C.A: com.cc.C.C H>"->"virtualinvoke <com.cc.C.C: int U()>";
+    "virtualinvoke <com.cc.C.C: int U()>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"store.r r2";
+    "store.r r2"->"load.r r2";
+    "load.r r2"->"push \"SansSerif\"";
+    "push 1"
+    "push \"SansSerif\""->"push 1";
+    "push 13"
+    "push 1"->"push 13";
+    "push 13"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"load.r r2";
+    "load.r r2"->"store.r $r4";
+    "store.r $r4"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"load.r r2";
+    "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"
+    "load.r r2"->"virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"store.r r2";
+    "store.r r2"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"load.r $r4";
+    "load.r $r4"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"store.r $r4";
+    "store.r $r4"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "fieldget <com.cc.applet.A: int W>"
+    "fieldget <Grid_int: com.cc.applet.A P>"->"fieldget <com.cc.applet.A: int W>";
+    "fieldget <com.cc.applet.A: int W>"->"store.i r3";
+    "store.i r3"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: com.cc.C.C H>";
+    "fieldget <com.cc.C.A: com.cc.C.C H>"->"virtualinvoke <com.cc.C.C: int U()>";
+    "virtualinvoke <com.cc.C.C: int U()>"->"ifeq push 0";
+    "ifeq push 0"->"push 2";
+    "store.b i57"
+    "push 2"->"store.b i57";
+    "goto load.r $r4"
+    "store.b i57"->"goto load.r $r4";
+    "goto load.r $r4"->"load.r $r4";
+    "load.r $r4"->"load.i r3";
+    "load.b i57"
+    "load.i r3"->"load.b i57";
+    "load.b i57"->"add.i";
+    "add.i"->"fieldput <com.cc.applet.A: int W>";
+    "fieldput <com.cc.applet.A: int W>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"store.r $r4";
+    "load.i $i8"
+    "store.r $r4"->"load.i $i8";
+    "load.i $i8"->"load.r r2";
+    "push \"10:00:00\""
+    "load.r r2"->"push \"10:00:00\"";
+    "push \"10:00:00\""->"virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>";
+    "staticinvoke <java.lang.Math: int min(int,int)>"
+    "virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>"->"staticinvoke <java.lang.Math: int min(int,int)>";
+    "store.i r2"
+    "staticinvoke <java.lang.Math: int min(int,int)>"->"store.i r2";
+    "store.i r2"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: com.cc.C.C H>";
+    "fieldget <com.cc.C.A: com.cc.C.C H>"->"virtualinvoke <com.cc.C.C: int U()>";
+    "virtualinvoke <com.cc.C.C: int U()>"->"ifeq push 0";
+    "push 4"
+    "ifeq push 0"->"push 4";
+    "store.b r3"
+    "push 4"->"store.b r3";
+    "store.b r3"->"goto load.r $r4";
+    "goto load.r $r4"->"load.r $r4";
+    "load.i r2"
+    "load.r $r4"->"load.i r2";
+    "load.i r2"->"push 13";
+    "load.b r3"
+    "push 13"->"load.b r3";
+    "load.b r3"->"add.i";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"
+    "add.i"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: int F>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: int F>";
+    "virtualinvoke <com.cc.applet.A: void A(int)>"
+    "fieldget <com.cc.C.A: int F>"->"virtualinvoke <com.cc.applet.A: void A(int)>";
+    "virtualinvoke <com.cc.applet.A: void A(int)>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: boolean Á>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: boolean Á>";
+    "fieldput <com.cc.applet.A: boolean J>"
+    "fieldget <com.cc.C.A: boolean Á>"->"fieldput <com.cc.applet.A: boolean J>";
+    "fieldput <com.cc.applet.A: boolean J>"->"load.r r0";
+    "specialinvoke <Grid_int: void J()>"
+    "load.r r0"->"specialinvoke <Grid_int: void J()>";
+    "specialinvoke <Grid_int: void J()>"->"load.r r0";
+    "specialinvoke <Grid_int: void E()>"
+    "load.r r0"->"specialinvoke <Grid_int: void E()>";
+    "specialinvoke <Grid_int: void E()>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+    "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"fieldget <java.awt.Dimension: int height>";
+    "fieldget <java.awt.Dimension: int height>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "fieldget <Grid_int: com.cc.applet.A P>"->"virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>";
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"->"fieldget <java.awt.Rectangle: int y>";
+    "fieldget <java.awt.Rectangle: int y>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A P>";
+    "fieldget <Grid_int: com.cc.applet.A P>"->"virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>";
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle getBounds()>"->"fieldget <java.awt.Rectangle: int height>";
+    "fieldget <java.awt.Rectangle: int height>"->"add.i";
+    "ifcmpge.i load.r r0"
+    "add.i"->"ifcmpge.i load.r r0";
+    "push \"os.version\""
+    "ifcmpge.i load.r r0"->"push \"os.version\"";
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"
+    "push \"os.version\""->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>";
+    "push \"4.2\""
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String)>"->"push \"4.2\"";
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"
+    "push \"4.2\""->"virtualinvoke <java.lang.String: int compareTo(java.lang.String)>";
+    "ifle load.r r0"
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "push \"Wrong size\""
+    "load.r r0"->"push \"Wrong size\"";
+    "fieldput <Grid_int: java.lang.String Q>"
+    "push \"Wrong size\""->"fieldput <Grid_int: java.lang.String Q>";
+    "fieldput <Grid_int: java.lang.String Q>"->"load.r r0";
+    "virtualinvoke <java.awt.Container: void removeAll()>"
+    "load.r r0"->"virtualinvoke <java.awt.Container: void removeAll()>";
+    "virtualinvoke <java.awt.Container: void removeAll()>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.lang.String Q>";
+    "fieldget <Grid_int: java.lang.String Q>"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: int m>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: int m>";
+    "fieldget <com.cc.C.A: int m>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "new java.awt.ScrollPane"
+    "load.r r0"->"new java.awt.ScrollPane";
+    "new java.awt.ScrollPane"->"dup1.r";
+    "dup1.r"->"push 0";
+    "specialinvoke <java.awt.ScrollPane: void <init>(int)>"
+    "push 0"->"specialinvoke <java.awt.ScrollPane: void <init>(int)>";
+    "fieldput <Grid_int: java.awt.ScrollPane V>"
+    "specialinvoke <java.awt.ScrollPane: void <init>(int)>"->"fieldput <Grid_int: java.awt.ScrollPane V>";
+    "fieldput <Grid_int: java.awt.ScrollPane V>"->"load.r r0";
+    "fieldget <Grid_int: java.awt.ScrollPane V>"
+    "load.r r0"->"fieldget <Grid_int: java.awt.ScrollPane V>";
+    "fieldget <Grid_int: java.awt.ScrollPane V>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.awt.ScrollPane V>";
+    "virtualinvoke <java.awt.ScrollPane: java.awt.Adjustable getVAdjustable()>"
+    "fieldget <Grid_int: java.awt.ScrollPane V>"->"virtualinvoke <java.awt.ScrollPane: java.awt.Adjustable getVAdjustable()>";
+    "virtualinvoke <java.awt.ScrollPane: java.awt.Adjustable getVAdjustable()>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "virtualinvoke <com.cc.applet.B: int C()>"
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <com.cc.applet.B: int C()>";
+    "interfaceinvoke <java.awt.Adjustable: void setUnitIncrement(int)> 1"
+    "virtualinvoke <com.cc.applet.B: int C()>"->"interfaceinvoke <java.awt.Adjustable: void setUnitIncrement(int)> 1";
+    "interfaceinvoke <java.awt.Adjustable: void setUnitIncrement(int)> 1"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.awt.ScrollPane V>";
+    "virtualinvoke <java.awt.ScrollPane: java.awt.Adjustable getHAdjustable()>"
+    "fieldget <Grid_int: java.awt.ScrollPane V>"->"virtualinvoke <java.awt.ScrollPane: java.awt.Adjustable getHAdjustable()>";
+    "virtualinvoke <java.awt.ScrollPane: java.awt.Adjustable getHAdjustable()>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <com.cc.applet.B: int C()>";
+    "virtualinvoke <com.cc.applet.B: int C()>"->"interfaceinvoke <java.awt.Adjustable: void setUnitIncrement(int)> 1";
+    "interfaceinvoke <java.awt.Adjustable: void setUnitIncrement(int)> 1"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.awt.ScrollPane V>";
+    "fieldget <Grid_int: java.awt.ScrollPane V>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: int m>";
+    "fieldget <com.cc.C.A: int m>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: int Y>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: int Y>";
+    "fieldget <com.cc.C.A: int Y>"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.awt.ScrollPane V>";
+    "fieldget <Grid_int: java.awt.ScrollPane V>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: boolean s>";
+    "ifne load.i $i8"
+    "fieldget <com.cc.C.A: boolean s>"->"ifne load.i $i8";
+    "ifne load.i $i8"->"load.i $i8";
+    "load.i $i8"->"store.i r2";
+    "store.i r2"->"load.r r0";
+    "fieldget <Grid_int: int J>"
+    "load.r r0"->"fieldget <Grid_int: int J>";
+    "fieldget <Grid_int: int J>"->"store.i $i8";
+    "store.i $i8"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <com.cc.B.A: boolean F>"
+    "fieldget <Grid_int: com.cc.B.A A>"->"fieldget <com.cc.B.A: boolean F>";
+    "fieldget <com.cc.B.A: boolean F>"->"ifeq push 0";
+    "ifeq push 0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <com.cc.B.A: int L>"
+    "fieldget <Grid_int: com.cc.B.A A>"->"fieldget <com.cc.B.A: int L>";
+    "store.i $r4"
+    "fieldget <com.cc.B.A: int L>"->"store.i $r4";
+    "store.i $r4"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push 25"
+    "load.r r0"->"push 25";
+    "push 25"->"load.i r2";
+    "load.i r2"->"push 4";
+    "push 4"->"load.i $i8";
+    "load.i $r4"
+    "load.i $i8"->"load.i $r4";
+    "load.i $r4"->"add.i";
+    "specialinvoke <Grid_int: void A(int,int,int,int)>"
+    "add.i"->"specialinvoke <Grid_int: void A(int,int,int,int)>";
+    "specialinvoke <Grid_int: void A(int,int,int,int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "specialinvoke <Grid_int: void A(java.awt.Container)>"
+    "load.r r0"->"specialinvoke <Grid_int: void A(java.awt.Container)>";
+    "specialinvoke <Grid_int: void A(java.awt.Container)>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "virtualinvoke <java.awt.Component: void requestFocus()>"
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <java.awt.Component: void requestFocus()>";
+    "virtualinvoke <java.awt.Component: void requestFocus()>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: boolean Ç>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: boolean Ç>";
+    "fieldget <com.cc.C.A: boolean Ç>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "virtualinvoke <com.cc.applet.B: void E()>"
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <com.cc.applet.B: void E()>";
+    "virtualinvoke <com.cc.applet.B: void E()>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "fieldget <Grid_int: com.cc.applet.A U>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.C.A X>";
+    "fieldget <com.cc.C.A: boolean U>"
+    "fieldget <Grid_int: com.cc.C.A X>"->"fieldget <com.cc.C.A: boolean U>";
+    "fieldget <com.cc.C.A: boolean U>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.A U>";
+    "virtualinvoke <com.cc.applet.A: void A()>"
+    "fieldget <Grid_int: com.cc.applet.A U>"->"virtualinvoke <com.cc.applet.A: void A()>";
+    "virtualinvoke <com.cc.applet.A: void A()>"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Color getBackground()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Color getBackground()>";
+    "virtualinvoke <java.awt.Color: int getGreen()>"
+    "virtualinvoke <java.awt.Component: java.awt.Color getBackground()>"->"virtualinvoke <java.awt.Color: int getGreen()>";
+    "push 130"
+    "virtualinvoke <java.awt.Color: int getGreen()>"->"push 130";
+    "push 130"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Color getBackground()>";
+    "virtualinvoke <java.awt.Color: int getRed()>"
+    "virtualinvoke <java.awt.Component: java.awt.Color getBackground()>"->"virtualinvoke <java.awt.Color: int getRed()>";
+    "virtualinvoke <java.awt.Color: int getRed()>"->"push 130";
+    "push 130"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Color getBackground()>";
+    "virtualinvoke <java.awt.Color: int getBlue()>"
+    "virtualinvoke <java.awt.Component: java.awt.Color getBackground()>"->"virtualinvoke <java.awt.Color: int getBlue()>";
+    "virtualinvoke <java.awt.Color: int getBlue()>"->"push 130";
+    "push 130"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.gui.F K>";
+    "fieldget <Grid_int: com.cc.gui.F K>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.gui.F K>";
+    "staticget <java.awt.Color: java.awt.Color white>"
+    "fieldget <Grid_int: com.cc.gui.F K>"->"staticget <java.awt.Color: java.awt.Color white>";
+    "virtualinvoke <com.cc.gui.E: void A(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <com.cc.gui.E: void A(java.awt.Color)>";
+    "virtualinvoke <com.cc.gui.E: void A(java.awt.Color)>"->"load.r r0";
+    "fieldget <Grid_int: com.cc.gui.F M>"
+    "load.r r0"->"fieldget <Grid_int: com.cc.gui.F M>";
+    "fieldget <Grid_int: com.cc.gui.F M>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.gui.F M>";
+    "fieldget <Grid_int: com.cc.gui.F M>"->"staticget <java.awt.Color: java.awt.Color white>";
+    "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <com.cc.gui.E: void A(java.awt.Color)>";
+    "virtualinvoke <com.cc.gui.E: void A(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "virtualinvoke <java.awt.Component: void repaint()>"
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <java.awt.Component: void repaint()>";
+    "return"
+    "virtualinvoke <java.awt.Component: void repaint()>"->"return";
+    "ifeq push 0"->"push 0";
+    "push 0"->"store.i $r4";
+    "ifne load.i $i8"->"load.i $i8";
+    "load.i $i8"->"store.i r2";
+    "store.i r2"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: int J>";
+    "fieldget <Grid_int: int J>"->"store.i $i8";
+    "store.i $i8"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <Grid_int: com.cc.B.A A>"->"fieldget <com.cc.B.A: boolean F>";
+    "fieldget <com.cc.B.A: boolean F>"->"ifeq push 0";
+    "ifeq push 0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.B.A A>";
+    "fieldget <Grid_int: com.cc.B.A A>"->"fieldget <com.cc.B.A: int L>";
+    "fieldget <com.cc.B.A: int L>"->"store.i $r4";
+    "store.i $r4"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"push 25";
+    "push 25"->"load.i r2";
+    "load.i r2"->"push 4";
+    "push 4"->"load.i $i8";
+    "load.i $i8"->"load.i $r4";
+    "load.i $r4"->"add.i";
+    "specialinvoke <Grid_int: void B(int,int,int,int)>"
+    "add.i"->"specialinvoke <Grid_int: void B(int,int,int,int)>";
+    "ifeq push 0"->"push 0";
+    "push 0"->"store.i $r4";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "ifeq push 0"->"push 0";
+    "push 0"->"store.b r3";
+    "ifeq push 0"->"push 0";
+    "push 0"->"store.b i57";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.D C>";
+    "fieldget <Grid_int: com.cc.applet.D C>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"SansSerif\"";
+    "push \"SansSerif\""->"push 1";
+    "push 1"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "virtualinvoke <com.cc.applet.B: int G()>"
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <com.cc.applet.B: int G()>";
+    "virtualinvoke <com.cc.applet.B: int G()>"->"load.i i57";
+    "load.i i57"->"sub.i";
+    "sub.i"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.D C>";
+    "virtualinvoke <com.cc.applet.D: java.awt.Dimension getPreferredSize()>"
+    "fieldget <Grid_int: com.cc.applet.D C>"->"virtualinvoke <com.cc.applet.D: java.awt.Dimension getPreferredSize()>";
+    "virtualinvoke <com.cc.applet.D: java.awt.Dimension getPreferredSize()>"->"store.r r3";
+    "store.r r3"->"load.r r3";
+    "load.r r3"->"fieldget <java.awt.Dimension: int width>";
+    "fieldget <java.awt.Dimension: int width>"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: java.awt.Rectangle G>";
+    "fieldget <Grid_int: java.awt.Rectangle G>"->"fieldget <java.awt.Rectangle: int width>";
+    "fieldget <java.awt.Rectangle: int width>"->"ifcmple.i load.r r0";
+    "ifcmple.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.B S>";
+    "fieldget <Grid_int: com.cc.applet.B S>"->"virtualinvoke <com.cc.applet.B: int G()>";
+    "virtualinvoke <com.cc.applet.B: int G()>"->"load.i i57";
+    "load.i i57"->"sub.i";
+    "push 6"
+    "sub.i"->"push 6";
+    "ifcmpge.i inc.i i57 1"
+    "push 6"->"ifcmpge.i inc.i i57 1";
+    "ifcmpge.i inc.i i57 1"->"goto load.r r0";
+    "inc.i i57 1"
+    "ifcmpge.i inc.i i57 1"->"inc.i i57 1";
+    "ifcmplt.i load.r r3"->"load.r r3";
+    "load.r r3"->"load.i i57";
+    "load.i i57"->"load.r r0";
+    "load.r r0"->"fieldget <Grid_int: com.cc.applet.E[] R>";
+    "fieldget <Grid_int: com.cc.applet.E[] R>"->"load.i i57";
+    "arrayread.r"
+    "load.i i57"->"arrayread.r";
+    "fieldget <com.cc.applet.E: com.cc.gui.B A>"
+    "arrayread.r"->"fieldget <com.cc.applet.E: com.cc.gui.B A>";
+    "arraywrite.r"
+    "fieldget <com.cc.applet.E: com.cc.gui.B A>"->"arraywrite.r";
+    "arraywrite.r"->"inc.i i57 1";
+    "ifeq load.i $i8"->"load.i $i8";
+    "load.i $i8"->"push 4";
+    "push 4"->"push 2";
+    "mul.i"
+    "push 2"->"mul.i";
+    "mul.i"->"add.i";
+    "add.i"->"store.i r3";
+    "ifnonnull load.r r0"->"load.r r0";
+    "load.r r0"->"new com.cc.applet.A";
+    "new com.cc.applet.A"->"dup1.r";
+    "push \" Software \u00a9 2010 crossword-compiler.com\""
+    "dup1.r"->"push \" Software \u00a9 2010 crossword-compiler.com\"";
+    "push \"\""
+    "push \" Software \u00a9 2010 crossword-compiler.com\""->"push \"\"";
+    "push \"\""->"specialinvoke <com.cc.applet.A: void <init>(java.lang.String,java.lang.String)>";
+    "specialinvoke <com.cc.applet.A: void <init>(java.lang.String,java.lang.String)>"->"fieldput <Grid_int: com.cc.applet.A P>";
+}

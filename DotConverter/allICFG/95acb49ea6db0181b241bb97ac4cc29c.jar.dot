@@ -1,0 +1,336 @@
+digraph "" {
+    "r0 := @this: tchart1"
+    "push 13684944"
+    "r0 := @this: tchart1"->"push 13684944";
+    "store.i i8"
+    "push 13684944"->"store.i i8";
+    "new java.awt.GridBagLayout"
+    "store.i i8"->"new java.awt.GridBagLayout";
+    "store.r $r5"
+    "new java.awt.GridBagLayout"->"store.r $r5";
+    "load.r $r5"
+    "store.r $r5"->"load.r $r5";
+    "specialinvoke <java.awt.GridBagLayout: void <init>()>"
+    "load.r $r5"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+    "new java.awt.GridBagConstraints"
+    "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"new java.awt.GridBagConstraints";
+    "store.r $r6"
+    "new java.awt.GridBagConstraints"->"store.r $r6";
+    "load.r $r6"
+    "store.r $r6"->"load.r $r6";
+    "specialinvoke <java.awt.GridBagConstraints: void <init>()>"
+    "load.r $r6"->"specialinvoke <java.awt.GridBagConstraints: void <init>()>";
+    "load.r r0"
+    "specialinvoke <java.awt.GridBagConstraints: void <init>()>"->"load.r r0";
+    "new java.awt.Font"
+    "load.r r0"->"new java.awt.Font";
+    "dup1.r"
+    "new java.awt.Font"->"dup1.r";
+    "push \"Helvetica\""
+    "dup1.r"->"push \"Helvetica\"";
+    "push 0"
+    "push \"Helvetica\""->"push 0";
+    "push 14"
+    "push 0"->"push 14";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "push 14"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"load.r $r5";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "load.r $r5"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r $r6";
+    "push 12"
+    "load.r $r6"->"push 12";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"
+    "push 12"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"->"load.r $r6";
+    "push 2"
+    "load.r $r6"->"push 2";
+    "fieldput <java.awt.GridBagConstraints: int fill>"
+    "push 2"->"fieldput <java.awt.GridBagConstraints: int fill>";
+    "fieldput <java.awt.GridBagConstraints: int fill>"->"load.r $r6";
+    "push 1.0"
+    "load.r $r6"->"push 1.0";
+    "fieldput <java.awt.GridBagConstraints: double weightx>"
+    "push 1.0"->"fieldput <java.awt.GridBagConstraints: double weightx>";
+    "fieldput <java.awt.GridBagConstraints: double weightx>"->"load.r r0";
+    "fieldget <tchart1: boolean bReg>"
+    "load.r r0"->"fieldget <tchart1: boolean bReg>";
+    "ifne new java.awt.Label"
+    "fieldget <tchart1: boolean bReg>"->"ifne new java.awt.Label";
+    "ifne new java.awt.Label"->"load.r r0";
+    "new java.awt.Button"
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"About\""
+    "dup1.r"->"push \"About\"";
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"
+    "push \"About\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <tchart1: java.awt.Button b1>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <tchart1: java.awt.Button b1>";
+    "fieldput <tchart1: java.awt.Button b1>"->"load.r $r5";
+    "load.r $r5"->"load.r r0";
+    "fieldget <tchart1: java.awt.Button b1>"
+    "load.r r0"->"fieldget <tchart1: java.awt.Button b1>";
+    "fieldget <tchart1: java.awt.Button b1>"->"load.r $r6";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"
+    "load.r $r6"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: java.awt.Button b1>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <tchart1: java.awt.Button b1>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "new java.awt.Label"
+    "pop"->"new java.awt.Label";
+    "store.r $r8"
+    "new java.awt.Label"->"store.r $r8";
+    "load.r $r8"
+    "store.r $r8"->"load.r $r8";
+    "push \"\""
+    "load.r $r8"->"push \"\"";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"
+    "push \"\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"load.r $r6";
+    "load.r $r6"->"push 0";
+    "fieldput <java.awt.GridBagConstraints: int gridwidth>"
+    "push 0"->"fieldput <java.awt.GridBagConstraints: int gridwidth>";
+    "fieldput <java.awt.GridBagConstraints: int gridwidth>"->"load.r $r5";
+    "load.r $r5"->"load.r $r8";
+    "load.r $r8"->"load.r $r6";
+    "load.r $r6"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r $r8";
+    "load.r $r8"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "push \"frame\""
+    "load.r r0"->"push \"frame\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"frame\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r8";
+    "store.r $r8"->"load.r r0";
+    "load.r r0"->"push 0";
+    "fieldput <tchart1: int iFr>"
+    "push 0"->"fieldput <tchart1: int iFr>";
+    "fieldput <tchart1: int iFr>"->"load.r $r8";
+    "ifnull load.r r0"
+    "load.r $r8"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r8";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"
+    "load.r $r8"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <tchart1: int iFr>";
+    "fieldput <tchart1: int iFr>"->"load.r r0";
+    "new cchart"
+    "load.r r0"->"new cchart";
+    "new cchart"->"dup1.r";
+    "specialinvoke <cchart: void <init>()>"
+    "dup1.r"->"specialinvoke <cchart: void <init>()>";
+    "fieldput <tchart1: cchart cv1>"
+    "specialinvoke <cchart: void <init>()>"->"fieldput <tchart1: cchart cv1>";
+    "fieldput <tchart1: cchart cv1>"->"load.r r0";
+    "push \"bgcolor\""
+    "load.r r0"->"push \"bgcolor\"";
+    "push \"bgcolor\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r8";
+    "store.r $r8"->"load.r $r8";
+    "load.r $r8"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r8";
+    "load.r $r8"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"store.i i8";
+    "store.i i8"->"load.r r0";
+    "fieldget <tchart1: cchart cv1>"
+    "load.r r0"->"fieldget <tchart1: cchart cv1>";
+    "load.i i8"
+    "fieldget <tchart1: cchart cv1>"->"load.i i8";
+    "virtualinvoke <cchart: void setBkColor(int)>"
+    "load.i i8"->"virtualinvoke <cchart: void setBkColor(int)>";
+    "virtualinvoke <cchart: void setBkColor(int)>"->"load.r r0";
+    "fieldget <tchart1: int iFr>"
+    "load.r r0"->"fieldget <tchart1: int iFr>";
+    "ifeq load.r r0"
+    "fieldget <tchart1: int iFr>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"new cchart";
+    "new cchart"->"dup1.r";
+    "dup1.r"->"specialinvoke <cchart: void <init>()>";
+    "fieldput <tchart1: cchart cv2>"
+    "specialinvoke <cchart: void <init>()>"->"fieldput <tchart1: cchart cv2>";
+    "fieldput <tchart1: cchart cv2>"->"load.r r0";
+    "fieldget <tchart1: cchart cv2>"
+    "load.r r0"->"fieldget <tchart1: cchart cv2>";
+    "fieldget <tchart1: cchart cv2>"->"load.i i8";
+    "load.i i8"->"virtualinvoke <cchart: void setBkColor(int)>";
+    "virtualinvoke <cchart: void setBkColor(int)>"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: cchart cv2>";
+    "push null"
+    "fieldget <tchart1: cchart cv2>"->"push null";
+    "virtualinvoke <cchart: void setBkImage(java.awt.Image)>"
+    "push null"->"virtualinvoke <cchart: void setBkImage(java.awt.Image)>";
+    "virtualinvoke <cchart: void setBkImage(java.awt.Image)>"->"load.r r0";
+    "push \"fontsize\""
+    "load.r r0"->"push \"fontsize\"";
+    "push \"fontsize\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r i8"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i8";
+    "load.r i8"
+    "store.r i8"->"load.r i8";
+    "ifnull push 12"
+    "load.r i8"->"ifnull push 12";
+    "ifnull push 12"->"load.r i8";
+    "load.r i8"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"store.i i8";
+    "goto load.r r0"
+    "store.i i8"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"font\""
+    "load.r r0"->"push \"font\"";
+    "push \"font\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r8";
+    "store.r $r8"->"load.r $r8";
+    "ifnonnull load.r r0"
+    "load.r $r8"->"ifnonnull load.r r0";
+    "new java.lang.String"
+    "ifnonnull load.r r0"->"new java.lang.String";
+    "new java.lang.String"->"dup1.r";
+    "dup1.r"->"push \"Helvetica\"";
+    "specialinvoke <java.lang.String: void <init>(java.lang.String)>"
+    "push \"Helvetica\""->"specialinvoke <java.lang.String: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.String: void <init>(java.lang.String)>"->"store.r $r8";
+    "store.r $r8"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: cchart cv1>";
+    "fieldget <tchart1: cchart cv1>"->"load.r $r8";
+    "load.r $r8"->"push 0";
+    "push 0"->"load.i i8";
+    "virtualinvoke <cchart: void setFont(java.lang.String,int,int)>"
+    "load.i i8"->"virtualinvoke <cchart: void setFont(java.lang.String,int,int)>";
+    "virtualinvoke <cchart: void setFont(java.lang.String,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: int iFr>";
+    "ifeq push null"
+    "fieldget <tchart1: int iFr>"->"ifeq push null";
+    "ifeq push null"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: cchart cv2>";
+    "fieldget <tchart1: cchart cv2>"->"load.r $r8";
+    "load.r $r8"->"push 0";
+    "push 0"->"load.i i8";
+    "load.i i8"->"virtualinvoke <cchart: void setFont(java.lang.String,int,int)>";
+    "virtualinvoke <cchart: void setFont(java.lang.String,int,int)>"->"push null";
+    "push null"->"store.r i8";
+    "store.r i8"->"load.r r0";
+    "push \"bgImg\""
+    "load.r r0"->"push \"bgImg\"";
+    "push \"bgImg\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r36"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r36";
+    "load.r r36"
+    "store.r r36"->"load.r r36";
+    "load.r r36"->"ifnull load.r r0";
+    "new java.awt.MediaTracker"
+    "ifnull load.r r0"->"new java.awt.MediaTracker";
+    "new java.awt.MediaTracker"->"store.r $r8";
+    "store.r $r8"->"load.r $r8";
+    "load.r $r8"->"load.r r0";
+    "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"
+    "load.r r0"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+    "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"load.r r36";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"
+    "load.r r36"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"store.r i8";
+    "store.r i8"->"load.r $r8";
+    "load.r $r8"->"load.r i8";
+    "load.r i8"->"push 0";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"
+    "push 0"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"load.r $r8";
+    "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"
+    "load.r $r8"->"virtualinvoke <java.awt.MediaTracker: void waitForAll()>";
+    "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: cchart cv1>";
+    "fieldget <tchart1: cchart cv1>"->"load.r i8";
+    "load.r i8"->"virtualinvoke <cchart: void setBkImage(java.awt.Image)>";
+    "virtualinvoke <cchart: void setBkImage(java.awt.Image)>"->"load.r $r6";
+    "load.r $r6"->"push 1.0";
+    "fieldput <java.awt.GridBagConstraints: double weighty>"
+    "push 1.0"->"fieldput <java.awt.GridBagConstraints: double weighty>";
+    "fieldput <java.awt.GridBagConstraints: double weighty>"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: int iFr>";
+    "ifne load.r $r6"
+    "fieldget <tchart1: int iFr>"->"ifne load.r $r6";
+    "ifne load.r $r6"->"load.r $r6";
+    "load.r $r6"->"push 0";
+    "fieldput <java.awt.GridBagConstraints: int gridheight>"
+    "push 0"->"fieldput <java.awt.GridBagConstraints: int gridheight>";
+    "fieldput <java.awt.GridBagConstraints: int gridheight>"->"load.r $r6";
+    "push 1"
+    "load.r $r6"->"push 1";
+    "push 1"->"fieldput <java.awt.GridBagConstraints: int fill>";
+    "fieldput <java.awt.GridBagConstraints: int fill>"->"load.r $r6";
+    "push 0.0"
+    "load.r $r6"->"push 0.0";
+    "push 0.0"->"fieldput <java.awt.GridBagConstraints: double weightx>";
+    "fieldput <java.awt.GridBagConstraints: double weightx>"->"load.r $r6";
+    "push 10.0"
+    "load.r $r6"->"push 10.0";
+    "push 10.0"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: int iFr>";
+    "push 10"
+    "fieldget <tchart1: int iFr>"->"push 10";
+    "div.i"
+    "push 10"->"div.i";
+    "i2d"
+    "div.i"->"i2d";
+    "sub.d"
+    "i2d"->"sub.d";
+    "sub.d"->"fieldput <java.awt.GridBagConstraints: double weighty>";
+    "fieldput <java.awt.GridBagConstraints: double weighty>"->"load.r $r6";
+    "load.r $r6"->"push 0";
+    "push 0"->"fieldput <java.awt.GridBagConstraints: int gridwidth>";
+    "fieldput <java.awt.GridBagConstraints: int gridwidth>"->"load.r $r5";
+    "load.r $r5"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: cchart cv1>";
+    "fieldget <tchart1: cchart cv1>"->"load.r $r6";
+    "load.r $r6"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: cchart cv1>";
+    "fieldget <tchart1: cchart cv1>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: int iFr>";
+    "ifeq return"
+    "fieldget <tchart1: int iFr>"->"ifeq return";
+    "ifeq return"->"load.r $r6";
+    "load.r $r6"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: int iFr>";
+    "fieldget <tchart1: int iFr>"->"push 10";
+    "push 10"->"div.i";
+    "div.i"->"i2d";
+    "i2d"->"fieldput <java.awt.GridBagConstraints: double weighty>";
+    "fieldput <java.awt.GridBagConstraints: double weighty>"->"load.r $r6";
+    "load.r $r6"->"push 0";
+    "push 0"->"fieldput <java.awt.GridBagConstraints: int gridheight>";
+    "fieldput <java.awt.GridBagConstraints: int gridheight>"->"load.r $r5";
+    "load.r $r5"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: cchart cv2>";
+    "fieldget <tchart1: cchart cv2>"->"load.r $r6";
+    "load.r $r6"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <tchart1: cchart cv2>";
+    "fieldget <tchart1: cchart cv2>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "return"
+    "pop"->"return";
+    "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"->"store.r $r8";
+    "ifnull push 12"->"push 12";
+    "push 12"->"store.i i8";
+}

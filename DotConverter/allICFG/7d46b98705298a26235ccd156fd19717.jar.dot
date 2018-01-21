@@ -1,0 +1,130 @@
+digraph "" {
+    "r0 := @this: cfg8.MiscEditApp"
+    "staticget <cfg8.RotationImageFilter: int a>"
+    "r0 := @this: cfg8.MiscEditApp"->"staticget <cfg8.RotationImageFilter: int a>";
+    "store.i r1"
+    "staticget <cfg8.RotationImageFilter: int a>"->"store.i r1";
+    "load.r r0"
+    "store.i r1"->"load.r r0";
+    "specialinvoke <cfg8.ItemApplet: void init()>"
+    "load.r r0"->"specialinvoke <cfg8.ItemApplet: void init()>";
+    "specialinvoke <cfg8.ItemApplet: void init()>"->"load.r r0";
+    "fieldget <cfg8.MiscEditApp: cfg8.e Q>"
+    "load.r r0"->"fieldget <cfg8.MiscEditApp: cfg8.e Q>";
+    "fieldget <cfg8.MiscEditApp: cfg8.e Q>"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Color getBackground()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Color getBackground()>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "virtualinvoke <java.awt.Component: java.awt.Color getBackground()>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cfg8.MiscEditApp: cfg8.e Q>";
+    "push null"
+    "fieldget <cfg8.MiscEditApp: cfg8.e Q>"->"push null";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"
+    "push null"->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "fieldget <cfg8.ItemApplet: java.lang.String m>"
+    "load.r r0"->"fieldget <cfg8.ItemApplet: java.lang.String m>";
+    "virtualinvoke <java.lang.String: int length()>"
+    "fieldget <cfg8.ItemApplet: java.lang.String m>"->"virtualinvoke <java.lang.String: int length()>";
+    "store.i $i1"
+    "virtualinvoke <java.lang.String: int length()>"->"store.i $i1";
+    "push 0"
+    "store.i $i1"->"push 0";
+    "store.i $r10"
+    "push 0"->"store.i $r10";
+    "load.i r1"
+    "store.i $r10"->"load.i r1";
+    "ifne load.i $i1"
+    "load.i r1"->"ifne load.i $i1";
+    "load.i $i1"
+    "ifne load.i $i1"->"load.i $i1";
+    "ifle load.r r0"
+    "load.i $i1"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cfg8.ItemApplet: java.lang.String m>";
+    "virtualinvoke <cfg8.MiscEditApp: void c(java.lang.String)>"
+    "fieldget <cfg8.ItemApplet: java.lang.String m>"->"virtualinvoke <cfg8.MiscEditApp: void c(java.lang.String)>";
+    "virtualinvoke <cfg8.MiscEditApp: void c(java.lang.String)>"->"load.r r0";
+    "staticget <cfg8.MiscEditApp: java.lang.String[] R>"
+    "load.r r0"->"staticget <cfg8.MiscEditApp: java.lang.String[] R>";
+    "push 8"
+    "staticget <cfg8.MiscEditApp: java.lang.String[] R>"->"push 8";
+    "arrayread.r"
+    "push 8"->"arrayread.r";
+    "push \"N\""
+    "arrayread.r"->"push \"N\"";
+    "virtualinvoke <cfg8.a: java.lang.String getParameter(java.lang.String,java.lang.String)>"
+    "push \"N\""->"virtualinvoke <cfg8.a: java.lang.String getParameter(java.lang.String,java.lang.String)>";
+    "store.r $r10"
+    "virtualinvoke <cfg8.a: java.lang.String getParameter(java.lang.String,java.lang.String)>"->"store.r $r10";
+    "load.r $r10"
+    "store.r $r10"->"load.r $r10";
+    "store.r $i1"
+    "load.r $r10"->"store.r $i1";
+    "store.r $i1"->"load.i r1";
+    "ifne load.r $i1"
+    "load.i r1"->"ifne load.r $i1";
+    "ifne load.r $i1"->"load.r $r10";
+    "push \"Y\""
+    "load.r $r10"->"push \"Y\"";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"
+    "push \"Y\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    ""
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"";
+    ""->"store.i $i1";
+    "push 1"
+    "store.i $i1"->"push 1";
+    "push 1"->"store.i $r10";
+    "store.i $r10"->"load.i $i1";
+    "load.i $r10"
+    "load.i $i1"->"load.i $r10";
+    "ifcmpne.i load.r r0"
+    "load.i $r10"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "fieldget <cfg8.ItemApplet: cfg8.g v>"
+    "load.r r0"->"fieldget <cfg8.ItemApplet: cfg8.g v>";
+    "fieldget <cfg8.ItemApplet: cfg8.g v>"->"push 1";
+    "virtualinvoke <cfg8.g: void c(boolean)>"
+    "push 1"->"virtualinvoke <cfg8.g: void c(boolean)>";
+    "virtualinvoke <cfg8.g: void c(boolean)>"->"load.r r0";
+    "fieldget <cfg8.ItemApplet: java.lang.Object g>"
+    "load.r r0"->"fieldget <cfg8.ItemApplet: java.lang.Object g>";
+    "fieldget <cfg8.ItemApplet: java.lang.Object g>"->"store.r $i1";
+    "load.r $i1"
+    "store.r $i1"->"load.r $i1";
+    "store.r r1"
+    "load.r $i1"->"store.r r1";
+    "store.r r1"->"load.r $i1";
+    "entermonitor"
+    "load.r $i1"->"entermonitor";
+    "entermonitor"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <cfg8.ItemApplet: boolean e>"
+    "push 1"->"fieldput <cfg8.ItemApplet: boolean e>";
+    "goto load.r $i1"
+    "fieldput <cfg8.ItemApplet: boolean e>"->"goto load.r $i1";
+    "goto load.r $i1"->"load.r $i1";
+    "exitmonitor"
+    "load.r $i1"->"exitmonitor";
+    "goto goto return"
+    "exitmonitor"->"goto goto return";
+    "goto return"
+    "goto goto return"->"goto return";
+    "return"
+    "goto return"->"return";
+    "store.r r0"
+    "goto goto return"->"store.r r0";
+    "goto load.r r1"
+    "store.r r0"->"goto load.r r1";
+    "load.r r1"
+    "goto load.r r1"->"load.r r1";
+    "load.r r1"->"exitmonitor";
+    "goto load.r r0"
+    "exitmonitor"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "athrow"
+    "load.r r0"->"athrow";
+}

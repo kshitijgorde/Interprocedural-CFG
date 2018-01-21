@@ -1,0 +1,75 @@
+digraph "" {
+    "r0 := @this: netcharts.chart.JChart"
+    "load.r r0"
+    "r0 := @this: netcharts.chart.JChart"->"load.r r0";
+    "virtualinvoke <netcharts.chart.JChart: netcharts.util.NFContext getContext()>"
+    "load.r r0"->"virtualinvoke <netcharts.chart.JChart: netcharts.util.NFContext getContext()>";
+    "ifnonnull load.r r0"
+    "virtualinvoke <netcharts.chart.JChart: netcharts.util.NFContext getContext()>"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "new netcharts.util.NFContext"
+    "load.r r0"->"new netcharts.util.NFContext";
+    "dup1.r"
+    "new netcharts.util.NFContext"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "virtualinvoke <netcharts.chart.JChart: java.applet.Applet getApplet()>"
+    "load.r r0"->"virtualinvoke <netcharts.chart.JChart: java.applet.Applet getApplet()>";
+    "specialinvoke <netcharts.util.NFContext: void <init>(java.applet.Applet)>"
+    "virtualinvoke <netcharts.chart.JChart: java.applet.Applet getApplet()>"->"specialinvoke <netcharts.util.NFContext: void <init>(java.applet.Applet)>";
+    "virtualinvoke <netcharts.chart.JChart: void setContext(netcharts.util.NFContext)>"
+    "specialinvoke <netcharts.util.NFContext: void <init>(java.applet.Applet)>"->"virtualinvoke <netcharts.chart.JChart: void setContext(netcharts.util.NFContext)>";
+    "virtualinvoke <netcharts.chart.JChart: void setContext(netcharts.util.NFContext)>"->"load.r r0";
+    "fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>"
+    "load.r r0"->"fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>";
+    "fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>"->"ifnonnull load.r r0";
+    "return"
+    "ifnonnull load.r r0"->"return";
+    "ifnonnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>";
+    "fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>"->"load.r r0";
+    "fieldget <netcharts.chart.JChart: netcharts.util.NFContext context>"
+    "load.r r0"->"fieldget <netcharts.chart.JChart: netcharts.util.NFContext context>";
+    "virtualinvoke <netcharts.graphics.JGraph: void setContext(netcharts.util.NFContext)>"
+    "fieldget <netcharts.chart.JChart: netcharts.util.NFContext context>"->"virtualinvoke <netcharts.graphics.JGraph: void setContext(netcharts.util.NFContext)>";
+    "virtualinvoke <netcharts.graphics.JGraph: void setContext(netcharts.util.NFContext)>"->"load.r r0";
+    "fieldget <netcharts.chart.JChart: java.applet.Applet app>"
+    "load.r r0"->"fieldget <netcharts.chart.JChart: java.applet.Applet app>";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"
+    "fieldget <netcharts.chart.JChart: java.applet.Applet app>"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+    "pop"
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <netcharts.chart.JChart: java.applet.Applet app>";
+    "staticinvoke <netcharts.util.NFFile: void setFileBase(java.applet.Applet)>"
+    "fieldget <netcharts.chart.JChart: java.applet.Applet app>"->"staticinvoke <netcharts.util.NFFile: void setFileBase(java.applet.Applet)>";
+    "goto load.r r0"
+    "staticinvoke <netcharts.util.NFFile: void setFileBase(java.applet.Applet)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <netcharts.chart.JChart: boolean loadAppletParamsOnInit>"
+    "load.r r0"->"fieldget <netcharts.chart.JChart: boolean loadAppletParamsOnInit>";
+    "ifeq load.r r0"
+    "fieldget <netcharts.chart.JChart: boolean loadAppletParamsOnInit>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>";
+    "fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>"->"load.r r0";
+    "load.r r0"->"fieldget <netcharts.chart.JChart: java.applet.Applet app>";
+    "virtualinvoke <netcharts.graphics.JGraph: void loadParams(java.applet.Applet)>"
+    "fieldget <netcharts.chart.JChart: java.applet.Applet app>"->"virtualinvoke <netcharts.graphics.JGraph: void loadParams(java.applet.Applet)>";
+    "virtualinvoke <netcharts.graphics.JGraph: void loadParams(java.applet.Applet)>"->"load.r r0";
+    "virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>"
+    "load.r r0"->"virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>";
+    "push \"Center\""
+    "virtualinvoke <javax.swing.JApplet: java.awt.Container getContentPane()>"->"push \"Center\"";
+    "push \"Center\""->"load.r r0";
+    "load.r r0"->"fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"
+    "fieldget <netcharts.chart.JChart: netcharts.graphics.JGraph graph>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "goto return"
+    "pop"->"goto return";
+    "goto return"->"return";
+    "staticinvoke <netcharts.util.NFParam: void printError(java.lang.Exception)>"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"staticinvoke <netcharts.util.NFParam: void printError(java.lang.Exception)>";
+    "store.r $r15"
+    "staticinvoke <netcharts.util.NFFile: void setFileBase(java.applet.Applet)>"->"store.r $r15";
+}

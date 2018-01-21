@@ -1,0 +1,1869 @@
+digraph "" {
+    "r0 := @this: edit"
+    "load.r r0"
+    "r0 := @this: edit"->"load.r r0";
+    "virtualinvoke <edit: void createColors()>"
+    "load.r r0"->"virtualinvoke <edit: void createColors()>";
+    "virtualinvoke <edit: void createColors()>"->"load.r r0";
+    "push 1"
+    "load.r r0"->"push 1";
+    "fieldput <edit: boolean first>"
+    "push 1"->"fieldput <edit: boolean first>";
+    "fieldput <edit: boolean first>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <edit: int WIDTH>"
+    "load.r r0"->"fieldget <edit: int WIDTH>";
+    "fieldget <edit: int WIDTH>"->"load.r r0";
+    "fieldget <edit: int HEIGTH>"
+    "load.r r0"->"fieldget <edit: int HEIGTH>";
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"
+    "fieldget <edit: int HEIGTH>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+    "fieldput <edit: java.awt.Image offScreenImage>"
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <edit: java.awt.Image offScreenImage>";
+    "fieldput <edit: java.awt.Image offScreenImage>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <edit: java.awt.Image offScreenImage>"
+    "load.r r0"->"fieldget <edit: java.awt.Image offScreenImage>";
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"
+    "fieldget <edit: java.awt.Image offScreenImage>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+    "fieldput <edit: java.awt.Graphics offScreen>"
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <edit: java.awt.Graphics offScreen>";
+    "fieldput <edit: java.awt.Graphics offScreen>"->"load.r r0";
+    "virtualinvoke <edit: void grabimage()>"
+    "load.r r0"->"virtualinvoke <edit: void grabimage()>";
+    "virtualinvoke <edit: void grabimage()>"->"load.r r0";
+    "staticinvoke <symantec.itools.lang.Context: void setApplet(java.applet.Applet)>"
+    "load.r r0"->"staticinvoke <symantec.itools.lang.Context: void setApplet(java.applet.Applet)>";
+    "staticinvoke <symantec.itools.lang.Context: void setApplet(java.applet.Applet)>"->"load.r r0";
+    "push null"
+    "load.r r0"->"push null";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "push null"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "push 660"
+    "load.r r0"->"push 660";
+    "push 402"
+    "push 660"->"push 402";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"
+    "push 402"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"load.r r0";
+    "new java.awt.Panel"
+    "load.r r0"->"new java.awt.Panel";
+    "dup1.r"
+    "new java.awt.Panel"->"dup1.r";
+    "specialinvoke <java.awt.Panel: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.Panel: void <init>()>";
+    "fieldput <edit: java.awt.Panel panel1>"
+    "specialinvoke <java.awt.Panel: void <init>()>"->"fieldput <edit: java.awt.Panel panel1>";
+    "fieldput <edit: java.awt.Panel panel1>"->"load.r r0";
+    "fieldget <edit: java.awt.Panel panel1>"
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"push null";
+    "push null"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "push 0"
+    "fieldget <edit: java.awt.Panel panel1>"->"push 0";
+    "push 120"
+    "push 0"->"push 120";
+    "push 120"->"push 660";
+    "push 316"
+    "push 660"->"push 316";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"
+    "push 316"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "new java.awt.Color"
+    "fieldget <edit: java.awt.Panel panel1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 12632256"
+    "dup1.r"->"push 12632256";
+    "specialinvoke <java.awt.Color: void <init>(int)>"
+    "push 12632256"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <edit: java.awt.Panel panel1>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new java.awt.TextField"
+    "load.r r0"->"new java.awt.TextField";
+    "new java.awt.TextField"->"dup1.r";
+    "specialinvoke <java.awt.TextField: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.TextField: void <init>()>";
+    "fieldput <edit: java.awt.TextField textField1>"
+    "specialinvoke <java.awt.TextField: void <init>()>"->"fieldput <edit: java.awt.TextField textField1>";
+    "fieldput <edit: java.awt.TextField textField1>"->"load.r r0";
+    "fieldget <edit: java.awt.TextField textField1>"
+    "load.r r0"->"fieldget <edit: java.awt.TextField textField1>";
+    "push \"ENTER YOUR MESSAGE HERE.\""
+    "fieldget <edit: java.awt.TextField textField1>"->"push \"ENTER YOUR MESSAGE HERE.\"";
+    "virtualinvoke <java.awt.TextComponent: void setText(java.lang.String)>"
+    "push \"ENTER YOUR MESSAGE HERE.\""->"virtualinvoke <java.awt.TextComponent: void setText(java.lang.String)>";
+    "virtualinvoke <java.awt.TextComponent: void setText(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.TextField textField1>";
+    "fieldget <edit: java.awt.TextField textField1>"->"push 0";
+    "push 204"
+    "push 0"->"push 204";
+    "push 204"->"push 660";
+    "push 26"
+    "push 660"->"push 26";
+    "push 26"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.TextField textField1>";
+    "fieldget <edit: java.awt.TextField textField1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 255"
+    "dup1.r"->"push 255";
+    "push 255"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.TextField textField1>";
+    "fieldget <edit: java.awt.TextField textField1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push -8355776"
+    "dup1.r"->"push -8355776";
+    "push -8355776"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.TextField textField1>";
+    "fieldget <edit: java.awt.TextField textField1>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new java.awt.Label"
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"SCROLLTEXT GOES HERE\""
+    "dup1.r"->"push \"SCROLLTEXT GOES HERE\"";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"
+    "push \"SCROLLTEXT GOES HERE\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label scrolllabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label scrolllabel>";
+    "fieldput <edit: java.awt.Label scrolllabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label scrolllabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label scrolllabel>";
+    "push 216"
+    "fieldget <edit: java.awt.Label scrolllabel>"->"push 216";
+    "push 192"
+    "push 216"->"push 192";
+    "push 144"
+    "push 192"->"push 144";
+    "push 12"
+    "push 144"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label scrolllabel>";
+    "new java.awt.Font"
+    "fieldget <edit: java.awt.Label scrolllabel>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "push \"Courier\""
+    "dup1.r"->"push \"Courier\"";
+    "push \"Courier\""->"push 1";
+    "push 1"->"push 12";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label scrolllabel>";
+    "fieldget <edit: java.awt.Label scrolllabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 16776960"
+    "dup1.r"->"push 16776960";
+    "push 16776960"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label scrolllabel>";
+    "fieldget <edit: java.awt.Label scrolllabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"SELECT A FONT\""
+    "dup1.r"->"push \"SELECT A FONT\"";
+    "push \"SELECT A FONT\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label fontlabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label fontlabel>";
+    "fieldput <edit: java.awt.Label fontlabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label fontlabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label fontlabel>";
+    "fieldget <edit: java.awt.Label fontlabel>"->"push 12";
+    "push 12"->"push 12";
+    "push 96"
+    "push 12"->"push 96";
+    "push 96"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontlabel>";
+    "fieldget <edit: java.awt.Label fontlabel>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "push \"Dialog\""
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontlabel>";
+    "fieldget <edit: java.awt.Label fontlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 65280"
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontlabel>";
+    "fieldget <edit: java.awt.Label fontlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push -16744320"
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontlabel>";
+    "fieldget <edit: java.awt.Label fontlabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"WIDTH\""
+    "dup1.r"->"push \"WIDTH\"";
+    "push \"WIDTH\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label widthlable>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label widthlable>";
+    "fieldput <edit: java.awt.Label widthlable>"->"load.r r0";
+    "fieldget <edit: java.awt.Label widthlable>"
+    "load.r r0"->"fieldget <edit: java.awt.Label widthlable>";
+    "push 180"
+    "fieldget <edit: java.awt.Label widthlable>"->"push 180";
+    "push 180"->"push 96";
+    "push 48"
+    "push 96"->"push 48";
+    "push 48"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label widthlable>";
+    "fieldget <edit: java.awt.Label widthlable>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label widthlable>";
+    "fieldget <edit: java.awt.Label widthlable>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label widthlable>";
+    "fieldget <edit: java.awt.Label widthlable>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push -12550016"
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label widthlable>";
+    "fieldget <edit: java.awt.Label widthlable>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new java.awt.Choice"
+    "load.r r0"->"new java.awt.Choice";
+    "new java.awt.Choice"->"dup1.r";
+    "specialinvoke <java.awt.Choice: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.Choice: void <init>()>";
+    "fieldput <edit: java.awt.Choice widthchoice>"
+    "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <edit: java.awt.Choice widthchoice>";
+    "fieldput <edit: java.awt.Choice widthchoice>"->"load.r r0";
+    "fieldget <edit: java.awt.Choice widthchoice>"
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "push \"100\""
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push \"100\"";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"
+    "push \"100\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "push \"200\""
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push \"200\"";
+    "push \"200\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "push \"300\""
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push \"300\"";
+    "push \"300\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "push \"400\""
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push \"400\"";
+    "push \"400\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "push \"500\""
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push \"500\"";
+    "push \"500\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "push \"600\""
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push \"600\"";
+    "push \"600\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "push \"640\""
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push \"640\"";
+    "push \"640\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "push 6"
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push 6";
+    "virtualinvoke <java.awt.Choice: void select(int)>"
+    "push 6"->"virtualinvoke <java.awt.Choice: void select(int)>";
+    "goto load.r r0"
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "fieldget <edit: java.awt.Choice widthchoice>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "fieldget <edit: java.awt.Choice widthchoice>"->"push 180";
+    "push 108"
+    "push 180"->"push 108";
+    "push 60"
+    "push 108"->"push 60";
+    "push 20"
+    "push 60"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "fieldget <edit: java.awt.Choice widthchoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16776960";
+    "push 16776960"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "fieldget <edit: java.awt.Choice widthchoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"new java.awt.Choice";
+    "new java.awt.Choice"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.awt.Choice: void <init>()>";
+    "fieldput <edit: java.awt.Choice bgcchoice>"
+    "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <edit: java.awt.Choice bgcchoice>";
+    "fieldput <edit: java.awt.Choice bgcchoice>"->"load.r r0";
+    "fieldget <edit: java.awt.Choice bgcchoice>"
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"BLACK\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"BLACK\"";
+    "push \"BLACK\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"BLUE\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"BLUE\"";
+    "push \"BLUE\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"GREEN\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"GREEN\"";
+    "push \"GREEN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"CYAN\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"CYAN\"";
+    "push \"CYAN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"RED\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"RED\"";
+    "push \"RED\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"MAGENTA\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"MAGENTA\"";
+    "push \"MAGENTA\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"BROWN\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"BROWN\"";
+    "push \"BROWN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"LIGHT GRAY\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"LIGHT GRAY\"";
+    "push \"LIGHT GRAY\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"DARK GRAY\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"DARK GRAY\"";
+    "push \"DARK GRAY\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"LIGHT GREEN\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"LIGHT GREEN\"";
+    "push \"LIGHT GREEN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"LIGHT CYAN\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"LIGHT CYAN\"";
+    "push \"LIGHT CYAN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"LIGHT RED\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"LIGHT RED\"";
+    "push \"LIGHT RED\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"LIGHT MAGENTA\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"LIGHT MAGENTA\"";
+    "push \"LIGHT MAGENTA\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"YELLOW\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"YELLOW\"";
+    "push \"YELLOW\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push \"WHITE\""
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push \"WHITE\"";
+    "push \"WHITE\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push 0";
+    "push 0"->"virtualinvoke <java.awt.Choice: void select(int)>";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "push 264"
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"push 264";
+    "push 72"
+    "push 264"->"push 72";
+    "push 72"->"push 144";
+    "push 24"
+    "push 144"->"push 24";
+    "push 24"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16776960";
+    "push 16776960"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"BACKGROUND COLOR\""
+    "dup1.r"->"push \"BACKGROUND COLOR\"";
+    "push \"BACKGROUND COLOR\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label bgcolorlabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label bgcolorlabel>";
+    "fieldput <edit: java.awt.Label bgcolorlabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label bgcolorlabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label bgcolorlabel>";
+    "fieldget <edit: java.awt.Label bgcolorlabel>"->"push 264";
+    "push 264"->"push 60";
+    "push 60"->"push 144";
+    "push 144"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label bgcolorlabel>";
+    "fieldget <edit: java.awt.Label bgcolorlabel>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label bgcolorlabel>";
+    "fieldget <edit: java.awt.Label bgcolorlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label bgcolorlabel>";
+    "fieldget <edit: java.awt.Label bgcolorlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label bgcolorlabel>";
+    "fieldget <edit: java.awt.Label bgcolorlabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Choice";
+    "new java.awt.Choice"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.awt.Choice: void <init>()>";
+    "fieldput <edit: java.awt.Choice fgcchoice>"
+    "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <edit: java.awt.Choice fgcchoice>";
+    "fieldput <edit: java.awt.Choice fgcchoice>"->"load.r r0";
+    "fieldget <edit: java.awt.Choice fgcchoice>"
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"BLACK\"";
+    "push \"BLACK\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"BLUE\"";
+    "push \"BLUE\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"GREEN\"";
+    "push \"GREEN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"CYAN\"";
+    "push \"CYAN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"RED\"";
+    "push \"RED\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"MAGENTA\"";
+    "push \"MAGENTA\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"BROWN\"";
+    "push \"BROWN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"LIGHT GRAY\"";
+    "push \"LIGHT GRAY\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"DARK GRAY\"";
+    "push \"DARK GRAY\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"LIGHT GREEN\"";
+    "push \"LIGHT GREEN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"LIGHT CYAN\"";
+    "push \"LIGHT CYAN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"LIGHT RED\"";
+    "push \"LIGHT RED\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"LIGHT MAGENTA\"";
+    "push \"LIGHT MAGENTA\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"YELLOW\"";
+    "push \"YELLOW\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push \"WHITE\"";
+    "push \"WHITE\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "push 5"
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push 5";
+    "push 5"->"virtualinvoke <java.awt.Choice: void select(int)>";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"push 264";
+    "push 264"->"push 24";
+    "push 24"->"push 144";
+    "push 22"
+    "push 144"->"push 22";
+    "push 22"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16776960";
+    "push 16776960"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"TEXT COLOR\""
+    "dup1.r"->"push \"TEXT COLOR\"";
+    "push \"TEXT COLOR\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label forecolorlabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label forecolorlabel>";
+    "fieldput <edit: java.awt.Label forecolorlabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label forecolorlabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label forecolorlabel>";
+    "fieldget <edit: java.awt.Label forecolorlabel>"->"push 264";
+    "push 264"->"push 12";
+    "push 84"
+    "push 12"->"push 84";
+    "push 84"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label forecolorlabel>";
+    "fieldget <edit: java.awt.Label forecolorlabel>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label forecolorlabel>";
+    "fieldget <edit: java.awt.Label forecolorlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label forecolorlabel>";
+    "fieldget <edit: java.awt.Label forecolorlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label forecolorlabel>";
+    "fieldget <edit: java.awt.Label forecolorlabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Choice";
+    "new java.awt.Choice"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.awt.Choice: void <init>()>";
+    "fieldput <edit: java.awt.Choice fontsizechoice>"
+    "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <edit: java.awt.Choice fontsizechoice>";
+    "fieldput <edit: java.awt.Choice fontsizechoice>"->"load.r r0";
+    "fieldget <edit: java.awt.Choice fontsizechoice>"
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"10\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"10\"";
+    "push \"10\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"20\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"20\"";
+    "push \"20\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"30\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"30\"";
+    "push \"30\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"40\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"40\"";
+    "push \"40\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"50\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"50\"";
+    "push \"50\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"60\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"60\"";
+    "push \"60\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"70\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"70\"";
+    "push \"70\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"80\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"80\"";
+    "push \"80\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push \"\""
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"\"";
+    "push \"\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push \"\"";
+    "push \"\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "push 7"
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push 7";
+    "push 7"->"virtualinvoke <java.awt.Choice: void select(int)>";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"push 12";
+    "push 12"->"push 72";
+    "push 146"
+    "push 72"->"push 146";
+    "push 28"
+    "push 146"->"push 28";
+    "push 28"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16776960";
+    "push 16776960"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"FONT SIZE\""
+    "dup1.r"->"push \"FONT SIZE\"";
+    "push \"FONT SIZE\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label fontsizelabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label fontsizelabel>";
+    "fieldput <edit: java.awt.Label fontsizelabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label fontsizelabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label fontsizelabel>";
+    "fieldget <edit: java.awt.Label fontsizelabel>"->"push 12";
+    "push 12"->"push 60";
+    "push 60"->"push 72";
+    "push 72"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontsizelabel>";
+    "fieldget <edit: java.awt.Label fontsizelabel>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontsizelabel>";
+    "fieldget <edit: java.awt.Label fontsizelabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontsizelabel>";
+    "fieldget <edit: java.awt.Label fontsizelabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontsizelabel>";
+    "fieldget <edit: java.awt.Label fontsizelabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Choice";
+    "new java.awt.Choice"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.awt.Choice: void <init>()>";
+    "fieldput <edit: java.awt.Choice fontstylechoice>"
+    "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <edit: java.awt.Choice fontstylechoice>";
+    "fieldput <edit: java.awt.Choice fontstylechoice>"->"load.r r0";
+    "fieldget <edit: java.awt.Choice fontstylechoice>"
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "push \"BOLD\""
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"push \"BOLD\"";
+    "push \"BOLD\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "push \"ITALIC\""
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"push \"ITALIC\"";
+    "push \"ITALIC\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "push \"PLAIN\""
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"push \"PLAIN\"";
+    "push \"PLAIN\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "push \"BOLD & ITALIC\""
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"push \"BOLD & ITALIC\"";
+    "push \"BOLD & ITALIC\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"push 0";
+    "push 0"->"virtualinvoke <java.awt.Choice: void select(int)>";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"push 12";
+    "push 12"->"push 120";
+    "push 142"
+    "push 120"->"push 142";
+    "push 142"->"push 22";
+    "push 22"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16776960";
+    "push 16776960"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"FONT STYLE\""
+    "dup1.r"->"push \"FONT STYLE\"";
+    "push \"FONT STYLE\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label fontstylelabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label fontstylelabel>";
+    "fieldput <edit: java.awt.Label fontstylelabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label fontstylelabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label fontstylelabel>";
+    "fieldget <edit: java.awt.Label fontstylelabel>"->"push 12";
+    "push 12"->"push 108";
+    "push 108"->"push 72";
+    "push 72"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontstylelabel>";
+    "fieldget <edit: java.awt.Label fontstylelabel>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontstylelabel>";
+    "fieldget <edit: java.awt.Label fontstylelabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontstylelabel>";
+    "fieldget <edit: java.awt.Label fontstylelabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label fontstylelabel>";
+    "fieldget <edit: java.awt.Label fontstylelabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"BACKGROUND IMAGE\""
+    "dup1.r"->"push \"BACKGROUND IMAGE\"";
+    "push \"BACKGROUND IMAGE\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label imagefilelabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label imagefilelabel>";
+    "fieldput <edit: java.awt.Label imagefilelabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label imagefilelabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label imagefilelabel>";
+    "fieldget <edit: java.awt.Label imagefilelabel>"->"push 264";
+    "push 264"->"push 108";
+    "push 134"
+    "push 108"->"push 134";
+    "push 134"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label imagefilelabel>";
+    "fieldget <edit: java.awt.Label imagefilelabel>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label imagefilelabel>";
+    "fieldget <edit: java.awt.Label imagefilelabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label imagefilelabel>";
+    "fieldget <edit: java.awt.Label imagefilelabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label imagefilelabel>";
+    "fieldget <edit: java.awt.Label imagefilelabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new symantec.itools.awt.Label3D"
+    "load.r r0"->"new symantec.itools.awt.Label3D";
+    "new symantec.itools.awt.Label3D"->"dup1.r";
+    "specialinvoke <symantec.itools.awt.Label3D: void <init>()>"
+    "dup1.r"->"specialinvoke <symantec.itools.awt.Label3D: void <init>()>";
+    "fieldput <edit: symantec.itools.awt.Label3D label3D2>"
+    "specialinvoke <symantec.itools.awt.Label3D: void <init>()>"->"fieldput <edit: symantec.itools.awt.Label3D label3D2>";
+    "fieldput <edit: symantec.itools.awt.Label3D label3D2>"->"load.r r0";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D2>"
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D2>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D2>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 16777215"
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setBorderedColor(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.Label3D: void setBorderedColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setBorderedColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D2>";
+    "push \"JAVA SCROLL MACHINE\""
+    "fieldget <edit: symantec.itools.awt.Label3D label3D2>"->"push \"JAVA SCROLL MACHINE\"";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>"
+    "push \"JAVA SCROLL MACHINE\""->"virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D2>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D2>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D2>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D2>"->"push 0";
+    "push 228"
+    "push 0"->"push 228";
+    "push 228"->"push 144";
+    "push 144"->"push 24";
+    "push 24"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D2>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D2>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D2>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D2>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push -8355840"
+    "dup1.r"->"push -8355840";
+    "push -8355840"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D2>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D2>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new symantec.itools.awt.Label3D";
+    "new symantec.itools.awt.Label3D"->"dup1.r";
+    "dup1.r"->"specialinvoke <symantec.itools.awt.Label3D: void <init>()>";
+    "fieldput <edit: symantec.itools.awt.Label3D label3D3>"
+    "specialinvoke <symantec.itools.awt.Label3D: void <init>()>"->"fieldput <edit: symantec.itools.awt.Label3D label3D3>";
+    "fieldput <edit: symantec.itools.awt.Label3D label3D3>"->"load.r r0";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D3>"
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D3>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D3>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.Label3D: void setBorderedColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setBorderedColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D3>";
+    "push \"V. 1.01\""
+    "fieldget <edit: symantec.itools.awt.Label3D label3D3>"->"push \"V. 1.01\"";
+    "push \"V. 1.01\""->"virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D3>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D3>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D3>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D3>"->"push 0";
+    "push 252"
+    "push 0"->"push 252";
+    "push 252"->"push 144";
+    "push 144"->"push 22";
+    "push 22"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D3>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D3>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D3>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D3>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -8355840";
+    "push -8355840"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D3>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D3>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new symantec.itools.awt.Label3D";
+    "new symantec.itools.awt.Label3D"->"dup1.r";
+    "dup1.r"->"specialinvoke <symantec.itools.awt.Label3D: void <init>()>";
+    "fieldput <edit: symantec.itools.awt.Label3D label3D1>"
+    "specialinvoke <symantec.itools.awt.Label3D: void <init>()>"->"fieldput <edit: symantec.itools.awt.Label3D label3D1>";
+    "fieldput <edit: symantec.itools.awt.Label3D label3D1>"->"load.r r0";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D1>"
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D1>";
+    "push \"Copywrite 1998 RETRO VISION\""
+    "fieldget <edit: symantec.itools.awt.Label3D label3D1>"->"push \"Copywrite 1998 RETRO VISION\"";
+    "push \"Copywrite 1998 RETRO VISION\""->"virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D1>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D1>";
+    "push 468"
+    "fieldget <edit: symantec.itools.awt.Label3D label3D1>"->"push 468";
+    "push 468"->"push 228";
+    "push 228"->"push 192";
+    "push 192"->"push 22";
+    "push 22"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D1>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D1>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -8355840";
+    "push -8355840"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.Label3D label3D1>";
+    "fieldget <edit: symantec.itools.awt.Label3D label3D1>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new symantec.itools.awt.util.spinner.NumericSpinner"
+    "load.r r0"->"new symantec.itools.awt.util.spinner.NumericSpinner";
+    "new symantec.itools.awt.util.spinner.NumericSpinner"->"dup1.r";
+    "specialinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void <init>()>"
+    "dup1.r"->"specialinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void <init>()>";
+    "fieldput <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"
+    "specialinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void <init>()>"->"fieldput <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>";
+    "fieldput <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"->"load.r r0";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>";
+    "push 4"
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"->"push 4";
+    "virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void setCurrent(int)>"
+    "push 4"->"virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void setCurrent(int)>";
+    "virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void setCurrent(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"->"push 180";
+    "push 180"->"push 48";
+    "push 56"
+    "push 48"->"push 56";
+    "push 29"
+    "push 56"->"push 29";
+    "push 29"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 16762880"
+    "dup1.r"->"push 16762880";
+    "push 16762880"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"SCROLL SPEED\""
+    "dup1.r"->"push \"SCROLL SPEED\"";
+    "push \"SCROLL SPEED\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label scrollspeedlabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label scrollspeedlabel>";
+    "fieldput <edit: java.awt.Label scrollspeedlabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label scrollspeedlabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label scrollspeedlabel>";
+    "push 168"
+    "fieldget <edit: java.awt.Label scrollspeedlabel>"->"push 168";
+    "push 36"
+    "push 168"->"push 36";
+    "push 36"->"push 84";
+    "push 84"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label scrollspeedlabel>";
+    "fieldget <edit: java.awt.Label scrollspeedlabel>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Courier\"";
+    "push \"Courier\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label scrollspeedlabel>";
+    "fieldget <edit: java.awt.Label scrollspeedlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label scrollspeedlabel>";
+    "fieldget <edit: java.awt.Label scrollspeedlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label scrollspeedlabel>";
+    "fieldget <edit: java.awt.Label scrollspeedlabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new java.awt.Checkbox"
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "push \"CYCLE COLORS\""
+    "dup1.r"->"push \"CYCLE COLORS\"";
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"
+    "push \"CYCLE COLORS\""->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Checkbox cyclecolorcheckbox>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Checkbox cyclecolorcheckbox>";
+    "fieldput <edit: java.awt.Checkbox cyclecolorcheckbox>"->"load.r r0";
+    "fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>"
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>";
+    "push 492"
+    "fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>"->"push 492";
+    "push 492"->"push 36";
+    "push 36"->"push 108";
+    "push 108"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>";
+    "fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>";
+    "fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>";
+    "fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "dup1.r"->"push \"BACKGROUND IMAGE\"";
+    "push \"BACKGROUND IMAGE\""->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Checkbox backimagecheck>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Checkbox backimagecheck>";
+    "fieldput <edit: java.awt.Checkbox backimagecheck>"->"load.r r0";
+    "fieldget <edit: java.awt.Checkbox backimagecheck>"
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox backimagecheck>";
+    "fieldget <edit: java.awt.Checkbox backimagecheck>"->"push 492";
+    "push 492"->"push 12";
+    "push 12"->"push 144";
+    "push 16"
+    "push 144"->"push 16";
+    "push 16"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox backimagecheck>";
+    "fieldget <edit: java.awt.Checkbox backimagecheck>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox backimagecheck>";
+    "fieldget <edit: java.awt.Checkbox backimagecheck>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox backimagecheck>";
+    "fieldget <edit: java.awt.Checkbox backimagecheck>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"SPEED\""
+    "dup1.r"->"push \"SPEED\"";
+    "push \"SPEED\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <edit: java.awt.Label cyclespdlabel>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <edit: java.awt.Label cyclespdlabel>";
+    "fieldput <edit: java.awt.Label cyclespdlabel>"->"load.r r0";
+    "fieldget <edit: java.awt.Label cyclespdlabel>"
+    "load.r r0"->"fieldget <edit: java.awt.Label cyclespdlabel>";
+    "fieldget <edit: java.awt.Label cyclespdlabel>"->"push 492";
+    "push 492"->"push 60";
+    "push 60"->"push 48";
+    "push 48"->"push 12";
+    "push 12"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label cyclespdlabel>";
+    "fieldget <edit: java.awt.Label cyclespdlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 65280";
+    "push 65280"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label cyclespdlabel>";
+    "fieldget <edit: java.awt.Label cyclespdlabel>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -12550016";
+    "push -12550016"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Label cyclespdlabel>";
+    "fieldget <edit: java.awt.Label cyclespdlabel>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new symantec.itools.awt.util.spinner.NumericSpinner";
+    "new symantec.itools.awt.util.spinner.NumericSpinner"->"dup1.r";
+    "dup1.r"->"specialinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void <init>()>";
+    "fieldput <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"
+    "specialinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void <init>()>"->"fieldput <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>";
+    "fieldput <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"->"load.r r0";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"->"push 1";
+    "virtualinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void setMin(int)>"
+    "push 1"->"virtualinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void setMin(int)>";
+    "virtualinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void setMin(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"->"push 1";
+    "push 1"->"virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void setCurrent(int)>";
+    "virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void setCurrent(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"->"push 492";
+    "push 492"->"push 72";
+    "push 72"->"push 56";
+    "push 56"->"push 24";
+    "push 24"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16762880";
+    "push 16762880"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Choice";
+    "new java.awt.Choice"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.awt.Choice: void <init>()>";
+    "fieldput <edit: java.awt.Choice choice1>"
+    "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <edit: java.awt.Choice choice1>";
+    "fieldput <edit: java.awt.Choice choice1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "fieldget <edit: java.awt.Choice choice1>"
+    "load.r r0"->"fieldget <edit: java.awt.Choice choice1>";
+    "fieldget <edit: java.awt.Choice choice1>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice choice1>";
+    "fieldget <edit: java.awt.Choice choice1>"->"push 12";
+    "push 12"->"push 24";
+    "push 24"->"push 144";
+    "push 25"
+    "push 144"->"push 25";
+    "push 25"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice choice1>";
+    "fieldget <edit: java.awt.Choice choice1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16776960";
+    "push 16776960"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice choice1>";
+    "fieldget <edit: java.awt.Choice choice1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"new java.awt.Choice";
+    "new java.awt.Choice"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.awt.Choice: void <init>()>";
+    "fieldput <edit: java.awt.Choice imagefilechoice>"
+    "specialinvoke <java.awt.Choice: void <init>()>"->"fieldput <edit: java.awt.Choice imagefilechoice>";
+    "fieldput <edit: java.awt.Choice imagefilechoice>"->"load.r r0";
+    "fieldget <edit: java.awt.Choice imagefilechoice>"
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image1.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image1.gif\"";
+    "push \"image1.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image2.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image2.gif\"";
+    "push \"image2.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image3.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image3.gif\"";
+    "push \"image3.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image4.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image4.gif\"";
+    "push \"image4.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image5.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image5.gif\"";
+    "push \"image5.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image6.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image6.gif\"";
+    "push \"image6.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image7.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image7.gif\"";
+    "push \"image7.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image8.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image8.gif\"";
+    "push \"image8.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image9.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image9.gif\"";
+    "push \"image9.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image10.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image10.gif\"";
+    "push \"image10.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image11.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image11.gif\"";
+    "push \"image11.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image12.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image12.gif\"";
+    "push \"image12.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image13.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image13.gif\"";
+    "push \"image13.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image14.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image14.gif\"";
+    "push \"image14.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image15.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image15.gif\"";
+    "push \"image15.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image16.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image16.gif\"";
+    "push \"image16.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image17.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image17.gif\"";
+    "push \"image17.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image18.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image18.gif\"";
+    "push \"image18.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image19.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image19.gif\"";
+    "push \"image19.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "push \"image20.gif\""
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push \"image20.gif\"";
+    "push \"image20.gif\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push 0";
+    "push 0"->"virtualinvoke <java.awt.Choice: void select(int)>";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"push 264";
+    "push 264"->"push 120";
+    "push 148"
+    "push 120"->"push 148";
+    "push 148"->"push 24";
+    "push 24"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16776960";
+    "push 16776960"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744320";
+    "push -16744320"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "new symantec.itools.awt.LabelButton"
+    "load.r r0"->"new symantec.itools.awt.LabelButton";
+    "new symantec.itools.awt.LabelButton"->"dup1.r";
+    "specialinvoke <symantec.itools.awt.LabelButton: void <init>()>"
+    "dup1.r"->"specialinvoke <symantec.itools.awt.LabelButton: void <init>()>";
+    "fieldput <edit: symantec.itools.awt.LabelButton homebutton>"
+    "specialinvoke <symantec.itools.awt.LabelButton: void <init>()>"->"fieldput <edit: symantec.itools.awt.LabelButton homebutton>";
+    "fieldput <edit: symantec.itools.awt.LabelButton homebutton>"->"load.r r0";
+    "fieldget <edit: symantec.itools.awt.LabelButton homebutton>"
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton homebutton>";
+    "push \"HOME PAGE\""
+    "fieldget <edit: symantec.itools.awt.LabelButton homebutton>"->"push \"HOME PAGE\"";
+    "virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>"
+    "push \"HOME PAGE\""->"virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>";
+    "virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton homebutton>";
+    "new java.net.URL"
+    "fieldget <edit: symantec.itools.awt.LabelButton homebutton>"->"new java.net.URL";
+    "new java.net.URL"->"dup1.r";
+    "push \"http://ddi.digital.net/~retro/\""
+    "dup1.r"->"push \"http://ddi.digital.net/~retro/\"";
+    "store.r $r387"
+    "push \"http://ddi.digital.net/~retro/\""->"store.r $r387";
+    "store.r $r387"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton homebutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton homebutton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton homebutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton homebutton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push -16744256"
+    "dup1.r"->"push -16744256";
+    "push -16744256"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton homebutton>";
+    "push 384"
+    "fieldget <edit: symantec.itools.awt.LabelButton homebutton>"->"push 384";
+    "push 384"->"push 228";
+    "push 86"
+    "push 228"->"push 86";
+    "push 32"
+    "push 86"->"push 32";
+    "push 32"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton homebutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton homebutton>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton homebutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton homebutton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new symantec.itools.awt.LabelButton";
+    "new symantec.itools.awt.LabelButton"->"dup1.r";
+    "dup1.r"->"specialinvoke <symantec.itools.awt.LabelButton: void <init>()>";
+    "fieldput <edit: symantec.itools.awt.LabelButton registerbutton>"
+    "specialinvoke <symantec.itools.awt.LabelButton: void <init>()>"->"fieldput <edit: symantec.itools.awt.LabelButton registerbutton>";
+    "fieldput <edit: symantec.itools.awt.LabelButton registerbutton>"->"load.r r0";
+    "fieldget <edit: symantec.itools.awt.LabelButton registerbutton>"
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton registerbutton>";
+    "push \"REGISTER\""
+    "fieldget <edit: symantec.itools.awt.LabelButton registerbutton>"->"push \"REGISTER\"";
+    "push \"REGISTER\""->"virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>";
+    "virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton registerbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton registerbutton>"->"new java.net.URL";
+    "new java.net.URL"->"dup1.r";
+    "push \"http://ddi.digital.net/~retro/order.htm\""
+    "dup1.r"->"push \"http://ddi.digital.net/~retro/order.htm\"";
+    "push \"http://ddi.digital.net/~retro/order.htm\""->"store.r $r387";
+    "store.r $r387"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton registerbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton registerbutton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton registerbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton registerbutton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744256";
+    "push -16744256"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton registerbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton registerbutton>"->"push 144";
+    "push 144"->"push 228";
+    "push 228"->"push 86";
+    "push 86"->"push 32";
+    "push 32"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton registerbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton registerbutton>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton registerbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton registerbutton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new symantec.itools.awt.LabelButton";
+    "new symantec.itools.awt.LabelButton"->"dup1.r";
+    "dup1.r"->"specialinvoke <symantec.itools.awt.LabelButton: void <init>()>";
+    "fieldput <edit: symantec.itools.awt.LabelButton downloadbutton>"
+    "specialinvoke <symantec.itools.awt.LabelButton: void <init>()>"->"fieldput <edit: symantec.itools.awt.LabelButton downloadbutton>";
+    "fieldput <edit: symantec.itools.awt.LabelButton downloadbutton>"->"load.r r0";
+    "fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>"
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>";
+    "push \"DOWNLOAD JSM DEMO\""
+    "fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>"->"push \"DOWNLOAD JSM DEMO\"";
+    "push \"DOWNLOAD JSM DEMO\""->"virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>";
+    "virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>"->"new java.net.URL";
+    "new java.net.URL"->"dup1.r";
+    "push \"http://ddi.digital.net/~retro/downloads/index.html\""
+    "dup1.r"->"push \"http://ddi.digital.net/~retro/downloads/index.html\"";
+    "push \"http://ddi.digital.net/~retro/downloads/index.html\""->"store.r $r387";
+    "store.r $r387"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 16777215";
+    "push 16777215"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push -16744256";
+    "push -16744256"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>"->"push 228";
+    "push 228"->"push 228";
+    "push 155"
+    "push 228"->"push 155";
+    "push 155"->"push 32";
+    "push 32"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Dialog\"";
+    "push \"Dialog\""->"push 1";
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Panel panel1>";
+    "fieldget <edit: java.awt.Panel panel1>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>";
+    "fieldget <edit: symantec.itools.awt.LabelButton downloadbutton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "virtualinvoke <edit: void getfonts()>"
+    "load.r r0"->"virtualinvoke <edit: void getfonts()>";
+    "new edit$SymAction"
+    "virtualinvoke <edit: void getfonts()>"->"new edit$SymAction";
+    "store.r $r385"
+    "new edit$SymAction"->"store.r $r385";
+    "load.r $r385"
+    "store.r $r385"->"load.r $r385";
+    "load.r $r385"->"load.r r0";
+    "specialinvoke <edit$SymAction: void <init>(edit)>"
+    "load.r r0"->"specialinvoke <edit$SymAction: void <init>(edit)>";
+    "specialinvoke <edit$SymAction: void <init>(edit)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner scrollspeedspinner>"->"load.r $r385";
+    "virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void addActionListener(java.awt.event.ActionListener)>"
+    "load.r $r385"->"virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void addActionListener(java.awt.event.ActionListener)>";
+    "new edit$SymItem"
+    "virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void addActionListener(java.awt.event.ActionListener)>"->"new edit$SymItem";
+    "new edit$SymItem"->"store.r $r387";
+    "load.r $r387"
+    "store.r $r387"->"load.r $r387";
+    "load.r $r387"->"load.r r0";
+    "specialinvoke <edit$SymItem: void <init>(edit)>"
+    "load.r r0"->"specialinvoke <edit$SymItem: void <init>(edit)>";
+    "specialinvoke <edit$SymItem: void <init>(edit)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice choice1>";
+    "fieldget <edit: java.awt.Choice choice1>"->"load.r $r387";
+    "virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>"
+    "load.r $r387"->"virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>";
+    "fieldget <edit: symantec.itools.awt.util.spinner.NumericSpinner colorspeedspinner>"->"load.r $r385";
+    "load.r $r385"->"virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void addActionListener(java.awt.event.ActionListener)>";
+    "new edit$SymFocus"
+    "virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void addActionListener(java.awt.event.ActionListener)>"->"new edit$SymFocus";
+    "new edit$SymFocus"->"store.r $r385";
+    "store.r $r385"->"load.r $r385";
+    "load.r $r385"->"load.r r0";
+    "specialinvoke <edit$SymFocus: void <init>(edit)>"
+    "load.r r0"->"specialinvoke <edit$SymFocus: void <init>(edit)>";
+    "specialinvoke <edit$SymFocus: void <init>(edit)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.TextField textField1>";
+    "fieldget <edit: java.awt.TextField textField1>"->"load.r $r385";
+    "virtualinvoke <java.awt.Component: void addFocusListener(java.awt.event.FocusListener)>"
+    "load.r $r385"->"virtualinvoke <java.awt.Component: void addFocusListener(java.awt.event.FocusListener)>";
+    "virtualinvoke <java.awt.Component: void addFocusListener(java.awt.event.FocusListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice widthchoice>";
+    "fieldget <edit: java.awt.Choice widthchoice>"->"load.r $r387";
+    "load.r $r387"->"virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice bgcchoice>";
+    "fieldget <edit: java.awt.Choice bgcchoice>"->"load.r $r387";
+    "load.r $r387"->"virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fgcchoice>";
+    "fieldget <edit: java.awt.Choice fgcchoice>"->"load.r $r387";
+    "load.r $r387"->"virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontsizechoice>";
+    "fieldget <edit: java.awt.Choice fontsizechoice>"->"load.r $r387";
+    "load.r $r387"->"virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>";
+    "fieldget <edit: java.awt.Checkbox cyclecolorcheckbox>"->"load.r $r387";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"
+    "load.r $r387"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice fontstylechoice>";
+    "fieldget <edit: java.awt.Choice fontstylechoice>"->"load.r $r387";
+    "load.r $r387"->"virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Choice imagefilechoice>";
+    "fieldget <edit: java.awt.Choice imagefilechoice>"->"load.r $r387";
+    "load.r $r387"->"virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Choice: void addItemListener(java.awt.event.ItemListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <edit: java.awt.Checkbox backimagecheck>";
+    "fieldget <edit: java.awt.Checkbox backimagecheck>"->"load.r $r387";
+    "load.r $r387"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "return"
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"return";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>"->"store.r $r387";
+    "push \"http://ddi.digital.net/~retro/downloads/index.html\""->"store.r $r387";
+    "specialinvoke <java.net.URL: void <init>(java.lang.String)>"
+    "push \"http://ddi.digital.net/~retro/downloads/index.html\""->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setLinkURL(java.net.URL)>"
+    "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setLinkURL(java.net.URL)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setLinkURL(java.net.URL)>"->"goto load.r r0";
+    "virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>"->"store.r $r387";
+    "push \"http://ddi.digital.net/~retro/order.htm\""->"store.r $r387";
+    "push \"http://ddi.digital.net/~retro/order.htm\""->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+    "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setLinkURL(java.net.URL)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setLinkURL(java.net.URL)>"->"goto load.r r0";
+    "virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setButtonColor(java.awt.Color)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setBorderColor(java.awt.Color)>"->"store.r $r387";
+    "push \"http://ddi.digital.net/~retro/\""->"store.r $r387";
+    "push \"http://ddi.digital.net/~retro/\""->"specialinvoke <java.net.URL: void <init>(java.lang.String)>";
+    "specialinvoke <java.net.URL: void <init>(java.lang.String)>"->"virtualinvoke <symantec.itools.awt.ButtonBase: void setLinkURL(java.net.URL)>";
+    "virtualinvoke <symantec.itools.awt.ButtonBase: void setLinkURL(java.net.URL)>"->"goto load.r r0";
+    "virtualinvoke <symantec.itools.awt.LabelButton: void setText(java.lang.String)>"->"store.r $r387";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void setCurrent(int)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.util.spinner.NumericSpinner: void setMin(int)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.util.spinner.Spinner: void setCurrent(int)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setBorderedColor(java.awt.Color)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setTextColor(java.awt.Color)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setText(java.lang.String)>"->"store.r $r387";
+    "virtualinvoke <symantec.itools.awt.Label3D: void setBorderedColor(java.awt.Color)>"->"store.r $r387";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"store.r $r387";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"store.r $r387";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"store.r $r387";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"store.r $r387";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"store.r $r387";
+}

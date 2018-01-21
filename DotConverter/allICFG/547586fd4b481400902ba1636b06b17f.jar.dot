@@ -1,0 +1,801 @@
+digraph "" {
+    "r0 := @this: IntegralProps"
+    "load.r r0"
+    "r0 := @this: IntegralProps"->"load.r r0";
+    "new java.awt.Color"
+    "load.r r0"->"new java.awt.Color";
+    "dup1.r"
+    "new java.awt.Color"->"dup1.r";
+    "push 0"
+    "dup1.r"->"push 0";
+    "push 0"->"push 0";
+    "push 100"
+    "push 0"->"push 100";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"
+    "push 100"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "push null"
+    "load.r r0"->"push null";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "push null"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "new IntegralProps$Title"
+    "load.r r0"->"new IntegralProps$Title";
+    "new IntegralProps$Title"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "push 338"
+    "load.r r0"->"push 338";
+    "push 30"
+    "push 338"->"push 30";
+    "specialinvoke <IntegralProps$Title: void <init>(IntegralProps,int,int)>"
+    "push 30"->"specialinvoke <IntegralProps$Title: void <init>(IntegralProps,int,int)>";
+    "fieldput <IntegralProps: IntegralProps$Title title>"
+    "specialinvoke <IntegralProps$Title: void <init>(IntegralProps,int,int)>"->"fieldput <IntegralProps: IntegralProps$Title title>";
+    "fieldput <IntegralProps: IntegralProps$Title title>"->"load.r r0";
+    "fieldget <IntegralProps: IntegralProps$Title title>"
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$Title title>";
+    "push 2"
+    "fieldget <IntegralProps: IntegralProps$Title title>"->"push 2";
+    "push 2"->"push 2";
+    "push 2"->"push 338";
+    "push 338"->"push 30";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"
+    "push 30"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$Title title>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <IntegralProps: IntegralProps$Title title>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new IntegralProps$PlotCanvas"
+    "load.r r0"->"new IntegralProps$PlotCanvas";
+    "new IntegralProps$PlotCanvas"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push 338";
+    "push 169"
+    "push 338"->"push 169";
+    "specialinvoke <IntegralProps$PlotCanvas: void <init>(IntegralProps,int,int)>"
+    "push 169"->"specialinvoke <IntegralProps$PlotCanvas: void <init>(IntegralProps,int,int)>";
+    "fieldput <IntegralProps: IntegralProps$PlotCanvas graph>"
+    "specialinvoke <IntegralProps$PlotCanvas: void <init>(IntegralProps,int,int)>"->"fieldput <IntegralProps: IntegralProps$PlotCanvas graph>";
+    "fieldput <IntegralProps: IntegralProps$PlotCanvas graph>"->"load.r r0";
+    "fieldget <IntegralProps: IntegralProps$PlotCanvas graph>"
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$PlotCanvas graph>";
+    "fieldget <IntegralProps: IntegralProps$PlotCanvas graph>"->"push 2";
+    "push 34"
+    "push 2"->"push 34";
+    "push 34"->"push 338";
+    "push 338"->"push 169";
+    "push 169"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$PlotCanvas graph>";
+    "fieldget <IntegralProps: IntegralProps$PlotCanvas graph>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "new java.awt.Panel"
+    "pop"->"new java.awt.Panel";
+    "store.r $r15"
+    "new java.awt.Panel"->"store.r $r15";
+    "load.r $r15"
+    "store.r $r15"->"load.r $r15";
+    "specialinvoke <java.awt.Panel: void <init>()>"
+    "load.r $r15"->"specialinvoke <java.awt.Panel: void <init>()>";
+    "specialinvoke <java.awt.Panel: void <init>()>"->"load.r $r15";
+    "load.r $r15"->"push null";
+    "push null"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r $r15";
+    "load.r $r15"->"push 2";
+    "push 205"
+    "push 2"->"push 205";
+    "push 205"->"push 338";
+    "push 360"
+    "push 338"->"push 360";
+    "push 360"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r $r15";
+    "load.r $r15"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 255"
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 200"
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "new java.awt.Font"
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new java.awt.Font";
+    "store.r $r17"
+    "new java.awt.Font"->"store.r $r17";
+    "load.r $r17"
+    "store.r $r17"->"load.r $r17";
+    "push \"Serif\""
+    "load.r $r17"->"push \"Serif\"";
+    "push 1"
+    "push \"Serif\""->"push 1";
+    "push 14"
+    "push 1"->"push 14";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "push 14"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"push 338";
+    "push 50"
+    "push 338"->"push 50";
+    "sub.i"
+    "push 50"->"sub.i";
+    "store.i i2"
+    "sub.i"->"store.i i2";
+    "store.i i2"->"load.r r0";
+    "new java.awt.CheckboxGroup"
+    "load.r r0"->"new java.awt.CheckboxGroup";
+    "new java.awt.CheckboxGroup"->"dup1.r";
+    "specialinvoke <java.awt.CheckboxGroup: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.CheckboxGroup: void <init>()>";
+    "fieldput <IntegralProps: java.awt.CheckboxGroup topic>"
+    "specialinvoke <java.awt.CheckboxGroup: void <init>()>"->"fieldput <IntegralProps: java.awt.CheckboxGroup topic>";
+    "fieldput <IntegralProps: java.awt.CheckboxGroup topic>"->"load.r r0";
+    "new java.awt.Checkbox"
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "push \"Total Area\""
+    "dup1.r"->"push \"Total Area\"";
+    "push \"Total Area\""->"load.r r0";
+    "fieldget <IntegralProps: java.awt.CheckboxGroup topic>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.CheckboxGroup topic>";
+    "fieldget <IntegralProps: java.awt.CheckboxGroup topic>"->"push 1";
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String,java.awt.CheckboxGroup,boolean)>"
+    "push 1"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String,java.awt.CheckboxGroup,boolean)>";
+    "fieldput <IntegralProps: java.awt.Checkbox areaButton>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String,java.awt.CheckboxGroup,boolean)>"->"fieldput <IntegralProps: java.awt.Checkbox areaButton>";
+    "fieldput <IntegralProps: java.awt.Checkbox areaButton>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox areaButton>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox areaButton>";
+    "push 178"
+    "fieldget <IntegralProps: java.awt.Checkbox areaButton>"->"push 178";
+    "push 178"->"push 0";
+    "push 160"
+    "push 0"->"push 160";
+    "push 20"
+    "push 160"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox areaButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox areaButton>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Serif\"";
+    "push \"Serif\""->"push 1";
+    "push 11"
+    "push 1"->"push 11";
+    "push 11"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox areaButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox areaButton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 220"
+    "push 255"->"push 220";
+    "push 220"->"push 220";
+    "push 220"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox areaButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox areaButton>"->"load.r r0";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox areaButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox areaButton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "push \"Definite Integral\""
+    "dup1.r"->"push \"Definite Integral\"";
+    "push \"Definite Integral\""->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.CheckboxGroup topic>";
+    "fieldget <IntegralProps: java.awt.CheckboxGroup topic>"->"push 0";
+    "push 0"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String,java.awt.CheckboxGroup,boolean)>";
+    "fieldput <IntegralProps: java.awt.Checkbox integralButton>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String,java.awt.CheckboxGroup,boolean)>"->"fieldput <IntegralProps: java.awt.Checkbox integralButton>";
+    "fieldput <IntegralProps: java.awt.Checkbox integralButton>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox integralButton>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox integralButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox integralButton>"->"push 178";
+    "push 178"->"push 20";
+    "push 20"->"push 160";
+    "push 160"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox integralButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox integralButton>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Serif\"";
+    "push \"Serif\""->"push 1";
+    "push 1"->"push 11";
+    "push 11"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox integralButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox integralButton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 220";
+    "push 220"->"push 220";
+    "push 220"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox integralButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox integralButton>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox integralButton>";
+    "fieldget <IntegralProps: java.awt.Checkbox integralButton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new IntegralProps$Instructions"
+    "load.r r0"->"new IntegralProps$Instructions";
+    "new IntegralProps$Instructions"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push 338";
+    "push 60"
+    "push 338"->"push 60";
+    "specialinvoke <IntegralProps$Instructions: void <init>(IntegralProps,int,int)>"
+    "push 60"->"specialinvoke <IntegralProps$Instructions: void <init>(IntegralProps,int,int)>";
+    "fieldput <IntegralProps: IntegralProps$Instructions instructions>"
+    "specialinvoke <IntegralProps$Instructions: void <init>(IntegralProps,int,int)>"->"fieldput <IntegralProps: IntegralProps$Instructions instructions>";
+    "fieldput <IntegralProps: IntegralProps$Instructions instructions>"->"load.r r0";
+    "fieldget <IntegralProps: IntegralProps$Instructions instructions>"
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$Instructions instructions>";
+    "fieldget <IntegralProps: IntegralProps$Instructions instructions>"->"push 0";
+    "push 0"->"push 50";
+    "push 50"->"push 338";
+    "push 338"->"push 60";
+    "push 60"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$Instructions instructions>";
+    "fieldget <IntegralProps: IntegralProps$Instructions instructions>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new IntegralProps$CheckMarks"
+    "load.r r0"->"new IntegralProps$CheckMarks";
+    "new IntegralProps$CheckMarks"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push 20";
+    "push 8"
+    "push 20"->"push 8";
+    "push 25"
+    "push 8"->"push 25";
+    "mul.i"
+    "push 25"->"mul.i";
+    "specialinvoke <IntegralProps$CheckMarks: void <init>(IntegralProps,int,int)>"
+    "mul.i"->"specialinvoke <IntegralProps$CheckMarks: void <init>(IntegralProps,int,int)>";
+    "fieldput <IntegralProps: IntegralProps$CheckMarks checks>"
+    "specialinvoke <IntegralProps$CheckMarks: void <init>(IntegralProps,int,int)>"->"fieldput <IntegralProps: IntegralProps$CheckMarks checks>";
+    "fieldput <IntegralProps: IntegralProps$CheckMarks checks>"->"load.r r0";
+    "fieldget <IntegralProps: IntegralProps$CheckMarks checks>"
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$CheckMarks checks>";
+    "fieldget <IntegralProps: IntegralProps$CheckMarks checks>"->"push 20";
+    "push 120"
+    "push 20"->"push 120";
+    "push 120"->"push 20";
+    "push 20"->"push 8";
+    "push 8"->"push 25";
+    "push 25"->"mul.i";
+    "mul.i"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$CheckMarks checks>";
+    "fieldget <IntegralProps: IntegralProps$CheckMarks checks>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "new java.lang.StringBuffer"
+    "dup1.r"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "push \"   \""
+    "dup1.r"->"push \"   \"";
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"
+    "push \"   \""->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "push \"-I + II - III + IV + V\""
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"push \"-I + II - III + IV + V\"";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "push \"-I + II - III + IV + V\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb1>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Checkbox cb1>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb1>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox cb1>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb1>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb1>"->"push 50";
+    "push 50"->"push 120";
+    "push 120"->"push 0";
+    "push 0"->"push 25";
+    "push 25"->"mul.i";
+    "add.i"
+    "mul.i"->"add.i";
+    "load.i i2"
+    "add.i"->"load.i i2";
+    "load.i i2"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb1>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb1>"->"load.r $r17";
+    "load.r $r17"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb1>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb1>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb1>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb1>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb1>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb1>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "dup1.r"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"push \"   \"";
+    "push \"   \""->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "push \"-I + II - III - IV + V\""
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"push \"-I + II - III - IV + V\"";
+    "push \"-I + II - III - IV + V\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb2>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Checkbox cb2>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb2>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox cb2>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb2>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb2>"->"push 50";
+    "push 50"->"push 120";
+    "push 120"->"push 25";
+    "push 25"->"add.i";
+    "add.i"->"load.i i2";
+    "load.i i2"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb2>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb2>"->"load.r $r17";
+    "load.r $r17"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb2>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb2>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb2>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb2>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb2>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb2>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "dup1.r"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"push \"   \"";
+    "push \"   \""->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "push \"I + II + III + IV + V\""
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"push \"I + II + III + IV + V\"";
+    "push \"I + II + III + IV + V\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb3>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Checkbox cb3>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb3>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox cb3>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb3>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb3>"->"push 50";
+    "push 50"->"push 120";
+    "push 120"->"push 2";
+    "push 2"->"push 25";
+    "push 25"->"mul.i";
+    "mul.i"->"add.i";
+    "add.i"->"load.i i2";
+    "load.i i2"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb3>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb3>"->"load.r $r17";
+    "load.r $r17"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb3>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb3>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb3>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb3>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb3>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb3>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "dup1.r"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"push \"   \"";
+    "push \"   \""->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "push \"|I| + |II| + |III| + |IV| + |V|\""
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"push \"|I| + |II| + |III| + |IV| + |V|\"";
+    "push \"|I| + |II| + |III| + |IV| + |V|\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb4>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Checkbox cb4>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb4>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox cb4>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb4>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb4>"->"push 50";
+    "push 50"->"push 120";
+    "push 3"
+    "push 120"->"push 3";
+    "push 3"->"push 25";
+    "push 25"->"mul.i";
+    "mul.i"->"add.i";
+    "add.i"->"load.i i2";
+    "load.i i2"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb4>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb4>"->"load.r $r17";
+    "load.r $r17"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb4>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb4>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb4>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb4>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb4>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb4>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "dup1.r"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"push \"   \"";
+    "push \"   \""->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "push \"|-I - II - III - IV - V|\""
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"push \"|-I - II - III - IV - V|\"";
+    "push \"|-I - II - III - IV - V|\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb5>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Checkbox cb5>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb5>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox cb5>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb5>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb5>"->"push 50";
+    "push 50"->"push 120";
+    "push 4"
+    "push 120"->"push 4";
+    "push 4"->"push 25";
+    "push 25"->"mul.i";
+    "mul.i"->"add.i";
+    "add.i"->"load.i i2";
+    "load.i i2"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb5>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb5>"->"load.r $r17";
+    "load.r $r17"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb5>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb5>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb5>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb5>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb5>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb5>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "dup1.r"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"push \"   \"";
+    "push \"   \""->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "push \"-I + II - III + IV - V\""
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"push \"-I + II - III + IV - V\"";
+    "push \"-I + II - III + IV - V\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb6>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Checkbox cb6>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb6>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox cb6>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb6>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb6>"->"push 50";
+    "push 50"->"push 120";
+    "push 5"
+    "push 120"->"push 5";
+    "push 5"->"push 25";
+    "push 25"->"mul.i";
+    "mul.i"->"add.i";
+    "add.i"->"load.i i2";
+    "load.i i2"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb6>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb6>"->"load.r $r17";
+    "load.r $r17"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb6>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb6>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb6>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb6>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb6>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb6>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "dup1.r"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"push \"   \"";
+    "push \"   \""->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "push \"|-I| + II + |-III| + |-IV| + V\""
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"push \"|-I| + II + |-III| + |-IV| + V\"";
+    "push \"|-I| + II + |-III| + |-IV| + V\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb7>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Checkbox cb7>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb7>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox cb7>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb7>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb7>"->"push 50";
+    "push 50"->"push 120";
+    "push 6"
+    "push 120"->"push 6";
+    "push 6"->"push 25";
+    "push 25"->"mul.i";
+    "mul.i"->"add.i";
+    "add.i"->"load.i i2";
+    "load.i i2"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb7>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb7>"->"load.r $r17";
+    "load.r $r17"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb7>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb7>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb7>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb7>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb7>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb7>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Checkbox";
+    "new java.awt.Checkbox"->"dup1.r";
+    "dup1.r"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"push \"   \"";
+    "push \"   \""->"staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>";
+    "staticinvoke <java.lang.String: java.lang.String valueOf(java.lang.Object)>"->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "push \"II + V - |I + III + IV|\""
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"push \"II + V - |I + III + IV|\"";
+    "push \"II + V - |I + III + IV|\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb8>"
+    "specialinvoke <java.awt.Checkbox: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Checkbox cb8>";
+    "fieldput <IntegralProps: java.awt.Checkbox cb8>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Checkbox cb8>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb8>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb8>"->"push 50";
+    "push 50"->"push 120";
+    "push 7"
+    "push 120"->"push 7";
+    "push 7"->"push 25";
+    "push 25"->"mul.i";
+    "mul.i"->"add.i";
+    "add.i"->"load.i i2";
+    "load.i i2"->"push 20";
+    "push 20"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb8>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb8>"->"load.r $r17";
+    "load.r $r17"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb8>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb8>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb8>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb8>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>";
+    "virtualinvoke <java.awt.Checkbox: void addItemListener(java.awt.event.ItemListener)>"->"load.r $r15";
+    "load.r $r15"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Checkbox cb8>";
+    "fieldget <IntegralProps: java.awt.Checkbox cb8>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"load.r $r15";
+    "load.r $r15"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"new java.awt.Panel";
+    "store.r i2"
+    "new java.awt.Panel"->"store.r i2";
+    "load.r i2"
+    "store.r i2"->"load.r i2";
+    "load.r i2"->"specialinvoke <java.awt.Panel: void <init>()>";
+    "specialinvoke <java.awt.Panel: void <init>()>"->"load.r i2";
+    "load.r i2"->"push 0";
+    "push 0"->"push 120";
+    "push 120"->"push 8";
+    "push 8"->"push 25";
+    "push 25"->"mul.i";
+    "mul.i"->"add.i";
+    "add.i"->"push 338";
+    "push 338"->"push 30";
+    "push 30"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r i2";
+    "load.r i2"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 200";
+    "push 200"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r $r15";
+    "load.r $r15"->"load.r i2";
+    "load.r i2"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new java.awt.Button"
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"Check Answers\""
+    "dup1.r"->"push \"Check Answers\"";
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"
+    "push \"Check Answers\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <IntegralProps: java.awt.Button checkButton>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <IntegralProps: java.awt.Button checkButton>";
+    "fieldput <IntegralProps: java.awt.Button checkButton>"->"load.r r0";
+    "fieldget <IntegralProps: java.awt.Button checkButton>"
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Button checkButton>";
+    "fieldget <IntegralProps: java.awt.Button checkButton>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 100";
+    "push 100"->"push 255";
+    "push 255"->"push 100";
+    "push 100"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Button checkButton>";
+    "fieldget <IntegralProps: java.awt.Button checkButton>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "push \"SansSerif\""
+    "dup1.r"->"push \"SansSerif\"";
+    "push \"SansSerif\""->"push 1";
+    "push 12"
+    "push 1"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Button checkButton>";
+    "fieldget <IntegralProps: java.awt.Button checkButton>"->"load.r r0";
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"
+    "load.r r0"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"load.r i2";
+    "load.r i2"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: java.awt.Button checkButton>";
+    "fieldget <IntegralProps: java.awt.Button checkButton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "new mathTools.Copyright"
+    "pop"->"new mathTools.Copyright";
+    "new mathTools.Copyright"->"store.r $r15";
+    "store.r $r15"->"load.r $r15";
+    "specialinvoke <mathTools.Copyright: void <init>()>"
+    "load.r $r15"->"specialinvoke <mathTools.Copyright: void <init>()>";
+    "specialinvoke <mathTools.Copyright: void <init>()>"->"load.r $r15";
+    "load.r $r15"->"push 0";
+    "push 565"
+    "push 0"->"push 565";
+    "push 342"
+    "push 565"->"push 342";
+    "push 342"->"push 25";
+    "push 25"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"load.r $r15";
+    "load.r $r15"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$PlotCanvas graph>";
+    "fieldget <IntegralProps: IntegralProps$PlotCanvas graph>"->"load.r r0";
+    "load.r r0"->"fieldget <IntegralProps: IntegralProps$PlotCanvas graph>";
+    "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"
+    "fieldget <IntegralProps: IntegralProps$PlotCanvas graph>"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+    "virtualinvoke <graphTools.GraphCanvas: void setGraphics(java.awt.Graphics)>"
+    "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"virtualinvoke <graphTools.GraphCanvas: void setGraphics(java.awt.Graphics)>";
+    "return"
+    "virtualinvoke <graphTools.GraphCanvas: void setGraphics(java.awt.Graphics)>"->"return";
+}

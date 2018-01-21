@@ -1,0 +1,73 @@
+digraph "" {
+    "r0 := @parameter0: java.lang.String[]"
+    "$i0 = lengthof r0"
+    "r0 := @parameter0: java.lang.String[]"->"$i0 = lengthof r0";
+    "if $i0 <= 0 goto $r12 = \"\""
+    "$i0 = lengthof r0"->"if $i0 <= 0 goto $r12 = \"\"";
+    "$r12 = r0[0]"
+    "if $i0 <= 0 goto $r12 = \"\""->"$r12 = r0[0]";
+    "goto [?= r1 = $r12]"
+    "$r12 = r0[0]"->"goto [?= r1 = $r12]";
+    "r1 = $r12"
+    "goto [?= r1 = $r12]"->"r1 = $r12";
+    "staticinvoke <java.lang.System: java.lang.String setProperty(java.lang.String,java.lang.String)>(\"java.net.useSystemProxies\", \"true\")"
+    "r1 = $r12"->"staticinvoke <java.lang.System: java.lang.String setProperty(java.lang.String,java.lang.String)>(\"java.net.useSystemProxies\", \"true\")";
+    "goto [?= $r5 = new m]"
+    "staticinvoke <java.lang.System: java.lang.String setProperty(java.lang.String,java.lang.String)>(\"java.net.useSystemProxies\", \"true\")"->"goto [?= $r5 = new m]";
+    "$r5 = new m"
+    "goto [?= $r5 = new m]"->"$r5 = new m";
+    "specialinvoke $r5.<m: void <init>()>()"
+    "$r5 = new m"->"specialinvoke $r5.<m: void <init>()>()";
+    "r14 = $r5"
+    "specialinvoke $r5.<m: void <init>()>()"->"r14 = $r5";
+    "r2 = virtualinvoke r14.<m: java.lang.Object loadClass()>()"
+    "r14 = $r5"->"r2 = virtualinvoke r14.<m: java.lang.Object loadClass()>()";
+    "$r6 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>()"
+    "r2 = virtualinvoke r14.<m: java.lang.Object loadClass()>()"->"$r6 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>()";
+    "$r7 = newarray (java.lang.Class)[2]"
+    "$r6 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>()"->"$r7 = newarray (java.lang.Class)[2]";
+    "$r7[0] = class \"Ljava/lang/String;\""
+    "$r7 = newarray (java.lang.Class)[2]"->"$r7[0] = class \"Ljava/lang/String;\"";
+    "$r7[1] = class \"Ljava/lang/Class;\""
+    "$r7[0] = class \"Ljava/lang/String;\""->"$r7[1] = class \"Ljava/lang/Class;\"";
+    "r3 = virtualinvoke $r6.<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>(\"r\", $r7)"
+    "$r7[1] = class \"Ljava/lang/Class;\""->"r3 = virtualinvoke $r6.<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>(\"r\", $r7)";
+    "$r8 = newarray (java.lang.Object)[2]"
+    "r3 = virtualinvoke $r6.<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>(\"r\", $r7)"->"$r8 = newarray (java.lang.Object)[2]";
+    "$r8[0] = r1"
+    "$r8 = newarray (java.lang.Object)[2]"->"$r8[0] = r1";
+    "$r8[1] = class \"Lhw;\""
+    "$r8[0] = r1"->"$r8[1] = class \"Lhw;\"";
+    "virtualinvoke r3.<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>(null, $r8)"
+    "$r8[1] = class \"Lhw;\""->"virtualinvoke r3.<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>(null, $r8)";
+    "goto [?= return]"
+    "virtualinvoke r3.<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>(null, $r8)"->"goto [?= return]";
+    "return"
+    "goto [?= return]"->"return";
+    "$r11 := @caughtexception"
+    "virtualinvoke r3.<java.lang.reflect.Method: java.lang.Object invoke(java.lang.Object,java.lang.Object[])>(null, $r8)"->"$r11 := @caughtexception";
+    "r15 = $r11"
+    "$r11 := @caughtexception"->"r15 = $r11";
+    "r15 = $r11"->"return";
+    "$r8[1] = class \"Lhw;\""->"$r11 := @caughtexception";
+    "$r8[0] = r1"->"$r11 := @caughtexception";
+    "$r8 = newarray (java.lang.Object)[2]"->"$r11 := @caughtexception";
+    "r3 = virtualinvoke $r6.<java.lang.Class: java.lang.reflect.Method getMethod(java.lang.String,java.lang.Class[])>(\"r\", $r7)"->"$r11 := @caughtexception";
+    "$r7[1] = class \"Ljava/lang/Class;\""->"$r11 := @caughtexception";
+    "$r7[0] = class \"Ljava/lang/String;\""->"$r11 := @caughtexception";
+    "$r7 = newarray (java.lang.Class)[2]"->"$r11 := @caughtexception";
+    "$r6 = virtualinvoke r2.<java.lang.Object: java.lang.Class getClass()>()"->"$r11 := @caughtexception";
+    "r2 = virtualinvoke r14.<m: java.lang.Object loadClass()>()"->"$r11 := @caughtexception";
+    "r14 = $r5"->"$r11 := @caughtexception";
+    "specialinvoke $r5.<m: void <init>()>()"->"$r11 := @caughtexception";
+    "$r5 = new m"->"$r11 := @caughtexception";
+    "$r10 := @caughtexception"
+    "staticinvoke <java.lang.System: java.lang.String setProperty(java.lang.String,java.lang.String)>(\"java.net.useSystemProxies\", \"true\")"->"$r10 := @caughtexception";
+    "r13 = $r10"
+    "$r10 := @caughtexception"->"r13 = $r10";
+    "r13 = $r10"->"$r5 = new m";
+    "r1 = $r12"->"$r10 := @caughtexception";
+    "$r12 = \"\""
+    "if $i0 <= 0 goto $r12 = \"\""->"$r12 = \"\"";
+    "$r12 = \"\""->"r1 = $r12";
+}

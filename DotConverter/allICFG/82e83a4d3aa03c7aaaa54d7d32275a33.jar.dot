@@ -1,0 +1,251 @@
+digraph "" {
+    "r0 := @this: C64Applet"
+    "load.r r0"
+    "r0 := @this: C64Applet"->"load.r r0";
+    "push 0"
+    "load.r r0"->"push 0";
+    "fieldput <C64Applet: boolean started>"
+    "push 0"->"fieldput <C64Applet: boolean started>";
+    "fieldput <C64Applet: boolean started>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "fieldput <C64Applet: boolean stopping>"
+    "push 0"->"fieldput <C64Applet: boolean stopping>";
+    "fieldput <C64Applet: boolean stopping>"->"load.r r0";
+    "push null"
+    "load.r r0"->"push null";
+    "fieldput <C64Applet: java.lang.String currentDisk>"
+    "push null"->"fieldput <C64Applet: java.lang.String currentDisk>";
+    "fieldput <C64Applet: java.lang.String currentDisk>"->"load.r r0";
+    "fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>"
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>";
+    "ifnonnull return"
+    "fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>"->"ifnonnull return";
+    "push 16384"
+    "ifnonnull return"->"push 16384";
+    "staticput <com.dreamfabric.jac64.SIDMixer: int DL_BUFFER_SIZE>"
+    "push 16384"->"staticput <com.dreamfabric.jac64.SIDMixer: int DL_BUFFER_SIZE>";
+    "staticget <java.lang.System: java.io.PrintStream out>"
+    "staticput <com.dreamfabric.jac64.SIDMixer: int DL_BUFFER_SIZE>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"starting CPU\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"starting CPU\"";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"
+    "push \"starting CPU\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r r0";
+    "new com.dreamfabric.jac64.CPU"
+    "load.r r0"->"new com.dreamfabric.jac64.CPU";
+    "dup1.r"
+    "new com.dreamfabric.jac64.CPU"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "fieldget <C64Applet: com.dreamfabric.jac64.IMonitor imon>"
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.IMonitor imon>";
+    "fieldget <C64Applet: com.dreamfabric.jac64.IMonitor imon>"->"load.r r0";
+    "virtualinvoke <C64Applet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <C64Applet: java.net.URL getCodeBase()>";
+    "virtualinvoke <java.net.URL: java.lang.String toString()>"
+    "virtualinvoke <C64Applet: java.net.URL getCodeBase()>"->"virtualinvoke <java.net.URL: java.lang.String toString()>";
+    "new com.dreamfabric.jac64.SELoader"
+    "virtualinvoke <java.net.URL: java.lang.String toString()>"->"new com.dreamfabric.jac64.SELoader";
+    "new com.dreamfabric.jac64.SELoader"->"dup1.r";
+    "specialinvoke <com.dreamfabric.jac64.SELoader: void <init>()>"
+    "dup1.r"->"specialinvoke <com.dreamfabric.jac64.SELoader: void <init>()>";
+    "specialinvoke <com.dreamfabric.jac64.CPU: void <init>(com.dreamfabric.jac64.IMonitor,java.lang.String,com.dreamfabric.jac64.Loader)>"
+    "specialinvoke <com.dreamfabric.jac64.SELoader: void <init>()>"->"specialinvoke <com.dreamfabric.jac64.CPU: void <init>(com.dreamfabric.jac64.IMonitor,java.lang.String,com.dreamfabric.jac64.Loader)>";
+    "fieldput <C64Applet: com.dreamfabric.jac64.CPU cpu>"
+    "specialinvoke <com.dreamfabric.jac64.CPU: void <init>(com.dreamfabric.jac64.IMonitor,java.lang.String,com.dreamfabric.jac64.Loader)>"->"fieldput <C64Applet: com.dreamfabric.jac64.CPU cpu>";
+    "fieldput <C64Applet: com.dreamfabric.jac64.CPU cpu>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"Status: initializing\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"Status: initializing\"";
+    "push \"Status: initializing\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"doubleScreen\""
+    "load.r r0"->"push \"doubleScreen\"";
+    "push \"doubleScreen\""->"push 0";
+    "specialinvoke <C64Applet: int getParameterAsInt(java.lang.String,int)>"
+    "push 0"->"specialinvoke <C64Applet: int getParameterAsInt(java.lang.String,int)>";
+    "fieldput <C64Applet: int doubleScreen>"
+    "specialinvoke <C64Applet: int getParameterAsInt(java.lang.String,int)>"->"fieldput <C64Applet: int doubleScreen>";
+    "new com.dreamfabric.jac64.C64Screen"
+    "fieldput <C64Applet: int doubleScreen>"->"new com.dreamfabric.jac64.C64Screen";
+    "store.r $r9"
+    "new com.dreamfabric.jac64.C64Screen"->"store.r $r9";
+    "store.r $r9"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.IMonitor imon>";
+    "store.r $r10"
+    "fieldget <C64Applet: com.dreamfabric.jac64.IMonitor imon>"->"store.r $r10";
+    "store.r $r10"->"load.r r0";
+    "fieldget <C64Applet: int doubleScreen>"
+    "load.r r0"->"fieldget <C64Applet: int doubleScreen>";
+    "ifle push 0"
+    "fieldget <C64Applet: int doubleScreen>"->"ifle push 0";
+    "push 1"
+    "ifle push 0"->"push 1";
+    "store.b $z0"
+    "push 1"->"store.b $z0";
+    "goto load.r $r9"
+    "store.b $z0"->"goto load.r $r9";
+    "load.r $r9"
+    "goto load.r $r9"->"load.r $r9";
+    "load.r $r10"
+    "load.r $r9"->"load.r $r10";
+    "load.b $z0"
+    "load.r $r10"->"load.b $z0";
+    "specialinvoke <com.dreamfabric.jac64.C64Screen: void <init>(com.dreamfabric.jac64.IMonitor,boolean)>"
+    "load.b $z0"->"specialinvoke <com.dreamfabric.jac64.C64Screen: void <init>(com.dreamfabric.jac64.IMonitor,boolean)>";
+    "specialinvoke <com.dreamfabric.jac64.C64Screen: void <init>(com.dreamfabric.jac64.IMonitor,boolean)>"->"load.r r0";
+    "load.r r0"->"load.r $r9";
+    "fieldput <C64Applet: com.dreamfabric.jac64.C64Screen screen>"
+    "load.r $r9"->"fieldput <C64Applet: com.dreamfabric.jac64.C64Screen screen>";
+    "fieldput <C64Applet: com.dreamfabric.jac64.C64Screen screen>"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>";
+    "fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>"->"load.r r0";
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>"
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>";
+    "virtualinvoke <com.dreamfabric.jac64.CPU: void init(com.dreamfabric.jac64.C64Chips)>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>"->"virtualinvoke <com.dreamfabric.jac64.CPU: void init(com.dreamfabric.jac64.C64Chips)>";
+    "virtualinvoke <com.dreamfabric.jac64.CPU: void init(com.dreamfabric.jac64.C64Chips)>"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>";
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>";
+    "virtualinvoke <com.dreamfabric.jac64.C64Screen: void init(com.dreamfabric.jac64.CPU)>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>"->"virtualinvoke <com.dreamfabric.jac64.C64Screen: void init(com.dreamfabric.jac64.CPU)>";
+    "virtualinvoke <com.dreamfabric.jac64.C64Screen: void init(com.dreamfabric.jac64.CPU)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>";
+    "virtualinvoke <com.dreamfabric.jac64.CPU: int[] getMemory()>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>"->"virtualinvoke <com.dreamfabric.jac64.CPU: int[] getMemory()>";
+    "fieldput <C64Applet: int[] memory>"
+    "virtualinvoke <com.dreamfabric.jac64.CPU: int[] getMemory()>"->"fieldput <C64Applet: int[] memory>";
+    "fieldput <C64Applet: int[] memory>"->"load.r r0";
+    "new java.awt.BorderLayout"
+    "load.r r0"->"new java.awt.BorderLayout";
+    "new java.awt.BorderLayout"->"dup1.r";
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+    "virtualinvoke <C64Applet: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <C64Applet: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <C64Applet: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "staticget <java.awt.Color: java.awt.Color black>"
+    "load.r r0"->"staticget <java.awt.Color: java.awt.Color black>";
+    "virtualinvoke <C64Applet: void setBackground(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <C64Applet: void setBackground(java.awt.Color)>";
+    "virtualinvoke <C64Applet: void setBackground(java.awt.Color)>"->"load.r r0";
+    "staticget <C64Applet: java.awt.Color lblue>"
+    "load.r r0"->"staticget <C64Applet: java.awt.Color lblue>";
+    "virtualinvoke <C64Applet: void setForeground(java.awt.Color)>"
+    "staticget <C64Applet: java.awt.Color lblue>"->"virtualinvoke <C64Applet: void setForeground(java.awt.Color)>";
+    "virtualinvoke <C64Applet: void setForeground(java.awt.Color)>"->"load.r r0";
+    "new com.dreamfabric.jac64.C64Reader"
+    "load.r r0"->"new com.dreamfabric.jac64.C64Reader";
+    "new com.dreamfabric.jac64.C64Reader"->"dup1.r";
+    "specialinvoke <com.dreamfabric.jac64.C64Reader: void <init>()>"
+    "dup1.r"->"specialinvoke <com.dreamfabric.jac64.C64Reader: void <init>()>";
+    "fieldput <C64Applet: com.dreamfabric.jac64.C64Reader reader>"
+    "specialinvoke <com.dreamfabric.jac64.C64Reader: void <init>()>"->"fieldput <C64Applet: com.dreamfabric.jac64.C64Reader reader>";
+    "fieldput <C64Applet: com.dreamfabric.jac64.C64Reader reader>"->"load.r r0";
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Reader reader>"
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.C64Reader reader>";
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Reader reader>"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>";
+    "virtualinvoke <com.dreamfabric.jac64.C64Reader: void setCPU(com.dreamfabric.jac64.CPU)>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>"->"virtualinvoke <com.dreamfabric.jac64.C64Reader: void setCPU(com.dreamfabric.jac64.CPU)>";
+    "virtualinvoke <com.dreamfabric.jac64.C64Reader: void setCPU(com.dreamfabric.jac64.CPU)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>";
+    "virtualinvoke <com.dreamfabric.jac64.C64Screen: javax.swing.JPanel getScreen()>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>"->"virtualinvoke <com.dreamfabric.jac64.C64Screen: javax.swing.JPanel getScreen()>";
+    "checkcast"
+    "virtualinvoke <com.dreamfabric.jac64.C64Screen: javax.swing.JPanel getScreen()>"->"checkcast";
+    "checkcast"->"store.r $r9";
+    "store.r $r9"->"load.r $r9";
+    "fieldput <C64Applet: com.dreamfabric.jac64.C64Canvas canvas>"
+    "load.r $r9"->"fieldput <C64Applet: com.dreamfabric.jac64.C64Canvas canvas>";
+    "fieldput <C64Applet: com.dreamfabric.jac64.C64Canvas canvas>"->"load.r $r9";
+    "push \"Center\""
+    "load.r $r9"->"push \"Center\"";
+    "virtualinvoke <C64Applet: void add(java.awt.Component,java.lang.Object)>"
+    "push \"Center\""->"virtualinvoke <C64Applet: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <C64Applet: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "virtualinvoke <C64Applet: void repaint()>"
+    "load.r r0"->"virtualinvoke <C64Applet: void repaint()>";
+    "virtualinvoke <C64Applet: void repaint()>"->"load.r r0";
+    "virtualinvoke <C64Applet: void validate()>"
+    "load.r r0"->"virtualinvoke <C64Applet: void validate()>";
+    "virtualinvoke <C64Applet: void validate()>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Canvas canvas>"
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.C64Canvas canvas>";
+    "virtualinvoke <C64Applet: void addKeyListener(java.awt.event.KeyListener)>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Canvas canvas>"->"virtualinvoke <C64Applet: void addKeyListener(java.awt.event.KeyListener)>";
+    "virtualinvoke <C64Applet: void addKeyListener(java.awt.event.KeyListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.C64Canvas canvas>";
+    "virtualinvoke <com.dreamfabric.jac64.C64Canvas: void requestFocus()>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Canvas canvas>"->"virtualinvoke <com.dreamfabric.jac64.C64Canvas: void requestFocus()>";
+    "virtualinvoke <com.dreamfabric.jac64.C64Canvas: void requestFocus()>"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>";
+    "virtualinvoke <com.dreamfabric.jac64.CPU: com.dreamfabric.jac64.C1541Emu getDrive()>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.CPU cpu>"->"virtualinvoke <com.dreamfabric.jac64.CPU: com.dreamfabric.jac64.C1541Emu getDrive()>";
+    "virtualinvoke <com.dreamfabric.jac64.CPU: com.dreamfabric.jac64.C1541Emu getDrive()>"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.C64Reader reader>";
+    "virtualinvoke <com.dreamfabric.jac64.C1541Emu: void setReader(com.dreamfabric.jac64.C64Reader)>"
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Reader reader>"->"virtualinvoke <com.dreamfabric.jac64.C1541Emu: void setReader(com.dreamfabric.jac64.C64Reader)>";
+    "virtualinvoke <com.dreamfabric.jac64.C1541Emu: void setReader(com.dreamfabric.jac64.C64Reader)>"->"push null";
+    "push null"->"store.r $r9";
+    "store.r $r9"->"push null";
+    "push null"->"store.r $r10";
+    "store.r $r10"->"load.r r0";
+    "virtualinvoke <java.lang.Object: java.lang.Class getClass()>"
+    "load.r r0"->"virtualinvoke <java.lang.Object: java.lang.Class getClass()>";
+    "push \"sounds/track.wav\""
+    "virtualinvoke <java.lang.Object: java.lang.Class getClass()>"->"push \"sounds/track.wav\"";
+    "virtualinvoke <java.lang.Class: java.net.URL getResource(java.lang.String)>"
+    "push \"sounds/track.wav\""->"virtualinvoke <java.lang.Class: java.net.URL getResource(java.lang.String)>";
+    "store.r $z0"
+    "virtualinvoke <java.lang.Class: java.net.URL getResource(java.lang.String)>"->"store.r $z0";
+    "store.r $z0"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "new java.lang.StringBuffer"
+    "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "push \"Audio URL:\""
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"push \"Audio URL:\"";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "push \"Audio URL:\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "load.r $z0"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"load.r $z0";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>"
+    "load.r $z0"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r $z0";
+    "ifnull load.r r0"
+    "load.r $z0"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $z0";
+    "staticinvoke <java.applet.Applet: java.applet.AudioClip newAudioClip(java.net.URL)>"
+    "load.r $z0"->"staticinvoke <java.applet.Applet: java.applet.AudioClip newAudioClip(java.net.URL)>";
+    "staticinvoke <java.applet.Applet: java.applet.AudioClip newAudioClip(java.net.URL)>"->"store.r $r9";
+    "store.r $r9"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.lang.Object: java.lang.Class getClass()>";
+    "push \"sounds/motor.wav\""
+    "virtualinvoke <java.lang.Object: java.lang.Class getClass()>"->"push \"sounds/motor.wav\"";
+    "push \"sounds/motor.wav\""->"virtualinvoke <java.lang.Class: java.net.URL getResource(java.lang.String)>";
+    "virtualinvoke <java.lang.Class: java.net.URL getResource(java.lang.String)>"->"store.r $z0";
+    "store.r $z0"->"load.r $z0";
+    "load.r $z0"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $z0";
+    "load.r $z0"->"staticinvoke <java.applet.Applet: java.applet.AudioClip newAudioClip(java.net.URL)>";
+    "staticinvoke <java.applet.Applet: java.applet.AudioClip newAudioClip(java.net.URL)>"->"store.r $r10";
+    "store.r $r10"->"load.r r0";
+    "load.r r0"->"fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>";
+    "fieldget <C64Applet: com.dreamfabric.jac64.C64Screen screen>"->"load.r $r9";
+    "load.r $r9"->"load.r $r10";
+    "virtualinvoke <com.dreamfabric.jac64.C64Screen: void setSounds(java.applet.AudioClip,java.applet.AudioClip)>"
+    "load.r $r10"->"virtualinvoke <com.dreamfabric.jac64.C64Screen: void setSounds(java.applet.AudioClip,java.applet.AudioClip)>";
+    "return"
+    "virtualinvoke <com.dreamfabric.jac64.C64Screen: void setSounds(java.applet.AudioClip,java.applet.AudioClip)>"->"return";
+    "ifle push 0"->"push 0";
+    "push 0"->"store.b $z0";
+}

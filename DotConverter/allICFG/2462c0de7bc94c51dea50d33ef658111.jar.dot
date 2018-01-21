@@ -1,0 +1,180 @@
+digraph "" {
+    "r0 := @this: DSLoader"
+    "load.r r0"
+    "r0 := @this: DSLoader"->"load.r r0";
+    "specialinvoke <java.applet.Applet: void init()>"
+    "load.r r0"->"specialinvoke <java.applet.Applet: void init()>";
+    "specialinvoke <java.applet.Applet: void init()>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"\u001c?uIZ\u0002\u0011d]S\u0015$\""
+    "load.r r0"->"push \"\u001c?uIZ\u0002\u0011d]S\u0015$\"";
+    "staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>"
+    "push \"\u001c?uIZ\u0002\u0011d]S\u0015$\""->"staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "fieldput <DSLoader: java.lang.String a>"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <DSLoader: java.lang.String a>";
+    "fieldput <DSLoader: java.lang.String a>"->"load.r r0";
+    "push \"\u001c?uIZ\u0002\u0011aYP<?uI\""
+    "load.r r0"->"push \"\u001c?uIZ\u0002\u0011aYP<?uI\"";
+    "push \"\u001c?uIZ\u0002\u0011aYP<?uI\""->"staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>";
+    "staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r $r6"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r6";
+    "load.r $r6"
+    "store.r $r6"->"load.r $r6";
+    "ifnull load.r r0"
+    "load.r $r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r6";
+    "staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(java.lang.String)>"
+    "load.r $r6"->"staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(java.lang.String)>";
+    "virtualinvoke <java.lang.Boolean: boolean booleanValue()>"
+    "staticinvoke <java.lang.Boolean: java.lang.Boolean valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Boolean: boolean booleanValue()>";
+    "ifeq load.r r0"
+    "virtualinvoke <java.lang.Boolean: boolean booleanValue()>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push 1"
+    "load.r r0"->"push 1";
+    "fieldput <DSLoader: int g>"
+    "push 1"->"fieldput <DSLoader: int g>";
+    "fieldput <DSLoader: int g>"->"load.r r0";
+    "push \"21wFX\u0002?aC[3?xBM\""
+    "load.r r0"->"push \"21wFX\u0002?aC[3?xBM\"";
+    "push \"21wFX\u0002?aC[3?xBM\""->"staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>";
+    "staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r6";
+    "store.r $r6"->"load.r $r6";
+    "load.r $r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "new java.awt.Color"
+    "load.r r0"->"new java.awt.Color";
+    "dup1.r"
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"load.r $r6";
+    "load.r $r6"->"push 1";
+    "virtualinvoke <java.lang.String: java.lang.String substring(int)>"
+    "push 1"->"virtualinvoke <java.lang.String: java.lang.String substring(int)>";
+    "push 16"
+    "virtualinvoke <java.lang.String: java.lang.String substring(int)>"->"push 16";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String,int)>"
+    "push 16"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String,int)>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String,int)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "push \"$5lY|\u001f<{_\""
+    "load.r r0"->"push \"$5lY|\u001f<{_\"";
+    "push \"$5lY|\u001f<{_\""->"staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>";
+    "staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r6";
+    "store.r $r6"->"load.r $r6";
+    "load.r $r6"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"load.r $r6";
+    "load.r $r6"->"push 1";
+    "push 1"->"virtualinvoke <java.lang.String: java.lang.String substring(int)>";
+    "virtualinvoke <java.lang.String: java.lang.String substring(int)>"->"push 16";
+    "push 16"->"staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String,int)>";
+    "staticinvoke <java.lang.Integer: java.lang.Integer valueOf(java.lang.String,int)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setForeground(java.awt.Color)>"->"load.r r0";
+    "fieldget <DSLoader: java.lang.String a>"
+    "load.r r0"->"fieldget <DSLoader: java.lang.String a>";
+    "fieldget <DSLoader: java.lang.String a>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"load.r r0";
+    "push \"\u001c?uIZ\u0002\u0019yLX\u0015\""
+    "load.r r0"->"push \"\u001c?uIZ\u0002\u0019yLX\u0015\"";
+    "push \"\u001c?uIZ\u0002\u0019yLX\u0015\""->"staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>";
+    "staticinvoke <DSLoader: java.lang.String zkmToString(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "fieldput <DSLoader: java.awt.Image d>"
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <DSLoader: java.awt.Image d>";
+    "fieldput <DSLoader: java.awt.Image d>"->"load.r r0";
+    "fieldget <DSLoader: java.awt.Image d>"
+    "load.r r0"->"fieldget <DSLoader: java.awt.Image d>";
+    "ifnull return"
+    "fieldget <DSLoader: java.awt.Image d>"->"ifnull return";
+    "new java.awt.MediaTracker"
+    "ifnull return"->"new java.awt.MediaTracker";
+    "new java.awt.MediaTracker"->"store.r $r6";
+    "store.r $r6"->"load.r $r6";
+    "load.r $r6"->"load.r r0";
+    "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"
+    "load.r r0"->"specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>";
+    "specialinvoke <java.awt.MediaTracker: void <init>(java.awt.Component)>"->"load.r $r6";
+    "load.r $r6"->"load.r r0";
+    "load.r r0"->"fieldget <DSLoader: java.awt.Image d>";
+    "push 0"
+    "fieldget <DSLoader: java.awt.Image d>"->"push 0";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"
+    "push 0"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"->"load.r $r6";
+    "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"
+    "load.r $r6"->"virtualinvoke <java.awt.MediaTracker: void waitForAll()>";
+    "goto load.r r0"
+    "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "new d"
+    "load.r r0"->"new d";
+    "new d"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <DSLoader: java.awt.Image d>";
+    "specialinvoke <d: void <init>(java.awt.Image)>"
+    "fieldget <DSLoader: java.awt.Image d>"->"specialinvoke <d: void <init>(java.awt.Image)>";
+    "fieldput <DSLoader: d c>"
+    "specialinvoke <d: void <init>(java.awt.Image)>"->"fieldput <DSLoader: d c>";
+    "new java.awt.GridBagLayout"
+    "fieldput <DSLoader: d c>"->"new java.awt.GridBagLayout";
+    "new java.awt.GridBagLayout"->"store.r $r6";
+    "store.r $r6"->"load.r $r6";
+    "specialinvoke <java.awt.GridBagLayout: void <init>()>"
+    "load.r $r6"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+    "new java.awt.GridBagConstraints"
+    "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"new java.awt.GridBagConstraints";
+    "store.r $r16"
+    "new java.awt.GridBagConstraints"->"store.r $r16";
+    "load.r $r16"
+    "store.r $r16"->"load.r $r16";
+    "specialinvoke <java.awt.GridBagConstraints: void <init>()>"
+    "load.r $r16"->"specialinvoke <java.awt.GridBagConstraints: void <init>()>";
+    "specialinvoke <java.awt.GridBagConstraints: void <init>()>"->"load.r r0";
+    "load.r r0"->"load.r $r6";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "load.r $r6"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r $r16";
+    "push 11"
+    "load.r $r16"->"push 11";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"
+    "push 11"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"->"load.r $r6";
+    "load.r $r6"->"load.r r0";
+    "fieldget <DSLoader: d c>"
+    "load.r r0"->"fieldget <DSLoader: d c>";
+    "fieldget <DSLoader: d c>"->"load.r $r16";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"
+    "load.r $r16"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DSLoader: d c>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <DSLoader: d c>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "return"
+    "pop"->"return";
+    "virtualinvoke <java.lang.Throwable: void printStackTrace()>"
+    "virtualinvoke <java.awt.MediaTracker: void waitForAll()>"->"virtualinvoke <java.lang.Throwable: void printStackTrace()>";
+}

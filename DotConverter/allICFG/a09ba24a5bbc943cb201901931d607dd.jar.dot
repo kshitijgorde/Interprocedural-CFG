@@ -1,0 +1,1947 @@
+digraph "" {
+    "r0 := @this: simHabitacao"
+    "staticget <java.lang.System: java.io.PrintStream out>"
+    "r0 := @this: simHabitacao"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"Banco BPI. Simulador de Cr\u00e9dito \u00e0 Habita\u00e7\u00e3o\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"Banco BPI. Simulador de Cr\u00e9dito \u00e0 Habita\u00e7\u00e3o\"";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"
+    "push \"Banco BPI. Simulador de Cr\u00e9dito \u00e0 Habita\u00e7\u00e3o\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "new java.lang.StringBuffer"
+    "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuffer";
+    "dup1.r"
+    "new java.lang.StringBuffer"->"dup1.r";
+    "push \"Vers\u00e3o=\""
+    "dup1.r"->"push \"Vers\u00e3o=\"";
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"
+    "push \"Vers\u00e3o=\""->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "load.r r0"
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"load.r r0";
+    "fieldget <simHabitacao: java.lang.String version>"
+    "load.r r0"->"fieldget <simHabitacao: java.lang.String version>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "fieldget <simHabitacao: java.lang.String version>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r r0";
+    "push \"cliente\""
+    "load.r r0"->"push \"cliente\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"cliente\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "ifnull load.r r0"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push \"cliente\"";
+    "push \"cliente\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "push \"bancobpi\""
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"push \"bancobpi\"";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"
+    "push \"bancobpi\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "ifne load.r r0"
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "push 1"
+    "load.r r0"->"push 1";
+    "fieldput <simHabitacao: boolean hideTAN_Seg>"
+    "push 1"->"fieldput <simHabitacao: boolean hideTAN_Seg>";
+    "goto load.r r0"
+    "fieldput <simHabitacao: boolean hideTAN_Seg>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"localMode\""
+    "load.r r0"->"push \"localMode\"";
+    "push \"localMode\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <simHabitacao: boolean localMode>"
+    "push 1"->"fieldput <simHabitacao: boolean localMode>";
+    "fieldput <simHabitacao: boolean localMode>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"debug\""
+    "load.r r0"->"push \"debug\"";
+    "push \"debug\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <simHabitacao: boolean debug>"
+    "push 1"->"fieldput <simHabitacao: boolean debug>";
+    "fieldput <simHabitacao: boolean debug>"->"load.r r0";
+    "push \"condicoesEspeciais\""
+    "load.r r0"->"push \"condicoesEspeciais\"";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"
+    "push \"condicoesEspeciais\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "ifnull staticget <java.lang.System: java.io.PrintStream out>"
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull staticget <java.lang.System: java.io.PrintStream out>";
+    "ifnull staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <simHabitacao: boolean condicoesEspeciais>"
+    "push 1"->"fieldput <simHabitacao: boolean condicoesEspeciais>";
+    "fieldput <simHabitacao: boolean condicoesEspeciais>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "push \"layout=\""
+    "dup1.r"->"push \"layout=\"";
+    "push \"layout=\""->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"load.r r0";
+    "push \"layout\""
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r r0";
+    "push \"regime\""
+    "load.r r0"->"push \"regime\"";
+    "push \"regime\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"regime\"";
+    "push \"regime\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <simHabitacao: int regime>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <simHabitacao: int regime>";
+    "fieldput <simHabitacao: int regime>"->"load.r r0";
+    "push \"impostoselo\""
+    "load.r r0"->"push \"impostoselo\"";
+    "push \"impostoselo\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "new java.lang.Double"
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"impostoselo\"";
+    "push \"impostoselo\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push 44"
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 46"
+    "push 44"->"push 46";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double IMPOSTO_SELO>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double IMPOSTO_SELO>";
+    "fieldput <simHabitacao: double IMPOSTO_SELO>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"bonificacaospread\""
+    "load.r r0"->"push \"bonificacaospread\"";
+    "push \"bonificacaospread\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"bonificacaospread\"";
+    "push \"bonificacaospread\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double BONIFICACAOSPREAD>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double BONIFICACAOSPREAD>";
+    "fieldput <simHabitacao: double BONIFICACAOSPREAD>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"prazoCarencia\""
+    "load.r r0"->"push \"prazoCarencia\"";
+    "push \"prazoCarencia\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "new java.lang.Integer"
+    "load.r r0"->"new java.lang.Integer";
+    "new java.lang.Integer"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"prazoCarencia\"";
+    "push \"prazoCarencia\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <java.lang.Integer: void <init>(java.lang.String)>"
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Integer: void <init>(java.lang.String)>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"
+    "specialinvoke <java.lang.Integer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "fieldput <simHabitacao: int prazoCarencia>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <simHabitacao: int prazoCarencia>";
+    "fieldput <simHabitacao: int prazoCarencia>"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <simHabitacao: boolean carencia>"
+    "push 1"->"fieldput <simHabitacao: boolean carencia>";
+    "fieldput <simHabitacao: boolean carencia>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: boolean carencia>"
+    "load.r r0"->"fieldget <simHabitacao: boolean carencia>";
+    "ifeq load.r r0"
+    "fieldget <simHabitacao: boolean carencia>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: int regime>"
+    "load.r r0"->"fieldget <simHabitacao: int regime>";
+    "push 3"
+    "fieldget <simHabitacao: int regime>"->"push 3";
+    "ifcmpne.i load.r r0"
+    "push 3"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <simHabitacao: boolean carencia>";
+    "fieldput <simHabitacao: boolean carencia>"->"load.r r0";
+    "push 3.0"
+    "load.r r0"->"push 3.0";
+    "fieldput <simHabitacao: double PRAZOCARENCIA_MAX>"
+    "push 3.0"->"fieldput <simHabitacao: double PRAZOCARENCIA_MAX>";
+    "fieldput <simHabitacao: double PRAZOCARENCIA_MAX>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: double PRAZOCARENCIA_MAX>"
+    "load.r r0"->"fieldget <simHabitacao: double PRAZOCARENCIA_MAX>";
+    "fieldput <simHabitacao: double PRAZOCARENCIA_LIMITE>"
+    "fieldget <simHabitacao: double PRAZOCARENCIA_MAX>"->"fieldput <simHabitacao: double PRAZOCARENCIA_LIMITE>";
+    "fieldput <simHabitacao: double PRAZOCARENCIA_LIMITE>"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: boolean carencia>";
+    "fieldget <simHabitacao: boolean carencia>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push 6"
+    "load.r r0"->"push 6";
+    "fieldput <simHabitacao: int clientLayout>"
+    "push 6"->"fieldput <simHabitacao: int clientLayout>";
+    "fieldput <simHabitacao: int clientLayout>"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "store.r $r259"
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"store.r $r259";
+    "load.r $r259"
+    "store.r $r259"->"load.r $r259";
+    "load.r $r259"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r $r259";
+    "push \"ingles\""
+    "load.r $r259"->"push \"ingles\"";
+    "push \"ingles\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <simHabitacao: boolean layoutIngles>"
+    "push 1"->"fieldput <simHabitacao: boolean layoutIngles>";
+    "fieldput <simHabitacao: boolean layoutIngles>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"ve\""
+    "load.r r0"->"push \"ve\"";
+    "push \"ve\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"ve\"";
+    "push \"ve\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double segundoMinimo>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double segundoMinimo>";
+    "fieldput <simHabitacao: double segundoMinimo>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "push \"trcb\""
+    "load.r r0"->"push \"trcb\"";
+    "push \"trcb\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double TRCB>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double TRCB>";
+    "fieldput <simHabitacao: double TRCB>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "push \"trcpe\""
+    "load.r r0"->"push \"trcpe\"";
+    "push \"trcpe\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double TRCPE>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double TRCPE>";
+    "fieldput <simHabitacao: double TRCPE>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: boolean escudo>"
+    "load.r r0"->"fieldget <simHabitacao: boolean escudo>";
+    "fieldget <simHabitacao: boolean escudo>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: java.lang.String simboloEscudo>"
+    "load.r r0"->"fieldget <simHabitacao: java.lang.String simboloEscudo>";
+    "fieldget <simHabitacao: java.lang.String simboloEscudo>"->"store.r $r259";
+    "store.r $r259"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r $r259";
+    "fieldput <simHabitacao: java.lang.String simboloMoeda>"
+    "load.r $r259"->"fieldput <simHabitacao: java.lang.String simboloMoeda>";
+    "fieldput <simHabitacao: java.lang.String simboloMoeda>"->"load.r r0";
+    "push \"simulador\""
+    "load.r r0"->"push \"simulador\"";
+    "push \"simulador\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Integer";
+    "new java.lang.Integer"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"simulador\"";
+    "push \"simulador\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Integer: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Integer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "fieldput <simHabitacao: int simulador>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"fieldput <simHabitacao: int simulador>";
+    "fieldput <simHabitacao: int simulador>"->"load.r r0";
+    "fieldget <simHabitacao: int simulador>"
+    "load.r r0"->"fieldget <simHabitacao: int simulador>";
+    "fieldget <simHabitacao: int simulador>"->"push 1";
+    "ifcmplt.i load.r r0"
+    "push 1"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: int simulador>";
+    "push 14"
+    "fieldget <simHabitacao: int simulador>"->"push 14";
+    "ifcmple.i load.r r0"
+    "push 14"->"ifcmple.i load.r r0";
+    "ifcmple.i load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <simHabitacao: int simulador>";
+    "fieldput <simHabitacao: int simulador>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: boolean debug>"
+    "load.r r0"->"fieldget <simHabitacao: boolean debug>";
+    "fieldget <simHabitacao: boolean debug>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "push \"Protocolo Id=\""
+    "dup1.r"->"push \"Protocolo Id=\"";
+    "push \"Protocolo Id=\""->"specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.StringBuffer: void <init>(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: int simulador>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"
+    "fieldget <simHabitacao: int simulador>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"selo\""
+    "load.r r0"->"push \"selo\"";
+    "push \"selo\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "push 100.0"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"push 100.0";
+    "div.d"
+    "push 100.0"->"div.d";
+    "push 1.0"
+    "div.d"->"push 1.0";
+    "add.d"
+    "push 1.0"->"add.d";
+    "fieldput <simHabitacao: double selo>"
+    "add.d"->"fieldput <simHabitacao: double selo>";
+    "fieldput <simHabitacao: double selo>"->"load.r r0";
+    "push \"emprestimomax\""
+    "load.r r0"->"push \"emprestimomax\"";
+    "push \"emprestimomax\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"emprestimomax\"";
+    "push \"emprestimomax\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double emprestimomax>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double emprestimomax>";
+    "fieldput <simHabitacao: double emprestimomax>"->"load.r r0";
+    "push \"tipoplano\""
+    "load.r r0"->"push \"tipoplano\"";
+    "push \"tipoplano\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push \"tipoplano\"";
+    "push \"tipoplano\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"prestmist\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"prestmist\"";
+    "push \"prestmist\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 3";
+    "fieldput <simHabitacao: int tipoPlano>"
+    "push 3"->"fieldput <simHabitacao: int tipoPlano>";
+    "fieldput <simHabitacao: int tipoPlano>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"finalidade\""
+    "load.r r0"->"push \"finalidade\"";
+    "push \"finalidade\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push \"finalidade\"";
+    "push \"finalidade\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"aquisicao\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"aquisicao\"";
+    "push \"aquisicao\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <simHabitacao: int finalidade>"
+    "push 1"->"fieldput <simHabitacao: int finalidade>";
+    "fieldput <simHabitacao: int finalidade>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"taxas_fixas\""
+    "load.r r0"->"push \"taxas_fixas\"";
+    "push \"taxas_fixas\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "store.r i0"
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"store.r i0";
+    "load.r i0"
+    "store.r i0"->"load.r i0";
+    "virtualinvoke <java.lang.String: int length()>"
+    "load.r i0"->"virtualinvoke <java.lang.String: int length()>";
+    "ifle load.r r0"
+    "virtualinvoke <java.lang.String: int length()>"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <simHabitacao: boolean eFixa>"
+    "push 1"->"fieldput <simHabitacao: boolean eFixa>";
+    "new java.util.StringTokenizer"
+    "fieldput <simHabitacao: boolean eFixa>"->"new java.util.StringTokenizer";
+    "new java.util.StringTokenizer"->"store.r $r259";
+    "store.r $r259"->"load.r $r259";
+    "load.r $r259"->"load.r i0";
+    "push \"|\""
+    "load.r i0"->"push \"|\"";
+    "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"
+    "push \"|\""->"specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>";
+    "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r $r259";
+    "virtualinvoke <java.util.StringTokenizer: int countTokens()>"
+    "load.r $r259"->"virtualinvoke <java.util.StringTokenizer: int countTokens()>";
+    "newarray"
+    "virtualinvoke <java.util.StringTokenizer: int countTokens()>"->"newarray";
+    "fieldput <simHabitacao: double[] arrTaxasFixas>"
+    "newarray"->"fieldput <simHabitacao: double[] arrTaxasFixas>";
+    "fieldput <simHabitacao: double[] arrTaxasFixas>"->"load.r $r259";
+    "load.r $r259"->"virtualinvoke <java.util.StringTokenizer: int countTokens()>";
+    "store.i i0"
+    "virtualinvoke <java.util.StringTokenizer: int countTokens()>"->"store.i i0";
+    "push 0"
+    "store.i i0"->"push 0";
+    "store.i i33"
+    "push 0"->"store.i i33";
+    "goto load.i i33"
+    "store.i i33"->"goto load.i i33";
+    "load.i i33"
+    "goto load.i i33"->"load.i i33";
+    "load.i i0"
+    "load.i i33"->"load.i i0";
+    "load.i i0"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"browser\""
+    "load.r r0"->"push \"browser\"";
+    "push \"browser\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"ie\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"ie\"";
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"
+    "push \"ie\""->"virtualinvoke <java.lang.String: int compareTo(java.lang.String)>";
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"bonificacao\""
+    "load.r r0"->"push \"bonificacao\"";
+    "push \"bonificacao\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double currentBonificacao>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double currentBonificacao>";
+    "fieldput <simHabitacao: double currentBonificacao>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"emprestimoini\""
+    "load.r r0"->"push \"emprestimoini\"";
+    "push \"emprestimoini\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"emprestimoini\"";
+    "push \"emprestimoini\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double EMPRESTIMO_INI>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_INI>";
+    "fieldput <simHabitacao: double EMPRESTIMO_INI>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"emprestimolcpini\""
+    "load.r r0"->"push \"emprestimolcpini\"";
+    "push \"emprestimolcpini\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"emprestimolcpini\"";
+    "push \"emprestimolcpini\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_INI>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_INI>";
+    "fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_INI>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"prazo_jump\""
+    "load.r r0"->"push \"prazo_jump\"";
+    "push \"prazo_jump\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "i2d"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"i2d";
+    "fieldput <simHabitacao: double PRAZO_JUMP>"
+    "i2d"->"fieldput <simHabitacao: double PRAZO_JUMP>";
+    "fieldput <simHabitacao: double PRAZO_JUMP>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"prazo_min_taxas\""
+    "load.r r0"->"push \"prazo_min_taxas\"";
+    "push \"prazo_min_taxas\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"i2d";
+    "fieldput <simHabitacao: double PRAZO_MIN_TAXAS>"
+    "i2d"->"fieldput <simHabitacao: double PRAZO_MIN_TAXAS>";
+    "fieldput <simHabitacao: double PRAZO_MIN_TAXAS>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"financiamento\""
+    "load.r r0"->"push \"financiamento\"";
+    "push \"financiamento\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double EMPRESTIMO_FINANCIAMENTO>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_FINANCIAMENTO>";
+    "fieldput <simHabitacao: double EMPRESTIMO_FINANCIAMENTO>"->"load.r r0";
+    "push \"financiamentolcp\""
+    "load.r r0"->"push \"financiamentolcp\"";
+    "push \"financiamentolcp\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"financiamentolcp\"";
+    "push \"financiamentolcp\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>";
+    "fieldput <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: double EMPRESTIMO_MAX>"
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_MAX>";
+    "push 15000.0"
+    "fieldget <simHabitacao: double EMPRESTIMO_MAX>"->"push 15000.0";
+    "cmpg.d"
+    "push 15000.0"->"cmpg.d";
+    "ifge load.r r0"
+    "cmpg.d"->"ifge load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "push 500.0"
+    "load.r r0"->"push 500.0";
+    "fieldput <simHabitacao: double EMPRESTIMO_JUMP>"
+    "push 500.0"->"fieldput <simHabitacao: double EMPRESTIMO_JUMP>";
+    "fieldput <simHabitacao: double EMPRESTIMO_JUMP>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"garantia\""
+    "load.r r0"->"push \"garantia\"";
+    "push \"garantia\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push \"garantia\"";
+    "push \"garantia\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"virtualinvoke <java.lang.String: int length()>";
+    "virtualinvoke <java.lang.String: int length()>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"garantia\"";
+    "push \"garantia\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double garantia>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double garantia>";
+    "fieldput <simHabitacao: double garantia>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"limite\""
+    "load.r r0"->"push \"limite\"";
+    "push \"limite\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"limite\"";
+    "push \"limite\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double EMPRESTIMO_MAX>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_MAX>";
+    "fieldput <simHabitacao: double EMPRESTIMO_MAX>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"limitefinanciamentolcp\""
+    "load.r r0"->"push \"limitefinanciamentolcp\"";
+    "push \"limitefinanciamentolcp\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>"
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>";
+    "push 0.0"
+    "fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>"->"push 0.0";
+    "cmpl.d"
+    "push 0.0"->"cmpl.d";
+    "cmpl.d"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"limitefinanciamentolcp\"";
+    "push \"limitefinanciamentolcp\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MAX>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MAX>";
+    "fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MAX>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MAX>"
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MAX>";
+    "push 10000.0"
+    "fieldget <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MAX>"->"push 10000.0";
+    "push 10000.0"->"cmpg.d";
+    "cmpg.d"->"ifge load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"push 100.0";
+    "fieldput <simHabitacao: double EMPRESTIMOLCP_JUMP>"
+    "push 100.0"->"fieldput <simHabitacao: double EMPRESTIMOLCP_JUMP>";
+    "fieldput <simHabitacao: double EMPRESTIMOLCP_JUMP>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"emprestimomin\""
+    "load.r r0"->"push \"emprestimomin\"";
+    "push \"emprestimomin\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"emprestimomin\"";
+    "push \"emprestimomin\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double EMPRESTIMO_MIN>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_MIN>";
+    "fieldput <simHabitacao: double EMPRESTIMO_MIN>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"emprestimolcpmin\""
+    "load.r r0"->"push \"emprestimolcpmin\"";
+    "push \"emprestimolcpmin\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>";
+    "fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>"->"push 0.0";
+    "push 0.0"->"cmpl.d";
+    "cmpl.d"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"emprestimolcpmin\"";
+    "push \"emprestimolcpmin\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MIN>"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MIN>";
+    "fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MIN>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"idade1\""
+    "load.r r0"->"push \"idade1\"";
+    "push \"idade1\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <simHabitacao: int idade1>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <simHabitacao: int idade1>";
+    "fieldput <simHabitacao: int idade1>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"idade2\""
+    "load.r r0"->"push \"idade2\"";
+    "push \"idade2\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <simHabitacao: int idade2>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <simHabitacao: int idade2>";
+    "fieldput <simHabitacao: int idade2>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"prazo\""
+    "load.r r0"->"push \"prazo\"";
+    "push \"prazo\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"i2d";
+    "fieldput <simHabitacao: double PRAZO_INI>"
+    "i2d"->"fieldput <simHabitacao: double PRAZO_INI>";
+    "fieldput <simHabitacao: double PRAZO_INI>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"prazo_max\""
+    "load.r r0"->"push \"prazo_max\"";
+    "push \"prazo_max\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"i2d";
+    "fieldput <simHabitacao: double PRAZO_MAX>"
+    "i2d"->"fieldput <simHabitacao: double PRAZO_MAX>";
+    "fieldput <simHabitacao: double PRAZO_MAX>"->"load.r r0";
+    "push \"prazo_limiteMax\""
+    "load.r r0"->"push \"prazo_limiteMax\"";
+    "push \"prazo_limiteMax\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Integer";
+    "new java.lang.Integer"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"prazo_limiteMax\"";
+    "push \"prazo_limiteMax\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Integer: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Integer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"i2d";
+    "fieldput <simHabitacao: double PRAZO_LIMITE>"
+    "i2d"->"fieldput <simHabitacao: double PRAZO_LIMITE>";
+    "fieldput <simHabitacao: double PRAZO_LIMITE>"->"load.r r0";
+    "push \"prazo_limiteMin\""
+    "load.r r0"->"push \"prazo_limiteMin\"";
+    "push \"prazo_limiteMin\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Integer";
+    "new java.lang.Integer"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"prazo_limiteMin\"";
+    "push \"prazo_limiteMin\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Integer: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Integer: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"i2d";
+    "fieldput <simHabitacao: double PRAZO_MIN>"
+    "i2d"->"fieldput <simHabitacao: double PRAZO_MIN>";
+    "fieldput <simHabitacao: double PRAZO_MIN>"->"load.r r0";
+    "fieldget <simHabitacao: double PRAZO_INI>"
+    "load.r r0"->"fieldget <simHabitacao: double PRAZO_INI>";
+    "fieldget <simHabitacao: double PRAZO_INI>"->"load.r r0";
+    "fieldget <simHabitacao: double PRAZO_MAX>"
+    "load.r r0"->"fieldget <simHabitacao: double PRAZO_MAX>";
+    "fieldget <simHabitacao: double PRAZO_MAX>"->"cmpl.d";
+    "cmpl.d"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double PRAZO_MAX>";
+    "fieldget <simHabitacao: double PRAZO_MAX>"->"fieldput <simHabitacao: double PRAZO_INI>";
+    "fieldput <simHabitacao: double PRAZO_INI>"->"load.r r0";
+    "new java.util.Hashtable"
+    "load.r r0"->"new java.util.Hashtable";
+    "new java.util.Hashtable"->"dup1.r";
+    "specialinvoke <java.util.Hashtable: void <init>()>"
+    "dup1.r"->"specialinvoke <java.util.Hashtable: void <init>()>";
+    "fieldput <simHabitacao: java.util.Hashtable tabela>"
+    "specialinvoke <java.util.Hashtable: void <init>()>"->"fieldput <simHabitacao: java.util.Hashtable tabela>";
+    "fieldput <simHabitacao: java.util.Hashtable tabela>"->"load.r r0";
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"18\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"18\"";
+    "new java.lang.Float"
+    "push \"18\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.111"
+    "dup1.r"->"push 1.111";
+    "specialinvoke <java.lang.Float: void <init>(double)>"
+    "push 1.111"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "pop"
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"19\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"19\"";
+    "push \"19\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.122"
+    "dup1.r"->"push 1.122";
+    "push 1.122"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"20\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"20\"";
+    "push \"20\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.134"
+    "dup1.r"->"push 1.134";
+    "push 1.134"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"21\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"21\"";
+    "push \"21\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.146"
+    "dup1.r"->"push 1.146";
+    "push 1.146"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"22\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"22\"";
+    "push \"22\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.158"
+    "dup1.r"->"push 1.158";
+    "push 1.158"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"23\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"23\"";
+    "push \"23\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.171"
+    "dup1.r"->"push 1.171";
+    "push 1.171"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"24\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"24\"";
+    "push \"24\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.183"
+    "dup1.r"->"push 1.183";
+    "push 1.183"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"25\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"25\"";
+    "push \"25\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.195"
+    "dup1.r"->"push 1.195";
+    "push 1.195"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"26\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"26\"";
+    "push \"26\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.207"
+    "dup1.r"->"push 1.207";
+    "push 1.207"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"27\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"27\"";
+    "push \"27\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.219"
+    "dup1.r"->"push 1.219";
+    "push 1.219"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"28\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"28\"";
+    "push \"28\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.232"
+    "dup1.r"->"push 1.232";
+    "push 1.232"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"29\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"29\"";
+    "push \"29\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.244"
+    "dup1.r"->"push 1.244";
+    "push 1.244"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"30\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"30\"";
+    "push \"30\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.256"
+    "dup1.r"->"push 1.256";
+    "push 1.256"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"31\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"31\"";
+    "push \"31\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.27"
+    "dup1.r"->"push 1.27";
+    "push 1.27"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"32\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"32\"";
+    "push \"32\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.293"
+    "dup1.r"->"push 1.293";
+    "push 1.293"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"33\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"33\"";
+    "push \"33\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.333"
+    "dup1.r"->"push 1.333";
+    "push 1.333"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"34\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"34\"";
+    "push \"34\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.391"
+    "dup1.r"->"push 1.391";
+    "push 1.391"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"35\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"35\"";
+    "push \"35\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.47"
+    "dup1.r"->"push 1.47";
+    "push 1.47"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"36\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"36\"";
+    "push \"36\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.569"
+    "dup1.r"->"push 1.569";
+    "push 1.569"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"37\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"37\"";
+    "push \"37\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.692"
+    "dup1.r"->"push 1.692";
+    "push 1.692"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"38\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"38\"";
+    "push \"38\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 1.838"
+    "dup1.r"->"push 1.838";
+    "push 1.838"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"39\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"39\"";
+    "push \"39\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 2.011"
+    "dup1.r"->"push 2.011";
+    "push 2.011"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"40\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"40\"";
+    "push \"40\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 2.211"
+    "dup1.r"->"push 2.211";
+    "push 2.211"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"41\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"41\"";
+    "push \"41\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 2.44"
+    "dup1.r"->"push 2.44";
+    "push 2.44"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"42\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"42\"";
+    "push \"42\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 2.699"
+    "dup1.r"->"push 2.699";
+    "push 2.699"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"43\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"43\"";
+    "push \"43\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 2.989"
+    "dup1.r"->"push 2.989";
+    "push 2.989"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"44\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"44\"";
+    "push \"44\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 3.314"
+    "dup1.r"->"push 3.314";
+    "push 3.314"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"45\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"45\"";
+    "push \"45\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 3.673"
+    "dup1.r"->"push 3.673";
+    "push 3.673"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"46\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"46\"";
+    "push \"46\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 4.069"
+    "dup1.r"->"push 4.069";
+    "push 4.069"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"47\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"47\"";
+    "push \"47\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 4.502"
+    "dup1.r"->"push 4.502";
+    "push 4.502"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"48\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"48\"";
+    "push \"48\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 4.975"
+    "dup1.r"->"push 4.975";
+    "push 4.975"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"49\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"49\"";
+    "push \"49\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 5.489"
+    "dup1.r"->"push 5.489";
+    "push 5.489"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"50\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"50\"";
+    "push \"50\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 6.064F"
+    "dup1.r"->"push 6.064F";
+    "specialinvoke <java.lang.Float: void <init>(float)>"
+    "push 6.064F"->"specialinvoke <java.lang.Float: void <init>(float)>";
+    "specialinvoke <java.lang.Float: void <init>(float)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"51\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"51\"";
+    "push \"51\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 6.673"
+    "dup1.r"->"push 6.673";
+    "push 6.673"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"52\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"52\"";
+    "push \"52\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 7.346"
+    "dup1.r"->"push 7.346";
+    "push 7.346"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"53\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"53\"";
+    "push \"53\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 8.09"
+    "dup1.r"->"push 8.09";
+    "push 8.09"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"54\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"54\"";
+    "push \"54\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 8.914"
+    "dup1.r"->"push 8.914";
+    "push 8.914"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"55\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"55\"";
+    "push \"55\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 9.823"
+    "dup1.r"->"push 9.823";
+    "push 9.823"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"56\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"56\"";
+    "push \"56\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 10.829"
+    "dup1.r"->"push 10.829";
+    "push 10.829"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"57\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"57\"";
+    "push \"57\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 11.939"
+    "dup1.r"->"push 11.939";
+    "push 11.939"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"58\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"58\"";
+    "push \"58\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 13.166"
+    "dup1.r"->"push 13.166";
+    "push 13.166"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"59\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"59\"";
+    "push \"59\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 14.519"
+    "dup1.r"->"push 14.519";
+    "push 14.519"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"60\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"60\"";
+    "push \"60\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 16.014"
+    "dup1.r"->"push 16.014";
+    "push 16.014"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"61\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"61\"";
+    "push \"61\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 17.662"
+    "dup1.r"->"push 17.662";
+    "push 17.662"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"62\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"62\"";
+    "push \"62\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 19.479"
+    "dup1.r"->"push 19.479";
+    "push 19.479"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"63\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"63\"";
+    "push \"63\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 21.481"
+    "dup1.r"->"push 21.481";
+    "push 21.481"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"64\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"64\"";
+    "push \"64\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 23.686"
+    "dup1.r"->"push 23.686";
+    "push 23.686"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"65\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"65\"";
+    "push \"65\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 26.113"
+    "dup1.r"->"push 26.113";
+    "push 26.113"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"66\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"66\"";
+    "push \"66\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 28.783"
+    "dup1.r"->"push 28.783";
+    "push 28.783"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"67\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"67\"";
+    "push \"67\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 31.716"
+    "dup1.r"->"push 31.716";
+    "push 31.716"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"68\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"68\"";
+    "push \"68\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 34.938"
+    "dup1.r"->"push 34.938";
+    "push 34.938"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"69\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"69\"";
+    "push \"69\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 38.472"
+    "dup1.r"->"push 38.472";
+    "push 38.472"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"70\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"70\"";
+    "push \"70\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 42.346"
+    "dup1.r"->"push 42.346";
+    "push 42.346"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"71\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"71\"";
+    "push \"71\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 46.586"
+    "dup1.r"->"push 46.586";
+    "push 46.586"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"72\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"72\"";
+    "push \"72\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 51.223"
+    "dup1.r"->"push 51.223";
+    "push 51.223"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"73\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"73\"";
+    "push \"73\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 56.286"
+    "dup1.r"->"push 56.286";
+    "push 56.286"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"74\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"74\"";
+    "push \"74\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 61.808"
+    "dup1.r"->"push 61.808";
+    "push 61.808"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: java.util.Hashtable tabela>";
+    "push \"75\""
+    "fieldget <simHabitacao: java.util.Hashtable tabela>"->"push \"75\"";
+    "push \"75\""->"new java.lang.Float";
+    "new java.lang.Float"->"dup1.r";
+    "push 67.818"
+    "dup1.r"->"push 67.818";
+    "push 67.818"->"specialinvoke <java.lang.Float: void <init>(double)>";
+    "specialinvoke <java.lang.Float: void <init>(double)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: double currentTaxa>"
+    "load.r r0"->"fieldget <simHabitacao: double currentTaxa>";
+    "fieldput <simHabitacao: double originalTaxa>"
+    "fieldget <simHabitacao: double currentTaxa>"->"fieldput <simHabitacao: double originalTaxa>";
+    "fieldput <simHabitacao: double originalTaxa>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: double originalTaxa>"
+    "load.r r0"->"fieldget <simHabitacao: double originalTaxa>";
+    "push 2.0"
+    "fieldget <simHabitacao: double originalTaxa>"->"push 2.0";
+    "push 2.0"->"add.d";
+    "fieldput <simHabitacao: double maxTaxa>"
+    "add.d"->"fieldput <simHabitacao: double maxTaxa>";
+    "fieldput <simHabitacao: double maxTaxa>"->"load.r r0";
+    "fieldget <simHabitacao: boolean condicoesEspeciais>"
+    "load.r r0"->"fieldget <simHabitacao: boolean condicoesEspeciais>";
+    "fieldget <simHabitacao: boolean condicoesEspeciais>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "specialinvoke <simHabitacao: void setCondicoesEspeciais()>"
+    "load.r r0"->"specialinvoke <simHabitacao: void setCondicoesEspeciais()>";
+    "specialinvoke <simHabitacao: void setCondicoesEspeciais()>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"modalidade\""
+    "load.r r0"->"push \"modalidade\"";
+    "push \"modalidade\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <simHabitacao: int modalidade>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <simHabitacao: int modalidade>";
+    "fieldput <simHabitacao: int modalidade>"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: int simulador>";
+    "fieldget <simHabitacao: int simulador>"->"push 6";
+    "ifcmpeq.i load.r r0"
+    "push 6"->"ifcmpeq.i load.r r0";
+    "ifcmpeq.i load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: int modalidade>"
+    "load.r r0"->"fieldget <simHabitacao: int modalidade>";
+    "fieldget <simHabitacao: int modalidade>"->"push 1";
+    "push 1"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"push \"regime\"";
+    "push \"regime\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "push 12"
+    "load.r r0"->"push 12";
+    "push 12"->"fieldput <simHabitacao: int simulador>";
+    "fieldput <simHabitacao: int simulador>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"push \"regime\"";
+    "push \"regime\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "push 2"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"push 2";
+    "push 2"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "push 13"
+    "load.r r0"->"push 13";
+    "push 13"->"fieldput <simHabitacao: int simulador>";
+    "fieldput <simHabitacao: int simulador>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"valorresidual\""
+    "load.r r0"->"push \"valorresidual\"";
+    "push \"valorresidual\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "fieldput <simHabitacao: java.lang.String inValorResidual>"
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"fieldput <simHabitacao: java.lang.String inValorResidual>";
+    "fieldput <simHabitacao: java.lang.String inValorResidual>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double originalTaxa>";
+    "fieldget <simHabitacao: double originalTaxa>"->"load.r r0";
+    "fieldget <simHabitacao: double EMPRESTIMO_INI>"
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_INI>";
+    "fieldget <simHabitacao: double EMPRESTIMO_INI>"->"load.r r0";
+    "fieldget <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_INI>"
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_INI>";
+    "fieldget <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_INI>"->"add.d";
+    "add.d"->"load.r r0";
+    "fieldget <simHabitacao: double garantia>"
+    "load.r r0"->"fieldget <simHabitacao: double garantia>";
+    "specialinvoke <simHabitacao: double calcTaxaJuro(double,double,double)>"
+    "fieldget <simHabitacao: double garantia>"->"specialinvoke <simHabitacao: double calcTaxaJuro(double,double,double)>";
+    "fieldput <simHabitacao: double currentTaxa>"
+    "specialinvoke <simHabitacao: double calcTaxaJuro(double,double,double)>"->"fieldput <simHabitacao: double currentTaxa>";
+    "fieldput <simHabitacao: double currentTaxa>"->"load.r r0";
+    "specialinvoke <simHabitacao: void createLayout()>"
+    "load.r r0"->"specialinvoke <simHabitacao: void createLayout()>";
+    "specialinvoke <simHabitacao: void createLayout()>"->"load.r r0";
+    "specialinvoke <simHabitacao: void initEstatisticas()>"
+    "load.r r0"->"specialinvoke <simHabitacao: void initEstatisticas()>";
+    "specialinvoke <simHabitacao: void initEstatisticas()>"->"load.r r0";
+    "specialinvoke <simHabitacao: boolean useLink()>"
+    "load.r r0"->"specialinvoke <simHabitacao: boolean useLink()>";
+    "specialinvoke <simHabitacao: boolean useLink()>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>";
+    "virtualinvoke <java.awt.Component: void addMouseListener(java.awt.event.MouseListener)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>";
+    "virtualinvoke <java.awt.Component: void addMouseMotionListener(java.awt.event.MouseMotionListener)>"->"load.r r0";
+    "specialinvoke <simHabitacao: void calcTaxaFixa()>"
+    "load.r r0"->"specialinvoke <simHabitacao: void calcTaxaFixa()>";
+    "return"
+    "specialinvoke <simHabitacao: void calcTaxaFixa()>"->"return";
+    "push 13"->"store.r $r259";
+    "store.r $r259"->"goto load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: int modalidade>";
+    "fieldget <simHabitacao: int modalidade>"->"push 6";
+    "push 6"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"push \"regime\"";
+    "push \"regime\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"push 14";
+    "push 14"->"fieldput <simHabitacao: int simulador>";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"push 0.0";
+    "push 0.0"->"fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MIN>";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push 0.0";
+    "push 0.0"->"fieldput <simHabitacao: double EMPRESTIMO_MIN>";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_MAX>";
+    "push 20000.0"
+    "fieldget <simHabitacao: double EMPRESTIMO_MAX>"->"push 20000.0";
+    "push 20000.0"->"cmpg.d";
+    "cmpg.d"->"ifge load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "push 200.0"
+    "load.r r0"->"push 200.0";
+    "push 200.0"->"fieldput <simHabitacao: double EMPRESTIMOLCP_JUMP>";
+    "fieldput <simHabitacao: double EMPRESTIMOLCP_JUMP>"->"goto load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_MAX>";
+    "push 50000.0"
+    "fieldget <simHabitacao: double EMPRESTIMO_MAX>"->"push 50000.0";
+    "push 50000.0"->"cmpg.d";
+    "cmpg.d"->"ifge load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"push 500.0";
+    "push 500.0"->"fieldput <simHabitacao: double EMPRESTIMOLCP_JUMP>";
+    "fieldput <simHabitacao: double EMPRESTIMOLCP_JUMP>"->"goto load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "push 1000.0"
+    "load.r r0"->"push 1000.0";
+    "push 1000.0"->"fieldput <simHabitacao: double EMPRESTIMOLCP_JUMP>";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"push 0.0";
+    "push 0.0"->"fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_MAX>";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO>"
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO>";
+    "fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO>"->"fieldput <simHabitacao: double EMPRESTIMO_MAX>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO>";
+    "fieldget <simHabitacao: double EMPRESTIMO_FINANCIAMENTO>"->"fieldput <simHabitacao: double garantia>";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_MAX>";
+    "push 30000.0"
+    "fieldget <simHabitacao: double EMPRESTIMO_MAX>"->"push 30000.0";
+    "push 30000.0"->"cmpg.d";
+    "cmpg.d"->"ifge load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"push 1000.0";
+    "push 1000.0"->"fieldput <simHabitacao: double EMPRESTIMO_JUMP>";
+    "fieldput <simHabitacao: double EMPRESTIMO_JUMP>"->"goto load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_MAX>";
+    "push 100000.0"
+    "fieldget <simHabitacao: double EMPRESTIMO_MAX>"->"push 100000.0";
+    "push 100000.0"->"cmpg.d";
+    "cmpg.d"->"ifge load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "push 5000.0"
+    "load.r r0"->"push 5000.0";
+    "push 5000.0"->"fieldput <simHabitacao: double EMPRESTIMO_JUMP>";
+    "fieldput <simHabitacao: double EMPRESTIMO_JUMP>"->"goto load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double EMPRESTIMO_MAX>";
+    "push 250000.0"
+    "fieldget <simHabitacao: double EMPRESTIMO_MAX>"->"push 250000.0";
+    "push 250000.0"->"cmpg.d";
+    "cmpg.d"->"ifge load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"push 5000.0";
+    "push 5000.0"->"fieldput <simHabitacao: double EMPRESTIMO_JUMP>";
+    "fieldput <simHabitacao: double EMPRESTIMO_JUMP>"->"goto load.r r0";
+    "ifge load.r r0"->"load.r r0";
+    "load.r r0"->"push 10000.0";
+    "push 10000.0"->"fieldput <simHabitacao: double EMPRESTIMO_JUMP>";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push 0.0";
+    "push 0.0"->"fieldput <simHabitacao: double EMPRESTIMO_FINANCIAMENTO_LCP>";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push 0.0";
+    "push 0.0"->"fieldput <simHabitacao: double EMPRESTIMO_COMPLEMENTAR_INI>";
+    "ifnull load.r r0"->"load.r r0";
+    "push \"emprestimoinipercentual\""
+    "load.r r0"->"push \"emprestimoinipercentual\"";
+    "push \"emprestimoinipercentual\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"emprestimoinipercentual\"";
+    "push \"emprestimoinipercentual\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"load.r r0";
+    "load.r r0"->"push \"financiamento\"";
+    "push \"financiamento\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "mul.d"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"mul.d";
+    "mul.d"->"fieldput <simHabitacao: double EMPRESTIMO_INI>";
+    "fieldput <simHabitacao: double EMPRESTIMO_INI>"->"goto load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"financiamento\"";
+    "push \"financiamento\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double EMPRESTIMO_INI>";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"push \"bonificacao\"";
+    "push \"bonificacao\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>";
+    "staticinvoke <java.lang.Double: java.lang.Double valueOf(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double currentBonificacao>";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"push \"browser\"";
+    "push \"browser\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"ie\"";
+    "push \"ie\""->"virtualinvoke <java.lang.String: int compareTo(java.lang.String)>";
+    "virtualinvoke <java.lang.String: int compareTo(java.lang.String)>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: double[] arrTaxasFixas>"
+    "load.r r0"->"fieldget <simHabitacao: double[] arrTaxasFixas>";
+    "fieldget <simHabitacao: double[] arrTaxasFixas>"->"load.i i33";
+    "load.i i33"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r $r259";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"
+    "load.r $r259"->"virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "arraywrite.d"
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"arraywrite.d";
+    "goto inc.i i33 1"
+    "arraywrite.d"->"goto inc.i i33 1";
+    "inc.i i33 1"
+    "goto inc.i i33 1"->"inc.i i33 1";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: double[] arrTaxasFixas>";
+    "fieldget <simHabitacao: double[] arrTaxasFixas>"->"load.i i33";
+    "load.i i33"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r $r259";
+    "load.r $r259"->"virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"arraywrite.d";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "push \"taxa\""
+    "load.r r0"->"push \"taxa\"";
+    "push \"taxa\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push 44";
+    "push 44"->"push 46";
+    "push 46"->"virtualinvoke <java.lang.String: java.lang.String replace(char,char)>";
+    "virtualinvoke <java.lang.String: java.lang.String replace(char,char)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"load.r r0";
+    "fieldget <simHabitacao: double selo>"
+    "load.r r0"->"fieldget <simHabitacao: double selo>";
+    "fieldget <simHabitacao: double selo>"->"mul.d";
+    "mul.d"->"fieldput <simHabitacao: double currentTaxa>";
+    "fieldput <simHabitacao: double currentTaxa>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"newarray";
+    "newarray"->"fieldput <simHabitacao: double[] arrTaxasFixas>";
+    "fieldput <simHabitacao: double[] arrTaxasFixas>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <simHabitacao: boolean eFixa>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"finalidade\"";
+    "push \"finalidade\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"construcao\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"construcao\"";
+    "push \"construcao\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 3";
+    "push 3"->"fieldput <simHabitacao: int finalidade>";
+    "fieldput <simHabitacao: int finalidade>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"finalidade\"";
+    "push \"finalidade\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"obras\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"obras\"";
+    "push \"obras\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push 4"
+    "load.r r0"->"push 4";
+    "push 4"->"fieldput <simHabitacao: int finalidade>";
+    "fieldput <simHabitacao: int finalidade>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"finalidade\"";
+    "push \"finalidade\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"transferencia\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"transferencia\"";
+    "push \"transferencia\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 2";
+    "push 2"->"fieldput <simHabitacao: int finalidade>";
+    "fieldput <simHabitacao: int finalidade>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"finalidade\"";
+    "push \"finalidade\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"lcppura\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"lcppura\"";
+    "push \"lcppura\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push 5"
+    "load.r r0"->"push 5";
+    "push 5"->"fieldput <simHabitacao: int finalidade>";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"tipoplano\"";
+    "push \"tipoplano\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"prestvr\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"prestvr\"";
+    "push \"prestvr\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 2";
+    "push 2"->"fieldput <simHabitacao: int tipoPlano>";
+    "fieldput <simHabitacao: int tipoPlano>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"tipoplano\"";
+    "push \"tipoplano\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"prestconst\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"prestconst\"";
+    "push \"prestconst\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <simHabitacao: int tipoPlano>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"store.r $r259";
+    "store.r $r259"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <simHabitacao: int simulador>";
+    "ifeq load.r r0"->"load.r r0";
+    "fieldget <simHabitacao: java.lang.String simboloEuro>"
+    "load.r r0"->"fieldget <simHabitacao: java.lang.String simboloEuro>";
+    "fieldget <simHabitacao: java.lang.String simboloEuro>"->"store.r $r259";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"store.r $r259";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"store.r $r259";
+    "ifnull load.r r0"->"load.r r0";
+    "push \"vo\""
+    "load.r r0"->"push \"vo\"";
+    "push \"vo\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"vo\"";
+    "push \"vo\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double segundoMinimo>";
+    "fieldput <simHabitacao: double segundoMinimo>"->"goto load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "push \"oic\""
+    "load.r r0"->"push \"oic\"";
+    "push \"oic\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"new java.lang.Double";
+    "new java.lang.Double"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"push \"oic\"";
+    "push \"oic\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"specialinvoke <java.lang.Double: void <init>(java.lang.String)>";
+    "specialinvoke <java.lang.Double: void <init>(java.lang.String)>"->"virtualinvoke <java.lang.Double: double doubleValue()>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"fieldput <simHabitacao: double segundoMinimo>";
+    "fieldput <simHabitacao: double segundoMinimo>"->"goto load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: boolean condicoesEspeciais>";
+    "fieldget <simHabitacao: boolean condicoesEspeciais>"->"ifne load.r r0";
+    "new java.lang.RuntimeException"
+    "ifne load.r r0"->"new java.lang.RuntimeException";
+    "new java.lang.RuntimeException"->"dup1.r";
+    "push \"ve, vo ou oic em falta.\""
+    "dup1.r"->"push \"ve, vo ou oic em falta.\"";
+    "specialinvoke <java.lang.RuntimeException: void <init>(java.lang.String)>"
+    "push \"ve, vo ou oic em falta.\""->"specialinvoke <java.lang.RuntimeException: void <init>(java.lang.String)>";
+    "athrow"
+    "specialinvoke <java.lang.RuntimeException: void <init>(java.lang.String)>"->"athrow";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"sapo\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"sapo\"";
+    "push \"sapo\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <simHabitacao: int clientLayout>";
+    "fieldput <simHabitacao: int clientLayout>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"novo_sapo\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"novo_sapo\"";
+    "push \"novo_sapo\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 4";
+    "push 4"->"fieldput <simHabitacao: int clientLayout>";
+    "fieldput <simHabitacao: int clientLayout>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"ingles\"";
+    "push \"ingles\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 2";
+    "push 2"->"fieldput <simHabitacao: int clientLayout>";
+    "fieldput <simHabitacao: int clientLayout>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"allianz_mediadoras\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"allianz_mediadoras\"";
+    "push \"allianz_mediadoras\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 3";
+    "push 3"->"fieldput <simHabitacao: int clientLayout>";
+    "fieldput <simHabitacao: int clientLayout>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"imobiliario\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"imobiliario\"";
+    "push \"imobiliario\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <simHabitacao: int clientLayout>";
+    "fieldput <simHabitacao: int clientLayout>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"imobiliarioHorizontal\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"imobiliarioHorizontal\"";
+    "push \"imobiliarioHorizontal\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push 5";
+    "push 5"->"fieldput <simHabitacao: int clientLayout>";
+    "fieldput <simHabitacao: int clientLayout>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"push \"layout\"";
+    "push \"layout\""->"specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>";
+    "push \"expresso\""
+    "specialinvoke <simHabitacao: java.lang.String getIParameter(java.lang.String)>"->"push \"expresso\"";
+    "push \"expresso\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push 7"
+    "load.r r0"->"push 7";
+    "push 7"->"fieldput <simHabitacao: int clientLayout>";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <simHabitacao: int regime>";
+    "fieldget <simHabitacao: int regime>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "push 5.0"
+    "load.r r0"->"push 5.0";
+    "push 5.0"->"fieldput <simHabitacao: double PRAZOCARENCIA_MAX>";
+    "fieldput <simHabitacao: double PRAZOCARENCIA_MAX>"->"load.r r0";
+    "load.r r0"->"push 1";
+    "push 1"->"fieldput <simHabitacao: boolean carencia>";
+    "fieldput <simHabitacao: boolean carencia>"->"goto load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <simHabitacao: boolean carencia>";
+    "fieldput <simHabitacao: boolean carencia>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <simHabitacao: int prazoCarencia>";
+    "push 1"->"store.r $r259";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"store.r $r259";
+    "store.r $r259"->"load.r r0";
+    "load.r r0"->"push 0.0";
+    "push 0.0"->"fieldput <simHabitacao: double BONIFICACAOSPREAD>";
+    "virtualinvoke <java.lang.Double: double doubleValue()>"->"store.r $r259";
+    "store.r $r259"->"load.r r0";
+    "load.r r0"->"push 0.0";
+    "push 0.0"->"fieldput <simHabitacao: double IMPOSTO_SELO>";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <simHabitacao: boolean localMode>";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <simHabitacao: boolean hideTAN_Seg>";
+}

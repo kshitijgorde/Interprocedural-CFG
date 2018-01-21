@@ -1,0 +1,204 @@
+digraph "" {
+    "r0 := @this: zaluc.geneo.Geneo"
+    "load.r r0"
+    "r0 := @this: zaluc.geneo.Geneo"->"load.r r0";
+    "push \"Source\""
+    "load.r r0"->"push \"Source\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"Source\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r1"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r1";
+    "store.r r1"->"load.r r0";
+    "push \"Width\""
+    "load.r r0"->"push \"Width\"";
+    "push \"Width\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r2"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r2";
+    "store.r r2"->"load.r r0";
+    "push \"Height\""
+    "load.r r0"->"push \"Height\"";
+    "push \"Height\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r3"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r3";
+    "store.r r3"->"load.r r0";
+    "push \"Foreground\""
+    "load.r r0"->"push \"Foreground\"";
+    "push \"Foreground\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r4"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r4";
+    "store.r r4"->"load.r r0";
+    "push \"Background\""
+    "load.r r0"->"push \"Background\"";
+    "push \"Background\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r5"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r5";
+    "store.r r5"->"load.r r0";
+    "push \"PeopleBoxBkg\""
+    "load.r r0"->"push \"PeopleBoxBkg\"";
+    "push \"PeopleBoxBkg\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r6"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r6";
+    "store.r r6"->"load.r r0";
+    "push \"PBoxBorderWidth\""
+    "load.r r0"->"push \"PBoxBorderWidth\"";
+    "push \"PBoxBorderWidth\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r7"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r7";
+    "store.r r7"->"load.r r0";
+    "push \"BkgImage\""
+    "load.r r0"->"push \"BkgImage\"";
+    "push \"BkgImage\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r8"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r8";
+    "store.r r8"->"load.r r0";
+    "push \"BkgImgLayout\""
+    "load.r r0"->"push \"BkgImgLayout\"";
+    "push \"BkgImgLayout\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r9"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r9";
+    "store.r r9"->"load.r r0";
+    "push \"ClearBkg\""
+    "load.r r0"->"push \"ClearBkg\"";
+    "push \"ClearBkg\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r10"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r10";
+    "store.r r10"->"load.r r0";
+    "push \"BorderWidth\""
+    "load.r r0"->"push \"BorderWidth\"";
+    "push \"BorderWidth\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r11"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r11";
+    "store.r r11"->"load.r r0";
+    "push \"EmbedInPage\""
+    "load.r r0"->"push \"EmbedInPage\"";
+    "push \"EmbedInPage\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r12"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r12";
+    "store.r r12"->"load.r r0";
+    "push \"Primary\""
+    "load.r r0"->"push \"Primary\"";
+    "push \"Primary\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r13"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r13";
+    "store.r r13"->"load.r r0";
+    "push \"DetailLoc\""
+    "load.r r0"->"push \"DetailLoc\"";
+    "push \"DetailLoc\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r14"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r14";
+    "store.r r14"->"load.r r0";
+    "push \"HtmlTarget\""
+    "load.r r0"->"push \"HtmlTarget\"";
+    "push \"HtmlTarget\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r15"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r15";
+    "store.r r15"->"load.r r0";
+    "push \"InitialZoom\""
+    "load.r r0"->"push \"InitialZoom\"";
+    "push \"InitialZoom\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r16"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r16";
+    "store.r r16"->"load.r r0";
+    "push \"HelpUrl\""
+    "load.r r0"->"push \"HelpUrl\"";
+    "push \"HelpUrl\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r17"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r17";
+    "store.r r17"->"load.r r0";
+    "push \"DumpStats\""
+    "load.r r0"->"push \"DumpStats\"";
+    "push \"DumpStats\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r18"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r18";
+    "load.r r1"
+    "store.r r18"->"load.r r1";
+    "ifnull return"
+    "load.r r1"->"ifnull return";
+    "load.r r12"
+    "ifnull return"->"load.r r12";
+    "ifnull load.r r0"
+    "load.r r12"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r12";
+    "push \"true\""
+    "load.r r12"->"push \"true\"";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"
+    "push \"true\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "ifne load.r r0"
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r12";
+    "push \"yes\""
+    "load.r r12"->"push \"yes\"";
+    "push \"yes\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r12";
+    "push \"1\""
+    "load.r r12"->"push \"1\"";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"
+    "push \"1\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "ifeq load.r r0"
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "push 1"
+    "load.r r0"->"push 1";
+    "fieldput <zaluc.geneo.Geneo: boolean embedInPage>"
+    "push 1"->"fieldput <zaluc.geneo.Geneo: boolean embedInPage>";
+    "fieldput <zaluc.geneo.Geneo: boolean embedInPage>"->"load.r r0";
+    "fieldget <zaluc.geneo.Geneo: boolean embedInPage>"
+    "load.r r0"->"fieldget <zaluc.geneo.Geneo: boolean embedInPage>";
+    "fieldget <zaluc.geneo.Geneo: boolean embedInPage>"->"ifeq load.r r0";
+    "load.r r11"
+    "ifeq load.r r0"->"load.r r11";
+    "load.r r11"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r11";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"
+    "load.r r11"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <zaluc.geneo.Geneo: int borderWidth>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <zaluc.geneo.Geneo: int borderWidth>";
+    "goto load.r r0"
+    "fieldput <zaluc.geneo.Geneo: int borderWidth>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r1";
+    "load.r r2"
+    "load.r r1"->"load.r r2";
+    "load.r r2"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "load.r r3"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"load.r r3";
+    "load.r r3"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "load.r r4"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"load.r r4";
+    "load.r r5"
+    "load.r r4"->"load.r r5";
+    "load.r r6"
+    "load.r r5"->"load.r r6";
+    "load.r r7"
+    "load.r r6"->"load.r r7";
+    "load.r r8"
+    "load.r r7"->"load.r r8";
+    "load.r r9"
+    "load.r r8"->"load.r r9";
+    "load.r r10"
+    "load.r r9"->"load.r r10";
+    "load.r r13"
+    "load.r r10"->"load.r r13";
+    "load.r r14"
+    "load.r r13"->"load.r r14";
+    "load.r r15"
+    "load.r r14"->"load.r r15";
+    "load.r r16"
+    "load.r r15"->"load.r r16";
+    "load.r r17"
+    "load.r r16"->"load.r r17";
+    "load.r r18"
+    "load.r r17"->"load.r r18";
+    "load.r r18"->"load.r r0";
+    "load.r r0"->"fieldget <zaluc.geneo.Geneo: boolean embedInPage>";
+    "specialinvoke <zaluc.geneo.Geneo: void internalBegin(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>"
+    "fieldget <zaluc.geneo.Geneo: boolean embedInPage>"->"specialinvoke <zaluc.geneo.Geneo: void internalBegin(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>";
+    "return"
+    "specialinvoke <zaluc.geneo.Geneo: void internalBegin(java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>"->"return";
+    "ifnull load.r r0"->"load.r r0";
+    "push 3"
+    "load.r r0"->"push 3";
+    "push 3"->"fieldput <zaluc.geneo.Geneo: int borderWidth>";
+}

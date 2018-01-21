@@ -1,0 +1,755 @@
+digraph "" {
+    "r0 := @this: magnus.PeriodicTable"
+    "staticget <java.lang.System: java.io.PrintStream out>"
+    "r0 := @this: magnus.PeriodicTable"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"Magnus Chemistry\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"Magnus Chemistry\"";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"
+    "push \"Magnus Chemistry\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"================\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"================\"";
+    "push \"================\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"(c) J M Goodman, 2000-1\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"(c) J M Goodman, 2000-1\"";
+    "push \"(c) J M Goodman, 2000-1\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"Cambridge University\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"Cambridge University\"";
+    "push \"Cambridge University\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"All rights reserved\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"All rights reserved\"";
+    "push \"All rights reserved\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "push \"\""
+    "staticget <java.lang.System: java.io.PrintStream out>"->"push \"\"";
+    "push \"\""->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "new java.awt.GridBagLayout"
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"new java.awt.GridBagLayout";
+    "store.r $r10"
+    "new java.awt.GridBagLayout"->"store.r $r10";
+    "load.r $r10"
+    "store.r $r10"->"load.r $r10";
+    "specialinvoke <java.awt.GridBagLayout: void <init>()>"
+    "load.r $r10"->"specialinvoke <java.awt.GridBagLayout: void <init>()>";
+    "load.r r0"
+    "specialinvoke <java.awt.GridBagLayout: void <init>()>"->"load.r r0";
+    "load.r r0"->"load.r $r10";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "load.r $r10"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "new java.awt.GridBagConstraints"
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"new java.awt.GridBagConstraints";
+    "store.r $r11"
+    "new java.awt.GridBagConstraints"->"store.r $r11";
+    "load.r $r11"
+    "store.r $r11"->"load.r $r11";
+    "specialinvoke <java.awt.GridBagConstraints: void <init>()>"
+    "load.r $r11"->"specialinvoke <java.awt.GridBagConstraints: void <init>()>";
+    "specialinvoke <java.awt.GridBagConstraints: void <init>()>"->"load.r $r11";
+    "push 0.0"
+    "load.r $r11"->"push 0.0";
+    "fieldput <java.awt.GridBagConstraints: double weightx>"
+    "push 0.0"->"fieldput <java.awt.GridBagConstraints: double weightx>";
+    "fieldput <java.awt.GridBagConstraints: double weightx>"->"load.r $r11";
+    "load.r $r11"->"push 0.0";
+    "fieldput <java.awt.GridBagConstraints: double weighty>"
+    "push 0.0"->"fieldput <java.awt.GridBagConstraints: double weighty>";
+    "fieldput <java.awt.GridBagConstraints: double weighty>"->"load.r $r11";
+    "push 0"
+    "load.r $r11"->"push 0";
+    "fieldput <java.awt.GridBagConstraints: int ipadx>"
+    "push 0"->"fieldput <java.awt.GridBagConstraints: int ipadx>";
+    "fieldput <java.awt.GridBagConstraints: int ipadx>"->"load.r $r11";
+    "load.r $r11"->"push 0";
+    "fieldput <java.awt.GridBagConstraints: int ipady>"
+    "push 0"->"fieldput <java.awt.GridBagConstraints: int ipady>";
+    "fieldput <java.awt.GridBagConstraints: int ipady>"->"load.r $r11";
+    "push 1"
+    "load.r $r11"->"push 1";
+    "fieldput <java.awt.GridBagConstraints: int fill>"
+    "push 1"->"fieldput <java.awt.GridBagConstraints: int fill>";
+    "fieldput <java.awt.GridBagConstraints: int fill>"->"load.r r0";
+    "new java.awt.Button"
+    "load.r r0"->"new java.awt.Button";
+    "dup1.r"
+    "new java.awt.Button"->"dup1.r";
+    "push \"Periodic Table\""
+    "dup1.r"->"push \"Periodic Table\"";
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"
+    "push \"Periodic Table\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button 'long'>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <magnus.PeriodicTable: java.awt.Button 'long'>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button 'long'>"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'long'>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button 'long'>";
+    "new java.awt.Font"
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'long'>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "push \"TimesRoman\""
+    "dup1.r"->"push \"TimesRoman\"";
+    "push \"TimesRoman\""->"push 0";
+    "push 18"
+    "push 0"->"push 18";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "push 18"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button 'long'>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'long'>"->"load.r $r11";
+    "push 3"
+    "load.r $r11"->"push 3";
+    "push 3"->"push 0";
+    "push 8"
+    "push 0"->"push 8";
+    "push 8"->"push 1";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button 'long'>";
+    "new java.awt.Color"
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'long'>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 240"
+    "dup1.r"->"push 240";
+    "push 240"->"push 240";
+    "push 240"->"push 240";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"
+    "push 240"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button 'long'>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'long'>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: int 'goto'>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: int 'goto'>";
+    "i2f"
+    "fieldget <magnus.PeriodicTable: int 'goto'>"->"i2f";
+    "i2f"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.util.Random 'char'>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.util.Random 'char'>";
+    "virtualinvoke <java.util.Random: float nextFloat()>"
+    "fieldget <magnus.PeriodicTable: java.util.Random 'char'>"->"virtualinvoke <java.util.Random: float nextFloat()>";
+    "mul.f"
+    "virtualinvoke <java.util.Random: float nextFloat()>"->"mul.f";
+    "f2i"
+    "mul.f"->"f2i";
+    "fieldput <magnus.PeriodicTable: int 'byte'>"
+    "f2i"->"fieldput <magnus.PeriodicTable: int 'byte'>";
+    "fieldput <magnus.PeriodicTable: int 'byte'>"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: int 'byte'>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: int 'byte'>";
+    "virtualinvoke <magnus.PeriodicTable: java.lang.String a(int)>"
+    "fieldget <magnus.PeriodicTable: int 'byte'>"->"virtualinvoke <magnus.PeriodicTable: java.lang.String a(int)>";
+    "virtualinvoke <magnus.PeriodicTable: java.lang.String a(int)>"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button for>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <magnus.PeriodicTable: java.awt.Button for>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button for>"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.Button for>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button for>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button for>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"TimesRoman\"";
+    "push \"TimesRoman\""->"push 0";
+    "push 12"
+    "push 0"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button for>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button for>"->"load.r $r11";
+    "load.r $r11"->"push 3";
+    "push 3"->"push 1";
+    "push 6"
+    "push 1"->"push 6";
+    "push 6"->"push 1";
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button for>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button for>"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 220"
+    "dup1.r"->"push 220";
+    "push 220"->"push 220";
+    "push 220"->"push 220";
+    "push 220"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button for>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button for>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"<--\""
+    "dup1.r"->"push \"<--\"";
+    "push \"<--\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button 'int'>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <magnus.PeriodicTable: java.awt.Button 'int'>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button 'int'>"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'int'>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button 'int'>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'int'>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "push \"Courier\""
+    "dup1.r"->"push \"Courier\"";
+    "push \"Courier\""->"push 0";
+    "push 0"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button 'int'>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'int'>"->"load.r $r11";
+    "push 9"
+    "load.r $r11"->"push 9";
+    "push 9"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button 'int'>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button 'int'>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"abs\""
+    "dup1.r"->"push \"abs\"";
+    "push \"abs\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button do>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <magnus.PeriodicTable: java.awt.Button do>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button do>"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.Button do>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button do>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button do>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"TimesRoman\"";
+    "push \"TimesRoman\""->"push 0";
+    "push 0"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button do>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button do>"->"load.r $r11";
+    "push 10"
+    "load.r $r11"->"push 10";
+    "push 10"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button do>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button do>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r $r11";
+    "push 2"
+    "load.r $r11"->"push 2";
+    "push 2"->"fieldput <java.awt.GridBagConstraints: int fill>";
+    "fieldput <java.awt.GridBagConstraints: int fill>"->"load.r r0";
+    "new java.awt.Scrollbar"
+    "load.r r0"->"new java.awt.Scrollbar";
+    "new java.awt.Scrollbar"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push 431.0F"
+    "push 0"->"push 431.0F";
+    "push 431.0F"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.util.Random 'char'>";
+    "fieldget <magnus.PeriodicTable: java.util.Random 'char'>"->"virtualinvoke <java.util.Random: float nextFloat()>";
+    "virtualinvoke <java.util.Random: float nextFloat()>"->"mul.f";
+    "mul.f"->"f2i";
+    "push 4"
+    "f2i"->"push 4";
+    "push 4"->"push 0";
+    "push 431"
+    "push 0"->"push 431";
+    "specialinvoke <java.awt.Scrollbar: void <init>(int,int,int,int,int)>"
+    "push 431"->"specialinvoke <java.awt.Scrollbar: void <init>(int,int,int,int,int)>";
+    "fieldput <magnus.PeriodicTable: java.awt.Scrollbar 'case'>"
+    "specialinvoke <java.awt.Scrollbar: void <init>(int,int,int,int,int)>"->"fieldput <magnus.PeriodicTable: java.awt.Scrollbar 'case'>";
+    "fieldput <magnus.PeriodicTable: java.awt.Scrollbar 'case'>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.Scrollbar 'case'>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Scrollbar 'case'>";
+    "fieldget <magnus.PeriodicTable: java.awt.Scrollbar 'case'>"->"load.r $r11";
+    "load.r $r11"->"push 4";
+    "push 4"->"push 2";
+    "push 2"->"push 6";
+    "push 6"->"push 1";
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Scrollbar 'case'>";
+    "fieldget <magnus.PeriodicTable: java.awt.Scrollbar 'case'>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: int 'byte'>";
+    "fieldget <magnus.PeriodicTable: int 'byte'>"->"push 9";
+    "ifcmpeq.i load.r $r11"
+    "push 9"->"ifcmpeq.i load.r $r11";
+    "ifcmpeq.i load.r $r11"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Scrollbar 'case'>";
+    "virtualinvoke <java.awt.Component: void disable()>"
+    "fieldget <magnus.PeriodicTable: java.awt.Scrollbar 'case'>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r $r11";
+    "load.r $r11"->"push 0";
+    "push 0"->"fieldput <java.awt.GridBagConstraints: int fill>";
+    "new java.awt.Label"
+    "fieldput <java.awt.GridBagConstraints: int fill>"->"new java.awt.Label";
+    "store.r $r52"
+    "new java.awt.Label"->"store.r $r52";
+    "load.r $r52"
+    "store.r $r52"->"load.r $r52";
+    "push \"(c) J M Goodman, 2001\""
+    "load.r $r52"->"push \"(c) J M Goodman, 2001\"";
+    "push \"(c) J M Goodman, 2001\""->"push 1";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>"
+    "push 1"->"specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String,int)>"->"load.r $r52";
+    "load.r $r52"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"TimesRoman\"";
+    "push \"TimesRoman\""->"push 2";
+    "push 2"->"push 12";
+    "push 12"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r $r10";
+    "load.r $r10"->"load.r $r52";
+    "load.r $r52"->"load.r $r11";
+    "load.r $r11"->"push 12";
+    "push 12"->"push 0";
+    "push 0"->"push 4";
+    "push 4"->"push 1";
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r $r52";
+    "load.r $r52"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "staticget <magnus.a: java.lang.String[] 'if'>"
+    "load.r r0"->"staticget <magnus.a: java.lang.String[] 'if'>";
+    "arraylength"
+    "staticget <magnus.a: java.lang.String[] 'if'>"->"arraylength";
+    "newarray"
+    "arraylength"->"newarray";
+    "fieldput <magnus.PeriodicTable: java.awt.Button[] try>"
+    "newarray"->"fieldput <magnus.PeriodicTable: java.awt.Button[] try>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button[] try>"->"load.r $r11";
+    "push 17"
+    "load.r $r11"->"push 17";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"
+    "push 17"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"->"push 1";
+    "store.i $r52"
+    "push 1"->"store.i $r52";
+    "load.i $r52"
+    "store.i $r52"->"load.i $r52";
+    "load.i $r52"->"staticget <magnus.a: java.lang.String[] 'if'>";
+    "staticget <magnus.a: java.lang.String[] 'if'>"->"arraylength";
+    "ifcmpge.i load.r $r11"
+    "arraylength"->"ifcmpge.i load.r $r11";
+    "ifcmpge.i load.r $r11"->"load.i $r52";
+    "load.i $r52"->"push 3";
+    "ifcmpge.i load.i $r52"
+    "push 3"->"ifcmpge.i load.i $r52";
+    "ifcmpge.i load.i $r52"->"push 0";
+    "store.i i16"
+    "push 0"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "load.i $r52"->"push 1";
+    "ifcmpne.i push 17"
+    "push 1"->"ifcmpne.i push 17";
+    "ifcmpne.i push 17"->"push 0";
+    "store.i i17"
+    "push 0"->"store.i i17";
+    "goto staticget <magnus.a: java.lang.String[] 'if'>"
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "goto staticget <magnus.a: java.lang.String[] 'if'>"->"staticget <magnus.a: java.lang.String[] 'if'>";
+    "staticget <magnus.a: java.lang.String[] 'if'>"->"load.i $r52";
+    "arrayread.r"
+    "load.i $r52"->"arrayread.r";
+    "store.r r107"
+    "arrayread.r"->"store.r r107";
+    "load.r r107"
+    "store.r r107"->"load.r r107";
+    "virtualinvoke <java.lang.String: int length()>"
+    "load.r r107"->"virtualinvoke <java.lang.String: int length()>";
+    "virtualinvoke <java.lang.String: int length()>"->"push 1";
+    "ifcmpne.i load.i $r52"
+    "push 1"->"ifcmpne.i load.i $r52";
+    "new java.lang.StringBuffer"
+    "ifcmpne.i load.i $r52"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r107";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "load.r r107"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \" \""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \" \"";
+    "push \" \""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"store.r r107";
+    "store.r r107"->"load.i $r52";
+    "push 57"
+    "load.i $r52"->"push 57";
+    "push 57"->"ifcmpne.i load.i $r52";
+    "ifcmpne.i load.i $r52"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r107";
+    "load.r r107"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"*\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"*\"";
+    "push \"*\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"store.r r107";
+    "store.r r107"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "dup1.r"->"push \"*\"";
+    "push \"*\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button a>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <magnus.PeriodicTable: java.awt.Button a>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button a>"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.Button a>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button a>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button a>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Courier\"";
+    "push \"Courier\""->"push 0";
+    "push 16"
+    "push 0"->"push 16";
+    "push 16"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button a>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button a>"->"load.r r0";
+    "load.r r0"->"load.i $r52";
+    "load.i $r52"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: int 'byte'>";
+    "virtualinvoke <magnus.PeriodicTable: java.awt.Color a(int,int)>"
+    "fieldget <magnus.PeriodicTable: int 'byte'>"->"virtualinvoke <magnus.PeriodicTable: java.awt.Color a(int,int)>";
+    "virtualinvoke <magnus.PeriodicTable: java.awt.Color a(int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r $r11";
+    "push 13"
+    "load.r $r11"->"push 13";
+    "push 13"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button a>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button a>"->"load.r $r11";
+    "load.r $r11"->"push 2";
+    "push 7"
+    "push 2"->"push 7";
+    "push 7"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button a>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button a>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r $r11";
+    "load.r $r11"->"push 17";
+    "push 17"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"->"load.i $r52";
+    "push 89"
+    "load.i $r52"->"push 89";
+    "ifcmpne.i load.r r0"
+    "push 89"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r107";
+    "load.r r107"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"#\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"#\"";
+    "push \"#\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"store.r r107";
+    "store.r r107"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "dup1.r"->"push \"#\"";
+    "push \"#\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button else>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <magnus.PeriodicTable: java.awt.Button else>";
+    "fieldput <magnus.PeriodicTable: java.awt.Button else>"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.Button else>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button else>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button else>"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Courier\"";
+    "push \"Courier\""->"push 0";
+    "push 0"->"push 16";
+    "push 16"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button else>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button else>"->"load.r r0";
+    "load.r r0"->"load.i $r52";
+    "load.i $r52"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: int 'byte'>";
+    "fieldget <magnus.PeriodicTable: int 'byte'>"->"virtualinvoke <magnus.PeriodicTable: java.awt.Color a(int,int)>";
+    "virtualinvoke <magnus.PeriodicTable: java.awt.Color a(int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r $r11";
+    "load.r $r11"->"push 13";
+    "push 13"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button else>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button else>"->"load.r $r11";
+    "load.r $r11"->"push 2";
+    "push 2"->"push 8";
+    "push 8"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button else>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button else>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r $r11";
+    "load.r $r11"->"push 17";
+    "push 17"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.Button[] try>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button[] try>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button[] try>"->"load.i $r52";
+    "load.i $r52"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "dup1.r"->"load.r r107";
+    "load.r r107"->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "arraywrite.r"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button[] try>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button[] try>"->"load.i $r52";
+    "load.i $r52"->"arrayread.r";
+    "arrayread.r"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"push \"Courier\"";
+    "push \"Courier\""->"push 0";
+    "push 0"->"push 16";
+    "push 16"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>";
+    "virtualinvoke <java.awt.Component: void setFont(java.awt.Font)>"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button[] try>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button[] try>"->"load.i $r52";
+    "load.i $r52"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"load.i $r52";
+    "load.i $r52"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: int 'byte'>";
+    "fieldget <magnus.PeriodicTable: int 'byte'>"->"virtualinvoke <magnus.PeriodicTable: java.awt.Color a(int,int)>";
+    "virtualinvoke <magnus.PeriodicTable: java.awt.Color a(int,int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button[] try>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button[] try>"->"load.i $r52";
+    "load.i $r52"->"arrayread.r";
+    "arrayread.r"->"load.r $r11";
+    "load.i i17"
+    "load.r $r11"->"load.i i17";
+    "load.i i16"
+    "load.i i17"->"load.i i16";
+    "load.i i16"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.Button[] try>";
+    "fieldget <magnus.PeriodicTable: java.awt.Button[] try>"->"load.i $r52";
+    "load.i $r52"->"arrayread.r";
+    "arrayread.r"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "inc.i $r52 1"
+    "pop"->"inc.i $r52 1";
+    "goto load.i $r52"
+    "inc.i $r52 1"->"goto load.i $r52";
+    "ifcmpne.i push 17"->"push 17";
+    "push 17"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "push 11"
+    "load.i $r52"->"push 11";
+    "push 11"->"ifcmpge.i load.i $r52";
+    "ifcmpge.i load.i $r52"->"push 1";
+    "push 1"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "push 5"
+    "load.i $r52"->"push 5";
+    "push 5"->"ifcmpge.i load.i $r52";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "load.i $r52"->"push 3";
+    "sub.i"
+    "push 3"->"sub.i";
+    "sub.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "load.i $r52"->"push 7";
+    "add.i"
+    "push 7"->"add.i";
+    "add.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "push 19"
+    "load.i $r52"->"push 19";
+    "push 19"->"ifcmpge.i load.i $r52";
+    "ifcmpge.i load.i $r52"->"push 2";
+    "push 2"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "load.i $r52"->"push 13";
+    "push 13"->"ifcmpge.i load.i $r52";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "load.i $r52"->"push 11";
+    "push 11"->"sub.i";
+    "sub.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "load.i $r52"->"push 1";
+    "push 1"->"sub.i";
+    "sub.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "push 58"
+    "load.i $r52"->"push 58";
+    "push 58"->"ifcmpge.i load.i $r52";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "load.i $r52"->"push 19";
+    "push 19"->"sub.i";
+    "sub.i"->"push 18";
+    "div.i"
+    "push 18"->"div.i";
+    "div.i"->"push 3";
+    "push 3"->"add.i";
+    "add.i"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "load.i $r52"->"push 18";
+    "push 18"->"load.i i16";
+    "load.i i16"->"push 2";
+    "push 2"->"sub.i";
+    "mul.i"
+    "sub.i"->"mul.i";
+    "mul.i"->"sub.i";
+    "sub.i"->"push 1";
+    "push 1"->"sub.i";
+    "sub.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "push 72"
+    "load.i $r52"->"push 72";
+    "push 72"->"ifcmpge.i load.i $r52";
+    "ifcmpge.i load.i $r52"->"push 7";
+    "push 7"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "push 55"
+    "load.i $r52"->"push 55";
+    "push 55"->"sub.i";
+    "sub.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "push 90"
+    "load.i $r52"->"push 90";
+    "push 90"->"ifcmpge.i load.i $r52";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "push 87"
+    "load.i $r52"->"push 87";
+    "ifcmpge.i push 6"
+    "push 87"->"ifcmpge.i push 6";
+    "ifcmpge.i push 6"->"push 5";
+    "push 5"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "push 69"
+    "load.i $r52"->"push 69";
+    "push 69"->"sub.i";
+    "sub.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i push 6"->"push 6";
+    "push 6"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "load.i $r52"->"push 87";
+    "push 87"->"sub.i";
+    "sub.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i load.i $r52"->"load.i $r52";
+    "push 104"
+    "load.i $r52"->"push 104";
+    "push 104"->"ifcmpge.i push 6";
+    "ifcmpge.i push 6"->"push 8";
+    "push 8"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "load.i $r52"->"push 87";
+    "push 87"->"sub.i";
+    "sub.i"->"store.i i17";
+    "store.i i17"->"goto staticget <magnus.a: java.lang.String[] 'if'>";
+    "ifcmpge.i push 6"->"push 6";
+    "push 6"->"store.i i16";
+    "store.i i16"->"load.i $r52";
+    "push 101"
+    "load.i $r52"->"push 101";
+    "push 101"->"sub.i";
+    "sub.i"->"store.i i17";
+    "ifcmpge.i load.r $r11"->"load.r $r11";
+    "load.r $r11"->"push 10";
+    "push 10"->"fieldput <java.awt.GridBagConstraints: int anchor>";
+    "fieldput <java.awt.GridBagConstraints: int anchor>"->"load.r r0";
+    "new java.awt.TextArea"
+    "load.r r0"->"new java.awt.TextArea";
+    "new java.awt.TextArea"->"dup1.r";
+    "dup1.r"->"push 5";
+    "push 80"
+    "push 5"->"push 80";
+    "specialinvoke <java.awt.TextArea: void <init>(int,int)>"
+    "push 80"->"specialinvoke <java.awt.TextArea: void <init>(int,int)>";
+    "fieldput <magnus.PeriodicTable: java.awt.TextArea 'new'>"
+    "specialinvoke <java.awt.TextArea: void <init>(int,int)>"->"fieldput <magnus.PeriodicTable: java.awt.TextArea 'new'>";
+    "fieldput <magnus.PeriodicTable: java.awt.TextArea 'new'>"->"load.r $r10";
+    "load.r $r10"->"load.r r0";
+    "fieldget <magnus.PeriodicTable: java.awt.TextArea 'new'>"
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.TextArea 'new'>";
+    "fieldget <magnus.PeriodicTable: java.awt.TextArea 'new'>"->"load.r $r11";
+    "load.r $r11"->"push 0";
+    "push 0"->"push 11";
+    "push 11"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>";
+    "staticinvoke <magnus.EadUtil: java.awt.GridBagConstraints a(java.awt.GridBagConstraints,int,int,int,int)>"->"virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>";
+    "virtualinvoke <java.awt.GridBagLayout: void setConstraints(java.awt.Component,java.awt.GridBagConstraints)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <magnus.PeriodicTable: java.awt.TextArea 'new'>";
+    "fieldget <magnus.PeriodicTable: java.awt.TextArea 'new'>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "return"
+    "pop"->"return";
+}

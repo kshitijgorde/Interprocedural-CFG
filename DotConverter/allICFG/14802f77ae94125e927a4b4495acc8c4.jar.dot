@@ -1,0 +1,401 @@
+digraph "" {
+    "r0 := @this: Banner3"
+    "new ParseArgs3"
+    "r0 := @this: Banner3"->"new ParseArgs3";
+    "load.r r0"
+    "new ParseArgs3"->"load.r r0";
+    "specialinvoke <ParseArgs3: void <init>(Banner3)>"
+    "load.r r0"->"specialinvoke <ParseArgs3: void <init>(Banner3)>";
+    "specialinvoke <ParseArgs3: void <init>(Banner3)>"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>";
+    "staticput <Banner3: java.awt.Graphics g>"
+    "virtualinvoke <java.awt.Component: java.awt.Graphics getGraphics()>"->"staticput <Banner3: java.awt.Graphics g>";
+    "staticget <Banner3: java.awt.Color msgtextcolor>"
+    "staticput <Banner3: java.awt.Graphics g>"->"staticget <Banner3: java.awt.Color msgtextcolor>";
+    "staticput <Banner3: java.awt.Color tempColor>"
+    "staticget <Banner3: java.awt.Color msgtextcolor>"->"staticput <Banner3: java.awt.Color tempColor>";
+    "staticput <Banner3: java.awt.Color tempColor>"->"load.r r0";
+    "staticget <Banner3: int totalmessages>"
+    "load.r r0"->"staticget <Banner3: int totalmessages>";
+    "newarray"
+    "staticget <Banner3: int totalmessages>"->"newarray";
+    "fieldput <Banner3: int[] catfwidth>"
+    "newarray"->"fieldput <Banner3: int[] catfwidth>";
+    "fieldput <Banner3: int[] catfwidth>"->"load.r r0";
+    "load.r r0"->"staticget <Banner3: int totalmessages>";
+    "staticget <Banner3: int totalmessages>"->"newarray";
+    "fieldput <Banner3: int[] catx>"
+    "newarray"->"fieldput <Banner3: int[] catx>";
+    "fieldput <Banner3: int[] catx>"->"load.r r0";
+    "load.r r0"->"staticget <Banner3: int totalmessages>";
+    "staticget <Banner3: int totalmessages>"->"newarray";
+    "fieldput <Banner3: int[] msgfwidth>"
+    "newarray"->"fieldput <Banner3: int[] msgfwidth>";
+    "fieldput <Banner3: int[] msgfwidth>"->"load.r r0";
+    "load.r r0"->"staticget <Banner3: int totalmessages>";
+    "staticget <Banner3: int totalmessages>"->"newarray";
+    "fieldput <Banner3: int[] msgx>"
+    "newarray"->"fieldput <Banner3: int[] msgx>";
+    "fieldput <Banner3: int[] msgx>"->"load.r r0";
+    "load.r r0"->"staticget <Banner3: int totalmessages>";
+    "staticget <Banner3: int totalmessages>"->"newarray";
+    "newarray"->"fieldput <Banner3: int[] msgfwidth>";
+    "fieldput <Banner3: int[] msgfwidth>"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>";
+    "staticput <Banner3: java.awt.Rectangle apprect>"
+    "virtualinvoke <java.awt.Component: java.awt.Rectangle bounds()>"->"staticput <Banner3: java.awt.Rectangle apprect>";
+    "staticput <Banner3: java.awt.Rectangle apprect>"->"load.r r0";
+    "staticget <Banner3: java.awt.Rectangle apprect>"
+    "load.r r0"->"staticget <Banner3: java.awt.Rectangle apprect>";
+    "fieldget <java.awt.Rectangle: int width>"
+    "staticget <Banner3: java.awt.Rectangle apprect>"->"fieldget <java.awt.Rectangle: int width>";
+    "fieldput <Banner3: int width>"
+    "fieldget <java.awt.Rectangle: int width>"->"fieldput <Banner3: int width>";
+    "fieldput <Banner3: int width>"->"load.r r0";
+    "load.r r0"->"staticget <Banner3: java.awt.Rectangle apprect>";
+    "fieldget <java.awt.Rectangle: int height>"
+    "staticget <Banner3: java.awt.Rectangle apprect>"->"fieldget <java.awt.Rectangle: int height>";
+    "fieldput <Banner3: int height>"
+    "fieldget <java.awt.Rectangle: int height>"->"fieldput <Banner3: int height>";
+    "fieldput <Banner3: int height>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <Banner3: int width>"
+    "load.r r0"->"fieldget <Banner3: int width>";
+    "fieldget <Banner3: int width>"->"load.r r0";
+    "fieldget <Banner3: int height>"
+    "load.r r0"->"fieldget <Banner3: int height>";
+    "virtualinvoke <java.applet.Applet: void resize(int,int)>"
+    "fieldget <Banner3: int height>"->"virtualinvoke <java.applet.Applet: void resize(int,int)>";
+    "virtualinvoke <java.applet.Applet: void resize(int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int width>";
+    "fieldget <Banner3: int width>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int height>";
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"
+    "fieldget <Banner3: int height>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+    "staticput <Banner3: java.awt.Image offscreen>"
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"staticput <Banner3: java.awt.Image offscreen>";
+    "new java.awt.Font"
+    "staticput <Banner3: java.awt.Image offscreen>"->"new java.awt.Font";
+    "dup1.r"
+    "new java.awt.Font"->"dup1.r";
+    "staticget <Banner3: java.lang.String fontname>"
+    "dup1.r"->"staticget <Banner3: java.lang.String fontname>";
+    "staticget <Banner3: int fontstyle>"
+    "staticget <Banner3: java.lang.String fontname>"->"staticget <Banner3: int fontstyle>";
+    "staticget <Banner3: int fontsize>"
+    "staticget <Banner3: int fontstyle>"->"staticget <Banner3: int fontsize>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "staticget <Banner3: int fontsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "staticput <Banner3: java.awt.Font font>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"staticput <Banner3: java.awt.Font font>";
+    "staticget <Banner3: java.awt.Graphics g>"
+    "staticput <Banner3: java.awt.Font font>"->"staticget <Banner3: java.awt.Graphics g>";
+    "staticget <Banner3: java.awt.Font font>"
+    "staticget <Banner3: java.awt.Graphics g>"->"staticget <Banner3: java.awt.Font font>";
+    "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"
+    "staticget <Banner3: java.awt.Font font>"->"virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics(java.awt.Font)>";
+    "staticput <Banner3: java.awt.FontMetrics metrics>"
+    "virtualinvoke <java.awt.Graphics: java.awt.FontMetrics getFontMetrics(java.awt.Font)>"->"staticput <Banner3: java.awt.FontMetrics metrics>";
+    "staticput <Banner3: java.awt.FontMetrics metrics>"->"load.r r0";
+    "staticget <Banner3: java.awt.FontMetrics metrics>"
+    "load.r r0"->"staticget <Banner3: java.awt.FontMetrics metrics>";
+    "virtualinvoke <java.awt.FontMetrics: int getMaxAscent()>"
+    "staticget <Banner3: java.awt.FontMetrics metrics>"->"virtualinvoke <java.awt.FontMetrics: int getMaxAscent()>";
+    "virtualinvoke <java.awt.FontMetrics: int getMaxAscent()>"->"staticget <Banner3: java.awt.FontMetrics metrics>";
+    "virtualinvoke <java.awt.FontMetrics: int getMaxDescent()>"
+    "staticget <Banner3: java.awt.FontMetrics metrics>"->"virtualinvoke <java.awt.FontMetrics: int getMaxDescent()>";
+    "sub.i"
+    "virtualinvoke <java.awt.FontMetrics: int getMaxDescent()>"->"sub.i";
+    "push 2"
+    "sub.i"->"push 2";
+    "add.i"
+    "push 2"->"add.i";
+    "fieldput <Banner3: int fheight>"
+    "add.i"->"fieldput <Banner3: int fheight>";
+    "fieldput <Banner3: int fheight>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int width>";
+    "staticget <Banner3: int catwidth>"
+    "fieldget <Banner3: int width>"->"staticget <Banner3: int catwidth>";
+    "staticget <Banner3: int catwidth>"->"sub.i";
+    "fieldput <Banner3: int msgwidth>"
+    "sub.i"->"fieldput <Banner3: int msgwidth>";
+    "fieldput <Banner3: int msgwidth>"->"load.r r0";
+    "push 0"
+    "load.r r0"->"push 0";
+    "fieldput <Banner3: int i>"
+    "push 0"->"fieldput <Banner3: int i>";
+    "goto load.r r0"
+    "fieldput <Banner3: int i>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <Banner3: int i>"
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "fieldget <Banner3: int i>"->"staticget <Banner3: int totalmessages>";
+    "ifcmplt.i load.r r0"
+    "staticget <Banner3: int totalmessages>"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <Banner3: int i>";
+    "staticget <Banner3: java.lang.String direction>"
+    "fieldput <Banner3: int i>"->"staticget <Banner3: java.lang.String direction>";
+    "push \"BottomTop\""
+    "staticget <Banner3: java.lang.String direction>"->"push \"BottomTop\"";
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"
+    "push \"BottomTop\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "ifeq staticget <Banner3: java.lang.String direction>"
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq staticget <Banner3: java.lang.String direction>";
+    "ifeq staticget <Banner3: java.lang.String direction>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int height>";
+    "fieldget <Banner3: int height>"->"load.r r0";
+    "fieldget <Banner3: int fheight>"
+    "load.r r0"->"fieldget <Banner3: int fheight>";
+    "fieldget <Banner3: int fheight>"->"add.i";
+    "store.i $i45"
+    "add.i"->"store.i $i45";
+    "load.i $i45"
+    "store.i $i45"->"load.i $i45";
+    "fieldput <Banner3: int y>"
+    "load.i $i45"->"fieldput <Banner3: int y>";
+    "fieldput <Banner3: int y>"->"load.i $i45";
+    "fieldput <Banner3: int ystart>"
+    "load.i $i45"->"fieldput <Banner3: int ystart>";
+    "fieldput <Banner3: int ystart>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int fheight>";
+    "neg.i"
+    "fieldget <Banner3: int fheight>"->"neg.i";
+    "fieldput <Banner3: int ystop>"
+    "neg.i"->"fieldput <Banner3: int ystop>";
+    "fieldput <Banner3: int ystop>"->"load.r r0";
+    "fieldget <Banner3: int ystop>"
+    "load.r r0"->"fieldget <Banner3: int ystop>";
+    "fieldget <Banner3: int ystop>"->"load.r r0";
+    "fieldget <Banner3: int ystart>"
+    "load.r r0"->"fieldget <Banner3: int ystart>";
+    "fieldget <Banner3: int ystart>"->"sub.i";
+    "staticinvoke <java.lang.Math: int abs(int)>"
+    "sub.i"->"staticinvoke <java.lang.Math: int abs(int)>";
+    "staticinvoke <java.lang.Math: int abs(int)>"->"store.i $i45";
+    "store.i $i45"->"load.i $i45";
+    "staticget <Banner3: int ydelta>"
+    "load.i $i45"->"staticget <Banner3: int ydelta>";
+    "rem.i"
+    "staticget <Banner3: int ydelta>"->"rem.i";
+    "ifeq load.r r0"
+    "rem.i"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int ystop>";
+    "fieldget <Banner3: int ystop>"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"load.i $i45";
+    "load.i $i45"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"rem.i";
+    "rem.i"->"sub.i";
+    "sub.i"->"sub.i";
+    "sub.i"->"fieldput <Banner3: int ystop>";
+    "fieldput <Banner3: int ystop>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <Banner3: int[] msgx>"
+    "load.r r0"->"fieldget <Banner3: int[] msgx>";
+    "fieldget <Banner3: int[] msgx>"->"push 0";
+    "arrayread.i"
+    "push 0"->"arrayread.i";
+    "fieldput <Banner3: int xstart>"
+    "arrayread.i"->"fieldput <Banner3: int xstart>";
+    "fieldput <Banner3: int xstart>"->"push 0";
+    "staticput <Banner3: int xdelta>"
+    "push 0"->"staticput <Banner3: int xdelta>";
+    "staticput <Banner3: int xdelta>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "fieldput <Banner3: int xstop>"
+    "push 0"->"fieldput <Banner3: int xstop>";
+    "fieldput <Banner3: int xstop>"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"neg.i";
+    "staticput <Banner3: int ydelta>"
+    "neg.i"->"staticput <Banner3: int ydelta>";
+    "return"
+    "staticput <Banner3: int ydelta>"->"return";
+    "store.r $i45"
+    "staticput <Banner3: int ydelta>"->"store.r $i45";
+    "store.r $i45"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int fheight>";
+    "fieldget <Banner3: int fheight>"->"neg.i";
+    "neg.i"->"store.i $i45";
+    "store.i $i45"->"load.i $i45";
+    "load.i $i45"->"fieldput <Banner3: int y>";
+    "fieldput <Banner3: int y>"->"load.i $i45";
+    "load.i $i45"->"fieldput <Banner3: int ystart>";
+    "fieldput <Banner3: int ystart>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int height>";
+    "fieldget <Banner3: int height>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int fheight>";
+    "fieldget <Banner3: int fheight>"->"add.i";
+    "add.i"->"fieldput <Banner3: int ystop>";
+    "fieldput <Banner3: int ystop>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int ystop>";
+    "fieldget <Banner3: int ystop>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int ystart>";
+    "fieldget <Banner3: int ystart>"->"sub.i";
+    "sub.i"->"staticinvoke <java.lang.Math: int abs(int)>";
+    "staticinvoke <java.lang.Math: int abs(int)>"->"store.i $i45";
+    "store.i $i45"->"load.i $i45";
+    "load.i $i45"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"rem.i";
+    "rem.i"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int ystop>";
+    "fieldget <Banner3: int ystop>"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"load.i $i45";
+    "load.i $i45"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"rem.i";
+    "rem.i"->"sub.i";
+    "sub.i"->"add.i";
+    "add.i"->"fieldput <Banner3: int ystop>";
+    "fieldput <Banner3: int ystop>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int[] msgx>";
+    "fieldget <Banner3: int[] msgx>"->"push 0";
+    "push 0"->"arrayread.i";
+    "arrayread.i"->"fieldput <Banner3: int xstart>";
+    "fieldput <Banner3: int xstart>"->"push 0";
+    "push 0"->"staticput <Banner3: int xdelta>";
+    "staticput <Banner3: int xdelta>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <Banner3: int xstop>";
+    "fieldput <Banner3: int xstop>"->"return";
+    "ifeq staticget <Banner3: java.lang.String direction>"->"staticget <Banner3: java.lang.String direction>";
+    "push \"TopBottom\""
+    "staticget <Banner3: java.lang.String direction>"->"push \"TopBottom\"";
+    "push \"TopBottom\""->"virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>";
+    "ifeq return"
+    "virtualinvoke <java.lang.String: boolean equalsIgnoreCase(java.lang.String)>"->"ifeq return";
+    "ifeq return"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int fheight>";
+    "fieldget <Banner3: int fheight>"->"neg.i";
+    "neg.i"->"store.i $i45";
+    "store.i $i45"->"load.i $i45";
+    "load.i $i45"->"fieldput <Banner3: int y>";
+    "fieldput <Banner3: int y>"->"load.i $i45";
+    "load.i $i45"->"fieldput <Banner3: int ystart>";
+    "fieldput <Banner3: int ystart>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int height>";
+    "fieldget <Banner3: int height>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int fheight>";
+    "fieldget <Banner3: int fheight>"->"add.i";
+    "add.i"->"fieldput <Banner3: int ystop>";
+    "fieldput <Banner3: int ystop>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int ystop>";
+    "fieldget <Banner3: int ystop>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int ystart>";
+    "fieldget <Banner3: int ystart>"->"sub.i";
+    "sub.i"->"staticinvoke <java.lang.Math: int abs(int)>";
+    "staticinvoke <java.lang.Math: int abs(int)>"->"store.i $i45";
+    "store.i $i45"->"load.i $i45";
+    "load.i $i45"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"rem.i";
+    "rem.i"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int ystop>";
+    "fieldget <Banner3: int ystop>"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"load.i $i45";
+    "load.i $i45"->"staticget <Banner3: int ydelta>";
+    "staticget <Banner3: int ydelta>"->"rem.i";
+    "rem.i"->"sub.i";
+    "sub.i"->"add.i";
+    "add.i"->"fieldput <Banner3: int ystop>";
+    "fieldput <Banner3: int ystop>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int[] msgx>";
+    "fieldget <Banner3: int[] msgx>"->"push 0";
+    "push 0"->"arrayread.i";
+    "arrayread.i"->"fieldput <Banner3: int xstart>";
+    "fieldput <Banner3: int xstart>"->"push 0";
+    "push 0"->"staticput <Banner3: int xdelta>";
+    "staticput <Banner3: int xdelta>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "push 0"->"fieldput <Banner3: int xstop>";
+    "fieldput <Banner3: int xstop>"->"return";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "fieldget <Banner3: int[] catfwidth>"
+    "load.r r0"->"fieldget <Banner3: int[] catfwidth>";
+    "fieldget <Banner3: int[] catfwidth>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "fieldget <Banner3: int i>"->"staticget <Banner3: java.awt.FontMetrics metrics>";
+    "staticget <Banner3: java.lang.String[] cattext>"
+    "staticget <Banner3: java.awt.FontMetrics metrics>"->"staticget <Banner3: java.lang.String[] cattext>";
+    "staticget <Banner3: java.lang.String[] cattext>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "arrayread.r"
+    "fieldget <Banner3: int i>"->"arrayread.r";
+    "virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>"
+    "arrayread.r"->"virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>";
+    "arraywrite.i"
+    "virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>"->"arraywrite.i";
+    "arraywrite.i"->"load.r r0";
+    "fieldget <Banner3: int[] catx>"
+    "load.r r0"->"fieldget <Banner3: int[] catx>";
+    "fieldget <Banner3: int[] catx>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "fieldget <Banner3: int i>"->"staticget <Banner3: int catwidth>";
+    "staticget <Banner3: int catwidth>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int[] catfwidth>";
+    "fieldget <Banner3: int[] catfwidth>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "fieldget <Banner3: int i>"->"arrayread.i";
+    "arrayread.i"->"sub.i";
+    "sub.i"->"push 2";
+    "div.i"
+    "push 2"->"div.i";
+    "div.i"->"arraywrite.i";
+    "arraywrite.i"->"load.r r0";
+    "fieldget <Banner3: int[] msgfwidth>"
+    "load.r r0"->"fieldget <Banner3: int[] msgfwidth>";
+    "fieldget <Banner3: int[] msgfwidth>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "fieldget <Banner3: int i>"->"staticget <Banner3: java.awt.FontMetrics metrics>";
+    "staticget <Banner3: java.lang.String[] msgtext>"
+    "staticget <Banner3: java.awt.FontMetrics metrics>"->"staticget <Banner3: java.lang.String[] msgtext>";
+    "staticget <Banner3: java.lang.String[] msgtext>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "fieldget <Banner3: int i>"->"arrayread.r";
+    "arrayread.r"->"virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>";
+    "virtualinvoke <java.awt.FontMetrics: int stringWidth(java.lang.String)>"->"arraywrite.i";
+    "arraywrite.i"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int[] msgx>";
+    "fieldget <Banner3: int[] msgx>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "fieldget <Banner3: int i>"->"load.r r0";
+    "fieldget <Banner3: int msgwidth>"
+    "load.r r0"->"fieldget <Banner3: int msgwidth>";
+    "fieldget <Banner3: int msgwidth>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int[] msgfwidth>";
+    "fieldget <Banner3: int[] msgfwidth>"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "fieldget <Banner3: int i>"->"arrayread.i";
+    "arrayread.i"->"sub.i";
+    "sub.i"->"push 2";
+    "push 2"->"div.i";
+    "div.i"->"staticget <Banner3: int catwidth>";
+    "staticget <Banner3: int catwidth>"->"add.i";
+    "add.i"->"arraywrite.i";
+    "arraywrite.i"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <Banner3: int i>";
+    "push 1"
+    "fieldget <Banner3: int i>"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"fieldput <Banner3: int i>";
+}

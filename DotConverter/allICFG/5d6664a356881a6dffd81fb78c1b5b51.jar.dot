@@ -1,0 +1,23 @@
+digraph "" {
+    "r0 := @this: inscripcion.Formulario"
+    "staticinvoke <java.util.Calendar: java.util.Calendar getInstance()>"
+    "r0 := @this: inscripcion.Formulario"->"staticinvoke <java.util.Calendar: java.util.Calendar getInstance()>";
+    "pop"
+    "staticinvoke <java.util.Calendar: java.util.Calendar getInstance()>"->"pop";
+    "new inscripcion.Formulario$1"
+    "pop"->"new inscripcion.Formulario$1";
+    "dup1.r"
+    "new inscripcion.Formulario$1"->"dup1.r";
+    "load.r r0"
+    "dup1.r"->"load.r r0";
+    "specialinvoke <inscripcion.Formulario$1: void <init>(inscripcion.Formulario)>"
+    "load.r r0"->"specialinvoke <inscripcion.Formulario$1: void <init>(inscripcion.Formulario)>";
+    "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"
+    "specialinvoke <inscripcion.Formulario$1: void <init>(inscripcion.Formulario)>"->"staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>";
+    "goto return"
+    "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"->"goto return";
+    "return"
+    "goto return"->"return";
+    "virtualinvoke <java.lang.Exception: void printStackTrace()>"
+    "staticinvoke <java.awt.EventQueue: void invokeAndWait(java.lang.Runnable)>"->"virtualinvoke <java.lang.Exception: void printStackTrace()>";
+}

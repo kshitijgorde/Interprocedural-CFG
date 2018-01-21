@@ -1,0 +1,1201 @@
+digraph "" {
+    "r0 := @this: DesignARoom.WebApplet"
+    "load.r r0"
+    "r0 := @this: DesignARoom.WebApplet"->"load.r r0";
+    "virtualinvoke <DesignARoom.WebApplet: void loadPrebuiltHash()>"
+    "load.r r0"->"virtualinvoke <DesignARoom.WebApplet: void loadPrebuiltHash()>";
+    "virtualinvoke <DesignARoom.WebApplet: void loadPrebuiltHash()>"->"load.r r0";
+    "virtualinvoke <DesignARoom.WebApplet: void constructTitles()>"
+    "load.r r0"->"virtualinvoke <DesignARoom.WebApplet: void constructTitles()>";
+    "virtualinvoke <DesignARoom.WebApplet: void constructTitles()>"->"load.r r0";
+    "virtualinvoke <DesignARoom.WebApplet: void constructwC()>"
+    "load.r r0"->"virtualinvoke <DesignARoom.WebApplet: void constructwC()>";
+    "virtualinvoke <DesignARoom.WebApplet: void constructwC()>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebCanvas wC>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: DesignARoom.WebCanvas wC>";
+    "push 1"
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebCanvas wC>"->"push 1";
+    "fieldput <DesignARoom.WebCanvas: boolean createNew>"
+    "push 1"->"fieldput <DesignARoom.WebCanvas: boolean createNew>";
+    "fieldput <DesignARoom.WebCanvas: boolean createNew>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: DesignARoom.WebCanvas wC>";
+    "push \"25\""
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebCanvas wC>"->"push \"25\"";
+    "push \"25\""->"push \"25\"";
+    "push 102"
+    "push \"25\""->"push 102";
+    "push 102"->"push 102";
+    "push \"\""
+    "push 102"->"push \"\"";
+    "virtualinvoke <DesignARoom.WebCanvas: void defineRoomSize(java.lang.String,java.lang.String,char,char,java.lang.String)>"
+    "push \"\""->"virtualinvoke <DesignARoom.WebCanvas: void defineRoomSize(java.lang.String,java.lang.String,char,char,java.lang.String)>";
+    "virtualinvoke <DesignARoom.WebCanvas: void defineRoomSize(java.lang.String,java.lang.String,char,char,java.lang.String)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmWidth>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField rmWidth>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmWidth>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmLength>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField rmLength>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmLength>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button rmButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button rmButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button rmButton>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnLabel>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnLabel>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnLabel>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnWidth>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnWidth>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnWidth>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnLength>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnLength>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnLength>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button fnButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button fnButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button fnButton>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice prebuilt>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice prebuilt>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice prebuilt>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button rButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button rButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button rButton>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.util.Vector compVector>";
+    "fieldget <DesignARoom.WebApplet: java.util.Vector compVector>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>"->"virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>";
+    "virtualinvoke <java.util.Vector: void addElement(java.lang.Object)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "new java.awt.Label"
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"new java.awt.Label";
+    "dup1.r"
+    "new java.awt.Label"->"dup1.r";
+    "push \"Current:\""
+    "dup1.r"->"push \"Current:\"";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"
+    "push \"Current:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "push 0"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 3"
+    "push 0"->"push 3";
+    "push 87"
+    "push 3"->"push 87";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmCurr>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmCurr>";
+    "push \"CREATE NEW\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmCurr>"->"push \"CREATE NEW\"";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"
+    "push \"CREATE NEW\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmCurr>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmCurr>"->"push 1";
+    "push 1"->"push 0";
+    "push 2"
+    "push 0"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 3";
+    "push 3"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"push 0";
+    "push 0"->"push 1";
+    "add.i"
+    "push 1"->"add.i";
+    "store.i i1"
+    "add.i"->"store.i i1";
+    "store.i i1"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"Name:\""
+    "dup1.r"->"push \"Name:\"";
+    "push \"Name:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "load.i i1"
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>"->"push 1";
+    "push 1"->"load.i i1";
+    "load.i i1"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i i1";
+    "store.i i1"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"Width:\""
+    "dup1.r"->"push \"Width:\"";
+    "push \"Width:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField rmWidth>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmWidth>"->"push 1";
+    "push 1"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 3";
+    "push 3"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>";
+    "push \"Feet\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>"->"push \"Feet\"";
+    "push \"Feet\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>";
+    "push \"Inches\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>"->"push \"Inches\"";
+    "push \"Inches\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>";
+    "push \"Meters\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>"->"push \"Meters\"";
+    "push \"Meters\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmWunit>"->"push 2";
+    "push 2"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i i1";
+    "store.i i1"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"Length:\""
+    "dup1.r"->"push \"Length:\"";
+    "push \"Length:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 7"
+    "push 0"->"push 7";
+    "push 7"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField rmLength>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmLength>"->"push 1";
+    "push 1"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 3";
+    "push 8"
+    "push 3"->"push 8";
+    "push 8"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>"->"push \"Feet\"";
+    "push \"Feet\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>"->"push \"Inches\"";
+    "push \"Inches\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>"->"push \"Meters\"";
+    "push \"Meters\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rmLunit>"->"push 2";
+    "push 2"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 7";
+    "push 7"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button rmButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button rmButton>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"push 3";
+    "push 3"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 67"
+    "push 2"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"Label:\""
+    "dup1.r"->"push \"Label:\"";
+    "push \"Label:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnLabel>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnLabel>"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i i1";
+    "store.i i1"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "dup1.r"->"push \"Width:\"";
+    "push \"Width:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnWidth>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnWidth>"->"push 1";
+    "push 1"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 3";
+    "push 3"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>"->"push \"Feet\"";
+    "push \"Feet\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>"->"push \"Inches\"";
+    "push \"Inches\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>"->"push \"Meters\"";
+    "push \"Meters\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>"->"push 2";
+    "push 2"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i i1";
+    "store.i i1"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "dup1.r"->"push \"Length:\"";
+    "push \"Length:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnLength>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnLength>"->"push 1";
+    "push 1"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 3";
+    "push 3"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>"->"push \"Feet\"";
+    "push \"Feet\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>"->"push \"Inches\"";
+    "push \"Inches\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>"->"push \"Meters\"";
+    "push \"Meters\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>"->"push 2";
+    "push 2"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i i1";
+    "store.i i1"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"Color:\""
+    "dup1.r"->"push \"Color:\"";
+    "push \"Color:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Black\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Black\"";
+    "push \"Black\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Brown\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Brown\"";
+    "push \"Brown\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Tan\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Tan\"";
+    "push \"Tan\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Red\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Red\"";
+    "push \"Red\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Orange\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Orange\"";
+    "push \"Orange\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Yellow\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Yellow\"";
+    "push \"Yellow\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Green\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Green\"";
+    "push \"Green\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Light Blue\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Light Blue\"";
+    "push \"Light Blue\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Blue\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Blue\"";
+    "push \"Blue\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "push \"Purple\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push \"Purple\"";
+    "push \"Purple\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"push 1";
+    "push 1"->"load.i i1";
+    "load.i i1"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i i1";
+    "store.i i1"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"Shape:\""
+    "dup1.r"->"push \"Shape:\"";
+    "push \"Shape:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 7";
+    "push 7"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>";
+    "push \"Rectangular\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>"->"push \"Rectangular\"";
+    "push \"Rectangular\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>";
+    "push \"Oval\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>"->"push \"Oval\"";
+    "push \"Oval\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>";
+    "push \"Open Door\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>"->"push \"Open Door\"";
+    "push \"Open Door\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>";
+    "push \"Window\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>"->"push \"Window\"";
+    "push \"Window\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>"->"push 1";
+    "push 1"->"load.i i1";
+    "load.i i1"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 7";
+    "push 7"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button fnButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button fnButton>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"store.i i1";
+    "store.i i1"->"load.i i1";
+    "load.i i1"->"push 3";
+    "push 3"->"push 1";
+    "push 1"->"push 0";
+    "push 12"
+    "push 0"->"push 12";
+    "push 12"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button clearButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button clearButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button clearButton>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 15"
+    "push 1"->"push 15";
+    "push 15"->"push 0";
+    "push 0"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button copyButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button copyButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button copyButton>"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 15";
+    "push 15"->"push 0";
+    "push 0"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button deleteButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button deleteButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button deleteButton>"->"push 2";
+    "push 2"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>"->"push 0";
+    "push 0"->"load.i i1";
+    "load.i i1"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"push 3";
+    "push 3"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"Pre-Built:\""
+    "dup1.r"->"push \"Pre-Built:\"";
+    "push \"Pre-Built:\""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice prebuilt>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice prebuilt>"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 78"
+    "push 0"->"push 78";
+    "push 78"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button rButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button rButton>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 3";
+    "push 3"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>";
+    "push \"Clockwise\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>"->"push \"Clockwise\"";
+    "push \"Clockwise\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>";
+    "push \"Counter\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>"->"push \"Counter\"";
+    "push \"Counter\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 2";
+    "push 2"->"push 0";
+    "push 0"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "push \"1 Degree\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"push \"1 Degree\"";
+    "push \"1 Degree\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "push \"45 Degrees\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"push \"45 Degrees\"";
+    "push \"45 Degrees\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "push \"90 Degrees\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"push \"90 Degrees\"";
+    "push \"90 Degrees\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "push \"Continuous\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"push \"Continuous\"";
+    "push \"Continuous\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "push \"RESET\""
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"push \"RESET\"";
+    "push \"RESET\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"push 2";
+    "virtualinvoke <java.awt.Choice: void select(int)>"
+    "push 2"->"virtualinvoke <java.awt.Choice: void select(int)>";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtC>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtC>";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtC>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: DesignARoom.WebCanvas wC>";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebCanvas wC>"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 5"
+    "push 0"->"push 5";
+    "push 5"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button storeButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button storeButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button storeButton>"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 5";
+    "push 5"->"push 87";
+    "push 87"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button clrstorButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button clrstorButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button clrstorButton>"->"push 1";
+    "push 1"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 5";
+    "push 69"
+    "push 5"->"push 69";
+    "push 69"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button gridButton>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button gridButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button gridButton>"->"push 0";
+    "push 0"->"push 3";
+    "push 3"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>";
+    "staticget <java.awt.Color: java.awt.Color gray>"
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>"->"staticget <java.awt.Color: java.awt.Color gray>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color gray>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel updateP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Color offWhite2>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>";
+    "staticget <java.awt.Color: java.awt.Color black>"
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>"->"staticget <java.awt.Color: java.awt.Color black>";
+    "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"->"staticget <java.awt.Color: java.awt.Color black>";
+    "staticget <java.awt.Color: java.awt.Color black>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>"->"staticget <java.awt.Color: java.awt.Color gray>";
+    "staticget <java.awt.Color: java.awt.Color gray>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>"->"staticget <java.awt.Color: java.awt.Color gray>";
+    "staticget <java.awt.Color: java.awt.Color gray>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCroom>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCroom>";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCroom>"->"staticget <java.awt.Color: java.awt.Color gray>";
+    "virtualinvoke <java.awt.Color: java.awt.Color brighter()>"
+    "staticget <java.awt.Color: java.awt.Color gray>"->"virtualinvoke <java.awt.Color: java.awt.Color brighter()>";
+    "virtualinvoke <java.awt.Color: java.awt.Color brighter()>"->"virtualinvoke <java.awt.Color: java.awt.Color brighter()>";
+    "fieldput <DesignARoom.WebTitleCanvas: java.awt.Color c>"
+    "virtualinvoke <java.awt.Color: java.awt.Color brighter()>"->"fieldput <DesignARoom.WebTitleCanvas: java.awt.Color c>";
+    "fieldput <DesignARoom.WebTitleCanvas: java.awt.Color c>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCroom>";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCroom>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 4"
+    "push 0"->"push 4";
+    "push 4"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomP>"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCfurn>"
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCfurn>";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCfurn>"->"staticget <java.awt.Color: java.awt.Color gray>";
+    "staticget <java.awt.Color: java.awt.Color gray>"->"virtualinvoke <java.awt.Color: java.awt.Color brighter()>";
+    "virtualinvoke <java.awt.Color: java.awt.Color brighter()>"->"virtualinvoke <java.awt.Color: java.awt.Color brighter()>";
+    "virtualinvoke <java.awt.Color: java.awt.Color brighter()>"->"fieldput <DesignARoom.WebTitleCanvas: java.awt.Color c>";
+    "fieldput <DesignARoom.WebTitleCanvas: java.awt.Color c>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCfurn>";
+    "fieldget <DesignARoom.WebApplet: DesignARoom.WebTitleCanvas wtCfurn>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 4";
+    "push 4"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel prebuiltP>"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 4";
+    "push 4"->"push 78";
+    "push 78"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel furnP>"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 67";
+    "push 67"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotateP>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 78";
+    "push 78"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "virtualinvoke <java.awt.Component: void repaint()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: void repaint()>";
+    "virtualinvoke <java.awt.Component: void repaint()>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>";
+    "fieldget <DesignARoom.WebApplet: java.awt.GridBagLayout gbl>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel roomPP>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 20"
+    "push 1"->"push 20";
+    "push 20"->"push 8";
+    "push 8"->"push 78";
+    "push 78"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel controlsP>"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 20";
+    "push 6"
+    "push 20"->"push 6";
+    "push 6"->"push 78";
+    "push 78"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel rotatePP>"->"push 0";
+    "push 0"->"push 2";
+    "push 2"->"push 1";
+    "push 1"->"push 1";
+    "push 1"->"push 20";
+    "push 20"->"push 0";
+    "push 0"->"push 78";
+    "push 78"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Panel wCP>"->"push 1";
+    "push 1"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"push 3";
+    "push 3"->"push 0";
+    "push 0"->"push 0";
+    "push 83"
+    "push 0"->"push 83";
+    "push 83"->"virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>";
+    "virtualinvoke <DesignARoom.WebApplet: void addComponent(java.awt.Panel,java.lang.Object,int,int,int,int,int,int,char)>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnLabel>";
+    "virtualinvoke <java.awt.Component: void disable()>"
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnLabel>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnWidth>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnWidth>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField fnLength>";
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField fnLength>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnWunit>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnLunit>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnColor>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice fnShape>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button fnButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button fnButton>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice prebuilt>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice prebuilt>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rDir>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Choice rAmt>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button rButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button rButton>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button storeButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button storeButton>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button gridButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button gridButton>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button clrstorButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button clrstorButton>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button clearButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button clearButton>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button copyButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button copyButton>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.Button deleteButton>";
+    "fieldget <DesignARoom.WebApplet: java.awt.Button deleteButton>"->"virtualinvoke <java.awt.Component: void disable()>";
+    "virtualinvoke <java.awt.Component: void disable()>"->"load.r r0";
+    "load.r r0"->"fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>";
+    "virtualinvoke <java.awt.Component: void requestFocus()>"
+    "fieldget <DesignARoom.WebApplet: java.awt.TextField rmName>"->"virtualinvoke <java.awt.Component: void requestFocus()>";
+    "virtualinvoke <java.awt.Component: void requestFocus()>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "virtualinvoke <DesignARoom.WebApplet: void decideAbles(int)>"
+    "push 0"->"virtualinvoke <DesignARoom.WebApplet: void decideAbles(int)>";
+    "virtualinvoke <DesignARoom.WebApplet: void decideAbles(int)>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "virtualinvoke <DesignARoom.WebApplet: void addToOrigVectors(int)>"
+    "push 0"->"virtualinvoke <DesignARoom.WebApplet: void addToOrigVectors(int)>";
+    "return"
+    "virtualinvoke <DesignARoom.WebApplet: void addToOrigVectors(int)>"->"return";
+}

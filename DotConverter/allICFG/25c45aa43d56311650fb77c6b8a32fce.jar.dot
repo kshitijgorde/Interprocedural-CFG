@@ -1,0 +1,398 @@
+digraph "" {
+    "r0 := @this: uk.co.cjswebdesign.multitab.MultiTabJApplet"
+    "new uk.co.cjswebdesign.multitab.MultiTabJApplet"
+    "r0 := @this: uk.co.cjswebdesign.multitab.MultiTabJApplet"->"new uk.co.cjswebdesign.multitab.MultiTabJApplet";
+    "store.r $r58"
+    "new uk.co.cjswebdesign.multitab.MultiTabJApplet"->"store.r $r58";
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>"
+    "store.r $r58"->"staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>";
+    "ifeq staticget <java.lang.System: java.io.PrintStream out>"
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>"->"ifeq staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.util.logging.Logger logger>"
+    "ifeq staticget <java.lang.System: java.io.PrintStream out>"->"staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.util.logging.Logger logger>";
+    "load.r $r58"
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.util.logging.Logger logger>"->"load.r $r58";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet$MultitabException: java.lang.String getMessage()>"
+    "load.r $r58"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet$MultitabException: java.lang.String getMessage()>";
+    "virtualinvoke <java.util.logging.Logger: void severe(java.lang.String)>"
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet$MultitabException: java.lang.String getMessage()>"->"virtualinvoke <java.util.logging.Logger: void severe(java.lang.String)>";
+    "staticget <java.lang.System: java.io.PrintStream out>"
+    "virtualinvoke <java.util.logging.Logger: void severe(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "load.r r0"
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>"
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>";
+    "ifeq return"
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>"->"ifeq return";
+    "ifeq return"->"load.r r0";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>"
+    "load.r r0"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>";
+    "new java.lang.StringBuffer"
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"store.r $r58";
+    "store.r $r58"->"load.r $r58";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"
+    "load.r $r58"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r $r58";
+    "push \"line.separator\""
+    "load.r $r58"->"push \"line.separator\"";
+    "push \"\n\""
+    "push \"line.separator\""->"push \"\n\"";
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>"
+    "push \"\n\""->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "pop"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"pop";
+    "pop"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r $r58";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"
+    "load.r $r58"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.String)>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void print(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "virtualinvoke <java.io.PrintStream: void println()>"
+    "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println()>";
+    "virtualinvoke <java.io.PrintStream: void println()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>"
+    "load.r r0"->"virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>";
+    "goto return"
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>"->"goto return";
+    "return"
+    "goto return"->"return";
+    "virtualinvoke <java.util.logging.Logger: void severe(java.lang.String)>"->"store.r $r58";
+    "store.r $r58"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>";
+    "ifeq load.r $r58"
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>"->"ifeq load.r $r58";
+    "ifeq load.r $r58"->"load.r r0";
+    "load.r r0"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>"->"new java.lang.StringBuffer";
+    "store.r $r68"
+    "new java.lang.StringBuffer"->"store.r $r68";
+    "load.r $r68"
+    "store.r $r68"->"load.r $r68";
+    "load.r $r68"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r $r68";
+    "load.r $r68"->"push \"line.separator\"";
+    "push \"line.separator\""->"push \"\n\"";
+    "push \"\n\""->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>";
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"pop";
+    "pop"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r $r68";
+    "load.r $r68"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void print(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println()>";
+    "virtualinvoke <java.io.PrintStream: void println()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>"->"load.r $r58";
+    "athrow"
+    "load.r $r58"->"athrow";
+    "new uk.co.cjswebdesign.multitab.MultiTabJApplet"->"store.r $r58";
+    "store.r $r58"->"staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>";
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>"->"ifeq staticget <java.lang.System: java.io.PrintStream out>";
+    "ifeq staticget <java.lang.System: java.io.PrintStream out>"->"staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.util.logging.Logger logger>";
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.util.logging.Logger logger>"->"load.r $r58";
+    "virtualinvoke <java.lang.Exception: java.lang.String getMessage()>"
+    "load.r $r58"->"virtualinvoke <java.lang.Exception: java.lang.String getMessage()>";
+    "virtualinvoke <java.lang.Exception: java.lang.String getMessage()>"->"virtualinvoke <java.util.logging.Logger: void severe(java.lang.String)>";
+    "virtualinvoke <java.util.logging.Logger: void severe(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>";
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>"->"ifeq return";
+    "ifeq return"->"load.r r0";
+    "load.r r0"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"store.r $r58";
+    "store.r $r58"->"load.r $r58";
+    "load.r $r58"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r $r58";
+    "load.r $r58"->"push \"line.separator\"";
+    "push \"line.separator\""->"push \"\n\"";
+    "push \"\n\""->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>";
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"pop";
+    "pop"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r $r58";
+    "load.r $r58"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void print(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println()>";
+    "virtualinvoke <java.io.PrintStream: void println()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>"->"goto return";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void <init>()>"
+    "new uk.co.cjswebdesign.multitab.MultiTabJApplet"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void <init>()>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void <init>()>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.applet.AppletContext getAppletContext()>"
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.applet.AppletContext getAppletContext()>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.applet.AppletContext context>"
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.applet.AppletContext getAppletContext()>"->"fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.applet.AppletContext context>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.applet.AppletContext context>"->"load.r r0";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.awt.Container getContentPane()>"
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.awt.Container getContentPane()>";
+    "new java.awt.BorderLayout"
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.awt.Container getContentPane()>"->"new java.awt.BorderLayout";
+    "dup1.r"
+    "new java.awt.BorderLayout"->"dup1.r";
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "push \"Initialising parameters...\""
+    "load.r r0"->"push \"Initialising parameters...\"";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void logStatus(java.lang.String)>"
+    "push \"Initialising parameters...\""->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void logStatus(java.lang.String)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void logStatus(java.lang.String)>"->"load.r r0";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void initParameters()>"
+    "load.r r0"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void initParameters()>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void initParameters()>"->"load.r r0";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setDegugging()>"
+    "load.r r0"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setDegugging()>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setDegugging()>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL getDocumentBase()>"
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL getDocumentBase()>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL doc>"
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL getDocumentBase()>"->"fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL doc>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL doc>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL doc>"
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL doc>";
+    "virtualinvoke <java.net.URL: java.lang.String toString()>"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.net.URL doc>"->"virtualinvoke <java.net.URL: java.lang.String toString()>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String root>"
+    "virtualinvoke <java.net.URL: java.lang.String toString()>"->"fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String root>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String root>"->"load.r r0";
+    "load.r r0"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r r0";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String root>"
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String root>";
+    "push 0"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String root>"->"push 0";
+    "push 0"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String root>";
+    "push \"/\""
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String root>"->"push \"/\"";
+    "virtualinvoke <java.lang.String: int lastIndexOf(java.lang.String)>"
+    "push \"/\""->"virtualinvoke <java.lang.String: int lastIndexOf(java.lang.String)>";
+    "push 1"
+    "virtualinvoke <java.lang.String: int lastIndexOf(java.lang.String)>"->"push 1";
+    "add.i"
+    "push 1"->"add.i";
+    "virtualinvoke <java.lang.String: java.lang.String substring(int,int)>"
+    "add.i"->"virtualinvoke <java.lang.String: java.lang.String substring(int,int)>";
+    "virtualinvoke <java.lang.String: java.lang.String substring(int,int)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "push \"pages.html\""
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"push \"pages.html\"";
+    "push \"pages.html\""->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String contentURL>"
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String contentURL>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String contentURL>"->"load.r r0";
+    "push \"Reading file...\""
+    "load.r r0"->"push \"Reading file...\"";
+    "push \"Reading file...\""->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void logStatus(java.lang.String)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void logStatus(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String contentURL>"
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String contentURL>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] readFile(java.lang.String)>"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String contentURL>"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] readFile(java.lang.String)>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] htmlSections>"
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] readFile(java.lang.String)>"->"fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] htmlSections>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] htmlSections>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] htmlSections>"
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] htmlSections>";
+    "arraylength"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] htmlSections>"->"arraylength";
+    "newarray"
+    "arraylength"->"newarray";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>"
+    "newarray"->"fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>"->"push 0";
+    "store.i $r58"
+    "push 0"->"store.i $r58";
+    "goto load.i $r58"
+    "store.i $r58"->"goto load.i $r58";
+    "load.i $r58"
+    "goto load.i $r58"->"load.i $r58";
+    "load.i $r58"->"load.r r0";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>"
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>"->"arraylength";
+    "ifcmplt.i load.r r0"
+    "arraylength"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "push \"Creating Tab Panel...\""
+    "load.r r0"->"push \"Creating Tab Panel...\"";
+    "push \"Creating Tab Panel...\""->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void logStatus(java.lang.String)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void logStatus(java.lang.String)>"->"load.r r0";
+    "new uk.co.cjswebdesign.multitab.MultiAppletTabPanel"
+    "load.r r0"->"new uk.co.cjswebdesign.multitab.MultiAppletTabPanel";
+    "new uk.co.cjswebdesign.multitab.MultiAppletTabPanel"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void <init>(uk.co.cjswebdesign.multitab.MultitabEditorPane[])>"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void <init>(uk.co.cjswebdesign.multitab.MultitabEditorPane[])>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>"
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void <init>(uk.co.cjswebdesign.multitab.MultitabEditorPane[])>"->"fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>"->"load.r r0";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>"
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>"->"load.r r0";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>"
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>";
+    "push 3"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>"->"push 3";
+    "arrayread.r"
+    "push 3"->"arrayread.r";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setAppletTabPlacement(java.lang.String)>"
+    "arrayread.r"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setAppletTabPlacement(java.lang.String)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setAppletTabPlacement(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>";
+    "push 2"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>"->"push 2";
+    "push 2"->"arrayread.r";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabPolicy(java.lang.String)>"
+    "arrayread.r"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabPolicy(java.lang.String)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabPolicy(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>";
+    "push 5"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>"->"push 5";
+    "push 5"->"arrayread.r";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabForegroundColor(java.lang.String)>"
+    "arrayread.r"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabForegroundColor(java.lang.String)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabForegroundColor(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>";
+    "push 4"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>"->"push 4";
+    "push 4"->"arrayread.r";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabBackgroundColor(java.lang.String)>"
+    "arrayread.r"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabBackgroundColor(java.lang.String)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiAppletTabPanel: void setTabBackgroundColor(java.lang.String)>"->"load.r r0";
+    "new javax.swing.JPanel"
+    "load.r r0"->"new javax.swing.JPanel";
+    "new javax.swing.JPanel"->"dup1.r";
+    "dup1.r"->"new java.awt.BorderLayout";
+    "new java.awt.BorderLayout"->"dup1.r";
+    "dup1.r"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+    "specialinvoke <javax.swing.JPanel: void <init>(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"->"specialinvoke <javax.swing.JPanel: void <init>(java.awt.LayoutManager)>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>"
+    "specialinvoke <javax.swing.JPanel: void <init>(java.awt.LayoutManager)>"->"fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>";
+    "fieldput <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>"->"load.r r0";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>"
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>";
+    "push 6"
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>"->"push 6";
+    "push 6"->"arrayread.r";
+    "staticinvoke <java.awt.Color: java.awt.Color decode(java.lang.String)>"
+    "arrayread.r"->"staticinvoke <java.awt.Color: java.awt.Color decode(java.lang.String)>";
+    "virtualinvoke <javax.swing.JPanel: void setBackground(java.awt.Color)>"
+    "staticinvoke <java.awt.Color: java.awt.Color decode(java.lang.String)>"->"virtualinvoke <javax.swing.JPanel: void setBackground(java.awt.Color)>";
+    "virtualinvoke <javax.swing.JPanel: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] parameters>"->"push 6";
+    "push 6"->"arrayread.r";
+    "arrayread.r"->"staticinvoke <java.awt.Color: java.awt.Color decode(java.lang.String)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setBackground(java.awt.Color)>"
+    "staticinvoke <java.awt.Color: java.awt.Color decode(java.lang.String)>"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setBackground(java.awt.Color)>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>";
+    "push \"Center\""
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultiAppletTabPanel tabpanel>"->"push \"Center\"";
+    "virtualinvoke <javax.swing.JPanel: void add(java.awt.Component,java.lang.Object)>"
+    "push \"Center\""->"virtualinvoke <javax.swing.JPanel: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <javax.swing.JPanel: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.awt.Container getContentPane()>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.awt.Container getContentPane()>"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: javax.swing.JPanel mainPanel>"->"push \"Center\"";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"
+    "push \"Center\""->"virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>";
+    "virtualinvoke <java.awt.Container: void add(java.awt.Component,java.lang.Object)>"->"load.r r0";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setTitleBorder()>"
+    "load.r r0"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setTitleBorder()>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void setTitleBorder()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String getAppletInfo()>"->"virtualinvoke <java.io.PrintStream: void println(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void println(java.lang.String)>"->"staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>";
+    "staticget <uk.co.cjswebdesign.multitab.MultiTabJApplet: boolean debug>"->"ifeq return";
+    "ifeq return"->"load.r r0";
+    "load.r r0"->"specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultiTabJApplet: void printParameterInfo()>"->"new java.lang.StringBuffer";
+    "new java.lang.StringBuffer"->"store.r $r58";
+    "store.r $r58"->"load.r $r58";
+    "load.r $r58"->"specialinvoke <java.lang.StringBuffer: void <init>()>";
+    "specialinvoke <java.lang.StringBuffer: void <init>()>"->"load.r $r58";
+    "load.r $r58"->"push \"line.separator\"";
+    "push \"line.separator\""->"push \"\n\"";
+    "push \"\n\""->"staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>";
+    "staticinvoke <java.lang.System: java.lang.String getProperty(java.lang.String,java.lang.String)>"->"virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>"->"pop";
+    "pop"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r $r58";
+    "load.r $r58"->"virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>";
+    "virtualinvoke <java.lang.StringBuffer: java.lang.String toString()>"->"virtualinvoke <java.io.PrintStream: void print(java.lang.String)>";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.String)>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"virtualinvoke <java.io.PrintStream: void println()>";
+    "virtualinvoke <java.io.PrintStream: void println()>"->"staticget <java.lang.System: java.io.PrintStream out>";
+    "staticget <java.lang.System: java.io.PrintStream out>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>";
+    "virtualinvoke <java.io.PrintStream: void print(java.lang.Object)>"->"goto return";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>"->"load.i $r58";
+    "new uk.co.cjswebdesign.multitab.MultitabEditorPane"
+    "load.i $r58"->"new uk.co.cjswebdesign.multitab.MultitabEditorPane";
+    "new uk.co.cjswebdesign.multitab.MultitabEditorPane"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] htmlSections>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: java.lang.String[] htmlSections>"->"load.i $r58";
+    "load.i $r58"->"arrayread.r";
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultitabEditorPane: void <init>(java.lang.String)>"
+    "arrayread.r"->"specialinvoke <uk.co.cjswebdesign.multitab.MultitabEditorPane: void <init>(java.lang.String)>";
+    "arraywrite.r"
+    "specialinvoke <uk.co.cjswebdesign.multitab.MultitabEditorPane: void <init>(java.lang.String)>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>";
+    "fieldget <uk.co.cjswebdesign.multitab.MultiTabJApplet: uk.co.cjswebdesign.multitab.MultitabEditorPane[] pages>"->"load.i $r58";
+    "load.i $r58"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultitabEditorPane: void addHyperlinkListener(javax.swing.event.HyperlinkListener)>"
+    "load.r r0"->"virtualinvoke <uk.co.cjswebdesign.multitab.MultitabEditorPane: void addHyperlinkListener(javax.swing.event.HyperlinkListener)>";
+    "inc.i $r58 1"
+    "virtualinvoke <uk.co.cjswebdesign.multitab.MultitabEditorPane: void addHyperlinkListener(javax.swing.event.HyperlinkListener)>"->"inc.i $r58 1";
+}

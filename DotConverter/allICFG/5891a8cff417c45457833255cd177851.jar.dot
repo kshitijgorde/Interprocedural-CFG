@@ -1,0 +1,493 @@
+digraph "" {
+    "r0 := @this: br.org.obm.logotipo.applets.LogotipoEditor"
+    "load.r r0"
+    "r0 := @this: br.org.obm.logotipo.applets.LogotipoEditor"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int hlogo>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int hlogo>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int hlogo>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int vlogo>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int vlogo>";
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image createImage(int,int)>"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int vlogo>"->"virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image createImage(int,int)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image offscreenImg>"
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image createImage(int,int)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image offscreenImg>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image offscreenImg>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image offscreenImg>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image offscreenImg>";
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Image offscreenImg>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics offscreenG>"
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics offscreenG>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics offscreenG>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics getGraphics()>"
+    "load.r r0"->"virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics getGraphics()>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics myG>"
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics getGraphics()>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics myG>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Graphics myG>"->"load.r r0";
+    "staticget <java.awt.Color: java.awt.Color white>"
+    "load.r r0"->"staticget <java.awt.Color: java.awt.Color white>";
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void setBackground(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void setBackground(java.awt.Color)>";
+    "push 0"
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void setBackground(java.awt.Color)>"->"push 0";
+    "store.i i7"
+    "push 0"->"store.i i7";
+    "load.i i7"
+    "store.i i7"->"load.i i7";
+    "push 8"
+    "load.i i7"->"push 8";
+    "ifcmpge.i load.r r0"
+    "push 8"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] c>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] c>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] c>"->"load.i i7";
+    "new br.org.obm.logotipo.Circle"
+    "load.i i7"->"new br.org.obm.logotipo.Circle";
+    "dup1.r"
+    "new br.org.obm.logotipo.Circle"->"dup1.r";
+    "specialinvoke <br.org.obm.logotipo.Circle: void <init>()>"
+    "dup1.r"->"specialinvoke <br.org.obm.logotipo.Circle: void <init>()>";
+    "arraywrite.r"
+    "specialinvoke <br.org.obm.logotipo.Circle: void <init>()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] cinv>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] cinv>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] cinv>"->"load.i i7";
+    "load.i i7"->"new br.org.obm.logotipo.Circle";
+    "new br.org.obm.logotipo.Circle"->"dup1.r";
+    "dup1.r"->"specialinvoke <br.org.obm.logotipo.Circle: void <init>()>";
+    "specialinvoke <br.org.obm.logotipo.Circle: void <init>()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] chome>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] chome>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] chome>"->"load.i i7";
+    "load.i i7"->"new br.org.obm.logotipo.Circle";
+    "new br.org.obm.logotipo.Circle"->"dup1.r";
+    "dup1.r"->"specialinvoke <br.org.obm.logotipo.Circle: void <init>()>";
+    "specialinvoke <br.org.obm.logotipo.Circle: void <init>()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] chomeinv>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] chomeinv>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle[] chomeinv>"->"load.i i7";
+    "load.i i7"->"new br.org.obm.logotipo.Circle";
+    "new br.org.obm.logotipo.Circle"->"dup1.r";
+    "dup1.r"->"specialinvoke <br.org.obm.logotipo.Circle: void <init>()>";
+    "specialinvoke <br.org.obm.logotipo.Circle: void <init>()>"->"arraywrite.r";
+    "inc.i i7 1"
+    "arraywrite.r"->"inc.i i7 1";
+    "goto load.i i7"
+    "inc.i i7 1"->"goto load.i i7";
+    "ifcmpge.i load.r r0"->"load.r r0";
+    "new java.awt.Color"
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 255"
+    "dup1.r"->"push 255";
+    "push 255"->"push 255";
+    "push 255"->"push 255";
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"
+    "push 255"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cfundo>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cfundo>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cfundo>"->"load.r r0";
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cpreto>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cpreto>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cpreto>"->"load.r r0";
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push 153"
+    "push 0"->"push 153";
+    "push 153"->"push 255";
+    "push 255"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cazul>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cazul>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cazul>"->"load.r r0";
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 204"
+    "push 255"->"push 204";
+    "push 204"->"push 0";
+    "push 0"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color camarelo>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color camarelo>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color camarelo>"->"load.r r0";
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 0";
+    "push 0"->"push 153";
+    "push 51"
+    "push 153"->"push 51";
+    "push 51"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cverde>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cverde>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cverde>"->"load.r r0";
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"push 255";
+    "push 255"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cvermelho>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cvermelho>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cvermelho>"->"load.r r0";
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "push 201"
+    "dup1.r"->"push 201";
+    "push 201"->"push 201";
+    "push 201"->"push 201";
+    "push 201"->"specialinvoke <java.awt.Color: void <init>(int,int,int)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color ccinza>"
+    "specialinvoke <java.awt.Color: void <init>(int,int,int)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color ccinza>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color ccinza>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>"->"push 0";
+    "push 0"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cpreto>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cpreto>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cpreto>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>";
+    "push 1"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>"->"push 1";
+    "push 1"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cazul>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cazul>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cazul>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>";
+    "push 2"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>"->"push 2";
+    "push 2"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color camarelo>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color camarelo>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color camarelo>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>";
+    "push 3"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>"->"push 3";
+    "push 3"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cverde>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cverde>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cverde>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>";
+    "push 4"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color[] colors>"->"push 4";
+    "push 4"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cvermelho>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cvermelho>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Color cvermelho>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "new java.awt.BorderLayout"
+    "load.r r0"->"new java.awt.BorderLayout";
+    "new java.awt.BorderLayout"->"dup1.r";
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "push \"North\""
+    "load.r r0"->"push \"North\"";
+    "push \"North\""->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>";
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Component add(java.lang.String,java.awt.Component)>"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>"->"virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "pop"
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new java.awt.Button"
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"parar\""
+    "dup1.r"->"push \"parar\"";
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"
+    "push \"parar\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button b>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button b>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button b>"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"maior\""
+    "dup1.r"->"push \"maior\"";
+    "push \"maior\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_in>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_in>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_in>"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"menor\""
+    "dup1.r"->"push \"menor\"";
+    "push \"menor\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_out>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_out>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_out>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button b>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button b>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button b>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_in>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_in>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_in>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_out>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_out>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button lzoom_out>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "push \"South\""
+    "load.r r0"->"push \"South\"";
+    "push \"South\""->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel lcontrolp>"->"virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"esquerda\""
+    "dup1.r"->"push \"esquerda\"";
+    "push \"esquerda\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button menos>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button menos>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button menos>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>"->"push \"North\"";
+    "push \"North\""->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button menos>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button menos>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button menos>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"direita\""
+    "dup1.r"->"push \"direita\"";
+    "push \"direita\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button mais>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button mais>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button mais>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>"->"push \"North\"";
+    "push \"North\""->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button mais>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button mais>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button mais>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"ampliar\""
+    "dup1.r"->"push \"ampliar\"";
+    "push \"ampliar\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_in>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_in>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_in>"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"reduzir\""
+    "dup1.r"->"push \"reduzir\"";
+    "push \"reduzir\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_out>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_out>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_out>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>"->"push \"North\"";
+    "push \"North\""->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_in>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_in>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_in>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>"->"push \"North\"";
+    "push \"North\""->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_out>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_out>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Button zoom_out>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>";
+    "push \"3\""
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"->"push \"3\"";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"
+    "push \"3\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>";
+    "push \"4\""
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"->"push \"4\"";
+    "push \"4\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>";
+    "push \"5\""
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"->"push \"5\"";
+    "push \"5\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>";
+    "push \"6\""
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"->"push \"6\"";
+    "push \"6\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>";
+    "push \"7\""
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"->"push \"7\"";
+    "push \"7\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>";
+    "push \"8\""
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"->"push \"8\"";
+    "push \"8\""->"virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>";
+    "virtualinvoke <java.awt.Choice: void addItem(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"->"push 2";
+    "virtualinvoke <java.awt.Choice: void select(int)>"
+    "push 2"->"virtualinvoke <java.awt.Choice: void select(int)>";
+    "virtualinvoke <java.awt.Choice: void select(int)>"->"load.r r0";
+    "new java.awt.Label"
+    "load.r r0"->"new java.awt.Label";
+    "new java.awt.Label"->"dup1.r";
+    "push \"N\u00famero de c\u00edrculos: \""
+    "dup1.r"->"push \"N\u00famero de c\u00edrculos: \"";
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"
+    "push \"N\u00famero de c\u00edrculos: \""->"specialinvoke <java.awt.Label: void <init>(java.lang.String)>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Label numcirc>"
+    "specialinvoke <java.awt.Label: void <init>(java.lang.String)>"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Label numcirc>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Label numcirc>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Label numcirc>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Label numcirc>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Label numcirc>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Panel topp>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: java.awt.Choice quantos>"->"virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Panel: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "push 2.0"
+    "load.r r0"->"push 2.0";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double R>"
+    "push 2.0"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double R>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double R>"->"load.r r0";
+    "push -8.0"
+    "load.r r0"->"push -8.0";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double a>"
+    "push -8.0"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double a>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double a>"->"load.r r0";
+    "push 0.0"
+    "load.r r0"->"push 0.0";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double teta>"
+    "push 0.0"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double teta>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double teta>"->"load.r r0";
+    "push 0.05"
+    "load.r r0"->"push 0.05";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double dteta>"
+    "push 0.05"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double dteta>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double dteta>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle cbase>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle cbase>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle cbase>"->"push 0.0";
+    "virtualinvoke <br.org.obm.logotipo.Circle: void setX(double)>"
+    "push 0.0"->"virtualinvoke <br.org.obm.logotipo.Circle: void setX(double)>";
+    "virtualinvoke <br.org.obm.logotipo.Circle: void setX(double)>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle cbase>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle cbase>"->"push 0.0";
+    "virtualinvoke <br.org.obm.logotipo.Circle: void setY(double)>"
+    "push 0.0"->"virtualinvoke <br.org.obm.logotipo.Circle: void setY(double)>";
+    "virtualinvoke <br.org.obm.logotipo.Circle: void setY(double)>"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle cbase>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: br.org.obm.logotipo.Circle cbase>"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: double R>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: double R>";
+    "virtualinvoke <br.org.obm.logotipo.Circle: void setR(double)>"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: double R>"->"virtualinvoke <br.org.obm.logotipo.Circle: void setR(double)>";
+    "virtualinvoke <br.org.obm.logotipo.Circle: void setR(double)>"->"load.r r0";
+    "push 90.0"
+    "load.r r0"->"push 90.0";
+    "push 90.0"->"push 2.0";
+    "push 2.0"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: double R>";
+    "mul.d"
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: double R>"->"mul.d";
+    "div.d"
+    "mul.d"->"div.d";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double scale0>"
+    "div.d"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double scale0>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double scale0>"->"load.r r0";
+    "load.r r0"->"push 90.0";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double xorig0>"
+    "push 90.0"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double xorig0>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double xorig0>"->"load.r r0";
+    "push 40"
+    "load.r r0"->"push 40";
+    "push 40"->"load.r r0";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int vdraw>"
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int vdraw>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int vdraw>"->"push 2";
+    "div.i"
+    "push 2"->"div.i";
+    "add.i"
+    "div.i"->"add.i";
+    "i2d"
+    "add.i"->"i2d";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double yorig0>"
+    "i2d"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double yorig0>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double yorig0>"->"load.r r0";
+    "push 28.0"
+    "load.r r0"->"push 28.0";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double scale>"
+    "push 28.0"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double scale>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double scale>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int hlogo>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int hlogo>"->"i2d";
+    "i2d"->"push 2.0";
+    "push 2.0"->"div.d";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double xorig>"
+    "div.d"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double xorig>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double xorig>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int hlogo>";
+    "fieldget <br.org.obm.logotipo.applets.LogotipoEditor: int hlogo>"->"i2d";
+    "i2d"->"push 2.0";
+    "push 2.0"->"div.d";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double yorig>"
+    "div.d"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double yorig>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: double yorig>"->"load.r r0";
+    "load.r r0"->"push 1";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: boolean rodando>"
+    "push 1"->"fieldput <br.org.obm.logotipo.applets.LogotipoEditor: boolean rodando>";
+    "fieldput <br.org.obm.logotipo.applets.LogotipoEditor: boolean rodando>"->"load.r r0";
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void initgeometry()>"
+    "load.r r0"->"virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void initgeometry()>";
+    "return"
+    "virtualinvoke <br.org.obm.logotipo.applets.LogotipoEditor: void initgeometry()>"->"return";
+}

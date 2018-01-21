@@ -1,0 +1,147 @@
+digraph "" {
+    "r0 := @this: RMS_HR2"
+    "load.r r0"
+    "r0 := @this: RMS_HR2"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "push \"author\""
+    "load.r r0"->"push \"author\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"author\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "fieldput <RMS_HR2: java.lang.String temp>"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"fieldput <RMS_HR2: java.lang.String temp>";
+    "fieldput <RMS_HR2: java.lang.String temp>"->"load.r r0";
+    "fieldget <RMS_HR2: java.lang.String temp>"
+    "load.r r0"->"fieldget <RMS_HR2: java.lang.String temp>";
+    "ifnull load.r r0"
+    "fieldget <RMS_HR2: java.lang.String temp>"->"ifnull load.r r0";
+    "ifnull load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: java.lang.String temp>";
+    "fieldput <RMS_HR2: java.lang.String author>"
+    "fieldget <RMS_HR2: java.lang.String temp>"->"fieldput <RMS_HR2: java.lang.String author>";
+    "fieldput <RMS_HR2: java.lang.String author>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <RMS_HR2: java.awt.Color bgcolor>"
+    "load.r r0"->"fieldget <RMS_HR2: java.awt.Color bgcolor>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "fieldget <RMS_HR2: java.awt.Color bgcolor>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"
+    "load.r r0"->"virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>";
+    "dup1.r"
+    "virtualinvoke <java.awt.Component: java.awt.Dimension getSize()>"->"dup1.r";
+    "fieldget <java.awt.Dimension: int width>"
+    "dup1.r"->"fieldget <java.awt.Dimension: int width>";
+    "store.i $i0"
+    "fieldget <java.awt.Dimension: int width>"->"store.i $i0";
+    "store.i $i0"->"load.r r0";
+    "load.i $i0"
+    "load.r r0"->"load.i $i0";
+    "fieldput <RMS_HR2: int appwidth>"
+    "load.i $i0"->"fieldput <RMS_HR2: int appwidth>";
+    "fieldget <java.awt.Dimension: int height>"
+    "fieldput <RMS_HR2: int appwidth>"->"fieldget <java.awt.Dimension: int height>";
+    "fieldput <RMS_HR2: int appheight>"
+    "fieldget <java.awt.Dimension: int height>"->"fieldput <RMS_HR2: int appheight>";
+    "fieldput <RMS_HR2: int appheight>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <RMS_HR2: int appwidth>"
+    "load.r r0"->"fieldget <RMS_HR2: int appwidth>";
+    "fieldget <RMS_HR2: int appwidth>"->"load.r r0";
+    "fieldget <RMS_HR2: int appheight>"
+    "load.r r0"->"fieldget <RMS_HR2: int appheight>";
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"
+    "fieldget <RMS_HR2: int appheight>"->"virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>";
+    "fieldput <RMS_HR2: java.awt.Image winScratch>"
+    "virtualinvoke <java.awt.Component: java.awt.Image createImage(int,int)>"->"fieldput <RMS_HR2: java.awt.Image winScratch>";
+    "fieldput <RMS_HR2: java.awt.Image winScratch>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <RMS_HR2: java.awt.Image winScratch>"
+    "load.r r0"->"fieldget <RMS_HR2: java.awt.Image winScratch>";
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"
+    "fieldget <RMS_HR2: java.awt.Image winScratch>"->"virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>";
+    "fieldput <RMS_HR2: java.awt.Graphics gScratch>"
+    "virtualinvoke <java.awt.Image: java.awt.Graphics getGraphics()>"->"fieldput <RMS_HR2: java.awt.Graphics gScratch>";
+    "fieldput <RMS_HR2: java.awt.Graphics gScratch>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: int appwidth>";
+    "fieldput <RMS_HR2: int i>"
+    "fieldget <RMS_HR2: int appwidth>"->"fieldput <RMS_HR2: int i>";
+    "goto load.r r0"
+    "fieldput <RMS_HR2: int i>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <RMS_HR2: int i>"
+    "load.r r0"->"fieldget <RMS_HR2: int i>";
+    "ifgt load.r r0"
+    "fieldget <RMS_HR2: int i>"->"ifgt load.r r0";
+    "return"
+    "ifgt load.r r0"->"return";
+    "ifgt load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <RMS_HR2: float colour>"
+    "load.r r0"->"fieldget <RMS_HR2: float colour>";
+    "push 0.005F"
+    "fieldget <RMS_HR2: float colour>"->"push 0.005F";
+    "add.f"
+    "push 0.005F"->"add.f";
+    "fieldput <RMS_HR2: float colour>"
+    "add.f"->"fieldput <RMS_HR2: float colour>";
+    "fieldput <RMS_HR2: float colour>"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: float colour>";
+    "f2d"
+    "fieldget <RMS_HR2: float colour>"->"f2d";
+    "push 1.0"
+    "f2d"->"push 1.0";
+    "cmpl.d"
+    "push 1.0"->"cmpl.d";
+    "ifle load.r r0"
+    "cmpl.d"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "push 0.0F"
+    "load.r r0"->"push 0.0F";
+    "push 0.0F"->"fieldput <RMS_HR2: float colour>";
+    "fieldput <RMS_HR2: float colour>"->"load.r r0";
+    "fieldget <RMS_HR2: java.awt.Graphics gScratch>"
+    "load.r r0"->"fieldget <RMS_HR2: java.awt.Graphics gScratch>";
+    "push 0"
+    "fieldget <RMS_HR2: java.awt.Graphics gScratch>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: int appwidth>";
+    "fieldget <RMS_HR2: int appwidth>"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: int appheight>";
+    "push 1"
+    "fieldget <RMS_HR2: int appheight>"->"push 1";
+    "push 1"->"push 0";
+    "virtualinvoke <java.awt.Graphics: void copyArea(int,int,int,int,int,int)>"
+    "push 0"->"virtualinvoke <java.awt.Graphics: void copyArea(int,int,int,int,int,int)>";
+    "virtualinvoke <java.awt.Graphics: void copyArea(int,int,int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: java.awt.Graphics gScratch>";
+    "fieldget <RMS_HR2: java.awt.Graphics gScratch>"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: float colour>";
+    "push 0.7F"
+    "fieldget <RMS_HR2: float colour>"->"push 0.7F";
+    "push 0.7F"->"push 0.7F";
+    "staticinvoke <java.awt.Color: java.awt.Color getHSBColor(float,float,float)>"
+    "push 0.7F"->"staticinvoke <java.awt.Color: java.awt.Color getHSBColor(float,float,float)>";
+    "virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>"
+    "staticinvoke <java.awt.Color: java.awt.Color getHSBColor(float,float,float)>"->"virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>";
+    "virtualinvoke <java.awt.Graphics: void setColor(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: java.awt.Graphics gScratch>";
+    "fieldget <RMS_HR2: java.awt.Graphics gScratch>"->"push 0";
+    "push 0"->"push 0";
+    "push 0"->"push 1";
+    "push 1"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: int appheight>";
+    "virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>"
+    "fieldget <RMS_HR2: int appheight>"->"virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>";
+    "virtualinvoke <java.awt.Graphics: void fillRect(int,int,int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <RMS_HR2: int i>";
+    "fieldget <RMS_HR2: int i>"->"push 1";
+    "sub.i"
+    "push 1"->"sub.i";
+    "sub.i"->"fieldput <RMS_HR2: int i>";
+}

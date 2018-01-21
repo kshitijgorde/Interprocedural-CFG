@@ -1,0 +1,71 @@
+digraph "" {
+    "r0 := @this: MarketInfoApplet"
+    "load.r r0"
+    "r0 := @this: MarketInfoApplet"->"load.r r0";
+    "push \"information\""
+    "load.r r0"->"push \"information\"";
+    "fieldput <MarketInfoApplet: java.lang.String target>"
+    "push \"information\""->"fieldput <MarketInfoApplet: java.lang.String target>";
+    "fieldput <MarketInfoApplet: java.lang.String target>"->"load.r r0";
+    "new java.util.Vector"
+    "load.r r0"->"new java.util.Vector";
+    "dup1.r"
+    "new java.util.Vector"->"dup1.r";
+    "specialinvoke <java.util.Vector: void <init>()>"
+    "dup1.r"->"specialinvoke <java.util.Vector: void <init>()>";
+    "fieldput <MarketInfoApplet: java.util.Vector sectorCoordinates>"
+    "specialinvoke <java.util.Vector: void <init>()>"->"fieldput <MarketInfoApplet: java.util.Vector sectorCoordinates>";
+    "fieldput <MarketInfoApplet: java.util.Vector sectorCoordinates>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <MarketInfoApplet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <MarketInfoApplet: java.net.URL getCodeBase()>";
+    "fieldput <MarketInfoApplet: java.net.URL codeBase>"
+    "virtualinvoke <MarketInfoApplet: java.net.URL getCodeBase()>"->"fieldput <MarketInfoApplet: java.net.URL codeBase>";
+    "fieldput <MarketInfoApplet: java.net.URL codeBase>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <MarketInfoApplet: java.applet.AppletContext getAppletContext()>"
+    "load.r r0"->"virtualinvoke <MarketInfoApplet: java.applet.AppletContext getAppletContext()>";
+    "fieldput <MarketInfoApplet: java.applet.AppletContext context>"
+    "virtualinvoke <MarketInfoApplet: java.applet.AppletContext getAppletContext()>"->"fieldput <MarketInfoApplet: java.applet.AppletContext context>";
+    "fieldput <MarketInfoApplet: java.applet.AppletContext context>"->"load.r r0";
+    "new java.text.DecimalFormat"
+    "load.r r0"->"new java.text.DecimalFormat";
+    "new java.text.DecimalFormat"->"dup1.r";
+    "push \"#,##0.####\""
+    "dup1.r"->"push \"#,##0.####\"";
+    "specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>"
+    "push \"#,##0.####\""->"specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>";
+    "fieldput <MarketInfoApplet: java.text.DecimalFormat decimalFormat>"
+    "specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>"->"fieldput <MarketInfoApplet: java.text.DecimalFormat decimalFormat>";
+    "fieldput <MarketInfoApplet: java.text.DecimalFormat decimalFormat>"->"load.r r0";
+    "load.r r0"->"new java.text.DecimalFormat";
+    "new java.text.DecimalFormat"->"dup1.r";
+    "push \"#,##0.00\""
+    "dup1.r"->"push \"#,##0.00\"";
+    "push \"#,##0.00\""->"specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>";
+    "fieldput <MarketInfoApplet: java.text.DecimalFormat valueFormat>"
+    "specialinvoke <java.text.DecimalFormat: void <init>(java.lang.String)>"->"fieldput <MarketInfoApplet: java.text.DecimalFormat valueFormat>";
+    "fieldput <MarketInfoApplet: java.text.DecimalFormat valueFormat>"->"load.r r0";
+    "specialinvoke <MarketInfoApplet: void basicMarketInfoParameters()>"
+    "load.r r0"->"specialinvoke <MarketInfoApplet: void basicMarketInfoParameters()>";
+    "specialinvoke <MarketInfoApplet: void basicMarketInfoParameters()>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <MarketInfoApplet: void addMouseListener(java.awt.event.MouseListener)>"
+    "load.r r0"->"virtualinvoke <MarketInfoApplet: void addMouseListener(java.awt.event.MouseListener)>";
+    "virtualinvoke <MarketInfoApplet: void addMouseListener(java.awt.event.MouseListener)>"->"load.r r0";
+    "new java.awt.Font"
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "push \"Helvetica\""
+    "dup1.r"->"push \"Helvetica\"";
+    "push 0"
+    "push \"Helvetica\""->"push 0";
+    "push 11"
+    "push 0"->"push 11";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "push 11"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "virtualinvoke <MarketInfoApplet: void setFont(java.awt.Font)>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"virtualinvoke <MarketInfoApplet: void setFont(java.awt.Font)>";
+    "return"
+    "virtualinvoke <MarketInfoApplet: void setFont(java.awt.Font)>"->"return";
+}

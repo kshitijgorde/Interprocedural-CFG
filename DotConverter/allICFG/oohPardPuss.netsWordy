@@ -1,0 +1,33 @@
+digraph "" {
+    "r0 := @parameter0: java.lang.String[]"
+    "staticinvoke <oohPardPuss.netsWordy: java.lang.String[] UtGLY()>()"
+    "r0 := @parameter0: java.lang.String[]"->"staticinvoke <oohPardPuss.netsWordy: java.lang.String[] UtGLY()>()";
+    "r1 = r0[1]"
+    "staticinvoke <oohPardPuss.netsWordy: java.lang.String[] UtGLY()>()"->"r1 = r0[1]";
+    "$r3 = r0[2]"
+    "r1 = r0[1]"->"$r3 = r0[2]";
+    "$r4 = virtualinvoke $r3.<java.lang.String: java.lang.String trim()>()"
+    "$r3 = r0[2]"->"$r4 = virtualinvoke $r3.<java.lang.String: java.lang.String trim()>()";
+    "$r5 = staticinvoke <oohPardPuss.netsWordy: java.lang.String volanteHandsel(java.lang.String)>(\"^\")"
+    "$r4 = virtualinvoke $r3.<java.lang.String: java.lang.String trim()>()"->"$r5 = staticinvoke <oohPardPuss.netsWordy: java.lang.String volanteHandsel(java.lang.String)>(\"^\")";
+    "r2 = staticinvoke <oohPardPuss.netsWordy: java.lang.Boolean PEZaXcBi(java.lang.String,java.lang.String)>($r4, $r5)"
+    "$r5 = staticinvoke <oohPardPuss.netsWordy: java.lang.String volanteHandsel(java.lang.String)>(\"^\")"->"r2 = staticinvoke <oohPardPuss.netsWordy: java.lang.Boolean PEZaXcBi(java.lang.String,java.lang.String)>($r4, $r5)";
+    "staticinvoke <oohPardPuss.netsWordy: void HIB(java.lang.String,java.lang.Boolean)>(r1, r2)"
+    "r2 = staticinvoke <oohPardPuss.netsWordy: java.lang.Boolean PEZaXcBi(java.lang.String,java.lang.String)>($r4, $r5)"->"staticinvoke <oohPardPuss.netsWordy: void HIB(java.lang.String,java.lang.Boolean)>(r1, r2)";
+    "goto [?= return]"
+    "staticinvoke <oohPardPuss.netsWordy: void HIB(java.lang.String,java.lang.Boolean)>(r1, r2)"->"goto [?= return]";
+    "return"
+    "goto [?= return]"->"return";
+    "$r6 := @caughtexception"
+    "staticinvoke <oohPardPuss.netsWordy: void HIB(java.lang.String,java.lang.Boolean)>(r1, r2)"->"$r6 := @caughtexception";
+    "r8 = $r6"
+    "$r6 := @caughtexception"->"r8 = $r6";
+    "r8 = $r6"->"return";
+    "r2 = staticinvoke <oohPardPuss.netsWordy: java.lang.Boolean PEZaXcBi(java.lang.String,java.lang.String)>($r4, $r5)"->"$r6 := @caughtexception";
+    "$r5 = staticinvoke <oohPardPuss.netsWordy: java.lang.String volanteHandsel(java.lang.String)>(\"^\")"->"$r6 := @caughtexception";
+    "$r4 = virtualinvoke $r3.<java.lang.String: java.lang.String trim()>()"->"$r6 := @caughtexception";
+    "$r3 = r0[2]"->"$r6 := @caughtexception";
+    "r1 = r0[1]"->"$r6 := @caughtexception";
+    "staticinvoke <oohPardPuss.netsWordy: java.lang.String[] UtGLY()>()"->"$r6 := @caughtexception";
+    "r0 := @parameter0: java.lang.String[]"->"$r6 := @caughtexception";
+}

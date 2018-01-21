@@ -1,0 +1,807 @@
+digraph "" {
+    "r0 := @this: cuppatoc_try"
+    "load.r r0"
+    "r0 := @this: cuppatoc_try"->"load.r r0";
+    "push \"BGCOLOR\""
+    "load.r r0"->"push \"BGCOLOR\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"BGCOLOR\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r i0"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i0";
+    "load.r i0"
+    "store.r i0"->"load.r i0";
+    "ifnull push \"ffffff\""
+    "load.r i0"->"ifnull push \"ffffff\"";
+    "ifnull push \"ffffff\""->"load.r i0";
+    "push 16"
+    "load.r i0"->"push 16";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"
+    "push 16"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+    "store.i i0"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"store.i i0";
+    "goto load.i i0"
+    "store.i i0"->"goto load.i i0";
+    "load.i i0"
+    "goto load.i i0"->"load.i i0";
+    "load.i i0"->"store.i i0";
+    "store.i i0"->"load.r r0";
+    "push \"BGIMAGE\""
+    "load.r r0"->"push \"BGIMAGE\"";
+    "push \"BGIMAGE\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r3"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r3";
+    "load.r r3"
+    "store.r r3"->"load.r r3";
+    "ifnull push \"\""
+    "load.r r3"->"ifnull push \"\"";
+    "ifnull push \"\""->"load.r r3";
+    "load.r r3"->"store.r r3";
+    "goto load.r r0"
+    "store.r r3"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r3";
+    "fieldput <cuppatoc_try: java.lang.String bgimgfile>"
+    "load.r r3"->"fieldput <cuppatoc_try: java.lang.String bgimgfile>";
+    "fieldput <cuppatoc_try: java.lang.String bgimgfile>"->"load.r r0";
+    "fieldget <cuppatoc_try: java.lang.String bgimgfile>"
+    "load.r r0"->"fieldget <cuppatoc_try: java.lang.String bgimgfile>";
+    "virtualinvoke <java.lang.String: int length()>"
+    "fieldget <cuppatoc_try: java.lang.String bgimgfile>"->"virtualinvoke <java.lang.String: int length()>";
+    "ifne load.r r0"
+    "virtualinvoke <java.lang.String: int length()>"->"ifne load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "new java.awt.Color"
+    "load.r r0"->"new java.awt.Color";
+    "dup1.r"
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"load.i i0";
+    "specialinvoke <java.awt.Color: void <init>(int)>"
+    "load.i i0"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push \"SYMBOLCOLOR\""
+    "load.r r0"->"push \"SYMBOLCOLOR\"";
+    "push \"SYMBOLCOLOR\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r i0";
+    "ifnull push \"000088\""
+    "load.r i0"->"ifnull push \"000088\"";
+    "ifnull push \"000088\""->"load.r i0";
+    "load.r i0"->"push 16";
+    "push 16"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"store.i i0";
+    "store.i i0"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.i i0";
+    "fieldput <cuppatoc_try: int symbolcolor>"
+    "load.i i0"->"fieldput <cuppatoc_try: int symbolcolor>";
+    "fieldput <cuppatoc_try: int symbolcolor>"->"load.r r0";
+    "push \"ITEMHEIGHT\""
+    "load.r r0"->"push \"ITEMHEIGHT\"";
+    "push \"ITEMHEIGHT\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r i0";
+    "ifnull push 12"
+    "load.r i0"->"ifnull push 12";
+    "ifnull push 12"->"load.r i0";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"
+    "load.r i0"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"store.i i0";
+    "store.i i0"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.i i0";
+    "fieldput <cuppatoc_try: int itemheight>"
+    "load.i i0"->"fieldput <cuppatoc_try: int itemheight>";
+    "fieldput <cuppatoc_try: int itemheight>"->"load.r r0";
+    "push \"TEXTCOLOR\""
+    "load.r r0"->"push \"TEXTCOLOR\"";
+    "push \"TEXTCOLOR\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r i0";
+    "ifnull push \"aa6666\""
+    "load.r i0"->"ifnull push \"aa6666\"";
+    "ifnull push \"aa6666\""->"load.r i0";
+    "load.r i0"->"push 16";
+    "push 16"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"store.i i0";
+    "store.i i0"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.i i0";
+    "fieldput <cuppatoc_try: int txtcolor>"
+    "load.i i0"->"fieldput <cuppatoc_try: int txtcolor>";
+    "fieldput <cuppatoc_try: int txtcolor>"->"load.r r0";
+    "push \"HIGHLIGHTCOLOR\""
+    "load.r r0"->"push \"HIGHLIGHTCOLOR\"";
+    "push \"HIGHLIGHTCOLOR\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r i0";
+    "load.r i0"->"ifnull push \"000088\"";
+    "ifnull push \"000088\""->"load.r i0";
+    "load.r i0"->"push 16";
+    "push 16"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"store.i i0";
+    "store.i i0"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"load.i i0";
+    "fieldput <cuppatoc_try: int highlightcolor>"
+    "load.i i0"->"fieldput <cuppatoc_try: int highlightcolor>";
+    "fieldput <cuppatoc_try: int highlightcolor>"->"load.r r0";
+    "push \"FONT1NAME\""
+    "load.r r0"->"push \"FONT1NAME\"";
+    "push \"FONT1NAME\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r i0";
+    "ifnull push \"Helvectica\""
+    "load.r i0"->"ifnull push \"Helvectica\"";
+    "ifnull push \"Helvectica\""->"load.r i0";
+    "load.r i0"->"store.r i0";
+    "goto load.r i0"
+    "store.r i0"->"goto load.r i0";
+    "goto load.r i0"->"load.r i0";
+    "load.r i0"->"store.r i0";
+    "store.r i0"->"load.r r0";
+    "push \"FONT2NAME\""
+    "load.r r0"->"push \"FONT2NAME\"";
+    "push \"FONT2NAME\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r3";
+    "store.r r3"->"load.r r3";
+    "load.r r3"->"ifnull push \"Helvectica\"";
+    "ifnull push \"Helvectica\""->"load.r r3";
+    "load.r r3"->"store.r r3";
+    "goto load.r r3"
+    "store.r r3"->"goto load.r r3";
+    "goto load.r r3"->"load.r r3";
+    "load.r r3"->"store.r r3";
+    "store.r r3"->"load.r r0";
+    "push \"FONT1STYLE\""
+    "load.r r0"->"push \"FONT1STYLE\"";
+    "push \"FONT1STYLE\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r4"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r4";
+    "load.r r4"
+    "store.r r4"->"load.r r4";
+    "ifnull push \"bold\""
+    "load.r r4"->"ifnull push \"bold\"";
+    "ifnull push \"bold\""->"load.r r4";
+    "load.r r4"->"store.r r4";
+    "goto load.r r4"
+    "store.r r4"->"goto load.r r4";
+    "goto load.r r4"->"load.r r4";
+    "load.r r4"->"store.r r4";
+    "store.r r4"->"load.r r0";
+    "push \"FONT2STYLE\""
+    "load.r r0"->"push \"FONT2STYLE\"";
+    "push \"FONT2STYLE\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r r5"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r r5";
+    "load.r r5"
+    "store.r r5"->"load.r r5";
+    "load.r r5"->"ifnull push \"bold\"";
+    "ifnull push \"bold\""->"load.r r5";
+    "load.r r5"->"store.r r5";
+    "goto load.r r5"
+    "store.r r5"->"goto load.r r5";
+    "goto load.r r5"->"load.r r5";
+    "load.r r5"->"store.r r5";
+    "store.r r5"->"load.r r0";
+    "push \"FONTPOINTSIZE\""
+    "load.r r0"->"push \"FONTPOINTSIZE\"";
+    "push \"FONTPOINTSIZE\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "store.r $r23"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r $r23";
+    "load.r $r23"
+    "store.r $r23"->"load.r $r23";
+    "ifnull push 14"
+    "load.r $r23"->"ifnull push 14";
+    "ifnull push 14"->"load.r $r23";
+    "load.r $r23"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "store.i $r23"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"store.i $r23";
+    "store.i $r23"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.i $r23"
+    "load.r r0"->"load.i $r23";
+    "fieldput <cuppatoc_try: int fontpointsize>"
+    "load.i $r23"->"fieldput <cuppatoc_try: int fontpointsize>";
+    "fieldput <cuppatoc_try: int fontpointsize>"->"load.r r4";
+    "push \"bold\""
+    "load.r r4"->"push \"bold\"";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"
+    "push \"bold\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "ifeq load.r r4"
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r4";
+    "ifeq load.r r4"->"load.r r0";
+    "new java.awt.Font"
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r i0";
+    "push 1"
+    "load.r i0"->"push 1";
+    "push 1"->"load.r r0";
+    "fieldget <cuppatoc_try: int fontpointsize>"
+    "load.r r0"->"fieldget <cuppatoc_try: int fontpointsize>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"
+    "fieldget <cuppatoc_try: int fontpointsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "fieldput <cuppatoc_try: java.awt.Font fm2>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <cuppatoc_try: java.awt.Font fm2>";
+    "fieldput <cuppatoc_try: java.awt.Font fm2>"->"goto load.r r5";
+    "goto load.r r5"->"load.r r5";
+    "load.r r5"->"push \"bold\"";
+    "push \"bold\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "ifeq load.r r5"
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r5";
+    "ifeq load.r r5"->"load.r r0";
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r r3";
+    "load.r r3"->"push 1";
+    "push 1"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int fontpointsize>";
+    "fieldget <cuppatoc_try: int fontpointsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "fieldput <cuppatoc_try: java.awt.Font fm>"
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <cuppatoc_try: java.awt.Font fm>";
+    "fieldput <cuppatoc_try: java.awt.Font fm>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "push 0"
+    "load.r r0"->"push 0";
+    "fieldput <cuppatoc_try: int basey>"
+    "push 0"->"fieldput <cuppatoc_try: int basey>";
+    "fieldput <cuppatoc_try: int basey>"->"load.r r0";
+    "push \"AUTHORINFO\""
+    "load.r r0"->"push \"AUTHORINFO\"";
+    "push \"AUTHORINFO\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r i0";
+    "load.r i0"->"ifnull push \"\"";
+    "ifnull push \"\""->"load.r i0";
+    "load.r i0"->"store.r i0";
+    "store.r i0"->"goto load.r i0";
+    "goto load.r i0"->"load.r i0";
+    "push \"Nalla Senthilnathan\""
+    "load.r i0"->"push \"Nalla Senthilnathan\"";
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"
+    "push \"Nalla Senthilnathan\""->"virtualinvoke <java.lang.String: int indexOf(java.lang.String)>";
+    "iflt push \"\""
+    "virtualinvoke <java.lang.String: int indexOf(java.lang.String)>"->"iflt push \"\"";
+    "iflt push \"\""->"load.r r0";
+    "push \"TOCDATA\""
+    "load.r r0"->"push \"TOCDATA\"";
+    "push \"TOCDATA\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"store.r i0";
+    "store.r i0"->"load.r i0";
+    "load.r i0"->"ifnull push \"\"";
+    "ifnull push \"\""->"load.r i0";
+    "load.r i0"->"store.r i0";
+    "store.r i0"->"goto load.r i0";
+    "goto load.r i0"->"load.r i0";
+    "load.r i0"->"store.r r5";
+    "goto new java.util.Hashtable"
+    "store.r r5"->"goto new java.util.Hashtable";
+    "new java.util.Hashtable"
+    "goto new java.util.Hashtable"->"new java.util.Hashtable";
+    "new java.util.Hashtable"->"store.r i0";
+    "store.r i0"->"load.r i0";
+    "push 101"
+    "load.r i0"->"push 101";
+    "specialinvoke <java.util.Hashtable: void <init>(int)>"
+    "push 101"->"specialinvoke <java.util.Hashtable: void <init>(int)>";
+    "specialinvoke <java.util.Hashtable: void <init>(int)>"->"push 0";
+    "store.i r3"
+    "push 0"->"store.i r3";
+    "push -1"
+    "store.i r3"->"push -1";
+    "store.i r4"
+    "push -1"->"store.i r4";
+    "store.i r4"->"load.r r0";
+    "new java.util.StringTokenizer"
+    "load.r r0"->"new java.util.StringTokenizer";
+    "new java.util.StringTokenizer"->"dup1.r";
+    "dup1.r"->"load.r r5";
+    "push \"|\""
+    "load.r r5"->"push \"|\"";
+    "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"
+    "push \"|\""->"specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>";
+    "fieldput <cuppatoc_try: java.util.StringTokenizer st>"
+    "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"->"fieldput <cuppatoc_try: java.util.StringTokenizer st>";
+    "fieldput <cuppatoc_try: java.util.StringTokenizer st>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st>"
+    "load.r r0"->"fieldget <cuppatoc_try: java.util.StringTokenizer st>";
+    "virtualinvoke <java.util.StringTokenizer: boolean hasMoreTokens()>"
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st>"->"virtualinvoke <java.util.StringTokenizer: boolean hasMoreTokens()>";
+    "virtualinvoke <java.util.StringTokenizer: boolean hasMoreTokens()>"->"ifne load.r r0";
+    "goto push 0"
+    "ifne load.r r0"->"goto push 0";
+    "goto push 0"->"push 0";
+    "push 0"->"store.i i0";
+    "store.i i0"->"goto load.i i0";
+    "goto load.i i0"->"load.i i0";
+    "load.i i0"->"load.r r0";
+    "fieldget <cuppatoc_try: int elemcount>"
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "ifcmplt.i load.r r0"
+    "fieldget <cuppatoc_try: int elemcount>"->"ifcmplt.i load.r r0";
+    "ifcmplt.i load.r r0"->"goto push 0";
+    "goto push 0"->"push 0";
+    "push 0"->"store.i i0";
+    "store.i i0"->"goto load.i i0";
+    "goto load.i i0"->"load.i i0";
+    "load.i i0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"ifcmplt.i load.r r0";
+    "return"
+    "ifcmplt.i load.r r0"->"return";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.i i0";
+    "arrayread.r"
+    "load.i i0"->"arrayread.r";
+    "fieldget <cuppatoc_tryRec: java.lang.String head>"
+    "arrayread.r"->"fieldget <cuppatoc_tryRec: java.lang.String head>";
+    "ifnonnull load.r r0"
+    "fieldget <cuppatoc_tryRec: java.lang.String head>"->"ifnonnull load.r r0";
+    "ifnonnull load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.i i0";
+    "load.i i0"->"arrayread.r";
+    "arrayread.r"->"push 1";
+    "fieldput <cuppatoc_tryRec: boolean visible>"
+    "push 1"->"fieldput <cuppatoc_tryRec: boolean visible>";
+    "fieldput <cuppatoc_tryRec: boolean visible>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.i i0";
+    "load.i i0"->"arrayread.r";
+    "arrayread.r"->"push 0";
+    "fieldput <cuppatoc_tryRec: boolean tailopen>"
+    "push 0"->"fieldput <cuppatoc_tryRec: boolean tailopen>";
+    "inc.i i0 1"
+    "fieldput <cuppatoc_tryRec: boolean tailopen>"->"inc.i i0 1";
+    "ifcmplt.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.i i0";
+    "load.i i0"->"arrayread.r";
+    "fieldget <cuppatoc_tryRec: java.lang.String urlstr>"
+    "arrayread.r"->"fieldget <cuppatoc_tryRec: java.lang.String urlstr>";
+    "fieldget <cuppatoc_tryRec: java.lang.String urlstr>"->"virtualinvoke <java.lang.String: int length()>";
+    "ifle load.r r0"
+    "virtualinvoke <java.lang.String: int length()>"->"ifle load.r r0";
+    "ifle load.r r0"->"load.r r0";
+    "fieldget <cuppatoc_try: java.net.URL[] url>"
+    "load.r r0"->"fieldget <cuppatoc_try: java.net.URL[] url>";
+    "fieldget <cuppatoc_try: java.net.URL[] url>"->"load.i i0";
+    "new java.net.URL"
+    "load.i i0"->"new java.net.URL";
+    "new java.net.URL"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>";
+    "virtualinvoke <java.applet.Applet: java.net.URL getDocumentBase()>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.i i0";
+    "load.i i0"->"arrayread.r";
+    "arrayread.r"->"fieldget <cuppatoc_tryRec: java.lang.String urlstr>";
+    "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"
+    "fieldget <cuppatoc_tryRec: java.lang.String urlstr>"->"specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>";
+    "arraywrite.r"
+    "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"arraywrite.r";
+    "goto inc.i i0 1"
+    "arraywrite.r"->"goto inc.i i0 1";
+    "goto inc.i i0 1"->"inc.i i0 1";
+    "specialinvoke <java.net.URL: void <init>(java.net.URL,java.lang.String)>"->"store.r i0";
+    "ifle load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: java.net.URL[] url>";
+    "fieldget <cuppatoc_try: java.net.URL[] url>"->"load.i i0";
+    "push null"
+    "load.i i0"->"push null";
+    "push null"->"arraywrite.r";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"new java.util.StringTokenizer";
+    "new java.util.StringTokenizer"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: java.util.StringTokenizer st>";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st>"->"virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>";
+    "push \";\""
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"->"push \";\"";
+    "push \";\""->"specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>";
+    "fieldput <cuppatoc_try: java.util.StringTokenizer st2>"
+    "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"->"fieldput <cuppatoc_try: java.util.StringTokenizer st2>";
+    "fieldput <cuppatoc_try: java.util.StringTokenizer st2>"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st2>"
+    "load.r r0"->"fieldget <cuppatoc_try: java.util.StringTokenizer st2>";
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st2>"->"virtualinvoke <java.util.StringTokenizer: boolean hasMoreTokens()>";
+    "virtualinvoke <java.util.StringTokenizer: boolean hasMoreTokens()>"->"ifne load.r r0";
+    "ifne load.r r0"->"goto load.r r0";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "new cuppatoc_tryRec"
+    "fieldget <cuppatoc_try: int elemcount>"->"new cuppatoc_tryRec";
+    "new cuppatoc_tryRec"->"dup1.r";
+    "specialinvoke <cuppatoc_tryRec: void <init>()>"
+    "dup1.r"->"specialinvoke <cuppatoc_tryRec: void <init>()>";
+    "specialinvoke <cuppatoc_tryRec: void <init>()>"->"arraywrite.r";
+    "arraywrite.r"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: java.util.StringTokenizer st2>";
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st2>"->"virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>";
+    "virtualinvoke <java.lang.String: java.lang.String trim()>"
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"->"virtualinvoke <java.lang.String: java.lang.String trim()>";
+    "virtualinvoke <java.lang.String: java.lang.String trim()>"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>";
+    "fieldput <cuppatoc_tryRec: int level>"
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String)>"->"fieldput <cuppatoc_tryRec: int level>";
+    "fieldput <cuppatoc_tryRec: int level>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "fieldget <cuppatoc_tryRec: int level>"
+    "arrayread.r"->"fieldget <cuppatoc_tryRec: int level>";
+    "store.i r5"
+    "fieldget <cuppatoc_tryRec: int level>"->"store.i r5";
+    "load.i r3"
+    "store.i r5"->"load.i r3";
+    "ifle load.i r3"
+    "load.i r3"->"ifle load.i r3";
+    "load.i r5"
+    "ifle load.i r3"->"load.i r5";
+    "load.i r5"->"load.i r3";
+    "ifcmple.i load.i r3"
+    "load.i r3"->"ifcmple.i load.i r3";
+    "ifcmple.i load.i r3"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"push 1";
+    "sub.i"
+    "push 1"->"sub.i";
+    "sub.i"->"store.i r4";
+    "store.i r4"->"load.r i0";
+    "new java.lang.Integer"
+    "load.r i0"->"new java.lang.Integer";
+    "new java.lang.Integer"->"dup1.r";
+    "dup1.r"->"load.i r5";
+    "specialinvoke <java.lang.Integer: void <init>(int)>"
+    "load.i r5"->"specialinvoke <java.lang.Integer: void <init>(int)>";
+    "specialinvoke <java.lang.Integer: void <init>(int)>"->"new java.lang.Integer";
+    "new java.lang.Integer"->"dup1.r";
+    "load.i r4"
+    "dup1.r"->"load.i r4";
+    "load.i r4"->"specialinvoke <java.lang.Integer: void <init>(int)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"
+    "specialinvoke <java.lang.Integer: void <init>(int)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>";
+    "pop"
+    "virtualinvoke <java.util.Hashtable: java.lang.Object put(java.lang.Object,java.lang.Object)>"->"pop";
+    "pop"->"load.i r3";
+    "load.i r3"->"ifle load.r r0";
+    "ifle load.r r0"->"load.i r5";
+    "load.i r5"->"load.i r3";
+    "ifcmpge.i load.r r0"
+    "load.i r3"->"ifcmpge.i load.r r0";
+    "ifcmpge.i load.r r0"->"load.r i0";
+    "load.r i0"->"new java.lang.Integer";
+    "new java.lang.Integer"->"dup1.r";
+    "dup1.r"->"load.i r5";
+    "load.i r5"->"specialinvoke <java.lang.Integer: void <init>(int)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object get(java.lang.Object)>"
+    "specialinvoke <java.lang.Integer: void <init>(int)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object get(java.lang.Object)>";
+    "checkcast"
+    "virtualinvoke <java.util.Hashtable: java.lang.Object get(java.lang.Object)>"->"checkcast";
+    "ifnull push -1"
+    "checkcast"->"ifnull push -1";
+    "ifnull push -1"->"load.r i0";
+    "load.r i0"->"new java.lang.Integer";
+    "new java.lang.Integer"->"dup1.r";
+    "dup1.r"->"load.i r5";
+    "load.i r5"->"specialinvoke <java.lang.Integer: void <init>(int)>";
+    "specialinvoke <java.lang.Integer: void <init>(int)>"->"virtualinvoke <java.util.Hashtable: java.lang.Object get(java.lang.Object)>";
+    "virtualinvoke <java.util.Hashtable: java.lang.Object get(java.lang.Object)>"->"checkcast";
+    "virtualinvoke <java.lang.Integer: int intValue()>"
+    "checkcast"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"store.i r4";
+    "store.i r4"->"goto load.r r0";
+    "goto load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"load.i r4";
+    "fieldput <cuppatoc_tryRec: int headidx>"
+    "load.i r4"->"fieldput <cuppatoc_tryRec: int headidx>";
+    "fieldput <cuppatoc_tryRec: int headidx>"->"load.i r5";
+    "load.i r5"->"store.i r3";
+    "store.i r3"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: java.util.StringTokenizer st2>";
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st2>"->"virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"->"virtualinvoke <java.lang.String: java.lang.String trim()>";
+    "fieldput <cuppatoc_tryRec: java.lang.String tocstr>"
+    "virtualinvoke <java.lang.String: java.lang.String trim()>"->"fieldput <cuppatoc_tryRec: java.lang.String tocstr>";
+    "fieldput <cuppatoc_tryRec: java.lang.String tocstr>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"push 0";
+    "fieldput <cuppatoc_tryRec: int tailcount>"
+    "push 0"->"fieldput <cuppatoc_tryRec: int tailcount>";
+    "fieldput <cuppatoc_tryRec: int tailcount>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"push 0";
+    "push 0"->"fieldput <cuppatoc_tryRec: boolean visible>";
+    "fieldput <cuppatoc_tryRec: boolean visible>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"push 0";
+    "push 0"->"fieldput <cuppatoc_tryRec: boolean tailopen>";
+    "fieldput <cuppatoc_tryRec: boolean tailopen>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: java.util.StringTokenizer st2>";
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st2>"->"virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"->"virtualinvoke <java.lang.String: java.lang.String trim()>";
+    "fieldput <cuppatoc_tryRec: java.lang.String targetframe>"
+    "virtualinvoke <java.lang.String: java.lang.String trim()>"->"fieldput <cuppatoc_tryRec: java.lang.String targetframe>";
+    "fieldput <cuppatoc_tryRec: java.lang.String targetframe>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"fieldget <cuppatoc_tryRec: int level>";
+    "fieldget <cuppatoc_tryRec: int level>"->"push 1";
+    "ifcmpne.i load.r r0"
+    "push 1"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"push null";
+    "fieldput <cuppatoc_tryRec: java.lang.String head>"
+    "push null"->"fieldput <cuppatoc_tryRec: java.lang.String head>";
+    "goto load.i r5"
+    "fieldput <cuppatoc_tryRec: java.lang.String head>"->"goto load.i r5";
+    "goto load.i r5"->"load.i r5";
+    "load.i r5"->"push 1";
+    "ifcmple.i load.r r0"
+    "push 1"->"ifcmple.i load.r r0";
+    "ifcmple.i load.r r0"->"load.i r4";
+    "iflt load.r r0"
+    "load.i r4"->"iflt load.r r0";
+    "iflt load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.i r4";
+    "load.i r4"->"arrayread.r";
+    "fieldget <cuppatoc_tryRec: int[] tailidx>"
+    "arrayread.r"->"fieldget <cuppatoc_tryRec: int[] tailidx>";
+    "fieldget <cuppatoc_tryRec: int[] tailidx>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.i r4";
+    "load.i r4"->"arrayread.r";
+    "arrayread.r"->"dup1.r";
+    "fieldget <cuppatoc_tryRec: int tailcount>"
+    "dup1.r"->"fieldget <cuppatoc_tryRec: int tailcount>";
+    "fieldget <cuppatoc_tryRec: int tailcount>"->"store.i r5";
+    "store.i r5"->"load.i r5";
+    "load.i r5"->"push 1";
+    "add.i"
+    "push 1"->"add.i";
+    "add.i"->"fieldput <cuppatoc_tryRec: int tailcount>";
+    "fieldput <cuppatoc_tryRec: int tailcount>"->"load.i r5";
+    "load.i r5"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "arraywrite.i"
+    "fieldget <cuppatoc_try: int elemcount>"->"arraywrite.i";
+    "arraywrite.i"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: java.util.StringTokenizer st2>";
+    "fieldget <cuppatoc_try: java.util.StringTokenizer st2>"->"virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>";
+    "virtualinvoke <java.util.StringTokenizer: java.lang.String nextToken()>"->"virtualinvoke <java.lang.String: java.lang.String trim()>";
+    "virtualinvoke <java.lang.String: java.lang.String trim()>"->"store.r r5";
+    "store.r r5"->"load.r r5";
+    "load.r r5"->"virtualinvoke <java.lang.String: int length()>";
+    "virtualinvoke <java.lang.String: int length()>"->"push 1";
+    "push 1"->"ifcmpne.i load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "push \"\""
+    "arrayread.r"->"push \"\"";
+    "fieldput <cuppatoc_tryRec: java.lang.String urlstr>"
+    "push \"\""->"fieldput <cuppatoc_tryRec: java.lang.String urlstr>";
+    "fieldput <cuppatoc_tryRec: java.lang.String urlstr>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"push 1";
+    "push 1"->"add.i";
+    "fieldput <cuppatoc_try: int elemcount>"
+    "add.i"->"fieldput <cuppatoc_try: int elemcount>";
+    "fieldput <cuppatoc_try: int elemcount>"->"goto load.r r0";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "arrayread.r"->"load.r r5";
+    "load.r r5"->"fieldput <cuppatoc_tryRec: java.lang.String urlstr>";
+    "fieldput <cuppatoc_tryRec: java.lang.String urlstr>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"push 1";
+    "push 1"->"add.i";
+    "add.i"->"fieldput <cuppatoc_try: int elemcount>";
+    "fieldput <cuppatoc_try: int elemcount>"->"goto load.r r0";
+    "virtualinvoke <java.lang.String: int length()>"->"store.r r5";
+    "ifcmpne.i load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>";
+    "fieldget <cuppatoc_try: cuppatoc_tryRec[] elem>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int elemcount>";
+    "fieldget <cuppatoc_try: int elemcount>"->"arrayread.r";
+    "push \"head\""
+    "arrayread.r"->"push \"head\"";
+    "push \"head\""->"fieldput <cuppatoc_tryRec: java.lang.String head>";
+    "ifnull push -1"->"push -1";
+    "push -1"->"store.i r4";
+    "specialinvoke <java.util.StringTokenizer: void <init>(java.lang.String,java.lang.String)>"->"store.r i0";
+    "ifnull push \"\""->"push \"\"";
+    "push \"\""->"store.r i0";
+    "iflt push \"\""->"push \"\"";
+    "push \"\""->"store.r r5";
+    "ifnull push \"\""->"push \"\"";
+    "push \"\""->"store.r i0";
+    "ifeq load.r r5"->"load.r r5";
+    "push \"italic\""
+    "load.r r5"->"push \"italic\"";
+    "push \"italic\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r5";
+    "ifeq load.r r5"->"load.r r0";
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r r3";
+    "push 2"
+    "load.r r3"->"push 2";
+    "push 2"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int fontpointsize>";
+    "fieldget <cuppatoc_try: int fontpointsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <cuppatoc_try: java.awt.Font fm>";
+    "fieldput <cuppatoc_try: java.awt.Font fm>"->"goto load.r r0";
+    "ifeq load.r r5"->"load.r r5";
+    "push \"plain\""
+    "load.r r5"->"push \"plain\"";
+    "push \"plain\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "ifeq load.r r0"
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r r3";
+    "load.r r3"->"push 0";
+    "push 0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int fontpointsize>";
+    "fieldget <cuppatoc_try: int fontpointsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <cuppatoc_try: java.awt.Font fm>";
+    "fieldput <cuppatoc_try: java.awt.Font fm>"->"goto load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r r3";
+    "push 3"
+    "load.r r3"->"push 3";
+    "push 3"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int fontpointsize>";
+    "fieldget <cuppatoc_try: int fontpointsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <cuppatoc_try: java.awt.Font fm>";
+    "ifeq load.r r4"->"load.r r4";
+    "load.r r4"->"push \"italic\"";
+    "push \"italic\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r4";
+    "ifeq load.r r4"->"load.r r0";
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r i0";
+    "load.r i0"->"push 2";
+    "push 2"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int fontpointsize>";
+    "fieldget <cuppatoc_try: int fontpointsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <cuppatoc_try: java.awt.Font fm2>";
+    "fieldput <cuppatoc_try: java.awt.Font fm2>"->"goto load.r r5";
+    "ifeq load.r r4"->"load.r r4";
+    "load.r r4"->"push \"plain\"";
+    "push \"plain\""->"virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>";
+    "virtualinvoke <java.lang.String: boolean equals(java.lang.Object)>"->"ifeq load.r r0";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r i0";
+    "load.r i0"->"push 0";
+    "push 0"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int fontpointsize>";
+    "fieldget <cuppatoc_try: int fontpointsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <cuppatoc_try: java.awt.Font fm2>";
+    "fieldput <cuppatoc_try: java.awt.Font fm2>"->"goto load.r r5";
+    "ifeq load.r r0"->"load.r r0";
+    "load.r r0"->"new java.awt.Font";
+    "new java.awt.Font"->"dup1.r";
+    "dup1.r"->"load.r i0";
+    "load.r i0"->"push 3";
+    "push 3"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: int fontpointsize>";
+    "fieldget <cuppatoc_try: int fontpointsize>"->"specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>";
+    "specialinvoke <java.awt.Font: void <init>(java.lang.String,int,int)>"->"fieldput <cuppatoc_try: java.awt.Font fm2>";
+    "push 14"
+    "ifnull push 14"->"push 14";
+    "push 14"->"store.i $r23";
+    "ifnull push \"bold\""->"push \"bold\"";
+    "push \"bold\""->"store.r r5";
+    "ifnull push \"bold\""->"push \"bold\"";
+    "push \"bold\""->"store.r r4";
+    "push \"Helvectica\""
+    "ifnull push \"Helvectica\""->"push \"Helvectica\"";
+    "push \"Helvectica\""->"store.r r3";
+    "ifnull push \"Helvectica\""->"push \"Helvectica\"";
+    "push \"Helvectica\""->"store.r i0";
+    "push \"000088\""
+    "ifnull push \"000088\""->"push \"000088\"";
+    "push \"000088\""->"push 16";
+    "push 16"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"store.i i0";
+    "push \"aa6666\""
+    "ifnull push \"aa6666\""->"push \"aa6666\"";
+    "push \"aa6666\""->"push 16";
+    "push 16"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"store.i i0";
+    "push 12"
+    "ifnull push 12"->"push 12";
+    "push 12"->"store.i i0";
+    "ifnull push \"000088\""->"push \"000088\"";
+    "push \"000088\""->"push 16";
+    "push 16"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"store.i i0";
+    "ifne load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"
+    "load.r r0"->"virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>";
+    "virtualinvoke <java.applet.Applet: java.net.URL getCodeBase()>"->"load.r r0";
+    "load.r r0"->"fieldget <cuppatoc_try: java.lang.String bgimgfile>";
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"
+    "fieldget <cuppatoc_try: java.lang.String bgimgfile>"->"virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>";
+    "fieldput <cuppatoc_try: java.awt.Image bgimg>"
+    "virtualinvoke <java.applet.Applet: java.awt.Image getImage(java.net.URL,java.lang.String)>"->"fieldput <cuppatoc_try: java.awt.Image bgimg>";
+    "fieldput <cuppatoc_try: java.awt.Image bgimg>"->"load.r r0";
+    "fieldget <cuppatoc_try: java.awt.MediaTracker mt>"
+    "load.r r0"->"fieldget <cuppatoc_try: java.awt.MediaTracker mt>";
+    "fieldget <cuppatoc_try: java.awt.MediaTracker mt>"->"load.r r0";
+    "fieldget <cuppatoc_try: java.awt.Image bgimg>"
+    "load.r r0"->"fieldget <cuppatoc_try: java.awt.Image bgimg>";
+    "fieldget <cuppatoc_try: java.awt.Image bgimg>"->"push 1";
+    "virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>"
+    "push 1"->"virtualinvoke <java.awt.MediaTracker: void addImage(java.awt.Image,int)>";
+    "ifnull push \"\""->"push \"\"";
+    "push \"\""->"store.r r3";
+    "push \"ffffff\""
+    "ifnull push \"ffffff\""->"push \"ffffff\"";
+    "push \"ffffff\""->"push 16";
+    "push 16"->"staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>";
+    "staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>"->"store.i i0";
+}

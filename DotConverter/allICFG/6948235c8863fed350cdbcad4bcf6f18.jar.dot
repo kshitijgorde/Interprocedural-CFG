@@ -1,0 +1,172 @@
+digraph "" {
+    "r0 := @this: PhrasenDrescherApplet"
+    "load.r r0"
+    "r0 := @this: PhrasenDrescherApplet"->"load.r r0";
+    "push 0"
+    "load.r r0"->"push 0";
+    "fieldput <PhrasenDrescherApplet: boolean automatic>"
+    "push 0"->"fieldput <PhrasenDrescherApplet: boolean automatic>";
+    "fieldput <PhrasenDrescherApplet: boolean automatic>"->"load.r r0";
+    "load.r r0"->"push 0";
+    "fieldput <PhrasenDrescherApplet: int orig_index>"
+    "push 0"->"fieldput <PhrasenDrescherApplet: int orig_index>";
+    "fieldput <PhrasenDrescherApplet: int orig_index>"->"load.r r0";
+    "staticinvoke <javafig.gui.ImageHelper: void setVisibleParent(java.awt.Component)>"
+    "load.r r0"->"staticinvoke <javafig.gui.ImageHelper: void setVisibleParent(java.awt.Component)>";
+    "staticinvoke <javafig.gui.ImageHelper: void setVisibleParent(java.awt.Component)>"->"load.r r0";
+    "new hades.models.special.TextLCDCanvas"
+    "load.r r0"->"new hades.models.special.TextLCDCanvas";
+    "dup1.r"
+    "new hades.models.special.TextLCDCanvas"->"dup1.r";
+    "push 2"
+    "dup1.r"->"push 2";
+    "push 40"
+    "push 2"->"push 40";
+    "specialinvoke <hades.models.special.TextLCDCanvas: void <init>(int,int)>"
+    "push 40"->"specialinvoke <hades.models.special.TextLCDCanvas: void <init>(int,int)>";
+    "fieldput <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"
+    "specialinvoke <hades.models.special.TextLCDCanvas: void <init>(int,int)>"->"fieldput <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>";
+    "fieldput <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"->"load.r r0";
+    "fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>";
+    "push 1"
+    "fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"->"push 1";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void enableDisplay(boolean)>"
+    "push 1"->"virtualinvoke <hades.models.special.TextLCDCanvas: void enableDisplay(boolean)>";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void enableDisplay(boolean)>"->"load.r r0";
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>";
+    "fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"->"push 1";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void selectTwoLines(boolean)>"
+    "push 1"->"virtualinvoke <hades.models.special.TextLCDCanvas: void selectTwoLines(boolean)>";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void selectTwoLines(boolean)>"->"load.r r0";
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>";
+    "fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"->"push 0";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void enableCursor(boolean)>"
+    "push 0"->"virtualinvoke <hades.models.special.TextLCDCanvas: void enableCursor(boolean)>";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void enableCursor(boolean)>"->"load.r r0";
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>";
+    "fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"->"push 0";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void selectUnderlineCursor(boolean)>"
+    "push 0"->"virtualinvoke <hades.models.special.TextLCDCanvas: void selectUnderlineCursor(boolean)>";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void selectUnderlineCursor(boolean)>"->"load.r r0";
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>";
+    "fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"->"push 1";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void enableCursorBlinking(boolean)>"
+    "push 1"->"virtualinvoke <hades.models.special.TextLCDCanvas: void enableCursorBlinking(boolean)>";
+    "virtualinvoke <hades.models.special.TextLCDCanvas: void enableCursorBlinking(boolean)>"->"load.r r0";
+    "new java.awt.Button"
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"Reset\""
+    "dup1.r"->"push \"Reset\"";
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"
+    "push \"Reset\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <PhrasenDrescherApplet: java.awt.Button resetButton>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <PhrasenDrescherApplet: java.awt.Button resetButton>";
+    "fieldput <PhrasenDrescherApplet: java.awt.Button resetButton>"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"Original...\""
+    "dup1.r"->"push \"Original...\"";
+    "push \"Original...\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <PhrasenDrescherApplet: java.awt.Button origButton>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <PhrasenDrescherApplet: java.awt.Button origButton>";
+    "fieldput <PhrasenDrescherApplet: java.awt.Button origButton>"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"Phrase...\""
+    "dup1.r"->"push \"Phrase...\"";
+    "push \"Phrase...\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <PhrasenDrescherApplet: java.awt.Button nextButton>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <PhrasenDrescherApplet: java.awt.Button nextButton>";
+    "fieldput <PhrasenDrescherApplet: java.awt.Button nextButton>"->"load.r r0";
+    "load.r r0"->"new java.awt.Button";
+    "new java.awt.Button"->"dup1.r";
+    "push \"Automatic...\""
+    "dup1.r"->"push \"Automatic...\"";
+    "push \"Automatic...\""->"specialinvoke <java.awt.Button: void <init>(java.lang.String)>";
+    "fieldput <PhrasenDrescherApplet: java.awt.Button autoButton>"
+    "specialinvoke <java.awt.Button: void <init>(java.lang.String)>"->"fieldput <PhrasenDrescherApplet: java.awt.Button autoButton>";
+    "fieldput <PhrasenDrescherApplet: java.awt.Button autoButton>"->"load.r r0";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button resetButton>"
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: java.awt.Button resetButton>";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button resetButton>"->"load.r r0";
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"
+    "load.r r0"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"load.r r0";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button origButton>"
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: java.awt.Button origButton>";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button origButton>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"load.r r0";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button nextButton>"
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: java.awt.Button nextButton>";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button nextButton>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"load.r r0";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button autoButton>"
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: java.awt.Button autoButton>";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button autoButton>"->"load.r r0";
+    "load.r r0"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+    "new java.awt.Panel"
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"new java.awt.Panel";
+    "store.r $r16"
+    "new java.awt.Panel"->"store.r $r16";
+    "load.r $r16"
+    "store.r $r16"->"load.r $r16";
+    "new java.awt.FlowLayout"
+    "load.r $r16"->"new java.awt.FlowLayout";
+    "new java.awt.FlowLayout"->"dup1.r";
+    "dup1.r"->"push 0";
+    "specialinvoke <java.awt.FlowLayout: void <init>(int)>"
+    "push 0"->"specialinvoke <java.awt.FlowLayout: void <init>(int)>";
+    "specialinvoke <java.awt.Panel: void <init>(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.FlowLayout: void <init>(int)>"->"specialinvoke <java.awt.Panel: void <init>(java.awt.LayoutManager)>";
+    "specialinvoke <java.awt.Panel: void <init>(java.awt.LayoutManager)>"->"load.r $r16";
+    "load.r $r16"->"load.r r0";
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: java.awt.Button resetButton>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <PhrasenDrescherApplet: java.awt.Button resetButton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r $r16";
+    "load.r $r16"->"load.r r0";
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: java.awt.Button nextButton>";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button nextButton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r $r16";
+    "load.r $r16"->"load.r r0";
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: java.awt.Button autoButton>";
+    "fieldget <PhrasenDrescherApplet: java.awt.Button autoButton>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "new java.awt.BorderLayout"
+    "load.r r0"->"new java.awt.BorderLayout";
+    "new java.awt.BorderLayout"->"dup1.r";
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"
+    "dup1.r"->"specialinvoke <java.awt.BorderLayout: void <init>()>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.BorderLayout: void <init>()>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "push \"Center\""
+    "load.r r0"->"push \"Center\"";
+    "push \"Center\""->"load.r r0";
+    "load.r r0"->"fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"
+    "fieldget <PhrasenDrescherApplet: hades.models.special.TextLCDCanvas lcdCanvas>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "push \"South\""
+    "load.r r0"->"push \"South\"";
+    "push \"South\""->"load.r $r16";
+    "load.r $r16"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.lang.String,java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "virtualinvoke <PhrasenDrescherApplet: void replaceAllUmlauts()>"
+    "load.r r0"->"virtualinvoke <PhrasenDrescherApplet: void replaceAllUmlauts()>";
+    "virtualinvoke <PhrasenDrescherApplet: void replaceAllUmlauts()>"->"load.r r0";
+    "virtualinvoke <PhrasenDrescherApplet: void showMessage()>"
+    "load.r r0"->"virtualinvoke <PhrasenDrescherApplet: void showMessage()>";
+    "return"
+    "virtualinvoke <PhrasenDrescherApplet: void showMessage()>"->"return";
+}

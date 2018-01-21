@@ -1,0 +1,133 @@
+digraph "" {
+    "r0 := @this: sm_common.searchApplet"
+    "load.r r0"
+    "r0 := @this: sm_common.searchApplet"->"load.r r0";
+    "new java.awt.FlowLayout"
+    "load.r r0"->"new java.awt.FlowLayout";
+    "dup1.r"
+    "new java.awt.FlowLayout"->"dup1.r";
+    "push 1"
+    "dup1.r"->"push 1";
+    "push 5"
+    "push 1"->"push 5";
+    "push 5"->"push 5";
+    "specialinvoke <java.awt.FlowLayout: void <init>(int,int,int)>"
+    "push 5"->"specialinvoke <java.awt.FlowLayout: void <init>(int,int,int)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"
+    "specialinvoke <java.awt.FlowLayout: void <init>(int,int,int)>"->"virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>";
+    "virtualinvoke <java.awt.Container: void setLayout(java.awt.LayoutManager)>"->"load.r r0";
+    "staticget <java.awt.Color: java.awt.Color white>"
+    "load.r r0"->"staticget <java.awt.Color: java.awt.Color white>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"
+    "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "push 300"
+    "load.r r0"->"push 300";
+    "push 300"->"push 300";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"
+    "push 300"->"virtualinvoke <java.awt.Component: void setSize(int,int)>";
+    "virtualinvoke <java.awt.Component: void setSize(int,int)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>"
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"
+    "fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "pop"
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>";
+    "push 96"
+    "fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>"->"push 96";
+    "push 96"->"push 5";
+    "push 24"
+    "push 5"->"push 24";
+    "push 23"
+    "push 24"->"push 23";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"
+    "push 23"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"load.r r0";
+    "fieldget <sm_common.searchApplet: java.awt.Button search>"
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.Button search>";
+    "push \"Initialising...\""
+    "fieldget <sm_common.searchApplet: java.awt.Button search>"->"push \"Initialising...\"";
+    "virtualinvoke <java.awt.Button: void setLabel(java.lang.String)>"
+    "push \"Initialising...\""->"virtualinvoke <java.awt.Button: void setLabel(java.lang.String)>";
+    "virtualinvoke <java.awt.Button: void setLabel(java.lang.String)>"->"load.r r0";
+    "load.r r0"->"load.r r0";
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.Button search>";
+    "fieldget <sm_common.searchApplet: java.awt.Button search>"->"virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>";
+    "virtualinvoke <java.awt.Container: java.awt.Component add(java.awt.Component)>"->"pop";
+    "pop"->"load.r r0";
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.Button search>";
+    "staticget <java.awt.Color: java.awt.Color lightGray>"
+    "fieldget <sm_common.searchApplet: java.awt.Button search>"->"staticget <java.awt.Color: java.awt.Color lightGray>";
+    "staticget <java.awt.Color: java.awt.Color lightGray>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.Button search>";
+    "push 125"
+    "fieldget <sm_common.searchApplet: java.awt.Button search>"->"push 125";
+    "push 125"->"push 5";
+    "push 79"
+    "push 5"->"push 79";
+    "push 79"->"push 23";
+    "push 23"->"virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>";
+    "new sm_common.searchApplet$SymAction"
+    "virtualinvoke <java.awt.Component: void setBounds(int,int,int,int)>"->"new sm_common.searchApplet$SymAction";
+    "store.r $r16"
+    "new sm_common.searchApplet$SymAction"->"store.r $r16";
+    "load.r $r16"
+    "store.r $r16"->"load.r $r16";
+    "load.r $r16"->"load.r r0";
+    "specialinvoke <sm_common.searchApplet$SymAction: void <init>(sm_common.searchApplet)>"
+    "load.r r0"->"specialinvoke <sm_common.searchApplet$SymAction: void <init>(sm_common.searchApplet)>";
+    "specialinvoke <sm_common.searchApplet$SymAction: void <init>(sm_common.searchApplet)>"->"load.r r0";
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.Button search>";
+    "fieldget <sm_common.searchApplet: java.awt.Button search>"->"load.r $r16";
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"
+    "load.r $r16"->"virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>";
+    "virtualinvoke <java.awt.Button: void addActionListener(java.awt.event.ActionListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>";
+    "fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>"->"load.r $r16";
+    "virtualinvoke <java.awt.TextField: void addActionListener(java.awt.event.ActionListener)>"
+    "load.r $r16"->"virtualinvoke <java.awt.TextField: void addActionListener(java.awt.event.ActionListener)>";
+    "virtualinvoke <java.awt.TextField: void addActionListener(java.awt.event.ActionListener)>"->"load.r r0";
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>";
+    "fieldget <sm_common.searchApplet: java.awt.TextField keywordTextField>"->"staticget <java.awt.Color: java.awt.Color white>";
+    "staticget <java.awt.Color: java.awt.Color white>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "new sm_common.searchAppletBeanInfo"
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"new sm_common.searchAppletBeanInfo";
+    "specialinvoke <sm_common.searchAppletBeanInfo: void <init>()>"
+    "new sm_common.searchAppletBeanInfo"->"specialinvoke <sm_common.searchAppletBeanInfo: void <init>()>";
+    "specialinvoke <sm_common.searchAppletBeanInfo: void <init>()>"->"load.r r0";
+    "virtualinvoke <sm_common.searchApplet: void initStringTranslator()>"
+    "load.r r0"->"virtualinvoke <sm_common.searchApplet: void initStringTranslator()>";
+    "virtualinvoke <sm_common.searchApplet: void initStringTranslator()>"->"load.r r0";
+    "virtualinvoke <sm_common.searchApplet: void checkRegistration()>"
+    "load.r r0"->"virtualinvoke <sm_common.searchApplet: void checkRegistration()>";
+    "virtualinvoke <sm_common.searchApplet: void checkRegistration()>"->"load.r r0";
+    "new java.awt.Color"
+    "load.r r0"->"new java.awt.Color";
+    "new java.awt.Color"->"dup1.r";
+    "dup1.r"->"load.r r0";
+    "push \"bgColour\""
+    "load.r r0"->"push \"bgColour\"";
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"
+    "push \"bgColour\""->"virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>";
+    "staticinvoke <java.lang.Integer: java.lang.Integer decode(java.lang.String)>"
+    "virtualinvoke <java.applet.Applet: java.lang.String getParameter(java.lang.String)>"->"staticinvoke <java.lang.Integer: java.lang.Integer decode(java.lang.String)>";
+    "virtualinvoke <java.lang.Integer: int intValue()>"
+    "staticinvoke <java.lang.Integer: java.lang.Integer decode(java.lang.String)>"->"virtualinvoke <java.lang.Integer: int intValue()>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"
+    "virtualinvoke <java.lang.Integer: int intValue()>"->"specialinvoke <java.awt.Color: void <init>(int)>";
+    "specialinvoke <java.awt.Color: void <init>(int)>"->"virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>";
+    "virtualinvoke <java.awt.Component: void setBackground(java.awt.Color)>"->"load.r r0";
+    "load.r r0"->"fieldget <sm_common.searchApplet: java.awt.Button search>";
+    "fieldget <sm_common.searchApplet: java.awt.Button search>"->"load.r r0";
+    "fieldget <sm_common.searchApplet: sm_common.stringTranslator st>"
+    "load.r r0"->"fieldget <sm_common.searchApplet: sm_common.stringTranslator st>";
+    "fieldget <sm_common.stringTranslator: java.lang.String search>"
+    "fieldget <sm_common.searchApplet: sm_common.stringTranslator st>"->"fieldget <sm_common.stringTranslator: java.lang.String search>";
+    "fieldget <sm_common.stringTranslator: java.lang.String search>"->"virtualinvoke <java.awt.Button: void setLabel(java.lang.String)>";
+    "return"
+    "virtualinvoke <java.awt.Button: void setLabel(java.lang.String)>"->"return";
+}

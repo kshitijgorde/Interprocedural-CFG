@@ -70,5 +70,9 @@ digraph "" {
 }
 ```
 
+### UNIQUE SYSTEM CALLS:
+* Pruned ICFG Files `497`
+* Untouched ICFGs `519` 
+
 ### Contributors
 * [Rahul Rachapalli](https://github.com/rahulr56)

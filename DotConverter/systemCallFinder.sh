@@ -1,6 +1,7 @@
 #!/bin/bash 
 
-if [ $# -le 2 ]
+
+if [ $# -lt 0 ]
 then
 	echo "USAGE: $0 <Folder of DOT files>"
 	exit -1

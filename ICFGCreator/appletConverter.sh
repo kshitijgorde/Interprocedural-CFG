@@ -21,7 +21,7 @@ echo "public class $newClassName
 public static void main(String args[])
 {
     $className obj = new $className();
-    obj.init()
+    obj.init();
 }
 }" | cat >  "$filePath/$newClassName.java"
 

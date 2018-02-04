@@ -8,7 +8,10 @@
 - [x] Create Adjacency Matrix
 - [x] Classify Adjacency Matrices to be benign or malicious
 - [x] Choose an object recognition model for training 
-- [ ] Train the model 
-- [ ] Predict the test set using trained model
-- [ ] Documentation
-- [ ] Submit
+
+
+---
+### PS
+The ML part of this project is in another repository named [JavaMalwareIdenifierUsingML](https://github.com/rahulr56/JavaMalwareIdenifierUsingML) 
+
+---
